@@ -1,0 +1,15 @@
+#N canvas 0 22 560 291 10;
+#X obj 24 218 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 101 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 160 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty VOLTAGE-INVERTER: 20 12 0 14
+-150893 -262144 0;
+#X text 25 136 none/;
+#X obj 438 20 inverter;
+#X text 23 194 IN - signal in;
+#X text 24 258 OUT - output;
+#X text 24 49 The "INVERTER" module is a voltage inverter. Invert the
+polarity of any signal. Mainly used for CV manipulation;

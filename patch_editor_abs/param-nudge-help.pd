@@ -1,0 +1,24 @@
+#N canvas 0 22 765 620 10;
+#X obj 23 373 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 169 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 308 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty PARAM-NUDGE: 20 12 0 14 -150893
+-262144 0;
+#X obj 426 17 param-nudge;
+#X text 24 49 The "PARAM-NUDGE" module is an experimental tool made
+for mapping out interesting musical spaces. It allows you to nudge
+all parameters in a patch to search for new intersting sounds. Set
+how mucg you want the parametrs to be moved with the -/+ RANGE slider
+and click the NUDGE! button to nudge all parameters. PARAM-NUDGE is
+a good partner to the preset-manager module when trying to make interesting
+presets. (For practical reasons \, the MAESTRO4 module is not affected
+by the PARAM-NUDGE module);
+#X text 22 342 NUDGE - trigger/gate input to nudge parameters;
+#X text 23 413 /none;
+#X text 26 204 NUDGE - click button o nudge all parameters.;
+#X text 26 235 RANGE - set nudge range;
+#X text 26 262 FREQUENCIES \, PARAMETERS \, ATTENUATORS(toggles): select
+what type of system parameters will be affected my the nudge;

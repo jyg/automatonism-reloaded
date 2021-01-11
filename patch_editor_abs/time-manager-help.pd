@@ -1,0 +1,31 @@
+#N canvas 0 23 958 684 10;
+#X obj 18 267 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 452 318 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 7 cnv 15 400 30 empty empty TIME-MANAGER: 20 12 0 14 -150893
+-262144 0;
+#X obj 456 11 time-manager;
+#X text 21 47 The "TIME-MANAGER" module is basically an 8-step trigger
+sequencer where you set the time for each step (between 1-120 seconds).
+There are individual step outputs as well as an output for every trgger
+(ALL). The main purpose of the TIME-MANAGER is to structure larger
+compositions by triggering events at a slower pace. It is a more precise
+tool than using multiple clock-dividers or slow lfos. The SYNC input
+is essential for the module to work \; you have to patch any musically
+relevant trigger source into this input. The TIME-MANAGER will then
+use this sync source to output triggers in sync with your patch. If
+it counts to 60 seconds \, it will not produce a trigger right away
+when reaching 60 \, it will wait until it receives a trigger at the
+sync input. You can manually start and stop the module with the START/STOP
+button or with the START/STOP input.;
+#X text 18 307 8 sliders - set the time in seconds for each step;
+#X text 18 337 START - start or stop the counter;
+#X text 17 368 RESET - reset the counter;
+#X text 18 396 LOOP - if loop is disabled \, the module will perform
+the 8 steps and the stop. If loop is enabled it will perform the steps
+over and over again.;
+#X text 456 376 SYNC - trigger input for any musically relevant trigger
+source from you patch to sync the outputs of the TIME-MANAGER;
+#X text 456 424 START/STOP - trigger input for the START/STOP function
+;

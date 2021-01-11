@@ -1,0 +1,25 @@
+#N canvas 0 22 625 493 10;
+#X obj 24 372 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 237 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty TRIGONS: 20 12 0 14 -150893
+-262144 0;
+#X text 25 348 FM- frequency modulation input with onboard attenuator
+;
+#X text 24 212 FM - attenuator for incoming CV at the FM input.;
+#X text 27 406 OUT - output;
+#X text 26 273 PITCH - input for controlling the pitch with CV;
+#X obj 430 16 trigons;
+#X text 24 137 PITCH - controls the pitch of the oscillator;
+#X text 24 162 WAVE - crossfade between triangle wave and sawtooth
+;
+#X text 24 185 HARM. - add harmonics and waveshaping;
+#X text 26 299 WAVE - input for cv-control over the WAVE control;
+#X text 26 323 HARM. - input for cv-control over the HARM. control
+;
+#X text 26 53 The "TRIGONS" module is an oscillator with rough edges
+and sharp triangular spikes. Croosfade bewteen triangular and sawtooth
+and use an aggressive waveshaper to add harmonics.;

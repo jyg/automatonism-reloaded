@@ -1,0 +1,32 @@
+#N canvas 0 22 744 713 10;
+#X obj 19 615 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 437 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty GRAPHIC-EQ: 20 12 0 14 -150893
+-262144 0;
+#X obj 433 16 graphic-eq 0;
+#X text 24 61 The "GRAPHIC-EQ"module is stereo 7-band equalizer. Use
+it to shape the tone of your soundsoruces.;
+#X text 24 137 100 - set the level of the 100Hz bandpass filter;
+#X text 24 160 200 - set the level of the 200Hz bandpass filter;
+#X text 24 183 400 - set the level of the 400Hz bandpass filter;
+#X text 24 206 800 - set the level of the 800Hz bandpass filter;
+#X text 24 229 1600 - set the level of the 1600Hz bandpass filter;
+#X text 24 252 3200 - set the level of the 3200Hz bandpass filter;
+#X text 24 275 6400 - set the level of the 6400Hz bandpass filter;
+#X text 24 301 CV(LOW) - attenuator for CV at the LOW input;
+#X text 24 324 CV(MID) - attenuator for CV at the MID input;
+#X text 24 350 CV(HIGH) - attenuator for CV at the HIGH input;
+#X text 24 376 Q - global control for the Q of all bandpass filters
+;
+#X text 24 403 LEVEL - adjust output level of the GRAPHIC-EQ;
+#X text 21 481 LEFT - left audio input;
+#X text 20 505 RIGHT - right audio input;
+#X text 21 530 LOW - cv input for the purple bandpass filters;
+#X text 21 561 MID - cv input for the green bandpass filters;
+#X text 20 588 HIGH - cv input for the pink bandpass filters;
+#X text 22 658 L - left channel output;
+#X text 22 684 R - right channel output;

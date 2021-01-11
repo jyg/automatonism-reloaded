@@ -1,0 +1,18 @@
+#N canvas 0 22 635 378 10;
+#X obj 23 290 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 95 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 201 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty MIXER2: 20 12 0 14 -150893 -262144
+0;
+#X text 26 324 OUT - output;
+#X obj 434 19 mixer2;
+#X text 24 133 CHANNEL1 - controls the level of channel 1;
+#X text 24 169 CHANNEL2 - controls the level of channel 2;
+#X text 24 237 CH1 - signal in;
+#X text 24 263 CH2 - signal in;
+#X text 21 53 The "MIXER2" module is a dual channel summing mixer.
+It can be used with any signal source \; audio \, cv or trigger/gate.
+;

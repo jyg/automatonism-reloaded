@@ -1,0 +1,41 @@
+#N canvas 0 22 713 729 10;
+#X obj 22 569 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 139 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 464 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty SLOPE-GENERATOR: 20 12 0 14
+-150893 -262144 0;
+#X text 24 610 OUT - output;
+#X text 24 356 FAST/MEDIUM/SLOW - select between three different envelope
+durations;
+#X text 24 405 CURVE - switch between linerar or exponential curve
+;
+#X text 24 441 CYCLE - switch between normal mode or cycling mode;
+#X text 21 499 TRIG - trigger/gate input for triggering the envelope
+;
+#X text 24 668 EOC - trgger/gate signal at the end of the envelope
+cycle in cycling mode;
+#X obj 436 10 slope;
+#X text 24 175 RISE - controls the rise time.;
+#X text 24 247 FALL - controls the fall time.;
+#X text 24 211 RISE CV - attenuator for incoming cv at the RISE input
+;
+#X text 24 286 FALL CV - attenuator for incoming cv at the FALL input
+;
+#X text 25 324 DEPTH-/+ - bi-polar control of the envelope output;
+#X text 22 521 RISE - input for controlling the RISE parameter with
+CV.;
+#X text 21 545 FALL - input for controlling the FALL parameter with
+CV.;
+#X text 24 639 EOR - trgger/gate signal at the end of RISE in cycling
+mode;
+#X obj 436 173 scope;
+#X text 24 43 The "SLOPE" module is a complex envelope and modulation
+source. A slope generator in the tradition of Serge Modular. Both RISE
+and FALL time has CV inputs with onboard attenuators and there's bi-polar
+a DEPTH-/+ control to shape the output. It can be set to self-triggering
+cycle mode and it has three selectable envelopes lentghs \; FAST/MEDIUM/SLOW
+The CURVE is linear or exponential.;
+#X connect 10 0 19 0;

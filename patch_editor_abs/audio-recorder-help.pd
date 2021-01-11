@@ -1,0 +1,27 @@
+#N canvas 0 22 650 472 10;
+#X obj 22 415 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 210 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 319 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty AUDIO-RECORDER: 20 12 0 14 -150893
+-262144 0;
+#X obj 436 20 audio-recorder;
+#X text 23 245 REC/STOP - Start and stop recording;
+#X text 23 270 RST - reset the recording number;
+#X text 23 296 LEVEL - set the overall gain of the incoming signals
+;
+#X text 21 353 LEFT - left signal in;
+#X text 22 383 RIGHT - right signal in;
+#X text 22 455 /none/;
+#X text 24 47 The AUDIO-RECORDER module takes a stereo input and records
+a 24bit .wav file to the folder called "recorded_wavs" in the project's
+main folder. It starts recording when you press the REC toggle and
+automatically labels your files as recording_1 \, recording_2 \, etc.
+Press the RST button to reset the counter \, but previous recordings
+will be overdubbed. You can use the LEFT and RIGHT master outputs from
+the MAESTRO4 and patch them into the AUDIO-RECORDER. It is NOT recommended
+to use more than one AUDIO-RECORDER \, it will liekly cause PD and
+Automatonism to crash. Instead \, use the MULTI-TRACK RECORDER MODULE
+to record several stems.;

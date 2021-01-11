@@ -1,0 +1,19 @@
+#N canvas 0 22 634 371 10;
+#X obj 23 298 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 103 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 166 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty XFADE: 20 12 0 14 -150893 -262144
+0;
+#X text 26 332 OUT - output;
+#X obj 431 19 xfade;
+#X text 24 61 The "xfade module is a simple crossfader. Two signal
+input can be crossfaded with a slider manually or with cv.;
+#X text 24 138 XFADE - crossfades between signal-in-1 and signal-in-2
+;
+#X text 24 202 IN-1 - signal in 1;
+#X text 26 231 IN-2 - signal in 2;
+#X text 26 263 XFADE - input for cv-control of the XFADE parameter
+;

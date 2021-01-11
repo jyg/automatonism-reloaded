@@ -1,0 +1,28 @@
+#N canvas 0 22 658 580 10;
+#X obj 23 466 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 134 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 334 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty BANDWIDTH-LIMITED-OSCILLATOR
+20 12 0 14 -150893 -262144 0;
+#X text 24 437 FM- frequency modulation input with onboard attenuator
+;
+#X text 26 500 OUT - output;
+#X text 24 172 PITCH - controls the pitch of the oscillator within
+the range of 8.175Hz -12543Hz (midi notes 0-127);
+#X text 23 298 WAVESELECTOR - switch bewteen sine \, triangle \, saw
+and pulsewave;
+#X text 24 370 PITCH - input for controlling the pitch with CV;
+#X obj 449 18 bwl-osc;
+#X text 24 61 The "BWL-OSC" module is a bandwidth-limited oscillator
+providing sine \, triangle \, saw and pulsewave. A waveshaper circuit
+adds harmonics to the sine and triangle \, produces a detuned supersaw
+and pulsewidth modulation.;
+#X text 24 205 WSHAPE - controls sine & triangle harmonics \, saw detuning
+and pulsewidth.;
+#X text 24 273 FM - attenuator for incoming CV at the FM input.;
+#X text 24 242 CV - attenuator for incoming CV at WSHAPE input.;
+#X text 24 400 WSHAPE - input for controlling the WSHAPE parameter
+with CV;

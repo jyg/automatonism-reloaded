@@ -1,0 +1,30 @@
+#N canvas 0 22 601 681 10;
+#X obj 24 545 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 134 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 400 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty AHR(ATTACK-HOLD-RELEASE/LFO)GENERATOR:
+20 12 0 14 -150893 -262144 0;
+#X text 24 581 OUT - output;
+#X obj 441 10 ahr;
+#X text 24 206 H - controls the hold time;
+#X text 24 170 A - controls the attack time.;
+#X text 24 242 R - controls the release time.;
+#X text 24 278 FAST/MEDIUM/SLOW - select between three different envelope
+durations;
+#X text 24 327 CURVE - switch between linerar or exponential curve
+;
+#X text 24 363 CYCLE - switch between normal mode or cycling mode;
+#X text 24 436 TRIG - trigger/gate input for triggering the envelope
+;
+#X text 24 472 H - input for controlling the H parameter with CV.;
+#X text 23 450 A - input for controlling the A parameter with CV.;
+#X text 24 508 R - input for controlling the R parameter with CV.;
+#X text 24 617 EOC - trgger/gate signal at the end of the envelope
+cycle in cycling mode;
+#X text 24 45 The "AHR" module is an attack-hold-release envelope generator.
+It has three selectable envelope time: slow \, medium and fast. It
+can function in self-triggering mode and cycle like an lfo \, and the
+curve can be set to linear or exponential.;

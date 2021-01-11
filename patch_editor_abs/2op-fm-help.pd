@@ -1,0 +1,23 @@
+#N canvas 0 22 671 499 10;
+#X obj 22 424 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 83 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 300 cnv 1 400 30 empty empty INPUTS: 20 12 0 14 -158136 -262144
+0;
+#X obj 20 10 cnv 15 400 30 empty empty 2-OPERATOR-FM: 20 12 0 14 -150893
+-262144 0;
+#X obj 429 10 2op-fm;
+#X text 21 47 The 2OP-FM module is a 2 operator phase modulation oscillator.
+Manual + voltage control over ratio and index.;
+#X text 20 125 CARRIER - controls the pitch of carrier;
+#X text 20 161 RATIO - controls the phase modulation ratio.;
+#X text 20 197 INDEX - controls the phase modulation index.;
+#X text 20 237 CV1(RATIO) - attenuator for incoming CV at the CV1 input
+;
+#X text 20 273 CV2(INDEX) - attenueverter for incoming CV at the CV2
+input;
+#X text 22 336 CARRIER - input for controlling the carrier pitch;
+#X text 22 359 CV1 - cv input for the RATIO control;
+#X text 22 395 CV2 - cv input for the INDEX control;
+#X text 25 458 OUT - output;

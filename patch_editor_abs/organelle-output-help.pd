@@ -1,0 +1,21 @@
+#N canvas 0 22 737 471 10;
+#X obj 27 340 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 114 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 246 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty ORGANELLE-OUTPUT: 20 12 0 14
+-150893 -262144 0;
+#X text 30 374 none/;
+#X text 25 183 PAN - control panning of equivalent channel;
+#X text 25 152 CH1 \, CH2 \, CH3 & CH4 - controls gain of equivalent
+channel;
+#X text 26 217 MASTER - controls the volume of the sum of channels
+1-4;
+#X text 28 290 CH1-4 - channel inputs;
+#X text 28 312 PAN1-4 - cv input for panning;
+#X obj 437 17 organelle-output;
+#X text 21 53 The "ORGANELLE-OUTPUT" is used instead of the MAESTRO4
+if you are exporting your patch to the Critter % Guitari Organelle.
+;

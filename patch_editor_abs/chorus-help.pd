@@ -1,0 +1,20 @@
+#N canvas 0 22 630 462 10;
+#X obj 23 327 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 205 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty CHORUS: 20 12 0 14 -150893 -262144
+0;
+#X obj 435 15 chorus;
+#X text 24 61 The "chorus" module is a mono input to stereo output
+chorus effect.;
+#X text 24 137 RATE - controls the chorus rate;
+#X text 24 173 DEPTH - controls the depth of chorus effect;
+#X text 24 241 IN - signal in;
+#X text 24 271 RATE - input for cv-control of the RATE parameter;
+#X text 24 302 DEPTH - input for cv-control of the DEPTH parameter
+;
+#X text 26 361 LEFT - left output;
+#X text 26 385 RIGHT - right output;

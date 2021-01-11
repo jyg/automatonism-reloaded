@@ -1,0 +1,21 @@
+#N canvas 0 22 715 471 10;
+#X obj 24 385 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 110 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 320 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty CHANNEL-EQ: 20 12 0 14 -150893
+-262144 0;
+#X text 26 427 OUT - output;
+#X text 27 356 IN - signal input;
+#X obj 447 18 channel-eq;
+#X text 24 58 The CHANNEL-EQ module is a simple equalizer with individual
+gain for high \, mod and low frequency. Exact frequency center is set
+with sliders.;
+#X text 25 148 HIGH-FREQ - controls the HIGH frequency center;
+#X text 25 176 HIGH-GAIN - controls the gain amount of HIGH-FREQ;
+#X text 25 206 MID-FREQ - controls the MID frequency center;
+#X text 25 234 MID-GAIN - controls the gain amount of MID-FREQ;
+#X text 25 265 LOW-FREQ - controls the LOW frequency center;
+#X text 25 293 LOW-GAIN - controls the gain amount of LOW-FREQ;

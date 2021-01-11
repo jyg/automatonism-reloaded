@@ -1,0 +1,27 @@
+#N canvas 0 22 645 546 10;
+#X obj 23 444 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 83 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 252 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty GRANULAR-DELAY: 20 12 0 14 -150893
+-262144 0;
+#X text 26 478 OUT - output;
+#X text 23 288 IN - signal in;
+#X text 19 125 PITCH - change the pitch of the signal;
+#X text 20 228 DRY/WET - control the balance between dry and wet signal
+;
+#X text 23 318 PITCH -input for cv-control over the PITCH parameter
+;
+#X obj 438 8 granular-delay;
+#X text 19 161 GRAINSIZE - controls the size of the grains/delay;
+#X text 19 197 REVERB - sets reverb level;
+#X text 23 349 GRAINSIZE -input for cv-control over the GRAINSIZE parameter
+;
+#X text 23 379 REVERB -input for cv-control over the FBACK parameter
+;
+#X text 23 414 D/W -input for cv-control over the DRY/WET parameter
+;
+#X text 21 47 The "GRANULAR-DELAY" module is an experimental granular
+delay fx unit.;

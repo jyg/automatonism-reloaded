@@ -1,0 +1,33 @@
+#N canvas 0 23 897 535 10;
+#X obj 19 241 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 440 168 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 7 cnv 15 400 30 empty empty RANDOM-TIME-MANAGER: 20 12 0
+14 -150893 -262144 0;
+#X obj 440 8 random-time-manager;
+#X text 21 47 The "RANDOM-TIME-MANAGER" module is giving out trigger
+signals randomly within a range of seconds that you control with the
+TIME and OFFSET sliders. The main purpose of the RANDOM-TIME-MANAGER
+is to structure larger compositions by triggering events at a slower
+pace. It is a less precise alternative to the TIME-MANAGER module.
+The SYNC input is essential for the module to work \; you have to patch
+any musically relevant trigger source into this input. The RANDOM-TIME-MANAGER
+will then use this sync source to output triggers in sync with your
+patch. If it counts to 60 seconds \, it will not produce a trigger
+right away when reaching 60 \, it will wait until it receives a trigger
+at the sync input. You can manually start and stop the module with
+the ON/OFF button or with the ON/OFF input.;
+#X text 20 313 OFFSET - control to set the minimun amount of possible
+seconds (see MIN number box);
+#X text 19 281 TIME - control to set the maximum amount of possible
+seconds (see MAX number box;
+#X text 19 383 COUNTER - number box that displays the counter;
+#X text 19 426 RANDOM-VALUE - number box that displays what random-value
+is currently chosen and what the COUNTER will work towards before receiving
+a new random value.;
+#X text 18 485 ON/OFF - toggle the counter on and off;
+#X text 444 226 SYNC - trigger input for any musically relevant trigger
+source from you patch to sync the outputs of the RANDOM-TIME-MANAGER
+;
+#X text 444 274 ON/OFF - trigger input for the ON/OFF function;

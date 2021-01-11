@@ -1,0 +1,19 @@
+#N canvas 0 22 521 372 10;
+#X obj 23 300 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 131 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 194 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty SAMPLE&HOLD: 20 12 0 14 -150893
+-262144 0;
+#X text 26 334 OUT - output;
+#X obj 431 17 s&h;
+#X text 24 166 none;
+#X text 24 230 SAMPLE - signal in;
+#X text 24 259 TRIG - trigger/gate input that will sample the signal
+at the SAMPLE input;
+#X text 24 61 The "S&H" module is a simple sample and hold unit. Apply
+a signal at the SAMPLE input and a trigger/gate signal at the TRIG
+input will sample the signal and hold the voltage at the output until
+receiving the TRIG.;

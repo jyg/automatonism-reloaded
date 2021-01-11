@@ -1,0 +1,23 @@
+#N canvas 0 22 803 379 10;
+#X obj 23 281 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 119 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 210 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty POLARIZER: 20 12 0 14 -150893
+-262144 0;
+#X text 26 315 OUT - output;
+#X obj 441 41 polarizer;
+#X obj 441 135 scope;
+#X text 24 154 POL-/+ - attenuevert the signal;
+#X text 24 247 IN - signal in;
+#X text 438 240 EXAMPLE: move the POL-/+ or OFFSET slider and watch
+the scope;
+#X text 25 181 OFFSET - offset the signal with DC;
+#X text 24 61 The "polarizer" module is a simple polarizer/attenueverter/offset
+control for finetuning CV sources. Any signal can be scaled down \,
+inverted into the negative or offsetted.;
+#X obj 441 15 phasor~ 220;
+#X connect 5 0 6 0;
+#X connect 12 0 5 0;

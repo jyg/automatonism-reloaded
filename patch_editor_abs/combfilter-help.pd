@@ -1,0 +1,25 @@
+#N canvas 40 22 662 521 10;
+#X obj 22 440 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 83 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 348 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty COMBFILTER: 20 12 0 14 -150893
+-262144 0;
+#X text 25 474 OUT - output;
+#X obj 429 11 combfilter;
+#X text 19 125 DELAY - controls delay time from 1ms - 100ms;
+#X text 19 161 FEEDBACK - controls amount of feedback;
+#X text 19 197 LOWPASS - set lowpass filter frequency cutoff at the
+output;
+#X text 19 233 HIGHPASS - set highpass filter frequency cutoff at the
+the output;
+#X text 19 274 DRIVE - set drive (gain) at the output;
+#X text 19 312 DRY/WET - control the balance between dry and wet signal
+;
+#X text 23 384 IN - signal in;
+#X text 23 414 DELAY -input for cv-control over the DELAY parameter
+;
+#X text 21 47 The "COMBFILTER" module is delay fx unit. Delay times
+range from 1ms - 100ms.;

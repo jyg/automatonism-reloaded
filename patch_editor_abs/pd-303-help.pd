@@ -1,0 +1,51 @@
+#N canvas 0 22 946 680 10;
+#X obj 440 504 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 208 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 439 246 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty PD-303 20 12 0 14 -150893 -262144
+0;
+#X text 20 500 SCALE - choose scale for quantization;
+#X text 20 553 WRITE - four slots of pattern storage;
+#X text 439 376 RANDOMIZE - trigger/gate input to randomize the entire
+pattern;
+#X obj 440 19 pd-303;
+#X text 23 52 The PD-303 is an acid synthesizer in the style of the
+TB-303. It has a 16 step sequencer with SLIDE and ACCENT for each step.
+In addition to producing either a squarewave or a sawtooth \, it outputs
+the pitch CV and envelope shape so that you can sequence anything else
+in the system. The PD-303 can store and recall 4 sequences. Click any
+of the four WRITE slots to store in slot 1-4 and click any of the LOAD
+slots to recall a stored sequence. Storing sequences with different
+SCALE and TRANSPOSE sequences can create some quite complex variations.
+You can step through the stored patterns with a trigger/gate signal
+at the LOAD(1-4) input.;
+#X text 20 243 STEPS1-16 - individual sliders to set the voltage level
+of each step;
+#X text 20 279 TRANSPOSE - transposes the sequnce down 2octaves or
+up two octaves;
+#X text 20 317 CUTOFF - controls the cutoff frequency of the filter
+;
+#X text 20 345 RES - controls the resonance of the filter;
+#X text 20 377 ENVMOD - controls the amount of envelope sent to modulate
+the filter;
+#X text 20 411 ACCENT - controls the accent level;
+#X text 20 435 DECAY - controls the decay time of the accent envelope
+and the filter envelope;
+#X text 20 469 SLIDE - controls the overall portamento time for the
+SLIDE;
+#X text 20 525 RDM! - button to instantly create a random pattern;
+#X text 20 583 LOAD - four slots of pattern recall;
+#X text 20 611 SQ/SAW - select waveform (square or saw);
+#X text 438 280 CLK - trigger/gate/clock input;
+#X text 438 345 ENVMOD- cv input to modulate the ENVMOD amount;
+#X text 438 314 CUTOFF - cv input to modulate the CUTOFF;
+#X text 438 423 LOAD(1-4) - trigger/gate input to step through stored
+pattern1-4 sequentially;
+#X text 437 468 RESET - trigger/gate input to reset the sequencer;
+#X text 440 544 OUT - synthesiszer output;
+#X text 441 575 PITCH-CV - outputs the pitch CV of the sequencer (including
+SLIDES);
+#X text 441 617 ENV - outputs the envelopes \, including ACCENT;

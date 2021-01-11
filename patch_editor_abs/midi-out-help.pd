@@ -1,0 +1,22 @@
+#N canvas 0 22 803 422 10;
+#X obj 24 361 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 147 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 239 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty MIDI-OUT: 20 12 0 14 -150893
+-262144 0;
+#X obj 440 18 midi-out;
+#X text 25 185 PITCH-OFFSET - offset the midi notes from the NOTE input
+;
+#X text 25 210 CHANNEL - select MIDI CHANNEL 1-16;
+#X text 25 275 NOTE - midi pitch information input;
+#X text 25 305 GATE - midi gate information;
+#X text 27 395 /none;
+#X text 20 90 The "MIDI-OUT" module takes a note input and a gate input
+to send Automatonism signals to external MIDI gear. Remember that all
+external MIDI gear must be connected before launching PD and selected
+in the PD MIDI Settings.;
+#X text 20 51 The MIDI-OUT module has been updated and improved for
+Automatonism v2.0 by Laurent Houdard.;

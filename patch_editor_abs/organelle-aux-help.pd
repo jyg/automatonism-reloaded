@@ -1,0 +1,26 @@
+#N canvas 0 22 590 451 10;
+#X obj 30 287 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 26 160 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 26 220 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 17 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 30 226 INPUTS:;
+#X text 30 168 CONTROLS:;
+#X text 33 291 OUTPUTS:;
+#X text 30 256 none/;
+#X text 33 321 KNOB1 - output for Organelle knob1;
+#X text 33 350 KNOB2 - output for Organelle knob2;
+#X text 33 385 KNOB3 - output for Organelle knob3;
+#X text 33 416 KNOB4 - output for Organelle knob4;
+#X obj 429 18 organelle-aux;
+#X text 24 16 ORGANELLE-AUX:;
+#X text 24 61 The "organelle-aux" module has two modes: momentary and
+toggle. In momentary mode there will be full voltage at the OUT whenver
+the AUX key is pressed and the voltage will drop to zero when de-pressed.
+In toggle mode \, the AUX buttons toggles between on/off rather than
+being momentary. It can be used as a trigger/gate source in the system
+or to momentary open up a VCA or any wanted paramater.;
+#X text 30 198 MOMENTARY/TOGGLE - switch between modes;

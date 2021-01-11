@@ -1,0 +1,42 @@
+#N canvas 44 23 888 693 10;
+#X obj 460 17 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 217 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 455 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty ALGOMATRIX: 20 12 0 14 -150893
+-262144 0;
+#X text 22 426 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 22 391 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 27 585 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 463 51 LEFT - output;
+#X text 463 77 RIGHT - output;
+#X obj 463 106 algomatrix;
+#X text 24 55 The "ALGOMATRIX" module is an experimental enigmatic
+module. It is an 8-voice polyphonic syntesiszer with a 8x8 modulation
+matrix and a 32-step sequencer with 4 perspectives. The left side of
+the module is a 8x8 grid. This is the sequencer. The right part of
+the module reveals another 8x8 grid \, which is the modulation matrix.
+You add notes to the sequencer by clicking inside the grid. You can
+click several times in the same box and the different colors represents
+different octaves. You can store and recall 8 different parameter settings.
+The algomatrix is capable of a wide variety of sounds but is heavier
+on th CPU than most other Automatonism oscillators.;
+#X text 24 255 8x8 SEQUENCER MATRIX - click toggles to produce pitches
+;
+#X text 24 277 8x8 MODULATION MATRIX -change the sound in classic mod
+matrix style;
+#X text 25 313 TABULA-RASA! - click to clean the table;
+#X text 25 339 RDM! - click to randomly fill the sequencer table;
+#X text 25 365 RDM2! - click to randomly fill the mod-matrix;
+#X text 27 491 TRIG - trigger/gate input to clock the sequencer;
+#X text 27 513 RDM! - trigger/gate input to randomly fill the sequencer
+matrix;
+#X text 27 546 RDM2! - trigger/gate input to randomly fill the modulation
+matrix;
+#X text 28 626 RDM-LOAD - trigger/gate input to randomly select one
+out of the 8 stored patterns;

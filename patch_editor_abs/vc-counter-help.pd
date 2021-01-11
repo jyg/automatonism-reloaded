@@ -1,0 +1,18 @@
+#N canvas 0 22 679 339 10;
+#X obj 25 253 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 136 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 195 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty VC-COUNTER: 20 12 0 14 -150893
+-262144 0;
+#X text 24 226 IN - trigger/gate input to be divided;
+#X obj 437 16 vc-counter;
+#X text 26 171 COUNT - set number of subdivisions;
+#X text 25 293 OUT - divided output;
+#X text 24 50 The "VC-COUNTER" module is voltage controlled counter/clock
+divider. Incoming trigger/gate/clock can be subdivided between 1-64.
+Useful module for setting a very specific cock divisions not available
+immediately from the other clock-divider modules. You could also feed
+it CV to dynamically control the subdivisions.;

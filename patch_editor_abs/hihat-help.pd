@@ -1,0 +1,33 @@
+#N canvas 0 22 707 685 10;
+#X obj 25 589 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 100 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 391 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty HIHAT-SYNTHESIZER: 20 12 0 14
+-150893 -262144 0;
+#X text 28 623 OUT - output;
+#X text 24 427 TRIG - trigger/gate input to trigger the sound;
+#X text 24 485 DECAY - input for cv-control over decay;
+#X text 24 173 DECAY -controls the decay length of the pitch;
+#X text 24 267 FLAM - controls the timing for flam;
+#X text 24 293 FLAM-PROB - controls the probability of a flam happening
+;
+#X text 22 358 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 22 323 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 23 508 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 23 547 RDM - trigger/gate input to randomly select one out
+of the 8 stored patterns;
+#X obj 440 18 hihat 0;
+#X text 24 50 The "hihat" module is a synthesized hihat drum module
+with the ability to store and recall 8 different parameter combinations.
+;
+#X text 24 144 STRIKE - controls the loudness of the hihat strike;
+#X text 24 204 DECAY-CV - attenuator for signals coming in at the DECAY
+input;
+#X text 24 238 FILTER - hipass filter;
+#X text 24 453 STRIKE - input for cv-control over strike;

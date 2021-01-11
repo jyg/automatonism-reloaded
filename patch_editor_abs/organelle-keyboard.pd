@@ -1,0 +1,50 @@
+#N canvas 0 22 773 477 10;
+#X obj 388 229 r notes;
+#X obj 388 251 unpack f f;
+#X obj 388 358 / 127;
+#X obj 388 380 sig~;
+#X obj 388 402 outlet~;
+#X obj 388 281 +;
+#X obj 129 124 hsl 128 15 0 127 0 1 empty empty XPOSE 133 7 0 10 -262144
+-1 -1 6300 1;
+#X floatatom 227 139 5 0 0 0 - - -, f 5;
+#X obj 132 214 / 127;
+#X obj 132 236 * 48;
+#X obj 132 258 - 24;
+#X obj 132 280 i;
+#X obj 132 302 t f f;
+#X text 387 426 PITCH;
+#X floatatom 104 155 5 0 0 2 PITCH - -, f 5;
+#X obj 204 115 cnv 5 5 5 empty empty KEYBOARD 0 0 0 12 -262144 -66577
+0;
+#X obj 138 115 cnv 5 5 5 empty empty ORGANELLE 0 0 0 12 -262144 -66577
+0;
+#X obj 388 303 t f f;
+#X obj 445 273 / 100;
+#X obj 445 295 t f f;
+#X obj 445 346 pack 0 10;
+#X obj 445 368 line~;
+#X obj 445 400 outlet~;
+#X text 447 426 GATE;
+#X obj 278 155 tgl 15 0 empty empty GATE -3 -7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 1 1 18 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 5 0 17 0;
+#X connect 6 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 12 0 5 1;
+#X connect 12 1 7 0;
+#X connect 17 0 2 0;
+#X connect 17 1 14 0;
+#X connect 18 0 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X coords 0 -1 1 1 200 75 2 100 100;

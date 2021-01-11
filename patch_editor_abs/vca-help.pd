@@ -1,0 +1,24 @@
+#N canvas 0 22 636 465 10;
+#X obj 23 385 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 210 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 316 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty VCA: 20 12 0 14 -150893 -262144
+0;
+#X text 26 419 OUT - output;
+#X text 24 248 VCA - controls the level of the signal present at the
+IN input.;
+#X text 24 284 CV - attenuator for incoming cv at the CV input;
+#X text 24 352 IN - signal in;
+#X obj 432 17 vca;
+#X text 21 53 The "VCA" module is a voltage controlled amplifier/attenuator.
+It is one of the most useful modules in any modular system. Typically
+a vca is most commonly used to dynamically change a signal's amplitude
+over time in tandem with an envelope generator. But the same could
+be applied to any signal that you want to change dynamically over time
+in a patch. Basic example: instead of patching an LFO directly to the
+filter cutoff \, go through a vca and control that vca with another
+LFO. This is called "modulate the modulator" and can really give some
+life to your patches.;

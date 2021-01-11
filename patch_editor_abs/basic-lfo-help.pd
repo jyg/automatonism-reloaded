@@ -1,0 +1,35 @@
+#N canvas 0 22 723 636 10;
+#X obj 21 431 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 180 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 18 343 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty BASIC-LFO: 20 12 0 14 -150893
+-262144 0;
+#X text 22 379 FREQ - input for controlling the lfo-frequency with
+CV;
+#X text 22 405 SYNC - trigger/gate input for lfo-sync;
+#X text 23 317 DEPTH - control over lfo depth;
+#X text 24 224 FREQ - controls the pitch of the lfo;
+#X text 23 288 P-WIDTH - controls the pulsewidth of the PULSE output.
+;
+#X obj 428 15 basic-lfo;
+#X text 24 465 BI-POLAR - outputs a bi-polar sine \, saw or triangle
+;
+#X text 23 494 UNI-POLAR - outputs a uni-polar sine \, saw or triangle
+;
+#X text 23 523 PULSE - outputs a uni-polar pulsewave;
+#X text 23 552 S&H - outputs an held random voltage each cycle;
+#X text 21 587 TRIG - outputs short trigger each cycle--independently
+of the DEPTH control;
+#X text 24 55 The "BASIC-LFO" module is low frequency oscillator. Select
+between sine \, triangle or sawtooth wave and a separate pulsewave
+output. There is control over frequency and depth. The BASIC-LFO is
+an excellent clock/trigger module and as long as DEPTH is set to maximum
+it will trigger any pink input in the system with the BI-P \, UNI-P
+or PULSE output. The TRIG output is independent of DEPTH and will always
+trigger at the start of each cycle. An additional sample and hold unit
+gives a random stepped voltage each cycle.;
+#X text 24 254 WAVEFORM SELECTOR - choose between sine \, triange or
+sawtooth;

@@ -1,0 +1,21 @@
+#N canvas 0 22 617 379 10;
+#X obj 24 249 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 162 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty 1to4-SWITCH: 20 12 0 14 -150893
+-262144 0;
+#X text 24 137 /none;
+#X text 26 225 TRIG - trigger/gate that triggers the sequential switch
+;
+#X obj 435 17 1to4-switch;
+#X text 26 53 The "1to4-SWITCH" is a sequential switch that takes 1
+input and sequentially distributes it to 4 outputs whenever a trigger/gate
+signal is received at te TRIG input.;
+#X text 26 198 IN - input signal;
+#X text 27 283 1 - output 1;
+#X text 27 305 2 - output 2;
+#X text 27 328 3 - output 3;
+#X text 27 350 4 - output 4;

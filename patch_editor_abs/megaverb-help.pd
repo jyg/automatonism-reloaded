@@ -1,0 +1,25 @@
+#N canvas 0 22 756 510 10;
+#X obj 24 381 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 96 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 253 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty MILLERVERB: 20 12 0 14 -150893
+-262144 0;
+#X text 24 289 IN - signal in;
+#X text 24 350 LPASS -input for cv-control over the LOWPASS parameter
+;
+#X text 19 221 DRY/WET - controls the balance between dry and wet signal
+;
+#X text 27 415 LEFT - left output;
+#X text 26 445 RIGHT - right output;
+#X obj 446 10 megaverb 0;
+#X text 21 47 The "MEGAVERB" module is a reverb unit with larger spaces
+than the MILLERVERBm module. The code is an adaptation of the [rev2~]
+object into Automatonism signal flow.;
+#X text 19 138 SIZE - controls size of the room;
+#X text 19 160 DAMPING - controls the dampening of the room;
+#X text 19 184 LOWPASS - controls the cutoff frequency of a non resonant
+lowpass filter at the output;
+#X text 24 319 SIZE -input for cv-control over the SIZE parameter;

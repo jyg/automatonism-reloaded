@@ -1,0 +1,33 @@
+#N canvas 0 22 698 608 10;
+#X obj 22 504 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 100 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 314 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty STEREO-DELAY: 20 12 0 14 -150893
+-262144 0;
+#X text 19 223 FEEDBACK - controls amount of feedback;
+#X text 19 255 LOWPASS - set lowpass filter frequency cutoff at the
+output;
+#X text 19 288 DRY/WET - control the balance between dry and wet signal
+;
+#X text 24 350 IN - signal in;
+#X obj 449 11 stereo-delay;
+#X text 19 142 RATE-LEFT - controls delay rate of the left channel.
+Delay times from 10ms - 500ms;
+#X text 18 181 RATE-RIGHT - controls delay rate of the right channel.
+Delay times from 10ms - 500ms;
+#X text 24 380 RATE-L - input for cv-control of the RATE-LEFT parameter
+;
+#X text 24 410 RATE-R - input for cv-control of the RATE-RIGHT parameter
+;
+#X text 24 443 FBACK - input for cv-control of the FEEDBACK parameter
+;
+#X text 24 476 LPASS - input for cv-control of the LOWPASS parameter
+;
+#X text 25 538 LEFT - left output;
+#X text 26 565 RIGHT - right output;
+#X text 21 50 The "STEREO-DELAY" module is a mono input - stereo output
+delay with control over delay rate \, feedback and amount of lowpass
+filtering.;

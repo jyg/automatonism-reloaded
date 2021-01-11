@@ -1,0 +1,19 @@
+#N canvas 0 23 884 512 10;
+#X obj 23 310 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 245 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty COMPRESSOR: 20 12 0 14 -150893
+-262144 0;
+#X text 25 352 OUT - output;
+#X text 26 281 IN - signal input;
+#X obj 456 19 compressor 0;
+#X text 24 58 The COMPRESSOR module is a simple compressor with ATTACK
+\, THRESHOD \, LIMIT and MAKE-UP GAIN controls.;
+#X text 25 137 ATTACK - controls the attck of the compressor kicking
+in;
+#X text 25 165 THRESHOLD- controls the compressor threshold;
+#X text 25 191 LIMIT - controls the compressor limit;
+#X text 26 218 MAKE-UP - controls the make-up gain;

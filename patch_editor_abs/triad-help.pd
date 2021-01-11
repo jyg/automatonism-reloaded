@@ -1,0 +1,38 @@
+#N canvas 0 22 646 721 10;
+#X obj 23 577 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 159 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 422 cnv 1 400 30 empty empty INPUTS: 20 12 0 14 -158136 -262144
+0;
+#X obj 20 10 cnv 15 400 30 empty empty TRIAD-OSCILLATOR: 20 12 0 14
+-150893 -262144 0;
+#X obj 432 13 triad;
+#X text 21 47 The TRIAD oscillator is a duphonic chord module. A trigger/gate
+at the TRIG input will trigger an internal attack-release envelope
+and produce a three-note-chord at the output. The core of the module
+is dual \, meaning that the first chord will keep ringing when the
+next is fired. The chord can be adjusted with the ROOT \, INT1 and
+INT2 sliders. Quantization scale and transpositions are selectable
+at the bottom of the module.;
+#X text 20 201 ROOT - select the pitch of the root;
+#X text 20 247 INT2 - select the pitch the interval 2;
+#X text 20 224 INT1 - select the pitch interval 1;
+#X text 20 270 DTUNE - control for slight detuning of the chord;
+#X text 20 293 ATTACK - attack time of the internal envelope;
+#X text 20 316 RELEASE - release time of the internal envelope;
+#X text 20 339 SCALE - select scale;
+#X text 20 362 XPOSE - transpose the chord -12 to +12 semitones;
+#X text 20 385 WAVESELECTOR- select sawtooth \, squarewave or alternate
+between saw and square;
+#X text 22 458 TRIG - trigger the envelope and the chord;
+#X text 22 481 ROOT - cv input for the ROOT;
+#X text 22 505 INT1 - cv input for INT1;
+#X text 22 528 INT2 - cv input for INT2;
+#X text 22 556 XPOSE - cv input for the XPOSE control;
+#X text 26 611 TRIGGERED - outputs the chord shaped by the internal
+envelope;
+#X text 26 648 CONSTANT - outputs the chord constantly bypassing the
+envelope;
+#X text 26 682 EG - outputs the envelope to use as a modulation source
+elsewhere in the system;

@@ -1,0 +1,67 @@
+#N canvas 0 22 1012 732 10;
+#X obj 457 294 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 249 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 450 78 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty CHORD-SYNTH: 20 12 0 14 -150893
+-262144 0;
+#X text 446 52 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 446 17 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 455 219 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 455 258 RDM - trigger/gate input to randomly select one out
+of the 8 stored patterns;
+#X obj 460 413 chord-synth;
+#X text 24 55 The "CHORD-SYNTH" module is an 6-voice polyphonic synthesizer
+with a precise chord sequencer. Use the virtual keyboard to programme
+up to 16 different chords. It features 4 types f synthesis: SINE \,
+SAW \, PULSE and FM. Each have two adjustable parameter controls. Synthesizer
+settings can be stored and recalled using the STORE & LOAD controls
+as seen on other modules. Click on the STEP radio to listen to the
+chord associated with that step and click the keyboard to change the
+chord. To save a chord to a step \, press the STORE button. Choose
+a maximum step for the 16 step sequencer with the MAXSTEP radio. Clock
+the module using either the STEP or R-STEP input. The toggle underneath
+the inputs is for removing the clock source for a while to make editing
+easier.;
+#X text 24 287 VIRTUAL KEYBOARD - click toggles to write chords;
+#X text 24 309 STEP -select and listen to step 1-16 in the chord sequencer
+;
+#X text 24 334 MAXSTEP - select the MAXSTEP for the sequencer;
+#X text 24 359 STORE - press this button to STORE a chord into its
+present STEP location.;
+#X text 24 395 HOLD - controls the hold length of the envelope beforing
+entering the release stage;
+#X text 24 434 RELEASE - controls the envelope release time;
+#X text 24 453 TIMBRE 1 - parameter 1 for the synthesis. SINE = FOLD
+amount \, SAW = Filter CUTOFF frequency \, PULSE = Filter CUTOFF frequency
+& FM = FM RATIO;
+#X text 23 504 TIMBRE 1 ATTENUATOR - attenuator for incoming cv at
+the TIMBRE1 input;
+#X text 24 539 TIMBRE 2 - parameter 2 for the synthesis. SINE = HARMONICS
+amount \, SAW = Filter Q \, PULSE = PULSEWIDTH & FM = FM INDEX;
+#X text 23 580 TIMBRE 2 ATTENUATOR - attenuator for incoming cv at
+the TIMBRE2 input;
+#X text 23 612 XPOSE 2 - transpose the keyboard up or down two octaves
+;
+#X text 23 633 SYNTHESIS SELECTOR - choose between SINE \, SAW \, PULSE
+or FM;
+#X text 460 328 LEFT - output;
+#X text 460 354 RIGHT - output;
+#X text 459 378 MONO - output;
+#X text 578 352 (Use the MONO output for MONO \, not single LEFT or
+RIGHT CHANNEL. Otherwise you might not hear all your chord notes);
+#X text 454 114 STEP - trigger/gate input to trigger the 16 step chord
+sequencer;
+#X text 454 148 R-STEP - trigger/gate input to trigger random step
+of the sequencer;
+#X text 454 181 TIMBRE1 - input for cv-control over TIMBRE1;
+#X text 454 203 TIMBRE2 - input for cv-control over TIMBRE1;
+#X text 23 654 STEP/R-STEP - toggle to enable or disable the incoming
+clock at the STEP or R-STEP input(easier editing purposes);
+#X text 23 689 LOAD/RDM - toggle to enable or disable the incoming
+clock at the LOAD or RDM input(easier editing purposes);

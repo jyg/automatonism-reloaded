@@ -1,0 +1,18 @@
+#N canvas 0 22 534 392 10;
+#X obj 24 303 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 82 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 188 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty DECAY-ENVELOPE-GENERATOR: 20
+12 0 14 -150893 -262144 0;
+#X text 24 339 OUT - output;
+#X text 23 224 TRIG - trigger/gate input for triggering the envelope
+;
+#X obj 438 6 decay;
+#X text 21 118 D - controls the decay time.;
+#X text 21 154 CV - attenuator for incoming cv at the CV input;
+#X text 23 266 CV- input for controlling the D parameter with CV.;
+#X text 24 45 The "DECAY" module is a simpe decay only envelope. The
+decay time is under cv-control with an onboard attenuator.;

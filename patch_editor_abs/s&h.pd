@@ -1,0 +1,25 @@
+#N canvas 0 22 879 437 10;
+#X obj 419 168 inlet~;
+#X obj 419 286 outlet~;
+#X obj 471 137 inlet~;
+#X obj 419 260 samphold~;
+#X msg 514 221 reset;
+#X obj 126 126 cnv 5 5 5 empty empty S&H 0 0 0 12 -262144 -66577 0
+;
+#X obj 104 142 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
+#X obj 103 108 cnv 5 5 5 empty empty SAMPLE 0 0 0 8 -262144 -66577
+0;
+#X obj 154 108 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
+;
+#X obj 515 195 t b b;
+#X obj 156 116 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
+-1;
+#X obj 515 167 threshold~ 0.9 0 0.9 0;
+#X connect 0 0 3 0;
+#X connect 2 0 3 1;
+#X connect 2 0 11 0;
+#X connect 3 0 1 0;
+#X connect 9 0 4 0;
+#X connect 9 1 10 0;
+#X connect 11 0 9 0;
+#X coords 0 -1 1 1 75 50 2 100 100;

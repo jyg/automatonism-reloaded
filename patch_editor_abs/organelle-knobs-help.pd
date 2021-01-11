@@ -1,0 +1,25 @@
+#N canvas 0 22 752 546 10;
+#X obj 24 309 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 182 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 242 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 17 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 24 248 INPUTS:;
+#X text 24 190 CONTROLS:;
+#X text 27 313 OUTPUTS:;
+#X obj 431 16 organelle-knobs;
+#X text 24 16 ORGANELLE-KNOBS:;
+#X text 24 220 none/;
+#X text 24 278 none/;
+#X text 27 343 KNOB1 - output for Organelle knob1;
+#X text 27 372 KNOB2 - output for Organelle knob2;
+#X text 27 407 KNOB3 - output for Organelle knob3;
+#X text 27 438 KNOB4 - output for Organelle knob4;
+#X text 24 56 The "organelle-knobs" module is a module that allows
+you to connect any of the four parameter knobs on the Critter & Guitari
+Organelle to cv inputs in the system. Rememebr that sliders on modules
+becomes offsets when cv is applied so make sure the parameter slider
+is set to zero to access the entire range.;

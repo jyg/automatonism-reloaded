@@ -1,0 +1,24 @@
+#N canvas 0 22 645 504 10;
+#X obj 24 403 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 160 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 297 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty LPG(LOWPASS-GATE): 20 12 0 14
+-150893 -262144 0;
+#X text 27 437 OUT - output;
+#X text 24 198 LEVEL - controls the level of the signal input. The
+response of the slider is determined by the RING/DAMP control.;
+#X text 24 234 RING/DAMP - controls how long you want the lpg to ring
+after exitation.;
+#X text 23 274 CV - attenuator for incoming CV at the CV input;
+#X text 25 333 IN - signal in;
+#X text 26 367 CV - input for cv-control of the LEVEL parameter;
+#X text 24 61 The "LPG" module is a lowpass gate \; a combination of
+vca and lowpass filter. A short trigger/gate signal at the CV input
+is enough to open the gate and you can set the response with the RING/DAMP
+control. A lowpass gate is especially good for percussive "bongo" type
+sounds but can be used just like you would use a vca or a lowpass filter
+as well.;
+#X obj 428 17 lpg;

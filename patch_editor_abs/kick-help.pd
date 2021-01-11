@@ -1,0 +1,45 @@
+#N canvas 9 23 1127 746 10;
+#X obj 455 373 kick;
+#X obj 451 310 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 104 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 443 20 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty KICK-DRUM-SYNTHESIZER: 20 12
+0 14 -150893 -262144 0;
+#X text 454 344 OUT - output;
+#X text 24 148 PITCH - controls the pitch of kick drum;
+#X text 24 242 EG2 - controls the decay length for the pitch envelope
+;
+#X text 447 56 TRIG - trigger/gate input to trigger the sound;
+#X text 447 82 PITCH - input for cv-control over pitch;
+#X text 447 114 DECAY - input for cv-control over decay;
+#X text 24 270 SWEEP - controls the amount of EG2 sent to modulate
+pitch;
+#X text 24 55 The "KICK" module is a synthesized kick drum with the
+ability to store and recall 8 different parameter combinations.;
+#X text 24 215 DECAY -controls the decay length of the envelope;
+#X text 24 180 HOLD -controls the hold length of the envelope before
+entering the decay;
+#X text 24 293 WFORM - controls a three-way-crossfader between sine
+\, saw and square;
+#X text 25 331 FLAM - controls the timing for flam;
+#X text 25 354 FLAM-PROB - controls the probability of a flam happening
+;
+#X text 25 378 ACCENT - controls the accent level;
+#X text 24 403 ACC-PROB - controls the probability of an accent happening
+;
+#X text 24 429 DRIVE - controls the amount of distortion;
+#X text 24 454 TONE - controls the tone of the distortion;
+#X text 24 512 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 24 477 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 448 202 WFORM - input for cv-control over WFORM;
+#X text 448 177 SWEEP - input for cv-control over sweep;
+#X text 447 146 EG 2- input for cv-control over eg2;
+#X text 449 231 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 449 270 RDM - trigger/gate input to randomly select one out
+of the 8 stored patterns;

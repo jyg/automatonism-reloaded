@@ -1,0 +1,23 @@
+#N canvas 0 22 715 438 10;
+#X obj 23 300 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 240 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty ENV-FOLLOWER: 20 12 0 14 -150893
+-262144 0;
+#X obj 429 18 env-follower;
+#X text 26 53 The "ENV-FOLLOWER" is a simple envelope-follower. Use
+it to extract amplitude envelop shapes \, gate signals and for frequency
+detection.;
+#X text 24 137 INPUT - Boost the input signal from 0 - *4;
+#X text 24 161 AMP-SMOOTH - smooth the amplitude shape;
+#X text 24 183 GATE-THRESH - select threshold needed to extract gate
+signal;
+#X text 24 208 AMPLITUDE-/+ - attenueverter to shape the AMPLITUDe
+output;
+#X text 26 276 IN - signal in;
+#X text 26 340 AMPLITUDE - envelope output;
+#X text 26 362 GATE - gate output;
+#X text 26 391 FREQ - frequency detection output;

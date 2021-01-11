@@ -1,0 +1,31 @@
+#N canvas 0 22 663 625 10;
+#X obj 23 462 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 139 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 350 cnv 1 400 30 empty empty INPUTS: 20 12 0 14 -158136 -262144
+0;
+#X obj 20 10 cnv 15 400 30 empty empty POLYSYNTH: 20 12 0 14 -150893
+-262144 0;
+#X text 20 254 ATTACK - attack time of the internal envelope;
+#X obj 431 11 polysynth;
+#X text 22 47 The POLYSYNTH module is a 4 voice polyphonic synth voice.
+It needs a trigger/gate signal at the TRIG input to set off the internal
+envelope. Pitch CV is received at the PITCH. To have it play chords
+instead of single overlapping notes \, use the TRIGGER-TRAIN module.
+( check the TRIGGER-TRAIN help-file for example);
+#X text 20 181 PITCH - select the pitch offset of the synth;
+#X text 20 204 SAW->PULSE - crossfade from sawtooth to pulsewave;
+#X text 20 227 DTUNE - detunes the 4 voices slighlty;
+#X text 22 386 TRIG - trigger the envelope;
+#X text 22 409 PITCH - cv input for the PITCH;
+#X text 22 433 S->P - cv input for the SAW->PULSE control;
+#X text 26 496 LEFT - outputs the left audio;
+#X text 26 538 RIGHT - outputs the right audio;
+#X text 26 572 ENV - outputs the envelope to use as a modulation source
+elsewhere in the system. For example \, to modulate the cutoff of a
+filter placed after the POLYSYNTH.;
+#X text 21 282 HOLD - hold time of the internal envelope \, before
+entering release phase;
+#X text 21 314 RELEASE - release time of the internal envelope \, before
+entering release phase;

@@ -1,0 +1,25 @@
+#N canvas 0 22 712 387 10;
+#X obj 24 274 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 147 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 207 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 20 17 cnv 15 400 30 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X text 24 213 INPUTS:;
+#X text 24 155 CONTROLS:;
+#X text 27 278 OUTPUTS:;
+#X text 24 243 none/;
+#X obj 432 19 organelle-keyboard;
+#X text 25 19 ORGANELLE-KEYBOARD:;
+#X text 24 61 The "organelle-keyboard" module allows you to use the
+Critter & Guitari Organelle keyboard to cv inputs in the system. Rememebr
+that sliders on modules becomes offsets when cv is applied so make
+sure the parameter slider is set to zero to access the entire range.
+;
+#X text 24 185 XPOSE - transposes the octave of the Organelle keys
+;
+#X text 27 308 PITCH - outputs the pitch from the keyboard;
+#X text 27 337 GATE - outputs a trigger/gate signal when a key is pressed
+on the Organelle.;

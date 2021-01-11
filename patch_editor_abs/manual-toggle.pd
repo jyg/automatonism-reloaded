@@ -1,0 +1,10 @@
+#N canvas 0 22 450 300 10;
+#X obj 136 125 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 139 200 pack 0 50;
+#X obj 139 222 line~;
+#X obj 139 244 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X coords 0 -1 1 1 100 75 2 100 100;

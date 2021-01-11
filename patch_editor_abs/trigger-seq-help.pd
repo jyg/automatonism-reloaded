@@ -1,0 +1,25 @@
+#N canvas 0 22 723 574 10;
+#X obj 17 466 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 18 195 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 16 328 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty TRIGGER-SEQ: 20 12 0 14 -150893
+-262144 0;
+#X text 19 274 WRITE - four slots of pattern storage;
+#X text 19 304 LOAD - four slots of pattern recall;
+#X text 15 389 LOAD(1-4) - trigger/gate input to step through stored
+pattern1-4 sequentially;
+#X obj 449 17 trigger-seq;
+#X text 19 230 STEPS1-16 - individual toggle boxes to set the step
+on or off.;
+#X text 15 362 CLOCK-IN - trigger/gate/clock input;
+#X text 15 429 RESET - trigger/gate input to reset the sequencer;
+#X text 17 506 OUT - output;
+#X text 23 52 The "TRIGGER-SEQ" is a trigger/gate sequencer. It has
+a maximum of 16 steps but can be set to any number of steps. The TRIGGER-SEQ
+can store and recall 4 sequences. Click any of the four WRITE slots
+to store in slot 1-4 and click any of the LOAD slots to recall a stored
+sequence. You can step through the stored patterns with a trigger/gate
+signal at the LOAD(1-4) input.;

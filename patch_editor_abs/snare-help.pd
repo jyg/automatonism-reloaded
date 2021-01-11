@@ -1,0 +1,39 @@
+#N canvas 0 22 875 719 10;
+#X obj 452 99 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 106 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 454 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty SNARE-DRUM-SYNTHESIZER: 20 12
+0 14 -150893 -262144 0;
+#X text 455 133 OUT - output;
+#X text 24 490 TRIG - trigger/gate input to trigger the sound;
+#X text 24 516 PITCH - input for cv-control over pitch;
+#X text 24 548 DECAY - input for cv-control over decay;
+#X obj 451 167 snare;
+#X text 24 150 PITCH - controls the pitch of snare drum;
+#X text 24 210 NOISE - controls the decay length of the noise;
+#X text 24 179 DECAY -controls the decay length of the pitch;
+#X text 24 244 COLOR - filtering of the noise for different colors
+;
+#X text 24 580 NOISE - input for cv-control over noise;
+#X text 25 611 COLOR - input for cv-control over color;
+#X text 24 273 FLAM - controls the timing for flam;
+#X text 24 299 FLAM-PROB - controls the probability of a flam happening
+;
+#X text 22 426 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 22 391 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 23 637 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 23 676 RDM - trigger/gate input to randomly select one out
+of the 8 stored patterns;
+#X text 24 327 ACC-PROB - controls the probability of an accent happening
+;
+#X text 24 355 ENVMOD - control the level of the envelope modulating
+the pitch;
+#X text 24 50 The "snare" module is a synthesized snare drum module
+with the ability to store and recall 8 different parameter combinations.
+It produces snare drum sounds in the vein of TR-808.;

@@ -1,0 +1,23 @@
+#N canvas 0 22 679 516 10;
+#X obj 24 426 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 134 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 344 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty ADSR: 20 12 0 14 -150893 -262144
+0;
+#X text 24 469 OUT - output;
+#X obj 437 11 adsr;
+#X text 24 45 The "adsr" module is an attack-decay-sustain-release
+envelope best used with gate signals. AUTOMATONISM is mainly built
+around trigger signals. However \, the GATE-SEQ \, or variable pulsewave
+lfos are valid companions to the ADSR. Also \, use of external controllers
+or keyboards could be used with the module.;
+#X text 24 170 ATTACK - controls the attack time.;
+#X text 24 206 DECAY - controls the decay time;
+#X text 24 242 SUSTAIN - controls the sustain level;
+#X text 24 278 RELEASE - controls the release time;
+#X text 24 316 CURVE - croosfade bewteen linear and exponential curve
+;
+#X text 24 399 GATE - gate input for triggering the ADRS;

@@ -1,0 +1,28 @@
+#N canvas 0 22 564 628 10;
+#X obj 19 423 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 120 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 17 291 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty SINEBANK: 20 12 0 14 -150893
+-262144 0;
+#X obj 431 18 sinebank;
+#X text 24 55 The "SINEBANK" consists of four sinewave oscillators.
+By toggling the LFO toggle the range can be switched between audiorate
+or low frequency rate. Individual outputs as well as a SUM out is provided.
+;
+#X text 24 164 1 - controls the pitch of sinewave 1;
+#X text 24 189 2 - controls the pitch of sinewave 2;
+#X text 24 214 3 - controls the pitch of sinewave 3;
+#X text 24 239 4 - controls the pitch of sinewave 4;
+#X text 24 267 LFO - toggle between audiotrate and LFO;
+#X text 21 327 CV1 - input for controlling sinewave 1;
+#X text 21 350 CV2 - input for controlling sinewave 2;
+#X text 21 373 CV3 - input for controlling sinewave 3;
+#X text 21 396 CV4 - input for controlling sinewave 4;
+#X text 22 457 S1 - sinewave 1 output;
+#X text 22 486 S2 - sinewave 2 output;
+#X text 22 516 S3 - sinewave 3 output;
+#X text 22 546 S4 - sinewave 4 output;
+#X text 22 575 SUM - mix of all four sinewaves;

@@ -1,0 +1,32 @@
+#N canvas 0 22 768 708 10;
+#X obj 26 453 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 151 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 26 259 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty 8STEPS 20 12 0 14 -150893 -262144
+0;
+#X obj 443 21 8steps;
+#X text 24 186 STEPS1-8 - individual sliders to set the voltage level
+of each step;
+#X text 24 228 SCALE - choose scale for quantization;
+#X text 25 293 CLOCK-IN- trigger/gate/clock input;
+#X text 25 321 CV(PRE-Q) - modulation input. CV added to the sequence
+before quantization.;
+#X text 25 362 CV(POST-Q) - modulation input. CV added to the sequence
+after quantization.;
+#X text 26 493 Q-OUT - quantized output;
+#X text 26 523 OUT2 - un-quantized output that outputs the full voltage
+range. This output is often more useful if you're using the sequencer
+to modulate other parameters than pitch of an oscillator.;
+#X text 25 403 RESET - trigger/gate input to force reset the sequencer
+to step 1;
+#X text 23 52 The "8STEPS" module is a simple eight step sequencer
+with onboard quantization. 8steps requires a trigger/gate/clock signal
+at the CLOCK-IN input to step forward. THere are two cv inputs. CV(PRE-Q)
+modulates the sequencer before the quantizer so the sequencer will
+still be in tune when applying modulation here. CV(POST-Q) adds the
+CV after the quantizer so any CV at the input will transpose the sequence
+;
+#X text 26 592 S1 - trigger/gate signal at start of sequence loop;

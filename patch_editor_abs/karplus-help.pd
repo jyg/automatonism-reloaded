@@ -1,0 +1,41 @@
+#N canvas 0 22 659 727 10;
+#X obj 23 609 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 198 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 415 cnv 1 400 30 empty empty INPUTS: 20 12 0 14 -158136 -262144
+0;
+#X obj 20 10 cnv 15 400 30 empty empty KARPLUS-STRONG-RESONATOR: 20
+12 0 14 -150893 -262144 0;
+#X text 22 510 PITCH - input for controlling the pitch with CV;
+#X obj 430 12 karplus;
+#X text 20 240 PITCH - controls the pitch of the resonating strings.
+;
+#X text 20 276 CONTOUR - control the envelope shape of the noise exciter
+;
+#X text 20 312 DAMP - damp the strings;
+#X text 20 352 RESONATE - controls the decay length of the resonator.
+;
+#X text 20 388 COLOR - a simple lowpass filter on the output;
+#X text 22 451 EXC. - trigger/gate input to trigger the resonator;
+#X text 22 474 EXT.EX - remove the normalization of white noise and
+use this external source for exitation instead.;
+#X text 22 533 CNTR - input for controlling the CONTOUR parameter with
+CV.;
+#X text 22 556 DAMP - input for controlling the DAMP parameter with
+CV.;
+#X text 22 579 CLR - input for controlling the COLOR parameter with
+CV.;
+#X text 26 643 MONO - output;
+#X text 26 665 LEFT - left output;
+#X text 26 690 RIGHT - right output;
+#X text 21 47 The "karplus" module is an adaptation of the karplus
+strong algorithm that models the sound of resonating strings. The module
+does not produce constant sound like other oscillators but needs a
+trigger/gate/pulse signal at the EXC. input to trigger an internal
+envelope and make a sound. White noise is used to trigger a short impulse/burst
+to trigger the resonator. You can remove the white noise by patching
+any sound/signal into the EXT.EX input and use that as the exiter sound
+source instead. KARPLUS is actually four independent resonators \,
+which are distributed to left and right outputs to produce a stereo
+polyphonic feel.;

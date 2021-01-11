@@ -1,0 +1,22 @@
+#N canvas 0 22 633 525 10;
+#X obj 23 449 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 95 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 285 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty MIXER4: 20 12 0 14 -150893 -262144
+0;
+#X text 26 483 OUT - output;
+#X text 24 133 CHANNEL1 - controls the level of channel 1;
+#X text 24 169 CHANNEL2 - controls the level of channel 2;
+#X text 24 321 CH1 - signal in;
+#X text 24 347 CH2 - signal in;
+#X obj 433 15 mixer4;
+#X text 21 53 The "mixer4" module is a four-channel summing mixer.
+It can be used with any signal source \; audio \, cv or trigger/gate.
+;
+#X text 24 204 CHANNEL3 - controls the level of channel 3;
+#X text 24 240 CHANNEL4 - controls the level of channel 4;
+#X text 24 378 CH3 - signal in;
+#X text 24 404 CH4 - signal in;

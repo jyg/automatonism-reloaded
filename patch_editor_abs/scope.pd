@@ -1,0 +1,18 @@
+#N canvas 0 22 661 535 10;
+#X obj 103 211 inlet~;
+#X obj 103 318 tabwrite~ \$0-scope;
+#X obj 122 114 cnv 5 5 5 empty empty OSCILLOSCOPE 0 0 0 12 -262144
+-66577 0;
+#X obj 104 109 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -1 0;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-scope 512 float 0;
+#X coords 0 1 511 -1 100 60 1 0 0;
+#X restore 108 133 graph;
+#X obj 148 211 loadbang;
+#X obj 148 279 metro 200;
+#X msg 148 233 1;
+#X connect 0 0 1 0;
+#X connect 5 0 7 0;
+#X connect 6 0 1 0;
+#X connect 7 0 6 0;
+#X coords 0 -1 1 1 125 100 2 100 100;

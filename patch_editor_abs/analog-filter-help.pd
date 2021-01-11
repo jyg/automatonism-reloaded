@@ -1,0 +1,23 @@
+#N canvas 0 22 706 476 10;
+#X obj 23 365 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 103 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 240 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty ANALOG-FILTER 20 12 0 14 -150893
+-262144 0;
+#X text 26 399 OUT - output;
+#X text 24 141 CUTOFF - controls the cutoff frequency of the filter.
+;
+#X text 24 276 IN - signal input;
+#X text 24 299 CUTOFF - input for cv-control over the CUTOFF with onboard
+bi-polar attenuator;
+#X obj 431 17 analog-filter;
+#X text 24 171 Q - controls the resonance;
+#X text 24 200 FM-/+ - bi-polar attenuator for incoming CV at the CUTOFF
+input;
+#X text 24 335 Q - input for cv-control over the Q.;
+#X text 20 59 The "ANALOG-FILTER" module is obviously not real analog
+\, but a digital filter with a very dirty character that behaves irratically
+at high resonances.;

@@ -1,0 +1,18 @@
+#N canvas 0 22 741 454 10;
+#X obj 25 234 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 101 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 176 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty MANUAL-TRIGGERS: 20 12 0 14
+-150893 -262144 0;
+#X obj 446 17 manual-triggers;
+#X text 24 50 The MANUAL-TRIGGERS module simply outputs a trigger whenever
+the T1-T3 buttons are pressed.;
+#X text 25 136 T1-T3 - clicable buttons to output a trigger signal
+at the corresponding output;
+#X text 24 207 /none/;
+#X text 25 274 T1 - output button T1;
+#X text 25 301 T2 - output button T2;
+#X text 25 330 T3 - output button T3;

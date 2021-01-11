@@ -1,0 +1,21 @@
+#N canvas 209 22 616 385 10;
+#X obj 24 315 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 162 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty 4to1-SWITCH: 20 12 0 14 -150893
+-262144 0;
+#X text 27 349 OUT - output;
+#X obj 431 19 4to1-switch;
+#X text 26 53 The "4to1-SWITCH" is a sequential switch that takes 4
+inputs and sequentially steps through the inputs at the output whenever
+a trigger/gate signal is received at te TRIG input.;
+#X text 24 137 /none;
+#X text 26 198 1 - input 1;
+#X text 26 220 2 - input 2;
+#X text 26 242 3 - input 3;
+#X text 26 264 4 - input 4;
+#X text 26 286 TRIG - trigger/gate that triggers the sequential switch
+;

@@ -1,0 +1,33 @@
+#N canvas 0 22 855 666 10;
+#X obj 23 474 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 159 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 362 cnv 1 400 30 empty empty INPUTS: 20 12 0 14 -158136 -262144
+0;
+#X obj 20 10 cnv 15 400 30 empty empty POLYFM: 20 12 0 14 -150893 -262144
+0;
+#X text 20 274 ATTACK - attack time of the internal envelope;
+#X text 20 201 PITCH - select the pitch offset of the synth;
+#X text 22 398 TRIG - trigger the envelope;
+#X text 22 421 PITCH - cv input for the PITCH;
+#X text 26 508 LEFT - outputs the left audio;
+#X text 26 550 RIGHT - outputs the right audio;
+#X obj 474 15 polyfm 0;
+#X text 22 47 The POLYFM module is a 4 voice polyphonic phase modulation
+synth voice. It needs a trigger/gate signal at the TRIG input to set
+off the internal envelope. There are two envelopes \, one for the Carrier
+wave and one for the Modulator. Pitch CV is received at the PITCH.
+To have it play chords instead of single overlapping notes \, use the
+TRIGGER-TRAIN module. ( check the TRIGGER-TRAIN help-file for example)
+;
+#X text 20 224 INDEX - control modulation index;
+#X text 20 247 RATIO - set the frequency ratio of the modulato;
+#X text 20 296 HOLD - hold time of the internal envelope \, before
+entering release phase;
+#X text 20 327 RELEASE - release time of the internal envelope \, before
+entering release phase;
+#X text 22 445 INDEX - cv input for index control;
+#X text 26 584 ENV - outputs the envelope (carrier-EG) to use as a
+modulation source elsewhere in the system. For example \, to modulate
+the cutoff of a filter placed after the POLYSYNTH.;

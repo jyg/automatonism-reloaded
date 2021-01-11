@@ -1,0 +1,20 @@
+#N canvas 0 22 619 378 10;
+#X obj 23 286 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 127 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 197 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty PROBABILITY: 20 12 0 14 -150893
+-262144 0;
+#X text 22 231 IN - signal in;
+#X obj 433 16 probability;
+#X text 24 162 PROB - sets the probability of either signal passing
+through OUT1 or OUT2;
+#X text 22 259 CV - input for cv-control of the PROB paramater;
+#X text 23 326 OUT1 - output1;
+#X text 22 356 OUT2 - output2;
+#X text 23 52 The "PROBABILITY" module is probability logic module
+for trigger/gate signals. It takes a signal at the input and passes
+it forward either to the OUT1 or OUT2 output. The PROB slider set the
+probability of which route the signal goes.;

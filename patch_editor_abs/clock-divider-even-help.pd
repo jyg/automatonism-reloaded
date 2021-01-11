@@ -1,0 +1,19 @@
+#N canvas 305 54 621 409 10;
+#X obj 24 218 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 101 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 160 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty CLOCK-DIVIDER-EVEN 20 12 0 14
+-150893 -262144 0;
+#X obj 439 17 clock-divider-even;
+#X text 24 50 The "clock-divider-even" module is a simple clock divider
+with even subdivisions of the clock. Available divisions are /2 \,
+/4 \, /8 and /16.;
+#X text 23 191 IN - trigger/gate input to be divided;
+#X text 24 258 /2 - input divided by 2;
+#X text 24 287 /4 - input divided by 4;
+#X text 24 316 /8 - input divided by 8;
+#X text 24 345 /16 - input divided by 16;
+#X text 25 136 none/;

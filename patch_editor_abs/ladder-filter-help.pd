@@ -1,0 +1,22 @@
+#N canvas 0 22 636 451 10;
+#X obj 23 367 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 116 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 253 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty LADDER-FILTER 20 12 0 14 -150893
+-262144 0;
+#X text 26 401 OUT - output;
+#X text 24 289 IN - signal input;
+#X text 24 214 FM-/+ - bi-polar attenuator for incoming CV at the CUTOFF
+input;
+#X text 24 184 Q - controls the resonance;
+#X obj 426 18 ladder-filter;
+#X text 24 154 FREQ - controls the cutoff frequency of the filter.
+;
+#X text 24 312 FREQ - input for cv-control over the CUTOFF with onboard
+bi-polar attenuator;
+#X text 20 59 The "LADDER-FILTER" module is a resonant lowpass filter
+with cv-control over cutoff frequency. It has slightly more character
+than LP-FILTER with more warmth and a steeper slope.;

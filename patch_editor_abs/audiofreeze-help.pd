@@ -1,0 +1,27 @@
+#N canvas 407 34 748 574 10;
+#X obj 23 387 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 303 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty AUDIOFREEZE: 20 12 0 14 -150893
+-262144 0;
+#X text 25 429 OUT - output;
+#X obj 438 16 audiofreeze;
+#X text 24 58 The AUDIOFREEZE module takes an audio input and re-creates
+a snaphost of the spectral field with re-syntheiss when you trigger
+the FREEZE button.;
+#X text 25 137 ATTACK - controls the attack time for the re-synthesised
+snapshot;
+#X text 25 165 DECAY- controls the decay time for the re-synthesised
+snapshot;
+#X text 25 191 MODRATE - controls modulation rate to the re-synthesised
+snapshot;
+#X text 26 218 MODINDEX - controls modulation index of the re-synthesised
+snapshot;
+#X text 26 248 DRY/WET - controls the ratioe between dry and wet signal
+;
+#X text 26 267 FREEZE - toggle to freeze the audio;
+#X text 26 339 IN - signal input;
+#X text 26 362 FREEZE - trigger input to freeze the audio;

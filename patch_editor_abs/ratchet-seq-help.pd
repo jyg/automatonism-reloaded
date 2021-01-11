@@ -1,0 +1,28 @@
+#N canvas 0 23 899 595 10;
+#X obj 16 501 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 18 151 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 15 318 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty RATCHET-SEQ: 20 12 0 14 -150893
+-262144 0;
+#X text 18 294 LOAD - four slots of pattern recall;
+#X text 14 464 RESET - trigger/gate input to reset the sequencer;
+#X text 16 541 OUT - output;
+#X obj 439 18 ratchet-seq 0;
+#X text 19 186 x 1-5 - click the any of the boxes named x1 \, x2 \,
+x3 \, x4 & x5 to produce 1 to 5 trigger signals per sequencer steps.
+;
+#X text 23 52 The "RATCHET-SEQ" is a trigger/gate sequencer with ratcheting(step
+multiplying). The RATCHET-SEQ can store and recall 4 sequences. Click
+any of the four STORE slots to store in slot 1-4 and click any of the
+LOAD slots to recall a stored sequence. You can step through the stored
+patterns with a trigger/gate signal at the LOAD(1-4) input.;
+#X text 18 264 STORE - four slots of pattern storage;
+#X text 17 234 ON/OFF - click the toggles to set a step on or off;
+#X text 14 352 TRIG - trigger/gate/clock input;
+#X text 14 424 LOAD(1-4) - trigger/gate input to step through stored
+pattern1-4 sequentially;
+#X text 14 380 RDM! - trigger/gate input to produce random sequencer
+settings;

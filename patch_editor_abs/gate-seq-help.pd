@@ -1,0 +1,22 @@
+#N canvas 0 22 592 461 10;
+#X obj 17 368 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 17 126 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 16 230 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty GATE-SEQ: 20 12 0 14 -150893
+-262144 0;
+#X text 17 408 OUT - output;
+#X obj 433 15 gate-seq;
+#X text 23 52 The "GATE-SEQ" is an eight-step gate sequencer with adjustable
+gate-length and on/off per step. All parameters can randomized by clicking
+the RDM! button manually or by CV.;
+#X text 18 161 STEPS1-8 - individual toggle boxes to set the step on
+or off.;
+#X text 17 203 GATE-LENGTH SLIDERS: - set the gate length per step
+;
+#X text 15 264 CLOCK - trigger/gate/clock input;
+#X text 15 292 RESET - trigger/gate input to reset the sequencer;
+#X text 15 323 RDM! - trigger/gate input to randomize all parameters
+;

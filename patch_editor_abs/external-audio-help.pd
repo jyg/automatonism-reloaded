@@ -1,0 +1,29 @@
+#N canvas 0 22 822 674 10;
+#X obj 29 366 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 26 165 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 28 306 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty EXTERNAL-AUDIO: 20 12 0 14 -150893
+-262144 0;
+#X text 30 203 INPUT - Boost the input signal from 0 - *4;
+#X text 30 227 AMP-SMOOTH - smooth the amplitude shape;
+#X text 30 249 GATE-THRESH - select threshold needed to extract gate
+signal;
+#X text 32 473 GATE - gate output;
+#X text 32 495 FREQ - frequency detection output;
+#X obj 434 13 external-audio;
+#X text 30 274 AMPLITUDE-/+ - attenueverter to shape the AMPLITUDE
+output;
+#X text 32 342 /none;
+#X text 32 411 CH1 - left audio out;
+#X text 32 433 CH2 - right audio out;
+#X text 32 453 ENV - envelope output;
+#X text 26 53 The "EXTERNAL-AUDIO" module is similar to the envelope
+follower moduler. It takes the audio input from your soundcard input
+channels 1 and 2 \, and outputs the audio \, extracts amplitude envelop
+shapes and gate signals and performs frequency detection. To change
+the input channels \, you need to open the module and change the object
+[adc~ 1 2]. Change the numbers 1 & 2 to the channel numbers you want
+to use.;

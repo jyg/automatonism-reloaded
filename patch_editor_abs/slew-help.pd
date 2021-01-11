@@ -1,0 +1,16 @@
+#N canvas 62 44 624 342 10;
+#X obj 25 242 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 87 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 146 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty SLEW: 20 12 0 14 -150893 -262144
+0;
+#X text 24 180 IN - signal in;
+#X text 25 282 OUT - output;
+#X obj 430 17 slew;
+#X text 26 122 SLEW - controls amount of slew/portamento;
+#X text 28 213 CV - input for cv-control of the SLEW parameter;
+#X text 24 49 The "SLEW" module is a slew limiter. Use it to apply
+slew/portamento to cv-signals.;

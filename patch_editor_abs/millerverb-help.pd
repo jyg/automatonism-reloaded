@@ -1,0 +1,26 @@
+#N canvas 0 22 643 523 10;
+#X obj 24 402 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 83 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 274 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty MILLERVERB: 20 12 0 14 -150893
+-262144 0;
+#X text 24 310 IN - signal in;
+#X obj 429 9 millerverb;
+#X text 19 161 LOWPASS - controls the cutoff frequency of a non resonant
+lowpass filter;
+#X text 24 340 REVERB -input for cv-control over the REVERB parameter
+;
+#X text 24 371 LPASS -input for cv-control over the LOWPASS parameter
+;
+#X text 20 242 GAIN - controls the output gain;
+#X text 19 125 REVERB - controls amount of reverb/size of the room
+;
+#X text 20 210 DRY/WET - controls the balance between dry and wet signal
+;
+#X text 27 436 LEFT - left output;
+#X text 26 466 RIGHT - right output;
+#X text 21 47 The "MILLERVERB" module is a stereo reverb unit based
+on the reverberation example code from Miller Puckette's book.;

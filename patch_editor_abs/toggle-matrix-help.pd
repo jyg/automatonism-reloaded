@@ -1,0 +1,25 @@
+#N canvas 0 22 581 519 10;
+#X obj 22 369 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 111 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 237 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty TOGGLE-MATRIX: 20 12 0 14 -150893
+-262144 0;
+#X obj 434 16 toggle-matrix;
+#X text 21 53 The "TOGGLE-MATRIX" module is a classic matrix mixer
+with toggle switches instead of potentiometers. Four signal inputs
+can be turned on/off in four different ways at the A-D outputs.;
+#X text 24 149 TOGGLES - 1A-4A;
+#X text 24 170 TOGGLES - 1B-4B;
+#X text 24 192 TOGGLES - 1C-4C;
+#X text 24 211 TOGGLES - 1D-4D;
+#X text 23 273 1 - input one;
+#X text 23 297 2 - input two;
+#X text 23 323 3 - input three;
+#X text 23 348 4 - input four;
+#X text 25 403 A - output A;
+#X text 25 426 B - output B;
+#X text 25 453 C - output C;
+#X text 25 479 D - output D;

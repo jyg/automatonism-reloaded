@@ -1,0 +1,33 @@
+#N canvas 0 22 747 730 10;
+#X obj 19 622 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 106 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 444 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty FILTERBANK: 20 12 0 14 -150893
+-262144 0;
+#X obj 433 16 graphic-eq 0;
+#X text 24 144 100 - set the level of the 100Hz bandpass filter;
+#X text 24 167 200 - set the level of the 200Hz bandpass filter;
+#X text 24 190 400 - set the level of the 400Hz bandpass filter;
+#X text 24 213 800 - set the level of the 800Hz bandpass filter;
+#X text 24 236 1600 - set the level of the 1600Hz bandpass filter;
+#X text 24 259 3200 - set the level of the 3200Hz bandpass filter;
+#X text 24 282 6400 - set the level of the 6400Hz bandpass filter;
+#X text 24 308 CV(LOW) - attenuator for CV at the LOW input;
+#X text 24 331 CV(MID) - attenuator for CV at the MID input;
+#X text 24 357 CV(HIGH) - attenuator for CV at the HIGH input;
+#X text 24 383 Q - global control for the Q of all bandpass filters
+;
+#X text 24 410 LEVEL - adjust output level of the GRAPHIC-EQ;
+#X text 21 488 LEFT - left audio input;
+#X text 20 512 RIGHT - right audio input;
+#X text 21 537 LOW - cv input for the purple bandpass filters;
+#X text 21 568 MID - cv input for the green bandpass filters;
+#X text 20 595 HIGH - cv input for the pink bandpass filters;
+#X text 22 665 L - left channel output;
+#X text 22 691 R - right channel output;
+#X text 24 61 The "FILTERBANK"module is stereo 7-band equalizer. Use
+it to shape the tone of your soundsoruces. It was previously called
+"GRAPHIC-EQ" in Automatonism 2;

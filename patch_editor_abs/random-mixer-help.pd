@@ -1,0 +1,43 @@
+#N canvas 0 22 919 650 10;
+#X obj 439 282 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 282 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 460 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty RANDOM-MIXER: 20 12 0 14 -150893
+-262144 0;
+#X text 25 320 CH1 \, CH2 \, CH3 & CH4 - controls gain of equivalent
+channel;
+#X text 28 504 CH1-4 - channel inputs;
+#X obj 441 59 random-mixer 0;
+#X text 21 53 The "RANDOM-MIXER" module is a mixer that takes 4 inputs
+with individual gain control and on/off toggles. It takes trigger/gate
+signals to either randomly solo a channel or randomly mute channels.
+With RANDOM-SOLO only one channel is active at the same time. With
+RANDOM-MUTE any combinations of on and off states are possible. The
+main purpose of the mixer is to in a musical but unpredictable way
+switch between different kinds of material. It also features 4 effects:
+reverb \, delay \, overdrive and bitcrush. Set the effect level with
+the purple FXSEND slider and choose effect with the button underneath
+the slider. Send a trigger/gate signal to the FX input to randomly
+change type of effect. The module can be used as a simple tool to manually
+turn material on or off or become a creative sequencer by for example
+sending various percussive sounds to channels 1-4 and using various
+trigger sources to the FX \, SOLO & MUTE inputs.;
+#X text 25 344 GREEN TOGGLES - turn channels on or off;
+#X text 25 368 FX BUTTON (right of green toggles) - press to change
+FX;
+#X text 25 392 FXSEND - set the amount of FX;
+#X text 25 416 RANDOM-SOLO - click to randomly select a channel to
+be solo;
+#X text 25 440 RANDOM-MUTE - click to randomly mute any channel;
+#X text 28 526 FX - cv input for fxsend amount;
+#X text 28 548 FX(pink) - trigger/gate input to randomly swap FX;
+#X text 28 570 SOLO - trigger/gate input to randomly solo a channel
+;
+#X text 28 592 MUTE - trigger/gate input to randomly mute channels
+;
+#X text 442 316 LEFT - left output;
+#X text 442 342 RIGHT - right output;
+#X text 442 367 CH1-4 - individual outputs for channels 1-4;

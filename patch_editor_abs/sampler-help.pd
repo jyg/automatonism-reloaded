@@ -1,0 +1,36 @@
+#N canvas 0 23 903 664 10;
+#X obj 28 533 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 231 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 27 388 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty SAMPLER: 20 12 0 14 -150893
+-262144 0;
+#X obj 432 20 sampler 0;
+#X text 29 269 FILE - select between sample 1-8;
+#X text 29 331 LOOP/1SHOT - toggle between looping mode and 1shot mode.
+In 1shot mode the sampler needs a trigger signal at the TRIG input
+to fire the sample.;
+#X text 31 424 TRIG - trigger input to play sample in 1SHOT mode;
+#X text 31 446 PITCH - cv input for PITCH;
+#X text 32 471 FILE - cv input for modulating what sample is active
+;
+#X text 32 505 LOOP - trigger input to switch between LOOP and 1SHOT
+mode;
+#X text 31 579 LEFT - sample left channel output;
+#X text 31 608 RIGHT - sample right output;
+#X text 31 634 SOS - trigger output at the start of each sample;
+#X text 29 288 PITCH - change the pitch of the sample;
+#X text 29 310 P.CV - attenuator for cv at the PICTH input;
+#X text 25 52 The "SAMPLER" module can load 8 different .wav tracks.
+The files are located in ../samples/ and are named sample1.wav \, sample2.wav
+\, sample3.wav etc. To change the samples you have to replace those
+files with your own files \, while keeping the same name structure.
+This might seem counter-intuitive but the advantage of this system
+is that your files will alwyays be pointed to the right location and
+you can move your project main folder anywhere and to different platforms
+without losing your samples. If you want a sampler that can load files
+from anywhere on your harddrive I suggest you try the excellent sampler
+module made by Claude Barker. More info about that at: https://github.com/megalon/pd-AUTOMATONISM-sampler
+;

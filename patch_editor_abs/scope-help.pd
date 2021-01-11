@@ -1,0 +1,15 @@
+#N canvas 0 22 581 316 10;
+#X obj 24 218 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 101 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 160 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty OSCILLOSCOPE: 20 12 0 14 -150893
+-262144 0;
+#X text 25 136 none/;
+#X text 23 194 IN - signal in;
+#X text 24 258 OUT - output;
+#X obj 437 16 scope;
+#X text 24 49 The "SCOPE" module is a simple oscilloscope. Use it frequently
+to gain a deeper understanding of signals!;

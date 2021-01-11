@@ -1,0 +1,19 @@
+#N canvas 0 22 620 390 10;
+#X obj 24 218 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 101 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 24 160 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty CLOCK-DIVIDER-ODD: 20 12 0 14
+-150893 -262144 0;
+#X text 23 191 IN - trigger/gate input to be divided;
+#X text 25 136 none/;
+#X obj 439 17 clock-divider-odd;
+#X text 24 258 /3 - input divided by 3;
+#X text 24 287 /5 - input divided by 5;
+#X text 24 316 /7 - input divided by 7;
+#X text 24 346 /9 - input divided by 9;
+#X text 24 50 The "CLOCK-DIVIDER-ODD" module is a simple clock divider
+with odd subdivisions of the clock. Available divisions are /2 \, /5
+\, /7 and /9.;

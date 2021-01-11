@@ -1,0 +1,47 @@
+#N canvas 0 22 1044 686 10;
+#X obj 451 236 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 104 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 443 20 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty PERCUSSION-SYNTHESIZER: 20 12
+0 14 -150893 -262144 0;
+#X text 454 270 OUT - output;
+#X text 447 56 TRIG - trigger/gate input to trigger the sound;
+#X text 24 442 FLAM - controls the timing for flam;
+#X text 24 465 FLAM-PROB - controls the probability of a flam happening
+;
+#X text 23 485 ACC-PROB - controls the probability of an accent happening
+;
+#X text 23 548 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 23 513 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 448 142 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 448 181 RDM - trigger/gate input to randomly select one out
+of the 8 stored patterns;
+#X obj 458 304 percussion 0;
+#X text 24 55 The "PERCUSSION" module is a synthesized 3-OPFM percsussion
+generator with ability to store and recall 8 different parameter combinations.
+;
+#X text 24 148 OP1(CARRIER) - controls the pitch of the carrier;
+#X text 24 229 ENVMOD - controls the amount of envelope modulating
+the pitch of the carrier.;
+#X text 24 195 P-DECAY -controls the decay lenth of the envelope modulating
+the pitch of the carrier.;
+#X text 24 265 FEEDBACK - controls the amount frequency modulation
+feedback. (carrier fed back to itself);
+#X text 24 323 FREE - toggle to set the modulators tp either free-running
+frequencies or set multiplications of the carrier.;
+#X text 24 170 DECAY1 -controls the envelope decay for operator 1;
+#X text 24 361 DECAY2 -controls the envelope decay for operator 2;
+#X text 24 381 INDEX -controls the amount of modulation amount for
+operator 2;
+#X text 24 304 OP2(MOD) - controls the pitch of operator 2 (modulator)
+;
+#X text 24 416 OP3(MOD) - identical controls as OP2...;
+#X text 447 82 OP1 - input for cv-control over the carrier's pitch
+;
+#X text 447 114 INDEX - input for cv-control over OP2 & OP3 INDEX;

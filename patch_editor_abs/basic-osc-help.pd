@@ -1,0 +1,28 @@
+#N canvas 0 22 649 540 10;
+#X obj 23 466 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 134 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 334 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty BASIC-OSCILLATOR 20 12 0 14
+-150893 -262144 0;
+#X text 24 437 FM- frequency modulation input with onboard attenuator
+;
+#X text 26 500 OUT - output;
+#X obj 428 17 basic-osc;
+#X text 24 172 PITCH - controls the pitch of the oscillator within
+the range of 8.175Hz -12543Hz (midi notes 0-127);
+#X text 24 205 P-WIDTH - controls the width of the pulsewave;
+#X text 24 231 PWM - attenuator for incoming cv at the PWM input;
+#X text 24 266 FM - attenuator for incoming CV at the FM input.;
+#X text 23 297 WAVESELECTOR - switch bewteen sine \, triangle \, saw
+and pulsewave;
+#X text 24 370 PITCH - input for controlling the pitch with CV;
+#X text 24 400 PWM - input for controlling the pulsewidth of the pulsewave
+with CV;
+#X text 24 61 The "BASIC-OSC" module is a simple oscillator providing
+sine \, triangle \, saw and pulsewave with adjustable pulsewidth. The
+Basic Oscillator is crude and digital--it sounds best in lower resgisters
+but is low on the CPU. For less aliasing and digital artefacts use
+"BWL-OSC".;

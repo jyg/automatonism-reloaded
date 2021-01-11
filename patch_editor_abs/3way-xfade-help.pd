@@ -1,0 +1,19 @@
+#N canvas 0 22 668 400 10;
+#X obj 23 298 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 103 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 166 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty 3WAY-XFADE: 20 12 0 14 -150893
+-262144 0;
+#X text 26 332 OUT - output;
+#X text 24 202 IN-1 - signal in 1;
+#X text 24 231 IN-2 - signal in 2;
+#X text 24 260 XFADE - input for cv-control of the XFADE parameter
+;
+#X obj 431 18 3way-xfade;
+#X text 24 57 The "3WAY-XFADE" module is a three-way crossfader. Three
+signal inputs can be crossfaded with a slider manually or with cv.
+;
+#X text 24 138 XFADE - crossfades between signal 1 \, 2 and 3;

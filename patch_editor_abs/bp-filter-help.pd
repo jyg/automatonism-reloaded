@@ -1,0 +1,23 @@
+#N canvas 0 22 619 485 10;
+#X obj 23 375 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 103 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 272 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty BANDPASS-FILTER 20 12 0 14 -150893
+-262144 0;
+#X text 26 424 OUT - output;
+#X text 24 141 CUTOFF - controls the cutoff frequency of the filter.
+;
+#X text 24 233 FM-/+ - bi-polar attenuator for incoming CV at the FREQ
+input;
+#X text 24 308 IN - signal input;
+#X text 24 331 FREQ - input for cv-control over the CUTOFF with onboard
+bi-polar attenuator;
+#X text 20 59 The "bp-filter" module is a 4-pole resonant bandpass
+filter with control over cutoff frequency \, resonance and drive(output
+gain);
+#X text 24 176 RES - controls the resonance;
+#X text 24 207 DRIVE - controls the output gain;
+#X obj 430 16 bp-filter;

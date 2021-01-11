@@ -1,0 +1,21 @@
+#N canvas 0 23 843 493 10;
+#X obj 23 375 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 22 278 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty TREMOLO: 20 12 0 14 -150893
+-262144 0;
+#X text 25 417 OUT - output;
+#X obj 438 16 tremolo;
+#X text 24 58 The TREMOLO module has three flavours of tremolo: harmonic
+\, tube and photocell with CV control over RATE.;
+#X text 25 137 RATE- controls tremolo rate;
+#X text 25 165 CV - attenuator for cv at the RATE input;
+#X text 25 191 SLOPE - controls the slope of the tremolo modulator
+;
+#X text 26 218 DEPTH - controls tremolo depth;
+#X text 26 247 SELECTROR - select HARMONIC \, TUBE or PHOTOCELL;
+#X text 26 314 IN - signal input;
+#X text 26 347 RATE - signal input;

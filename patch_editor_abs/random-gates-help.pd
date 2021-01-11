@@ -1,0 +1,16 @@
+#N canvas 0 22 686 317 10;
+#X obj 20 129 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 235 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty RANDOM-GATES: 20 12 0 14 -150893
+-262144 0;
+#X text 21 279 OUT - output;
+#X obj 427 17 random-gates;
+#X text 24 167 INTENSITY - controls the intensity of random gates;
+#X text 24 203 PROB. - controls the probability of a gate happening
+;
+#X text 24 61 The "RANDOM-GATES" module generates random trigger/gate
+signals by feeding random tempi to a metronome. You have control over
+the rhythmic intensity as well as the probability of a trigger/gate
+happening.;

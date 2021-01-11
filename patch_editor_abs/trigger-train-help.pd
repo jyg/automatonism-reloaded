@@ -1,0 +1,25 @@
+#N canvas 0 22 965 486 10;
+#X obj 25 277 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 122 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 25 181 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty TRIGGER-TRAIN: 20 12 0 14 -150893
+-262144 0;
+#X text 24 215 IN - signal in;
+#X text 25 317 OUT - output;
+#X obj 434 100 trigger-train;
+#X text 24 49 The TRIGGER-TRAIN module takes one trigger/gate signal
+and outputs four in series. The time between the four triggers are
+set with the DELAY slider. It is particularly useful to make the POLYSYNTH
+and POLYFM play chords. See example to the right.;
+#X obj 434 15 clock;
+#X obj 434 269 polysynth;
+#X obj 700 185 8steps;
+#X text 26 157 DELAY - controls delay time in between triggers;
+#X text 25 248 CV - input for cv-control of the DELAY parameter;
+#X connect 6 0 9 0;
+#X connect 6 0 10 0;
+#X connect 8 0 6 0;
+#X connect 10 0 9 1;

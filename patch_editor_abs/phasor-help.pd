@@ -1,0 +1,19 @@
+#N canvas 0 22 636 384 10;
+#X obj 23 276 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 90 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 191 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty STEREO-PHASOR: 20 12 0 14 -150893
+-262144 0;
+#X text 24 227 IN - signal input;
+#X obj 428 18 phasor;
+#X text 24 128 PHASOR - controls amount of phasor effect.;
+#X text 24 159 CV - attenuator for incoming cv at the PHASOR input
+;
+#X text 24 250 PHASOR - input for cv-control over the PHASOR parameter.
+;
+#X text 26 310 LEFT - left output;
+#X text 26 330 RIGHT - right output;
+#X text 20 59 The "PHASOR" module is a stereo phasor effect.;

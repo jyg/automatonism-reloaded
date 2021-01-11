@@ -1,0 +1,20 @@
+#N canvas 0 22 623 435 10;
+#X obj 24 353 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 136 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 242 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty CLOCK: 20 12 0 14 -150893 -262144
+0;
+#X text 27 387 OUT - output;
+#X obj 426 19 clock;
+#X text 25 174 CLK_RATE - controls the clock-rate;
+#X text 25 210 ON/OFF - turn the clock on/off;
+#X text 25 278 CLK_RATE - input for cv-control of the clock rate;
+#X text 25 320 ON/OFF - trigger/gate input for turning the clock on/off
+;
+#X text 21 53 The "CLOCK" module is a simple clock/trigger/gate generator.
+Control the clock-rate or turn the clock on/off. Notice that there
+are other ways to generate clocks in the patch editor. For example
+using BASIC-LFO or the EOC of a cycling envelope.;

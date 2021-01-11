@@ -1,0 +1,20 @@
+#N canvas 0 22 668 398 10;
+#X obj 23 320 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 103 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 213 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty HIGHPASS-FILTER: 20 12 0 14
+-150893 -262144 0;
+#X text 26 354 OUT - output;
+#X text 24 172 FM-/+ - bi-polar attenuator for incoming CV at the FREQ
+input;
+#X text 24 249 IN - signal input;
+#X obj 429 16 hp-filter;
+#X text 20 59 The "hp-filter" module is a 1-pole non-resonant highpass
+filter with control over cutoff frequency.;
+#X text 24 141 FREQ - controls the cutoff frequency of the filter.
+;
+#X text 24 272 FREQ - input for cv-control over the FREQ with onboard
+bi-polar attenuator;

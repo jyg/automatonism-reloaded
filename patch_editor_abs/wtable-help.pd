@@ -1,0 +1,26 @@
+#N canvas 0 22 611 504 10;
+#X obj 22 437 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 99 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 279 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty WAVETABLE-OSCILLATOR: 20 12
+0 14 -150893 -262144 0;
+#X text 24 409 FM- frequency modulation input with onboard attenuator
+;
+#X text 24 247 FM - attenuator for incoming CV at the FM input.;
+#X text 25 471 OUT - output;
+#X obj 428 17 wtable;
+#X text 24 137 PITCH - controls the pitch of the oscillator within
+the range of 8.175Hz -12543Hz (midi notes 0-127);
+#X text 24 177 X - morph between three tables;
+#X text 24 200 Y - moprh between banks of tables;
+#X text 24 221 Z - moprh between;
+#X text 26 53 The "wtable" module is a three dimensional wavetable
+oscillator. Scan \, morph and crossfade 18 wavetables with X \, Y &
+Z.;
+#X text 24 315 PITCH - input for controlling the pitch with CV;
+#X text 24 341 X - input for cv-control over the X-axis;
+#X text 24 365 Y - input for cv-control over the Y-axis;
+#X text 24 388 Z - input for cv-control over the Z-axis;

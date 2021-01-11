@@ -1,0 +1,9 @@
+#N canvas 0 22 505 192 10;
+#X obj 21 89 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty NOISE-SOURCE 20 12 0 14 -150893
+-262144 0;
+#X text 24 123 OUT - output;
+#X obj 428 17 noise;
+#X text 22 50 The NOISE module produces a constant white noise at the
+output.;

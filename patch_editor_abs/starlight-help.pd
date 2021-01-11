@@ -1,0 +1,32 @@
+#N canvas 0 23 979 744 10;
+#X obj 461 367 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 17 97 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 459 301 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty STARLIGHT: 20 12 0 14 -150893
+-262144 0;
+#X text 464 401 LEFT - output;
+#X text 464 427 RIGHT - output;
+#X obj 457 18 starlight;
+#X text 24 55 The STARLIGHT module is a dual pitchshifting delay \,
+a reverse delay \, a reverb and lo-fi maker.;
+#X text 21 135 DELAY1 - delay time for DLY1;
+#X text 21 157 PITCH1 - controls the pitchshifter of DLY1;
+#X text 20 178 FEEDBACK1 - controls the feedback of DLY1;
+#X text 21 198 DLY1-MIX - set the level of DLY1;
+#X text 20 240 DELAY2 - delay time for DLY2;
+#X text 20 263 PITCH2 - controls the pitchshifter of DLY2;
+#X text 20 287 FEEDBACK2 - controls the feedback of DLY2;
+#X text 20 307 DLY2-MIX - set the level of DLY2;
+#X text 22 353 REVDLY - controls the time for the reverse delay;
+#X text 21 373 FEEDBACK - controls the feedback for the reverse delay
+;
+#X text 21 391 REVERSE MIX - set the level of the reverse delay;
+#X text 463 337 IN - input;
+#X text 21 433 LOFI-FREQ - set the frequency audiorate modulation for
+lofi-sounds;
+#X text 21 465 LOFI-MIX - set the level of LOFI;
+#X text 23 484 ROOMSIZE - controls the size of the reverb;
+#X text 22 504 LOFI+VERB-MIX - set the level of LOFI and REVERB;

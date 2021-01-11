@@ -1,0 +1,21 @@
+#N canvas 0 22 633 414 10;
+#X obj 23 315 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 145 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 23 215 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty QUANTIZER: 20 12 0 14 -150893
+-262144 0;
+#X text 22 249 IN - signal in;
+#X obj 434 19 quantizer;
+#X text 24 180 SCALE - choose scale;
+#X text 22 276 TRIG - trigger/gate input to sample the CV at the IN
+input and force quantization.;
+#X text 23 355 OUT- output;
+#X text 23 52 The "QUANTIZER" module is a simple quantizer. It takes
+any cv signal and quantizes the range into intervalic scales. Patch
+any signal to the IN input and get the quantized voltage at the output.
+Available scales: ionian \, dorian \, phrygian \, lydian \, aeolian
+\, whole \, chromatic \, harmonic-major \, lydian-minor \, ancient
+\, tetra \, indian \, pelog \, slendro;

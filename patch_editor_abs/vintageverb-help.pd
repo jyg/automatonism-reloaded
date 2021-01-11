@@ -1,0 +1,37 @@
+#N canvas 28 22 877 628 10;
+#X obj 450 96 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 96 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 19 366 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 10 cnv 15 400 30 empty empty VINTAGEVERB: 20 12 0 14 -150893
+-262144 0;
+#X text 23 402 IN - signal in;
+#X text 18 283 DRY/WET - controls the balance between dry and wet signal
+;
+#X text 453 136 LEFT - left output;
+#X text 452 166 RIGHT - right output;
+#X text 23 432 SIZE -input for cv-control over the SIZE parameter;
+#X obj 453 207 vintageverb 0;
+#X text 21 47 The "VINTAGEVERB" module is a reverb unit designed to
+sound old and more like a spring reverb. It features the ability to
+store and recall 8 different parameter combinations.;
+#X text 19 138 TAIL - controls the reverb tail length;
+#X text 19 160 SIZE - controls the room size;
+#X text 19 184 WOBBLE - controls wobbling of the signal;
+#X text 19 212 CRUNCH - adds slight distortion to the output;
+#X text 19 235 MUD - add muddiness to the output;
+#X text 19 259 WIDTH - controls stereo width;
+#X text 18 341 LOAD - press any of the 8 slots to load stored combinations
+;
+#X text 18 306 STORE - press any of the 8 slots and the current parameter
+combinations are stored in that location;
+#X text 23 518 LOAD - trigger/gate input to sequentially step through
+the 8 stored patterns.;
+#X text 23 557 RDM - trigger/gate input to randomly select one out
+of the 8 stored patterns;
+#X text 23 463 WIDTH -input for cv-control over the WIDTH parameter
+;
+#X text 23 494 D/W -input for cv-control over the DRY/WET parameter
+;

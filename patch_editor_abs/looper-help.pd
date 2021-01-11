@@ -1,0 +1,31 @@
+#N canvas 0 22 670 591 10;
+#X obj 31 469 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 28 171 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 30 312 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty LOOPER: 20 12 0 14 -150893 -262144
+0;
+#X text 34 515 LEFT - sample left channel output;
+#X text 34 544 RIGHT - sample right output;
+#X obj 436 15 looper 0;
+#X text 26 55 The "LOOPER" module can record signals from your patch
+and loop them. It works like a live sampler. Press the RECORD toggle
+to record and stop recording. The recording can be automated by trigger
+signals at the REC input. The LOOPER can record CV signals as well
+as audio. It keeps the last recorded loop in memory when you quit PD
+\, however when you launch the patch again it needs 5-7 seconds to
+load the recording.;
+#X text 32 209 SPEED - control the playback speed of the recorded loop
+;
+#X text 32 233 RECODS - toggle recoring on/off;
+#X text 32 255 ORIGINAL - press the button to get back to the orginal
+speed of the recording;
+#X text 34 348 IN-L - left input;
+#X text 34 391 SPEED - cv input for modulating the SPEED parameter
+;
+#X text 34 370 IN-R - right input;
+#X text 34 411 REC - trigger input to start/stop recording;
+#X text 35 431 RESET - trigger input to start the recording from the
+beginning;

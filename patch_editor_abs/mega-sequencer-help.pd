@@ -1,0 +1,46 @@
+#N canvas 0 22 864 638 10;
+#X obj 439 473 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 17 289 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 439 288 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty MEGA-SEQUENCER 20 12 0 14 -150893
+-262144 0;
+#X text 18 367 SCALE - choose scale for quantization;
+#X text 439 513 Q-OUT - quantized output;
+#X text 440 544 OUT2 - un-quantized output that outputs the full voltage
+range. This output is often more useful if you're using the sequencer
+to modulate other parameters than pitch of an oscillator.;
+#X obj 431 17 mega-sequencer;
+#X text 18 324 STEPS1-16 - individual sliders to set the voltage level
+of each step;
+#X text 18 397 XPOSE - transpose the sequence -24 semitones to +24
+semitones.;
+#X text 18 440 RANDOM-STEP - 16 toggleboxex underneath each step which
+when activated will force a random voltage on that particular step.
+;
+#X text 18 496 RDM-PATTERN - button to instantly create a random pattern
+;
+#X text 18 526 RESET-TOGGLES - button toreset all RANDOM-STEP toggles
+to zero.;
+#X text 18 569 WRITE - four slots of pattern storage;
+#X text 18 599 LOAD - four slots of pattern recall;
+#X text 438 322 CLK - trigger/gate/clock input;
+#X text 438 350 RANDOMIZE - trigger/gate input to randomize the entire
+pattern;
+#X text 437 397 LOAD(1-4) - trigger/gate input to step through stored
+pattern1-4 sequentially;
+#X text 23 52 The "MEGA-SEQUENCER" is an advanced sequencer tool. It
+has 16 steps and a randomization function per step. Ticking the toggle
+box beneath each step will randomize the value for that step. There
+are controls for choosing scale (SCALE) and transposing the sequence
+- 24 semitones to +24 semitones (XPOSE). THere is a bang button called
+RDM-PATTERN that will supply new values randomly to all the steps.
+The button RESET-TOGGLES resets all random-step toggles to zero. The
+MEGA-SEQUENCER can store and recall 4 sequences. Click any of the four
+WRITE slots to store in slot 1-4 and click any of the LOAD slots to
+recall a stored sequence. Storing sequences with different SCALE and
+XPOSE sequences can create some quite complex variations. You can step
+through the stored patterns with a trigger/gate signal at the LOAD(1-4)
+input.;

@@ -1,0 +1,13 @@
+#N canvas 0 22 450 300 10;
+#X obj 217 110 inlet~;
+#X obj 217 176 outlet~;
+#X obj 104 167 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
+#X obj 103 108 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -66577 0;
+#X obj 125 123 cnv 5 5 5 empty empty VOLTAGE 0 0 0 12 -262144 -66577
+0;
+#X obj 121 145 cnv 5 5 5 empty empty INVERTER 0 0 0 12 -262144 -66577
+0;
+#X obj 217 154 *~ -1;
+#X connect 0 0 6 0;
+#X connect 6 0 1 0;
+#X coords 0 -1 1 1 100 75 2 100 100;
