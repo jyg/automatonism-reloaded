@@ -1,0 +1,5 @@
+#N canvas 0 57 1920 1023 12;
+#X declare -path automatonism/patch_editor_abs;
+#X obj 270 10 declare -path automatonism/patch_editor_abs;
+#X obj 270 40 namecanvas \$0-this;
+#X obj 10 10 automatonism_menu \$0;

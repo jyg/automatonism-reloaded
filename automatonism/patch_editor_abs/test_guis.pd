@@ -1,0 +1,39 @@
+#N canvas 0 50 717 449 12;
+#X obj 263 120 hsl 128 15 0 127 0 0 \$0-hsl \$0-hsl-rcv empty -2 -8
+0 10 -262144 -1 -1 0 1;
+#X obj 128 117 vsl 15 128 0 127 0 0 \$0-vsl \$0-vsl-rcv empty 0 -9
+0 10 -262144 -1 -1 0 1;
+#X obj 262 167 tgl 15 0 \$0-tgl \$0-tgl-rcv empty 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 336 156 bng 15 250 50 0 \$0-bng \$0-bng-rcv empty 17 7 0 10
+-262144 -1 -1;
+#X obj 393 190 vradio 15 1 0 8 \$0-vsel \$0-vsel-rcv empty 0 -8 0 10
+-262144 -1 -1 2;
+#X obj 194 271 hradio 15 1 0 8 \$0-hsel \$0-hsel-rcv empty 0 -8 0 10
+-262144 -1 -1 3;
+#X obj 279 214 nbx 5 14 -1e+37 1e+37 0 0 \$0-nbx \$0-nbx-rcv empty
+0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 10 51 state_saving_module test_guis \$0 \$1;
+#X obj 50 10 savestate;
+#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#X obj 10 0 state_saving_module/nbx_dispatch test_guis \$0 \$1 -1e+37
+1e+37 nbx nbx-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hradio_dispatch test_guis \$0 \$1
+0 7 hsel hsel-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/vradio_dispatch test_guis \$0 \$1
+0 7 vsel vsel-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/bng_dispatch test_guis \$0 \$1 250
+50 bng bng-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/tgl_dispatch test_guis \$0 \$1 0
+1 tgl tgl-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/vsl_dispatch test_guis \$0 \$1 0
+127 vsl vsl-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/hsl_dispatch test_guis \$0 \$1 0
+127 hsl hsl-rcv empty #FFFFFF #000000 #000000;
+#X restore 10 80 pd \$0-gui_listeners;
+#X obj 20 160 print dumpgui;
+#X connect 7 0 8 0;
+#X connect 7 0 10 0;
+#X connect 8 0 7 0;
+#X connect 8 1 7 1;
+#X coords 0 -1 1 1 400 400 1 100 100;

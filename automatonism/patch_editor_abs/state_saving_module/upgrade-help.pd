@@ -1,0 +1,11 @@
+#N canvas 0 50 1002 353 12;
+#X obj 47 77 cnv 15 80 20 empty empty empty 20 12 0 14 -1 -66577 0
+;
+#X obj 48 78 cnv 15 78 18 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X text 49 78 upgrade;
+#X text 29 23 This utility abstraction is used one time in each automatonism
+3.1 module to generate the new statesaving architecture;
+#X text 41 171 !007! This abstraction auto destructs after use. !007!
+;
+#X text 272 100 needs iemguts external lib;
