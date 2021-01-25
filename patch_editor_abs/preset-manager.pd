@@ -1,11 +1,11 @@
 #N canvas 47 23 1191 720 10;
 #X obj 350 149 bng 15 250 50 0 STORE-S! empty STORE 17 7 0 10 -262144
 -226533 -1;
-#X floatatom 313 136 5 0 0 0 - store-slot-r -, f 5;
-#X floatatom 313 168 5 0 0 0 - recall-slot-r -, f 5;
+#X floatatom 313 136 5 0 0 0 - store-slot-r -;
+#X floatatom 313 168 5 0 0 0 - recall-slot-r -;
 #X obj 109 261 hsl 115 15 0 127 0 1 morph-slider-s empty MORPH -2 -8
 0 10 -262144 -1 -1 9700 1;
-#X floatatom 194 247 5 0 0 0 (ms) morph-time-r -, f 5;
+#X floatatom 194 247 5 0 0 0 (ms) morph-time-r -;
 #X obj 106 571 / 127;
 #X obj 106 593 * 9999;
 #X obj 106 637 i;
@@ -82,14 +82,14 @@ RECALL 0 -8 0 10 -262144 -1 -1 0;
 #X obj 357 547 t f f;
 #X obj 495 543 i;
 #X obj 468 675 s recall-slot-r;
-#X floatatom 572 422 5 0 0 0 - - -, f 5;
+#X floatatom 572 422 5 0 0 0 - - -;
 #X obj 573 393 i;
 #X obj 641 245 metro 100;
 #X obj 35 74 hsl 128 15 0 127 0 0 empty scan-avoid-clicks-r SCAN 133
 7 0 10 -262144 -1 -1 0 1;
 #X obj 31 252 / 127;
 #X obj 31 318 i;
-#X floatatom 31 340 5 0 0 0 - - -, f 5;
+#X floatatom 31 340 5 0 0 0 - - -;
 #X obj 28 475 s recall-location-r;
 #X obj 778 494 t f f;
 #X obj 850 572 s recall-location-r;
@@ -102,7 +102,7 @@ RECALL 0 -8 0 10 -262144 -1 -1 0;
 #X obj 276 693 t f f;
 #X obj 1008 328 r recall-location-s;
 #X obj 993 360 f;
-#X floatatom 993 382 5 0 0 0 - - -, f 5;
+#X floatatom 993 382 5 0 0 0 - - -;
 #X obj 979 284 loadbang;
 #X obj 846 281 s recall-location-r;
 #X obj 993 440 s recall-location-r;

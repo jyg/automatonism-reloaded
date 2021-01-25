@@ -25,8 +25,8 @@
 #X obj 103 198 bng 15 250 50 0 \$0-open-reset-warning! empty <--RESET!
 17 7 0 10 -262144 -1 -1;
 #X text 108 102 AUTOMATONISM;
-#X obj 264 107 vradio 50 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+#X obj 264 107 vradio 50 1 0 3 \$0-edit_mapping empty empty 0 -8 0
+10 -262144 -1 -1 0;
 #X obj 264 107 tgl 50 0 MIDI_LEARN MIDI_LEARN-rcv midi_learn 17 7 0
 10 -261682 -1 -1 0 1;
 #X obj 264 157 tgl 50 0 MIDI_MAP_FROM MIDI_MAP_FROM-rcv MAP_FROM 17
@@ -147,7 +147,7 @@
 #X obj 521 116 declare -path state_saving_module;
 #X obj 521 173 s AUTOMATONISM_LOADED;
 #X obj 522 144 loadbang;
-#N canvas 197 436 707 551 stuff 1;
+#N canvas 197 436 707 551 stuff 0;
 #X msg 26 128 \; pd dsp 0;
 #X obj 26 34 loadbang;
 #X obj 26 103 delay 1;
@@ -654,7 +654,7 @@
 #X obj 14 198 module_create \$0 \$1 maestro4;
 #X obj 14 225 module_create \$0 \$1 random-mixer;
 #X restore 21 272 pd vca/mixers;
-#N canvas 0 112 348 548 utility/logic 1;
+#N canvas 0 112 348 548 utility/logic 0;
 #X obj 14 20 module_create \$0 \$1 clock;
 #X obj 14 43 module_create \$0 \$1 clock-multiply;
 #X obj 15 68 module_create \$0 \$1 clock-divider-even;
@@ -741,7 +741,7 @@
 17 7 0 10 -262144 -1 -1;
 #X obj 196 310 bng 15 250 50 0 \$0-create-vca! empty <--VCA 17 7 0
 10 -262144 -1 -1;
-#X obj 569 499 cnv 15 180 15 empty empty MACRO-STRUCTURAL-TOOLS: 10
+#X obj 569 519 cnv 15 180 15 empty empty MACRO-STRUCTURAL-TOOLS: 10
 8 0 12 -158136 -262144 0;
 #X obj 568 91 cnv 15 180 15 empty empty UTILITY&LOGIC: 10 8 0 12 -158136
 -262144 0;
@@ -811,7 +811,7 @@
 17 7 0 10 -262144 -1 -1;
 #X obj 10 231 bng 15 250 50 0 \$0-create-triad! empty <--TRIAD 17 7
 0 10 -262144 -1 -1;
-#X obj 570 519 bng 15 250 50 0 \$0-create-preset-manager! empty <--PRESET-MANAGER
+#X obj 570 539 bng 15 250 50 0 \$0-create-preset-manager! empty <--PRESET-MANAGER
 17 7 0 10 -158136 -1 -1;
 #X obj 196 152 bng 15 250 50 0 \$0-create-ahr! empty <--ATTACK-HOLD-RELEASE(ahr)
 17 7 0 10 -262144 -1 -1;
@@ -849,7 +849,7 @@
 17 7 0 10 -150893 -1 -1;
 #X obj 196 469 bng 15 250 50 0 \$0-create-maestro4! empty <--MAESTRO4(dac~)
 17 7 0 10 -262144 -1 -1;
-#X obj 570 578 bng 15 250 50 0 \$0-create-random-time-manager! empty
+#X obj 570 598 bng 15 250 50 0 \$0-create-random-time-manager! empty
 <--RANDOM-TIME-MANAGER 17 7 0 10 -158136 -1 -1;
 #X obj 196 555 bng 15 250 50 0 \$0-create-midi-out! empty <--MIDI-OUT
 17 7 0 10 -262144 -1 -1;
@@ -891,9 +891,9 @@
 17 7 0 10 -158136 -1 -1;
 #X obj 196 290 cnv 15 180 15 empty empty VCA/MIXERS: 10 8 0 12 -158136
 -262144 0;
-#X obj 570 539 bng 15 250 50 0 \$0-create-param-nudge! empty <--PARAM-NUDGE
+#X obj 570 559 bng 15 250 50 0 \$0-create-param-nudge! empty <--PARAM-NUDGE
 17 7 0 10 -158136 -1 -1;
-#X obj 570 559 bng 15 250 50 0 \$0-create-time-manager! empty <--TIME-MANAGER
+#X obj 570 579 bng 15 250 50 0 \$0-create-time-manager! empty <--TIME-MANAGER
 17 7 0 10 -158136 -1 -1;
 #X obj 10 375 bng 15 250 50 0 \$0-create-percussion! empty <--PERCUSSION
 17 7 0 10 -158136 -1 -1;
@@ -913,7 +913,7 @@
 buttons);
 #X text 436 672 (New & updated modules for Automatonism v2.0 have GREEN
 buttons);
-#X obj 579 617 bng 15 250 50 0 \$0-create-manual-toggle! empty <--MANUAL-TOGGLE
+#X obj 569 497 bng 15 250 50 0 \$0-create-manual-toggle! empty <--MANUAL-TOGGLE
 17 7 0 10 -150893 -1 -1;
 #X restore 204 249 pd \$0-modules;
 #X msg 38 178 vis 1;
@@ -1078,7 +1078,7 @@ CV.;
 #X text 135 181 And pink inlets means the input is expecting a trigger/gate
 signal or short impulse(square-wave) to function properly.;
 #X restore 37 244 pd \$0-color-code;
-#N canvas 292 444 377 372 \$0-manual 0;
+#N canvas 292 534 377 372 \$0-manual 0;
 #X obj 17 12 cnv 15 320 60 empty empty WELCOME-TO-THE-AUTOMATONISM-MANUAL!
 20 12 0 14 -150893 -262144 0;
 #X obj 22 82 hsl 115 30 0 127 0 0 \$0-open-signal-flow! empty empty
@@ -1125,6 +1125,12 @@ empty -2 -8 0 10 -262144 -1 -1 0 1;
 -66577 0;
 #X obj 237 81 cnv 15 80 30 empty empty MESSAGES 6 12 0 14 -233017 -66577
 0;
+#X obj 155 119 hsl 115 30 0 127 0 0 \$0-open-midi-mapping! empty empty
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 152 119 cnv 15 60 30 empty empty MIDI 18 12 0 14 -233017 -66577
+0;
+#X obj 213 119 cnv 15 60 30 empty empty MAPPING -5 12 0 14 -233017
+-66577 0;
 #X restore 37 358 pd \$0-manual;
 #X obj 37 382 r \$0-open-manual!;
 #X msg 37 404 vis 1;
@@ -1435,6 +1441,37 @@ MODULES, f 32;
 #X connect 33 0 34 0;
 #X connect 34 0 35 0;
 #X restore 204 299 pd open_modules;
+#X msg 604 399 vis 1;
+#N canvas 472 160 579 624 \$0-midi-mapping 0;
+#X obj 17 12 cnv 15 400 60 empty empty MIDI_MAPPING 20 12 0 14 -226533
+-262144 0;
+#X obj 12 140 vradio 50 1 0 3 \$0-edit_mapping empty empty 0 -8 0 10
+-262144 -1 -1 2;
+#X obj 12 140 tgl 50 0 MIDI_LEARN MIDI_LEARN-rcv MIDI_LEARN 2 7 0 10
+-261682 -1 -1 0 1;
+#X obj 12 190 tgl 50 0 MIDI_MAP_FROM MIDI_MAP_FROM-rcv MAP_FROM 2 7
+0 10 -204786 -1 -1 0 1;
+#X obj 12 240 tgl 50 0 MIDI_MAP_TO MIDI_MAP_TO-rcv MAP_TO 2 7 0 10
+-204800 -1 -1 0 1;
+#X text 122 143 2) move your midi controler;
+#X text 117 259 1) click LEARN \, but don't touch your midi controler
+;
+#X text 116 276 2) then click to the target slider you want to unmap
+;
+#X text 87 231 * to cancel a midi-mapping :;
+#X text 84 94 * to create a midi-mapping;
+#X text 122 124 1) click MIDI_LEARN;
+#X text 122 164 3) then click to the target widget you want to midi-map
+;
+#X text 122 362 1) click on MAP_FROM (resp. MAP_TO);
+#X text 124 388 2) editable widgets become green (resp. blue);
+#X text 82 335 * to edit bounds values;
+#X text 125 414 3) With the mouse \, change the bound value \, then
+uncheck MAP_FROM (MAP_TO);
+#X text 158 185 (mappable widgets are drawn in orange);
+#X restore 606 354 pd \$0-midi-mapping;
+#X obj 604 377 r \$0-open-midi-mapping!;
+#X obj 604 423 s pd-\$0-midi-mapping;
 #X connect 0 0 19 0;
 #X connect 1 0 55 0;
 #X connect 3 0 4 0;
@@ -1471,6 +1508,8 @@ MODULES, f 32;
 #X connect 65 0 66 0;
 #X connect 67 0 68 0;
 #X connect 68 0 69 0;
+#X connect 71 0 74 0;
+#X connect 73 0 71 0;
 #X restore 25 164 pd upper-left-menu+manual;
 #X obj 188 76 s pd-preset-manager.pd;
 #X msg 188 50 menusave;
@@ -1511,8 +1550,9 @@ MODULES, f 32;
 #X connect 17 0 16 0;
 #X connect 19 0 4 0;
 #X restore 105 262 pd stuff;
+#X obj 263 318 r \$0-edit_mapping;
 #X connect 1 0 0 0;
-#X connect 10 0 14 0;
 #X connect 15 0 14 1;
 #X connect 21 0 20 0;
+#X connect 23 0 14 0;
 #X coords 0 -1 1 1 250 160 2 100 100;

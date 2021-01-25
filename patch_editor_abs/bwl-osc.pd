@@ -12,7 +12,7 @@
 #X obj 107 177 hsl 128 15 0 127 0 1 \$0-bwl-osc-fm-att-s \$0-bwl-osc-fm-att-r
 FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 107 132 hsl 128 15 0 127 0 1 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r
-PITCH 133 7 0 10 -262144 -1 -1 11282 1;
+PITCH 133 7 0 10 -262144 -1 -1 11100 1;
 #X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
 ;
 #X obj 181 109 cnv 5 5 5 empty empty WSHAPE 0 0 0 8 -262144 -120682
@@ -27,9 +27,9 @@ PITCH 133 7 0 10 -262144 -1 -1 11282 1;
 #X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SINE 0 0 0 10 -262144
 -66577 0;
 #X obj 107 147 hsl 128 15 0 127 0 1 \$0-bwl-osc-pwidth-s \$0-bwl-osc-pwidth-r
-WSHAPE 133 7 0 10 -262144 -1 -1 2357 1;
+WSHAPE 133 7 0 10 -262144 -1 -1 7800 1;
 #X obj 107 162 hsl 128 15 0 127 0 1 \$0-bwl-osc-cv-att-s \$0-bwl-osc-cv-att-r
-CV 133 7 0 10 -158136 -1 -1 7741 1;
+CV 133 7 0 10 -158136 -1 -1 6800 1;
 #X obj 480 372 * 0.00787402;
 #X obj 480 394 * 2;
 #X obj 105 206 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
@@ -38,7 +38,7 @@ CV 133 7 0 10 -158136 -1 -1 7741 1;
 #X obj 679 498 t b b;
 #X obj 177 192 hradio 15 1 1 4 \$0-bwl-osc-wform-s \$0-bwl-osc-wform-r
 empty 65 7 0 10 -262144 -1 -1 0;
-#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 938 588 s \$0-waveform-gui-r;
 #X obj 938 541 makefilename %s;

@@ -6,7 +6,7 @@
 #X obj 470 168 list length;
 #X obj 470 193 - 3;
 #X obj 394 232 list split;
-#N canvas 0 50 450 300 \$0-sandbox 1;
+#N canvas 0 50 450 300 \$0-sandbox 0;
 #X restore 722 32 pd \$0-sandbox;
 #X obj 497 719 s pd-\$0-sandbox;
 #X obj 384 269 list tosymbol;
@@ -119,7 +119,7 @@ bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj
 -1;
 #X obj 589 257 s \$0-name;
 #N canvas 0 50 868 778 create_widgets_list 0;
-#X obj 385 115 text define \$0-widgets;
+#X obj 200 208 text define \$0-widgets;
 #X obj 178 301 delay 10;
 #X obj 187 13 inlet;
 #X obj 136 602 outlet done;
@@ -128,9 +128,15 @@ bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj
 #X obj 27 537 t b b;
 #X obj 719 307 r \$0-name;
 #X text 519 503 \$0 basic-osc \$1;
-#X obj 182 158 t b b;
-#X msg 241 209 clear;
+#X obj 144 134 t b b;
+#X msg 204 169 clear;
 #X obj 330 594 abstraction_gui_parser \$0-widgets;
+#X text 335 152 [text define \$0-widgets] contient la liste de tous
+les widgets de l'abstraction parente;
+#X text 295 655 [abstraction_gui_parser \$1 \$2 \$3 \$4-widgets] scanne
+le fichier source de l'abstraction \, fait l'inventaire des widgets
+qui y sont contenus \, puis les recopie dans [text \$0-widgets], f
+77;
 #X connect 1 0 4 0;
 #X connect 2 0 9 0;
 #X connect 4 0 5 0;
