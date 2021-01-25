@@ -21,7 +21,7 @@ RELEASE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 320 346 pack f f;
 #X obj 335 203 r \$0-polysaw-pitch-s;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
-#X floatatom 206 131 5 0 0 0 - - -;
+#X floatatom 206 131 5 0 0 0 - #0-polysaw-pitch-s -;
 #X obj 471 15 inlet~ PITCH CV;
 #X obj 320 47 inlet~ TRIG;
 #X obj 320 121 t b b b;
@@ -1351,7 +1351,6 @@ polysaw-release-s polysaw-release-r RELEASE #FFFFFF #000000 #000000
 #X obj 10 300 state_saving_module/hsl_dispatch polysynth \$0 \$1 0
 127 polysaw-pitch-s polysaw-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X connect 0 0 17 0;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;
 #X connect 3 0 14 0;

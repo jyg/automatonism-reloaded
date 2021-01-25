@@ -1,6 +1,6 @@
 #N canvas 0 23 1102 752 10;
 #X obj 108 131 hsl 128 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 0 1;
+PITCH 135 7 0 10 -262144 -1 -1 2700 1;
 #X obj 320 467 pack f f f;
 #X obj 320 328 f;
 #X floatatom 320 350 5 0 0 0 - - -;
@@ -20,7 +20,7 @@ HOLD 135 7 0 10 -262144 -1 -1 0 1;
 RELEASE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 320 371 pack f f;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
-#X floatatom 206 116 5 0 0 0 - - -;
+#X floatatom 206 116 5 0 0 0 - #0-polyfm-pitch-s -;
 #X obj 471 15 inlet~ PITCH CV;
 #X obj 320 61 inlet~ TRIG;
 #X obj 320 152 t b b b;
@@ -1543,7 +1543,6 @@ polyfm-ratio-s polyfm-ratio-r RATIO #FFFFFF #000000 #000000;
 #X obj 10 480 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
 polyfm-pitch-s polyfm-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X connect 0 0 16 0;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;
 #X connect 3 0 14 0;

@@ -1,4 +1,4 @@
-#N canvas 0 23 824 549 10;
+#N canvas 80 215 824 549 10;
 #X obj 321 43 inlet~;
 #X obj 321 122 f;
 #X obj 349 122 + 1;
@@ -295,6 +295,7 @@ COUNT 133 7 0 10 -262144 -1 -1 0 1;
 vc-counter-count-s vc-counter-count-r COUNT #FFFFFF #000000 #000000
 ;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 76 184 r \$0-vc-counter-count-s;
 #X connect 0 0 41 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;
@@ -303,7 +304,6 @@ vc-counter-count-s vc-counter-count-r COUNT #FFFFFF #000000 #000000
 #X connect 4 0 17 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
-#X connect 8 0 39 0;
 #X connect 9 0 27 0;
 #X connect 10 0 3 1;
 #X connect 10 1 11 0;
@@ -336,4 +336,5 @@ vc-counter-count-s vc-counter-count-r COUNT #FFFFFF #000000 #000000
 #X connect 43 0 44 0;
 #X connect 44 0 43 0;
 #X connect 44 1 43 1;
+#X connect 46 0 39 0;
 #X coords 0 -1 1 1 200 75 2 100 100;

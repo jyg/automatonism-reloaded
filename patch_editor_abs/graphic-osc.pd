@@ -1,20 +1,21 @@
 #N canvas 0 22 1055 716 10;
 #N canvas 0 22 450 300 (subpatch) 0;
 #X array \$0-graphic-osc 67 float 1;
-#A 0 -0.300004 0.624999 0.374998 0.149997 0.0249969 -0.175004 -0.375005
--0.425005 -0.525005 -0.325004 -0.0750035 0.8 0.8 0.8 0.8 0.8 0.8 0.8
-0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8 0.8
-0.8 0.8 0.8 0.8 -0.475005 -0.475005 -0.475005 -0.475005 -0.475005 -0.475005
--0.475005 -0.500005 -0.600006 -0.600006 -0.600006 -0.600006 -0.600006
--1.02501 -1.02501 -1.00001 -1.00001 -0.975007 -0.950007 -0.925007 -0.900007
--0.887507 -0.875007 -0.825006 -0.825006 -0.800006 -0.575005 -0.250004
-;
+#A 0 -0.300004 0.624999 0.374998 0.149997 0.0249969 -0.1 -0.1 -0.1
+-0.1 -0.0916668 -0.0833336 -0.0750004 -0.0625006 -0.0500008 -0.037501
+-0.0250012 -0.016668 -0.00833476 -1.54972e-06 0.00833166 0.0166649
+0.0249981 0.0349979 0.0449978 0.0549976 0.0649975 0.0749973 0.0874971
+0.0999969 0.112497 0.124997 0.129996 0.134996 0.139996 0.144996 0.149996
+0.156246 0.162496 0.168746 0.174996 0.174996 0.174996 0.174996 0.174996
+0.183329 0.191662 0.199995 0.199995 0.199995 0.199995 0.199995 0.199995
+0.199995 0.199995 0.199995 0.212495 0.224995 0.224995 0.224995 0.249995
+0.249995 0.274994 0.274994 0.349993 -0.800006 -0.575005 -0.250004;
 #X coords 0 1 66 -1 120 80 1 0 0;
-#X restore 107 143 graph;
+#X restore 107 134 graph;
 #X obj 382 387 tabosc4~ \$0-graphic-osc;
-#X obj 145 42 hradio 15 1 1 8 \$0-graph-load-s \$0-graph-load-r LOAD
+#X obj 107 243 hradio 15 1 1 8 \$0-graph-load-s \$0-graph-load-r LOAD
 125 7 0 10 -262144 -150893 -1 0;
-#X obj 107 238 hradio 15 1 0 8 \$0-graph-write-s \$0-graph-write-r
+#X obj 107 229 hradio 15 1 0 8 \$0-graph-write-s \$0-graph-write-r
 WRITE 125 7 0 10 -262144 -226533 -1 1;
 #N canvas 0 22 1197 681 write&load 0;
 #X obj 552 138 loadbang;
@@ -91,18 +92,18 @@ WRITE 125 7 0 10 -262144 -226533 -1 1;
 #X obj 892 103 inlet~ FM;
 #X obj 506 101 inlet~ PITCH;
 #X obj 382 173 clip 0 100;
-#X obj 110 253 hsl 115 15 0 127 0 1 \$0-graphic-osc-load-s \$0-graphic-osc-load-r
-SCAN 128 7 0 10 -262144 -1 -1 7900 1;
+#X obj 110 264 hsl 115 15 0 127 0 1 \$0-graphic-osc-load-s \$0-graphic-osc-load-r
+SCAN 128 7 0 10 -262144 -1 -1 200 1;
 #X obj 382 42 r \$0-graphic-osc-freq-s;
 #X obj 382 667 outlet~;
 #X obj 382 409 clip~ -1 1;
-#X obj 110 268 hsl 115 15 0 127 0 1 \$0-graphic-osc-cutoff-s \$0-graphic-osc-cutoff-r
-CUTOFF 128 7 0 10 -262144 -1 -1 7700 1;
+#X obj 110 279 hsl 115 15 0 127 0 1 \$0-graphic-osc-cutoff-s \$0-graphic-osc-cutoff-r
+CUTOFF 128 7 0 10 -262144 -1 -1 4900 1;
 #X obj 603 27 r \$0-graphic-osc-load-s;
 #X obj 603 49 / 127;
 #X obj 603 93 i;
 #X floatatom 603 115 5 0 0 0 - - -;
-#X floatatom 145 62 5 0 0 0 - - -;
+#X floatatom 46 279 5 0 0 0 - - -;
 #X obj 603 71 * 7;
 #X obj 603 207 s \$0-graph-load-s;
 #X obj 603 134 +;
@@ -121,11 +122,11 @@ CUTOFF 128 7 0 10 -262144 -1 -1 7700 1;
 #X obj 862 19 loadbang;
 #X obj 603 167 i;
 #X obj 775 130 change;
-#X obj 110 223 hsl 115 15 0 127 0 1 \$0-graphic-osc-freq-s \$0-graphic-osc-freq-r
-FREQ 128 7 0 10 -262144 -1 -1 3100 1;
+#X obj 110 214 hsl 115 15 0 127 0 1 \$0-graphic-osc-freq-s \$0-graphic-osc-freq-r
+FREQ 128 7 0 10 -262144 -1 -1 8900 1;
 #X obj 382 448 vcf~ 4;
-#X obj 107 283 hradio 15 1 0 8 \$0-graphic-osc-res-s \$0-graphic-osc-res-r
-Q 135 7 0 10 -262144 -1 -1 6;
+#X obj 107 294 hradio 15 1 0 8 \$0-graphic-osc-res-s \$0-graphic-osc-res-r
+Q 135 7 0 10 -262144 -1 -1 3;
 #X obj 382 552 vcf~ 4;
 #X obj 537 395 r \$0-graphic-osc-cutoff-s;
 #X obj 537 417 mtof;
@@ -161,6 +162,11 @@ Q 135 7 0 10 -262144 -1 -1 6;
 #X obj 10 300 state_saving_module/hradio_dispatch graphic-osc \$0 \$1
 0 7 graph-load-s graph-load-r LOAD #FFFFFF #91D6B2 #000000;
 #X restore 689 602 pd \$0-gui_listeners;
+#X obj 103 109 cnv 5 5 5 empty empty PITCH_CV_IN 0 0 0 8 -262144 -66577
+0;
+#X obj 180 108 cnv 5 5 5 empty empty SCAN 0 0 0 8 -262144 -66577 0
+;
+#X obj 260 108 cnv 5 5 5 empty empty FM 0 0 0 8 -262144 -66577 0;
 #X connect 1 0 29 0;
 #X connect 2 0 35 0;
 #X connect 5 0 4 1;
@@ -232,4 +238,4 @@ Q 135 7 0 10 -262144 -1 -1 6;
 #X connect 72 0 73 0;
 #X connect 73 0 72 0;
 #X connect 73 1 72 1;
-#X coords 0 -1 1 1 175 200 2 100 100;
+#X coords 0 -1 1 1 175 220 2 100 100;

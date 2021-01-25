@@ -1267,8 +1267,8 @@ XPOSE 133 7 0 10 -150893 -1 -1 6300 1;
 #X connect 51 0 15 0;
 #X connect 52 0 51 0;
 #X restore 109 657 pd savetest;
-#X obj 108 347 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-5
-245 7 0 10 -262144 -1 -1 4;
+#X obj 108 347 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-1
+245 7 0 10 -262144 -1 -1 0;
 #N canvas 127 23 1088 712 statesave-patterns-1-4 0;
 #X obj 552 138 loadbang;
 #X msg 582 445 read statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt
@@ -1339,7 +1339,7 @@ XPOSE 133 7 0 10 -150893 -1 -1 6300 1;
 #X obj 1021 184 s \$0-ms-reset-s;
 #X obj 372 604 s \$0-instance-num;
 #X obj 372 556 makefilename %d;
-#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
+#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
 #X msg 372 581 label \$1;
 #X obj 372 526 f \$1;
@@ -1435,7 +1435,7 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 5400 1;
 ;
 #X obj 10 50 state_saving_module mega-sequencer \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 0 57 1920 1023 \$0-gui_listeners 1;
+#N canvas 0 57 1920 1023 \$0-gui_listeners 0;
 #X obj 10 0 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
 0 127 ms-xpose-centre-s ms-xpose-centre-r XPOSE(CENTRE) #91D6B2 #000000
 #000000;

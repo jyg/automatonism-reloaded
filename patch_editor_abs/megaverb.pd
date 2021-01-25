@@ -749,6 +749,7 @@ megaverb-room-s megaverb-room-r SIZE #FFFFFF #000000 #000000;
 megaverb-dry/wet-s megaverb-dry/wet-r DRY/WET #FFFFFF #000000 #000000
 ;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 951 672 r \$0-megaverb-lowpass-s;
 #X connect 0 0 60 0;
 #X connect 1 0 17 0;
 #X connect 3 0 4 0;
@@ -836,7 +837,6 @@ megaverb-dry/wet-s megaverb-dry/wet-r DRY/WET #FFFFFF #000000 #000000
 #X connect 69 0 5 0;
 #X connect 70 0 61 0;
 #X connect 71 0 62 0;
-#X connect 72 0 73 0;
 #X connect 73 0 76 0;
 #X connect 74 0 75 0;
 #X connect 74 0 99 0;
@@ -884,4 +884,5 @@ megaverb-dry/wet-s megaverb-dry/wet-r DRY/WET #FFFFFF #000000 #000000
 #X connect 118 0 119 0;
 #X connect 119 0 118 0;
 #X connect 119 1 118 1;
+#X connect 121 0 73 0;
 #X coords 0 -1 1 1 200 100 2 100 100;

@@ -18,10 +18,10 @@
 #X obj 409 212 * 127;
 #X obj 409 256 clip 0 127;
 #X obj 649 270 s \$0-midi2-gui-r;
-#X obj 409 307 +;
+#X obj 416 347 +;
 #X obj 107 156 hsl 128 15 0 127 0 0 \$0-midi-out-offset-s \$0-midi-out-offset-r
 PITCH-OFFSET -2 -8 0 10 -150893 -1 -1 0 1;
-#X obj 427 284 - 64;
+#X obj 434 324 - 64;
 #X floatatom 205 142 5 0 0 0 - - -;
 #X obj 409 234 abs;
 #X obj 468 412 f;
@@ -300,6 +300,7 @@ midiout-channel-s midiout-channel-r CHANNEL #FFFFFF #000000 #000000
 midi-out-offset-s midi-out-offset-r PITCH-OFFSET #91D6B2 #000000 #000000
 ;
 #X restore 688 97 pd \$0-gui_listeners;
+#X obj 439 299 r \$0-midi-out-offset-s;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
 #X connect 6 0 31 0;
@@ -312,7 +313,6 @@ midi-out-offset-s midi-out-offset-r PITCH-OFFSET #91D6B2 #000000 #000000
 #X connect 13 0 15 0;
 #X connect 13 0 1 0;
 #X connect 15 0 20 1;
-#X connect 16 0 17 0;
 #X connect 17 0 18 0;
 #X connect 17 0 15 1;
 #X connect 19 0 13 0;
@@ -347,4 +347,5 @@ midi-out-offset-s midi-out-offset-r PITCH-OFFSET #91D6B2 #000000 #000000
 #X connect 52 0 53 0;
 #X connect 53 0 52 0;
 #X connect 53 1 52 1;
+#X connect 55 0 17 0;
 #X coords 0 -1 1 1 200 105 2 100 100;

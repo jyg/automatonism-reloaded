@@ -1,24 +1,24 @@
 #N canvas 138 23 1121 750 10;
 #X obj 123 199 tgl 15 0 \$0-cs-D0-s \$0-cs-D0-r D 4 25 0 10 -262144
--1 -1 0 1;
+-1 -1 1 1;
 #X obj 132 184 tgl 15 0 \$0-cs-Eb0-s \$0-cs-Eb0-r Eb 2 -7 0 10 -1 -262144
 -33289 0 1;
 #X obj 153 199 tgl 15 0 \$0-cs-F0-s \$0-cs-F0-r F 4 25 0 10 -262144
--1 -33289 1 1;
+-1 -33289 0 1;
 #X obj 138 199 tgl 15 0 \$0-cs-E0-s \$0-cs-E0-r E 4 25 0 10 -262144
 -1 -33289 0 1;
 #X obj 183 199 tgl 15 0 \$0-cs-A0-s \$0-cs-A0-r A 4 25 0 10 -262144
 -1 -33289 0 1;
 #X obj 168 199 tgl 15 0 \$0-cs-G0-s \$0-cs-G0-r G 4 25 0 10 -262144
--1 -33289 0 1;
-#X obj 198 199 tgl 15 0 \$0-cs-B0-s \$0-cs-B0-r B 4 25 0 10 -262144
--1 -33289 0 1;
-#X obj 108 199 tgl 15 0 \$0-cs-C0-s \$0-cs-C0-r C 4 25 0 10 -262144
 -1 -33289 1 1;
+#X obj 198 199 tgl 15 0 \$0-cs-B0-s \$0-cs-B0-r B 4 25 0 10 -262144
+-1 -33289 1 1;
+#X obj 108 199 tgl 15 0 \$0-cs-C0-s \$0-cs-C0-r C 4 25 0 10 -262144
+-1 -33289 0 1;
 #X obj 115 184 tgl 15 0 \$0-cs-Db0-s \$0-cs-Db0-r Db 2 -7 0 10 -1 -262144
 -33289 0 1;
 #X obj 193 184 tgl 15 0 \$0-cs-Bb0-s \$0-cs-Bb0-r Bb 2 -7 0 10 -33289
--262144 -33289 1 1;
+-262144 -33289 0 1;
 #X obj 159 184 tgl 15 0 \$0-cs-Gb0-s \$0-cs-Gb0-r Gb 2 -7 0 10 -1 -262144
 -33289 0 1;
 #X obj 176 184 tgl 15 0 \$0-cs-Ab0-s \$0-cs-Ab0-r Ab 2 -7 0 10 -33289
@@ -32,17 +32,17 @@
 #X obj 288 199 tgl 15 0 \$0-cs-A1-s \$0-cs-A1-r A 4 25 0 10 -262144
 -1 -33289 0 1;
 #X obj 273 199 tgl 15 0 \$0-cs-G1-s \$0-cs-G1-r G 4 25 0 10 -262144
--1 -33289 0 1;
+-1 -33289 1 1;
 #X obj 303 199 tgl 15 0 \$0-cs-B1-s \$0-cs-B1-r B 4 25 0 10 -262144
 -1 -33289 0 1;
 #X obj 213 199 tgl 15 0 \$0-cs-C1-s \$0-cs-C1-r C 4 25 0 10 -262144
 -1 -33289 0 1;
 #X obj 237 184 tgl 15 0 \$0-cs-Eb1-s \$0-cs-Eb1-r Eb 2 -7 0 10 -33289
--262144 -33289 1 1;
+-262144 -33289 0 1;
 #X obj 220 184 tgl 15 0 \$0-cs-Db1-s \$0-cs-Db1-r Db 2 -7 0 10 -33289
 -262144 -33289 0 1;
 #X obj 298 184 tgl 15 0 \$0-cs-Bb1-s \$0-cs-Bb1-r Bb 2 -7 0 10 -33289
--262144 -33289 1 1;
+-262144 -33289 0 1;
 #X obj 264 184 tgl 15 0 \$0-cs-Gb1-s \$0-cs-Gb1-r Gb 2 -7 0 10 -1 -262144
 -33289 0 1;
 #X obj 281 184 tgl 15 0 \$0-cs-Ab1-s \$0-cs-Ab1-r Ab 2 -7 0 10 -33289
@@ -659,7 +659,7 @@
 #X msg 1455 416 78;
 #X msg 1619 417 80;
 #X msg 1765 417 82;
-#X obj 122 133 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 122 133 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 41 80 delay 1;
 #X obj 184 80 delay 1;
@@ -1384,7 +1384,7 @@ HARMONICS(CV) 135 7 0 10 -158136 -1 -1 0 1;
 FOLD(CV) 135 7 0 10 -158136 -1 -1 0 1;
 #X obj 116 151 cnv 5 5 5 empty empty CHORD-SYNTH 0 0 0 12 -262144 -66577
 0;
-#X obj 199 151 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
+#X obj 199 151 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
 #X obj 818 87 r \$0-timbre1-s;
 #X obj 818 109 / 127;
@@ -4109,7 +4109,7 @@ FOLD(CV) 135 7 0 10 -158136 -1 -1 0 1;
 #X obj 709 33 r \$0-cs-xpose-s;
 #X obj 709 55 / 127;
 #X obj 111 266 hsl 128 15 0 127 0 1 \$0-polyfm-hold-s \$0-polyfm-hold-r
-HOLD 135 7 0 10 -262144 -1 -1 6300 1;
+HOLD 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 709 121 i;
 #X floatatom 709 143 5 0 0 0 - - -;
 #X obj 540 157 +;
@@ -4268,7 +4268,7 @@ ATTACK 135 7 0 10 -262144 -1 -1 1252 1;
 #X obj -47 467 loadbang;
 #X msg -47 489 5;
 #X obj 106 115 tgl 15 1 \$0-cs-step-spigot-s \$0-cs-step-spigot-r STEP/R-STEP
-17 7 0 10 -262144 -1 -1 1 1;
+17 7 0 10 -262144 -1 -1 0 1;
 #X obj 1113 30 r \$0-cs-load-spigot-s;
 #X obj 1258 55 spigot;
 #X obj 1381 123 spigot;
@@ -5072,7 +5072,7 @@ ATTACK 135 7 0 10 -262144 -1 -1 1252 1;
 #X obj 106 133 cnv 5 350 5 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 193 473 delay 1;
-#X obj 113 453 t f f b f;
+#X obj 151 437 t f f b f;
 #X obj -53 347 delay 2;
 #X obj 3 134 r \$0-cs-reset-s;
 #X floatatom 588 604 5 0 0 0 - - -;
@@ -5258,6 +5258,7 @@ ATTACK 135 7 0 10 -262144 -1 -1 1252 1;
 #X obj 10 840 state_saving_module/hradio_dispatch chord-synth \$0 \$1
 0 15 cs-maxstep-s cs-maxstep-r MAX-16 #FFFFFF #DE4C91 #000000;
 #X restore -36 808 pd \$0-gui_listeners;
+#X obj 119 406 r \$0-cs-step-gui-s;
 #X connect 24 0 168 0;
 #X connect 24 0 26 0;
 #X connect 26 0 186 0;
@@ -5292,7 +5293,6 @@ ATTACK 135 7 0 10 -262144 -1 -1 1252 1;
 #X connect 49 1 45 0;
 #X connect 49 1 147 0;
 #X connect 50 0 41 1;
-#X connect 51 0 185 0;
 #X connect 52 0 82 0;
 #X connect 66 0 67 0;
 #X connect 67 0 68 0;
@@ -5405,4 +5405,5 @@ ATTACK 135 7 0 10 -262144 -1 -1 1252 1;
 #X connect 209 0 210 0;
 #X connect 210 0 209 0;
 #X connect 210 1 209 1;
+#X connect 212 0 185 0;
 #X coords 0 -1 1 1 370 285 2 100 100;

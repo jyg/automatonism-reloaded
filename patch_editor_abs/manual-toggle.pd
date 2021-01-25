@@ -10,10 +10,13 @@
 #X obj 10 0 state_saving_module/tgl_dispatch manual-toggle \$0 \$1
 0 1 manualtoggle manualtoggle-rcv empty #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X connect 0 0 1 0;
+#X obj 258 171 r \$0-manualtoggle;
+#X obj 104 109 cnv 5 5 5 empty empty MANUAL-TOGGLE 0 0 0 12 -262144
+-66577 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 4 0 5 0;
 #X connect 5 0 4 0;
 #X connect 5 1 4 1;
+#X connect 7 0 1 0;
 #X coords 0 -1 1 1 100 75 2 100 100;

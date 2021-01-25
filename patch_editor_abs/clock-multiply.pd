@@ -1,37 +1,37 @@
 #N canvas 0 23 1028 570 10;
 #X obj 335 31 inlet~;
-#X obj 335 203 timer;
+#X obj 335 273 timer;
 #X obj 272 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 272 342 metro;
-#X obj 335 225 t f f f f;
-#X msg 272 449 1 0 \, 0 1 1;
-#X obj 272 471 vline~;
-#X obj 272 493 outlet~;
-#X obj 272 422 t b b;
+#X obj 272 412 metro;
+#X obj 335 295 t f f f f;
+#X msg 272 519 1 0 \, 0 1 1;
+#X obj 272 541 vline~;
+#X obj 280 571 outlet~;
+#X obj 272 492 t b b;
 #X obj 105 169 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
 -1;
 #X obj 108 135 hsl 128 15 0 127 0 1 \$0-clock-multiply-multiply-s \$0-clock-multiply-multiply-r
-MPLY 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 415 116 / 127;
-#X obj 415 215 i;
-#X obj 335 254 /;
+MPLY 133 7 0 10 -262144 -1 -1 6800 1;
+#X obj 405 147 / 127;
+#X obj 415 285 i;
+#X obj 335 324 /;
 #X floatatom 206 121 5 0 0 0 - - -;
-#X obj 621 272 delay 1000;
-#X msg 621 300 0;
-#X msg 594 249 1;
+#X obj 621 342 delay 1000;
+#X msg 621 370 0;
+#X msg 594 319 1;
 #X obj 335 75 t b b b;
-#X obj 594 213 t b b;
+#X obj 594 283 t b b;
 #X obj 465 77 inlet~;
-#X obj 465 99 snapshot~;
-#X obj 465 121 t b f;
-#X obj 415 138 +;
+#X obj 465 159 snapshot~;
+#X obj 465 181 t b f;
+#X obj 415 208 +;
 #X obj 104 150 hradio 15 1 0 9 \$0-clock-multiply-x-s \$0-clock-multiply-x-r
-empty 0 -8 0 10 -262144 -226533 -1 0;
-#X obj 415 237 t f f f;
-#X obj 415 189 + 1;
-#X obj 454 259 - 1;
-#X obj 415 167 * 8;
+empty 0 -8 0 10 -262144 -226533 -1 4;
+#X obj 415 307 t f f f;
+#X obj 415 259 + 1;
+#X obj 454 329 - 1;
+#X obj 415 237 * 8;
 #X obj 132 112 cnv 5 5 5 empty empty CLOCK-MULTIPLY 0 0 0 12 -262144
 -66577 0;
 #X obj 262 109 cnv 5 5 5 empty empty CV 0 0 0 8 -262144 -1 0;
@@ -191,9 +191,9 @@ empty 0 -8 0 10 -262144 -226533 -1 0;
 #X connect 27 0 5 1;
 #X connect 29 0 28 0;
 #X restore 17 287 pd state-saving-via-preset-manager-module;
-#X obj 549 94 env~;
-#X obj 549 120 change;
-#X obj 549 142 t b;
+#X obj 549 154 env~;
+#X obj 549 180 change;
+#X obj 549 202 t b;
 #N canvas 297 27 748 331 parameter-nudging-system 0;
 #X obj 23 67 clip 0 127;
 #X obj 23 22 r \$0-clock-multiply-multiply-s;
@@ -290,13 +290,11 @@ empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 10 50 state_saving_module clock-multiply \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hradio_dispatch clock-multiply \$0
-\$1 0 8 clock-multiply-x-s clock-multiply-x-r empty #FFFFFF #DE4C91
-#000000;
 #X obj 10 60 state_saving_module/hsl_dispatch clock-multiply \$0 \$1
 0 127 clock-multiply-multiply-s clock-multiply-multiply-r MPLY #FFFFFF
 #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 400 124 r \$0-clock-multiply-multiply-s;
 #X connect 0 0 43 0;
 #X connect 1 0 4 0;
 #X connect 2 0 3 0;
@@ -306,7 +304,6 @@ empty 0 -8 0 10 -262144 -226533 -1 0;
 #X connect 6 0 7 0;
 #X connect 8 0 5 0;
 #X connect 8 1 9 0;
-#X connect 10 0 11 0;
 #X connect 11 0 23 0;
 #X connect 12 0 25 0;
 #X connect 13 0 3 1;
@@ -340,4 +337,5 @@ empty 0 -8 0 10 -262144 -226533 -1 0;
 #X connect 45 0 46 0;
 #X connect 46 0 45 0;
 #X connect 46 1 45 1;
+#X connect 48 0 11 0;
 #X coords 0 -1 1 1 175 100 2 100 100;

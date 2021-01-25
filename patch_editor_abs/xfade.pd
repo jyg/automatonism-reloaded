@@ -304,7 +304,7 @@ XFADE 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 0 state_saving_module/hsl_dispatch xfade \$0 \$1 0 127 xfade-xfade-s
 xfade-xfade-r XFADE #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X connect 2 0 11 0;
+#X obj 134 202 r \$0-xfade-xfade-s;
 #X connect 5 0 7 0;
 #X connect 5 0 37 0;
 #X connect 6 0 8 0;
@@ -350,4 +350,5 @@ xfade-xfade-r XFADE #FFFFFF #000000 #000000;
 #X connect 51 0 52 0;
 #X connect 52 0 51 0;
 #X connect 52 1 51 1;
+#X connect 54 0 11 0;
 #X coords 0 -1 1 1 175 60 2 100 100;

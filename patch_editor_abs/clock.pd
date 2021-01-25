@@ -3,7 +3,7 @@
 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 409 211 metro 100;
 #X obj 408 285 vline~;
-#X obj 107 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r
+#X obj 108 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r
 RATE 133 7 0 10 -262144 -1 -1 0 1;
 #X floatatom 104 141 5 0 0 0 - - -;
 #X msg 110 213 127 \$1;
@@ -322,10 +322,10 @@ clock-clk-rate-r RATE #FFFFFF #000000 #000000;
 #X obj 10 60 state_saving_module/tgl_dispatch clock \$0 \$1 0 1 clock-on/off-s
 clock-on/off-r ON/OFF #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X connect 0 0 1 0;
+#X obj 30 188 r \$0-clock-clk-rate-s;
+#X obj 408 187 r \$0-clock-on/off-s;
 #X connect 1 0 10 0;
 #X connect 2 0 13 0;
-#X connect 3 0 5 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
 #X connect 7 0 18 0;
@@ -356,4 +356,6 @@ clock-on/off-r ON/OFF #FFFFFF #000000 #000000;
 #X connect 41 0 42 0;
 #X connect 42 0 41 0;
 #X connect 42 1 41 1;
+#X connect 44 0 5 0;
+#X connect 45 0 1 0;
 #X coords 0 -1 1 1 175 75 2 100 100;

@@ -403,8 +403,8 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 0 127 random-gates-intensity-s random-gates-intensity-r INTENSITY #FFFFFF
 #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X connect 0 0 17 0;
-#X connect 1 0 20 1;
+#X obj 500 374 r \$0-random-gates-prob-s;
+#X obj 106 196 r \$0-random-gates-intensity-s;
 #X connect 2 0 6 0;
 #X connect 3 0 2 0;
 #X connect 4 0 12 0;
@@ -435,4 +435,6 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 36 0 37 0;
 #X connect 37 0 36 0;
 #X connect 37 1 36 1;
+#X connect 39 0 20 1;
+#X connect 40 0 17 0;
 #X coords 0 -1 1 1 200 85 2 100 100;

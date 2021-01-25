@@ -1,6 +1,6 @@
 #N canvas 0 57 1920 1023 16;
 #X obj 129 7 loadbang;
-#X obj 146 729 iemguts/sendcanvas 1;
+#X obj 151 778 iemguts/sendcanvas 1;
 #X obj 1130 677 delay 10;
 #X obj 1132 605 f \$1;
 #X obj 1132 642 select 0;
@@ -20,8 +20,8 @@ edit/paste (Ctrl/Cmd + v), f 40;
 #X text 59 159 You can then leave edit_mode (Ctrl/Cmd + e);
 #X restore 560 82 pd \$0-copy_into_your_patch;
 #X msg 253 486 vis 1 \, editmode 1 \, selectall \, copy \, vis 0;
-#X obj 129 29 spigot 1;
-#X obj 130 63 t b b;
+#X obj 129 48 spigot 1;
+#X obj 129 79 t b b;
 #X msg 215 28 0;
 #X obj 1132 511 r AUTOMATONISM_LOADED;
 #X obj 126 111 t b b;
@@ -40,7 +40,7 @@ edit/paste (Ctrl/Cmd + v), f 40;
 #X text 251 380 if iemguts lib is not present \, add objects manually
 ;
 #X obj 1132 561 t b b;
-#X msg 148 653 obj 270 10 declare -path automatonism/patch_editor_abs
+#X msg 153 702 obj 270 10 declare -path automatonism/patch_editor_abs
 \, obj 270 40 namecanvas \\\$0-this \, obj 10 10 automatonism_menu
 \\\$0 \, loadbang \, editmode 0;
 #X obj 179 447 t b b b;

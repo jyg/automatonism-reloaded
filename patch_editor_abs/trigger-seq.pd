@@ -316,9 +316,6 @@ STORE 0 -8 0 10 -262144 -1 -1 0;
 #X obj 10 120 state_saving_module/hradio_dispatch trigger-seq \$0 \$1
 0 15 trigger-seq-num-of-steps-s trigger-seq-num-of-steps-r NUMBER-OF-STEPS
 #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/hradio_dispatch trigger-seq \$0 \$1
-0 15 trigger-seq-gui-s trigger-seq-gui-r empty #FFFFFF #DE4C91 #000000
-;
 #X obj 10 240 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
 0 1 trigger-seq-s16-s trigger-seq-s16-r empty #FFFFFF #000000 #000000
 ;

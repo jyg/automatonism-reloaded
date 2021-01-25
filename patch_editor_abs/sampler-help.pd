@@ -8,6 +8,10 @@
 #X obj 20 17 cnv 15 400 30 empty empty SAMPLER: 20 12 0 14 -150893
 -262144 0;
 #X obj 432 20 sampler 0;
+#A saved dispatch sample-player-file-s 0;
+#A saved dispatch sample-player-pitch-cv-att-s 0;
+#A saved dispatch sample-player-loop-s 0;
+#A saved dispatch sample-player-pitch-s 0;
 #X text 29 269 FILE - select between sample 1-8;
 #X text 29 331 LOOP/1SHOT - toggle between looping mode and 1shot mode.
 In 1shot mode the sampler needs a trigger signal at the TRIG input

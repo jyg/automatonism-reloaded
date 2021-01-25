@@ -628,6 +628,9 @@ compressor-make-up-s compressor-make-up-r MAKE-UP #FFFFFF #000000 #000000
 127 compressor-attack-s compressor-attack-r ATTACK #FFFFFF #000000
 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 336 159 r \$0-compressor-attack-s;
+#X obj 805 71 r \$0-compressor-threshold-s;
+#X obj 712 26 r \$0-compressor-limit-s;
 #X connect 0 0 1 0;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
@@ -639,7 +642,6 @@ compressor-make-up-s compressor-make-up-r MAKE-UP #FFFFFF #000000 #000000
 #X connect 7 0 8 0;
 #X connect 8 0 9 1;
 #X connect 9 0 44 0;
-#X connect 10 0 11 0;
 #X connect 11 0 12 0;
 #X connect 12 0 13 0;
 #X connect 13 0 27 0;
@@ -651,14 +653,12 @@ compressor-make-up-s compressor-make-up-r MAKE-UP #FFFFFF #000000 #000000
 #X connect 19 0 20 0;
 #X connect 20 0 21 0;
 #X connect 21 0 8 0;
-#X connect 22 0 23 0;
 #X connect 23 0 24 0;
 #X connect 24 0 25 0;
 #X connect 25 0 15 2;
 #X connect 26 0 9 0;
 #X connect 27 0 28 0;
 #X connect 28 0 26 0;
-#X connect 29 0 30 0;
 #X connect 30 0 41 0;
 #X connect 31 0 15 1;
 #X connect 35 0 37 0;
@@ -676,4 +676,7 @@ compressor-make-up-s compressor-make-up-r MAKE-UP #FFFFFF #000000 #000000
 #X connect 53 0 54 0;
 #X connect 54 0 53 0;
 #X connect 54 1 53 1;
+#X connect 56 0 11 0;
+#X connect 57 0 23 0;
+#X connect 58 0 30 0;
 #X coords 0 -1 1 1 200 100 2 100 100;

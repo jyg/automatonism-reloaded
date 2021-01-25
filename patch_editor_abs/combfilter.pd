@@ -195,7 +195,7 @@ DRIVE 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 105 122 cnv 5 5 5 empty empty COMBFILTER 0 0 0 12 -262144 -66577
 0;
 #X obj 438 210 *~ 0.5;
-#X obj 601 78 t f f;
+#X obj 581 93 t f f;
 #X obj 109 174 hsl 128 15 1.27 127 1 1 \$0-combfilter-highpass-s \$0-combfilter-highpass-r
 HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 438 412 hip~;
@@ -1024,9 +1024,13 @@ combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
 127 combfilter-delay-s combfilter-delay-r DELAY #FFFFFF #000000 #000000
 ;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 48 255 r \$0-combfilter-dry/wet-s;
+#X obj 243 278 r \$0-combfilter-drive-s;
+#X obj 717 131 r \$0-combfilter-highpass-s;
+#X obj 605 153 r \$0-combfilter-lowpass-s;
+#X obj 582 69 r \$0-combfilter-feedback-s;
 #X connect 0 0 5 0;
 #X connect 1 0 46 0;
-#X connect 3 0 47 0;
 #X connect 4 0 46 0;
 #X connect 5 0 41 0;
 #X connect 6 0 19 0;
@@ -1036,7 +1040,6 @@ combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
 #X connect 8 0 20 0;
 #X connect 9 0 10 0;
 #X connect 10 0 49 0;
-#X connect 11 0 12 0;
 #X connect 12 0 13 0;
 #X connect 13 0 14 0;
 #X connect 14 0 15 0;
@@ -1049,7 +1052,6 @@ combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
 #X connect 19 1 5 1;
 #X connect 20 0 33 0;
 #X connect 21 0 18 0;
-#X connect 22 0 23 0;
 #X connect 23 0 24 0;
 #X connect 23 1 29 0;
 #X connect 24 0 25 0;
@@ -1064,7 +1066,6 @@ combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
 #X connect 33 0 34 0;
 #X connect 34 0 35 0;
 #X connect 35 0 63 0;
-#X connect 37 0 38 0;
 #X connect 38 0 43 0;
 #X connect 39 0 40 0;
 #X connect 40 0 41 1;
@@ -1074,7 +1075,6 @@ combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
 #X connect 46 0 0 0;
 #X connect 47 0 1 2;
 #X connect 47 1 4 2;
-#X connect 48 0 51 0;
 #X connect 49 0 50 0;
 #X connect 50 0 21 0;
 #X connect 51 0 52 0;
@@ -1100,4 +1100,9 @@ combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
 #X connect 77 0 78 0;
 #X connect 78 0 77 0;
 #X connect 78 1 77 1;
+#X connect 80 0 23 0;
+#X connect 81 0 38 0;
+#X connect 82 0 51 0;
+#X connect 83 0 12 0;
+#X connect 84 0 47 0;
 #X coords 0 -1 1 1 200 125 2 100 100;
