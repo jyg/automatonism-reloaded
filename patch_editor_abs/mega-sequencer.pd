@@ -1,8 +1,8 @@
 #N canvas 163 23 1248 703 10;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-mega-seq 16 float 3;
-#A 0 0.165354 0.80315 0.503937 0.362205 0.834646 0.574803 0.850394
-0.19685 0.88189 0.228346 0.551181 0.354331 0.669291 0.614173 0.590551
+#A 0 0.165354 0.787402 0.503937 0.362205 0.448819 0.574803 0.795276
+0.19685 0.88189 0.133858 0.874016 0.354331 0.669291 0.503937 0.15748
 0.897638;
 #X coords 0 1 16 0 240 75 1 0 0;
 #X restore 108 149 graph;
@@ -575,9 +575,9 @@ RDM-PATTERN 20 8 0 10 -262144 -226533 -1;
 #X floatatom 108 284 5 0 0 1 XPOSE #0-ms-xpose-p1-gui-r -;
 #X symbolatom 288 253 20 0 0 0 - #0-ms-scale-p1-gui-r -;
 #X obj 111 255 hsl 128 15 0 127 0 1 \$0-ms-scale-p1-s \$0-ms-scale-p1-r
-SCALE 133 7 0 10 -262144 -1 -1 12700 1;
+SCALE 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 111 270 hsl 128 15 0 127 0 1 \$0-ms-xpose-p1-s \$0-ms-xpose-p1-r
-XPOSE 133 7 0 10 -150893 -1 -1 7000 1;
+XPOSE 133 7 0 10 -150893 -1 -1 6300 1;
 #N canvas 0 23 1440 774 scales-tables 0;
 #X obj 11 17 loadbang;
 #X obj 10 156 loadbang;
@@ -1092,7 +1092,7 @@ XPOSE 133 7 0 10 -150893 -1 -1 7000 1;
 #X connect 11 0 9 0;
 #X restore 107 495 pd randomize-pattern1;
 #X obj 108 134 hradio 15 1 0 16 s_0-ms-counter-gu \$0-ms-counter1 empty
-0 -8 0 10 -262144 -226533 -1 7;
+0 -8 0 10 -262144 -226533 -1 15;
 #X obj 107 410 cnv 5 5 5 empty empty Q-OUT 0 0 0 8 -262144 -66577 0
 ;
 #X obj 104 109 cnv 5 5 5 empty empty CLK 0 0 0 8 -262144 -226533 0
@@ -1267,8 +1267,8 @@ XPOSE 133 7 0 10 -150893 -1 -1 7000 1;
 #X connect 51 0 15 0;
 #X connect 52 0 51 0;
 #X restore 109 657 pd savetest;
-#X obj 108 347 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-1
-245 7 0 10 -262144 -1 -1 0;
+#X obj 108 347 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-5
+245 7 0 10 -262144 -1 -1 4;
 #N canvas 127 23 1088 712 statesave-patterns-1-4 0;
 #X obj 552 138 loadbang;
 #X msg 582 445 read statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt
@@ -1339,15 +1339,15 @@ XPOSE 133 7 0 10 -150893 -1 -1 7000 1;
 #X obj 1021 184 s \$0-ms-reset-s;
 #X obj 372 604 s \$0-instance-num;
 #X obj 372 556 makefilename %d;
-#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X msg 372 581 label \$1;
 #X obj 372 526 f \$1;
 #X obj 372 497 loadbang;
 #X obj 517 122 threshold~ 0.9 0 0.9 0;
 #X symbolatom 179 285 10 0 0 0 - #0-ms-xpose-gui2-r -;
-#X obj 108 332 hradio 15 1 1 16 \$0-ms-load-s \$0-ms-load-r LOAD-11
-245 7 0 10 -262144 -1 -1 10;
+#X obj 108 332 hradio 15 1 1 16 \$0-ms-load-s \$0-ms-load-r LOAD-5
+245 7 0 10 -262144 -1 -1 4;
 #X obj 870 267 % 16;
 #X obj 974 229 r \$0-ms-maxstep-s;
 #X obj 974 250 + 1;
@@ -1435,16 +1435,10 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 5400 1;
 ;
 #X obj 10 50 state_saving_module mega-sequencer \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#N canvas 0 57 1920 1023 \$0-gui_listeners 1;
 #X obj 10 0 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
 0 127 ms-xpose-centre-s ms-xpose-centre-r XPOSE(CENTRE) #91D6B2 #000000
 #000000;
-#X obj 10 60 state_saving_module/hradio_dispatch mega-sequencer \$0
-\$1 0 15 ms-load-s ms-load-r LOAD-11 #FFFFFF #000000 #000000;
-#X obj 10 120 state_saving_module/hradio_dispatch mega-sequencer \$0
-\$1 0 15 ms-write-s ms-write-r WRITE-11 #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/hradio_dispatch mega-sequencer \$0
-\$1 0 15 ms-maxstep-s ms-maxstep-r MAX-1 #FFFFFF #000000 #000000;
 #X obj 10 240 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
 0 127 ms-xpose-p1-s ms-xpose-p1-r XPOSE #91D6B2 #000000 #000000;
 #X obj 10 300 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
