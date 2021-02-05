@@ -507,7 +507,7 @@ empty 0 -8 0 10 -262144 -226533 -1 0;
 -1;
 #X obj 237 132 bng 15 100 50 0 a \$0-s8! empty 17 7 0 10 -1 -226533
 -1;
-#X obj 267 147 vradio 15 1 1 5 \$0-s11-ratchet-gui-s \$0-s11-ratchet-gui-r
+#X obj 267 147 vradio 15 1 1 5 \$0-s10-ratchet-gui-s \$0-s10-ratchet-gui-r
 empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 252 147 vradio 15 1 1 5 \$0-s9-ratchet-gui-s \$0-s9-ratchet-gui-r
 empty 0 -8 0 10 -228856 -226533 -1 0;
@@ -3096,7 +3096,7 @@ f f f f f f f f f f;
 #X restore 106 43 pd external-messages;
 #X obj 896 528 state_saving_module ratchet-seq \$0 \$1;
 #X obj 936 488 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#N canvas 0 57 1920 1023 \$0-gui_listeners 0;
 #X obj 10 0 state_saving_module/bng_dispatch ratchet-seq \$0 \$1 250
 50 ratchet-random-s! ratchet-random-r! RANDOM! #FFFFFF #000000 #000000
 ;
@@ -3132,9 +3132,6 @@ f f f f f f f f f f;
 0 1 t9-s t9-r empty #DEDEDE #000000 #000000;
 #X obj 10 840 state_saving_module/tgl_dispatch ratchet-seq \$0 \$1
 0 1 t10-s t10-r empty #FFFFFF #000000 #000000;
-#X obj 10 900 state_saving_module/vradio_dispatch ratchet-seq \$0 \$1
-0 4 s11-ratchet-gui-s s11-ratchet-gui-r empty #FFFFFF #DE4C91 #000000
-;
 #X obj 10 960 state_saving_module/vradio_dispatch ratchet-seq \$0 \$1
 0 4 s12-ratchet-gui-s s12-ratchet-gui-r empty #FFFFFF #DE4C91 #000000
 ;
@@ -3183,6 +3180,9 @@ f f f f f f f f f f;
 ;
 #X obj 10 2040 state_saving_module/vradio_dispatch ratchet-seq \$0
 \$1 0 4 s2-ratchet-gui-s s2-ratchet-gui-r empty #FFFFFF #DE4C91 #000000
+;
+#X obj 10 900 state_saving_module/vradio_dispatch ratchet-seq \$0 \$1
+0 4 s10-ratchet-gui-s s10-ratchet-gui-r empty #FFFFFF #DE4C91 #000000
 ;
 #X restore 896 558 pd \$0-gui_listeners;
 #X connect 0 0 1 0;
