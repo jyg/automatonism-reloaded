@@ -1,4 +1,4 @@
-#N canvas 0 22 661 535 10;
+#N canvas 47 426 661 535 10;
 #X obj 103 211 inlet~;
 #X obj 103 318 tabwrite~ \$0-scope;
 #X obj 122 114 cnv 5 5 5 empty empty OSCILLOSCOPE 0 0 0 12 -262144
@@ -11,6 +11,20 @@
 #X obj 148 211 loadbang;
 #X obj 148 279 metro 200;
 #X msg 148 233 1;
+#N canvas 251 213 450 300 loadbang 0;
+#X msg 116 185 loadbang;
+#X obj 115 110 spigot 1;
+#X msg 240 120 0;
+#X obj 240 84 loadbang;
+#X obj 116 226 s \$0-this;
+#X obj 115 27 r scope-\$1-loadbang;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 5 0 1 0;
+#X restore 357 119 pd loadbang;
+#X obj 359 149 namecanvas \$0-this;
 #X connect 0 0 1 0;
 #X connect 5 0 7 0;
 #X connect 6 0 1 0;

@@ -1,11 +1,11 @@
-#N canvas 0 23 1280 747 10;
+#N canvas 42 185 1280 747 10;
 #X obj 77 423 line~;
 #X obj 77 478 mtof~;
 #X floatatom 204 114 5 0 0 1 Hz - -;
 #X obj 77 450 +~;
 #X obj 217 433 *~ 127;
 #X obj 106 128 hsl 128 15 0 127 0 1 \$0-basic-lfo-freq-s \$0-basic-lfo-freq-r
-FREQ 135 7 0 10 -262144 -1 -1 0 1;
+FREQ 135 7 0 10 -262144 -1 -1 8000 1;
 #X obj 269 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 -262144 -226533 0
 ;
 #X obj 77 502 +~;
@@ -50,7 +50,7 @@ P-WIDTH 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 12 0 13 0;
 #X connect 13 0 15 0;
 #X restore 77 531 pd sinewave;
-#X obj 174 121 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 174 121 cnv 5 5 5 empty \$0-instance-num 6 0 0 0 12 -262144
 -66577 0;
 #N canvas 0 22 732 465 triangle 0;
 #X obj 428 75 r \$0-basic-lfo-sync!;
@@ -419,7 +419,7 @@ P-WIDTH 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 39 0 34 0;
 #X restore 316 100 pd state-saving-via-preset-manager-module;
 #X obj 106 158 hsl 128 15 0 127 0 1 \$0-basic-lfo-depth-s \$0-basic-lfo-depth-r
-DEPTH 135 7 0 10 -137270 -1 -1 0 1;
+DEPTH 135 7 0 10 -137270 -1 -1 3700 1;
 #X obj 104 109 cnv 5 5 5 empty empty FREQ 0 0 0 8 -262144 -66577 0
 ;
 #X obj 77 374 t f f;
@@ -595,8 +595,8 @@ DEPTH 135 7 0 10 -137270 -1 -1 0 1;
 #X restore 316 78 pd parameter-nudging-system;
 #X obj 164 391 mtof;
 #X obj 103 173 hradio 15 1 1 3 \$0-basic-lfo-wform-s \$0-basic-lfo-wform-r
-empty 65 7 0 10 -262144 -1 -1 0;
-#X obj 154 181 cnv 5 5 5 empty \$0-lfo-waveform-gui-r SINE 0 0 0 10
+empty 65 7 0 10 -262144 -1 -1 2;
+#X obj 154 181 cnv 5 5 5 empty \$0-lfo-waveform-gui-r SAW 0 0 0 10
 -262144 -66577 0;
 #N canvas 0 22 1132 690 choose-wform 0;
 #X obj 80 498 t b b;

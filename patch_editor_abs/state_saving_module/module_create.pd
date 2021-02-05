@@ -6,11 +6,11 @@
 #X obj 262 124 t b b;
 #X msg 373 54 0;
 #X obj 64 387 t b b;
-#X msg 64 509 loadbang;
+#X msg 63 622 loadbang;
 #X obj 64 462 delay 100;
 #X msg 288 152 editmode 1;
 #X obj 373 32 r \$1-reset!;
-#X obj 64 562 s pd-\$3.pd;
+#X obj 65 658 s pd-\$3.pd;
 #X obj 64 17 r \$1-create-\$3!;
 #X obj 85 194 symbol \$3;
 #X obj 91 411 s SAVE-S;
@@ -24,12 +24,16 @@
 #X msg 83 341 obj \$3 \$4 \$1 \$2;
 #X msg 261 197 0;
 #X obj 261 222 s \$1-modules_menu_opened;
+#X obj 153 483 list prepend \$3;
+#X obj 138 568 s;
+#X msg 153 508 symbol \$1-\$2-loadbang;
 #X connect 0 0 1 0;
 #X connect 0 0 3 0;
 #X connect 1 0 6 0;
 #X connect 1 1 13 0;
 #X connect 1 2 18 0;
 #X connect 2 0 21 1;
+#X connect 2 0 25 0;
 #X connect 3 0 4 0;
 #X connect 4 0 23 0;
 #X connect 4 1 9 0;
@@ -37,7 +41,7 @@
 #X connect 6 0 8 0;
 #X connect 6 1 14 0;
 #X connect 7 0 11 0;
-#X connect 8 0 7 0;
+#X connect 8 0 26 0;
 #X connect 9 0 16 0;
 #X connect 10 0 5 0;
 #X connect 12 0 0 0;
@@ -49,3 +53,5 @@
 #X connect 21 0 22 0;
 #X connect 22 0 15 0;
 #X connect 23 0 24 0;
+#X connect 25 0 27 0;
+#X connect 27 0 26 1;

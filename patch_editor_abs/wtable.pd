@@ -19,11 +19,11 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 104 297 pack 0 50;
 #X obj 106 124 cnv 5 5 5 empty empty WTABLE 0 0 0 12 -262144 -66577
 0;
-#X obj 154 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 154 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 104 273 clip 0 90;
 #X obj 261 331 *~ 127;
-#N canvas 472 28 323 246 tables 0;
+#N canvas 472 148 323 246 tables 0;
 #N canvas 0 22 745 659 ramps 0;
 #X obj 25 18 loadbang;
 #X obj 25 40 f \$0;
@@ -38,31 +38,31 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 32 467 t f f;
 #X text 92 424 ??? RAMP RAMP;
 #X msg 32 561 \; \$1-wtable-ramp3 normalize 1;
-#X msg 59 488 \; \$1-wtable-ramp3 sinesum 515 1 -1 0.5 -0.5 0.33 -0.33
-0.25 -0.25 0.2 -0.2 1 -1 0.5 -0.5 0.33 -0.33 0.25 -0.25 0.2 -0.2;
-#X obj 31 596 table \$0-wtable-ramp3;
-#X obj 22 385 table \$0-wtable-ramp2;
 #X msg 24 345 \; \$1-wtable-ramp2 normalize 1;
-#X msg 51 296 \; \$1-wtable-ramp2 sinesum 515 1 0 -0.111111 0 0.04
-0 -0.0204082 0 0.0123457 0 -0.00826446;
 #X msg 25 161 \; \$1-wtable-ramp1 normalize 1;
-#X msg 52 88 \; \$1-wtable-ramp1 sinesum 515 1 0.5 0.33 0.25 0.2 0.16
+#X obj 24 196 table \$0-wtable-ramp1 515;
+#X obj 22 385 table \$0-wtable-ramp2 515;
+#X obj 31 596 table \$0-wtable-ramp3 515;
+#X msg 52 88 \; \$1-wtable-ramp1 sinesum 512 1 0.5 0.33 0.25 0.2 0.16
 0.14 0.125 0.111111 0.1 0.090909 0.083333 0.076923 0.0714285 0.066666
 0.0625 0.058823 0.055555 0.052631 0.05 0.047619 0.045454 0.043478 0.041666
 ;
-#X obj 24 196 table \$0-wtable-ramp1;
+#X msg 51 296 \; \$1-wtable-ramp2 sinesum 512 1 0 -0.111111 0 0.04
+0 -0.0204082 0 0.0123457 0 -0.00826446;
+#X msg 59 488 \; \$1-wtable-ramp3 sinesum 512 1 -1 0.5 -0.5 0.33 -0.33
+0.25 -0.25 0.2 -0.2 1 -1 0.5 -0.5 0.33 -0.33 0.25 -0.25 0.2 -0.2;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
-#X connect 2 0 18 0;
-#X connect 2 1 19 0;
+#X connect 2 0 14 0;
+#X connect 2 1 18 0;
 #X connect 3 0 5 0;
 #X connect 5 0 6 0;
-#X connect 6 0 16 0;
-#X connect 6 1 17 0;
+#X connect 6 0 13 0;
+#X connect 6 1 19 0;
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
 #X connect 10 0 12 0;
-#X connect 10 1 13 0;
+#X connect 10 1 20 0;
 #X restore 24 46 pd ramps;
 #N canvas 635 114 463 602 sinusoid 0;
 #X obj 28 26 loadbang;
@@ -78,14 +78,14 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 18 452 t f f;
 #X text 69 406 SINE3;
 #X msg 28 148 \; \$1-wtable-sine normalize 1;
-#X obj 26 188 table \$0-wtable-sine;
 #X msg 22 336 \; \$1-wtable-sine2 normalize 1;
-#X obj 20 376 table \$0-wtable-sine2;
 #X msg 18 528 \; \$1-wtable-sine3 normalize 1;
-#X obj 16 568 table \$0-wtable-sine3;
-#X msg 55 99 \; \$1-wtable-sine sinesum 515 1;
-#X msg 49 287 \; \$1-wtable-sine2 sinesum 515 1 0 1 0 1 0;
-#X msg 45 479 \; \$1-wtable-sine3 sinesum 515 1 0 1 0 1 0 1 0 1 0 1
+#X obj 26 188 table \$0-wtable-sine 515;
+#X obj 20 376 table \$0-wtable-sine2 515;
+#X obj 16 568 table \$0-wtable-sine3 515;
+#X msg 55 99 \; \$1-wtable-sine sinesum 512 1;
+#X msg 49 287 \; \$1-wtable-sine2 sinesum 512 1 0 1 0 1 0;
+#X msg 45 479 \; \$1-wtable-sine3 sinesum 512 1 0 1 0 1 0 1 0 1 0 1
 0;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -93,11 +93,11 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 2 1 18 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
-#X connect 6 0 14 0;
+#X connect 6 0 13 0;
 #X connect 6 1 19 0;
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
-#X connect 10 0 16 0;
+#X connect 10 0 14 0;
 #X connect 10 1 20 0;
 #X restore 24 23 pd sinusoid;
 #N canvas 0 22 794 615 squares 0;
@@ -110,30 +110,30 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 411 28 loadbang;
 #X obj 412 82 t f f;
 #X obj 411 50 f \$0;
-#X msg 52 98 \; \$1-wtable-square1 sinesum 515 1 0 0.33 0 0.2 0 0.142857
+#X msg 25 159 \; \$1-wtable-square1 normalize 1;
+#X msg 28 371 \; \$1-wtable-square2 normalize 1;
+#X msg 412 169 \; \$1-wtable-square3 normalize 1;
+#X obj 23 199 table \$0-wtable-square1 515;
+#X obj 26 411 table \$0-wtable-square2 515;
+#X obj 410 209 table \$0-wtable-square3 515;
+#X msg 52 98 \; \$1-wtable-square1 sinesum 512 1 0 0.33 0 0.2 0 0.142857
 0 0.111111 0 0.090909 0 0.076923 0 0.066666 0 0.058823 0 0.0526315
 0 0.047619 0 0.04347 0 0.04 0;
-#X msg 25 159 \; \$1-wtable-square1 normalize 1;
-#X obj 23 199 table \$0-wtable-square1;
-#X msg 55 310 \; \$1-wtable-square2 sinesum 515 1 0 0 0 0.2 0 0 0 0.111111
+#X msg 55 310 \; \$1-wtable-square2 sinesum 512 1 0 0 0 0.2 0 0 0 0.111111
 0 0 0 0.076923 0 0 0 0.058823 0 0 0 0.047619 0 0 0 0.04;
-#X msg 28 371 \; \$1-wtable-square2 normalize 1;
-#X obj 26 411 table \$0-wtable-square2;
-#X msg 439 108 \; \$1-wtable-square3 sinesum 515 1 0 0 0 0 0 0 0 0.111111
+#X msg 439 108 \; \$1-wtable-square3 sinesum 512 1 0 0 0 0 0 0 0 0.111111
 0 0 0 0 0 0 0 0.058823 0 0 0 0 0 0 0 0.04;
-#X msg 412 169 \; \$1-wtable-square3 normalize 1;
-#X obj 410 209 table \$0-wtable-square3;
 #X connect 0 0 2 0;
-#X connect 1 0 10 0;
-#X connect 1 1 9 0;
+#X connect 1 0 9 0;
+#X connect 1 1 15 0;
 #X connect 2 0 1 0;
 #X connect 3 0 5 0;
-#X connect 4 0 13 0;
-#X connect 4 1 12 0;
+#X connect 4 0 10 0;
+#X connect 4 1 16 0;
 #X connect 5 0 4 0;
 #X connect 6 0 8 0;
-#X connect 7 0 16 0;
-#X connect 7 1 15 0;
+#X connect 7 0 11 0;
+#X connect 7 1 17 0;
 #X connect 8 0 7 0;
 #X restore 25 67 pd squares;
 #N canvas 0 22 687 641 z1 0;
@@ -150,17 +150,17 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 18 452 t f f;
 #X text 69 406 SINE3;
 #X msg 28 148 \; \$1-wtable-z1a normalize 1;
-#X obj 26 188 table \$0-wtable-z1a;
 #X msg 22 336 \; \$1-wtable-z1b normalize 1;
-#X obj 20 376 table \$0-wtable-z1b;
 #X msg 18 528 \; \$1-wtable-z1c normalize 1;
-#X obj 16 568 table \$0-wtable-z1c;
-#X msg 55 99 \; \$1-wtable-z1a sinesum 515 0.1 0.2 0.3 0.4 0.5 0.7
+#X obj 26 188 table \$0-wtable-z1a 515;
+#X obj 20 376 table \$0-wtable-z1b 515;
+#X obj 16 568 table \$0-wtable-z1c 515;
+#X msg 55 99 \; \$1-wtable-z1a sinesum 512 0.1 0.2 0.3 0.4 0.5 0.7
 0.8 0.9 1 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1;
-#X msg 102 277 \; \$1-wtable-z1b sinesum 515 1 0.1 1 0.2 1 0.3 1 0.4
+#X msg 102 277 \; \$1-wtable-z1b sinesum 512 1 0.1 1 0.2 1 0.3 1 0.4
 1 0.5 1 0.7 1 0.8 1 0.9 1 1 0.9 1 0.8 1 0.7 1 0.6 1 0.5 1 0.4 1 0.3
 1 0.2 1 0.1;
-#X msg 45 479 \; \$1-wtable-z1c sinesum 515 0.1 0.1 0.1 1 0.1 0.1 0.1
+#X msg 45 479 \; \$1-wtable-z1c sinesum 512 0.1 0.1 0.1 1 0.1 0.1 0.1
 1 0.1 0.1 0.1 1 0.1 0.1 0.1 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -168,11 +168,11 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 2 1 18 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
-#X connect 6 0 14 0;
+#X connect 6 0 13 0;
 #X connect 6 1 19 0;
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
-#X connect 10 0 16 0;
+#X connect 10 0 14 0;
 #X connect 10 1 20 0;
 #X restore 26 88 pd z1;
 #N canvas 0 22 687 641 z2 0;
@@ -189,17 +189,17 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 18 452 t f f;
 #X text 69 406 SINE3;
 #X msg 28 148 \; \$1-wtable-z2a normalize 1;
-#X obj 26 188 table \$0-wtable-z2a;
 #X msg 22 336 \; \$1-wtable-z2b normalize 1;
-#X obj 20 376 table \$0-wtable-z2b;
 #X msg 18 528 \; \$1-wtable-z2c normalize 1;
-#X obj 16 568 table \$0-wtable-z2c;
-#X msg 55 99 \; \$1-wtable-z2a sinesum 515 1 0.1 0.2 0.3 0.4 0.5 0.7
+#X obj 26 188 table \$0-wtable-z2a 515;
+#X obj 20 376 table \$0-wtable-z2b 515;
+#X obj 16 568 table \$0-wtable-z2c 515;
+#X msg 55 99 \; \$1-wtable-z2a sinesum 512 1 0.1 0.2 0.3 0.4 0.5 0.7
 0.8 0.9 1 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1 1;
-#X msg 102 277 \; \$1-wtable-z2b sinesum 515 0 0 0 0 1 0.1 1 0.2 1
+#X msg 102 277 \; \$1-wtable-z2b sinesum 512 0 0 0 0 1 0.1 1 0.2 1
 0.3 1 0.4 1 0.5 1 0.7 1 0.8 1 0.9 1 1 0.9 1 0.8 1 0.7 1 0.6 1 0.5 1
 0.4 1 0.3 1 0.2 1 0.1;
-#X msg 45 479 \; \$1-wtable-z2c sinesum 515 0.9 0.9 0.9 1 0.1 -0.5
+#X msg 45 479 \; \$1-wtable-z2c sinesum 512 0.9 0.9 0.9 1 0.1 -0.5
 0.1 0 0.1 1 0.1 0 0.1 -0.5 0.1 0;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -207,11 +207,11 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 2 1 18 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
-#X connect 6 0 14 0;
+#X connect 6 0 13 0;
 #X connect 6 1 19 0;
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
-#X connect 10 0 16 0;
+#X connect 10 0 14 0;
 #X connect 10 1 20 0;
 #X restore 26 113 pd z2;
 #N canvas 0 22 687 641 z3 0;
@@ -228,16 +228,16 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 18 452 t f f;
 #X text 69 406 SINE3;
 #X msg 28 148 \; \$1-wtable-z3a normalize 1;
-#X obj 26 188 table \$0-wtable-z3a;
 #X msg 22 336 \; \$1-wtable-z3b normalize 1;
-#X obj 20 376 table \$0-wtable-z3b;
 #X msg 18 528 \; \$1-wtable-z3c normalize 1;
-#X obj 16 568 table \$0-wtable-z3c;
-#X msg 123 88 \; \$1-wtable-z3a sinesum 515 -1 0 -0.33 0 -0.2 0 -0.142857
+#X obj 26 188 table \$0-wtable-z3a 515;
+#X obj 20 376 table \$0-wtable-z3b 515;
+#X obj 16 568 table \$0-wtable-z3c 515;
+#X msg 123 88 \; \$1-wtable-z3a sinesum 512 -1 0 -0.33 0 -0.2 0 -0.142857
 0 -0.111111 0 0.090909 0 -0.076923 0 -0.066666 0 -0.058823 0 1;
-#X msg 102 277 \; \$1-wtable-z3b sinesum 515 1 0 0 0 0.2 0 0 0 0.111111
+#X msg 102 277 \; \$1-wtable-z3b sinesum 512 1 0 0 0 0.2 0 0 0 0.111111
 0 0 0 0.076923 0 0 0 1 1 1 1;
-#X msg 45 479 \; \$1-wtable-z3c sinesum 515 0 0 0 0 1 0 0 0 0 0.111111
+#X msg 45 479 \; \$1-wtable-z3c sinesum 512 0 0 0 0 1 0 0 0 0 0.111111
 0 0 0 0 0 0 0 0.058823 0 0 0.04 0 1 0 1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -245,16 +245,16 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 2 1 18 0;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
-#X connect 6 0 14 0;
+#X connect 6 0 13 0;
 #X connect 6 1 19 0;
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
-#X connect 10 0 16 0;
+#X connect 10 0 14 0;
 #X connect 10 1 20 0;
 #X restore 26 140 pd z3;
 #X restore 331 76 pd tables;
 #X obj 108 146 hsl 128 15 0 127 0 1 \$0-wtable-x-s \$0-wtable-x-r X
-135 7 0 10 -262144 -1 -1 0 1;
+135 7 0 10 -262144 -1 -1 5500 1;
 #X obj 108 161 hsl 128 15 0 127 0 1 \$0-wtable-y-s \$0-wtable-y-r Y
 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 1145 352 inlet~ FM IN;
@@ -355,7 +355,7 @@ PITCH 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 19 2 8 0;
 #X restore 238 471 pd pulses;
 #X obj 108 175 hsl 128 15 0 127 0 1 \$0-wtable-z-s \$0-wtable-z-r Z
-135 7 0 10 -262144 -1 -1 0 1;
+135 7 0 10 -262144 -1 -1 1500 1;
 #X obj 811 520 *~;
 #X obj 890 520 *~;
 #X obj 953 520 *~;

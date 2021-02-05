@@ -1,4 +1,4 @@
-#N canvas 969 107 746 492 12;
+#N canvas 837 505 746 492 12;
 #X obj 199 156 list prepend dispatch \$6;
 #X text 94 45 demande;
 #X obj 503 114 r \$0-midi_map_status;
@@ -9,7 +9,7 @@
 #X obj 524 275 list append 127;
 #X obj 524 300 list append lin;
 #X obj 524 325 list prepend mapping \$6;
-#N canvas 530 150 1618 874 midi_mapping 1;
+#N canvas 961 58 958 1018 midi_mapping 1;
 #X obj 579 77 spigot;
 #X obj 650 49 r MIDI_LEARN;
 #X obj 646 128 v MIDI_CHANNEL;
@@ -26,8 +26,8 @@
 #X msg 792 508 clear;
 #X obj 703 615 s pd-\$0-midi_listener;
 #N canvas 106 616 1375 300 \$0-midi_listener 0;
-#X obj 10 10 ctlin 2 1;
-#X obj 10 50 s 1655-receive_from_listener;
+#X obj 10 10 ctlin 5 1;
+#X obj 10 50 s 3839-receive_from_listener;
 #X connect 0 0 1 0;
 #X restore 1182 62 pd \$0-midi_listener;
 #X obj 1184 325 / 127;
@@ -242,8 +242,9 @@
 #X obj 127 653 midi_learn_mode_display \$8 \$9 \$10 \$11;
 #X obj 134 692 s \$2-\$7;
 #X obj 555 427 t l l b;
-#X msg 555 451 \$1;
-#X obj 457 484 s \$0-is_mapped;
+#X msg 500 616 \$1;
+#X obj 502 662 s \$0-is_mapped;
+#X obj 481 568 t l l;
 #X connect 0 0 61 0;
 #X connect 1 0 0 1;
 #X connect 2 0 5 2;
@@ -266,7 +267,7 @@
 #X connect 25 0 26 0;
 #X connect 26 0 24 1;
 #X connect 27 0 24 0;
-#X connect 28 0 63 1;
+#X connect 28 0 68 0;
 #X connect 28 1 14 0;
 #X connect 30 0 31 0;
 #X connect 32 0 30 0;
@@ -300,10 +301,11 @@
 #X connect 61 3 2 0;
 #X connect 62 0 63 0;
 #X connect 63 0 64 0;
-#X connect 65 0 66 0;
 #X connect 65 1 28 0;
 #X connect 65 2 13 0;
 #X connect 66 0 67 0;
+#X connect 68 0 63 1;
+#X connect 68 1 66 0;
 #X restore 442 53 pd midi_mapping;
 #X msg 47 388 set \$1;
 #X obj 600 204 r \$0-map_from;
