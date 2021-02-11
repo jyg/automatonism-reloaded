@@ -1,9 +1,9 @@
 #N canvas 150 23 1051 749 10;
 #X obj 117 576 vline~;
 #X obj 153 147 vsl 15 96 1.27 127 1 1 \$0-ahr-release-s \$0-ahr-release-r
-R 4 -9 0 10 -262144 -1 -1 0 1;
+R 4 -9 0 10 -262144 -1 -1 10400 1;
 #X obj 123 147 vsl 15 96 1.27 127 1 1 \$0-ahr-attack-s \$0-ahr-attack-r
-A 4 -9 0 10 -262144 -1 -1 0 1;
+A 4 -9 0 10 -262144 -1 -1 6400 1;
 #X obj 117 480 f;
 #X obj 53 313 / 127;
 #X obj 224 311 / 127;
@@ -46,7 +46,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X msg 117 554 1 \$1 \, 0 \$2 \$3;
 #X obj 117 531 pack f f f;
 #X obj 138 147 vsl 15 96 1.27 127 1 1 \$0-ahr-hold-s \$0-ahr-hold-r
-H 4 -9 0 10 -262144 -1 -1 0 1;
+H 4 -9 0 10 -262144 -1 -1 5800 1;
 #X obj 411 378 / 127;
 #X obj 410 440 * 1999;
 #X obj 195 475 +;
@@ -174,7 +174,7 @@ H 4 -9 0 10 -262144 -1 -1 0 1;
 #X obj 71 616 *~;
 #X obj 560 541 s \$0-instance-num;
 #X obj 560 493 makefilename %d;
-#X obj 184 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 184 126 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 -262144
 -66577 0;
 #X msg 560 518 label \$1;
 #X obj 12 40 threshold~ 0.99 0 1 0;
