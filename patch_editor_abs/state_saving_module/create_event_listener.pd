@@ -46,27 +46,27 @@
 #X obj 182 276 t b b;
 #X msg 182 301 0;
 #X msg 222 300 clear;
+#X msg 430 297 obj 10 10 r MACRO-\$2 \, obj 10 90 route \$1 \, obj
+10 130 s \$3-receive_from_listener \, connect 0 0 1 0 \, connect 0
+1 1 1 \, connect 1 0 2 0;
+#N canvas 0 50 450 300 clear_midimap 0;
+#X obj 89 236 outlet;
+#X restore 693 410 pd clear_midimap;
 #X msg 221 107 obj 10 10 ctlin \$1 \$2 \, obj 10 50 s \$3-receive_from_listener
 \, connect 0 0 1 0;
 #X msg 323 183 obj 10 10 notein \$2 \, obj 10 50 pack f f \, obj 10
 90 route \$1 \, obj 10 130 s \$3-receive_from_listener \, connect 0
 0 1 0 \, connect 0 1 1 1 \, connect 1 0 2 0 \, connect 2 0 3 0;
-#X msg 430 297 obj 10 10 r MACRO-\$2 \, obj 10 90 route \$1 \, obj
-10 130 s \$3-receive_from_listener \, connect 0 0 1 0 \, connect 0
-1 1 1 \, connect 1 0 2 0;
-#N canvas 0 50 450 300 clear_midimap 1;
-#X obj 89 236 outlet;
-#X restore 693 410 pd clear_midimap;
 #X connect 0 0 15 0;
 #X connect 8 0 11 0;
-#X connect 8 1 23 0;
+#X connect 8 1 25 0;
 #X connect 9 0 12 0;
-#X connect 9 1 24 0;
+#X connect 9 1 26 0;
 #X connect 10 0 16 0;
 #X connect 11 0 16 0;
 #X connect 12 0 16 0;
 #X connect 13 0 14 0;
-#X connect 13 1 25 0;
+#X connect 13 1 23 0;
 #X connect 14 0 16 0;
 #X connect 15 0 10 0;
 #X connect 15 1 8 0;
@@ -82,5 +82,5 @@
 #X connect 21 0 16 0;
 #X connect 22 0 1 0;
 #X connect 23 0 1 0;
-#X connect 24 0 1 0;
 #X connect 25 0 1 0;
+#X connect 26 0 1 0;
