@@ -1,4 +1,4 @@
-# automatonism 0.51
+# automatonism_51
 
 Based on Automatonism V3.1 from https://www.automatonism.com/the-software
 
