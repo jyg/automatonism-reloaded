@@ -630,7 +630,7 @@ to save the pd file \, like you normally would do from the FILE menu
 or cmd+s \, and then click the grey SAVE! canvas in the left bottom
 corner(or simply press ENTER on your keyboard) and you'll see the canvas
 change color from grey to green for a brief moment. All parameter values
-are now written to state_saving_module/textfiles and can be loaded to the equivalent module
+are now written to state_saving_module/textfile \$0s and can be loaded to the equivalent module
 and instance number next time the patch is loaded.;
 #X text 464 245 8 You can call modules without using the module list
 simply by creating a new object in pd and type the module's name. For
@@ -645,7 +645,7 @@ reset the counter of unique numbers for modules.;
 you can name freely--must contain the folder "patch_editor_abs" and
 the pd-file "main.pd". Copy the entire main parent folder to start
 a new project. Please do not add the abstractions to your PD Search
-path \, because the state svaing system will be writing state_saving_module/textfiles in
+path \, because the state svaing system will be writing state_saving_module/textfile \$0s in
 your external folders.;
 #X text 451 534 ABOUT RESET BUTTON: Only use the RESET button when
 your canvas is empty. If you click it in the middle of a patch \, modules
@@ -761,15 +761,15 @@ empty -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 17 12 cnv 15 400 60 empty empty STATE_SAVING 20 12 0 14 -226533
 -262144 0;
 #X text 20 82 The state saving system works by writing parameter values
-to state_saving_module/textfiles in the folder "statesave" inside the "patch_editor_abs"
+to state_saving_module/textfile \$0s in the folder "statesave" inside the "patch_editor_abs"
 folder. When you load a module form the module list it is automatically
-being given a unique creation argument which creates a state_saving_module/textfile unique
+being given a unique creation argument which creates a state_saving_module/textfile \$0 unique
 for that instance of the module. To save your patch \, simply save
 as you normally would from the FILE menu and the press ENTER on your
 keyboard or click the SAVE button in the upper left corner of the main
 window.;
 #X text 20 216 IMPORTANT!!! To start a new project \, the entire folder
-structure needs to be copied since the abstractions and state_saving_module/textfiles are
+structure needs to be copied since the abstractions and state_saving_module/textfile \$0s are
 unique to every project. Click the RESET button in the upper left corner
 to reset the counter that gives unique creation arguments for the modules.
 ;

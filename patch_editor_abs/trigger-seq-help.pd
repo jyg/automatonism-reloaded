@@ -1,4 +1,4 @@
-#N canvas 0 22 723 574 10;
+#N canvas 0 22 727 640 10;
 #X obj 17 466 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
 -262144 0;
 #X obj 18 195 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
@@ -12,6 +12,23 @@
 #X text 15 389 LOAD(1-4) - trigger/gate input to step through stored
 pattern1-4 sequentially;
 #X obj 449 17 trigger-seq;
+#A saved dispatch trigger-seq-s1-s 1;
+#A saved dispatch trigger-seq-s2-s 0;
+#A saved dispatch trigger-seq-s3-s 0;
+#A saved dispatch trigger-seq-s4-s 0;
+#A saved dispatch trigger-seq-s5-s 0;
+#A saved dispatch trigger-seq-s6-s 0;
+#A saved dispatch trigger-seq-s7-s 0;
+#A saved dispatch trigger-seq-s8-s 0;
+#A saved dispatch trigger-seq-s9-s 0;
+#A saved dispatch trigger-seq-s10-s 1;
+#A saved dispatch trigger-seq-s11-s 1;
+#A saved dispatch trigger-seq-s12-s 0;
+#A saved dispatch trigger-seq-s13-s 1;
+#A saved dispatch trigger-seq-s14-s 1;
+#A saved dispatch trigger-seq-s15-s 1;
+#A saved dispatch trigger-seq-s16-s 1;
+#A saved dispatch trigger-seq-num-of-steps-s 0;
 #X text 19 230 STEPS1-16 - individual toggle boxes to set the step
 on or off.;
 #X text 15 362 CLOCK-IN - trigger/gate/clock input;
@@ -23,3 +40,7 @@ can store and recall 4 sequences. Click any of the four WRITE slots
 to store in slot 1-4 and click any of the LOAD slots to recall a stored
 sequence. You can step through the stored patterns with a trigger/gate
 signal at the LOAD(1-4) input.;
+#X text 19 574 This module has its own preset storage module \, thus
+he doesn't interact with PRESET_MANAGER.;
+#X obj 17 536 cnv 15 400 30 empty empty NOTE: 20 12 0 14 -261234 -262144
+0;

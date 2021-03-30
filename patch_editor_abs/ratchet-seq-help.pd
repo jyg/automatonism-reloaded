@@ -11,6 +11,38 @@
 #X text 14 464 RESET - trigger/gate input to reset the sequencer;
 #X text 16 541 OUT - output;
 #X obj 439 18 ratchet-seq 0;
+#A saved dispatch s10-ratchet-gui-s 3;
+#A saved dispatch s2-ratchet-gui-s 0;
+#A saved dispatch s1-ratchet-gui-s 0;
+#A saved dispatch s4-ratchet-gui-s 0;
+#A saved dispatch s3-ratchet-gui-s 1;
+#A saved dispatch t2-s 0;
+#A saved dispatch t1-s 0;
+#A saved dispatch t4-s 0;
+#A saved dispatch t3-s 0;
+#A saved dispatch s6-ratchet-gui-s 0;
+#A saved dispatch s5-ratchet-gui-s 0;
+#A saved dispatch s8-ratchet-gui-s 2;
+#A saved dispatch s7-ratchet-gui-s 2;
+#A saved dispatch t6-s 0;
+#A saved dispatch t5-s 0;
+#A saved dispatch t8-s 0;
+#A saved dispatch t7-s 0;
+#A saved dispatch s11-ratchet-gui-s 1;
+#A saved dispatch s9-ratchet-gui-s 0;
+#A saved dispatch s12-ratchet-gui-s 1;
+#A saved dispatch t10-s 0;
+#A saved dispatch t9-s 0;
+#A saved dispatch t12-s 0;
+#A saved dispatch t11-s 0;
+#A saved dispatch s14-ratchet-gui-s 3;
+#A saved dispatch s13-ratchet-gui-s 2;
+#A saved dispatch s16-ratchet-gui-s 0;
+#A saved dispatch s15-ratchet-gui-s 0;
+#A saved dispatch t14-s 0;
+#A saved dispatch t13-s 0;
+#A saved dispatch t16-s 0;
+#A saved dispatch t15-s 0;
 #X text 19 186 x 1-5 - click the any of the boxes named x1 \, x2 \,
 x3 \, x4 & x5 to produce 1 to 5 trigger signals per sequencer steps.
 ;
@@ -26,3 +58,7 @@ patterns with a trigger/gate signal at the LOAD(1-4) input.;
 pattern1-4 sequentially;
 #X text 14 380 RDM! - trigger/gate input to produce random sequencer
 settings;
+#X text 459 254 This module has its own preset storage module \, thus
+he doesn't interact with PRESET_MANAGER.;
+#X obj 459 223 cnv 15 400 30 empty empty NOTE: 20 12 0 14 -261234 -262144
+0;
