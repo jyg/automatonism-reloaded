@@ -7,7 +7,8 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software
 ## New features :
 
 * automatonism made as an abstaction lib : init a new project just by typing [automatonism] in a blank patch.
-* local patch state saving
+* local patch state-saving
+* local patch preset-storage
 * automatic import of old savestate structure
 * ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * midi-mapping enabled and midi-learn feature
@@ -22,4 +23,4 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software
 * external lib iemguts needed for enhanced editing features, but not mandatory.
 
 ## To do :
-* Find a way to save presets inside the main patch
+* Import preset files on patch load time for all modules  in order to  avoid clicks
