@@ -24,3 +24,4 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software
 
 ## To do :
 * Import preset files on patch load time for all modules  in order to  avoid clicks
+* Document migration instructions
