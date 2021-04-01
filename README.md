@@ -1,8 +1,10 @@
-# automatonism_MMXXI.IV
+# automatonism_2021
 
 <p align="left"> <img src="https://raw.githubusercontent.com/jyg/automatonism/master/automatonism_51.png" alt="automatonism_51" ></p>
 
 Based on Automatonism V3.1 from https://www.automatonism.com/the-software
+Legacy preset and state saving file system is deprecated. 
+New preset and state saving system is based on new savestate object.
 
 ## New features :
 
