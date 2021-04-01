@@ -1,0 +1,43 @@
+#N canvas 314 22 906 735 10;
+#X obj 18 267 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 449 217 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X text 16 491 10 30 60 - determines maximum value of the MORPH slider.
+Set times between 0-10 seconds \, 0-30 seconds \, 0-60 seconds.;
+#X text 16 578 STOP! - click the STOP! button to stop a current morph
+between parameter values. It is useful to be able to cancel a morph
+if you need further editing and it can also be used creatively if the
+morph function reveals a new interesting parameter combination. If
+so \, click STOP! and STORE.;
+#X obj 20 7 cnv 15 400 30 empty empty PRESET-MANAGER: 20 12 0 14 -150893
+-262144 0;
+#X obj 450 6 preset-manager;
+#X text 18 409 RECALL-CV - attenuator for incoming CV at the RECALL(CV)
+input.;
+#X text 453 262 RECALL(CV) - input for CV-control over the RECALL paramater
+;
+#X text 21 47 The "PRESET-MANAGER" module can store all parameters
+in a patch into 16 different slots. You can recall the saved slots
+manually \, adress them with with CV or step through them seuqentially
+with a trigger/gate signal. An additional MORPH control is available
+to set the time in milliseconds that it will take to reach the next
+parameter state. All Automatonism parameter controls are divided into
+three types: FREQUENCIES \, PARAMETERS and ATTENUATORS. Use the MORPH-SELECTOR
+to select whether the MORPH affects frequencies \, parameters and/or
+attenuators. The preset-manager is a complex composition tool which
+allows you to experiment with different knob and parameter settings
+in a patch while being able to revert to a previous state. It is best
+used when a patch is finished and make sure to make a backup so you
+don't loose precious settings while experimenting.;
+#X text 18 307 STORE - First choose which slot to save to STORE(1-16)
+and then click the STORE button to save all current parameter values
+in a patch into the slot chosen by the STORE radio.;
+#X text 453 292 STEP! -trigger/gate input that will step through presets
+sequentially 1-16;
+#X text 19 367 RECALL - immediately recall saved slots 1-16 by clicking
+the radio.;
+#X text 18 452 MORPH - slider sets the morph time in milliseconds to
+glide to next value. Times from 0 seconds up to one minute.;
+#X text 18 535 MORPH SELECTOR- selet what types of system parameters
+will be affected by the morph function.;

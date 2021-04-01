@@ -18964,7 +18964,7 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X connect 30 0 3 0;
 #X restore 65 145 pd fx-sends;
 #X obj 128 117 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 245 357 *~;
 #X obj 65 321 *~;
 #X obj 128 363 *~;
@@ -19268,9 +19268,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X restore 687 183 pd receive-global-xpose;
 #N canvas 0 22 1005 733 old-seq-gui 0;
 #X obj 112 82 tgl 60 1 \$0-seq1-t1-s \$0-seq1-t1-r empty 17 7 0 10
--191407 -1 -1 0 1;
+-191407 -1 -1 1 1;
 #X obj 112 140 hradio 15 1 1 4 \$0-seq1-r1-s \$0-seq1-r1-r empty 0
--8 0 10 -191407 -1 -1 -4;
+-8 0 10 -191407 -1 -1 0;
 #X obj 172 82 tgl 60 1 \$0-seq1-t2-s \$0-seq1-t2-r empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 172 140 hradio 15 1 1 4 \$0-seq1-r2-s \$0-seq1-r2-r empty 0
@@ -19304,9 +19304,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 172 213 hradio 15 1 1 4 \$0-seq1-r10-s \$0-seq1-r10-r empty
 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 232 155 tgl 60 1 \$0-seq1-t11-s \$0-seq1-t11-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 232 213 hradio 15 1 1 4 \$0-seq1-r11-s \$0-seq1-r11-r empty
-0 -8 0 10 -262144 -1 -1 -4;
+0 -8 0 10 -262144 -1 -1 0;
 #X obj 292 155 tgl 60 1 \$0-seq1-t12-s \$0-seq1-t12-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 292 213 hradio 15 1 1 4 \$0-seq1-r12-s \$0-seq1-r12-r empty
@@ -19324,9 +19324,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 472 213 hradio 15 1 1 4 \$0-seq1-r15-s \$0-seq1-r15-r empty
 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 532 155 tgl 60 1 \$0-seq1-t16-s \$0-seq1-t16-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 532 213 hradio 15 1 1 4 \$0-seq1-r16-s \$0-seq1-r16-r empty
-0 -8 0 10 -191407 -1 -1 -4;
+0 -8 0 10 -191407 -1 -1 2;
 #X obj 112 155 tgl 60 1 \$0-seq1-t9-s \$0-seq1-t9-r empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 112 213 hradio 15 1 1 4 \$0-seq1-r9-s \$0-seq1-r9-r empty 0
@@ -19348,9 +19348,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 292 286 hradio 15 1 1 4 \$0-seq1-r20-s \$0-seq1-r20-s empty
 0 -8 0 10 -262144 -1 -1 1;
 #X obj 352 228 tgl 60 1 \$0-seq1-t21-s \$0-seq1-t21-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 352 286 hradio 15 1 1 4 \$0-seq1-r21-s \$0-seq1-r21-r empty
-0 -8 0 10 -191407 -1 -1 -4;
+0 -8 0 10 -191407 -1 -1 3;
 #X obj 412 228 tgl 60 1 \$0-seq1-t22-s \$0-seq1-t22-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 412 286 hradio 15 1 1 4 \$0-seq1-r22-s \$0-seq1-r22-r empty
@@ -19364,9 +19364,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 532 286 hradio 15 1 1 4 \$0-seq1-r24-s \$0-seq1-r24-r empty
 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 172 301 tgl 60 1 \$0-seq1-t26-s \$0-seq1-t26-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 172 359 hradio 15 1 1 4 \$0-seq1-r26-s \$0-seq1-r26-r empty
-0 -8 0 10 -191407 -1 -1 -4;
+0 -8 0 10 -191407 -1 -1 3;
 #X obj 232 301 tgl 60 1 \$0-seq1-t27-s \$0-seq1-t27-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 232 359 hradio 15 1 1 4 \$0-seq1-r27-s \$0-seq1-r27-r empty
@@ -19384,9 +19384,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 412 359 hradio 15 1 1 4 \$0-seq1-r30-s \$0-seq1-r30-r empty
 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 472 301 tgl 60 1 \$0-seq1-t31-s \$0-seq1-t31-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 472 359 hradio 15 1 1 4 \$0-seq1-r31-s \$0-seq1-r31-r empty
-0 -8 0 10 -262144 -1 -1 -4;
+0 -8 0 10 -262144 -1 -1 0;
 #X obj 532 301 tgl 60 1 \$0-seq1-t32-s \$0-seq1-t32-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 532 359 hradio 15 1 1 4 \$0-seq1-r32-s \$0-seq1-r32-r empty
@@ -19408,9 +19408,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 232 432 hradio 15 1 1 4 \$0-seq1-r35-s \$0-seq1-r35-r empty
 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 292 374 tgl 60 1 \$0-seq1-t36-s \$0-seq1-t36-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 292 432 hradio 15 1 1 4 \$0-seq1-r36-s \$0-seq1-r36-r empty
-0 -8 0 10 -262144 -1 -1 -4;
+0 -8 0 10 -262144 -1 -1 0;
 #X obj 352 374 tgl 60 1 \$0-seq1-t37-s \$0-seq1-t37-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 352 432 hradio 15 1 1 4 \$0-seq1-r37-s \$0-seq1-r37-r empty
@@ -19444,9 +19444,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 352 505 hradio 15 1 1 4 \$0-seq1-r45-s \$0-seq1-r45-r empty
 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 412 447 tgl 60 1 \$0-seq1-t46-s \$0-seq1-t46-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 412 505 hradio 15 1 1 4 \$0-seq1-r46-s \$0-seq1-r46-r empty
-0 -8 0 10 -191407 -1 -1 -4;
+0 -8 0 10 -191407 -1 -1 3;
 #X obj 472 447 tgl 60 1 \$0-seq1-t47-s \$0-seq1-t47-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 472 505 hradio 15 1 1 4 \$0-seq1-r47-s \$0-seq1-r47-r empty
@@ -19468,9 +19468,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 172 578 hradio 15 1 1 4 \$0-seq1-r50-s \$0-seq1-r50-r empty
 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 232 520 tgl 60 1 \$0-seq1-t51-s \$0-seq1-t51-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 232 578 hradio 15 1 1 4 \$0-seq1-r51-s \$0-seq1-r51-r empty
-0 -8 0 10 -191407 -1 -1 -4;
+0 -8 0 10 -191407 -1 -1 0;
 #X obj 292 520 tgl 60 1 \$0-seq1-t52-s \$0-seq1-t52-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 292 578 hradio 15 1 1 4 \$0-seq1-r52-s \$0-seq1-r52-r empty
@@ -19488,9 +19488,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 472 578 hradio 15 1 1 4 \$0-seq1-r55-s \$0-seq1-r55-r empty
 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 532 520 tgl 60 1 \$0-seq1-t56-s \$0-seq1-t56-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 532 578 hradio 15 1 1 4 \$0-seq1-r56-s \$0-seq1-r56-r empty
-0 -8 0 10 -262144 -1 -1 -4;
+0 -8 0 10 -262144 -1 -1 1;
 #X obj 172 593 tgl 60 1 \$0-seq1-t58-s \$0-seq1-t58-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 172 651 hradio 15 1 1 4 \$0-seq1-r58-s \$0-seq1-r58-r empty
@@ -19504,9 +19504,9 @@ EG-DECAY-MELODY 64 7 0 10 -262144 -1 -1 1;
 #X obj 292 651 hradio 15 1 1 4 \$0-seq1-r60-s \$0-seq1-r60-r empty
 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 352 593 tgl 60 1 \$0-seq1-t61-s \$0-seq1-t61-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 352 651 hradio 15 1 1 4 \$0-seq1-r61-s \$0-seq1-r61-r empty
-0 -8 0 10 -262144 -1 -1 -4;
+0 -8 0 10 -262144 -1 -1 3;
 #X obj 412 593 tgl 60 1 \$0-seq1-t62-s \$0-seq1-t62-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 412 651 hradio 15 1 1 4 \$0-seq1-r62-s \$0-seq1-r62-r empty
@@ -20619,251 +20619,251 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 491 62 tgl 60 0 \$0-seq1-m3-s \$0-seq1-m3-r empty 17 7 0 10
 -191407 -1 -1 0 1;
 #X obj 491 120 hradio 15 1 0 4 \$0-seq1-modlevel3-s \$0-seq1-modlevel3-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 551 62 tgl 60 0 \$0-seq1-m4-s \$0-seq1-m4-r empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 551 120 hradio 15 1 0 4 \$0-seq1-modlevel4-s \$0-seq1-modlevel4-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 611 62 tgl 60 0 \$0-seq1-m5-s \$0-seq1-m5-r empty 17 7 0 10
 -191407 -1 -1 0 1;
 #X obj 611 120 hradio 15 1 0 4 \$0-seq1-modlevel5-s \$0-seq1-modlevel5-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 671 62 tgl 60 0 \$0-seq1-m6-s \$0-seq1-m6-r empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 671 120 hradio 15 1 0 4 \$0-seq1-modlevel6-s \$0-seq1-modlevel6-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 731 62 tgl 60 0 \$0-seq1-m7-s \$0-seq1-m7-r empty 17 7 0 10
--191407 -1 -1 0 1;
+-191407 -1 -1 1 1;
 #X obj 731 120 hradio 15 1 0 4 \$0-seq1-modlevel7-s \$0-seq1-modlevel7-r
 empty 0 -8 0 10 -191407 -1 -1 3;
 #X obj 791 62 tgl 60 0 \$0-seq1-m8-s \$0-seq1-m8-r empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 791 120 hradio 15 1 0 4 \$0-seq1-modlevel8-s \$0-seq1-modlevel8-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 431 135 tgl 60 0 \$0-seq1-m10-s \$0-seq1-m10-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 431 193 hradio 15 1 0 4 \$0-seq1-modlevel10-s \$0-seq1-modlevel10-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 1;
 #X obj 491 135 tgl 60 0 \$0-seq1-m11-s \$0-seq1-m11-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 491 193 hradio 15 1 0 4 \$0-seq1-modlevel11-s \$0-seq1-modlevel11-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 551 135 tgl 60 0 \$0-seq1-m12-s \$0-seq1-m12-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 551 193 hradio 15 1 0 4 \$0-seq1-modlevel12-s \$0-seq1-modlevel12-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 611 135 tgl 60 0 \$0-seq1-m13-s \$0-seq1-m13-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 611 193 hradio 15 1 0 4 \$0-seq1-modlevel13-s \$0-seq1-modlevel13-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 671 135 tgl 60 0 \$0-seq1-m14-s \$0-seq1-m14-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 671 193 hradio 15 1 0 4 \$0-seq1-modlevel14-s \$0-seq1-modlevel14-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 0;
 #X obj 731 135 tgl 60 0 \$0-seq1-m15-s \$0-seq1-m15-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 731 193 hradio 15 1 0 4 \$0-seq1-modlevel15-s \$0-seq1-modlevel15-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 791 135 tgl 60 0 \$0-seq1-m16-s \$0-seq1-m16-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 791 193 hradio 15 1 0 4 \$0-seq1-modlevel16-s \$0-seq1-modlevel16-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 371 135 tgl 60 0 \$0-seq1-m9-s \$0-seq1-m9-r empty 17 7 0 10
 -262144 -1 -1 0 1;
 #X obj 371 193 hradio 15 1 0 4 \$0-seq1-modlevel9-s \$0-seq1-modlevel9-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 371 208 tgl 60 0 \$0-seq1-m17-s \$0-seq1-m17-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 371 266 hradio 15 1 0 4 \$0-seq1-modlevel17-s \$0-seq1-modlevel17-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 431 208 tgl 60 0 \$0-seq1-m18-s \$0-seq1-m18-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 431 266 hradio 15 1 0 4 \$0-seq1-modlevel18-s \$0-seq1-modlevel18-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 2;
 #X obj 491 208 tgl 60 0 \$0-seq1-m19-s \$0-seq1-m19-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 491 266 hradio 15 1 0 4 \$0-seq1-modlevel19-s \$0-seq1-modlevel19-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 551 208 tgl 60 0 \$0-seq1-m20-s \$0-seq1-m20-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 551 266 hradio 15 1 0 4 \$0-seq1-modlevel20-s \$0-seq1-modlevel20-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 611 208 tgl 60 0 \$0-seq1-m21-s \$0-seq1-m21-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 611 266 hradio 15 1 0 4 \$0-seq1-modlevel21-s \$0-seq1-modlevel21-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 671 208 tgl 60 0 \$0-seq1-m22-s \$0-seq1-m22-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 671 266 hradio 15 1 0 4 \$0-seq1-modlevel22-s \$0-seq1-modlevel22-r
 empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 731 208 tgl 60 0 \$0-seq1-m23-s \$0-seq1-m23-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 731 266 hradio 15 1 0 4 \$0-seq1-modlevel23-s \$0-seq1-modlevel23-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 791 208 tgl 60 0 \$0-seq1-m24-s \$0-seq1-m24-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 791 266 hradio 15 1 0 4 \$0-seq1-modlevel24-s \$0-seq1-modlevel24-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 431 281 tgl 60 0 \$0-seq1-m26-s \$0-seq1-m26-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 431 339 hradio 15 1 0 4 \$0-seq1-modlevel26-s \$0-seq1-modlevel26-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 491 281 tgl 60 0 \$0-seq1-m27-s \$0-seq1-m27-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 491 339 hradio 15 1 0 4 \$0-seq1-modlevel27-s \$0-seq1-modlevel27-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 551 281 tgl 60 0 \$0-seq1-m28-s \$0-seq1-m28-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 551 339 hradio 15 1 0 4 \$0-seq1-modlevel28-s \$0-seq1-modlevel28-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 611 281 tgl 60 0 \$0-seq1-m29-s \$0-seq1-m29-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 611 339 hradio 15 1 0 4 \$0-seq1-modlevel29-s \$0-seq1-modlevel29-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 671 281 tgl 60 0 \$0-seq1-m30-s \$0-seq1-m30-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 671 339 hradio 15 1 0 4 \$0-seq1-modlevel30-s \$0-seq1-modlevel30-r
 empty 0 -8 0 10 -191407 -1 -1 3;
 #X obj 731 281 tgl 60 0 \$0-seq1-m31-s \$0-seq1-m31-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 731 339 hradio 15 1 0 4 \$0-seq1-modlevel31-s \$0-seq1-modlevel31-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 791 281 tgl 60 0 \$0-seq1-m32-s \$0-seq1-m32-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 791 339 hradio 15 1 0 4 \$0-seq1-modlevel32-s \$0-seq1-modlevel32-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 371 281 tgl 60 0 \$0-seq1-m25-s \$0-seq1-m25-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 371 339 hradio 15 1 0 4 \$0-seq1-modlevel25-s \$0-seq1-modlevel25-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 371 354 tgl 60 0 \$0-seq1-m33-s \$0-seq1-m33-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 371 412 hradio 15 1 0 4 \$0-seq1-modlevel33-s \$0-seq1-modlevel33-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 431 354 tgl 60 0 \$0-seq1-m34-s \$0-seq1-m34-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 431 412 hradio 15 1 0 4 \$0-seq1-modlevel34-s \$0-seq1-modlevel34-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 2;
 #X obj 491 354 tgl 60 0 \$0-seq1-m35-s \$0-seq1-m35-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 491 412 hradio 15 1 0 4 \$0-seq1-modlevel35-s \$0-seq1-modlevel35-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 551 354 tgl 60 0 \$0-seq1-m36-s \$0-seq1-m36-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 551 412 hradio 15 1 0 4 \$0-seq1-modlevel36-s \$0-seq1-modlevel36-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 611 354 tgl 60 0 \$0-seq1-m37-s \$0-seq1-m37-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 611 412 hradio 15 1 0 4 \$0-seq1-modlevel37-s \$0-seq1-modlevel37-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 671 354 tgl 60 0 \$0-seq1-m38-s \$0-seq1-m38-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 671 412 hradio 15 1 0 4 \$0-seq1-modlevel38-s \$0-seq1-modlevel38-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 0;
 #X obj 731 354 tgl 60 0 \$0-seq1-m39-s \$0-seq1-m39-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 731 412 hradio 15 1 0 4 \$0-seq1-modlevel39-s \$0-seq1-modlevel39-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 791 354 tgl 60 0 \$0-seq1-m40-s \$0-seq1-m40-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 791 412 hradio 15 1 0 4 \$0-seq1-modlevel40-s \$0-seq1-modlevel40-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 431 427 tgl 60 0 \$0-seq1-m42-s \$0-seq1-m42-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 431 485 hradio 15 1 0 4 \$0-seq1-modlevel42-s \$0-seq1-modlevel42-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 0;
 #X obj 491 427 tgl 60 0 \$0-seq1-m43-s \$0-seq1-m43-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 491 485 hradio 15 1 0 4 \$0-seq1-modlevel43-s \$0-seq1-modlevel43-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 551 427 tgl 60 0 \$0-seq1-m44-s \$0-seq1-m44-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 551 485 hradio 15 1 0 4 \$0-seq1-modlevel44-s \$0-seq1-modlevel44-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 611 427 tgl 60 0 \$0-seq1-m45-s \$0-seq1-m45-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 611 485 hradio 15 1 0 4 \$0-seq1-modlevel45-s \$0-seq1-modlevel45-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 671 427 tgl 60 0 \$0-seq1-m46-s \$0-seq1-m46-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 671 485 hradio 15 1 0 4 \$0-seq1-modlevel46-s \$0-seq1-modlevel46-r
 empty 0 -8 0 10 -191407 -1 -1 3;
 #X obj 731 427 tgl 60 0 \$0-seq1-m47-s \$0-seq1-m47-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 731 485 hradio 15 1 0 4 \$0-seq1-modlevel47-s \$0-seq1-modlevel47-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 791 427 tgl 60 0 \$0-seq1-m48-s \$0-seq1-m48-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 791 485 hradio 15 1 0 4 \$0-seq1-modlevel48-s \$0-seq1-modlevel48-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 371 427 tgl 60 0 \$0-seq1-m41-s \$0-seq1-m41-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 371 485 hradio 15 1 0 4 \$0-seq1-modlevel41-s \$0-seq1-modlevel41-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 371 500 tgl 60 0 \$0-seq1-m49-s \$0-seq1-m49-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 371 558 hradio 15 1 0 4 \$0-seq1-modlevel49-s \$0-seq1-modlevel49-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 431 500 tgl 60 0 \$0-seq1-m50-s \$0-seq1-m50-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 431 558 hradio 15 1 0 4 \$0-seq1-modlevel50-s \$0-seq1-modlevel50-r
 empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 491 500 tgl 60 0 \$0-seq1-m51-s \$0-seq1-m51-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 491 558 hradio 15 1 0 4 \$0-seq1-modlevel51-s \$0-seq1-modlevel51-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 551 500 tgl 60 0 \$0-seq1-m52-s \$0-seq1-m52-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 551 558 hradio 15 1 0 4 \$0-seq1-modlevel52-s \$0-seq1-modlevel52-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 611 500 tgl 60 0 \$0-seq1-m53-s \$0-seq1-m53-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 611 558 hradio 15 1 0 4 \$0-seq1-modlevel53-s \$0-seq1-modlevel53-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 671 500 tgl 60 0 \$0-seq1-m54-s \$0-seq1-m54-r empty 17 7 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 1 1;
 #X obj 671 558 hradio 15 1 0 4 \$0-seq1-modlevel54-s \$0-seq1-modlevel54-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 1;
 #X obj 731 500 tgl 60 0 \$0-seq1-m55-s \$0-seq1-m55-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 731 558 hradio 15 1 0 4 \$0-seq1-modlevel55-s \$0-seq1-modlevel55-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 791 500 tgl 60 0 \$0-seq1-m56-s \$0-seq1-m56-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 791 558 hradio 15 1 0 4 \$0-seq1-modlevel56-s \$0-seq1-modlevel56-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 431 573 tgl 60 0 \$0-seq1-m58-s \$0-seq1-m58-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 431 631 hradio 15 1 0 4 \$0-seq1-modlevel58-s \$0-seq1-modlevel58-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 0;
 #X obj 491 573 tgl 60 0 \$0-seq1-m59-s \$0-seq1-m59-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 491 631 hradio 15 1 0 4 \$0-seq1-modlevel59-s \$0-seq1-modlevel59-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 551 573 tgl 60 0 \$0-seq1-m60-s \$0-seq1-m60-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 551 631 hradio 15 1 0 4 \$0-seq1-modlevel60-s \$0-seq1-modlevel60-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 611 573 tgl 60 0 \$0-seq1-m61-s \$0-seq1-m61-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 611 631 hradio 15 1 0 4 \$0-seq1-modlevel61-s \$0-seq1-modlevel61-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 671 573 tgl 60 0 \$0-seq1-m62-s \$0-seq1-m62-r empty 17 7 0
-10 -191407 -1 -1 0 1;
+10 -191407 -1 -1 1 1;
 #X obj 671 631 hradio 15 1 0 4 \$0-seq1-modlevel62-s \$0-seq1-modlevel62-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 0;
 #X obj 731 573 tgl 60 0 \$0-seq1-m63-s \$0-seq1-m63-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 731 631 hradio 15 1 0 4 \$0-seq1-modlevel63-s \$0-seq1-modlevel63-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X obj 791 573 tgl 60 0 \$0-seq1-m64-s \$0-seq1-m64-r empty 17 7 0
 10 -191407 -1 -1 0 1;
 #X obj 791 631 hradio 15 1 0 4 \$0-seq1-modlevel64-s \$0-seq1-modlevel64-r
-empty 0 -8 0 10 -191407 -1 -1 3;
+empty 0 -8 0 10 -191407 -1 -1 -4;
 #X obj 371 573 tgl 60 0 \$0-seq1-m57-s \$0-seq1-m57-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 371 631 hradio 15 1 0 4 \$0-seq1-modlevel57-s \$0-seq1-modlevel57-r
-empty 0 -8 0 10 -262144 -1 -1 3;
+empty 0 -8 0 10 -262144 -1 -1 -4;
 #X text 337 84 PITCH;
 #X text 337 450 TEMPO;
 #X text 337 381 DECAY;
@@ -21285,9 +21285,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save36A-s \$0-save36A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -21789,9 +21789,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save26A-s \$0-save26A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -22209,9 +22209,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save31A-s \$0-save31A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -22713,9 +22713,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save21A-s \$0-save21A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -23217,9 +23217,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save11A-s \$0-save11A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -23637,9 +23637,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 6 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save16A-s \$0-save16A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 3;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -23721,9 +23721,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save1A-s \$0-save1A-r empty 0 -8
-0 10 -261234 -1 -1 0;
+0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -24821,9 +24821,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save46A-s \$0-save46A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -25265,9 +25265,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save51A-s \$0-save51A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -25685,9 +25685,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 5 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save56A-s \$0-save56A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 2;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -26129,9 +26129,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save61A-s \$0-save61A-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -26840,9 +26840,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 6 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save34B-s \$0-save34B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 3;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -27176,9 +27176,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save38B-s \$0-save38B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -27848,9 +27848,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save30B-s \$0-save30B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -28184,9 +28184,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 6 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save18B-s \$0-save18B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 3;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -28520,9 +28520,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save22B-s \$0-save22B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -28856,9 +28856,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 5 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save10B-s \$0-save10B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 2;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -29192,9 +29192,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save14B-s \$0-save14B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -29528,9 +29528,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save2B-s \$0-save2B-r empty 0 -8
-0 10 -261234 -1 -1 0;
+0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -29948,9 +29948,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save7B-s \$0-save7B-r empty 0 -8
-0 10 -261234 -1 -1 0;
+0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -30208,9 +30208,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save42B-s \$0-save42B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -30544,9 +30544,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save46B-s \$0-save46B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -30896,9 +30896,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 7 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save50B-s \$0-save50B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 4;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -31232,9 +31232,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 5 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save54B-s \$0-save54B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 2;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -31584,9 +31584,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save58B-s \$0-save58B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -31920,9 +31920,9 @@ empty 0 -8 0 10 -262144 -1 -1 3;
 #X obj 379 411 - 4;
 #X obj 257 76 loadbang;
 #X obj 352 360 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
--261234 -1 -1 0 256;
+-261234 -1 -1 4 256;
 #X obj 148 238 hradio 15 1 1 5 \$0-save62B-s \$0-save62B-r empty 0
--8 0 10 -261234 -1 -1 0;
+-8 0 10 -261234 -1 -1 1;
 #X obj 257 194 f;
 #X obj 201 291 t b f;
 #X obj 232 355 f;
@@ -32728,7 +32728,7 @@ f;
 #X connect 70 0 20 22;
 #X connect 71 0 20 23;
 #X restore 930 338 pd state-saving-multiple-instances-MODRAD2;
-#X obj 240 148 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 16 -262144
+#X obj 240 148 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 16 -262144
 -66577 0;
 #X obj 128 339 hsl 96 15 0 127 0 0 \$0-algo-xpose-s \$0-algo-xpose-r
 XPOSE-24 100 7 0 10 -150893 -1 -1 0 1;
@@ -32748,12 +32748,12 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 0 1;
 #X obj 409 178 tgl 15 0 \$0-m6-s \$0-m6-r empty 17 7 0 10 -262144 -262144
 -262144 0 1;
-#X obj 424 178 tgl 15 0 \$0-m7-s \$0-m7-r empty 17 7 0 10 -262144 -262144
--262144 0 1;
+#X obj 424 178 tgl 15 0 \$0-m7-s \$0-m7-r empty 17 7 0 10 -225280 -225280
+-225280 1 1;
 #X obj 439 178 tgl 15 0 \$0-m8-s \$0-m8-r empty 17 7 0 10 -262144 -262144
 -262144 0 1;
-#X obj 349 178 tgl 15 0 \$0-m2-s \$0-m2-r empty 17 7 0 10 -262144 -262144
--262144 0 1;
+#X obj 349 178 tgl 15 0 \$0-m2-s \$0-m2-r empty 17 7 0 10 -225280 -225280
+-225280 1 1;
 #X obj 334 193 tgl 15 0 \$0-m9-s \$0-m9-r empty 17 7 0 10 -262144 -262144
 -262144 0 1;
 #X obj 364 193 tgl 15 0 \$0-m11-s \$0-m11-r empty 17 7 0 10 -262144
@@ -32762,14 +32762,14 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 193 tgl 15 0 \$0-m13-s \$0-m13-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 193 tgl 15 0 \$0-m14-s \$0-m14-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 193 tgl 15 0 \$0-m14-s \$0-m14-r empty 17 7 0 10 -261681
+-261681 -261681 0 1;
 #X obj 424 193 tgl 15 0 \$0-m15-s \$0-m15-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 193 tgl 15 0 \$0-m16-s \$0-m16-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 349 193 tgl 15 0 \$0-m10-s \$0-m10-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 349 193 tgl 15 0 \$0-m10-s \$0-m10-r empty 17 7 0 10 -262131
+-262131 -262131 0 1;
 #X obj 334 208 tgl 15 0 \$0-m17-s \$0-m17-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 364 208 tgl 15 0 \$0-m19-s \$0-m19-r empty 17 7 0 10 -262144
@@ -32778,14 +32778,14 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 208 tgl 15 0 \$0-m21-s \$0-m21-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 208 tgl 15 0 \$0-m22-s \$0-m22-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 208 tgl 15 0 \$0-m22-s \$0-m22-r empty 17 7 0 10 -225280
+-225280 -225280 0 1;
 #X obj 424 208 tgl 15 0 \$0-m23-s \$0-m23-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 208 tgl 15 0 \$0-m24-s \$0-m24-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 349 208 tgl 15 0 \$0-m18-s \$0-m18-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 349 208 tgl 15 0 \$0-m18-s \$0-m18-r empty 17 7 0 10 -225271
+-225271 -225271 0 1;
 #X obj 334 223 tgl 15 0 \$0-m25-s \$0-m25-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 364 223 tgl 15 0 \$0-m27-s \$0-m27-r empty 17 7 0 10 -262144
@@ -32794,8 +32794,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 223 tgl 15 0 \$0-m29-s \$0-m29-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 223 tgl 15 0 \$0-m30-s \$0-m30-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 223 tgl 15 0 \$0-m30-s \$0-m30-r empty 17 7 0 10 -225280
+-225280 -225280 0 1;
 #X obj 424 223 tgl 15 0 \$0-m31-s \$0-m31-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 223 tgl 15 0 \$0-m32-s \$0-m32-r empty 17 7 0 10 -262144
@@ -32810,14 +32810,14 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 238 tgl 15 0 \$0-m37-s \$0-m37-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 238 tgl 15 0 \$0-m38-s \$0-m38-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 238 tgl 15 0 \$0-m38-s \$0-m38-r empty 17 7 0 10 -261681
+-261681 -261681 0 1;
 #X obj 424 238 tgl 15 0 \$0-m39-s \$0-m39-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 238 tgl 15 0 \$0-m40-s \$0-m40-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 349 238 tgl 15 0 \$0-m34-s \$0-m34-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 349 238 tgl 15 0 \$0-m34-s \$0-m34-r empty 17 7 0 10 -225271
+-225271 -225271 1 1;
 #X obj 334 253 tgl 15 0 \$0-m41-s \$0-m41-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 364 253 tgl 15 0 \$0-m43-s \$0-m43-r empty 17 7 0 10 -262144
@@ -32826,14 +32826,14 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 253 tgl 15 0 \$0-m45-s \$0-m45-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 253 tgl 15 0 \$0-m46-s \$0-m46-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 253 tgl 15 0 \$0-m46-s \$0-m46-r empty 17 7 0 10 -225280
+-225280 -225280 0 1;
 #X obj 424 253 tgl 15 0 \$0-m47-s \$0-m47-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 253 tgl 15 0 \$0-m48-s \$0-m48-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 349 253 tgl 15 0 \$0-m42-s \$0-m42-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 349 253 tgl 15 0 \$0-m42-s \$0-m42-r empty 17 7 0 10 -261681
+-261681 -261681 1 1;
 #X obj 334 268 tgl 15 0 \$0-m49-s \$0-m49-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 364 268 tgl 15 0 \$0-m51-s \$0-m51-r empty 17 7 0 10 -262144
@@ -32842,14 +32842,14 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 268 tgl 15 0 \$0-m53-s \$0-m53-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 268 tgl 15 0 \$0-m54-s \$0-m54-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 268 tgl 15 0 \$0-m54-s \$0-m54-r empty 17 7 0 10 -262131
+-262131 -262131 0 1;
 #X obj 424 268 tgl 15 0 \$0-m55-s \$0-m55-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 268 tgl 15 0 \$0-m56-s \$0-m56-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 349 268 tgl 15 0 \$0-m50-s \$0-m50-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 349 268 tgl 15 0 \$0-m50-s \$0-m50-r empty 17 7 0 10 -225280
+-225280 -225280 0 1;
 #X obj 334 283 tgl 15 0 \$0-m57-s \$0-m57-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 364 283 tgl 15 0 \$0-m59-s \$0-m59-r empty 17 7 0 10 -262144
@@ -32858,14 +32858,14 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 394 283 tgl 15 0 \$0-m61-s \$0-m61-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 409 283 tgl 15 0 \$0-m62-s \$0-m62-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 409 283 tgl 15 0 \$0-m62-s \$0-m62-r empty 17 7 0 10 -261681
+-261681 -261681 1 1;
 #X obj 424 283 tgl 15 0 \$0-m63-s \$0-m63-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 439 283 tgl 15 0 \$0-m64-s \$0-m64-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 349 283 tgl 15 0 \$0-m58-s \$0-m58-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 349 283 tgl 15 0 \$0-m58-s \$0-m58-r empty 17 7 0 10 -261681
+-261681 -261681 0 1;
 #X text 300 178 PITCH;
 #X text 300 193 WFORM;
 #X text 294 208 WSHAPE;
@@ -32902,8 +32902,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 #X text 444 134 V;
 #X text 444 148 S;
 #X text 444 162 2;
-#X obj 125 177 tgl 15 0 \$0-t1-s \$0-t1-r empty 17 7 0 10 -262144 -262144
--262144 0 1;
+#X obj 125 177 tgl 15 0 \$0-t1-s \$0-t1-r empty 17 7 0 10 -261681 -261681
+-261681 0 1;
 #X obj 155 177 tgl 15 0 \$0-t3-s \$0-t3-r empty 17 7 0 10 -262144 -262144
 -262144 0 1;
 #X obj 170 177 tgl 15 0 \$0-t4-s \$0-t4-r empty 17 7 0 10 -262144 -262144
@@ -32984,8 +32984,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 0 1;
 #X obj 125 192 tgl 15 0 \$0-t9-s \$0-t9-r empty 17 7 0 10 -262144 -262144
 -262144 0 1;
-#X obj 155 192 tgl 15 0 \$0-t11-s \$0-t11-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 155 192 tgl 15 0 \$0-t11-s \$0-t11-r empty 17 7 0 10 -261681
+-261681 -261681 1 1;
 #X obj 170 192 tgl 15 0 \$0-t12-s \$0-t12-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 185 192 tgl 15 0 \$0-t13-s \$0-t13-r empty 17 7 0 10 -262144
@@ -32994,8 +32994,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 215 192 tgl 15 0 \$0-t15-s \$0-t15-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 230 192 tgl 15 0 \$0-t16-s \$0-t16-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 230 192 tgl 15 0 \$0-t16-s \$0-t16-r empty 17 7 0 10 -225271
+-225271 -225271 0 1;
 #X obj 140 192 tgl 15 0 \$0-t10-s \$0-t10-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 125 207 tgl 15 0 \$0-t17-s \$0-t17-r empty 17 7 0 10 -262144
@@ -33004,8 +33004,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 170 207 tgl 15 0 \$0-t20-s \$0-t20-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 185 207 tgl 15 0 \$0-t21-s \$0-t21-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 185 207 tgl 15 0 \$0-t21-s \$0-t21-r empty 17 7 0 10 -225280
+-225280 -225280 1 1;
 #X obj 200 207 tgl 15 0 \$0-t22-s \$0-t22-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 215 207 tgl 15 0 \$0-t23-s \$0-t23-r empty 17 7 0 10 -262144
@@ -33024,18 +33024,18 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 200 222 tgl 15 0 \$0-t30-s \$0-t30-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 215 222 tgl 15 0 \$0-t31-s \$0-t31-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 215 222 tgl 15 0 \$0-t31-s \$0-t31-r empty 17 7 0 10 -261681
+-261681 -261681 1 1;
 #X obj 230 222 tgl 15 0 \$0-t32-s \$0-t32-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 140 222 tgl 15 0 \$0-t26-s \$0-t26-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 140 222 tgl 15 0 \$0-t26-s \$0-t26-r empty 17 7 0 10 -225280
+-225280 -225280 1 1;
 #X obj 125 237 tgl 15 0 \$0-t33-s \$0-t33-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 155 237 tgl 15 0 \$0-t35-s \$0-t35-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 170 237 tgl 15 0 \$0-t36-s \$0-t36-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 170 237 tgl 15 0 \$0-t36-s \$0-t36-r empty 17 7 0 10 -261681
+-261681 -261681 0 1;
 #X obj 185 237 tgl 15 0 \$0-t37-s \$0-t37-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 200 237 tgl 15 0 \$0-t38-s \$0-t38-r empty 17 7 0 10 -262144
@@ -33047,15 +33047,15 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 #X obj 140 237 tgl 15 0 \$0-t34-s \$0-t34-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 125 252 tgl 15 0 \$0-t41-s \$0-t41-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+-262144 -262144 1 1;
 #X obj 155 252 tgl 15 0 \$0-t43-s \$0-t43-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 170 252 tgl 15 0 \$0-t44-s \$0-t44-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 185 252 tgl 15 0 \$0-t45-s \$0-t45-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 200 252 tgl 15 0 \$0-t46-s \$0-t46-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 200 252 tgl 15 0 \$0-t46-s \$0-t46-r empty 17 7 0 10 -225280
+-225280 -225280 1 1;
 #X obj 215 252 tgl 15 0 \$0-t47-s \$0-t47-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 230 252 tgl 15 0 \$0-t48-s \$0-t48-r empty 17 7 0 10 -262144
@@ -33064,8 +33064,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 125 267 tgl 15 0 \$0-t49-s \$0-t49-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 155 267 tgl 15 0 \$0-t51-s \$0-t51-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 155 267 tgl 15 0 \$0-t51-s \$0-t51-r empty 17 7 0 10 -261681
+-261681 -261681 0 1;
 #X obj 170 267 tgl 15 0 \$0-t52-s \$0-t52-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 185 267 tgl 15 0 \$0-t53-s \$0-t53-r empty 17 7 0 10 -262144
@@ -33074,8 +33074,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 215 267 tgl 15 0 \$0-t55-s \$0-t55-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 230 267 tgl 15 0 \$0-t56-s \$0-t56-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 230 267 tgl 15 0 \$0-t56-s \$0-t56-r empty 17 7 0 10 -262131
+-262131 -262131 0 1;
 #X obj 140 267 tgl 15 0 \$0-t50-s \$0-t50-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 125 282 tgl 15 0 \$0-t57-s \$0-t57-r empty 17 7 0 10 -262144
@@ -33084,8 +33084,8 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 -262144 -262144 0 1;
 #X obj 170 282 tgl 15 0 \$0-t60-s \$0-t60-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
-#X obj 185 282 tgl 15 0 \$0-t61-s \$0-t61-r empty 17 7 0 10 -262144
--262144 -262144 0 1;
+#X obj 185 282 tgl 15 0 \$0-t61-s \$0-t61-r empty 17 7 0 10 -225280
+-225280 -225280 0 1;
 #X obj 200 282 tgl 15 0 \$0-t62-s \$0-t62-r empty 17 7 0 10 -262144
 -262144 -262144 0 1;
 #X obj 215 282 tgl 15 0 \$0-t63-s \$0-t63-r empty 17 7 0 10 -262144
@@ -33097,9 +33097,9 @@ IONIAN 100 7 0 10 -262144 -1 -1 0 1;
 #X obj 125 319 bng 15 250 50 0 \$0-tabula-rasa! \$0-tabula-rasa!-r
 TABULA-RASA! 17 7 0 10 -262144 -226533 -1;
 #X obj 306 354 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD 125 7 0 10
--262144 -150893 -1 0;
+-262144 -150893 -1 1;
 #X obj 306 339 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE 125 7
-0 10 -262144 -226533 -1 0;
+0 10 -262144 -226533 -1 1;
 #N canvas 0 22 843 529 random-matrix-pattern 0;
 #X obj 166 187 f;
 #X obj 197 187 + 1;
@@ -37685,281 +37685,17 @@ f;
 #X obj 87 774 noteout 3;
 #X obj 656 686 state_saving_module algomatrix \$0 \$1;
 #X obj 696 646 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 1;
+#N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 state_saving_module/bng_dispatch algomatrix \$0 \$1 250
 50 rdm2! rdm2!-r RDM2! #FFFFFF #DE4C91 #000000;
 #X obj 10 60 state_saving_module/bng_dispatch algomatrix \$0 \$1 250
 50 rdm! rdm!-r RDM! #FFFFFF #DE4C91 #000000;
-#X obj 10 120 state_saving_module/hradio_dispatch algomatrix \$0 \$1
-0 7 write-s write-r STORE #FFFFFF #DE4C91 #000000;
 #X obj 10 180 state_saving_module/hradio_dispatch algomatrix \$0 \$1
 0 7 load-s load-r LOAD #FFFFFF #91D6B2 #000000;
-#X obj 10 240 state_saving_module/bng_dispatch algomatrix \$0 \$1 250
-50 tabula-rasa! tabula-rasa!-r TABULA-RASA! #FFFFFF #DE4C91 #000000
-;
-#X obj 10 300 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t58-s t58-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 360 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t64-s t64-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 420 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t63-s t63-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 480 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t62-s t62-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 540 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t61-s t61-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 600 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t60-s t60-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 660 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t59-s t59-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 720 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t57-s t57-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 780 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t50-s t50-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 840 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t56-s t56-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 900 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t55-s t55-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 960 state_saving_module/tgl_dispatch algomatrix \$0 \$1 0
-1 t54-s t54-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1020 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t53-s t53-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1080 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t52-s t52-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1140 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t51-s t51-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1200 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t49-s t49-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1260 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t42-s t42-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1320 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t48-s t48-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1380 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t47-s t47-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1440 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t46-s t46-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1500 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t45-s t45-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1560 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t44-s t44-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1620 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t43-s t43-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1680 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t41-s t41-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1740 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t34-s t34-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1800 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t40-s t40-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1860 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t39-s t39-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1920 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t38-s t38-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 1980 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t37-s t37-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2040 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t36-s t36-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2100 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t35-s t35-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2160 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t33-s t33-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2220 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t26-s t26-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2280 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t32-s t32-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2340 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t31-s t31-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2400 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t30-s t30-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2460 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t29-s t29-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2520 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t28-s t28-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2580 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t27-s t27-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2640 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t25-s t25-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2700 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t18-s t18-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2760 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t24-s t24-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2820 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t23-s t23-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2880 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t22-s t22-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 2940 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t21-s t21-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3000 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t20-s t20-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3060 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t19-s t19-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3120 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t17-s t17-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3180 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t10-s t10-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3240 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t16-s t16-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3300 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t15-s t15-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3360 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t14-s t14-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3420 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t13-s t13-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3480 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t12-s t12-r empty #DAFFDA #DAFFDA #DAFFDA;
-#X obj 10 3540 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t11-s t11-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3600 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t9-s t9-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3660 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t2-s t2-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3720 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t8-s t8-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3780 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t7-s t7-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3840 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t6-s t6-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3900 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t5-s t5-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 3960 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t4-s t4-r empty #FFE2C2 #FFE2C2 #FFE2C2;
-#X obj 10 4020 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t3-s t3-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4080 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 t1-s t1-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4140 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m58-s m58-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4200 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m64-s m64-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4260 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m63-s m63-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4320 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m62-s m62-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4380 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m61-s m61-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4440 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m60-s m60-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4500 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m59-s m59-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4560 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m57-s m57-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4620 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m50-s m50-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4680 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m56-s m56-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4740 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m55-s m55-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4800 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m54-s m54-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4860 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m53-s m53-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4920 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m52-s m52-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 4980 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m51-s m51-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5040 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m49-s m49-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5100 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m42-s m42-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5160 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m48-s m48-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5220 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m47-s m47-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5280 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m46-s m46-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5340 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m45-s m45-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5400 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m44-s m44-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5460 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m43-s m43-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5520 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m41-s m41-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5580 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m34-s m34-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5640 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m40-s m40-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5700 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m39-s m39-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5760 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m38-s m38-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5820 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m37-s m37-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5880 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m36-s m36-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 5940 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m35-s m35-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6000 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m33-s m33-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6060 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m26-s m26-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6120 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m32-s m32-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6180 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m31-s m31-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6240 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m30-s m30-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6300 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m29-s m29-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6360 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m28-s m28-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6420 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m27-s m27-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6480 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m25-s m25-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6540 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m18-s m18-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6600 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m24-s m24-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6660 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m23-s m23-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6720 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m22-s m22-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6780 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m21-s m21-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6840 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m20-s m20-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6900 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m19-s m19-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 6960 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m17-s m17-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7020 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m10-s m10-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7080 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m16-s m16-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7140 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m15-s m15-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7200 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m14-s m14-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7260 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m13-s m13-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7320 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m12-s m12-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7380 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m11-s m11-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7440 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m9-s m9-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7500 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m2-s m2-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7560 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m8-s m8-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7620 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m7-s m7-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7680 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m6-s m6-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7740 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m5-s m5-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7800 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m4-s m4-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7860 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m3-s m3-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7920 state_saving_module/tgl_dispatch algomatrix \$0 \$1
-0 1 m1-s m1-r empty #FFFFFF #FFFFFF #FFFFFF;
-#X obj 10 7980 state_saving_module/hsl_dispatch algomatrix \$0 \$1
-0 127 algo-scale-s algo-scale-r IONIAN #FFFFFF #000000 #000000;
-#X obj 10 8040 state_saving_module/bng_dispatch algomatrix \$0 \$1
-250 50 tabula-rasa2! tabula-rasa2!-r TABULA-RASA! #FFFFFF #DE4C91 #000000
-;
-#X obj 10 8100 state_saving_module/hsl_dispatch algomatrix \$0 \$1
-0 127 algo-xpose-s algo-xpose-r XPOSE-24 #91D6B2 #000000 #000000;
+#X obj 14 304 state_saving_module/hsl_dispatch algomatrix \$0 \$1 0
+127 algo-scale-s algo-scale-r IONIAN #FFFFFF #000000 #000000;
+#X obj 14 424 state_saving_module/hsl_dispatch algomatrix \$0 \$1 0
+127 algo-xpose-s algo-xpose-r XPOSE-24 #91D6B2 #000000 #000000;
 #X restore 656 716 pd \$0-gui_listeners;
 #X connect 8 0 9 0;
 #X connect 9 0 12 0;

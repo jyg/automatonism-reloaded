@@ -16,3 +16,5 @@
 controler and thus can be mapped to any automatonism module. In turn
 \, it can be mapped and listen to any MIDI note and MIDI control signals
 delivered by MIDI interfaces connected to puredata.;
+#X text 26 271 VC1-VC4 : offset added to slider position;
+#X text 34 341 V1 - V4 : sum of input offset and slider position;

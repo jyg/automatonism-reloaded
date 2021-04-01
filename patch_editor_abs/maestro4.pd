@@ -2,13 +2,13 @@
 #X obj 107 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan1-s \$0-maestro4-pan1-r
 PAN1 0 25 0 10 -262144 -1 -1 0 1;
 #X obj 104 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch1-s \$0-maestro4-ch1-r
-CH1 -1 -9 0 10 -262144 -1 -1 0 1;
+CH1 -1 -9 0 10 -262144 -1 -1 6000 1;
 #X obj 123 155 vu 15 80 \$0-maestro4-ch1-meter-r empty -1 -8 0 10 -66577
 -1 0 0;
 #X obj 152 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan2-s \$0-maestro4-pan2-r
-PAN2 0 25 0 10 -262144 -1 -1 0 1;
+PAN2 0 25 0 10 -262144 -1 -1 2900 1;
 #X obj 149 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch2-s \$0-maestro4-ch2-r
-CH2 -1 -9 0 10 -262144 -1 -1 0 1;
+CH2 -1 -9 0 10 -262144 -1 -1 6400 1;
 #X obj 168 155 vu 15 80 \$0-maestro4-ch2-meter-r empty -1 -8 0 10 -66577
 -1 0 0;
 #X obj 197 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan3-s \$0-maestro4-pan3-r
@@ -28,13 +28,13 @@ CH4 -1 -9 0 10 -262144 -1 -1 0 1;
 #X obj 327 155 vu 15 80 \$0-maestro4-meter-right-r empty -1 -8 0 10
 -66577 -1 0 0;
 #X obj 277 155 vsl 30 79 1.27 127 1 1 \$0-maestro4-master-s \$0-maestro4-master-r
-MASTER 0 -8 0 10 -262144 -1 -1 0 1;
+MASTER 0 -8 0 10 -262144 -1 -1 6000 1;
 #X obj 104 131 cnv 5 5 5 empty empty MAESTRO4 0 0 0 12 -262144 -66577
 0;
 #X obj 166 109 cnv 5 5 5 empty empty CH2 0 0 0 8 -262144 -66577 0;
 #X obj 104 109 cnv 5 5 5 empty empty CH1 0 0 0 8 -262144 -66577 0;
 #X obj 234 109 cnv 5 5 5 empty empty CH3 0 0 0 8 -262144 -66577 0;
-#X obj 166 131 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 166 131 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 457 311 inlet~ CHANNEL_ONE;
 #X obj 467 621 *~;

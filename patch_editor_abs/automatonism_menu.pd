@@ -312,7 +312,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X obj 203 272 r \$0-open-modules!;
 #X obj 36 41 r \$0-open-quick-guide!;
 #X obj 203 36 r \$0-open-help-files!;
-#N canvas 551 193 807 759 \$0-modules 0;
+#N canvas 551 193 807 759 \$0-modules 1;
 #X obj 196 91 cnv 15 180 15 empty empty MODULATION: 10 8 0 12 -158136
 -262144 0;
 #X obj 196 112 bng 15 250 50 0 \$0-create-basic-lfo! empty <--BASIC-LFO
@@ -537,6 +537,10 @@ buttons);
 17 7 0 10 -150893 -1 -1;
 #X obj 570 618 bng 15 250 50 0 \$0-create-macro-control! empty <--MACRO-CONTROL
 17 7 0 10 -203305 -1 -1;
+#X obj 10 616 cnv 15 180 15 empty empty EXTRAS: 10 8 0 12 -158136 -262144
+0;
+#X obj 10 637 bng 15 250 50 0 \$0-create-extra-sampler! empty <--SAMPLER
+17 7 0 10 -262144 -1 -1;
 #X restore 204 249 pd \$0-modules;
 #X msg 38 178 vis 1;
 #X obj 38 203 s pd-\$0-signal-flow;
@@ -596,10 +600,6 @@ CV.;
 #X connect 16 0 17 0;
 #X restore 39 134 pd \$0-signal-flow;
 #N canvas 0 23 1004 774 \$0-quick-guide 0;
-#X obj 451 535 cnv 15 375 125 empty empty empty 20 12 0 14 -226533
--66577 0;
-#X obj 454 400 cnv 15 375 125 empty empty empty 20 12 0 14 -150893
--66577 0;
 #X obj 17 17 cnv 15 750 60 empty empty Welcome_to_AUTOMATONISM:_Making_Music_with_Self-playing_Machines
 20 12 0 14 -150893 -262144 0;
 #X text 19 86 FOLLOW THESE SIMPLE STEPS TO GET STARTED:;
@@ -625,13 +625,6 @@ MODE and use the mouse to move the PITCH slider on the BASIC-OSC module.
 ;
 #X text 20 622 6 Right click on any module and choose HELP to read
 more about a module's functions.;
-#X text 464 125 7 To save parameter states on each module \, you have
-to save the pd file \, like you normally would do from the FILE menu
-or cmd+s \, and then click the grey SAVE! canvas in the left bottom
-corner(or simply press ENTER on your keyboard) and you'll see the canvas
-change color from grey to green for a brief moment. All parameter values
-are now written to state_saving_module/textfile \$0s and can be loaded to the equivalent module
-and instance number next time the patch is loaded.;
 #X text 464 245 8 You can call modules without using the module list
 simply by creating a new object in pd and type the module's name. For
 the state saving mechanism to work properly you do need to give the
@@ -640,21 +633,10 @@ and "basic-osc 2" if you need another one. By using the MODULES list
 this unique numbering is done automatically for you. Use the RESET
 link in the upper left corner when starting a new patch as this will
 reset the counter of unique numbers for modules.;
-#X text 457 403 9 IMPORTANT!!! In order for Automatonism to work properly
-\, each patch needs to contain the correct folder structure. A folder--that
-you can name freely--must contain the folder "patch_editor_abs" and
-the pd-file "main.pd". Copy the entire main parent folder to start
-a new project. Please do not add the abstractions to your PD Search
-path \, because the state svaing system will be writing state_saving_module/textfile \$0s in
-your external folders.;
-#X text 451 534 ABOUT RESET BUTTON: Only use the RESET button when
-your canvas is empty. If you click it in the middle of a patch \, modules
-will start getting identical state saving numbers to already existing
-modules. In other words \, if you click it in the middle of a patch
-\, state saving WILL NOT WORK! The RESET button is there for when you
-start over \, and perhaps do not want to create "BASIC-OSC 99" \, but
-start from zero for a clearer view of the patch.;
 #X text 33 42 RIGHT+CLICK & CHOOSE 'HELP' ON ANY MODULE!;
+#X text 464 125 7 To save parameter states on each module \, you have
+to save the pd file \, like you normally would do from the FILE menu
+or cmd+s;
 #X restore 36 18 pd \$0-quick-guide;
 #X msg 36 63 vis 1;
 #X obj 36 87 s pd-\$0-quick-guide;
@@ -761,18 +743,18 @@ empty -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 17 12 cnv 15 400 60 empty empty STATE_SAVING 20 12 0 14 -226533
 -262144 0;
 #X text 20 82 The state saving system works by writing parameter values
-to state_saving_module/textfile \$0s in the folder "statesave" inside the "patch_editor_abs"
-folder. When you load a module form the module list it is automatically
-being given a unique creation argument which creates a state_saving_module/textfile \$0 unique
-for that instance of the module. To save your patch \, simply save
-as you normally would from the FILE menu and the press ENTER on your
-keyboard or click the SAVE button in the upper left corner of the main
-window.;
+to state_saving_module/textfile \$0s in the folder "statesave" inside
+the "patch_editor_abs" folder. When you load a module form the module
+list it is automatically being given a unique creation argument which
+creates a state_saving_module/textfile \$0 unique for that instance
+of the module. To save your patch \, simply save as you normally would
+from the FILE menu and the press ENTER on your keyboard or click the
+SAVE button in the upper left corner of the main window.;
 #X text 20 216 IMPORTANT!!! To start a new project \, the entire folder
-structure needs to be copied since the abstractions and state_saving_module/textfile \$0s are
-unique to every project. Click the RESET button in the upper left corner
-to reset the counter that gives unique creation arguments for the modules.
-;
+structure needs to be copied since the abstractions and state_saving_module/textfile
+\$0s are unique to every project. Click the RESET button in the upper
+left corner to reset the counter that gives unique creation arguments
+for the modules.;
 #X restore 35 504 pd \$0-state-saving;
 #X obj 34 526 r \$0-open-state-saving!;
 #X msg 34 547 vis 1;
@@ -852,7 +834,7 @@ CPU;
 copy&paste the module instead of loading a new from the module list.
 ;
 #X restore 389 12 pd \$0-tips-&-tricks;
-#N canvas 293 203 419 217 \$0-reset-warning 0;
+#N canvas 293 233 419 217 \$0-reset-warning 0;
 #X obj 21 143 bng 15 250 50 0 \$0-reset! empty <--RESET! 17 7 0 10
 -262144 -1 -1;
 #X text 18 49 WARNING!;
@@ -1164,6 +1146,9 @@ uncheck MAP_FROM (MAP_TO);
 #X obj 20 177 module_create \$0 \$1 macro-control;
 #X restore 22 405 pd macro-structural-tools;
 #X obj 394 85 s \$1-this;
+#N canvas 1164 203 342 191 extra-modules 0;
+#X obj 13 21 module_create \$0 \$1 extra-sampler;
+#X restore 22 429 pd extra-modules;
 #X connect 1 0 3 0;
 #X connect 2 0 0 0;
 #X connect 3 0 2 0;
@@ -1206,17 +1191,17 @@ uncheck MAP_FROM (MAP_TO);
 #X obj 587 427 symbol \$0-callback;
 #X obj 597 538 r \$0-callback;
 #X obj 597 563 text insert \$0-midi_mapping;
-#X obj 242 129 bng 15 250 50 0 empty empty view 17 7 0 10 -262144 -1
+#X obj 237 137 bng 15 250 50 0 empty empty view 17 7 0 10 -262144 -1
 -1;
 #X obj 593 320 t b b;
 #X msg 644 349 clear \, click;
 #X obj 589 496 s MIDI_MAP_SETTINGS;
 #X msg 587 461 getinfo symbol \$1;
-#X obj 244 152 bng 8 250 50 0 empty empty clear! 13 3 0 10 -258113
+#X obj 238 155 bng 8 250 50 0 empty empty clear! 13 3 0 10 -258113
 -1 -1;
 #X obj 403 502 s MIDI_MAP_SETTINGS;
 #X msg 403 473 clear;
-#X obj 230 105 cnv 15 60 20 empty \$0-midi_in empty 1 12 0 10 -261682
+#X obj 230 116 cnv 15 60 20 empty \$0-midi_in empty 1 12 0 10 -261682
 -66577 0;
 #X obj 842 100 r playhead;
 #X obj 841 153 r midiin;
@@ -1225,6 +1210,14 @@ uncheck MAP_FROM (MAP_TO);
 #X floatatom 188 586 5 0 0 0 - - -;
 #X obj 52 507 s notein;
 #X msg 41 471 6 6 6;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X coords 0 1 100 -1 60 60 1 0 0;
+#X restore 230 104 graph;
+#X text 233 102 midimap;
+#X obj 300 678 s STOP-MORPH!;
+#X obj 298 620 r MIDI_LEARN;
+#X obj 298 645 select 1;
+#X text 391 638 stop morphing when midilearn;
 #X connect 1 0 0 0;
 #X connect 15 0 24 0;
 #X connect 21 0 20 0;
@@ -1241,4 +1234,6 @@ uncheck MAP_FROM (MAP_TO);
 #X connect 39 0 38 0;
 #X connect 44 0 45 0;
 #X connect 47 0 46 0;
+#X connect 51 0 52 0;
+#X connect 52 0 50 0;
 #X coords 0 -1 1 1 250 160 2 100 100;

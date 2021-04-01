@@ -15,9 +15,9 @@ SAW->PULSE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 108 196 hsl 128 15 1.27 127 1 1 \$0-polysaw-attack-s \$0-polysaw-attack-r
 ATTACK 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 108 211 hsl 128 15 0 127 0 1 \$0-polysaw-hold-s \$0-polysaw-hold-r
-HOLD 135 7 0 10 -262144 -1 -1 0 1;
+HOLD 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 108 225 hsl 128 15 0 127 0 1 \$0-polysaw-release-s \$0-polysaw-release-r
-RELEASE 135 7 0 10 -262144 -1 -1 0 1;
+RELEASE 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 320 346 pack f f;
 #X obj 335 203 r \$0-polysaw-pitch-s;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
@@ -160,13 +160,12 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 54 0 49 1;
 #X connect 55 0 14 0;
 #X restore 338 547 pd voice2-ahr;
-#N canvas 0 22 599 463 wavetables 0;
+#N canvas 0 22 599 463 wavetables 1;
 #X obj 44 36 loadbang;
 #X obj 44 58 f \$0;
 #X obj 44 89 t f f;
 #X text 102 40 SAW WAVE;
 #X msg 43 193 \; \$1-saw normalize 1;
-#X obj 41 233 table \$0-saw;
 #X msg 71 116 \; \$1-saw sinesum 512 1 0.5 0.33 0.25 0.2 0.16 0.14
 0.125 0.111111 0.1 0.090909 0.083333 0.076923 0.0714285 0.066666 0.0625
 0.058823 0.055555 0.052631 0.05 0.047619 0.045454 0.043478 0.041666
@@ -175,21 +174,22 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 43 379 t f f;
 #X obj 42 285 f \$0;
 #X msg 43 466 \; \$1-square normalize 1;
-#X obj 41 506 table \$0-square;
 #X obj 95 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 111 395 \; \$1-square sinesum 512 1 0 0.33 0 0.2 0 0.142857
 0 0.111111 0 0.090909 0 0.076923 0 0.066666 0 0.058823 0 0.0526315
 0 0.047619 0 0.04347 0 0.04 0;
+#X obj 41 233 table \$0-saw 515;
+#X obj 41 506 table \$0-square 515;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
-#X connect 2 1 6 0;
+#X connect 2 1 5 0;
+#X connect 6 0 8 0;
 #X connect 7 0 9 0;
-#X connect 8 0 10 0;
-#X connect 8 1 13 0;
-#X connect 9 0 8 0;
-#X connect 12 0 9 0;
+#X connect 7 1 11 0;
+#X connect 8 0 7 0;
+#X connect 10 0 8 0;
 #X restore 52 281 pd wavetables;
 #N canvas 224 23 962 575 voice1-ahr 0;
 #X obj 43 6 inlet;
@@ -306,7 +306,7 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 ;
 #X obj 106 137 cnv 5 5 5 empty empty POLYSYNTH 0 0 0 12 -262144 -66577
 0;
-#X obj 175 137 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 175 137 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
 -1;
