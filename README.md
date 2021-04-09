@@ -14,7 +14,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 ## Installation :
 * Copy  automatonism folder into your puredata - externals folder.
-* In a black patch, type [automatonism].
+* In a blank patch, type [automatonism].
 * start patching.
 
 ## Software Requirements
