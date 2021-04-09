@@ -1,0 +1,8 @@
+dispatch abstraction : seulement midi mapping, state saving neutralisé dans state_saving_module (sinon doublon avec système automatonism)
+
+PRESET_MANAGER
+	ok   vérifier initialisation  de preset_manager quand ajouté dynamiquement
+	sauver dans le patch les parametres de morphing de preset-manager
+	permettre des instances multiples de preset manager
+	noms de gui locaux ($0-*)
+audio_recorder / multitrack_recorder : dossier local pour les enregistrements

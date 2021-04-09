@@ -1,0 +1,15 @@
+#N canvas 0 50 833 720 12;
+#X declare -path automatonism/patch_editor_abs;
+#N canvas 0 50 450 300 \$0-init 0;
+#X obj 10 10 loadbang;
+#X obj 10 40 f \$0;
+#X obj 10 70 s ACTIVE_DOLLARZERO;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X restore 10 10 pd \$0-init;
+#X obj 10 40 declare -path automatonism/patch_editor_abs;
+#X obj 10 70 namecanvas \$0-this;
+#X obj 10 100 automatonism_menu \$0;
+#A saved esc-active 1;
+#X text 41 316 This is the new automatonism template patch. You can
+duplicate it every time you need to create a new machine.;

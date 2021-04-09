@@ -1,0 +1,202 @@
+#N canvas 528 85 1336 1018 12;
+#X declare -path automatonism/patch_editor_abs;
+#X text 28 202 presets en local;
+#X text 27 227 auto-id assign;
+#X text 29 254 savestate & pre 0.49 compatibility (cf mob);
+#X text 197 445 -> midilearn et megaseq;
+#X obj 270 10 declare -path automatonism/patch_editor_abs;
+#X obj 270 40 namecanvas \$0-this;
+#X obj 12 11 automatonism_menu \$0;
+#A saved esc-active 1;
+#X text 28 278 OK state_saving_module/upgrade génère un sous-patch
+où sont créés les listeners (hsl_dispatch), f 97;
+#X text 30 322 OK dossier STATE_SAVING_MODULE pour stocker tous les
+listeners, f 69;
+#X text 29 301 OK empecher automatonism de se creer une deuxieme fois
+;
+#X text 29 342 OK touche esc seulement pour patch courant (needs iemguts)
+;
+#X text 174 202 -> transformer tous les textfaile en state_saving_module/textfile
+\$0, f 71;
+#X obj 863 175 mega-sequencer 1;
+#A saved preset statesave/1-ratchet-seq-0-ss.txt 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A saved preset statesave/1-mega-seq-5-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern8.txt
+0.165354 0 0.503937 0.362205 0.685039 0.574803 0.299213 0.19685 0.88189
+0.692913 0.385827 0.354331 0.669291 0.0393701 0.677165 0.897638;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern5.txt
+0.165354 0.023622 0.503937 0.362205 0.590551 0.574803 0.377953 0.19685
+0.88189 0.0551181 0.456693 0.354331 0.669291 0.110236 0.401575 0.897638
+;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern12.txt
+0.36 0.44 0.44 0.24 -0.0133331 0.373333 0.546666 0.76 0.546666 0.533333
+0.613333 0.76 0.346667 0.346667 0.666666 0.706666;
+#A saved preset statesave/1-mega-seq-12-ss.txt 0 0 0 1 0 0 0 1 0 1
+0 1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern10.txt
+0.165354 0.023622 0.503937 0.362205 0.590551 0.574803 0.377953 0.19685
+0.88189 0.0551181 0.456693 0.354331 0.669291 0.110236 0.401575 0.897638
+;
+#A saved preset statesave/1-mega-seq-10-ss.txt 0 0 0 1 0 0 0 1 0 1
+0 1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern9.txt
+0.165354 0.023622 0.503937 0.362205 0.590551 0.574803 0.377953 0.19685
+0.88189 0.0551181 0.456693 0.354331 0.669291 0.110236 0.401575 0.897638
+;
+#A saved preset statesave/1-mega-seq-9-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern7.txt
+0.165354 0.023622 0.503937 0.362205 0.590551 0.574803 0.377953 0.19685
+0.88189 0.0551181 0.456693 0.354331 0.669291 0.110236 0.401575 0.897638
+;
+#A saved preset statesave/1-mega-seq-7-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern6.txt
+0.165354 0.023622 0.503937 0.362205 0.590551 0.574803 0.377953 0.19685
+0.88189 0.0551181 0.456693 0.354331 0.669291 0.110236 0.401575 0.897638
+;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern4.txt
+0.165354 0.929134 0.503937 0.362205 0.952756 0.574803 0.19685 0.19685
+0.88189 0.645669 0.511811 0.354331 0.669291 0.330709 0.433071 0.897638
+;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern0.txt
+0.36 0.44 0.44 0.24 -0.0133331 0.373333 0.546666 0.76 0.546666 0.533333
+0.613333 0.76 0.346667 0.346667 0.666666 0.706666;
+#A saved preset statesave/1-mega-seq-0-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern3.txt
+0.165354 0.023622 0.503937 0.362205 0.590551 0.574803 0.377953 0.19685
+0.88189 0.0551181 0.456693 0.354331 0.669291 0.110236 0.401575 0.897638
+;
+#A saved preset statesave/1-mega-seq-3-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern2.txt
+0.0666667 0.16 0.266666 0.346666 0.386666 0.426666 0.533333 0.653333
+0.759999 0.799999 0.813333 0.866666 0.879999 0.879999 0.866666 0.706666
+;
+#A saved preset statesave/1-mega-seq-2-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/mega-patterns/mega-sequencer-1-pattern1.txt
+0.0666667 0.16 0.266666 0.346666 0.386666 0.426666 0.533333 0.653333
+0.759999 0.799999 0.813333 0.866666 0.879999 0.879999 0.866666 0.706666
+;
+#A saved preset statesave/1-mega-seq-1-ss.txt 0 0 0 1 0 0 0 1 0 1 0
+1 0 0 0 0 63 57 0;
+#A saved preset statesave/1-mega-xtra-ss.txt 15;
+#A saved preset statesave/0-mega-xtra-ss.txt 0;
+#A saved dispatch ms-maxstep-s 15;
+#A saved dispatch ms-p1-t1-s 0;
+#A saved dispatch ms-p1-t0-s 0;
+#A saved dispatch ms-p1-t3-s 1;
+#A saved dispatch ms-p1-t2-s 0;
+#A saved dispatch ms-p1-t5-s 0;
+#A saved dispatch ms-p1-t4-s 0;
+#A saved dispatch ms-p1-t7-s 1;
+#A saved dispatch ms-p1-t6-s 0;
+#A saved dispatch ms-p1-t9-s 1;
+#A saved dispatch ms-p1-t8-s 0;
+#A saved dispatch ms-p1-t11-s 1;
+#A saved dispatch ms-p1-t10-s 0;
+#A saved dispatch ms-p1-t13-s 0;
+#A saved dispatch ms-p1-t12-s 0;
+#A saved dispatch ms-p1-t15-s 0;
+#A saved dispatch ms-p1-t14-s 0;
+#A saved dispatch ms-scale-p1-s 63;
+#A saved dispatch ms-xpose-p1-s 57;
+#A saved dispatch ms-xpose-centre-s 0;
+#X text 874 113 Mega sequencer a son propre systeme de presets inde[endant
+de preset manager;
+#X obj 877 557 ratchet-seq 1;
+#A saved preset statesave/1-ratchet-seq-3-ss.txt 3 4 4 4 4 4 4 4 4
+4 4 4 4 4 4 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3;
+#A saved preset statesave/1-ratchet-seq-2-ss.txt 4 0 0 4 4 4 0 4 4
+4 4 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2;
+#A saved preset statesave/1-ratchet-seq-1-ss.txt 0 4 3 3 3 3 3 2 0
+2 2 2 2 3 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1;
+#A saved preset statesave/1-ratchet-seq-0-ss.txt 0 0 1 0 0 0 2 2 0
+3 1 1 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A saved preset statesave/0-ratchet-seq-0-ss.txt 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A saved dispatch s10-ratchet-gui-s 3;
+#A saved dispatch s2-ratchet-gui-s 0;
+#A saved dispatch s1-ratchet-gui-s 0;
+#A saved dispatch s4-ratchet-gui-s 0;
+#A saved dispatch s3-ratchet-gui-s 1;
+#A saved dispatch t2-s 0;
+#A saved dispatch t1-s 0;
+#A saved dispatch t4-s 0;
+#A saved dispatch t3-s 0;
+#A saved dispatch s6-ratchet-gui-s 0;
+#A saved dispatch s5-ratchet-gui-s 0;
+#A saved dispatch s8-ratchet-gui-s 2;
+#A saved dispatch s7-ratchet-gui-s 2;
+#A saved dispatch t6-s 0;
+#A saved dispatch t5-s 0;
+#A saved dispatch t8-s 0;
+#A saved dispatch t7-s 0;
+#A saved dispatch s11-ratchet-gui-s 1;
+#A saved dispatch s9-ratchet-gui-s 0;
+#A saved dispatch s12-ratchet-gui-s 1;
+#A saved dispatch t10-s 0;
+#A saved dispatch t9-s 0;
+#A saved dispatch t12-s 0;
+#A saved dispatch t11-s 0;
+#A saved dispatch s14-ratchet-gui-s 3;
+#A saved dispatch s13-ratchet-gui-s 2;
+#A saved dispatch s16-ratchet-gui-s 0;
+#A saved dispatch s15-ratchet-gui-s 0;
+#A saved dispatch t14-s 0;
+#A saved dispatch t13-s 0;
+#A saved dispatch t16-s 0;
+#A saved dispatch t15-s 0;
+#X text 891 526 Idem pour Ratchet sequencer;
+#X obj 1033 746 trigger-seq 1;
+#A saved preset statesave/1-trigger-seq-1-ss.txt 1 0 0 0 0 0 0 0 0
+1 1 0 1 1 1 1 0 0;
+#A saved preset statesave/1-trigger-seq-0-ss.txt 1 0 0 0 0 0 0 0 0
+1 1 0 1 1 1 1 0 0;
+#A saved preset statesave/0-trigger-seq-0-ss.txt 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0;
+#A saved dispatch trigger-seq-s1-s 1;
+#A saved dispatch trigger-seq-s2-s 0;
+#A saved dispatch trigger-seq-s3-s 0;
+#A saved dispatch trigger-seq-s4-s 0;
+#A saved dispatch trigger-seq-s5-s 0;
+#A saved dispatch trigger-seq-s6-s 0;
+#A saved dispatch trigger-seq-s7-s 0;
+#A saved dispatch trigger-seq-s8-s 0;
+#A saved dispatch trigger-seq-s9-s 0;
+#A saved dispatch trigger-seq-s10-s 1;
+#A saved dispatch trigger-seq-s11-s 1;
+#A saved dispatch trigger-seq-s12-s 0;
+#A saved dispatch trigger-seq-s13-s 1;
+#A saved dispatch trigger-seq-s14-s 1;
+#A saved dispatch trigger-seq-s15-s 1;
+#A saved dispatch trigger-seq-s16-s 1;
+#A saved dispatch trigger-seq-num-of-steps-s 0;
+#X text 873 714 Idem pour trigger sequencer;
+#X obj 370 716 bwl-osc 2;
+#A saved preset statesave/0-bwl-osc-ss.txt 0 0 0 0 0;
+#A saved preset statesave/2-bwl-osc-ss.txt 47 0 0 23 0;
+#A saved preset statesave/1-2-bwl-osc-ss.txt 47 0 0 23 0;
+#A saved preset statesave/2-2-bwl-osc-ss.txt 14 97 53 66 1;
+#A saved dispatch bwl-osc-fm-att-s 23;
+#A saved dispatch bwl-osc-pitch-s 47;
+#A saved dispatch bwl-osc-pwidth-s 0;
+#A saved dispatch bwl-osc-cv-att-s 0;
+#A saved dispatch bwl-osc-wform-s 0;
+#X obj 111 509 polysynth 1;
+#A saved preset statesave/0-polysynth-ss.txt 0 0 0 0 0 0;
+#A saved preset statesave/1-polysynth-ss.txt 0 0 0 1.27 127 127;
+#A saved preset statesave/1-1-polysynth-ss.txt 0 0 0 1.27 127 127;
+#A saved preset statesave/2-1-polysynth-ss.txt 102 43 77 10.7879 80
+23;
+#A saved dispatch polysaw-pitch-s 0;
+#A saved dispatch polysaw-saw->pulse-s 0;
+#A saved dispatch polysaw-attack-s 1.27;
+#A saved dispatch polysaw-hold-s 127;
+#A saved dispatch polysaw-release-s 127;
+#A saved dispatch polysaw-dtune-s 0;
+#X obj 478 485 preset-manager 2;
