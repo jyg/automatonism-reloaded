@@ -13,6 +13,10 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * midi-mapping enabled and midi-learn feature
 * possibility of running several patches simultaneously and independently
 
+## To Do :
+
+* Camomille VST plugin and DAW integration (parameters)
+
 ## Installation :
 * Copy  automatonism folder into your puredata - externals folder.
 * In a blank patch, type [automatonism].
