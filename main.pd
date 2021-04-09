@@ -1,4 +1,4 @@
-#N canvas 0 50 833 720 12;
+#N canvas 486 91 699 458 12;
 #X declare -path automatonism/patch_editor_abs;
 #N canvas 0 50 450 300 \$0-init 0;
 #X obj 10 10 loadbang;
