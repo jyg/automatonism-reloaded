@@ -7,10 +7,8 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 ## New features :
 
 * automatonism made as an abstaction lib : init a new project just by typing [automatonism] in a blank patch.
-* The legacy file-based preset and state saving system is deprecated. 
-* The new preset and state saving system is based on new savestate object. 
-* preset and state data are stored inside the main patch.
-* automatic import of old savestate structure.
+* The legacy file-based preset and state saving system is deprecated, but old savestate structure is automatically imported in new project. 
+* The new preset and state saving system is based on new savestate object, where preset and state data are stored inside the main patch.
 * ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * midi-mapping enabled and midi-learn feature
 
