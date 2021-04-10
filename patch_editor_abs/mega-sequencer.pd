@@ -1,8 +1,9 @@
 #N canvas 222 142 1248 703 10;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-mega-seq 16 float 3;
-#A 0 0.36 0.44 0.44 0.24 -0.0133331 0.373333 0.546666 0.76 0.546666
-0.533333 0.613333 0.76 0.346667 0.346667 0.666666 0.706666;
+#A 0 0.748031 0.023622 0.015748 0.834646 0.685039 0.251969 0.362205
+0.795276 0.503937 0.976378 0.299213 0.716535 0.401575 0.330709 0.0787402
+0.669291;
 #X coords 0 1 16 0 240 75 1 0 0;
 #X restore 108 147 graph;
 #N canvas 543 23 897 716 counter 0;
@@ -540,7 +541,7 @@
 #X obj 108 222 tgl 15 1 \$0-ms-p1-t0-s \$0-ms-p1-t0-r RANDOM-STEP 0
 25 0 10 -262144 -1 -1 0 1;
 #X obj 153 222 tgl 15 1 \$0-ms-p1-t3-s \$0-ms-p1-t3-r empty 17 7 0
-10 -262144 -1 -1 1 1;
+10 -262144 -1 -1 0 1;
 #X obj 138 222 tgl 15 1 \$0-ms-p1-t2-s \$0-ms-p1-t2-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 183 222 tgl 15 1 \$0-ms-p1-t5-s \$0-ms-p1-t5-r empty 17 7 0
@@ -548,15 +549,15 @@
 #X obj 168 222 tgl 15 1 \$0-ms-p1-t4-s \$0-ms-p1-t4-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 213 222 tgl 15 1 \$0-ms-p1-t7-s \$0-ms-p1-t7-r empty 17 7 0
-10 -262144 -1 -1 1 1;
+10 -262144 -1 -1 0 1;
 #X obj 198 222 tgl 15 1 \$0-ms-p1-t6-s \$0-ms-p1-t6-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 243 222 tgl 15 1 \$0-ms-p1-t9-s \$0-ms-p1-t9-r empty 17 7 0
-10 -262144 -1 -1 1 1;
+10 -262144 -1 -1 0 1;
 #X obj 228 222 tgl 15 1 \$0-ms-p1-t8-s \$0-ms-p1-t8-r empty 17 7 0
 10 -262144 -1 -1 0 1;
 #X obj 273 222 tgl 15 1 \$0-ms-p1-t11-s \$0-ms-p1-t11-r empty 17 7
-0 10 -262144 -1 -1 1 1;
+0 10 -262144 -1 -1 0 1;
 #X obj 258 222 tgl 15 1 \$0-ms-p1-t10-s \$0-ms-p1-t10-r empty 17 7
 0 10 -262144 -1 -1 0 1;
 #X obj 303 222 tgl 15 1 \$0-ms-p1-t13-s \$0-ms-p1-t13-r empty 17 7
@@ -574,9 +575,9 @@ RDM-PATTERN 20 8 0 10 -262144 -226533 -1;
 #X floatatom 108 281 5 0 0 1 XPOSE #0-ms-xpose-p1-gui-r -;
 #X symbolatom 288 250 20 0 0 0 - #0-ms-scale-p1-gui-r -;
 #X obj 111 252 hsl 128 15 0 127 0 1 \$0-ms-scale-p1-s \$0-ms-scale-p1-r
-SCALE 133 7 0 10 -262144 -1 -1 6300 1;
+SCALE 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 111 267 hsl 128 15 0 127 0 1 \$0-ms-xpose-p1-s \$0-ms-xpose-p1-r
-XPOSE 133 7 0 10 -150893 -1 -1 5700 1;
+XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #N canvas 0 23 1440 774 scales-tables 0;
 #X obj 11 17 loadbang;
 #X obj 10 156 loadbang;
@@ -1125,12 +1126,10 @@ XPOSE 133 7 0 10 -150893 -1 -1 5700 1;
 #X msg -193 97 bang;
 #X obj 22 597 state_saving_module/textfile \$0;
 #X msg 97 236 clear;
-#X obj 19 118 t b f b b;
 #X obj 308 21 inlet;
 #X text 353 19 LOAD;
 #X msg 399 415 bang;
 #X obj 412 375 t b b;
-#X obj 308 43 t b f;
 #X obj 290 90 t b b;
 #X obj -400 14 r \$0-ms-p1-t0-s;
 #X obj -387 44 r \$0-ms-p1-t1-s;
@@ -1250,60 +1249,67 @@ XPOSE 133 7 0 10 -150893 -1 -1 5700 1;
 #X restore 663 117 pd avoid-load-textfile-clicks;
 #X obj 19 208 f \$1;
 #X obj 290 184 f \$1;
-#X connect 0 0 38 0;
-#X connect 1 0 36 0;
+#X obj 132 182 s ACTIVE_DOLLARZERO;
+#X obj 308 43 t b f b;
+#X obj 19 118 t b f b b b;
+#X msg 134 156 0;
+#X connect 0 0 36 0;
+#X connect 1 0 34 0;
 #X connect 2 0 1 0;
-#X connect 3 0 47 0;
-#X connect 5 0 10 0;
-#X connect 6 0 37 0;
-#X connect 7 0 35 0;
+#X connect 3 0 45 0;
+#X connect 5 0 49 0;
+#X connect 6 0 35 0;
+#X connect 7 0 33 0;
 #X connect 9 0 8 0;
-#X connect 10 0 3 0;
-#X connect 10 1 6 1;
-#X connect 10 2 7 0;
-#X connect 10 3 9 0;
-#X connect 11 0 15 0;
-#X connect 13 0 1 0;
+#X connect 10 0 48 0;
+#X connect 12 0 1 0;
+#X connect 13 0 12 0;
+#X connect 13 1 2 0;
 #X connect 14 0 13 0;
-#X connect 14 1 2 0;
-#X connect 15 0 16 0;
-#X connect 15 1 0 1;
-#X connect 16 0 14 0;
-#X connect 16 1 48 0;
-#X connect 17 0 35 1;
-#X connect 18 0 45 1;
-#X connect 19 0 45 2;
-#X connect 20 0 45 3;
-#X connect 21 0 45 4;
-#X connect 22 0 45 5;
-#X connect 23 0 45 6;
-#X connect 24 0 45 7;
-#X connect 25 0 45 8;
-#X connect 26 0 45 9;
-#X connect 27 0 45 10;
-#X connect 28 0 45 11;
-#X connect 29 0 45 12;
-#X connect 30 0 45 13;
-#X connect 31 0 45 14;
-#X connect 32 0 45 15;
-#X connect 33 0 45 16;
-#X connect 34 0 45 17;
-#X connect 35 0 45 0;
-#X connect 37 0 8 0;
-#X connect 38 0 1 0;
-#X connect 39 0 40 1;
-#X connect 40 0 42 0;
-#X connect 41 0 40 0;
-#X connect 43 0 45 18;
-#X connect 44 0 8 0;
-#X connect 45 0 44 0;
-#X connect 47 0 6 0;
-#X connect 48 0 0 0;
+#X connect 14 1 46 0;
+#X connect 15 0 33 1;
+#X connect 16 0 43 1;
+#X connect 17 0 43 2;
+#X connect 18 0 43 3;
+#X connect 19 0 43 4;
+#X connect 20 0 43 5;
+#X connect 21 0 43 6;
+#X connect 22 0 43 7;
+#X connect 23 0 43 8;
+#X connect 24 0 43 9;
+#X connect 25 0 43 10;
+#X connect 26 0 43 11;
+#X connect 27 0 43 12;
+#X connect 28 0 43 13;
+#X connect 29 0 43 14;
+#X connect 30 0 43 15;
+#X connect 31 0 43 16;
+#X connect 32 0 43 17;
+#X connect 33 0 43 0;
+#X connect 35 0 8 0;
+#X connect 36 0 1 0;
+#X connect 37 0 38 1;
+#X connect 38 0 40 0;
+#X connect 39 0 38 0;
+#X connect 41 0 43 18;
+#X connect 42 0 8 0;
+#X connect 43 0 42 0;
+#X connect 45 0 6 0;
+#X connect 46 0 0 0;
+#X connect 48 0 14 0;
+#X connect 48 1 0 1;
+#X connect 48 2 50 0;
+#X connect 49 0 3 0;
+#X connect 49 1 6 1;
+#X connect 49 2 7 0;
+#X connect 49 3 9 0;
+#X connect 49 4 50 0;
+#X connect 50 0 47 0;
 #X restore 109 657 pd savetest;
-#X obj 108 353 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-16
-245 7 0 10 -262144 -1 -1 15;
-#X obj 108 313 hradio 15 1 0 16 \$0-ms-write-s \$0-ms-write-r WRITE-1
-245 7 0 10 -261234 -258113 -1 0;
+#X obj 108 353 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-7
+245 7 0 10 -262144 -1 -1 6;
+#X obj 108 313 hradio 15 1 0 16 \$0-ms-write-s \$0-ms-write-r WRITE-4
+245 7 0 10 -261234 -258113 -1 3;
 #X obj 108 518 r \$0-ms-write-s;
 #X obj 255 498 r \$0-ms-load-s;
 #X obj 109 605 r \$0-ms-write-s;
@@ -1470,10 +1476,9 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X obj 10 60 state_saving_module/hradio_dispatch MEGA-SEQUENCER \$0
 \$1 0 16 ms-maxstep-s ms-maxstep-r MAX- #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#N canvas 762 83 1088 712 statesave-patterns-1-16 0;
+#N canvas 762 83 1088 712 statesave-patterns-1-16 1;
 #X obj 684 324 pack f f;
 #X obj 406 234 delay 10;
-#X obj 684 249 t b f;
 #X text 446 112 WRITE;
 #X obj 406 114 inlet;
 #X obj 684 176 inlet;
@@ -1484,7 +1489,6 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 \$13 \$14 \$15 \$16;
 #X obj 406 561 state_saving_module/textfile \$0;
 #X msg 484 296 clear;
-#X obj 406 178 t b f b b;
 #X msg 406 389 write statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt
 ;
 #X obj 746 597 state_saving_module/textfile \$0;
@@ -1536,30 +1540,37 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X restore 837 167 pd avoid-load-textfile-clicks;
 #X obj 406 268 f \$1;
 #X obj 684 293 f \$1;
-#X connect 0 0 15 0;
-#X connect 1 0 20 0;
-#X connect 2 0 21 0;
-#X connect 2 1 0 1;
-#X connect 4 0 12 0;
-#X connect 5 0 2 0;
-#X connect 6 0 13 0;
-#X connect 7 0 9 0;
-#X connect 8 0 7 0;
-#X connect 9 0 10 0;
-#X connect 11 0 10 0;
-#X connect 12 0 1 0;
-#X connect 12 1 6 1;
-#X connect 12 2 8 0;
-#X connect 12 3 11 0;
-#X connect 13 0 10 0;
-#X connect 14 0 18 0;
-#X connect 15 0 16 0;
-#X connect 16 0 14 0;
-#X connect 16 1 17 0;
-#X connect 16 2 14 0;
-#X connect 17 0 14 0;
-#X connect 20 0 6 0;
-#X connect 21 0 0 0;
+#X obj 406 178 t b f b b b;
+#X obj 684 249 t b f b;
+#X obj 542 251 s ACTIVE_DOLLARZERO;
+#X msg 544 225 0;
+#X connect 0 0 13 0;
+#X connect 1 0 18 0;
+#X connect 3 0 20 0;
+#X connect 4 0 21 0;
+#X connect 5 0 11 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 12 0 16 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 14 1 15 0;
+#X connect 14 2 12 0;
+#X connect 15 0 12 0;
+#X connect 18 0 5 0;
+#X connect 19 0 0 0;
+#X connect 20 0 1 0;
+#X connect 20 1 5 1;
+#X connect 20 2 7 0;
+#X connect 20 3 10 0;
+#X connect 20 4 23 0;
+#X connect 21 0 19 0;
+#X connect 21 1 0 1;
+#X connect 21 2 23 0;
+#X connect 23 0 22 0;
 #X restore 108 546 pd statesave-patterns-1-16;
 #X connect 1 0 94 0;
 #X connect 1 1 93 0;

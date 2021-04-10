@@ -1,4 +1,4 @@
-#N canvas 0 22 1012 732 10;
+#N canvas 0 57 1920 1023 10;
 #X obj 457 294 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
 -262144 0;
 #X obj 20 249 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
@@ -60,8 +60,8 @@ sequencer;
 #X text 454 148 R-STEP - trigger/gate input to trigger random step
 of the sequencer;
 #X text 454 181 TIMBRE1 - input for cv-control over TIMBRE1;
-#X text 454 203 TIMBRE2 - input for cv-control over TIMBRE1;
 #X text 23 654 STEP/R-STEP - toggle to enable or disable the incoming
 clock at the STEP or R-STEP input(easier editing purposes);
 #X text 23 689 LOAD/RDM - toggle to enable or disable the incoming
 clock at the LOAD or RDM input(easier editing purposes);
+#X text 454 203 TIMBRE2 - input for cv-control over TIMBRE2;

@@ -18,7 +18,7 @@ empty 0 -8 0 10 -228856 -226533 -1 0;
 #X obj 177 147 vradio 15 1 1 5 \$0-s4-ratchet-gui-s \$0-s4-ratchet-gui-r
 empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 162 147 vradio 15 1 1 5 \$0-s3-ratchet-gui-s \$0-s3-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 1;
+empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 641 684 vline~;
 #X obj 147 225 tgl 15 1 \$0-t2-s \$0-t2-r empty 17 7 0 10 -262144 -1
 -1 0 1;
@@ -484,13 +484,13 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X connect 58 0 56 1;
 #X restore 102 263 pd ratcheting-step1;
 #X obj 207 147 vradio 15 1 1 5 \$0-s6-ratchet-gui-s \$0-s6-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 0;
+empty 0 -8 0 10 -262144 -226533 -1 2;
 #X obj 192 147 vradio 15 1 1 5 \$0-s5-ratchet-gui-s \$0-s5-ratchet-gui-r
 empty 0 -8 0 10 -228856 -226533 -1 0;
 #X obj 237 147 vradio 15 1 1 5 \$0-s8-ratchet-gui-s \$0-s8-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 2;
+empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 222 147 vradio 15 1 1 5 \$0-s7-ratchet-gui-s \$0-s7-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 2;
+empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 207 225 tgl 15 1 \$0-t6-s \$0-t6-r empty 17 7 0 10 -262144 -1
 -1 0 1;
 #X obj 192 225 tgl 15 1 \$0-t5-s \$0-t5-r empty 17 7 0 10 -228856 -1
@@ -508,13 +508,13 @@ empty 0 -8 0 10 -262144 -226533 -1 2;
 #X obj 237 132 bng 15 100 50 0 a \$0-s8! empty 17 7 0 10 -1 -226533
 -1;
 #X obj 267 147 vradio 15 1 1 5 \$0-s10-ratchet-gui-s \$0-s10-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 3;
+empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 252 147 vradio 15 1 1 5 \$0-s9-ratchet-gui-s \$0-s9-ratchet-gui-r
 empty 0 -8 0 10 -228856 -226533 -1 0;
 #X obj 297 147 vradio 15 1 1 5 \$0-s12-ratchet-gui-s \$0-s12-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 1;
+empty 0 -8 0 10 -262144 -226533 -1 2;
 #X obj 282 147 vradio 15 1 1 5 \$0-s11-ratchet-gui-s \$0-s11-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 1;
+empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 267 225 tgl 15 1 \$0-t10-s \$0-t10-r empty 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 252 225 tgl 15 1 \$0-t9-s \$0-t9-r empty 17 7 0 10 -228856 -1
@@ -532,9 +532,9 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 297 132 bng 15 100 50 0 a \$0-s12! empty 17 7 0 10 -1 -226533
 -1;
 #X obj 327 147 vradio 15 1 1 5 \$0-s14-ratchet-gui-s \$0-s14-ratchet-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 3;
+empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 312 147 vradio 15 1 1 5 \$0-s13-ratchet-gui-s \$0-s13-ratchet-gui-r
-empty 0 -8 0 10 -228856 -226533 -1 2;
+empty 0 -8 0 10 -228856 -226533 -1 0;
 #X obj 357 147 vradio 15 1 1 5 \$0-s16-ratchet-gui-s \$0-s16-ratchet-gui-r
 empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 342 147 vradio 15 1 1 5 \$0-s15-ratchet-gui-s \$0-s15-ratchet-gui-r
@@ -2536,9 +2536,9 @@ empty 0 -8 0 10 -262144 -226533 -1 0;
 #X obj 643 8 threshold~ 0.9 0 0.9 0;
 #X msg 643 30 bang;
 #X obj 377 192 hradio 15 1 1 4 \$0-ratchet-load-s \$0-ratchet-load-r
-LOAD 0 25 0 10 -204786 -13381 -1 0;
+LOAD 0 25 0 10 -204786 -13381 -1 3;
 #X obj 377 177 hradio 15 1 0 4 \$0-ratchet-store-s \$0-ratchet-store-r
-STORE 0 -8 0 10 -261234 -258113 -1 0;
+STORE 0 -8 0 10 -261234 -258113 -1 3;
 #X obj 474 108 cnv 5 5 5 empty empty RESET 0 0 0 8 -262144 -226533
 0;
 #X obj 477 114 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
@@ -2804,13 +2804,11 @@ RANDOM! 17 7 0 10 -262144 -1 -1;
 #X msg -193 97 bang;
 #X obj 25 969 state_saving_module/textfile \$0;
 #X msg 97 236 clear;
-#X obj 19 118 t b f b b;
 #X obj 308 21 inlet;
 #X text 353 19 LOAD;
 #X msg 399 415 bang;
 #X obj 412 375 t b b;
 #X obj 308 43 t b f;
-#X obj 290 90 t b b;
 #X obj -412 344 f;
 #N canvas 0 22 1084 659 unpack-values 0;
 #X obj 182 32 inlet;
@@ -2972,67 +2970,74 @@ f f f f f f f f f f;
 #X restore 567 173 pd avoid-load-textfile-clicks;
 #X obj 290 184 f \$1;
 #X obj 19 208 f \$1;
-#X connect 0 0 23 0;
-#X connect 1 0 18 0;
+#X obj 19 118 t b f b b b;
+#X obj 290 90 t b b b;
+#X obj 149 173 s ACTIVE_DOLLARZERO;
+#X msg 151 147 0;
+#X connect 0 0 21 0;
+#X connect 1 0 16 0;
 #X connect 2 0 1 0;
-#X connect 3 0 59 0;
-#X connect 5 0 10 0;
-#X connect 6 0 22 0;
-#X connect 7 0 17 0;
+#X connect 3 0 57 0;
+#X connect 5 0 58 0;
+#X connect 6 0 20 0;
+#X connect 7 0 15 0;
 #X connect 9 0 8 0;
-#X connect 10 0 3 0;
-#X connect 10 1 6 1;
-#X connect 10 2 7 0;
-#X connect 10 3 9 0;
-#X connect 11 0 15 0;
-#X connect 13 0 1 0;
-#X connect 14 0 13 0;
-#X connect 14 1 2 0;
+#X connect 10 0 14 0;
+#X connect 12 0 1 0;
+#X connect 13 0 12 0;
+#X connect 13 1 2 0;
+#X connect 14 0 17 0;
+#X connect 14 1 0 1;
 #X connect 15 0 19 0;
-#X connect 15 1 0 1;
-#X connect 16 0 14 0;
-#X connect 16 1 58 0;
-#X connect 17 0 21 0;
-#X connect 19 0 16 0;
+#X connect 17 0 59 0;
+#X connect 18 0 8 0;
+#X connect 19 0 18 0;
 #X connect 20 0 8 0;
-#X connect 21 0 20 0;
-#X connect 22 0 8 0;
-#X connect 23 0 1 0;
-#X connect 24 0 17 1;
-#X connect 25 0 21 1;
-#X connect 26 0 21 2;
-#X connect 27 0 21 3;
-#X connect 28 0 21 4;
-#X connect 29 0 21 5;
-#X connect 30 0 21 6;
-#X connect 31 0 21 7;
-#X connect 32 0 21 8;
-#X connect 33 0 21 9;
-#X connect 34 0 21 10;
-#X connect 35 0 21 11;
-#X connect 36 0 21 12;
-#X connect 37 0 21 13;
-#X connect 38 0 21 14;
-#X connect 39 0 21 15;
-#X connect 40 0 21 16;
-#X connect 41 0 21 17;
-#X connect 42 0 21 18;
-#X connect 43 0 21 19;
-#X connect 44 0 21 20;
-#X connect 45 0 21 21;
-#X connect 46 0 21 22;
-#X connect 47 0 21 23;
-#X connect 48 0 21 32;
-#X connect 49 0 21 24;
-#X connect 50 0 21 25;
-#X connect 51 0 21 26;
-#X connect 52 0 21 27;
-#X connect 53 0 21 28;
-#X connect 54 0 21 29;
-#X connect 55 0 21 30;
-#X connect 56 0 21 31;
-#X connect 58 0 0 0;
-#X connect 59 0 6 0;
+#X connect 21 0 1 0;
+#X connect 22 0 15 1;
+#X connect 23 0 19 1;
+#X connect 24 0 19 2;
+#X connect 25 0 19 3;
+#X connect 26 0 19 4;
+#X connect 27 0 19 5;
+#X connect 28 0 19 6;
+#X connect 29 0 19 7;
+#X connect 30 0 19 8;
+#X connect 31 0 19 9;
+#X connect 32 0 19 10;
+#X connect 33 0 19 11;
+#X connect 34 0 19 12;
+#X connect 35 0 19 13;
+#X connect 36 0 19 14;
+#X connect 37 0 19 15;
+#X connect 38 0 19 16;
+#X connect 39 0 19 17;
+#X connect 40 0 19 18;
+#X connect 41 0 19 19;
+#X connect 42 0 19 20;
+#X connect 43 0 19 21;
+#X connect 44 0 19 22;
+#X connect 45 0 19 23;
+#X connect 46 0 19 32;
+#X connect 47 0 19 24;
+#X connect 48 0 19 25;
+#X connect 49 0 19 26;
+#X connect 50 0 19 27;
+#X connect 51 0 19 28;
+#X connect 52 0 19 29;
+#X connect 53 0 19 30;
+#X connect 54 0 19 31;
+#X connect 56 0 0 0;
+#X connect 57 0 6 0;
+#X connect 58 0 3 0;
+#X connect 58 1 6 1;
+#X connect 58 2 7 0;
+#X connect 58 3 9 0;
+#X connect 58 4 61 0;
+#X connect 59 0 13 0;
+#X connect 59 1 56 0;
+#X connect 59 2 61 0;
+#X connect 61 0 60 0;
 #X restore 108 560 pd store/load;
 #X obj 108 508 r \$0-ratchet-store-s;
 #X obj 183 532 r \$0-ratchet-load-s;

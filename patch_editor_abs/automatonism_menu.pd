@@ -272,7 +272,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X obj 14 198 module_create \$0 \$1 maestro4;
 #X obj 14 225 module_create \$0 \$1 random-mixer;
 #X restore 21 272 pd vca/mixers;
-#N canvas 0 142 348 548 utility/logic 0;
+#N canvas 0 172 348 548 utility/logic 0;
 #X obj 14 20 module_create \$0 \$1 clock;
 #X obj 14 43 module_create \$0 \$1 clock-multiply;
 #X obj 15 68 module_create \$0 \$1 clock-divider-even;
@@ -293,6 +293,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X obj 15 467 module_create \$0 \$1 external-audio;
 #X obj 15 494 module_create \$0 \$1 manual-triggers;
 #X obj 15 514 module_create \$0 \$1 manual-toggle;
+#X obj 15 534 module_create \$0 \$1 playhead;
 #X restore 21 294 pd utility/logic;
 #N canvas 0 142 248 332 sequencers 0;
 #X obj 14 20 module_create \$0 \$1 8steps;
@@ -310,7 +311,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 #X obj 203 272 r \$0-open-modules!;
 #X obj 36 41 r \$0-open-quick-guide!;
 #X obj 203 36 r \$0-open-help-files!;
-#N canvas 551 193 807 759 \$0-modules 0;
+#N canvas 551 193 807 759 \$0-modules 1;
 #X obj 196 91 cnv 15 180 15 empty empty MODULATION: 10 8 0 12 -158136
 -262144 0;
 #X obj 196 112 bng 15 250 50 0 \$0-create-basic-lfo! empty <--BASIC-LFO
@@ -359,7 +360,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 17 7 0 10 -262144 -1 -1;
 #X obj 196 310 bng 15 250 50 0 \$0-create-vca! empty <--VCA 17 7 0
 10 -262144 -1 -1;
-#X obj 569 519 cnv 15 180 15 empty empty MACRO-STRUCTURAL-TOOLS: 10
+#X obj 569 549 cnv 15 180 15 empty empty MACRO-STRUCTURAL-TOOLS: 10
 8 0 12 -158136 -262144 0;
 #X obj 568 91 cnv 15 180 15 empty empty UTILITY&LOGIC: 10 8 0 12 -158136
 -262144 0;
@@ -429,7 +430,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 17 7 0 10 -262144 -1 -1;
 #X obj 10 231 bng 15 250 50 0 \$0-create-triad! empty <--TRIAD 17 7
 0 10 -262144 -1 -1;
-#X obj 570 539 bng 15 250 50 0 \$0-create-preset-manager! empty <--PRESET-MANAGER
+#X obj 570 569 bng 15 250 50 0 \$0-create-preset-manager! empty <--PRESET-MANAGER
 17 7 0 10 -158136 -1 -1;
 #X obj 196 152 bng 15 250 50 0 \$0-create-ahr! empty <--ATTACK-HOLD-RELEASE(ahr)
 17 7 0 10 -262144 -1 -1;
@@ -467,7 +468,7 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 17 7 0 10 -150893 -1 -1;
 #X obj 196 469 bng 15 250 50 0 \$0-create-maestro4! empty <--MAESTRO4(dac~)
 17 7 0 10 -262144 -1 -1;
-#X obj 570 598 bng 15 250 50 0 \$0-create-random-time-manager! empty
+#X obj 570 628 bng 15 250 50 0 \$0-create-random-time-manager! empty
 <--RANDOM-TIME-MANAGER 17 7 0 10 -158136 -1 -1;
 #X obj 196 555 bng 15 250 50 0 \$0-create-midi-out! empty <--MIDI-OUT
 17 7 0 10 -262144 -1 -1;
@@ -509,9 +510,9 @@ empty 0 -8 0 10 -262144 -1 -1 0;
 17 7 0 10 -158136 -1 -1;
 #X obj 196 290 cnv 15 180 15 empty empty VCA/MIXERS: 10 8 0 12 -158136
 -262144 0;
-#X obj 570 559 bng 15 250 50 0 \$0-create-param-nudge! empty <--PARAM-NUDGE
+#X obj 570 589 bng 15 250 50 0 \$0-create-param-nudge! empty <--PARAM-NUDGE
 17 7 0 10 -158136 -1 -1;
-#X obj 570 579 bng 15 250 50 0 \$0-create-time-manager! empty <--TIME-MANAGER
+#X obj 570 609 bng 15 250 50 0 \$0-create-time-manager! empty <--TIME-MANAGER
 17 7 0 10 -158136 -1 -1;
 #X obj 10 375 bng 15 250 50 0 \$0-create-percussion! empty <--PERCUSSION
 17 7 0 10 -158136 -1 -1;
@@ -533,12 +534,14 @@ buttons);
 buttons);
 #X obj 569 497 bng 15 250 50 0 \$0-create-manual-toggle! empty <--MANUAL-TOGGLE
 17 7 0 10 -150893 -1 -1;
-#X obj 570 618 bng 15 250 50 0 \$0-create-macro-control! empty <--MACRO-CONTROL
+#X obj 570 648 bng 15 250 50 0 \$0-create-macro-control! empty <--MACRO-CONTROL
 17 7 0 10 -203305 -1 -1;
 #X obj 10 616 cnv 15 180 15 empty empty EXTRAS: 10 8 0 12 -158136 -262144
 0;
 #X obj 10 637 bng 15 250 50 0 \$0-create-extra-sampler! empty <--SAMPLER
 17 7 0 10 -262144 -1 -1;
+#X obj 569 517 bng 15 250 50 0 \$0-create-playhead! empty <--PLAYHEAD(CAMOMILLE_VST)
+17 7 0 10 -203305 -1 -1;
 #X restore 204 249 pd \$0-modules;
 #X msg 38 178 vis 1;
 #X obj 38 203 s pd-\$0-signal-flow;
@@ -680,7 +683,7 @@ CV.;
 #X text 135 181 And pink inlets means the input is expecting a trigger/gate
 signal or short impulse(square-wave) to function properly.;
 #X restore 37 244 pd \$0-color-code;
-#N canvas 292 564 377 372 \$0-manual 0;
+#N canvas 292 594 377 372 \$0-manual 0;
 #X obj 17 12 cnv 15 320 60 empty empty WELCOME-TO-THE-AUTOMATONISM-MANUAL!
 20 12 0 14 -150893 -262144 0;
 #X obj 22 82 hsl 115 30 0 127 0 0 \$0-open-signal-flow! empty empty
@@ -737,10 +740,11 @@ empty -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 37 382 r \$0-open-manual!;
 #X msg 37 404 vis 1;
 #X obj 37 428 s pd-\$0-manual;
-#N canvas 236 244 420 357 \$0-state-saving 0;
+#N canvas 236 274 442 200 \$0-state-saving 0;
 #X obj 17 12 cnv 15 400 60 empty empty STATE_SAVING 20 12 0 14 -226533
 -262144 0;
-#X text 20 82 The state saving system works by writing parameter values
+#N canvas 0 50 450 300 deprecated 0;
+#X text 20 22 The state saving system works by writing parameter values
 to state_saving_module/textfile \$0s in the folder "statesave" inside
 the "patch_editor_abs" folder. When you load a module form the module
 list it is automatically being given a unique creation argument which
@@ -748,11 +752,12 @@ creates a state_saving_module/textfile \$0 unique for that instance
 of the module. To save your patch \, simply save as you normally would
 from the FILE menu and the press ENTER on your keyboard or click the
 SAVE button in the upper left corner of the main window.;
-#X text 20 216 IMPORTANT!!! To start a new project \, the entire folder
+#X text 20 196 IMPORTANT!!! To start a new project \, the entire folder
 structure needs to be copied since the abstractions and state_saving_module/textfile
 \$0s are unique to every project. Click the RESET button in the upper
 left corner to reset the counter that gives unique creation arguments
 for the modules.;
+#X restore 31 143 pd deprecated;
 #X restore 35 504 pd \$0-state-saving;
 #X obj 34 526 r \$0-open-state-saving!;
 #X msg 34 547 vis 1;
