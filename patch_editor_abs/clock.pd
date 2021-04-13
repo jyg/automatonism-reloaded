@@ -4,7 +4,7 @@
 #X obj 409 211 metro 100;
 #X obj 408 285 vline~;
 #X obj 108 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r
-RATE 133 7 0 10 -262144 -1 -1 600 1;
+RATE 133 7 0 10 -262144 -1 -1 11900 1;
 #X floatatom 104 141 5 0 0 0 - - -;
 #X msg 110 213 127 \$1;
 #X obj 110 235 -;

@@ -1,11 +1,7 @@
-#N canvas 0 57 1920 1023 10;
-#X obj 103 125 cnv 5 5 5 empty empty MACRO-CONTROL 0 0 0 12 -262144
--66577 0;
+#N canvas 961 58 958 1018 10;
 #X obj 301 102 s \$0-instance-num;
 #X obj 301 54 makefilename %d;
 #X msg 301 79 label \$1;
-#X obj 203 125 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
 #N canvas 21 22 593 735 instance-number 0;
 #X obj 215 28 loadbang;
 #X obj 281 216 outlet;
@@ -14,28 +10,8 @@
 #X connect 0 0 3 0;
 #X connect 3 0 1 0;
 #X restore 301 20 pd instance-number;
-#X obj 105 153 hsl 128 15 0 127 0 0 \$0-macro1-value-s \$0-macro1-value-r
-macro:\$1:1 1 8 0 10 -262130 -1 -1 0 1;
-#X symbolatom 102 136 19 0 0 0 - #0-macro1-name-r #0-macro1-name-s
-;
-#X obj 104 287 cnv 5 5 5 empty empty V1 0 0 0 8 -262144 -66577 0;
-#X obj 104 107 cnv 5 5 5 empty empty VC1 0 0 0 8 -262144 -66577 0;
-#X obj 105 190 hsl 128 15 0 127 0 0 \$0-macro2-value-s \$0-macro2-value-r
-macro:\$1:2 1 8 0 10 -262130 -1 -1 0 1;
-#X obj 105 227 hsl 128 15 0 127 0 0 \$0-macro3-value-s \$0-macro3-value-r
-macro:\$1:3 1 8 0 10 -262130 -1 -1 0 1;
-#X obj 105 264 hsl 128 15 0 127 0 0 \$0-macro4-value-s \$0-macro4-value-r
-macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X obj 480 81 state_saving_module macro-control \$0 \$1;
 #X obj 520 41 savestate;
-#X obj 144 107 cnv 5 5 5 empty empty VC2 0 0 0 8 -262144 -66577 0;
-#X obj 184 107 cnv 5 5 5 empty empty VC3 0 0 0 8 -262144 -66577 0;
-#X obj 224 107 cnv 5 5 5 empty empty VC4 0 0 0 8 -262144 -66577 0;
-#X obj 144 287 cnv 5 5 5 empty empty V2 0 0 0 8 -262144 -66577 0;
-#X obj 184 287 cnv 5 5 5 empty empty V3 0 0 0 8 -262144 -66577 0;
-#X obj 224 287 cnv 5 5 5 empty empty V4 0 0 0 8 -262144 -66577 0;
-#X obj 219 137 tgl 16 0 \$0-midi_map1-s \$0-midi_map1-r lnk 1 6 0 8
--261234 -1 -1 0 1;
 #X obj 1166 236 r \$0-macro1-value-s;
 #X obj 1332 239 r \$0-macro2-value-s;
 #X obj 1509 240 r \$0-macro3-value-s;
@@ -44,18 +20,6 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X msg 1199 334 1 \$1;
 #X msg 1632 336 4 \$1;
 #X msg 1494 334 3 \$1;
-#X symbolatom 102 173 19 0 0 0 - #0-macro2-name-r #0-macro2-name-s
-;
-#X obj 219 174 tgl 16 0 \$0-midi_map2-s \$0-midi_map2-r lnk 1 6 0 8
--261234 -1 -1 0 1;
-#X symbolatom 102 210 19 0 0 0 - #0-macro3-name-r #0-macro3-name-s
-;
-#X obj 219 211 tgl 16 0 \$0-midi_map3-s \$0-midi_map3-r lnk 1 6 0 8
--261234 -1 -1 0 1;
-#X symbolatom 102 247 19 0 0 0 - #0-macro4-name-r #0-macro4-name-s
-;
-#X obj 219 248 tgl 16 0 \$0-midi_map4-s \$0-midi_map4-r lnk 1 6 0 8
--261234 -1 -1 0 1;
 #X obj 1215 369 / 127;
 #X obj 1338 370 / 127;
 #X obj 1463 371 / 127;
@@ -105,14 +69,6 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X obj 1719 291 +;
 #X obj 1721 269 t b f;
 #X obj 1382 430 s MACRO-\$1;
-#X obj 236 153 cnv 13 1 1 empty \$0-slotA-rcv 1' 1 8 0 14 -262144 -66577
-0;
-#X obj 236 189 cnv 13 1 1 empty \$0-slotB-rcv 2' 1 8 0 14 -262144 -66577
-0;
-#X obj 236 227 cnv 13 1 1 empty \$0-slotC-rcv 3' 1 8 0 14 -262144 -66577
-0;
-#X obj 236 263 cnv 13 1 1 empty \$0-slotD-rcv 4' 1 8 0 14 -262144 -66577
-0;
 #N canvas 0 50 1211 1026 savestate(labels) 0;
 #X obj 158 13 savestate;
 #X obj 110 232 list;
@@ -337,60 +293,109 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 16 0 9 0;
 #X connect 17 0 0 0;
 #X restore 757 41 pd labels(numbers);
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#N canvas 0 57 1920 1023 \$0-gui_listeners 0;
 #X obj 38 47 state_saving_module/macro_dispatch macro-control \$0 \$1
-0 127 macro4-value-s macro4-value-r macro:\\\$1:4 #FFFFC6 #000000 #000000
+0 127 macro4-value-s macro4-value-r macro:\\\$1:4 #EEEECC #000000 #000000
 ;
 #X obj 38 102 state_saving_module/macro_dispatch macro-control \$0
-\$1 0 127 macro3-value-s macro3-value-r macro:\\\$1:3 #FFFFC6 #000000
+\$1 0 127 macro3-value-s macro3-value-r macro:\\\$1:3 #EEEECC #000000
 #000000;
 #X obj 43 159 state_saving_module/macro_dispatch macro-control \$0
-\$1 0 127 macro2-value-s macro2-value-r macro:\\\$1:2 #FFFFC6 #000000
+\$1 0 127 macro2-value-s macro2-value-r macro:\\\$1:2 #EEEECC #000000
 #000000;
 #X obj 38 214 state_saving_module/macro_dispatch macro-control \$0
-\$1 0 127 macro1-value-s macro1-value-r macro:\\\$1:1 #FFFFC6 #000000
+\$1 0 127 macro1-value-s macro1-value-r macro:\\\$1:1 #EEEECC #000000
 #000000;
 #X restore 480 111 pd \$0-gui_listeners;
-#N canvas 0 50 729 544 camomille_support 0;
+#X obj 100 120 cnv 15 148 170 empty empty camomile 15 14 0 26 -262130
+-232576 0;
+#X obj 111 122 cnv 5 5 5 empty empty MACRO-CONTROL 0 0 0 12 -262144
+-66577 0;
+#X obj 218 122 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
+-66577 0;
+#X obj 105 161 hsl 128 15 0 127 0 0 \$0-macro1-value-s \$0-macro1-value-r
+macro:\$1:1 1 8 0 10 -245492 -1 -1 0 1;
+#X symbolatom 102 144 19 0 0 0 - #0-macro1-name-r #0-macro1-name-s
+;
+#X obj 104 295 cnv 5 5 5 empty empty V1 0 0 0 8 -262144 -66577 0;
+#X obj 104 107 cnv 5 5 5 empty empty VC1 0 0 0 8 -262144 -66577 0;
+#X obj 105 198 hsl 128 15 0 127 0 0 \$0-macro2-value-s \$0-macro2-value-r
+macro:\$1:2 1 8 0 10 -245492 -1 -1 0 1;
+#X obj 105 235 hsl 128 15 0 127 0 0 \$0-macro3-value-s \$0-macro3-value-r
+macro:\$1:3 1 8 0 10 -245492 -1 -1 0 1;
+#X obj 105 272 hsl 128 15 0 127 0 0 \$0-macro4-value-s \$0-macro4-value-r
+macro:\$1:4 1 8 0 10 -245492 -1 -1 0 1;
+#X obj 144 107 cnv 5 5 5 empty empty VC2 0 0 0 8 -262144 -66577 0;
+#X obj 184 107 cnv 5 5 5 empty empty VC3 0 0 0 8 -262144 -66577 0;
+#X obj 224 107 cnv 5 5 5 empty empty VC4 0 0 0 8 -262144 -66577 0;
+#X obj 144 295 cnv 5 5 5 empty empty V2 0 0 0 8 -262144 -66577 0;
+#X obj 184 295 cnv 5 5 5 empty empty V3 0 0 0 8 -262144 -66577 0;
+#X obj 224 295 cnv 5 5 5 empty empty V4 0 0 0 8 -262144 -66577 0;
+#X obj 219 145 tgl 16 0 \$0-midi_map1-s \$0-midi_map1-r lnk 1 6 0 8
+-261234 -1 -1 0 1;
+#X symbolatom 102 181 19 0 0 0 - #0-macro2-name-r #0-macro2-name-s
+;
+#X obj 219 182 tgl 16 0 \$0-midi_map2-s \$0-midi_map2-r lnk 1 6 0 8
+-261234 -1 -1 0 1;
+#X symbolatom 102 218 19 0 0 0 - #0-macro3-name-r #0-macro3-name-s
+;
+#X obj 219 219 tgl 16 0 \$0-midi_map3-s \$0-midi_map3-r lnk 1 6 0 8
+-261234 -1 -1 0 1;
+#X symbolatom 102 255 19 0 0 0 - #0-macro4-name-r #0-macro4-name-s
+;
+#X obj 219 256 tgl 16 0 \$0-midi_map4-s \$0-midi_map4-r lnk 1 6 0 8
+-261234 -1 -1 0 1;
+#X obj 236 161 cnv 13 1 1 empty \$0-slotA-rcv 1' 1 8 0 14 -262144 -66577
+0;
+#X obj 236 197 cnv 13 1 1 empty \$0-slotB-rcv 2' 1 8 0 14 -262144 -66577
+0;
+#X obj 236 235 cnv 13 1 1 empty \$0-slotC-rcv 3' 1 8 0 14 -262144 -66577
+0;
+#X obj 236 271 cnv 13 1 1 empty \$0-slotD-rcv 4' 1 8 0 14 -262144 -66577
+0;
+#N canvas 1060 345 729 544 camomile_plugin_support 0;
 #N canvas 238 299 450 300 param.set 0;
 #X obj 26 288 s camomile;
 #X obj 23 89 t f b;
 #X obj 120 229 s camo.param.change;
 #X msg 26 264 param set \$2 \$1;
-#X obj 25 43 receive \$0-macro1-value-s;
+#X obj 23 38 receive \$0-macro1-value-s;
 #X obj 53 192 + 1;
 #X obj 51 114 f \$1;
 #X obj 51 130 - 1;
 #X obj 52 162 * 4;
 #X obj 26 240 pack f f;
+#X obj 23 64 / 127;
 #X connect 1 0 9 0;
 #X connect 1 1 6 0;
 #X connect 3 0 0 0;
-#X connect 4 0 1 0;
+#X connect 4 0 10 0;
 #X connect 5 0 2 0;
 #X connect 5 0 9 1;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
 #X connect 8 0 5 0;
 #X connect 9 0 3 0;
+#X connect 10 0 1 0;
 #X restore 164 39 pd param.set \$0-macro1-value-s;
-#N canvas 0 50 450 300 param.get 0;
-#X obj 6 85 t f f;
+#N canvas 0 57 1920 1023 param.get 0;
+#X obj 6 135 t f f;
 #X obj 6 19 receive param;
 #X obj 6 63 change -1e+37;
 #X obj 6 41 route 1;
-#X obj 11 185 send \$0-macro1-value-s;
-#X msg 37 115 set \$1;
-#X obj 38 146 s \$0-macro1-value-r;
+#X obj 11 235 send \$0-macro1-value-s;
+#X msg 37 165 set \$1;
+#X obj 38 196 s \$0-macro1-value-r;
 #X obj 252 69 - 1;
 #X obj 252 92 * 4;
 #X obj 252 115 + 1;
 #X obj 248 21 loadbang;
 #X obj 250 46 f \$1;
+#X obj 6 99 * 127;
 #X connect 0 0 4 0;
 #X connect 0 1 5 0;
 #X connect 1 0 3 0;
-#X connect 2 0 0 0;
+#X connect 2 0 12 0;
 #X connect 3 0 2 0;
 #X connect 5 0 6 0;
 #X connect 7 0 8 0;
@@ -398,6 +403,7 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 9 0 3 1;
 #X connect 10 0 11 0;
 #X connect 11 0 7 0;
+#X connect 12 0 0 0;
 #X restore 365 39 pd param.get \$0-macro1-value-s;
 #N canvas 238 299 450 300 param.set 0;
 #X obj 26 288 s camomile;
@@ -408,8 +414,9 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X obj 51 132 - 1;
 #X obj 52 162 * 4;
 #X obj 26 240 pack f f;
-#X obj 25 43 receive \$0-macro2-value-s;
+#X obj 23 33 receive \$0-macro2-value-s;
 #X obj 53 192 + 2;
+#X obj 23 62 / 127;
 #X connect 1 0 7 0;
 #X connect 1 1 4 0;
 #X connect 3 0 0 0;
@@ -417,27 +424,29 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 5 0 6 0;
 #X connect 6 0 9 0;
 #X connect 7 0 3 0;
-#X connect 8 0 1 0;
+#X connect 8 0 10 0;
 #X connect 9 0 2 0;
 #X connect 9 0 7 1;
+#X connect 10 0 1 0;
 #X restore 164 99 pd param.set \$0-macro2-value-s;
 #N canvas 0 50 450 300 param.get 0;
-#X obj 6 85 t f f;
+#X obj 6 115 t f f;
 #X obj 6 19 receive param;
 #X obj 6 63 change -1e+37;
-#X msg 37 115 set \$1;
+#X msg 37 145 set \$1;
 #X obj 252 69 - 1;
 #X obj 252 92 * 4;
 #X obj 248 21 loadbang;
 #X obj 250 46 f \$1;
 #X obj 252 115 + 2;
 #X obj 6 41 route 2;
-#X obj 38 146 s \$0-macro2-value-r;
-#X obj 11 185 send \$0-macro2-value-s;
+#X obj 38 176 s \$0-macro2-value-r;
+#X obj 11 215 send \$0-macro2-value-s;
+#X obj 6 90 * 127;
 #X connect 0 0 11 0;
 #X connect 0 1 3 0;
 #X connect 1 0 9 0;
-#X connect 2 0 0 0;
+#X connect 2 0 12 0;
 #X connect 3 0 10 0;
 #X connect 4 0 5 0;
 #X connect 5 0 8 0;
@@ -445,6 +454,7 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 7 0 4 0;
 #X connect 8 0 9 1;
 #X connect 9 0 2 0;
+#X connect 12 0 0 0;
 #X restore 365 99 pd param.get \$0-macro2-value-s;
 #N canvas 238 299 450 300 param.set 0;
 #X obj 26 288 s camomile;
@@ -455,8 +465,9 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X obj 51 130 - 1;
 #X obj 52 162 * 4;
 #X obj 26 240 pack f f;
-#X obj 25 43 receive \$0-macro3-value-s;
+#X obj 23 37 receive \$0-macro3-value-s;
 #X obj 53 192 + 3;
+#X obj 23 64 / 127;
 #X connect 1 0 7 0;
 #X connect 1 1 4 0;
 #X connect 3 0 0 0;
@@ -464,27 +475,29 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 5 0 6 0;
 #X connect 6 0 9 0;
 #X connect 7 0 3 0;
-#X connect 8 0 1 0;
+#X connect 8 0 10 0;
 #X connect 9 0 2 0;
 #X connect 9 0 7 1;
+#X connect 10 0 1 0;
 #X restore 164 159 pd param.set \$0-macro3-value-s;
 #N canvas 0 50 450 300 param.get 0;
-#X obj 6 85 t f f;
+#X obj 6 115 t f f;
 #X obj 6 19 receive param;
 #X obj 6 63 change -1e+37;
-#X msg 37 115 set \$1;
+#X msg 37 145 set \$1;
 #X obj 252 69 - 1;
 #X obj 252 92 * 4;
 #X obj 248 21 loadbang;
 #X obj 250 46 f \$1;
 #X obj 6 41 route 3;
 #X obj 252 115 + 3;
-#X obj 38 146 s \$0-macro3-value-r;
-#X obj 11 185 send \$0-macro3-value-s;
+#X obj 38 176 s \$0-macro3-value-r;
+#X obj 11 215 send \$0-macro3-value-s;
+#X obj 6 90 * 127;
 #X connect 0 0 11 0;
 #X connect 0 1 3 0;
 #X connect 1 0 8 0;
-#X connect 2 0 0 0;
+#X connect 2 0 12 0;
 #X connect 3 0 10 0;
 #X connect 4 0 5 0;
 #X connect 5 0 9 0;
@@ -492,6 +505,7 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 7 0 4 0;
 #X connect 8 0 2 0;
 #X connect 9 0 8 1;
+#X connect 12 0 0 0;
 #X restore 365 159 pd param.get \$0-macro3-value-s;
 #N canvas 238 299 450 300 param.set 0;
 #X obj 26 288 s camomile;
@@ -502,8 +516,9 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X obj 51 130 - 1;
 #X obj 52 162 * 4;
 #X obj 26 240 pack f f;
-#X obj 25 43 receive \$0-macro4-value-s;
+#X obj 23 33 receive \$0-macro4-value-s;
 #X obj 53 192 + 4;
+#X obj 23 62 / 127;
 #X connect 1 0 7 0;
 #X connect 1 1 4 0;
 #X connect 3 0 0 0;
@@ -511,27 +526,29 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 5 0 6 0;
 #X connect 6 0 9 0;
 #X connect 7 0 3 0;
-#X connect 8 0 1 0;
+#X connect 8 0 10 0;
 #X connect 9 0 2 0;
 #X connect 9 0 7 1;
+#X connect 10 0 1 0;
 #X restore 164 219 pd param.set \$0-macro4-value-s;
 #N canvas 0 50 450 300 param.get 0;
-#X obj 6 85 t f f;
+#X obj 6 115 t f f;
 #X obj 6 19 receive param;
 #X obj 6 63 change -1e+37;
-#X msg 37 115 set \$1;
+#X msg 37 145 set \$1;
 #X obj 252 69 - 1;
 #X obj 252 92 * 4;
 #X obj 248 21 loadbang;
 #X obj 250 46 f \$1;
 #X obj 252 115 + 4;
 #X obj 6 41 route 4;
-#X obj 38 146 s \$0-macro4-value-r;
-#X obj 11 185 send \$0-macro4-value-s;
+#X obj 38 176 s \$0-macro4-value-r;
+#X obj 11 215 send \$0-macro4-value-s;
+#X obj 6 90 * 127;
 #X connect 0 0 11 0;
 #X connect 0 1 3 0;
 #X connect 1 0 9 0;
-#X connect 2 0 0 0;
+#X connect 2 0 12 0;
 #X connect 3 0 10 0;
 #X connect 4 0 5 0;
 #X connect 5 0 8 0;
@@ -539,73 +556,74 @@ macro:\$1:4 1 8 0 10 -262130 -1 -1 0 1;
 #X connect 7 0 4 0;
 #X connect 8 0 9 1;
 #X connect 9 0 2 0;
+#X connect 12 0 0 0;
 #X restore 365 219 pd param.get \$0-macro4-value-s;
-#X restore 482 217 pd camomille_support;
-#X connect 2 0 3 0;
+#X restore 482 217 pd camomile_plugin_support;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
 #X connect 3 0 1 0;
-#X connect 5 0 2 0;
-#X connect 13 0 14 0;
-#X connect 14 0 13 0;
-#X connect 14 1 13 1;
-#X connect 22 0 72 0;
-#X connect 23 0 75 0;
-#X connect 24 0 78 0;
-#X connect 26 0 83 0;
-#X connect 27 0 83 0;
-#X connect 28 0 83 0;
-#X connect 29 0 83 0;
-#X connect 36 0 40 0;
-#X connect 37 0 41 0;
-#X connect 38 0 42 0;
-#X connect 39 0 43 0;
-#X connect 40 0 44 0;
-#X connect 41 0 45 0;
-#X connect 42 0 46 0;
-#X connect 43 0 47 0;
+#X connect 4 0 5 0;
+#X connect 5 0 4 0;
+#X connect 5 1 4 1;
+#X connect 6 0 50 0;
+#X connect 7 0 53 0;
+#X connect 8 0 56 0;
+#X connect 10 0 61 0;
+#X connect 11 0 61 0;
+#X connect 12 0 61 0;
+#X connect 13 0 61 0;
+#X connect 14 0 18 0;
+#X connect 15 0 19 0;
+#X connect 16 0 20 0;
+#X connect 17 0 21 0;
+#X connect 18 0 22 0;
+#X connect 19 0 23 0;
+#X connect 20 0 24 0;
+#X connect 21 0 25 0;
+#X connect 22 0 26 0;
+#X connect 23 0 27 0;
+#X connect 24 0 28 0;
+#X connect 25 0 29 0;
+#X connect 30 0 35 0;
+#X connect 31 0 33 0;
+#X connect 32 0 30 0;
+#X connect 32 0 36 0;
+#X connect 32 0 42 0;
+#X connect 32 0 39 0;
+#X connect 33 0 32 0;
+#X connect 34 0 30 0;
+#X connect 35 0 45 0;
+#X connect 36 0 38 0;
+#X connect 37 0 36 0;
+#X connect 38 0 46 0;
+#X connect 39 0 41 0;
+#X connect 40 0 39 0;
+#X connect 41 0 47 0;
+#X connect 42 0 44 0;
+#X connect 43 0 42 0;
 #X connect 44 0 48 0;
-#X connect 45 0 49 0;
-#X connect 46 0 50 0;
-#X connect 47 0 51 0;
-#X connect 52 0 57 0;
-#X connect 53 0 55 0;
-#X connect 54 0 52 0;
-#X connect 54 0 58 0;
-#X connect 54 0 64 0;
-#X connect 54 0 61 0;
-#X connect 55 0 54 0;
-#X connect 56 0 52 0;
-#X connect 57 0 67 0;
-#X connect 58 0 60 0;
+#X connect 45 0 51 0;
+#X connect 46 0 54 0;
+#X connect 47 0 57 0;
+#X connect 48 0 60 0;
+#X connect 49 0 11 0;
+#X connect 49 0 14 0;
+#X connect 50 0 49 0;
+#X connect 51 0 50 0;
+#X connect 51 1 50 1;
+#X connect 52 0 10 0;
+#X connect 52 0 15 0;
+#X connect 53 0 52 0;
+#X connect 54 0 53 0;
+#X connect 54 1 53 1;
+#X connect 55 0 13 0;
+#X connect 55 0 16 0;
+#X connect 56 0 55 0;
+#X connect 57 0 56 0;
+#X connect 57 1 56 1;
+#X connect 58 0 12 0;
+#X connect 58 0 17 0;
 #X connect 59 0 58 0;
-#X connect 60 0 68 0;
-#X connect 61 0 63 0;
-#X connect 62 0 61 0;
-#X connect 63 0 69 0;
-#X connect 64 0 66 0;
-#X connect 65 0 64 0;
-#X connect 66 0 70 0;
-#X connect 67 0 73 0;
-#X connect 68 0 76 0;
-#X connect 69 0 79 0;
-#X connect 70 0 82 0;
-#X connect 71 0 27 0;
-#X connect 71 0 36 0;
-#X connect 72 0 71 0;
-#X connect 73 0 72 0;
-#X connect 73 1 72 1;
-#X connect 74 0 26 0;
-#X connect 74 0 37 0;
-#X connect 75 0 74 0;
-#X connect 76 0 75 0;
-#X connect 76 1 75 1;
-#X connect 77 0 29 0;
-#X connect 77 0 38 0;
-#X connect 78 0 77 0;
-#X connect 79 0 78 0;
-#X connect 79 1 78 1;
-#X connect 80 0 28 0;
-#X connect 80 0 39 0;
-#X connect 81 0 80 0;
-#X connect 82 0 81 0;
-#X connect 82 1 81 1;
-#X coords 0 -1 1 1 150 200 2 100 100;
+#X connect 60 0 59 0;
+#X connect 60 1 59 1;
+#X coords 0 -1 1 1 150 208 2 100 100;
