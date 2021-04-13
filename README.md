@@ -12,10 +12,13 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * midi-mapping enabled and midi-learn feature
 * possibility of running several patches simultaneously and independently
+* Camomile VST plugin and DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 
 ## To Do :
+* clean all that stuff
+* deeply check camomile integration
+* write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
 
-* Camomille VST plugin and DAW integration (parameters)
 
 ## Installation :
 * Copy  automatonism folder into your puredata - externals folder.
