@@ -33,8 +33,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 
 ## changes
-2021/04/16
--added camomile plugin compatibility
-2021/04/01
--added megalon extra-sampler module for Automatonism
+2021/04/16	-added camomile plugin compatibility
+
+2021/04/01	-added megalon extra-sampler module for Automatonism
 	https://github.com/megalon/pd-AUTOMATONISM-sampler
