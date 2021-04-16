@@ -183,7 +183,7 @@
 #X obj 167 102 cnv 15 130 60 empty empty camomile 2 12 0 26 -262130
 -232576 0;
 #X obj 169 147 hradio 15 1 0 6 \$0-mes-s \$0-mes-r synchro(bar) 2 7
-0 10 -261681 -260818 -1 0;
+0 10 -261681 -260818 -1 1;
 #X floatatom 262 146 5 1 999 2 - #0-cycle-r #0-cycle-s;
 #X obj 169 128 hradio 15 1 0 6 \$0-beat-mult-radio-s \$0-beat-mult-radio-r
 beat-multiply 2 7 0 10 -261681 -260818 -1 3;
@@ -216,7 +216,7 @@ beat-multiply 2 7 0 10 -261681 -260818 -1 3;
 #X msg 132 650 write statesave/\$1-playhead-ss.txt;
 #X msg 261 455 read statesave/\$1-playhead-ss.txt;
 #X obj 261 604 s \$0-beat-mult-s;
-#X obj 318 530 s \$0-\$0-cycle-s;
+#X obj 318 530 s \$0-cycle-s;
 #X connect 0 0 12 0;
 #X connect 1 0 18 0;
 #X connect 2 0 18 0;
@@ -253,12 +253,12 @@ beat-multiply 2 7 0 10 -261681 -260818 -1 3;
 #X msg 599 413 label \$1;
 #X obj 10 50 state_saving_module playhead \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas -1 24 958 423 \$0-gui_listeners 1;
+#N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 state_saving_module/hradio_dispatch playhead \$0 \$1 0
 5 beat-mult-radio-s beat-mult-radio-r beat-multiply #FFE2C2 #FFAE44
 #000000;
 #X obj 10 60 state_saving_module/hradio_dispatch playhead \$0 \$1 0
-5;
+5 mes-s mes-r synchro(bar) #FFE2C2 #FFAE44 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X connect 1 0 31 0;
 #X connect 2 0 36 0;
