@@ -128,7 +128,6 @@
 #X connect 16 0 20 0;
 #X connect 17 0 11 1;
 #X connect 18 0 16 0;
-#X connect 19 0 11 0;
 #X connect 19 1 18 1;
 #X connect 21 0 6 0;
 #X restore 231 78 pd MAP_FROM_mode_colors;
@@ -177,7 +176,6 @@
 #X connect 16 0 19 0;
 #X connect 17 0 20 0;
 #X connect 18 0 17 0;
-#X connect 19 0 10 0;
 #X connect 19 1 18 1;
 #X connect 22 0 6 0;
 #X restore 232 118 pd MAP_TO_mode_colors;

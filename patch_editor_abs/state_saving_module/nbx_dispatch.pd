@@ -1,4 +1,4 @@
-#N canvas 969 107 746 492 12;
+#N canvas 608 225 746 492 12;
 #X obj 199 156 list prepend dispatch \$6;
 #X text 94 45 demande;
 #X obj 503 114 r \$0-midi_map_status;
@@ -123,7 +123,6 @@
 #X connect 16 0 20 0;
 #X connect 17 0 11 1;
 #X connect 18 0 16 0;
-#X connect 19 0 11 0;
 #X connect 19 1 18 1;
 #X connect 21 0 6 0;
 #X restore 231 78 pd MAP_FROM_mode_colors;
@@ -172,7 +171,6 @@
 #X connect 16 0 19 0;
 #X connect 17 0 20 0;
 #X connect 18 0 17 0;
-#X connect 19 0 10 0;
 #X connect 19 1 18 1;
 #X connect 22 0 6 0;
 #X restore 232 118 pd MAP_TO_mode_colors;
