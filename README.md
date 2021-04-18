@@ -22,7 +22,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 ## Installation :
 * Download https://github.com/jyg/automatonism/archive/refs/heads/master.zip
-* Unzip it into your puredata - externals folder and rename 'automatonism-master' folder as 'automatonism'
+* Unzip it into your puredata - externals folder and rename 'automatonism-reloaded-master' folder as 'automatonism'
 * If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism_menu object and add declare paths.
 * Alternatively, you can open automatonism/main.pd as a template and save it anywhere with a new name.
 * start patching.
