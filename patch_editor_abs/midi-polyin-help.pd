@@ -1,0 +1,23 @@
+#N canvas 387 274 743 459 10;
+#X obj 24 338 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 192 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 21 271 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 20 17 cnv 15 400 30 empty empty MIDI-IN: 20 12 0 14 -150893
+-262144 0;
+#X text 26 399 NOTE - MIDI note output;
+#X text 26 424 VEL - MIDI velocity output;
+#X obj 457 30 midi-polyin;
+#X text 25 230 MIDI-CHANNEL;
+#X text 25 307 CHAN.-CV;
+#X text 26 377 TRIGGER - MIDI trigger output;
+#X text 20 56 The "MIDI-POLYIN" module receives MIDI note-on \, trigger
+and velocity signals from MIDI channel 1-16 and outputs them as Automatonism
+signals \, multiplexed if several notes (chords) are played simultaneously.
+Only note-on events are passed \, TRIGGER outputs a trigger signal
+on every event. Remember that all external MIDI gear must be connected
+before launching PD and selected in the PD MIDI Settings. If you want
+to read from another MIDI channel than channel 1 \, change the MIDI-CHANNEL
+slider or connect a signal to CHAN.-CV inlet.;

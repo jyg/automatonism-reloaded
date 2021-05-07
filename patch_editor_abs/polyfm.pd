@@ -1,6 +1,6 @@
 #N canvas 0 23 1102 752 10;
 #X obj 108 131 hsl 128 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 2700 1;
+PITCH 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 320 467 pack f f f;
 #X obj 320 328 f;
 #X floatatom 320 350 5 0 0 0 - - -;
@@ -13,11 +13,11 @@ PITCH 135 7 0 10 -262144 -1 -1 2700 1;
 #X obj 108 161 hsl 128 15 0 127 0 1 \$0-polyfm-ratio-s \$0-polyfm-ratio-r
 RATIO 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 108 211 hsl 128 15 1.27 127 1 1 \$0-polyfm-attack-s \$0-polyfm-attack-r
-ATTACK 135 7 0 10 -262144 -1 -1 0 1;
+ATTACK 135 7 0 10 -262144 -1 -1 400 1;
 #X obj 108 226 hsl 128 15 0 127 0 1 \$0-polyfm-hold-s \$0-polyfm-hold-r
 HOLD 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 108 240 hsl 128 15 0 127 0 1 \$0-polyfm-release-s \$0-polyfm-release-r
-RELEASE 135 7 0 10 -262144 -1 -1 0 1;
+RELEASE 135 7 0 10 -262144 -1 -1 12600 1;
 #X obj 320 371 pack f f;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
 #X floatatom 206 116 5 0 0 0 - #0-polyfm-pitch-s -;
@@ -30,14 +30,11 @@ RELEASE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 335 247 clip 0 127;
 #X obj 471 208 t b f;
 #X obj 320 632 *~ 0.25;
-#X obj 591 91 env~;
-#X obj 591 113 change;
-#X obj 591 135 t b;
 #X floatatom 416 294 5 0 0 0 - - -;
 #X obj 678 697 outlet~ EG OUT;
 #X obj 678 655 *~ 0.25;
 #X obj 108 146 hsl 128 15 0 127 0 1 \$0-polyfm-index-s \$0-polyfm-index-r
-INDEX 135 7 0 10 -262144 -1 -1 0 1;
+INDEX 135 7 0 10 -262144 -1 -1 1200 1;
 #N canvas 224 22 962 575 voice1-ahr 0;
 #X obj 43 6 inlet;
 #X obj 43 28 unpack f f;
@@ -208,7 +205,7 @@ INDEX 135 7 0 10 -262144 -1 -1 0 1;
 ;
 #X obj 105 265 cnv 5 5 5 empty empty modulator-EG 0 0 0 12 -262144
 -66577 0;
-#X obj 178 121 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 178 121 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
 -1;
@@ -851,7 +848,7 @@ ATTACK 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 108 289 hsl 128 15 0 127 0 1 \$0-polyfm-hold2-s \$0-polyfm-hold2-r
 HOLD 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 108 303 hsl 128 15 0 127 0 1 \$0-polyfm-release2-s \$0-polyfm-release2-r
-RELEASE 135 7 0 10 -262144 -1 -1 0 1;
+RELEASE 135 7 0 10 -262144 -1 -1 3400 1;
 #X obj 128 121 cnv 5 5 5 empty empty polyFM 0 0 0 12 -262144 -66577
 0;
 #X obj 105 202 cnv 5 5 5 empty empty carrier-EG 0 0 0 12 -262144 -66577
@@ -1543,6 +1540,8 @@ polyfm-ratio-s polyfm-ratio-r RATIO #FFFFFF #000000 #000000;
 #X obj 10 480 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
 polyfm-pitch-s polyfm-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 700 189 hsl 125 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r
+PITCH 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;
 #X connect 3 0 14 0;
@@ -1554,53 +1553,50 @@ polyfm-pitch-s polyfm-pitch-r PITCH #FFFFFF #000000 #000000;
 #X connect 8 0 1 0;
 #X connect 8 1 1 1;
 #X connect 8 2 1 2;
-#X connect 9 0 33 0;
-#X connect 9 1 58 0;
-#X connect 9 2 59 0;
-#X connect 9 3 60 0;
+#X connect 9 0 30 0;
+#X connect 9 1 55 0;
+#X connect 9 2 56 0;
+#X connect 9 3 57 0;
 #X connect 14 0 5 0;
 #X connect 15 0 19 0;
 #X connect 17 0 20 0;
-#X connect 17 0 26 0;
 #X connect 18 0 15 0;
 #X connect 19 0 2 0;
 #X connect 19 1 4 0;
+#X connect 19 2 20 0;
 #X connect 20 0 21 0;
 #X connect 21 0 24 0;
 #X connect 22 0 23 0;
 #X connect 23 0 2 1;
-#X connect 23 0 29 0;
+#X connect 23 0 26 0;
 #X connect 24 0 22 0;
 #X connect 24 1 22 1;
-#X connect 25 0 62 0;
-#X connect 25 0 63 0;
-#X connect 26 0 27 0;
-#X connect 27 0 28 0;
-#X connect 28 0 20 0;
-#X connect 31 0 30 0;
-#X connect 33 0 25 0;
-#X connect 33 0 64 0;
-#X connect 38 0 40 0;
-#X connect 40 0 41 0;
-#X connect 41 0 39 0;
-#X connect 49 0 31 0;
-#X connect 50 0 22 0;
-#X connect 56 0 57 0;
-#X connect 58 0 25 0;
-#X connect 58 0 65 0;
-#X connect 59 0 25 0;
-#X connect 59 0 64 0;
-#X connect 60 0 25 0;
-#X connect 60 0 65 0;
-#X connect 62 0 48 0;
-#X connect 63 0 61 0;
-#X connect 64 0 62 0;
-#X connect 65 0 63 0;
+#X connect 25 0 59 0;
+#X connect 25 0 60 0;
+#X connect 28 0 27 0;
+#X connect 30 0 25 0;
+#X connect 30 0 61 0;
+#X connect 35 0 37 0;
+#X connect 37 0 38 0;
+#X connect 38 0 36 0;
+#X connect 46 0 28 0;
+#X connect 47 0 22 0;
+#X connect 53 0 54 0;
+#X connect 55 0 25 0;
+#X connect 55 0 62 0;
+#X connect 56 0 25 0;
+#X connect 56 0 61 0;
+#X connect 57 0 25 0;
+#X connect 57 0 62 0;
+#X connect 59 0 45 0;
+#X connect 60 0 58 0;
+#X connect 61 0 59 0;
+#X connect 62 0 60 0;
+#X connect 64 0 65 0;
+#X connect 65 0 66 0;
+#X connect 66 0 67 0;
 #X connect 67 0 68 0;
-#X connect 68 0 69 0;
-#X connect 69 0 70 0;
-#X connect 70 0 71 0;
-#X connect 74 0 75 0;
-#X connect 75 0 74 0;
-#X connect 75 1 74 1;
+#X connect 71 0 72 0;
+#X connect 72 0 71 0;
+#X connect 72 1 71 1;
 #X coords 0 -1 1 1 190 240 2 100 100;
