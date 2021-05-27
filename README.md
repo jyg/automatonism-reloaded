@@ -38,6 +38,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 	https://github.com/megalon/pd-AUTOMATONISM-sampler
 	
 ## Importing automatonism old patches
+
 * open patch with pd > 0.51
 * delete this ...
 
@@ -63,3 +64,41 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * save and close your patch, then reopen it.
 
 ## How to upgrade custom modules
+
+* Copy your module in pd/externals/automatonism/patch_editor_abs
+* Open it with pd >0.50
+(here, we suppose that your module is called "my_module" but you can change it with your real filename).
+* Beware that all guis must have send and receive symbols and should not be wired to other objects of the patch (use [receive] objects instead).
+* Create a new object [state_saving_module/upgrade] : 
+
+![image](https://user-images.githubusercontent.com/1431894/119808872-d5940280-bee4-11eb-8e6e-1c3f6a910870.png)
+
+This will add some midi_listeners abstractions for every gui of the patch
+
+(before)
+
+![image](https://user-images.githubusercontent.com/1431894/119808535-80f08780-bee4-11eb-84f1-61a8725128ba.png)
+
+(after)
+
+![image](https://user-images.githubusercontent.com/1431894/119808763-bb5a2480-bee4-11eb-9e86-b2317bd60bf8.png)
+
+* Now, locate the following subpatches : 
+
+![image](https://user-images.githubusercontent.com/1431894/119809281-3f141100-bee5-11eb-8e74-7ac6e0b36bbf.png)
+
+* inside those subpatches, replace every [textfile] instance by [state_saving_module/textfile $0]
+![image](https://user-images.githubusercontent.com/1431894/119809677-a8941f80-bee5-11eb-9eab-74197f290275.png)
+ 
+* save and close your patch
+
+* You still have to update the automatonism "modules" menu entries.  
+* First, open an automatonism patch, and search for extra-modules subpatch (using pd find menu).
+* Add an object [module_create $0 $1 my_module] , save and close the window
+![image](https://user-images.githubusercontent.com/1431894/119811171-14c35300-bee7-11eb-8328-b58759cbc51e.png)
+
+* Last step, just add a bang object in the automatonism-modules-menu with send channel named "$0-create-my_module!"
+![image](https://user-images.githubusercontent.com/1431894/119812022-fc076d00-bee7-11eb-864f-77d85e2a4483.png)
+
+* save and close
+
