@@ -83,7 +83,8 @@ This will add some midi_listeners abstractions for every gui of the patch
 
 (after)
 
-![image](https://user-images.githubusercontent.com/1431894/119808763-bb5a2480-bee4-11eb-9e86-b2317bd60bf8.png)
+![image](https://user-images.githubusercontent.com/1431894/119814432-af716100-beea-11eb-851b-379359666811.png)
+
 
 ### step 2 : replace [textfile] objects
 * Now, locate the following subpatches : 
