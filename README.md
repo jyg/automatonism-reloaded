@@ -75,7 +75,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 This will add some midi_listeners abstractions for every gui of the patch
 
-(before)
+(before) 
 
 ![image](https://user-images.githubusercontent.com/1431894/119808535-80f08780-bee4-11eb-84f1-61a8725128ba.png)
 
@@ -88,6 +88,7 @@ This will add some midi_listeners abstractions for every gui of the patch
 ![image](https://user-images.githubusercontent.com/1431894/119809281-3f141100-bee5-11eb-8e74-7ac6e0b36bbf.png)
 
 * inside those subpatches, replace every [textfile] instance by [state_saving_module/textfile $0]
+* 
 ![image](https://user-images.githubusercontent.com/1431894/119809677-a8941f80-bee5-11eb-9eab-74197f290275.png)
  
 * save and close your patch
@@ -95,9 +96,11 @@ This will add some midi_listeners abstractions for every gui of the patch
 * You still have to update the automatonism "modules" menu entries.  
 * First, open an automatonism patch, and search for extra-modules subpatch (using pd find menu).
 * Add an object [module_create $0 $1 my_module] , save and close the window
+* 
 ![image](https://user-images.githubusercontent.com/1431894/119811171-14c35300-bee7-11eb-8328-b58759cbc51e.png)
 
 * Last step, just add a bang object in the automatonism-modules-menu with send channel named "$0-create-my_module!"
+* 
 ![image](https://user-images.githubusercontent.com/1431894/119812022-fc076d00-bee7-11eb-864f-77d85e2a4483.png)
 
 * save and close
