@@ -68,14 +68,14 @@ You need iemguts lib to follow those steps.
 
 ### step 1 : create midi learn listeners
 * Copy your module in pd/externals/automatonism/patch_editor_abs
+(here, we suppose that your module is called "my_module.pd" but you can change this with your real filename).
 * Open it with pd >0.50
-(here, we suppose that your module is called "my_module" but you can change this with your real filename).
 * Beware that all guis must have send and receive symbols and should not be wired to other objects of the patch (use [receive] objects instead).
 * Create a new object [state_saving_module/upgrade] : 
 
 ![image](https://user-images.githubusercontent.com/1431894/119808872-d5940280-bee4-11eb-8e6e-1c3f6a910870.png)
 
-This will add some midi_listeners abstractions for every gui of the patch
+This will automatically add some midi_listeners abstractions for every gui of the patch
 
 (before) 
 
