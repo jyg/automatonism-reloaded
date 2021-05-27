@@ -60,6 +60,6 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 ![image](https://user-images.githubusercontent.com/1431894/119805045-315c8c80-bee1-11eb-8ad3-fe97ce025fd7.png)
 
-
+* save and close your patch, then reopen it.
 
 ## How to upgrade custom modules
