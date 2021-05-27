@@ -68,10 +68,11 @@ You need iemguts lib to follow those steps.
 
 ### step 1 : create midi learn listeners
 * Copy your module in pd/externals/automatonism/patch_editor_abs
+
 (here, we suppose that your module is called "my_module.pd" but you can change this with your real filename).
 * Open it with pd >0.50
 * Beware that all guis must have send and receive symbols and should not be wired to other objects of the patch (use [receive] objects instead).
-* Create a new object [state_saving_module/upgrade] : 
+* Inside of your module, create a new object : [state_saving_module/upgrade]
 
 ![image](https://user-images.githubusercontent.com/1431894/119808872-d5940280-bee4-11eb-8e6e-1c3f6a910870.png)
 
@@ -94,17 +95,19 @@ This will automatically add some midi_listeners abstractions for every gui of th
 * inside those subpatches, replace every [textfile] instance by [state_saving_module/textfile $0]
 
 ![image](https://user-images.githubusercontent.com/1431894/119809677-a8941f80-bee5-11eb-9eab-74197f290275.png)
+
+This will enable patch-level state-saving support with new savestate object.
  
 * save and close your patch
 
 ### step 3 : integrate your module into automatonism_menu
-* You still have to update the automatonism "modules" menu entries.  
+Let's update the automatonism "modules" menu entries.  
 * First, open an automatonism patch, and search for extra-modules subpatch (using pd find menu).
-* Add an object [module_create $0 $1 my_module] , save and close the window
+* Inside the [pd extra-modules] subpatch, add an object [module_create $0 $1 my_module] , save and close the window
 
 ![image](https://user-images.githubusercontent.com/1431894/119811171-14c35300-bee7-11eb-8328-b58759cbc51e.png)
 
-* Last step, just add a bang object in the automatonism-modules-menu 
+* Last step, open the automatonism-modules-menu (by pressing "esc"), and add a bang object to it
 
 ![image](https://user-images.githubusercontent.com/1431894/119813412-87353280-bee9-11eb-881f-b90f9bef65d5.png)
 
