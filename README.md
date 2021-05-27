@@ -15,7 +15,6 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * Several patches can run simultaneously and independently ("local mode" in Preset-Manager)
 
 ## To Do :
-* fix bug in preset-manager (offset when storing and recalling scenes)
 * Clean all that stuff
 * Deeply check camomile integration
 * Write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
