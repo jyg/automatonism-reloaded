@@ -1,4 +1,4 @@
-#N canvas 247 43 1189 752 10;
+#N canvas -98 154 1189 752 10;
 #N canvas 0 22 617 379 sync 0;
 #X obj 106 45 inlet;
 #X obj 317 76 threshold~ 0.9 0 0.9 0;
@@ -26,7 +26,7 @@
 #X connect 11 0 1 0;
 #X restore 578 513 pd sync;
 #X msg 578 318 bang;
-#X obj 578 91 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 578 91 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 578 111 metro 1000;
 #X obj 578 133 f;
@@ -89,9 +89,9 @@
 #X obj 104 192 cnv 15 175 15 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 137 161 hsl 128 15 0 127 0 1 \$0-rtm-offset-s \$0-rtm-offset-r
-OFFSET 135 7 0 10 -262144 -1 -1 0 1;
+OFFSET 135 7 0 10 -262144 -1 -1 1400 1;
 #X obj 137 146 hsl 128 15 0 127 0 1 \$0-rtm-time-s \$0-rtm-time-r TIME
-135 7 0 10 -262144 -1 -1 0 1;
+135 7 0 10 -262144 -1 -1 3000 1;
 #X floatatom 235 131 5 0 0 0 SECONDS #0-rtm-time-gui-r #0-rtm-time-gui-s
 ;
 #X floatatom 134 176 5 0 0 1 SECONDS #0-rtm-offset-gui-r #0-rtm-offset-gui-s
@@ -100,7 +100,7 @@ OFFSET 135 7 0 10 -262144 -1 -1 0 1;
 ;
 #X obj 104 124 cnv 5 5 5 empty empty RANDOM-TIME-MANAGER 0 0 0 12 -262144
 -66577 0;
-#X obj 243 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
+#X obj 243 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
 -66577 0;
 #X obj 107 242 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
 ;
@@ -344,6 +344,7 @@ OFFSET 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 52 0 53 0;
 #X connect 53 0 54 0;
 #X connect 54 0 55 0;
+#X connect 56 0 2 0;
 #X connect 57 0 58 0;
 #X connect 58 0 13 0;
 #X connect 59 0 60 0;
