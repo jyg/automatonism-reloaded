@@ -2,7 +2,7 @@
 
 <p align="left"> <img src="https://raw.githubusercontent.com/jyg/automatonism/master/automatonism_51.png" alt="automatonism_51" ></p>
 
-Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
+Fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 ## New features :
 
