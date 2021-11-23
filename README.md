@@ -14,12 +14,6 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * Ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * Several patches can run simultaneously and independently ("local mode" in Preset-Manager)
 
-## To Do :
-* Clean all that stuff
-* Deeply check camomile integration
-* Write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
-
-
 ## Installation :
 * Download Automatonism.Reloaded.zip here https://github.com/jyg/automatonism-reloaded/releases
 * Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
@@ -36,6 +30,13 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 2021/04/01	-added megalon extra-sampler module for Automatonism
 	https://github.com/megalon/pd-AUTOMATONISM-sampler
+
+
+## To Do :
+* Clean all that stuff
+* Deeply check camomile integration
+* Write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
+
 	
 ## Importing Automatonism old patches
 
