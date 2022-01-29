@@ -3,55 +3,10 @@ Those are the files inside pd-automatonism.vst3 structure, for documentation pur
 Camomile plugins have the following structure :
 
 ## Linux : 
-
-[pd-automatonism.vst3]
-	[Contents]
-		[x86_64-linux]
-			-Infos.txt
-			-pd-automatonism.pd
-			-pd-automatonism.txt
-			-pd-automatonism.so
-			-(this readme file)
-			[patches]
-				-Example1.pd
-				-Midi-in.pd
-				-Playhead.pd
-				-(any other patch)
-				[automatonism]
-					(copy of whole automatonism repository)
+![image](https://user-images.githubusercontent.com/1431894/143006750-827202c9-6b51-4340-8fb2-58cd418905af.png)
 
 ## Windows :
-
-[pd-automatonism.vst3]
-	-Infos.txt
-	-pd-automatonism.pd
-	-pd-automatonism.txt
-	-pd-automatonism.vst3
-	-(this readme file)
-		[patches]
-		-Example1.pd
-		-Midi-in.pd
-		-Playhead.pd
-		-(any other patch)
-		[automatonism]
-			(copy of whole automatonism repository)
+![image](https://user-images.githubusercontent.com/1431894/143006858-2b5fce9f-c251-4e6f-a8ea-5da4d701d680.png)
 
 ## Mac OsX
-
-[pd-automatonism.vst3]
-	[Contents]
-		-Info.plist
-		[MacOS]
-			-CamomileFx
-		[Resources]
-			-Infos.txt
-			-pd-automatonism.pd
-			-pd-automatonism.txt
-			-(this readme file)
-			[patches]
-				-Example1.pd
-				-Midi-in.pd
-				-Playhead.pd
-				-(any other patch)
-				[automatonism]
-					(copy of whole automatonism repository)
+![image](https://user-images.githubusercontent.com/1431894/143006917-0916dc16-8ac9-4105-9b76-a43d45b44053.png)

@@ -2,7 +2,7 @@
 
 <p align="left"> <img src="https://raw.githubusercontent.com/jyg/automatonism/master/automatonism_51.png" alt="automatonism_51" ></p>
 
-Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
+Fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 ## New features :
 
@@ -13,12 +13,6 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * The legacy file-based preset and state saving system is deprecated, but old savestate structure is automatically imported in new project.
 * Ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * Several patches can run simultaneously and independently ("local mode" in Preset-Manager)
-
-## To Do :
-* Clean all that stuff
-* Deeply check camomile integration
-* Write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
-
 
 ## Installation :
 * Download Automatonism.Reloaded.zip here https://github.com/jyg/automatonism-reloaded/releases
@@ -36,10 +30,17 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 2021/04/01	-added megalon extra-sampler module for Automatonism
 	https://github.com/megalon/pd-AUTOMATONISM-sampler
-	
-## Importing automatonism old patches
 
-* open patch with pd > 0.51
+
+## To Do :
+* Clean all that stuff
+* Deeply check camomile integration
+* Write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
+
+	
+## Importing Automatonism old patches
+
+* open your Automatonism patch with pd > 0.51
 * delete this ...
 
 ![image](https://user-images.githubusercontent.com/1431894/119803727-fe65c900-bedf-11eb-93e1-b6b34f58958b.png)
@@ -48,7 +49,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 ![image](https://user-images.githubusercontent.com/1431894/119803910-2bb27700-bee0-11eb-8577-856ae132d346.png)
 
-* assuming you already installed automatonism(reloaded) in ~/documents/pd/externals/automatonism folder, just type a new box in your patch : 
+* assuming you already installed Automatonism(reloaded) in ~/documents/pd/externals/automatonism folder, just type a new box in your patch : 
 
 ![image](https://user-images.githubusercontent.com/1431894/119804376-92d02b80-bee0-11eb-8bc0-db737b4dd6df.png)
 * this creates the new [declare -paths] and automatonism menu objects
@@ -64,6 +65,7 @@ Based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * save and close your patch, then reopen it.
 
 ## How to upgrade custom modules
+If you wrote your own Automatonism modules, according to automatonism-3.1 patterns, this section is for you.
 You need iemguts lib to follow those steps.
 
 ### step 1 : create midi learn listeners
