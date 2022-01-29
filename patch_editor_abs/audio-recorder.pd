@@ -1,24 +1,24 @@
 #N canvas 0 22 1213 658 10;
 #X obj 486 68 t b b;
-#X obj 105 135 tgl 15 0 rec/stop-s rec/stop-r REC/STOP 17 7 0 10 -150893
--1 -1 0 1;
+#X obj 105 135 tgl 15 0 rec/stop-s rec/stop-r REC/STOP 17 7 0 10 #90d4b0
+#000000 #000000 0 1;
 #X obj 513 91 f;
 #X obj 541 92 + 1;
 #X obj 513 113 + 1;
-#X floatatom 173 135 5 0 0 1 TAKE - -;
+#X floatatom 173 135 5 0 0 1 TAKE - - 0;
 #X msg 467 214 stop;
 #X obj 467 45 sel 0 1;
 #X obj 486 160 delay 100;
 #X msg 486 182 start;
-#X obj 104 123 cnv 5 5 5 empty empty AUDIO-RECORDER 0 0 0 12 -262144
--66577 0;
-#X obj 103 109 cnv 5 5 5 empty empty LEFT 0 0 0 8 -262144 -66577 0
+#X obj 104 123 cnv 5 5 5 empty empty AUDIO-RECORDER 0 0 0 12 #fcfcfc
+#404040 0;
+#X obj 103 109 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #404040 0
 ;
-#X obj 248 108 cnv 5 5 5 empty empty RIGHT 0 0 0 8 -262144 -66577 0
-;
+#X obj 248 108 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #404040
+0;
 #X obj 513 135 t f f;
 #X obj 108 230 hsl 128 15 0 127 0 1 \$0-rec-level-s \$0-rec-level-r
-LEVEL 133 7 0 10 -158136 -1 -1 7900 1;
+LEVEL 133 7 0 10 #9999de #000000 #000000 12700 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-right 512 float 0;
 #X coords 0 1 511 -1 80 60 1 0 0;
@@ -27,7 +27,7 @@ LEVEL 133 7 0 10 -158136 -1 -1 7900 1;
 #X obj 100 402 metro 200;
 #X msg 100 367 1;
 #X obj 238 135 bng 15 250 50 0 \$0-rec-reset-s \$0-rec-reset-r RST
-17 7 0 10 -262144 -1 -1;
+17 7 0 10 #ffffff #000000 #000000;
 #X obj 594 23 r \$0-rec-takenumber-s;
 #X obj 579 58 f;
 #X obj 579 -21 loadbang;
@@ -47,8 +47,8 @@ LEVEL 133 7 0 10 -158136 -1 -1 7900 1;
 #X restore 105 166 graph;
 #X obj 214 441 tabwrite~ \$0-right;
 #X obj 100 424 t b b;
-#X obj 280 151 hsl 128 15 0 127 0 1 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 280 151 hsl 128 15 0 127 0 1 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 12700 1;
 #X obj 277 199 t f f;
 #X obj 304 225 s \$0-rec-takenumber-s;
 #X msg 100 531 menusave;
@@ -56,16 +56,16 @@ LEVEL 133 7 0 10 -158136 -1 -1 7900 1;
 #X obj 100 508 r SAVE-S;
 #X obj 618 52 r \$0-rec-reset-s;
 #X msg 618 74 0;
-#X obj 208 115 bng 15 250 50 0 empty empty empty 17 7 0 10 -1 -226533
--1;
-#X obj 208 10 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 208 115 bng 15 250 50 0 empty empty empty 17 7 0 10 #000000
+#dc4c90 #000000;
+#X obj 208 10 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X obj 208 30 metro 500;
 #X obj 208 73 spigot;
 #X obj 208 -15 loadbang;
 #X obj 570 284 f \$1;
 #X obj 544 227 t f b;
-#X floatatom 231 115 5 0 0 0 - - -;
+#X floatatom 231 115 5 0 0 0 - - - 0;
 #X obj 467 16 r rec/stop-s;
 #X obj 240 50 r rec/stop-s;
 #X obj 540 450 pack f f;

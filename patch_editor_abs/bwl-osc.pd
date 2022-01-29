@@ -2,7 +2,7 @@
 #X obj 93 297 t f f;
 #X obj 93 384 line~;
 #X obj 93 478 mtof~;
-#X floatatom 205 118 5 0 0 0 - - -;
+#X floatatom 205 118 5 0 0 0 - - - 0;
 #X obj 350 621 outlet~;
 #X obj 93 450 +~;
 #X obj 217 433 *~ 127;
@@ -10,41 +10,42 @@
 #X obj 480 416 pack 0 50;
 #X obj 480 438 line~;
 #X obj 107 177 hsl 128 15 0 127 0 1 \$0-bwl-osc-fm-att-s \$0-bwl-osc-fm-att-r
-FM 133 7 0 10 -158136 -1 -1 1300 1;
+FM 133 7 0 10 #9898dc #000000 #000000 1300 1;
 #X obj 107 132 hsl 128 15 0 127 0 1 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r
-PITCH 133 7 0 10 -262144 -1 -1 4400 1;
-#X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
-;
-#X obj 181 109 cnv 5 5 5 empty empty WSHAPE 0 0 0 8 -262144 -120682
+PITCH 133 7 0 10 #fcfcfc #000000 #000000 4700 1;
+#X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040
+0;
+#X obj 181 109 cnv 5 5 5 empty empty WSHAPE 0 0 0 8 #fcfcfc #7474a4
 0;
 #X text 462 227 FM IN;
 #X obj 465 485 *~ 2000;
 #X obj 93 502 +~;
 #X text 214 248 PITCH CV IN;
-#X obj 104 124 cnv 5 5 5 empty empty BWL-OSC 0 0 0 12 -262144 -66577
+#X obj 104 124 cnv 5 5 5 empty empty BWL-OSC 0 0 0 12 #fcfcfc #404040
 0;
 #X obj 93 361 pack 0 50;
-#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SINE 0 0 0 10 -262144
--66577 0;
+#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SINE 0 0 0 10 #fcfcfc
+#404040 0;
 #X obj 107 147 hsl 128 15 0 127 0 1 \$0-bwl-osc-pwidth-s \$0-bwl-osc-pwidth-r
-WSHAPE 133 7 0 10 -262144 -1 -1 2000 1;
+WSHAPE 133 7 0 10 #fcfcfc #000000 #000000 2000 1;
 #X obj 107 162 hsl 128 15 0 127 0 1 \$0-bwl-osc-cv-att-s \$0-bwl-osc-cv-att-r
-CV 133 7 0 10 -158136 -1 -1 900 1;
+CV 133 7 0 10 #9898dc #000000 #000000 900 1;
 #X obj 480 372 * 0.00787402;
 #X obj 480 394 * 2;
-#X obj 105 206 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
+#X obj 105 206 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #404040 0
+;
 #X obj 679 35 sel 0 1 2 3;
 #X msg 679 522 1 0 0 0;
 #X obj 679 498 t b b;
 #X obj 177 192 hradio 15 1 1 4 \$0-bwl-osc-wform-s \$0-bwl-osc-wform-r
-empty 65 7 0 10 -262144 -1 -1 0;
-#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
+empty 65 7 0 10 #fcfcfc #000000 #000000 0;
+#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc
+#404040 0;
 #X obj 965 696 s \$0-waveform-gui-r;
 #X obj 938 541 makefilename %s;
 #X msg 938 565 label \$1;
 #X msg 938 515 symbol SINE;
-#X obj 273 109 cnv 5 5 5 empty empty FM 0 0 0 8 -262144 -120682 0;
+#X obj 273 109 cnv 5 5 5 empty empty FM 0 0 0 8 #fcfcfc #7474a4 0;
 #X obj 694 329 t b b;
 #X msg 694 351 0 1 0 0;
 #X obj 679 544 unpack f f f f;
@@ -142,7 +143,7 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X restore 350 519 pd pulse;
 #X obj 465 246 inlet~ FM;
 #X obj 217 264 inlet~ PITCH;
-#N canvas 315 35 593 735 state-saving-multiple-instances 0;
+#N canvas 578 13 593 735 state-saving-multiple-instances 1;
 #X obj 137 29 loadbang;
 #X obj 184 452 state_saving_module/textfile \$0;
 #X msg 466 435 rewind;
@@ -158,8 +159,8 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 165 153 f \$1;
 #X obj 165 189 t f f f;
 #X obj 138 62 t b b;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X obj -16 234 r SAVE-S;
 #X obj 43 400 pack f f f f f;
 #X obj 184 474 unpack f f f f f;
@@ -216,7 +217,7 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 316 197 s \$0-instance-num;
 #X obj 316 149 makefilename %d;
 #X msg 316 174 label \$1;
-#N canvas 131 304 1117 745 state-saving-via-preset-manager-module 0
+#N canvas 1160 12 1117 745 state-saving-via-preset-manager-module 0
 ;
 #X msg 719 210 rewind;
 #X msg 676 210 bang;
@@ -265,9 +266,9 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X obj 398 102 inlet;
@@ -302,9 +303,9 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X obj 398 102 inlet;
@@ -340,9 +341,9 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X obj 398 102 inlet;
@@ -377,9 +378,9 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X obj 398 102 inlet;
@@ -975,10 +976,10 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X restore 318 47 pd parameter-nudging-system;
 #X obj 93 319 clip 0 90;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -989,21 +990,21 @@ empty 65 7 0 10 -262144 -1 -1 0;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
-#X floatatom 223 594 5 0 0 0 - - -;
+#X floatatom 223 594 5 0 0 0 - - - 0;
 #X obj 223 573 f;
 #X obj 223 521 t b f;
 #X obj 223 544 spigot;
 #X obj 271 528 r \$0-msg-spigot;
-#X floatatom 387 639 5 0 0 0 - - -;
+#X floatatom 387 639 5 0 0 0 - - - 0;
 #X obj 387 618 f;
 #X obj 387 566 t b f;
 #X obj 387 589 spigot;
 #X obj 435 573 r \$0-msg-spigot;
-#X floatatom 424 527 5 0 0 0 - - -;
+#X floatatom 424 527 5 0 0 0 - - - 0;
 #X obj 424 506 f;
 #X obj 424 454 t b f;
 #X obj 424 477 spigot;
