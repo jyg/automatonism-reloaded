@@ -1,4 +1,4 @@
-#N canvas -98 154 1189 752 10;
+#N canvas 299 154 1189 752 10;
 #N canvas 0 22 617 379 sync 0;
 #X obj 106 45 inlet;
 #X obj 317 76 threshold~ 0.9 0 0.9 0;
@@ -26,22 +26,22 @@
 #X connect 11 0 1 0;
 #X restore 578 513 pd sync;
 #X msg 578 318 bang;
-#X obj 578 91 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 578 91 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X obj 578 111 metro 1000;
 #X obj 578 133 f;
 #X obj 608 133 + 1;
-#X floatatom 677 158 5 0 0 0 - - -;
+#X floatatom 677 158 5 0 0 0 - - - 0;
 #X msg 578 205 bang;
 #X obj 578 11 loadbang;
 #X msg 578 69 1;
-#X floatatom 724 360 5 0 0 0 - - -;
+#X floatatom 724 360 5 0 0 0 - - - 0;
 #X obj 724 403 - 1;
 #X obj 581 280 t b b b;
 #X msg 666 80 0;
 #X obj 578 155 % 60;
 #X obj 578 177 sel 59;
-#X floatatom 103 393 5 0 0 0 - - -;
+#X floatatom 103 393 5 0 0 0 - - - 0;
 #X text 81 392 MIN;
 #X obj 103 262 r \$0-rtm-offset-s;
 #X obj 103 286 / 127;
@@ -50,10 +50,10 @@
 #X obj 216 285 / 127;
 #X obj 216 329 + 1;
 #X obj 216 351 i;
-#X floatatom 216 381 5 0 0 0 - - -;
+#X floatatom 216 381 5 0 0 0 - - - 0;
 #X obj 343 49 inlet~ SYNC;
 #X obj 677 202 s \$0-rtm-counter-gui-r;
-#X floatatom 724 425 5 0 0 0 - - -;
+#X floatatom 724 425 5 0 0 0 - - - 0;
 #X obj 724 292 random;
 #X obj 724 336 +;
 #X obj 782 492 s \$0-rtm-reset-gui-r;
@@ -61,7 +61,7 @@
 #X obj 216 414 t f f;
 #X obj 345 431 +;
 #X obj 356 393 t b f;
-#X floatatom 345 453 5 0 0 0 - - -;
+#X floatatom 345 453 5 0 0 0 - - - 0;
 #X obj 103 476 s \$0-rtm-offset-gui-r;
 #X obj 216 450 s \$0-rtm-time-gui-r;
 #X obj 345 479 s \$0-rtm-max-r;
@@ -86,37 +86,38 @@
 #X obj 714 116 t b;
 #X obj 761 120 r \$0-rtm-offset-s;
 #X obj 761 142 t b;
-#X obj 104 192 cnv 15 175 15 empty empty empty 20 12 0 14 -233017 -66577
+#X obj 104 192 cnv 15 175 15 empty empty empty 20 12 0 14 #e0e0e0 #404040
 0;
 #X obj 137 161 hsl 128 15 0 127 0 1 \$0-rtm-offset-s \$0-rtm-offset-r
-OFFSET 135 7 0 10 -262144 -1 -1 1400 1;
+OFFSET 135 7 0 10 #fcfcfc #000000 #000000 1600 1;
 #X obj 137 146 hsl 128 15 0 127 0 1 \$0-rtm-time-s \$0-rtm-time-r TIME
-135 7 0 10 -262144 -1 -1 3000 1;
-#X floatatom 235 131 5 0 0 0 SECONDS #0-rtm-time-gui-r #0-rtm-time-gui-s
-;
-#X floatatom 134 176 5 0 0 1 SECONDS #0-rtm-offset-gui-r #0-rtm-offset-gui-s
-;
-#X floatatom 134 210 5 0 0 1 COUNTER #0-rtm-counter-gui-r #0-rtm-counter-gui-s
-;
-#X obj 104 124 cnv 5 5 5 empty empty RANDOM-TIME-MANAGER 0 0 0 12 -262144
--66577 0;
-#X obj 243 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
-#X obj 107 242 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
-;
-#X obj 166 200 cnv 3 48 3 empty empty empty 20 12 0 14 -150893 -66577
+135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 235 131 5 0 0 0 SECONDS \$0-rtm-time-gui-r \$0-rtm-time-gui-s
 0;
-#X floatatom 134 193 5 0 0 0 MIN #0-rtm-offset-gui-r #0-rtm-min-s;
-#X floatatom 214 193 5 0 0 1 MAX #0-rtm-max-r #0-rtm-max-s;
-#X obj 108 217 bng 15 250 50 0 empty \$0-rtm-b! empty 17 7 0 10 -1
--226533 -1;
-#X floatatom 215 211 5 0 0 1 RANDOM-VALUE #0-rtm-active-value #0-rtm-active-value-s
+#X floatatom 134 176 5 0 0 1 SECONDS \$0-rtm-offset-gui-r \$0-rtm-offset-gui-s
+0;
+#X floatatom 134 210 5 0 0 1 COUNTER \$0-rtm-counter-gui-r \$0-rtm-counter-gui-s
+0;
+#X obj 104 124 cnv 5 5 5 empty empty RANDOM-TIME-MANAGER 0 0 0 12 #fcfcfc
+#404040 0;
+#X obj 243 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc
+#404040 0;
+#X obj 107 242 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0
 ;
-#X obj 292 109 cnv 5 5 5 empty empty ON/OFF 0 0 0 8 -262144 -226533
+#X obj 166 200 cnv 3 48 3 empty empty empty 20 12 0 14 #90d4b0 #404040
+0;
+#X floatatom 134 193 5 0 0 0 MIN \$0-rtm-offset-gui-r \$0-rtm-min-s
+0;
+#X floatatom 214 193 5 0 0 1 MAX \$0-rtm-max-r \$0-rtm-max-s 0;
+#X obj 108 217 bng 15 250 50 0 empty \$0-rtm-b! empty 17 7 0 10 #000000
+#dc4c90 #000000;
+#X floatatom 215 211 5 0 0 1 RANDOM-VALUE \$0-rtm-active-value \$0-rtm-active-value-s
+0;
+#X obj 292 109 cnv 5 5 5 empty empty ON/OFF 0 0 0 8 #fcfcfc #dc4c90
 0;
 #X obj 215 228 tgl 15 1 \$0-rtm-on/off-s \$0-rtm-on/off-r ON/OFF 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 105 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 -262144 -226533 0
+7 0 10 #fcfcfc #000000 #000000 1 1;
+#X obj 105 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 #fcfcfc #dc4c90 0
 ;
 #X obj 356 313 r \$0-rtm-offset-gui-s;
 #X obj 794 275 r \$0-rtm-time-gui-r;
@@ -137,8 +138,8 @@ OFFSET 135 7 0 10 -262144 -1 -1 1400 1;
 #X text 523 224 INSTANCE NUMBER;
 #X obj 488 139 f \$1;
 #X obj 488 175 t f f f;
-#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 48 274 r SAVE-S;
 #X msg 110 438 set \$1 \$2 \$3;
 #X msg 122 651 write statesave/\$1-random-time-manager-ss.txt;

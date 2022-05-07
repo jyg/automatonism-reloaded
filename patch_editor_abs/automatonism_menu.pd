@@ -1,6 +1,6 @@
 #N canvas 758 58 958 1018 12;
 #X declare -path state_saving_module;
-#N canvas 0 50 450 300 DSP 0;
+#N canvas 0 0 450 300 DSP 0;
 #X obj 41 62 inlet;
 #X msg 41 85 dsp \$1;
 #X obj 41 108 s pd;
@@ -24,7 +24,7 @@
 #X obj 212 242 bng 15 250 50 0 \$0-open-reset-warning! empty <--RESET!
 17 7 0 10 #fcfcfc #000000 #000000;
 #X text 372 42 AUTOMATONISM;
-#N canvas 0 50 723 566 modes 0;
+#N canvas 0 0 723 566 modes 0;
 #X obj 153 18 inlet;
 #X obj 216 294 == 0;
 #X msg 193 253 1;
@@ -105,7 +105,7 @@
 #X connect 33 0 28 0;
 #X restore 263 389 pd modes;
 #X obj 419 322 r MIDI_LEARN_OK;
-#N canvas 0 50 1217 770 midi_in 0;
+#N canvas 0 0 1217 770 midi_in 0;
 #X obj 87 100 r MIDI_LEARN;
 #X msg 88 170 -1;
 #X obj 444 34 ctlin;
@@ -287,8 +287,8 @@
 #X obj 14 207 module_create \$0 \$1 slew;
 #X obj 14 231 module_create \$0 \$1 probability;
 #X obj 14 255 module_create \$0 \$1 quantizer;
-#X obj 14 282 module_create \$0 \$1 4to1-switch;
-#X obj 13 307 module_create \$0 \$1 1to4-switch;
+#X obj 14 312 module_create \$0 \$1 4to1-switch;
+#X obj 13 337 module_create \$0 \$1 1to4-switch;
 #X obj 14 368 module_create \$0 \$1 env-follower;
 #X obj 14 391 module_create \$0 \$1 trigger-train;
 #X obj 14 416 module_create \$0 \$1 audio-recorder;
@@ -297,6 +297,8 @@
 #X obj 15 494 module_create \$0 \$1 manual-triggers;
 #X obj 15 514 module_create \$0 \$1 manual-toggle;
 #X obj 15 534 module_create \$0 \$1 playhead;
+#X obj 14 285 module_create \$0 \$1 euklid;
+#X obj 250 17 module_create \$0 \$1 swing;
 #X restore 21 294 pd utility/logic;
 #N canvas 0 142 248 332 sequencers 0;
 #X obj 14 20 module_create \$0 \$1 8steps;
@@ -314,7 +316,7 @@
 #X obj 203 272 r \$0-open-modules!;
 #X obj 36 41 r \$0-open-quick-guide!;
 #X obj 203 36 r \$0-open-help-files!;
-#N canvas 551 193 807 759 \$0-modules 1;
+#N canvas 239 0 871 789 \$0-modules 0;
 #X obj 196 91 cnv 15 180 15 empty empty MODULATION: 10 8 0 12 #9898dc
 #fcfcfc 0;
 #X obj 196 112 bng 15 250 50 0 \$0-create-basic-lfo! empty <--BASIC-LFO
@@ -363,7 +365,7 @@
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 196 310 bng 15 250 50 0 \$0-create-vca! empty <--VCA 17 7 0
 10 #fcfcfc #000000 #000000;
-#X obj 569 549 cnv 15 180 15 empty empty MACRO-STRUCTURAL-TOOLS: 10
+#X obj 569 559 cnv 15 180 15 empty empty MACRO-STRUCTURAL-TOOLS: 10
 8 0 12 #9898dc #fcfcfc 0;
 #X obj 568 91 cnv 15 180 15 empty empty UTILITY&LOGIC: 10 8 0 12 #9898dc
 #fcfcfc 0;
@@ -401,7 +403,7 @@
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 569 330 bng 15 250 50 0 \$0-create-quantizer! empty <--QUANTIZER
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 569 477 bng 15 250 50 0 \$0-create-manual-triggers! empty <--MANUAL-TRIGGERS
+#X obj 569 497 bng 15 250 50 0 \$0-create-manual-triggers! empty <--MANUAL-TRIGGERS
 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 569 111 bng 15 250 50 0 \$0-create-clock! empty <--CLOCK 17
 7 0 10 #fcfcfc #000000 #000000;
@@ -409,7 +411,7 @@
 7 0 10 #fcfcfc #000000 #000000;
 #X obj 10 536 bng 15 250 50 0 \$0-create-mega-sequencer! empty <--MEGA-SEQUENCER!
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 569 350 bng 15 250 50 0 \$0-create-4to1-switch! empty <--4TO1-SWITCH
+#X obj 569 370 bng 15 250 50 0 \$0-create-4to1-switch! empty <--4TO1-SWITCH
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 10 314 bng 15 250 50 0 \$0-create-kick! empty <--KICK 17 7 0
 10 #9898dc #000000 #000000;
@@ -429,17 +431,17 @@
 7 0 10 #fcfcfc #000000 #000000;
 #X obj 10 170 bng 15 250 50 0 \$0-create-karplus! empty <--KARPLUS
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 569 392 bng 15 250 50 0 \$0-create-env-follower! empty <--ENV-FOLLOWER
+#X obj 569 412 bng 15 250 50 0 \$0-create-env-follower! empty <--ENV-FOLLOWER
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 10 231 bng 15 250 50 0 \$0-create-triad! empty <--TRIAD 17 7
 0 10 #fcfcfc #000000 #000000;
-#X obj 570 569 bng 15 250 50 0 \$0-create-preset-manager! empty <--PRESET-MANAGER
+#X obj 570 579 bng 15 250 50 0 \$0-create-preset-manager! empty <--PRESET-MANAGER
 17 7 0 10 #9898dc #000000 #000000;
 #X obj 196 152 bng 15 250 50 0 \$0-create-ahr! empty <--ATTACK-HOLD-RELEASE(ahr)
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 10 556 bng 15 250 50 0 \$0-create-trigger-seq! empty <--TRIGGER-SEQ
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 569 371 bng 15 250 50 0 \$0-create-1to4-switch! empty <--1TO4-SWITCH
+#X obj 569 391 bng 15 250 50 0 \$0-create-1to4-switch! empty <--1TO4-SWITCH
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 196 429 bng 15 250 50 0 \$0-create-mixer4! empty <--MIXER4(4-channel)
 17 7 0 10 #fcfcfc #000000 #000000;
@@ -471,19 +473,19 @@
 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 196 469 bng 15 250 50 0 \$0-create-maestro4! empty <--MAESTRO4(dac~)
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 570 628 bng 15 250 50 0 \$0-create-random-time-manager! empty
+#X obj 570 638 bng 15 250 50 0 \$0-create-random-time-manager! empty
 <--RANDOM-TIME-MANAGER 17 7 0 10 #9898dc #000000 #000000;
 #X obj 196 574 bng 15 250 50 0 \$0-create-midi-out! empty <--MIDI-OUT
 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 196 676 bng 15 250 50 0 \$0-create-organelle-output! empty <--ORGANELLE-OUTPUT
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 569 412 bng 15 250 50 0 \$0-create-audio-recorder! empty <--AUDIO-RECORDER
+#X obj 569 432 bng 15 250 50 0 \$0-create-audio-recorder! empty <--AUDIO-RECORDER
 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 10 396 bng 15 250 50 0 \$0-create-noise! empty <--NOISE 17 7
 0 10 #fcfcfc #000000 #000000;
 #X obj 10 416 bng 15 250 50 0 \$0-create-looper! empty <--LOOPER 17
 7 0 10 #90d4b0 #000000 #000000;
-#X obj 569 434 bng 15 250 50 0 \$0-create-multitrack-recorder! empty
+#X obj 569 454 bng 15 250 50 0 \$0-create-multitrack-recorder! empty
 <--MULTITRACK-RECORDER 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 383 408 bng 15 250 50 0 \$0-create-overdrive! empty <--OVERDRIVE
 17 7 0 10 #90d4b0 #000000 #000000;
@@ -491,7 +493,7 @@
 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 383 446 bng 15 250 50 0 \$0-create-megaverb! empty <--MEGAVERB
 17 7 0 10 #90d4b0 #000000 #000000;
-#X obj 569 455 bng 15 250 50 0 \$0-create-external-audio! empty <--EXTERNAL-AUDIO
+#X obj 569 475 bng 15 250 50 0 \$0-create-external-audio! empty <--EXTERNAL-AUDIO
 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 383 388 bng 15 250 50 0 \$0-create-chorus! empty <--CHORUS 17
 7 0 10 #fcfcfc #000000 #000000;
@@ -513,9 +515,9 @@
 17 7 0 10 #9898dc #000000 #000000;
 #X obj 196 290 cnv 15 180 15 empty empty VCA/MIXERS: 10 8 0 12 #9898dc
 #fcfcfc 0;
-#X obj 570 589 bng 15 250 50 0 \$0-create-param-nudge! empty <--PARAM-NUDGE
+#X obj 570 599 bng 15 250 50 0 \$0-create-param-nudge! empty <--PARAM-NUDGE
 17 7 0 10 #9898dc #000000 #000000;
-#X obj 570 609 bng 15 250 50 0 \$0-create-time-manager! empty <--TIME-MANAGER
+#X obj 570 619 bng 15 250 50 0 \$0-create-time-manager! empty <--TIME-MANAGER
 17 7 0 10 #9898dc #000000 #000000;
 #X obj 10 375 bng 15 250 50 0 \$0-create-percussion! empty <--PERCUSSION
 17 7 0 10 #9898dc #000000 #000000;
@@ -531,22 +533,26 @@
 17 7 0 10 #9898dc #000000 #000000;
 #X obj 383 583 bng 15 250 50 0 \$0-create-tremolo! empty <--TREMOLO
 17 7 0 10 #9898dc #000000 #000000;
-#X text 435 703 (New & updated modules for Automatonism v3.0 have PURPLE
+#X text 435 713 (New & updated modules for Automatonism v3.0 have PURPLE
 buttons);
-#X text 436 672 (New & updated modules for Automatonism v2.0 have GREEN
+#X text 436 682 (New & updated modules for Automatonism v2.0 have GREEN
 buttons);
-#X obj 569 497 bng 15 250 50 0 \$0-create-manual-toggle! empty <--MANUAL-TOGGLE
+#X obj 569 517 bng 15 250 50 0 \$0-create-manual-toggle! empty <--MANUAL-TOGGLE
 17 7 0 10 #90d4b0 #000000 #000000;
-#X obj 570 648 bng 15 250 50 0 \$0-create-macro-control! empty <--MACRO-CONTROL
+#X obj 570 658 bng 15 250 50 0 \$0-create-macro-control! empty <--MACRO-CONTROL
 17 7 0 10 #c4a0a0 #000000 #000000;
 #X obj 10 616 cnv 15 180 15 empty empty EXTRAS: 10 8 0 12 #9898dc #fcfcfc
 0;
 #X obj 10 637 bng 15 250 50 0 \$0-create-extra-sampler! empty <--SAMPLER
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 569 517 bng 15 250 50 0 \$0-create-playhead! empty <--PLAYHEAD(CAMOMILLE_VST)
+#X obj 569 537 bng 15 250 50 0 \$0-create-playhead! empty <--PLAYHEAD(CAMOMILLE_VST)
 17 7 0 10 #c4a0a0 #000000 #000000;
 #X obj 196 554 bng 15 250 50 0 \$0-create-midi-polyin! empty <--MIDI-POLY.IN
 17 7 0 10 #c4a0a0 #000000 #000000;
+#X obj 569 350 bng 15 250 50 0 \$0-create-euklid! empty <--EUKLID 17
+7 0 10 #c4a0a0 #000000 #000000;
+#X obj 709 113 bng 15 250 50 0 \$0-create-swing! empty <--SWING 17
+7 0 10 #c4a0a0 #000000 #000000;
 #X restore 204 249 pd \$0-modules;
 #X msg 38 178 vis 1;
 #X obj 38 203 s pd-\$0-signal-flow;
@@ -1193,7 +1199,7 @@ uncheck MAP_FROM (MAP_TO);
 #X connect 32 1 15 0;
 #X connect 32 2 24 0;
 #X connect 33 0 29 0;
-#X restore -65 262 pd stuff;
+#X restore 261 455 pd stuff;
 #X obj 263 318 r \$0-edit_mapping;
 #X msg 419 352 -1;
 #N canvas 0 22 450 300 CPU-load 0;
@@ -1459,7 +1465,7 @@ instances;
 #X text 312 146 TO;
 #X text 200 138 LEARN;
 #X text 204 122 MIDI;
-#N canvas 0 50 450 250 (subpatch) 0;
+#N canvas 0 0 450 250 (subpatch) 0;
 #X coords 0 1 100 -1 250 75 1 0 0;
 #X restore 100 100 graph;
 #X connect 1 0 0 0;

@@ -1,0 +1,16 @@
+#N canvas 0 22 623 435 10;
+#X obj 24 353 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc
+#fcfcfc 0;
+#X obj 21 136 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc
+#fcfcfc 0;
+#X obj 21 242 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc
+#fcfcfc 0;
+#X obj 20 17 cnv 15 400 30 empty empty CLOCK: 20 12 0 14 #90d4b0 #fcfcfc
+0;
+#X text 27 387 OUT - output;
+#X obj 436 24 swing;
+#X text 21 53 The "SWING" module introduces swing from an incoming
+clock;
+#X text 25 174 RATE - controls the swing-rate;
+#X text 25 278 CLK-IN - input clock;
+#X text 25 320 RATE - swing rate;

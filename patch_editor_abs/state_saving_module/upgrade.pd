@@ -6,7 +6,42 @@
 #X obj 470 168 list length;
 #X obj 470 193 - 3;
 #X obj 394 232 list split;
-#N canvas 0 50 450 300 \$0-sandbox 0;
+#N canvas 0 0 450 300 \$0-sandbox 1;
+#X obj 10 50 state_saving_module euklid \$0 \$1;
+#X obj 50 10 savestate;
+#N canvas 0 0 450 300 \$0-gui_listeners 0;
+#X obj 10 0 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127 sndart
+rcvart ACC.ROT. #fcfcfc #000000 #000000;
+#X obj 10 60 state_saving_module/tgl_dispatch euklid \$0 \$1 0 1 sndtgl
+rcvtgl ON symbol symbol symbol;
+#X obj 10 120 state_saving_module/hradio_dispatch euklid \$0 \$1 0
+7 sndspd rcvspd SPEED symbol symbol symbol;
+#X obj 10 180 state_saving_module/nbx_dispatch euklid \$0 \$1 0 3 sndartnmb
+rcvartnmb empty symbol symbol symbol;
+#X obj 10 240 state_saving_module/nbx_dispatch euklid \$0 \$1 0 3 sndaccnmb
+rcvaccnmb empty symbol symbol symbol;
+#X obj 10 300 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127
+sndacc rcvacc ACCENTS #fcfcfc #000000 #000000;
+#X obj 10 360 state_saving_module/nbx_dispatch euklid \$0 \$1 0 11
+sndrtenmb rcvrtenmb empty symbol symbol symbol;
+#X obj 10 420 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127
+sndrte rcvrte ROTATE #fcfcfc #000000 #000000;
+#X obj 10 480 state_saving_module/nbx_dispatch euklid \$0 \$1 0 11
+sndbtsnmb rcvbtsnmb empty symbol symbol symbol;
+#X obj 10 540 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127
+sndbts rcvbts BEATS #fcfcfc #000000 #000000;
+#X obj 10 600 state_saving_module/nbx_dispatch euklid \$0 \$1 1 32
+sndstpnmb rcvstpnmb empty symbol symbol symbol;
+#X obj 10 660 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127
+sndstp rcvstp STEPS #fcfcfc #000000 #000000;
+#X obj 10 720 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127
+numCV numCV-rcv CV-BEATS #9898dc #000000 #000000;
+#X obj 10 780 state_saving_module/hsl_dispatch euklid \$0 \$1 0 127
+lenCV lenCV-rcv CV-STEPS #9898dc #000000 #000000;
+#X restore 10 80 pd \$0-gui_listeners;
+#X connect 0 0 1 0;
+#X connect 1 0 0 0;
+#X connect 1 1 0 1;
 #X restore 722 32 pd \$0-sandbox;
 #X obj 497 719 s pd-\$0-sandbox;
 #X obj 384 269 list tosymbol;
@@ -115,10 +150,10 @@ bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj
 #X connect 34 1 35 0;
 #X connect 35 0 14 0;
 #X restore 250 503 pd create_widgets_dispatchers;
-#X obj 192 43 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 192 43 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 589 257 s \$0-name;
-#N canvas 0 50 868 778 create_widgets_list 0;
+#N canvas 0 0 868 778 create_widgets_list 0;
 #X obj 200 208 text define \$0-widgets;
 #X obj 178 301 delay 10;
 #X obj 187 13 inlet;

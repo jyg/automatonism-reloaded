@@ -1,0 +1,82 @@
+#N canvas 770 50 1039 598 10;
+#X obj 23 466 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc
+#fcfcfc 0;
+#X obj 20 134 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc
+#fcfcfc 0;
+#X obj 20 334 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc
+#fcfcfc 0;
+#X obj 20 17 cnv 15 400 30 empty empty EUKLID 20 12 0 14 #90d4b0 #fcfcfc
+0;
+#X obj 474 126 euklid;
+#N canvas 551 0 506 553 external_messages 0;
+#X obj 59 128 s euklid;
+#X obj 59 62 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X msg 59 90 STEPS \$1 0;
+#X text 36 62 0;
+#X text 198 64 127;
+#X obj 59 228 s euklid;
+#X obj 59 162 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 36 162 0;
+#X text 198 164 127;
+#X msg 59 190 BEATS \$1 0;
+#X obj 289 338 s euklid;
+#X obj 289 272 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 268 266 0;
+#X text 419 271 127;
+#X obj 71 335 s euklid;
+#X obj 71 269 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 48 266 0;
+#X text 201 268 127;
+#X msg 289 300 ROTATE \$1 0;
+#X msg 71 297 SPEED \$1 0;
+#X obj 62 441 s euklid;
+#X obj 62 375 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 39 375 0;
+#X text 201 377 127;
+#X obj 290 445 s euklid;
+#X obj 290 379 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 267 376 0;
+#X text 424 377 127;
+#X msg 62 403 ACCENTS \$1 0;
+#X msg 290 407 ACC.ROT. \$1 0;
+#X obj 71 488 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X msg 74 517 ON/OFF \$1 0;
+#X obj 74 540 s euklid;
+#X obj 288 127 s euklid;
+#X obj 288 61 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 265 61 0;
+#X text 427 63 127;
+#X obj 288 227 s euklid;
+#X obj 288 161 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 265 161 0;
+#X text 427 163 127;
+#X msg 288 89 CV-STEPS \$1 0;
+#X msg 288 189 CV-BEATS \$1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 6 0 9 0;
+#X connect 9 0 5 0;
+#X connect 11 0 18 0;
+#X connect 15 0 19 0;
+#X connect 18 0 10 0;
+#X connect 19 0 14 0;
+#X connect 21 0 28 0;
+#X connect 25 0 29 0;
+#X connect 28 0 20 0;
+#X connect 29 0 24 0;
+#X connect 30 0 31 0;
+#X connect 31 0 32 0;
+#X connect 34 0 41 0;
+#X connect 38 0 42 0;
+#X connect 41 0 33 0;
+#X connect 42 0 37 0;
+#X restore 511 432 pd external_messages;
