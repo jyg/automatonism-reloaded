@@ -10,16 +10,11 @@
 #X obj 1543 438 r \$0-numCV;
 #X text 1647 433 reset;
 #X msg 1651 591 0;
-#N canvas 495 23 585 337 credits 0;
-#X text 13 39 Patch by Nick Marcoux;
-#X text 13 95 https://nickmarcoux.bandcamp.com/;
-#X text 13 135 Euclidean algorithm used was found here:;
-#X text 13 155 https://forum.pdpatchrepo.info/topic/5968/euclidean-rhythm-abstraction
-;
-#X text 13 59 Youtube user pd_777: youtube.com/channel/UCYtaa7Qj4C4990yloa0_0jg
+#N canvas 495 23 551 88 credits 0;
+#X text 41 17 Credits : MikeMorenoDSP https://github.com/MikeMorenoDSP/mian-/tree/master/eucgui
 ;
 #X restore 1566 105 pd credits;
-#N canvas 982 0 958 1016 state-saving-multiple-instances 1;
+#N canvas 982 0 958 1016 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
 #X msg 620 443 rewind;
@@ -1648,89 +1643,89 @@ lenCV lenCV-rcv CV-STEPS #9898dc #000000 #000000;
 #X obj 447 451 hradio 15 1 0 8 \$0-sndspd \$0-rcvspd SPEED 125 8 0
 10 #fcfcfc #000000 #000000 0;
 #N canvas 0 0 958 1016 \$0-circle 0;
-#X obj 180 95 r 1921-tgl0;
-#X obj 196 97 r 1921-tgl1;
-#X obj 212 103 r 1921-tgl2;
-#X obj 226 112 r 1921-tgl3;
-#X obj 238 124 r 1921-tgl4;
-#X obj 247 138 r 1921-tgl5;
-#X obj 253 154 r 1921-tgl6;
-#X obj 255 170 r 1921-tgl7;
-#X obj 253 186 r 1921-tgl8;
-#X obj 247 202 r 1921-tgl9;
-#X obj 238 216 r 1921-tgl10;
-#X obj 226 228 r 1921-tgl11;
-#X obj 212 237 r 1921-tgl12;
-#X obj 196 243 r 1921-tgl13;
-#X obj 180 245 r 1921-tgl14;
-#X obj 164 243 r 1921-tgl15;
-#X obj 148 237 r 1921-tgl16;
-#X obj 134 228 r 1921-tgl17;
-#X obj 122 216 r 1921-tgl18;
-#X obj 113 202 r 1921-tgl19;
-#X obj 107 186 r 1921-tgl20;
-#X obj 105 170 r 1921-tgl21;
-#X obj 107 154 r 1921-tgl22;
-#X obj 113 138 r 1921-tgl23;
-#X obj 122 124 r 1921-tgl24;
-#X obj 134 112 r 1921-tgl25;
-#X obj 148 103 r 1921-tgl26;
-#X obj 164 97 r 1921-tgl27;
-#X obj 180 105 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 180 95 r 1289-tgl0;
+#X obj 196 97 r 1289-tgl1;
+#X obj 212 103 r 1289-tgl2;
+#X obj 226 112 r 1289-tgl3;
+#X obj 238 124 r 1289-tgl4;
+#X obj 247 138 r 1289-tgl5;
+#X obj 253 154 r 1289-tgl6;
+#X obj 255 170 r 1289-tgl7;
+#X obj 253 186 r 1289-tgl8;
+#X obj 247 202 r 1289-tgl9;
+#X obj 238 216 r 1289-tgl10;
+#X obj 226 228 r 1289-tgl11;
+#X obj 212 237 r 1289-tgl12;
+#X obj 196 243 r 1289-tgl13;
+#X obj 180 245 r 1289-tgl14;
+#X obj 164 243 r 1289-tgl15;
+#X obj 148 237 r 1289-tgl16;
+#X obj 134 228 r 1289-tgl17;
+#X obj 122 216 r 1289-tgl18;
+#X obj 113 202 r 1289-tgl19;
+#X obj 107 186 r 1289-tgl20;
+#X obj 105 170 r 1289-tgl21;
+#X obj 107 154 r 1289-tgl22;
+#X obj 113 138 r 1289-tgl23;
+#X obj 122 124 r 1289-tgl24;
+#X obj 134 112 r 1289-tgl25;
+#X obj 148 103 r 1289-tgl26;
+#X obj 164 97 r 1289-tgl27;
+#X obj 180 105 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 196 107 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 212 113 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 212 113 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 226 122 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 238 134 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 238 134 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 247 148 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 253 164 tgl 15 0 empty empty empty 17 7 0 10 #fcac44 #fcac44
+#X obj 253 164 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 255 180 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 255 180 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 253 196 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 247 212 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 247 212 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 238 226 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 226 238 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 226 238 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 212 247 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 196 253 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 196 253 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 180 255 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 180 255 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 164 253 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 148 247 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 148 247 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 134 238 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 122 226 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 122 226 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 113 212 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 107 196 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 107 196 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 105 180 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 105 180 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 107 164 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 113 148 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 113 148 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 122 134 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 134 122 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 134 122 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X obj 148 113 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
-#X obj 164 107 tgl 15 0 empty empty empty 17 7 0 10 #7c7c7c #7c7c7c
+#X obj 164 107 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #fcfcfc
 #000000 0 1;
 #X connect 0 0 28 0;
 #X connect 1 0 29 0;
@@ -1780,7 +1775,7 @@ lenCV lenCV-rcv CV-STEPS #9898dc #000000 #000000;
 #000000;
 #X obj 231 441 cnv 5 5 5 empty empty EUKLID 0 0 0 12 #fcfcfc #404040
 0;
-#X obj 281 441 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc
+#X obj 281 441 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc
 #404040 0;
 #X obj 200 631 cnv 5 5 5 empty empty BEAT 0 0 0 8 #fcfcfc #404040 0
 ;
@@ -1799,10 +1794,10 @@ lenCV lenCV-rcv CV-STEPS #9898dc #000000 #000000;
 0 -8 0 12 #fcfcfc #000000 #000000 0 256;
 #X obj 518 542 nbx 2 14 0 28 0 0 \$0-sndrtenmb \$0-rcvrtenmb empty
 0 -8 0 12 #fcfcfc #000000 #000000 0 256;
-#X obj 518 566 nbx 2 14 0 16 0 0 \$0-sndaccnmb \$0-rcvaccnmb empty
-0 -8 0 12 #fcfcfc #000000 #000000 0 256;
-#X obj 518 606 nbx 2 14 0 16 0 0 \$0-sndartnmb \$0-rcvartnmb empty
-0 -8 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 518 566 nbx 2 14 0 0 0 0 \$0-sndaccnmb \$0-rcvaccnmb empty 0
+-8 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 518 606 nbx 2 14 0 0 0 0 \$0-sndartnmb \$0-rcvartnmb empty 0
+-8 0 12 #fcfcfc #000000 #000000 0 256;
 #X obj 1651 460 inlet~ fwd;
 #X obj 1716 496 route bang;
 #X obj 835 737 / 1;

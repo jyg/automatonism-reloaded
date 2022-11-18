@@ -1,0 +1,25 @@
+#N canvas 161 234 668 433 10;
+#X obj 18 345 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 17 136 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
+-262144 0;
+#X obj 18 246 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
+-262144 0;
+#X obj 17 13 cnv 15 400 30 empty empty FREEVERB: 20 12 0 14 -150893
+-262144 0;
+#X text 17 380 LEFT - left output;
+#X text 17 398 RIGHT - right output;
+#X text 17 178 SIZE - controls size of the room;
+#X text 17 200 DAMPING - controls the dampening of the room;
+#X obj 442 12 freeverb 0;
+#X text 18 221 MIX - controls the balance between dry and wet signal
+;
+#X text 16 281 IN-L - signal in-LEFT;
+#X text 16 316 DAMP -input for cv-control over the DAMP parameter;
+#X text 16 298 IN-R - signal in-RIGHT;
+#X text 17 49 The "FREEVERB" reverb is a more recently developed Schroeder
+reverberator - a public domain C++ program by ``Jezar at Dreampoint''
+It uses four Schroeder allpasses in series and eight parallel Schroeder-Moorer
+filtered-feedback comb-filters (§2.6.5) for each audio channel \,
+and is said to be especially well tuned. Freeverb implemented with
+Pd vanilla objects by Katja Vetter May 2012, f 66;

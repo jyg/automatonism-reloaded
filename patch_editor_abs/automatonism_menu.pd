@@ -1,5 +1,6 @@
-#N canvas 758 58 958 1018 12;
+#N canvas 0 32 1920 994 12;
 #X declare -path state_saving_module;
+#X declare -lib iemguts;
 #N canvas 0 0 450 300 DSP 0;
 #X obj 41 62 inlet;
 #X msg 41 85 dsp \$1;
@@ -11,17 +12,17 @@
 #X restore 126 344 pd DSP;
 #X obj 126 313 tgl 15 1 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 1 1;
-#X obj 102 180 bng 15 250 50 0 \$0-open-quick-guide! empty <--QUICK-GUIDE
+#X obj 102 190 bng 15 250 50 0 \$0-open-quick-guide! empty <--QUICK-GUIDE
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 212 180 bng 15 250 50 0 \$0-open-manual! empty <--MANUAL 17
+#X obj 212 190 bng 15 250 50 0 \$0-open-manual! empty <--MANUAL 17
 7 0 10 #fcfcfc #000000 #000000;
-#X obj 102 219 bng 15 250 50 0 \$0-open-modules! empty <--MODULES 17
+#X obj 102 229 bng 15 250 50 0 \$0-open-modules! empty <--MODULES 17
 7 0 10 #fcfcfc #000000 #000000;
-#X obj 102 200 bng 15 250 50 0 \$0-open-external-msg! empty <--ABOUT_EXTERNAL-MESSAGES
+#X obj 102 210 bng 15 250 50 0 \$0-open-external-msg! empty <--ABOUT_EXTERNAL-MESSAGES
 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 102 242 bng 15 250 50 0 \$0-save-s \$0-save-r <--SAVE!(enter)
+#X obj 102 252 bng 15 250 50 0 \$0-save-s \$0-save-r <--SAVE!(enter)
 17 7 0 10 #fcfcfc #00fc04 #000000;
-#X obj 212 242 bng 15 250 50 0 \$0-open-reset-warning! empty <--RESET!
+#X obj 212 252 bng 15 250 50 0 \$0-open-reset-warning! empty <--RESET!
 17 7 0 10 #fcfcfc #000000 #000000;
 #X text 372 42 AUTOMATONISM;
 #N canvas 0 0 723 566 modes 0;
@@ -48,17 +49,23 @@
 #X obj 326 252 route 1 3 2;
 #X obj 163 173 select;
 #X obj 272 464 select 0 1;
-#X obj 263 530 s \$0-midi_learn_cnv;
 #X msg 263 505 color 4 4;
 #X msg 342 503 color 13 13;
 #X obj 462 464 select 0 1;
 #X obj 642 464 select 0 1;
-#X obj 453 530 s \$0-midi_map_to_cnv;
-#X obj 633 530 s \$0-midi_map_from_cnv;
 #X msg 712 503 color 16 16;
 #X msg 633 505 color 6 6;
 #X msg 453 505 color 7 7;
 #X msg 532 503 color 17 17;
+#X obj 263 530 s \$0-midi_learn-rcv;
+#X obj 453 530 s \$0-midi_map_to-rcv;
+#X obj 633 530 s \$0-midi_map_from-rcv;
+#X obj 324 54 r \$0-midi_learn;
+#X msg 464 80 2;
+#X msg 592 81 3;
+#X msg 324 79 1;
+#X obj 464 55 r \$0-midi_map_from;
+#X obj 550 17 r \$0-midi_map_to;
 #X connect 0 0 3 0;
 #X connect 1 0 5 1;
 #X connect 2 0 5 0;
@@ -75,9 +82,9 @@
 #X connect 14 0 8 0;
 #X connect 14 1 22 0;
 #X connect 15 0 6 0;
-#X connect 15 1 26 0;
+#X connect 15 1 25 0;
 #X connect 16 0 7 0;
-#X connect 16 1 27 0;
+#X connect 16 1 26 0;
 #X connect 17 0 9 0;
 #X connect 18 0 2 0;
 #X connect 18 1 17 0;
@@ -91,20 +98,26 @@
 #X connect 20 2 16 0;
 #X connect 21 0 5 0;
 #X connect 21 1 18 0;
-#X connect 22 0 24 0;
-#X connect 22 1 25 0;
-#X connect 24 0 23 0;
-#X connect 25 0 23 0;
-#X connect 26 0 32 0;
-#X connect 26 1 33 0;
-#X connect 27 0 31 0;
-#X connect 27 1 30 0;
-#X connect 30 0 29 0;
-#X connect 31 0 29 0;
-#X connect 32 0 28 0;
-#X connect 33 0 28 0;
+#X connect 22 0 23 0;
+#X connect 22 1 24 0;
+#X connect 23 0 31 0;
+#X connect 24 0 31 0;
+#X connect 25 0 29 0;
+#X connect 25 1 30 0;
+#X connect 26 0 28 0;
+#X connect 26 1 27 0;
+#X connect 27 0 33 0;
+#X connect 28 0 33 0;
+#X connect 29 0 32 0;
+#X connect 30 0 32 0;
+#X connect 34 0 37 0;
+#X connect 35 0 19 0;
+#X connect 36 0 19 0;
+#X connect 37 0 19 0;
+#X connect 38 0 35 0;
+#X connect 39 0 36 0;
 #X restore 263 389 pd modes;
-#X obj 419 322 r MIDI_LEARN_OK;
+#X obj 262 325 r MIDI_LEARN_OK;
 #N canvas 0 0 1217 770 midi_in 0;
 #X obj 87 100 r MIDI_LEARN;
 #X msg 88 170 -1;
@@ -188,11 +201,11 @@
 #X connect 36 0 22 0;
 #X connect 37 0 32 0;
 #X restore 264 419 pd midi_in;
-#X obj 187 218 tgl 15 1 \$0-esc-active \$0-esc-active-rcv ESC 17 7
+#X obj 187 228 tgl 15 1 \$0-esc-active \$0-esc-active-rcv ESC 17 7
 0 10 #fcfcfc #000000 #000000 1 1;
-#X obj 521 116 declare -path state_saving_module;
-#X obj 521 173 s AUTOMATONISM_LOADED;
-#X obj 522 144 loadbang;
+#X obj 663 87 declare -path state_saving_module;
+#X obj 663 144 s AUTOMATONISM_LOADED;
+#X obj 664 115 loadbang;
 #N canvas 197 436 707 551 stuff 0;
 #X msg 26 128 \; pd dsp 0;
 #X obj 24 16 loadbang;
@@ -1200,8 +1213,7 @@ uncheck MAP_FROM (MAP_TO);
 #X connect 32 2 24 0;
 #X connect 33 0 29 0;
 #X restore 261 455 pd stuff;
-#X obj 263 318 r \$0-edit_mapping;
-#X msg 419 352 -1;
+#X msg 262 355 -1;
 #N canvas 0 22 450 300 CPU-load 0;
 #X floatatom 118 256 0 0 0 0 - - - 0;
 #X obj 118 168 cputime;
@@ -1229,17 +1241,17 @@ uncheck MAP_FROM (MAP_TO);
 #X obj 587 427 symbol \$0-callback;
 #X obj 597 538 r \$0-callback;
 #X obj 597 563 text insert \$0-midi_mapping;
-#X obj 297 233 bng 15 250 50 0 empty empty view 17 7 0 10 #fcfcfc #000000
+#X obj 297 243 bng 15 250 50 0 empty empty view 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 593 320 t b b;
 #X msg 644 349 clear \, click;
 #X obj 589 496 s MIDI_MAP_SETTINGS;
 #X msg 587 461 getinfo symbol \$1;
-#X obj 298 251 bng 8 250 50 0 empty empty clear! 13 3 0 10 #fc0400
+#X obj 298 261 bng 8 250 50 0 empty empty clear! 13 3 0 10 #fc0400
 #000000 #000000;
 #X obj 403 502 s MIDI_MAP_SETTINGS;
 #X msg 403 473 clear;
-#X obj 290 212 cnv 15 60 20 empty \$0-midi_in empty 1 12 0 10 #fce0c4
+#X obj 290 222 cnv 15 60 20 empty \$0-midi_in empty 1 12 0 10 #fce0c4
 #404040 0;
 #X obj 129 816 r playhead;
 #X obj 128 869 r midiin;
@@ -1250,8 +1262,8 @@ uncheck MAP_FROM (MAP_TO);
 #X msg 41 471 6 6 6;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X coords 0 1 100 -1 60 60 1 0 0;
-#X restore 290 200 graph;
-#X text 293 198 midimap;
+#X restore 290 210 graph;
+#X text 293 208 midimap;
 #X obj 300 678 s STOP-MORPH!;
 #X obj 298 620 r MIDI_LEARN;
 #X obj 298 645 select 1;
@@ -1312,7 +1324,7 @@ uncheck MAP_FROM (MAP_TO);
 #X obj 713 181 iemguts/receivecanvas 1;
 #X obj 714 280 s ACTIVE_DOLLARZERO;
 #X obj 715 245 f \$1;
-#X obj 523 86 namecanvas \$0-tshis;
+#X obj 665 57 namecanvas \$0-tshis;
 #N canvas 0 50 564 770 camomile_plugin_support 0;
 #N canvas 0 50 450 300 param.change 0;
 #X obj 55 43 r gui;
@@ -1441,8 +1453,8 @@ instances;
 #X connect 32 0 18 0;
 #X restore 554 715 pd camomile_plugin_support;
 #X text 465 41 [RELOADED];
-#X text 101 221 __________________________;
-#X obj 101 101 cnv 15 248 75 empty empty empty 20 12 0 14 #f0f0f0 #404040
+#X text 101 231 __________________________;
+#X obj 101 101 cnv 15 248 85 empty empty empty 20 12 0 14 #f0f0f0 #404040
 0;
 #X obj 104 110 cnv 5 5 5 empty empty AUTOMATONISM 0 0 0 14 #fcfcfc
 #404040 0;
@@ -1451,42 +1463,34 @@ instances;
 #X floatatom 111 151 5 0 0 1 - \$0-CPU - 0;
 #X text 124 134 CPU;
 #X text 112 134 %;
-#X obj 199 121 hradio 50 1 0 3 \$0-edit_mapping empty empty 0 -8 0
-10 #fcfcfc #000000 #000000 0;
-#X obj 198 120 cnv 50 50 50 empty \$0-midi_learn_cnv empty 20 12 0
-14 #fce0c0 #404040 0;
-#X obj 299 120 cnv 50 50 50 empty \$0-midi_map_to_cnv empty 20 12 0
-14 #d8fcfc #404040 0;
-#X obj 249 120 cnv 50 50 50 empty \$0-midi_map_from_cnv empty 20 12
-0 14 #d8fcd8 #404040 0;
-#X text 257 124 MAP;
-#X text 253 143 FROM;
-#X text 311 129 MAP;
-#X text 312 146 TO;
-#X text 200 138 LEARN;
-#X text 204 122 MIDI;
-#N canvas 0 0 450 250 (subpatch) 0;
-#X coords 0 1 100 -1 250 75 1 0 0;
-#X restore 100 100 graph;
+#X obj 712 18 declare -lib iemguts;
+#X obj 197 133 bng 50 250 50 0 \$0-midi_learn \$0-midi_learn-rcv LEARN
+5 15 0 14 #fce0c0 #fce0c0 #000000;
+#X obj 247 133 bng 50 250 50 0 \$0-midi_map_from \$0-midi_map_from-rcv
+FROM 10 15 0 14 #d8fcd8 #d8fcd8 #000000;
+#X obj 297 133 bng 50 250 50 0 \$0-midi_map_to \$0-midi_map_to-rcv
+TO 15 15 0 14 #d8fcfc #d8fcfc #000000;
+#X text 205 114 MIDI;
+#X text 259 114 MAP;
+#X text 305 114 MAP;
 #X connect 1 0 0 0;
-#X connect 10 0 18 0;
+#X connect 10 0 17 0;
 #X connect 15 0 14 0;
 #X connect 17 0 9 0;
-#X connect 18 0 9 0;
-#X connect 21 0 28 0;
-#X connect 22 0 23 0;
-#X connect 24 0 25 0;
-#X connect 25 0 21 0;
-#X connect 25 1 26 0;
-#X connect 26 0 20 0;
-#X connect 28 0 27 0;
-#X connect 29 0 31 0;
-#X connect 31 0 30 0;
-#X connect 36 0 37 0;
-#X connect 39 0 38 0;
-#X connect 43 0 44 0;
-#X connect 44 0 42 0;
-#X connect 47 0 50 0;
-#X connect 48 0 47 0;
-#X connect 50 0 49 0;
-#X coords 0 -1 1 1 250 160 2 100 100;
+#X connect 20 0 27 0;
+#X connect 21 0 22 0;
+#X connect 23 0 24 0;
+#X connect 24 0 20 0;
+#X connect 24 1 25 0;
+#X connect 25 0 19 0;
+#X connect 27 0 26 0;
+#X connect 28 0 30 0;
+#X connect 30 0 29 0;
+#X connect 35 0 36 0;
+#X connect 38 0 37 0;
+#X connect 42 0 43 0;
+#X connect 43 0 41 0;
+#X connect 46 0 49 0;
+#X connect 47 0 46 0;
+#X connect 49 0 48 0;
+#X coords 0 -1 1 1 250 170 2 100 100;

@@ -25,8 +25,8 @@
 #X obj 153 483 list prepend \$3;
 #X obj 138 568 s;
 #X msg 153 508 symbol \$1-\$2-loadbang;
-#X obj 311 179 sendcanvas 4 \$2;
-#X obj 113 366 sendcanvas 4 \$2;
+#X obj 311 179 iemguts/sendcanvas 4 \$2;
+#X obj 113 366 iemguts/sendcanvas 4 \$2;
 #X connect 0 0 1 0;
 #X connect 0 0 3 0;
 #X connect 1 0 6 0;
