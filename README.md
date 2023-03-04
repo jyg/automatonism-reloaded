@@ -104,6 +104,7 @@ This will enable patch-level state-saving support with new savestate object.
 
 ### step 3 : integrate your module into automatonism_menu
 Let's update the automatonism "modules" menu entries.  
+(here we assume that your module's name is "my_module".
 * First, open an automatonism patch, and search for extra-modules subpatch (using pd find menu).
 * Inside the [pd extra-modules] subpatch, add an object [module_create $0 $1 my_module] , save and close the window
 
