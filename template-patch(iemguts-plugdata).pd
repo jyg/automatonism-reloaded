@@ -1,0 +1,8 @@
+#N canvas 343 468 845 543 12;
+#X text 189 1 AUTOMATONISM - RELOADED!;
+#X text 21 45 if you have installed external lib iemguts;
+#X text 101 66 OR;
+#X obj 343 167;
+#X text 49 166 simply type "automatonism" in this box ->;
+#X text 21 95 if you are using plugdata \,;
+#X text 26 130 to create a new automatonism patch :;

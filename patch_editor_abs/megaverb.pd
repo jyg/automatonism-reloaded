@@ -1,8 +1,7 @@
 #N canvas 0 23 1168 751 10;
 #X obj 787 552 line~;
 #X obj 734 347 pack 0 50;
-#X obj 109 176 hsl 128 15 0 127 0 1 \$0-megaverb-dry/wet-s \$0-megaverb-dry/wet-r
-DRY/WET 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 176 hsl 128 15 0 127 0 1 \$0-megaverb-dry/wet-s \$0-megaverb-dry/wet-r DRY/WET 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 787 457 r \$0-megaverb-dry/wet-s;
 #X obj 787 479 / 127;
 #X obj 787 526 pack 0 50;
@@ -14,13 +13,11 @@ DRY/WET 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 1005 602 / 127;
 #X obj 1005 624 pack 0 50;
 #X obj 1005 646 line~;
-#X obj 109 132 hsl 128 15 0 127 0 1 \$0-megaverb-room-s \$0-megaverb-room-r
-SIZE 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 132 hsl 128 15 0 127 0 1 \$0-megaverb-room-s \$0-megaverb-room-r SIZE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 538 113 r \$0-megaverb-room-s;
 #X obj 538 135 / 127;
 #X obj 734 369 line~;
-#X obj 109 146 hsl 128 15 0 127 0 1 \$0-megaverb-damping-s \$0-megaverb-damping-r
-DAMPING 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 146 hsl 128 15 0 127 0 1 \$0-megaverb-damping-s \$0-megaverb-damping-r DAMPING 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 735 285 / 127;
 #X obj 735 262 r \$0-megaverb-damping-s;
 #X obj 734 391 +~;
@@ -128,8 +125,7 @@ DAMPING 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 787 503 * 0.1;
 #X obj 538 188 * 0.25;
 #X obj 538 236 clip 0.25 0.49;
-#X obj 109 161 hsl 128 15 0 127 0 1 \$0-megaverb-lowpass-s \$0-megaverb-lowpass-r
-LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 161 hsl 128 15 0 127 0 1 \$0-megaverb-lowpass-s \$0-megaverb-lowpass-r LOWPASS 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 951 702 / 127;
 #X obj 951 768 + 50;
 #X obj 951 790 pack 0 50;
@@ -149,27 +145,22 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 1011 257 snapshot~;
 #X obj 1011 279 t b f;
 #X obj 1069 292 env~;
-#X floatatom 1069 336 5 0 0 0 - - -;
+#X floatatom 1069 336 5 0 0 0 - - - 0;
 #X obj 1069 314 > 0;
 #X obj 1069 355 sel 1;
 #X msg 1069 377 0;
-#X obj 1072 194 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+#X obj 1072 194 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 1072 214 metro 10;
 #X obj 1072 167 loadbang;
-#X floatatom 1008 715 5 0 0 0 - - -;
-#X floatatom 663 383 5 0 0 0 - - -;
+#X floatatom 1008 715 5 0 0 0 - - - 0;
+#X floatatom 663 383 5 0 0 0 - - - 0;
 #X obj 734 430 clip~ 0 0.75;
 #X obj 735 307 * 0.75;
-#X obj 190 110 cnv 5 5 5 empty empty SIZE 0 0 0 8 -262144 -66577 0
-;
-#X obj 105 125 cnv 5 5 5 empty empty MEGAVERB 0 0 0 12 -262144 -66577
-0;
-#X obj 104 111 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -66577 0;
-#X obj 168 125 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 273 111 cnv 5 5 5 empty empty LPASS 0 0 0 8 -262144 -66577 0
-;
+#X obj 190 110 cnv 5 5 5 empty empty SIZE 0 0 0 8 #fcfcfc #404040 0;
+#X obj 105 125 cnv 5 5 5 empty empty MEGAVERB 0 0 0 12 #fcfcfc #404040 0;
+#X obj 104 111 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #404040 0;
+#X obj 168 125 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 273 111 cnv 5 5 5 empty empty LPASS 0 0 0 8 #fcfcfc #404040 0;
 #N canvas 100 22 593 735 state-saving-multiple-instances 0;
 #X obj 164 26 loadbang;
 #X obj 210 479 state_saving_module/textfile \$0;
@@ -186,8 +177,7 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 191 200 t f f f;
 #X obj 191 164 f \$1;
 #X obj 164 59 t b b;
-#X obj 27 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 27 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 27 234 r SAVE-S;
 #X msg 88 436 set \$1 \$2 \$3 \$4;
 #X obj 88 398 pack f f f f;
@@ -287,9 +277,9 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -323,9 +313,9 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -359,9 +349,9 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -395,9 +385,9 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -651,10 +641,9 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 701 809 *~ 1;
 #X obj 770 810 *~ 1;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -665,21 +654,21 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
-#X floatatom 223 594 5 0 0 0 - - -;
+#X floatatom 223 594 5 0 0 0 - - - 0;
 #X obj 223 573 f;
 #X obj 223 521 t b f;
 #X obj 223 544 spigot;
 #X obj 271 528 r \$0-msg-spigot;
-#X floatatom 387 639 5 0 0 0 - - -;
+#X floatatom 387 639 5 0 0 0 - - - 0;
 #X obj 387 618 f;
 #X obj 387 566 t b f;
 #X obj 387 589 spigot;
 #X obj 435 573 r \$0-msg-spigot;
-#X floatatom 424 527 5 0 0 0 - - -;
+#X floatatom 424 527 5 0 0 0 - - - 0;
 #X obj 424 506 f;
 #X obj 424 454 t b f;
 #X obj 424 477 spigot;
@@ -737,19 +726,13 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module megaverb \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127
-megaverb-lowpass-s megaverb-lowpass-r LOWPASS #FFFFFF #000000 #000000
-;
-#X obj 10 60 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127
-megaverb-damping-s megaverb-damping-r DAMPING #FFFFFF #000000 #000000
-;
-#X obj 10 120 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127
-megaverb-room-s megaverb-room-r SIZE #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127
-megaverb-dry/wet-s megaverb-dry/wet-r DRY/WET #FFFFFF #000000 #000000
-;
+#X obj 10 0 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127 megaverb-lowpass-s megaverb-lowpass-r LOWPASS #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127 megaverb-damping-s megaverb-damping-r DAMPING #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127 megaverb-room-s megaverb-room-r SIZE #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch megaverb \$0 \$1 0 127 megaverb-dry/wet-s megaverb-dry/wet-r DRY/WET #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 951 672 r \$0-megaverb-lowpass-s;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 60 0;
 #X connect 1 0 17 0;
 #X connect 3 0 4 0;

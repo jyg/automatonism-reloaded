@@ -13,9 +13,8 @@
 #X obj 898 218 / 127;
 #X obj 883 309 *~ 2000;
 #X obj 106 380 +~;
-#X obj 109 131 hsl 128 15 0 127 0 1 \$0-trisaw-pitch-s \$0-trisaw-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 0 1;
-#X floatatom 207 117 5 0 0 0 - - -;
+#X obj 109 131 hsl 128 15 0 127 0 1 \$0-trisaw-pitch-s \$0-trisaw-pitch-r PITCH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X floatatom 207 117 5 0 0 0 - - - 0;
 #X obj 106 506 *~;
 #X obj 280 417 *~;
 #X obj 295 303 / 127;
@@ -52,27 +51,19 @@ PITCH 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 641 588 *~ -1;
 #X obj 106 711 -~ 0.5;
 #X obj 640 703 clip~ -1 1;
-#X obj 208 109 cnv 5 5 5 empty empty HARM. 0 0 0 8 -262144 -66577 0
-;
-#X obj 262 109 cnv 5 5 5 empty empty FM 0 0 0 8 -262144 -120682 0;
-#X obj 105 123 cnv 5 5 5 empty empty TRIGONS 0 0 0 12 -262144 -66577
-0;
-#X obj 160 123 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 109 146 hsl 128 15 0 127 0 1 \$0-trisaw-xfade-s \$0-trisaw-xfade-r
-WAVE 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 208 109 cnv 5 5 5 empty empty HARM. 0 0 0 8 #fcfcfc #404040 0;
+#X obj 262 109 cnv 5 5 5 empty empty FM 0 0 0 8 #fcfcfc #7474a4 0;
+#X obj 105 123 cnv 5 5 5 empty empty TRIGONS 0 0 0 12 #fcfcfc #404040 0;
+#X obj 160 123 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 109 146 hsl 128 15 0 127 0 1 \$0-trisaw-xfade-s \$0-trisaw-xfade-r WAVE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 295 282 r \$0-trisaw-xfade-s;
-#X obj 109 161 hsl 128 15 0 127 0 1 \$0-trisaw-harmonics-s \$0-trisaw-harmonics-r
-HARM. 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 161 hsl 128 15 0 127 0 1 \$0-trisaw-harmonics-s \$0-trisaw-harmonics-r HARM. 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 356 513 r \$0-trisaw-harmonics-s;
 #X obj 640 725 outlet~;
 #X obj 641 542 inlet~ HARMONICS;
-#X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
-;
-#X obj 155 109 cnv 5 5 5 empty empty WAVE 0 0 0 8 -262144 -66577 0
-;
-#X obj 109 175 hsl 128 15 0 127 0 1 \$0-trisaw-fm-att-s \$0-trisaw-fm-att-r
-FM 133 7 0 10 -158136 -1 -1 0 1;
+#X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
+#X obj 155 109 cnv 5 5 5 empty empty WAVE 0 0 0 8 #fcfcfc #404040 0;
+#X obj 109 175 hsl 128 15 0 127 0 1 \$0-trisaw-fm-att-s \$0-trisaw-fm-att-r FM 133 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 898 181 r \$0-trisaw-fm-att-s;
 #X obj 744 503 loadbang;
 #X obj 744 525 f \$0;
@@ -109,8 +100,7 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X text 267 237 INSTANCE NUMBER;
 #X obj 232 152 f \$1;
 #X obj 232 188 t f f f;
-#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 48 274 r SAVE-S;
 #X obj 125 309 r \$0-trisaw-pitch-s;
 #X obj 251 617 s \$0-trisaw-pitch-r;
@@ -211,9 +201,9 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -246,9 +236,9 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -282,9 +272,9 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -318,9 +308,9 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -389,12 +379,8 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X connect 40 0 37 0;
 #X connect 41 0 35 0;
 #X restore 317 55 pd state-saving-via-preset-manager-module;
-#X msg 836 449 \; \$1-triangle sinesum 512 1 0 -0.111111 0 0.04 0 -0.0204082
-0 0.0123457 0 -0.00826446;
-#X msg 771 583 \; \$1-saw sinesum 512 1 0.5 0.33 0.25 0.2 0.16 0.14
-0.125 0.111111 0.1 0.090909 0.083333 0.076923 0.0714285 0.066666 0.0625
-0.058823 0.055555 0.052631 0.05 0.047619 0.045454 0.043478 0.041666
-;
+#X msg 836 449 \; \$1-triangle sinesum 512 1 0 -0.111111 0 0.04 0 -0.0204082 0 0.0123457 0 -0.00826446;
+#X msg 771 583 \; \$1-saw sinesum 512 1 0.5 0.33 0.25 0.2 0.16 0.14 0.125 0.111111 0.1 0.090909 0.083333 0.076923 0.0714285 0.066666 0.0625 0.058823 0.055555 0.052631 0.05 0.047619 0.045454 0.043478 0.041666;
 #N canvas 297 27 918 449 parameter-nudging-system 0;
 #X obj 21 178 clip 0 127;
 #X obj 23 67 clip 0 127;
@@ -586,10 +572,9 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 544 545 clip~ 0 2;
 #X obj 640 672 *~;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -600,21 +585,21 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
-#X floatatom 223 594 5 0 0 0 - - -;
+#X floatatom 223 594 5 0 0 0 - - - 0;
 #X obj 223 573 f;
 #X obj 223 521 t b f;
 #X obj 223 544 spigot;
 #X obj 271 528 r \$0-msg-spigot;
-#X floatatom 387 639 5 0 0 0 - - -;
+#X floatatom 387 639 5 0 0 0 - - - 0;
 #X obj 387 618 f;
 #X obj 387 566 t b f;
 #X obj 387 589 spigot;
 #X obj 435 573 r \$0-msg-spigot;
-#X floatatom 424 527 5 0 0 0 - - -;
+#X floatatom 424 527 5 0 0 0 - - - 0;
 #X obj 424 506 f;
 #X obj 424 454 t b f;
 #X obj 424 477 spigot;
@@ -672,17 +657,13 @@ FM 133 7 0 10 -158136 -1 -1 0 1;
 #X obj 10 50 state_saving_module trigons \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127
-trisaw-fm-att-s trisaw-fm-att-r FM #9999DE #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127
-trisaw-harmonics-s trisaw-harmonics-r HARM. #FFFFFF #000000 #000000
-;
-#X obj 10 120 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127
-trisaw-xfade-s trisaw-xfade-r WAVE #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127
-trisaw-pitch-s trisaw-pitch-r PITCH #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127 trisaw-fm-att-s trisaw-fm-att-r FM #9999DE #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127 trisaw-harmonics-s trisaw-harmonics-r HARM. #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127 trisaw-xfade-s trisaw-xfade-r WAVE #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch trigons \$0 \$1 0 127 trisaw-pitch-s trisaw-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 106 229 r \$0-trisaw-pitch-s;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 2 0 1 1;

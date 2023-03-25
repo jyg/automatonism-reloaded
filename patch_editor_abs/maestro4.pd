@@ -1,41 +1,24 @@
 #N canvas 0 40 1261 713 10;
-#X obj 107 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan1-s \$0-maestro4-pan1-r
-PAN1 0 25 0 10 -262144 -1 -1 0 1;
-#X obj 104 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch1-s \$0-maestro4-ch1-r
-CH1 -1 -9 0 10 -262144 -1 -1 6000 1;
-#X obj 123 155 vu 15 80 \$0-maestro4-ch1-meter-r empty -1 -8 0 10 -66577
--1 0 0;
-#X obj 152 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan2-s \$0-maestro4-pan2-r
-PAN2 0 25 0 10 -262144 -1 -1 2900 1;
-#X obj 149 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch2-s \$0-maestro4-ch2-r
-CH2 -1 -9 0 10 -262144 -1 -1 6400 1;
-#X obj 168 155 vu 15 80 \$0-maestro4-ch2-meter-r empty -1 -8 0 10 -66577
--1 0 0;
-#X obj 197 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan3-s \$0-maestro4-pan3-r
-PAN3 0 25 0 10 -262144 -1 -1 0 1;
-#X obj 194 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch3-s \$0-maestro4-ch3-r
-CH3 -1 -9 0 10 -262144 -1 -1 0 1;
-#X obj 213 155 vu 15 80 \$0-maestro4-ch3-meter-r empty -1 -8 0 10 -66577
--1 0 0;
-#X obj 242 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan4-s \$0-maestro4-pan4-r
-PAN4 0 25 0 10 -262144 -1 -1 0 1;
-#X obj 239 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch4-s \$0-maestro4-ch4-r
-CH4 -1 -9 0 10 -262144 -1 -1 0 1;
-#X obj 258 155 vu 15 80 \$0-maestro4-ch4-meter-r empty -1 -8 0 10 -66577
--1 0 0;
-#X obj 309 155 vu 15 80 \$0-maestro4-meter-left-r empty -1 -8 0 10
--66577 -1 0 0;
-#X obj 327 155 vu 15 80 \$0-maestro4-meter-right-r empty -1 -8 0 10
--66577 -1 0 0;
-#X obj 277 155 vsl 30 79 1.27 127 1 1 \$0-maestro4-master-s \$0-maestro4-master-r
-MASTER 0 -8 0 10 -262144 -1 -1 6000 1;
-#X obj 104 131 cnv 5 5 5 empty empty MAESTRO4 0 0 0 12 -262144 -66577
-0;
-#X obj 166 109 cnv 5 5 5 empty empty CH2 0 0 0 8 -262144 -66577 0;
-#X obj 104 109 cnv 5 5 5 empty empty CH1 0 0 0 8 -262144 -66577 0;
-#X obj 234 109 cnv 5 5 5 empty empty CH3 0 0 0 8 -262144 -66577 0;
-#X obj 166 131 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
+#X obj 107 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan1-s \$0-maestro4-pan1-r PAN1 0 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 104 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch1-s \$0-maestro4-ch1-r CH1 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 123 155 vu 15 80 \$0-maestro4-ch1-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 152 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan2-s \$0-maestro4-pan2-r PAN2 0 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 149 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch2-s \$0-maestro4-ch2-r CH2 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 168 155 vu 15 80 \$0-maestro4-ch2-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 197 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan3-s \$0-maestro4-pan3-r PAN3 0 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 194 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch3-s \$0-maestro4-ch3-r CH3 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 213 155 vu 15 80 \$0-maestro4-ch3-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 242 238 hsl 30 15 0 127 0 1 \$0-maestro4-pan4-s \$0-maestro4-pan4-r PAN4 0 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 239 155 vsl 17 80 1.27 127 1 1 \$0-maestro4-ch4-s \$0-maestro4-ch4-r CH4 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 258 155 vu 15 80 \$0-maestro4-ch4-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 309 155 vu 15 80 \$0-maestro4-meter-left-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 327 155 vu 15 80 \$0-maestro4-meter-right-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 277 155 vsl 30 79 1.27 127 1 1 \$0-maestro4-master-s \$0-maestro4-master-r MASTER 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 104 131 cnv 5 5 5 empty empty MAESTRO4 0 0 0 12 #fcfcfc #404040 0;
+#X obj 166 109 cnv 5 5 5 empty empty CH2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 104 109 cnv 5 5 5 empty empty CH1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 234 109 cnv 5 5 5 empty empty CH3 0 0 0 8 #fcfcfc #404040 0;
+#X obj 166 131 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 457 311 inlet~ CHANNEL_ONE;
 #X obj 467 621 *~;
 #X obj 512 621 *~;
@@ -148,15 +131,11 @@ MASTER 0 -8 0 10 -262144 -1 -1 6000 1;
 #X obj 98 402 pack 0 50;
 #X obj 98 425 line~;
 #X obj 98 358 - 1.27;
-#X obj 326 109 cnv 5 5 5 empty empty PAN4 0 0 0 8 -262144 -66577 0
-;
-#X obj 128 109 cnv 5 5 5 empty empty PAN1 0 0 0 8 -262144 -66577 0
-;
-#X obj 197 109 cnv 5 5 5 empty empty PAN2 0 0 0 8 -262144 -66577 0
-;
-#X obj 268 109 cnv 5 5 5 empty empty PAN3 0 0 0 8 -262144 -66577 0
-;
-#X obj 304 109 cnv 5 5 5 empty empty CH4 0 0 0 8 -262144 -66577 0;
+#X obj 326 109 cnv 5 5 5 empty empty PAN4 0 0 0 8 #fcfcfc #404040 0;
+#X obj 128 109 cnv 5 5 5 empty empty PAN1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 197 109 cnv 5 5 5 empty empty PAN2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 268 109 cnv 5 5 5 empty empty PAN3 0 0 0 8 #fcfcfc #404040 0;
+#X obj 304 109 cnv 5 5 5 empty empty CH4 0 0 0 8 #fcfcfc #404040 0;
 #X obj 527 526 inlet~ PAN1 CV;
 #X obj 527 555 *~ -1;
 #X obj 673 238 *~ -1;
@@ -186,8 +165,7 @@ MASTER 0 -8 0 10 -262144 -1 -1 6000 1;
 #X obj 233 125 f \$1;
 #X obj 233 161 t f f f;
 #X obj 206 34 t b b;
-#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 52 206 r SAVE-S;
 #X obj 98 140 r \$0-maestro4-ch1-s;
 #X obj 317 696 s \$0-maestro4-ch1-r;
@@ -276,28 +254,25 @@ MASTER 0 -8 0 10 -262144 -1 -1 6000 1;
 #X obj 19 705 dac~ 1 2;
 #X obj 1057 702 outlet~ LEFT;
 #X obj 1144 700 outlet~ RIGHT;
-#X floatatom 593 463 5 0 0 0 - - -;
-#X floatatom 933 492 5 0 0 0 - - -;
+#X floatatom 593 463 5 0 0 0 - - - 0;
+#X floatatom 933 492 5 0 0 0 - - - 0;
 #X obj 310 438 / 127;
 #X obj 466 122 / 127;
-#X obj 104 278 cnv 5 5 5 empty empty CH1 0 0 0 8 -262144 -66577 0;
-#X obj 287 278 cnv 5 5 5 empty empty LEFT 0 0 0 8 -262144 -66577 0
-;
-#X obj 323 278 cnv 5 5 5 empty empty RIGHT 0 0 0 8 -262144 -66577 0
-;
+#X obj 104 278 cnv 5 5 5 empty empty CH1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 287 278 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #404040 0;
+#X obj 323 278 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #404040 0;
 #X obj 304 705 outlet~ 1L;
 #X obj 635 676 outlet~ 2L;
 #X obj 746 703 outlet~ 3L;
 #X obj 944 703 outlet~ 4L;
-#X obj 145 278 cnv 5 5 5 empty empty CH2 0 0 0 8 -262144 -66577 0;
-#X obj 193 278 cnv 5 5 5 empty empty CH3 0 0 0 8 -262144 -66577 0;
-#X obj 242 278 cnv 5 5 5 empty empty CH4 0 0 0 8 -262144 -66577 0;
-#X obj 180 125 hsl 128 15 1.27 127 1 1 \$0-maestro4-lpass-s \$0-maestro4-lpass-r
-LPASS 135 7 0 10 -262144 -1 -1 12700 1;
+#X obj 145 278 cnv 5 5 5 empty empty CH2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 193 278 cnv 5 5 5 empty empty CH3 0 0 0 8 #fcfcfc #404040 0;
+#X obj 242 278 cnv 5 5 5 empty empty CH4 0 0 0 8 #fcfcfc #404040 0;
+#X obj 180 125 hsl 128 15 1.27 127 1 1 \$0-maestro4-lpass-s \$0-maestro4-lpass-r LPASS 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 190 378 r \$0-maestro4-lpass-s;
 #X obj 190 400 / 127;
 #X obj 190 422 * 19950;
-#X floatatom 190 466 5 0 0 0 - - -;
+#X floatatom 190 466 5 0 0 0 - - - 0;
 #X obj 190 444 - 150;
 #X obj 190 485 pack 0 50;
 #X obj 20 517 lop~;
@@ -307,10 +282,9 @@ LPASS 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 190 507 line;
 #X obj 190 529 t f f f f;
 #N canvas 391 63 987 763 external-messages 0;
-#X floatatom 25 702 5 0 0 0 - - -;
+#X floatatom 25 702 5 0 0 0 - - - 0;
 #X obj 24 324 spigot;
-#X obj 57 284 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 57 284 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 93 268 ==;
 #X obj 108 244 f \$1;
 #X obj 108 220 loadbang;
@@ -321,54 +295,53 @@ LPASS 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 25 629 t b f;
 #X obj 25 652 spigot;
 #X obj 24 58 unpack s f f;
-#X symbolatom 24 90 10 0 0 0 - - -;
+#X symbolatom 24 90 10 0 0 0 - - - 0;
 #X obj 57 304 t f f;
 #X obj 84 328 s \$0-msg-spigot;
 #X obj 73 636 r \$0-msg-spigot;
-#X floatatom 62 590 5 0 0 0 - - -;
+#X floatatom 62 590 5 0 0 0 - - - 0;
 #X obj 62 569 f;
 #X obj 62 517 t b f;
 #X obj 62 540 spigot;
 #X obj 110 524 r \$0-msg-spigot;
-#X floatatom 192 707 5 0 0 0 - - -;
+#X floatatom 192 707 5 0 0 0 - - - 0;
 #X obj 192 686 f;
 #X obj 192 634 t b f;
 #X obj 192 657 spigot;
 #X obj 240 641 r \$0-msg-spigot;
-#X floatatom 224 584 5 0 0 0 - - -;
+#X floatatom 224 584 5 0 0 0 - - - 0;
 #X obj 224 563 f;
 #X obj 224 511 t b f;
 #X obj 224 534 spigot;
 #X obj 272 518 r \$0-msg-spigot;
-#X floatatom 368 699 5 0 0 0 - - -;
+#X floatatom 368 699 5 0 0 0 - - - 0;
 #X obj 368 678 f;
 #X obj 368 626 t b f;
 #X obj 368 649 spigot;
 #X obj 416 633 r \$0-msg-spigot;
 #X obj 24 10 r maestro4;
-#X obj 24 376 route CH1 CH2 CH3 CH4 PAN1 PAN2 PAN3 PAN4 LPASS MASTER
-;
-#X floatatom 383 566 5 0 0 0 - - -;
+#X obj 24 376 route CH1 CH2 CH3 CH4 PAN1 PAN2 PAN3 PAN4 LPASS MASTER;
+#X floatatom 383 566 5 0 0 0 - - - 0;
 #X obj 383 545 f;
 #X obj 383 493 t b f;
 #X obj 383 516 spigot;
 #X obj 431 500 r \$0-msg-spigot;
-#X floatatom 538 695 5 0 0 0 - - -;
+#X floatatom 538 695 5 0 0 0 - - - 0;
 #X obj 538 674 f;
 #X obj 538 622 t b f;
 #X obj 538 645 spigot;
 #X obj 586 629 r \$0-msg-spigot;
-#X floatatom 578 544 5 0 0 0 - - -;
+#X floatatom 578 544 5 0 0 0 - - - 0;
 #X obj 578 523 f;
 #X obj 578 471 t b f;
 #X obj 578 494 spigot;
 #X obj 626 478 r \$0-msg-spigot;
-#X floatatom 596 415 5 0 0 0 - - -;
+#X floatatom 596 415 5 0 0 0 - - - 0;
 #X obj 596 394 f;
 #X obj 596 342 t b f;
 #X obj 596 365 spigot;
 #X obj 644 349 r \$0-msg-spigot;
-#X floatatom 647 278 5 0 0 0 - - -;
+#X floatatom 647 278 5 0 0 0 - - - 0;
 #X obj 647 257 f;
 #X obj 647 205 t b f;
 #X obj 647 228 spigot;
@@ -472,31 +445,20 @@ LPASS 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 10 50 state_saving_module maestro4 \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch maestro4 \$0 \$1 1.27
-127 maestro4-lpass-s maestro4-lpass-r LPASS #FFFFFF #000000 #000000
-;
-#X obj 10 60 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27
-127 maestro4-master-s maestro4-master-r MASTER #FFFFFF #000000 #000000
-;
-#X obj 10 120 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27
-127 maestro4-ch4-s maestro4-ch4-r CH4 #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127
-maestro4-pan4-s maestro4-pan4-r PAN4 #FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27
-127 maestro4-ch3-s maestro4-ch3-r CH3 #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127
-maestro4-pan3-s maestro4-pan3-r PAN3 #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27
-127 maestro4-ch2-s maestro4-ch2-r CH2 #FFFFFF #000000 #000000;
-#X obj 10 420 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127
-maestro4-pan2-s maestro4-pan2-r PAN2 #FFFFFF #000000 #000000;
-#X obj 10 480 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27
-127 maestro4-ch1-s maestro4-ch1-r CH1 #FFFFFF #000000 #000000;
-#X obj 10 540 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127
-maestro4-pan1-s maestro4-pan1-r PAN1 #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch maestro4 \$0 \$1 1.27 127 maestro4-lpass-s maestro4-lpass-r LPASS #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27 127 maestro4-master-s maestro4-master-r MASTER #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27 127 maestro4-ch4-s maestro4-ch4-r CH4 #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127 maestro4-pan4-s maestro4-pan4-r PAN4 #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27 127 maestro4-ch3-s maestro4-ch3-r CH3 #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127 maestro4-pan3-s maestro4-pan3-r PAN3 #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27 127 maestro4-ch2-s maestro4-ch2-r CH2 #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127 maestro4-pan2-s maestro4-pan2-r PAN2 #FFFFFF #000000 #000000;
+#X obj 10 480 state_saving_module/vsl_dispatch maestro4 \$0 \$1 1.27 127 maestro4-ch1-s maestro4-ch1-r CH1 #FFFFFF #000000 #000000;
+#X obj 10 540 state_saving_module/hsl_dispatch maestro4 \$0 \$1 0 127 maestro4-pan1-s maestro4-pan1-r PAN1 #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 54 756 throw~ STREAM-L;
 #X obj 227 758 throw~ STREAM-R;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 20 0 37 0;
 #X connect 21 0 33 0;
 #X connect 22 0 34 0;

@@ -1,32 +1,21 @@
 #N canvas 0 57 1920 1023 10;
-#X obj 204 109 cnv 5 5 5 empty empty LENGTH 0 0 0 8 -262144 -120682
-0;
-#X obj 124 126 cnv 5 5 5 empty empty EXTRA-SAMPLER 0 0 0 12 -262144
--66577 0;
-#X obj 105 328 cnv 5 5 5 empty empty OUT_L 0 0 0 8 -262144 -66577 0
-;
-#X obj 221 126 cnv 5 5 5 empty \$0-instance-num 3 0 0 0 12 -262144
--66577 0;
-#X obj 252 109 cnv 5 5 5 empty empty START 0 0 0 8 -262144 -120682
-0;
-#X obj 46 354 cnv 15 400 600 empty empty load_file 20 12 0 14 -233017
--66577 0;
-#X obj 457 354 cnv 15 655 955 empty empty sampler 20 12 0 14 -261682
--66577 0;
-#X obj 227 400 bng 30 250 50 0 empty empty empty 17 7 0 10 -204800
--1 -1;
-#X floatatom 227 474 20 0 0 0 - - -;
+#X obj 204 109 cnv 5 5 5 empty empty LENGTH 0 0 0 8 #fcfcfc #7474a4 0;
+#X obj 124 126 cnv 5 5 5 empty empty EXTRA-SAMPLER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 105 328 cnv 5 5 5 empty empty OUT_L 0 0 0 8 #fcfcfc #404040 0;
+#X obj 221 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 252 109 cnv 5 5 5 empty empty START 0 0 0 8 #fcfcfc #7474a4 0;
+#X obj 46 354 cnv 15 400 600 empty empty load_file 20 12 0 14 #e0e0e0 #404040 0;
+#X obj 457 354 cnv 15 655 955 empty empty sampler 20 12 0 14 #fce0c4 #404040 0;
+#X obj 227 400 bng 30 250 50 0 empty empty empty 17 7 0 10 #c4fcfc #000000 #000000;
+#X floatatom 227 474 20 0 0 0 - - - 0;
 #X obj 227 631 /;
 #X obj 227 577 t b f;
 #X obj 670 1073 *~;
 #X obj 670 930 *~;
 #X obj 669 987 +~;
-#X obj 107 208 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r
-PITCH 133 7 0 10 -262144 -1 -1 10650 1;
-#X obj 107 223 hsl 128 15 0 127 0 1 \$0-sampler-length-s \$0-sampler-length-r
-LENGTH 133 7 0 10 -262144 -1 -1 17400 1;
-#X obj 107 238 hsl 128 15 0 127 0 0 \$0-sampler-start-s \$0-sampler-start-r
-START 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 107 208 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r PITCH 133 7 0 10 #fcfcfc #000000 #000000 10650 1;
+#X obj 107 223 hsl 128 15 0 127 0 1 \$0-sampler-length-s \$0-sampler-length-r LENGTH 133 7 0 10 #fcfcfc #000000 #000000 12700 1;
+#X obj 107 238 hsl 128 15 0 127 0 0 \$0-sampler-start-s \$0-sampler-start-r START 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 670 731 phasor~;
 #X text 73 405 Get path to sample;
 #X text 510 983 Sample start position;
@@ -37,13 +26,11 @@ START 133 7 0 10 -262144 -1 -1 0 1;
 #X text 518 389 Adjust freq for;
 #X text 494 406 new sample length;
 #X obj 668 1197 outlet~;
-#X obj 104 158 bng 15 250 50 0 \$0-open empty OPEN_FILE 18 7 0 10 -204800
--1 -1;
+#X obj 104 158 bng 15 250 50 0 \$0-open empty OPEN_FILE 18 7 0 10 #c4fcfc #000000 #000000;
 #X obj 272 405 r \$0-open;
 #X obj 671 847 *~;
 #X text 530 699 Loop or one shot;
-#X obj 222 158 tgl 15 1 \$0-loop-on-off-s \$0-loop-on-off-r LOOP 18
-7 0 10 -204800 -1 -1 1 1;
+#X obj 222 158 tgl 15 1 \$0-loop-on-off-s \$0-loop-on-off-r LOOP 18 7 0 10 #c4fcfc #000000 #000000 1 1;
 #X obj 521 118 s \$0-bang;
 #N canvas 30 510 526 376 open 0;
 #X obj 242 56 openpanel;
@@ -65,11 +52,9 @@ START 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 468 240 list split 1;
 #X obj 468 215 list append;
 #X text 54 185 First store list \, then start the loop;
-#X text 551 156 "until" bangs its output until told to stop by a "bang"
-to its right inlet.;
+#X text 551 156 "until" bangs its output until told to stop by a "bang" to its right inlet.;
 #X text 49 238 third outlet of "split" tells us to stop.;
-#X text 49 260 Second outlet of "split" becomes the new list for "list
-append" above.;
+#X text 49 260 Second outlet of "split" becomes the new list for "list append" above.;
 #X text 50 299 First outlet is the output.;
 #X obj 510 541 list prepend;
 #X obj 591 507 list;
@@ -86,8 +71,7 @@ append" above.;
 #X obj 468 490 t b;
 #X obj 468 466 route 47 32;
 #X text 36 145 95 is the symbol for _;
-#X text 33 35 This patch substrings a path to only get the name of
-the file itself. EX: ../folder/file.wav -> file.wav;
+#X text 33 35 This patch substrings a path to only get the name of the file itself. EX: ../folder/file.wav -> file.wav;
 #X text 35 70 Replaces any space with an underscore;
 #X obj 689 241 f 0;
 #X obj 724 241 + 1;
@@ -103,14 +87,10 @@ the file itself. EX: ../folder/file.wav -> file.wav;
 #X msg 703 333 1;
 #X obj 671 362 t b b;
 #X text 789 230 Count the number of characters;
-#X text 790 259 If its greater than the maximum \, we split off the
-extra at the beginning \, then place three dots (code 46) at the beginning
-of the final filename;
+#X text 790 259 If its greater than the maximum \, we split off the extra at the beginning \, then place three dots (code 46) at the beginning of the final filename;
 #X text 51 212 Store the remaining list with [list append].;
-#X text 816 332 Split off the / at the beginning \, or split off the
-number of characters greater than the maximum;
-#X text 152 722 When we reach the end of the list \, send the output
-converted back to a symbol;
+#X text 816 332 Split off the / at the beginning \, or split off the number of characters greater than the maximum;
+#X text 152 722 When we reach the end of the list \, send the output converted back to a symbol;
 #X text 36 128 46 is the symbol for .;
 #N canvas 491 691 398 257 add-three-dots 0;
 #X obj 126 168 list prepend 46 46 46;
@@ -139,15 +119,13 @@ converted back to a symbol;
 #X connect 9 0 2 0;
 #X connect 10 0 0 0;
 #X restore 624 625 pd add-three-dots;
-#X floatatom 729 264 5 0 0 0 - - -;
-#X floatatom 757 405 5 0 0 0 - - -;
-#X floatatom 784 383 5 0 0 0 - - -;
+#X floatatom 729 264 5 0 0 0 - - - 0;
+#X floatatom 757 405 5 0 0 0 - - - 0;
+#X floatatom 784 383 5 0 0 0 - - - 0;
 #X obj 468 157 until;
 #X text 792 201 Every time we hit a / we restart the counter;
 #X msg 510 491 32;
-#X text 11 464 Use route to separate / and spaces from the rest of
-the list. You can replace the spaces with _ by changing the 32 message
-to a 95;
+#X text 11 464 Use route to separate / and spaces from the rest of the list. You can replace the spaces with _ by changing the 32 message to a 95;
 #X connect 0 0 1 0;
 #X connect 1 0 11 0;
 #X connect 2 0 22 0;
@@ -237,13 +215,11 @@ to a 95;
 #X obj 761 223 outlet;
 #X text 811 224 INSTANCE NUMBER;
 #X obj 715 159 f \$1;
-#X obj 129 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 129 65 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 129 41 r SAVE-S;
 #X msg 380 518 write statesave/\$1-sampler-ss.txt;
 #X msg 739 254 read statesave/\$1-sampler-ss.txt;
-#X obj 747 122 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 747 122 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 386 61 r \$0-sampler-pitch-s;
 #X obj 397 83 r \$0-sampler-length-s;
 #X obj 407 105 r \$0-sampler-start-s;
@@ -298,19 +274,13 @@ to a 95;
 #X obj 133 536 - 1;
 #X obj 56 588 t a a;
 #X obj 178 376 t a;
-#X obj 178 217 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 260 257 After each item in the list \, insert a space by using
-the keycode 32;
-#X text 266 414 After we have looped through all of the items in the
-list \, we are left with a space (32) at the end \, so we remove this
-by spliting the list at length - 1;
+#X obj 178 217 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 260 257 After each item in the list \, insert a space by using the keycode 32;
+#X text 266 414 After we have looped through all of the items in the list \, we are left with a space (32) at the end \, so we remove this by spliting the list at length - 1;
 #X text 265 484 <--Connect this print object for debugging;
 #X text 241 617 <--Connect this print object for debugging;
-#X text 271 116 For the first character \, add it to the right inlet
-of prepend \, all other characters go to the left inlet.;
-#X text 266 12 This patch will convert a space separated list into
-a single symbol.;
+#X text 271 116 For the first character \, add it to the right inlet of prepend \, all other characters go to the left inlet.;
+#X text 266 12 This patch will convert a space separated list into a single symbol.;
 #X obj 93 617 print after-split;
 #X obj 71 676 print final-symbol;
 #X text 241 657 <--Connect this print object for debugging;
@@ -374,9 +344,7 @@ a single symbol.;
 #X text 775 297 Read seccond line;
 #X text 381 340 Save gui state on first line of file;
 #X text 22 349 Save filename on seccond line of file;
-#X text 190 617 If the filename has spaces in it \, by default Pure
-Data would treat this as a List. We need to convert this list into
-a single symbol.;
+#X text 190 617 If the filename has spaces in it \, by default Pure Data would treat this as a List. We need to convert this list into a single symbol.;
 #X text 638 621 ------->>>>;
 #X obj 368 548 state_saving_module/textfile;
 #X obj 739 399 state_saving_module/textfile;
@@ -444,8 +412,7 @@ a single symbol.;
 #X obj 587 296 s \$0-instance-num;
 #X obj 587 248 makefilename %d;
 #X msg 587 273 label \$1;
-#N canvas 607 137 1205 745 state-saving-via-preset-manager-module 0
-;
+#N canvas 607 137 1205 745 state-saving-via-preset-manager-module 0;
 #X msg 931 294 rewind;
 #X msg 888 294 bang;
 #X obj 357 234 f;
@@ -546,19 +513,13 @@ a single symbol.;
 #X obj 133 536 - 1;
 #X obj 56 588 t a a;
 #X obj 178 376 t a;
-#X obj 178 217 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 260 257 After each item in the list \, insert a space by using
-the keycode 32;
-#X text 266 414 After we have looped through all of the items in the
-list \, we are left with a space (32) at the end \, so we remove this
-by spliting the list at length - 1;
+#X obj 178 217 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 260 257 After each item in the list \, insert a space by using the keycode 32;
+#X text 266 414 After we have looped through all of the items in the list \, we are left with a space (32) at the end \, so we remove this by spliting the list at length - 1;
 #X text 265 484 <--Connect this print object for debugging;
 #X text 241 617 <--Connect this print object for debugging;
-#X text 271 116 For the first character \, add it to the right inlet
-of prepend \, all other characters go to the left inlet.;
-#X text 266 12 This patch will convert a space separated list into
-a single symbol.;
+#X text 271 116 For the first character \, add it to the right inlet of prepend \, all other characters go to the left inlet.;
+#X text 266 12 This patch will convert a space separated list into a single symbol.;
 #X obj 93 617 print after-split;
 #X obj 71 676 print final-symbol;
 #X text 241 657 <--Connect this print object for debugging;
@@ -610,9 +571,7 @@ a single symbol.;
 #X msg 725 296 bang;
 #X obj 725 257 t b b;
 #X obj 644 85 t b b b;
-#X text 155 660 If the filename has spaces in it \, by default Pure
-Data would treat this as a List. We need to convert this list into
-a single symbol.;
+#X text 155 660 If the filename has spaces in it \, by default Pure Data would treat this as a List. We need to convert this list into a single symbol.;
 #X text 603 664 ------->>>>;
 #X obj 357 568 state_saving_module/textfile;
 #X msg 370 528 write statesave/\$1-\$2-extra-sampler-ss.txt;
@@ -973,14 +932,10 @@ a single symbol.;
 #X connect 29 0 0 0;
 #X restore 589 165 pd parameter-nudging-system;
 #X text 118 448 Open the sample;
-#X obj 175 328 cnv 5 5 5 empty empty OUT_R 0 0 0 8 -262144 -66577 0
-;
-#X obj 107 268 hsl 128 15 0 127 0 1 \$0-sampler-length-att-s \$0-sampler-length-att-r
-LENGTH 133 7 0 10 -158136 -1 -1 0 1;
-#X obj 107 283 hsl 128 15 0 127 0 1 \$0-sampler-start-att-s \$0-sampler-start-att-r
-START 133 7 0 10 -158136 -1 -1 7600 1;
-#X obj 107 253 hsl 128 15 0 127 0 1 \$0-sampler-pitch-att-s \$0-sampler-pitch-att-r
-PITCH 133 7 0 10 -158136 -1 -1 200 1;
+#X obj 175 328 cnv 5 5 5 empty empty OUT_R 0 0 0 8 #fcfcfc #404040 0;
+#X obj 107 268 hsl 128 15 0 127 0 1 \$0-sampler-length-att-s \$0-sampler-length-att-r LENGTH 133 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 107 283 hsl 128 15 0 127 0 1 \$0-sampler-start-att-s \$0-sampler-start-att-r START 133 7 0 10 #9898dc #000000 #000000 7600 1;
+#X obj 107 253 hsl 128 15 0 127 0 1 \$0-sampler-pitch-att-s \$0-sampler-pitch-att-r PITCH 133 7 0 10 #9898dc #000000 #000000 200 1;
 #X obj 670 594 *~;
 #X obj 679 76 inlet~ PITCH;
 #X obj 679 98 throw~ \$0-sampler-PITCH;
@@ -1032,9 +987,8 @@ PITCH 133 7 0 10 -158136 -1 -1 200 1;
 #X obj 82 263 / 127;
 #X obj 93 399 snapshot~;
 #X obj 109 374 metro 100;
-#X floatatom 93 421 10 0 0 0 - - -;
-#X obj 109 351 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X floatatom 93 421 10 0 0 0 - - - 0;
+#X obj 109 351 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 65 197 *~ 127;
 #X obj 82 287 pack 0 50;
 #X obj 47 101 pack 0 50;
@@ -1121,8 +1075,7 @@ PITCH 133 7 0 10 -158136 -1 -1 200 1;
 #X obj 27 641 outlet;
 #X obj 98 20 inlet~ pitch;
 #X msg 98 100 1;
-#X obj 98 126 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 98 126 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 298 97 0;
 #X obj 98 73 threshold~ 0.0001 0 -0.0001 0;
 #X obj 98 168 == 0;
@@ -1130,20 +1083,12 @@ PITCH 133 7 0 10 -158136 -1 -1 200 1;
 #X obj 27 197 *~ 1;
 #X text 250 270 Reversed;
 #X text 250 246 Normal;
-#X text 359 35 Bang when the sample has ended. We detect the end of
-the sample with [threshold~ 0.9999] \, however \, when the sample is
-played in reverse \, it would trigger this instantly. We need to detect
-when the sample is playing in reverse so that we can use [threshold~
-0.0001] to bang the end of the sample. We detect if the sample is reversed
-by checking if the pitch of the phasor~ is negative.;
-#X text 367 192 If loop is set to off \, we also need to mute the audio
-from the phasor when the sample has ended.;
+#X text 359 35 Bang when the sample has ended. We detect the end of the sample with [threshold~ 0.9999] \, however \, when the sample is played in reverse \, it would trigger this instantly. We need to detect when the sample is playing in reverse so that we can use [threshold~ 0.0001] to bang the end of the sample. We detect if the sample is reversed by checking if the pitch of the phasor~ is negative.;
+#X text 367 192 If loop is set to off \, we also need to mute the audio from the phasor when the sample has ended.;
 #X obj 73 401 t b b;
 #X obj 27 401 t b b;
-#X obj 43 424 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 112 423 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 43 424 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 112 423 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 27 352 spigot;
 #X obj 73 373 spigot;
 #X obj 112 318 r \$0-required-hack;
@@ -1152,39 +1097,23 @@ from the phasor when the sample has ended.;
 #X obj 195 534 sel 1;
 #X msg 195 556 1;
 #X obj 195 488 f;
-#X floatatom 202 512 5 0 0 0 - - -;
+#X floatatom 202 512 5 0 0 0 - - - 0;
 #X obj 145 526 == 0;
-#X obj 246 510 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 246 510 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 150 422 sel 0;
-#X obj 162 443 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 356 415 We also piggy back off of \$0-required-hack to get
-a bang whenver a new trigger is recieved \, so we can reset the spigots
-at the bottom.;
+#X obj 162 443 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X text 356 415 We also piggy back off of \$0-required-hack to get a bang whenver a new trigger is recieved \, so we can reset the spigots at the bottom.;
 #X text 253 318 <-------------;
 #X obj 195 19 inlet loop-on-off;
 #X obj 26 18 inlet~;
-#X floatatom 145 548 5 0 0 0 - - -;
-#X text 359 503 This is a mess of spigots \, but since we are using
-a phasor~ object \, we are constanly cycling from 0 to 1 (or 1 to 0
-if reversed). When loop is set to OFF \, we need to send the bang -on-end
-\, send a 0 out of the left outlet \, then finally turn off both the
-left and right outlet. The phasor~ will keep cycling \, but the patch
-won't be outputting anything anymore.;
-#X text 360 594 When loop is ON \, we need to turn both outlet back
-on \, and disable them from being turned off. This is controlled using
-spigots after the 0 message box.;
+#X floatatom 145 548 5 0 0 0 - - - 0;
+#X text 359 503 This is a mess of spigots \, but since we are using a phasor~ object \, we are constanly cycling from 0 to 1 (or 1 to 0 if reversed). When loop is set to OFF \, we need to send the bang -on-end \, send a 0 out of the left outlet \, then finally turn off both the left and right outlet. The phasor~ will keep cycling \, but the patch won't be outputting anything anymore.;
+#X text 360 594 When loop is ON \, we need to turn both outlet back on \, and disable them from being turned off. This is controlled using spigots after the 0 message box.;
 #X text 253 418 <-------------;
 #X text 253 538 <-------------;
-#X text 356 319 When the phase is reset to 0 this causes the threshold~
-to trigger if the sample is being played in reverse. I tried setting
-the phasor~ to 1 if the sample is in reverse \, but it still had this
-problem. All this does is turn off the theshold~ outputs when the phasor~
-is being reset \, then 5ms later it turns them back on.;
+#X text 356 319 When the phase is reset to 0 this causes the threshold~ to trigger if the sample is being played in reverse. I tried setting the phasor~ to 1 if the sample is in reverse \, but it still had this problem. All this does is turn off the theshold~ outputs when the phasor~ is being reset \, then 5ms later it turns them back on.;
 #X obj 28 553 spigot;
-#X obj 67 535 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 67 535 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 27 240 threshold~ 0.999 0 0.5 0;
 #X obj 73 271 threshold~ 0.001 0 0.5 0;
 #X connect 1 0 43 0;
@@ -1245,37 +1174,25 @@ is being reset \, then 5ms later it turns them back on.;
 #X text 498 1125 Finally play the sample;
 #X text 318 120 Bang resets the phasor~ to 0;
 #X obj 807 598 r \$0-loop-on-off-s;
-#X text 38 1002 This is a stereo sample player designed for AUTOMATONISM.
-;
+#X text 38 1002 This is a stereo sample player designed for AUTOMATONISM.;
 #X obj 521 96 threshold~ 0.99 0 1 0;
 #X obj 521 74 inlet~ trig;
-#X obj 104 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
-;
-#X obj 149 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -120682
-0;
+#X obj 104 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 149 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #7474a4 0;
 #X msg 847 820 1 0 \, 0 1 1;
 #X obj 847 842 vline~;
 #X obj 847 864 outlet~;
 #X text 906 865 Output trig on end;
 #X obj 452 92 loadbang;
-#X obj 134 188 bng 15 250 50 0 \$0-pitch-presets-1-s \$0-pitch-presets-1-r
--1 0 -6 0 10 -204800 -1 -1;
-#X obj 149 188 bng 15 250 50 0 \$0-pitch-presets-2-s \$0-pitch-presets-1-r
-empty -5 -6 0 10 -204800 -1 -1;
-#X obj 164 188 bng 15 250 50 0 \$0-pitch-presets-3-s \$0-pitch-presets-1-r
-0 5 -6 0 10 -204800 -1 -1;
-#X obj 179 188 bng 15 250 50 0 \$0-pitch-presets-4-s \$0-pitch-presets-1-r
-empty -1 -6 0 10 -204800 -1 -1;
-#X obj 194 188 bng 15 250 50 0 \$0-pitch-presets-5-s \$0-pitch-presets-1-r
-1 5 -6 0 10 -204800 -1 -1;
-#X obj 209 188 bng 15 250 50 0 \$0-pitch-presets-5-s \$0-pitch-presets-1-r
-empty 30 7 0 10 -204800 -1 -1;
-#X obj 119 188 bng 15 250 50 0 \$0-pitch-presets--2-s \$0-pitch-presets--2-s
-empty 0 -6 0 10 -204800 -1 -1;
-#X obj 224 188 bng 15 250 50 0 \$0-pitch-presets-5-s \$0-pitch-presets-1-r
-2 5 -6 0 10 -204800 -1 -1;
-#X obj 104 188 bng 15 250 50 0 \$0-pitch-presets-1-s \$0-pitch-presets-1-r
--2 0 -6 0 10 -204800 -1 -1;
+#X obj 134 188 bng 15 250 50 0 \$0-pitch-presets-1-s \$0-pitch-presets-1-r -1 0 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 149 188 bng 15 250 50 0 \$0-pitch-presets-2-s \$0-pitch-presets-1-r empty -5 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 164 188 bng 15 250 50 0 \$0-pitch-presets-3-s \$0-pitch-presets-1-r 0 5 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 179 188 bng 15 250 50 0 \$0-pitch-presets-4-s \$0-pitch-presets-1-r empty -1 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 194 188 bng 15 250 50 0 \$0-pitch-presets-5-s \$0-pitch-presets-1-r 1 5 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 209 188 bng 15 250 50 0 \$0-pitch-presets-5-s \$0-pitch-presets-1-r empty 30 7 0 10 #c4fcfc #000000 #000000;
+#X obj 119 188 bng 15 250 50 0 \$0-pitch-presets--2-s \$0-pitch-presets--2-s empty 0 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 224 188 bng 15 250 50 0 \$0-pitch-presets-5-s \$0-pitch-presets-1-r 2 5 -6 0 10 #c4fcfc #000000 #000000;
+#X obj 104 188 bng 15 250 50 0 \$0-pitch-presets-1-s \$0-pitch-presets-1-r -2 0 -6 0 10 #c4fcfc #000000 #000000;
 #N canvas 591 509 450 351 apply-pitch-presets 0;
 #X obj 191 232 f;
 #X obj 191 255 s \$0-sampler-pitch-r;
@@ -1317,87 +1234,48 @@ empty 0 -6 0 10 -204800 -1 -1;
 #X connect 18 0 0 0;
 #X connect 19 0 0 0;
 #X restore 304 203 pd apply-pitch-presets;
-#X obj 104 303 nbx 6 14 -1e+37 1e+37 0 0 \$0-sample-rate-s \$0-sample-rate-r
-SAMPLE_RATE 65 7 0 10 -262144 -1 -1 0 256;
+#X obj 104 303 nbx 6 14 -1e+37 1e+37 0 0 \$0-sample-rate-s \$0-sample-rate-r SAMPLE_RATE 65 7 0 10 #fcfcfc #000000 #000000 0 256;
 #X obj 292 250 loadbang;
 #X msg 292 272 44100;
 #X obj 292 294 s \$0-sample-rate-r;
 #X obj 79 553 r \$0-sample-rate-s;
 #X obj 227 609 f 44100;
-#X obj 812 826 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 236 328 cnv 5 5 5 empty empty END_TRIG 0 0 0 8 -262144 -226533
-0;
+#X obj 812 826 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 236 328 cnv 5 5 5 empty empty END_TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 79 575 pipe 5;
 #X obj 122 735 array define \$0-sample-L;
 #X obj 122 755 array define \$0-sample-R;
 #X obj 687 491 pack 0 1;
-#X obj 103 117 bng 15 50 50 0 empty \$0-trig-r empty 17 7 0 10 -262144
--226533 -1;
+#X obj 103 117 bng 15 50 50 0 empty \$0-trig-r empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 591 118 s \$0-trig-r;
-#X obj 261 305 bng 15 50 50 0 empty \$0-end-trig-r empty 17 7 0 10
--262144 -226533 -1;
+#X obj 261 305 bng 15 50 50 0 empty \$0-end-trig-r empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 866 800 s \$0-end-trig-r;
 #X text 76 976 _megalon_ 2017 v1.3;
 #X text 343 272 <-- DEFAULT SAMPLE RATE;
-#X obj 104 147 cnv 5 5 5 empty \$0-sample-display-name SAMPLER 0 0
-0 12 -262144 -66577 0;
+#X obj 104 147 cnv 5 5 5 empty \$0-sample-display-name SAMPLER 0 0 0 12 #fcfcfc #404040 0;
 #X obj 10 50 state_saving_module extra-sampler \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas -1 24 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/nbx_dispatch extra-sampler \$0 \$1
--1e+37 1e+37 sample-rate-s sample-rate-r SAMPLE_RATE #FFFFFF #000000
-#000000;
-#X obj 10 60 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-1-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 120 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-5-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 180 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets--2-s pitch-presets--2-s empty #C6FFFF #000000
-#000000;
-#X obj 10 240 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-5-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 300 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-5-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 360 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-4-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 420 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-3-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 480 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-2-s pitch-presets-1-r empty #C6FFFF #000000 #000000
-;
-#X obj 10 540 state_saving_module/bng_dispatch extra-sampler \$0 \$1
-250 50 pitch-presets-1-s pitch-presets-1-r OPEN_FILE #C6FFFF #000000
-#000000;
-#X obj 10 600 state_saving_module/hsl_dispatch extra-sampler \$0 \$1
-0 127 sampler-pitch-att-s sampler-pitch-att-r PITCH #9999DE #000000
-#000000;
-#X obj 10 660 state_saving_module/hsl_dispatch extra-sampler \$0 \$1
-0 127 sampler-start-att-s sampler-start-att-r START #9999DE #000000
-#000000;
-#X obj 10 720 state_saving_module/hsl_dispatch extra-sampler \$0 \$1
-0 127 sampler-length-att-s sampler-length-att-r LENGTH #9999DE #000000
-#000000;
-#X obj 10 780 state_saving_module/tgl_dispatch extra-sampler \$0 \$1
-0 1 loop-on-off-s loop-on-off-r LOOP #C6FFFF #000000 #000000;
-#X obj 10 840 state_saving_module/hsl_dispatch extra-sampler \$0 \$1
-0 127 sampler-start-s sampler-start-r START #FFFFFF #000000 #000000
-;
-#X obj 10 900 state_saving_module/hsl_dispatch extra-sampler \$0 \$1
-0 127 sampler-length-s sampler-length-r LENGTH #FFFFFF #000000 #000000
-;
-#X obj 10 960 state_saving_module/hsl_dispatch extra-sampler \$0 \$1
--2 2 sampler-pitch-s sampler-pitch-r PITCH #FFFFFF #000000 #000000
-;
+#X obj 10 0 state_saving_module/nbx_dispatch extra-sampler \$0 \$1 -1e+37 1e+37 sample-rate-s sample-rate-r SAMPLE_RATE #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-1-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 120 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-5-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 180 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets--2-s pitch-presets--2-s empty #C6FFFF #000000 #000000;
+#X obj 10 240 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-5-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 300 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-5-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 360 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-4-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 420 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-3-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 480 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-2-s pitch-presets-1-r empty #C6FFFF #000000 #000000;
+#X obj 10 540 state_saving_module/bng_dispatch extra-sampler \$0 \$1 250 50 pitch-presets-1-s pitch-presets-1-r OPEN_FILE #C6FFFF #000000 #000000;
+#X obj 10 600 state_saving_module/hsl_dispatch extra-sampler \$0 \$1 0 127 sampler-pitch-att-s sampler-pitch-att-r PITCH #9999DE #000000 #000000;
+#X obj 10 660 state_saving_module/hsl_dispatch extra-sampler \$0 \$1 0 127 sampler-start-att-s sampler-start-att-r START #9999DE #000000 #000000;
+#X obj 10 720 state_saving_module/hsl_dispatch extra-sampler \$0 \$1 0 127 sampler-length-att-s sampler-length-att-r LENGTH #9999DE #000000 #000000;
+#X obj 10 780 state_saving_module/tgl_dispatch extra-sampler \$0 \$1 0 1 loop-on-off-s loop-on-off-r LOOP #C6FFFF #000000 #000000;
+#X obj 10 840 state_saving_module/hsl_dispatch extra-sampler \$0 \$1 0 127 sampler-start-s sampler-start-r START #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/hsl_dispatch extra-sampler \$0 \$1 0 127 sampler-length-s sampler-length-r LENGTH #FFFFFF #000000 #000000;
+#X obj 10 960 state_saving_module/hsl_dispatch extra-sampler \$0 \$1 -2 2 sampler-pitch-s sampler-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X text 267 6 from https://github.com/megalon/pd-AUTOMATONISM-sampler
-;
+#X text 267 6 from https://github.com/megalon/pd-AUTOMATONISM-sampler;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 7 0 33 0;
 #X connect 8 0 61 0;
 #X connect 9 0 36 0;

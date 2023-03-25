@@ -5,22 +5,19 @@
 #X obj 149 652 outlet~ PITCH;
 #X obj 268 649 outlet~ VELOCITY;
 #X obj 149 360 t f f;
-#X floatatom 215 156 5 0 0 2 - - -;
-#X floatatom 156 156 5 0 0 2 - - -;
-#X obj 163 178 cnv 5 5 5 empty empty NOTE 0 0 0 8 -262144 -66577 0
-;
-#X obj 231 178 cnv 5 5 5 empty empty VEL 0 0 0 8 -262144 -1 0;
-#X obj 146 110 cnv 5 5 5 empty empty MIDI-polyIN 0 0 0 12 -262144 -66577
-0;
-#X obj 106 134 hsl 128 15 0 127 0 0 \$0-midiin-channel-s \$0-midiin-channel-r
-MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
+#X floatatom 215 156 5 0 0 2 - - - 0;
+#X floatatom 156 156 5 0 0 2 - - - 0;
+#X obj 163 178 cnv 5 5 5 empty empty NOTE 0 0 0 8 #fcfcfc #404040 0;
+#X obj 231 178 cnv 5 5 5 empty empty VEL 0 0 0 8 #fcfcfc #000000 0;
+#X obj 146 110 cnv 5 5 5 empty empty MIDI-polyIN 0 0 0 12 #fcfcfc #404040 0;
+#X obj 106 134 hsl 128 15 0 127 0 0 \$0-midiin-channel-s \$0-midiin-channel-r MIDI-CHANNEL -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 708 93 r \$0-midiin-channel-s;
 #X obj 708 115 / 127;
 #X obj 708 137 * 15;
 #X obj 708 159 + 1;
 #X obj 708 181 i;
 #X obj 708 372 s \$0-midiin-channel-gui-r;
-#X floatatom 204 120 5 0 0 0 - #0-midiin-channel-gui-r -;
+#X floatatom 204 120 5 0 0 0 - \$0-midiin-channel-gui-r - 0;
 #N canvas 531 165 1223 774 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
@@ -37,8 +34,7 @@ MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -167,7 +163,7 @@ MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 157 193 r NUDGE-RANGE;
 #X obj 247 308 inlet;
 #X obj 232 397 outlet;
-#X floatatom 316 396 5 0 0 0 - - -;
+#X floatatom 316 396 5 0 0 0 - - - 0;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 14 0;
@@ -195,10 +191,9 @@ MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
 #X connect 1 0 3 0;
 #X connect 2 0 0 0;
 #X restore 280 209 pd parameter-nudging-system;
-#X obj 239 110 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 239 110 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 890 27 inlet~;
-#X floatatom 708 203 5 0 0 0 - - -;
+#X floatatom 708 203 5 0 0 0 - - - 0;
 #X obj 708 291 +;
 #X obj 891 146 snapshot~;
 #X obj 891 173 * 16;
@@ -208,28 +203,23 @@ MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
 #X msg 1006 287 0;
 #X obj 1006 312 t b f;
 #X obj 891 218 change;
-#X obj 105 109 cnv 5 5 5 empty empty CHAN.-CV 0 0 0 8 -262144 -66577
-0;
-#X floatatom 1006 240 5 0 0 0 - - -;
+#X obj 105 109 cnv 5 5 5 empty empty CHAN.-CV 0 0 0 8 #fcfcfc #404040 0;
+#X floatatom 1006 240 5 0 0 0 - - - 0;
 #X obj 1006 259 sel 1;
 #X obj 1006 218 change;
-#X obj 833 46 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 833 46 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 833 66 metro 20;
 #X obj 708 313 i;
 #X obj 708 335 clip 1 16;
 #X obj 833 21 loadbang;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch midi-polyin \$0 \$1 0
-127 midiin-channel-s midiin-channel-r MIDI-CHANNEL #FFFFFF #000000
-#000000;
+#X obj 10 0 state_saving_module/hsl_dispatch midi-polyin \$0 \$1 0 127 midiin-channel-s midiin-channel-r MIDI-CHANNEL #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 10 50 state_saving_module midi-polyin \$0 \$1;
 #X obj 3 271 unpack f f;
 #X obj 25 487 s \$0-midi-gate-r;
-#X obj 104 156 bng 15 50 50 0 empty \$0-midi-gate-r empty 17 7 0 10
--262144 -159808 -1;
+#X obj 104 156 bng 15 50 50 0 empty \$0-midi-gate-r empty 17 7 0 10 #fcfcfc #9c00fc #000000;
 #X obj -2 358 t b f f;
 #X obj -2 411 t b b;
 #X obj -5 585 vline~;
@@ -239,8 +229,7 @@ MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 268 585 lop~ 10;
 #X obj 267 614 clip~ 0 0.6;
 #X obj 264 497 sig~;
-#X obj 103 178 cnv 5 5 5 empty empty TRIGGER 0 0 0 8 -262144 -226533
-0;
+#X obj 103 178 cnv 5 5 5 empty empty TRIGGER 0 0 0 8 #fcfcfc #dc4c90 0;
 #N canvas 747 360 535 550 note_&_fifo 0;
 #X obj 99 87 notein;
 #X obj 99 184 pack f f;
@@ -301,6 +290,7 @@ MIDI-CHANNEL -2 -8 0 10 -262144 -1 -1 0 1;
 #X restore 279 269 pd note_&_fifo;
 #X obj -2 615 outlet~ TRIGGER;
 #X obj 4 246 r \$0-fifo;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 2 0 60 0;

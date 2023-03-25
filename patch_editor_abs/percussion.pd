@@ -10,10 +10,10 @@
 #X obj 433 258 / 127;
 #X obj 445 376 delay;
 #X obj 101 447 spigot;
-#X floatatom 134 368 5 0 0 0 - - -;
+#X floatatom 134 368 5 0 0 0 - - - 0;
 #X obj 134 346 < 1;
 #X obj 134 387 == 0;
-#X floatatom 134 409 5 0 0 0 - - -;
+#X floatatom 134 409 5 0 0 0 - - - 0;
 #X obj 433 302 + 1;
 #X obj 433 324 t f f f;
 #X obj 433 280 * 99;
@@ -21,7 +21,7 @@
 #X obj 134 324 r \$0-flam-s;
 #X obj 101 500 s \$0-trig!;
 #X obj 409 110 random 127;
-#X floatatom 409 132 5 0 0 0 - - -;
+#X floatatom 409 132 5 0 0 0 - - - 0;
 #X obj 409 151 moses;
 #X obj 409 197 t b b;
 #X obj 409 173 change;
@@ -61,14 +61,13 @@
 #X obj 1118 99 f;
 #X obj 1147 99 + 1;
 #X obj 1118 121 % 8;
-#X floatatom 1118 143 5 0 0 0 - - -;
+#X floatatom 1118 143 5 0 0 0 - - - 0;
 #X obj 1118 162 s \$0-load-r;
 #X obj 1063 29 loadbang;
 #X obj 1265 62 threshold~ 0.9 0 0.9 0;
 #X obj 1265 84 random 8;
 #X obj 1265 106 s \$0-load-r;
-#X obj 105 242 hsl 128 15 0 127 0 1 \$0-index2-s \$0-index2-r INDEX
-135 7 0 10 -158136 -1 -1 0 1;
+#X obj 105 242 hsl 128 15 0 127 0 1 \$0-index2-s \$0-index2-r INDEX 135 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 455 178 r \$0-op1-s;
 #X obj 455 200 mtof;
 #X obj 455 222 pack 0 50;
@@ -77,27 +76,21 @@
 #X obj 455 297 phasor~;
 #X obj 455 319 +~;
 #X obj 455 341 cos~;
-#X obj 105 227 hsl 128 15 0 127 0 1 \$0-decay2-s \$0-decay2-r DECAY2
-135 7 0 10 -262144 -1 -1 0 1;
+#X obj 105 227 hsl 128 15 0 127 0 1 \$0-decay2-s \$0-decay2-r DECAY2 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 455 363 *~;
 #X obj 515 346 r~ \$0-EG1;
-#X obj 105 132 hsl 128 15 0 127 0 1 \$0-op1-s \$0-op1-r OP1(CARRIER)
-135 7 0 10 -262144 -1 -1 0 1;
+#X obj 105 132 hsl 128 15 0 127 0 1 \$0-op1-s \$0-op1-r OP1(CARRIER) 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 684 298 +~;
 #X obj 684 329 phasor~;
 #X obj 684 351 +~;
 #X obj 684 373 cos~;
 #X obj 684 395 *~;
 #X obj 744 378 r~ \$0-EG2;
-#X obj 105 212 hsl 128 15 0 127 0 1 \$0-op2-s \$0-op2-r OP2(MOD) 135
-7 0 10 -262144 -1 -1 0 1;
-#X obj 105 162 hsl 128 15 0 127 0 1 \$0-decay4-s \$0-decay4-r P-DECAY
-135 7 0 10 -262144 -1 -1 0 1;
+#X obj 105 212 hsl 128 15 0 127 0 1 \$0-op2-s \$0-op2-r OP2(MOD) 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 162 hsl 128 15 0 127 0 1 \$0-decay4-s \$0-decay4-r P-DECAY 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 699 22 r \$0-op2-s;
-#X obj 105 277 hsl 128 15 0 127 0 1 \$0-decay3-s \$0-decay3-r DECAY3
-135 7 0 10 -262144 -1 -1 0 1;
-#X obj 105 262 hsl 128 15 0 127 0 1 \$0-op3-s \$0-op3-r OP3(MOD) 135
-7 0 10 -262144 -1 -1 0 1;
+#X obj 105 277 hsl 128 15 0 127 0 1 \$0-decay3-s \$0-decay3-r DECAY3 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 262 hsl 128 15 0 127 0 1 \$0-op3-s \$0-op3-r OP3(MOD) 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 844 359 +~;
 #X obj 844 390 phasor~;
 #X obj 844 412 +~;
@@ -163,12 +156,9 @@
 #X obj 859 200 pack 0 50;
 #X obj 859 222 line~;
 #X obj 859 56 r \$0-op3-s;
-#X obj 105 292 hsl 128 15 0 127 0 1 \$0-index3-s \$0-index3-r INDEX
-135 7 0 10 -158136 -1 -1 0 1;
-#X obj 290 259 tgl 15 1 \$0-t2-s \$0-t2-r FREE 17 7 0 10 -262144 -1
--1 0 1;
-#X obj 290 212 tgl 15 1 \$0-t1-s \$0-t1-r FREE 17 7 0 10 -262144 -1
--1 0 1;
+#X obj 105 292 hsl 128 15 0 127 0 1 \$0-index3-s \$0-index3-r INDEX 135 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 290 259 tgl 15 1 \$0-t2-s \$0-t2-r FREE 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 290 212 tgl 15 1 \$0-t1-s \$0-t1-r FREE 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 699 220 *~;
 #X obj 859 244 *~;
 #X obj 615 137 r \$0-t1-s;
@@ -196,8 +186,7 @@
 #X obj 584 359 / 127;
 #X obj 584 381 pack 0 50;
 #X obj 584 403 line~;
-#X obj 105 177 hsl 128 15 0 127 0 1 \$0-envmod-s \$0-envmod-r ENVMOD
-135 7 0 10 -158136 -1 -1 0 1;
+#X obj 105 177 hsl 128 15 0 127 0 1 \$0-envmod-s \$0-envmod-r ENVMOD 135 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 515 442 *~ 2000;
 #X obj 1080 320 *~;
 #X obj 1152 259 / 127;
@@ -206,8 +195,7 @@
 #X obj 1080 342 *~ 2000;
 #X obj 1152 236 r \$0-envmod3-s;
 #X obj 526 302 *~ 1;
-#X obj 105 192 hsl 128 15 0 127 0 1 \$0-feedback-s \$0-feedback-r FEEDBACK
-135 7 0 10 -158136 -1 -1 0 1;
+#X obj 105 192 hsl 128 15 0 127 0 1 \$0-feedback-s \$0-feedback-r FEEDBACK 135 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 454 644 outlet~;
 #N canvas 0 22 450 300 EG3 0;
 #X obj 135 55 r \$0-trig!;
@@ -285,8 +273,7 @@
 #X connect 13 0 2 0;
 #X connect 15 0 9 0;
 #X restore 355 95 pd EG4;
-#X obj 105 147 hsl 128 15 0 127 0 1 \$0-decay1-s \$0-decay1-r DECAY1
-135 7 0 10 -262144 -1 -1 0 1;
+#X obj 105 147 hsl 128 15 0 127 0 1 \$0-decay1-s \$0-decay1-r DECAY1 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 515 383 r~ \$0-EG4;
 #X obj 470 45 *~ 127;
 #X obj 470 67 mtof~;
@@ -298,24 +285,17 @@
 #X obj 530 100 / 127;
 #X obj 530 122 pack 0 50;
 #X obj 530 144 line~;
-#X obj 105 342 hsl 128 15 0 127 0 1 \$0-acc-prob-s \$0-acc-prob-r ACC-PROB
-133 7 0 10 -262144 -1 -1 0 1;
-#X obj 105 327 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r
-FLAM-PROB 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 105 312 hsl 128 15 0 127 0 1 \$0-flam-s \$0-flam-r FLAM 133
-7 0 10 -262144 -1 -1 0 1;
-#X obj 115 372 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD 125 7 0 10
--262144 -150893 -1 0;
-#X obj 115 357 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE 125 7
-0 10 -262144 -226533 -1 0;
-#X obj 294 325 bng 15 250 50 0 \$0-flam-prob-gui-s \$0-flam-prob-gui-r
-empty 17 7 0 10 -1 -226533 -1;
-#X obj 294 340 bng 15 250 50 0 \$0-acc-prob-gui-s \$0-acc-prob-gui-r
-empty 17 7 0 10 -1 -226533 -1;
+#X obj 105 342 hsl 128 15 0 127 0 1 \$0-acc-prob-s \$0-acc-prob-r ACC-PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 327 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r FLAM-PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 312 hsl 128 15 0 127 0 1 \$0-flam-s \$0-flam-r FLAM 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 115 372 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD 125 7 0 10 #fcfcfc #90d4b0 #000000 0;
+#X obj 115 357 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE 125 7 0 10 #fcfcfc #dc4c90 #000000 0;
+#X obj 294 325 bng 15 250 50 0 \$0-flam-prob-gui-s \$0-flam-prob-gui-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 294 340 bng 15 250 50 0 \$0-acc-prob-gui-s \$0-acc-prob-gui-r empty 17 7 0 10 #000000 #dc4c90 #000000;
 #X obj 732 498 random 127;
-#X floatatom 732 520 5 0 0 0 - - -;
+#X floatatom 732 520 5 0 0 0 - - - 0;
 #X obj 732 539 moses;
-#X floatatom 815 556 5 0 0 0 - - -;
+#X floatatom 815 556 5 0 0 0 - - - 0;
 #X obj 732 561 t b b;
 #X obj 732 611 s \$0-acc-prob-gui-r;
 #X obj 732 476 r \$0-trig!;
@@ -372,19 +352,14 @@ empty 17 7 0 10 -1 -226533 -1;
 #X restore 759 588 pd EGACCENT;
 #X obj 532 487 r~ \$0-ACCENT;
 #X obj 456 489 *~ 0.5;
-#X floatatom 203 118 5 0 0 0 - #0-op1-s -;
-#X obj 103 123 cnv 5 5 5 empty empty PERCUSSION 0 0 0 12 -262144 -66577
-0;
-#X obj 176 123 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
-#X obj 318 107 cnv 5 5 5 empty empty R-LOAD 0 0 0 8 -262144 -226533
-0;
-#X obj 103 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
-;
-#X obj 156 108 cnv 5 5 5 empty empty OP1 0 0 0 8 -262144 -1 0;
-#X obj 213 108 cnv 5 5 5 empty empty INDEX 0 0 0 8 -262144 -1 0;
-#X obj 276 108 cnv 5 5 5 empty empty LOAD 0 0 0 8 -262144 -226533 0
-;
+#X floatatom 203 118 5 0 0 0 - \$0-op1-s - 0;
+#X obj 103 123 cnv 5 5 5 empty empty PERCUSSION 0 0 0 12 #fcfcfc #404040 0;
+#X obj 176 123 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 318 107 cnv 5 5 5 empty empty R-LOAD 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 103 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 156 108 cnv 5 5 5 empty empty OP1 0 0 0 8 #fcfcfc #000000 0;
+#X obj 213 108 cnv 5 5 5 empty empty INDEX 0 0 0 8 #fcfcfc #000000 0;
+#X obj 276 108 cnv 5 5 5 empty empty LOAD 0 0 0 8 #fcfcfc #dc4c90 0;
 #N canvas 267 22 992 752 state-saving-multiple-instances 0;
 #X obj 461 15 loadbang;
 #X obj 536 276 state_saving_module/textfile \$0;
@@ -401,11 +376,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X text 523 224 INSTANCE NUMBER;
 #X obj 488 139 f \$1;
 #X obj 488 175 t f f f;
-#X obj 12 538 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 12 538 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 12 479 r SAVE-S;
-#X msg 74 598 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16 \$17;
+#X msg 74 598 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16 \$17;
 #X obj 74 560 pack f f f f f f f f f f f f f f f f f;
 #X obj 404 502 r \$0-load-s;
 #X obj 342 486 r \$0-t2-s;
@@ -508,8 +481,7 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 99 528 s \$0-instance-num;
 #X obj 99 480 makefilename %d;
 #X msg 99 505 label \$1;
-#N canvas 366 22 1117 745 state-saving-via-preset-manager-module 0
-;
+#N canvas 366 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 478 210 state_saving_module/textfile \$0;
 #X msg 756 193 rewind;
 #X msg 713 193 bang;
@@ -546,9 +518,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -582,9 +554,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -619,9 +591,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -644,8 +616,7 @@ empty 17 7 0 10 -1 -226533 -1;
 #X connect 14 1 10 1;
 #X restore 483 813 pd morph-frequencies;
 #X obj 956 352 s \$0-load-r;
-#X msg 187 603 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16 \$17;
+#X msg 187 603 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16 \$17;
 #X msg 195 778 write statesave/\$1-\$2-percussion-ss.txt;
 #X msg 478 185 read statesave/\$1-\$2-percussion-ss.txt;
 #X obj 185 573 pack f f f f f f f f f f f f f f f f f;
@@ -679,9 +650,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -718,9 +689,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -755,9 +726,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -793,9 +764,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -830,9 +801,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -866,9 +837,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -906,9 +877,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -942,9 +913,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -977,9 +948,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -1013,9 +984,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -1049,9 +1020,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -1860,8 +1831,7 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 942 31 r SAVE-S;
 #X obj 957 63 r \$0-load-s;
 #X obj 942 114 s \$0-write-r;
-#X msg 153 529 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16;
+#X msg 153 529 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
 #X obj 154 488 pack f f f f f f f f f f f f f f f f;
 #X msg 550 336 write statesave/\$1-percussionpreset-\$2-ss.txt;
 #X msg 822 304 read statesave/\$1-percussionpreset-\$2-ss.txt;
@@ -1939,10 +1909,9 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj 945 19 inlet~ INDEX;
 #X obj 945 41 s~ \$0-INDEX-CV;
 #N canvas 307 23 1280 809 external-messages 0;
-#X floatatom -71 513 5 0 0 0 - - -;
+#X floatatom -71 513 5 0 0 0 - - - 0;
 #X obj 43 328 spigot;
-#X obj 76 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 76 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 112 272 ==;
 #X obj 127 248 f \$1;
 #X obj 127 224 loadbang;
@@ -1953,74 +1922,73 @@ empty 17 7 0 10 -1 -226533 -1;
 #X obj -71 440 t b f;
 #X obj -71 463 spigot;
 #X obj 43 62 unpack s f f;
-#X symbolatom 43 94 10 0 0 0 - - -;
+#X symbolatom 43 94 10 0 0 0 - - - 0;
 #X obj 76 308 t f f;
 #X obj 103 332 s \$0-msg-spigot;
 #X obj -23 447 r \$0-msg-spigot;
-#X floatatom -45 657 5 0 0 0 - - -;
+#X floatatom -45 657 5 0 0 0 - - - 0;
 #X obj -45 636 f;
 #X obj -45 584 t b f;
 #X obj -45 607 spigot;
 #X obj 3 591 r \$0-msg-spigot;
-#X floatatom 106 549 5 0 0 0 - - -;
+#X floatatom 106 549 5 0 0 0 - - - 0;
 #X obj 106 528 f;
 #X obj 106 476 t b f;
 #X obj 106 499 spigot;
 #X obj 154 483 r \$0-msg-spigot;
-#X floatatom 145 687 5 0 0 0 - - -;
+#X floatatom 145 687 5 0 0 0 - - - 0;
 #X obj 145 666 f;
 #X obj 145 614 t b f;
 #X obj 145 637 spigot;
 #X obj 193 621 r \$0-msg-spigot;
-#X floatatom 270 523 5 0 0 0 - - -;
+#X floatatom 270 523 5 0 0 0 - - - 0;
 #X obj 270 502 f;
 #X obj 270 450 t b f;
 #X obj 270 473 spigot;
 #X obj 318 457 r \$0-msg-spigot;
-#X floatatom 315 690 5 0 0 0 - - -;
+#X floatatom 315 690 5 0 0 0 - - - 0;
 #X obj 315 669 f;
 #X obj 315 617 t b f;
 #X obj 315 640 spigot;
 #X obj 363 624 r \$0-msg-spigot;
-#X floatatom 442 535 5 0 0 0 - - -;
+#X floatatom 442 535 5 0 0 0 - - - 0;
 #X obj 442 514 f;
 #X obj 442 462 t b f;
 #X obj 442 485 spigot;
 #X obj 490 469 r \$0-msg-spigot;
-#X floatatom 479 685 5 0 0 0 - - -;
+#X floatatom 479 685 5 0 0 0 - - - 0;
 #X obj 479 664 f;
 #X obj 479 612 t b f;
 #X obj 479 635 spigot;
 #X obj 527 619 r \$0-msg-spigot;
-#X floatatom 622 527 5 0 0 0 - - -;
+#X floatatom 622 527 5 0 0 0 - - - 0;
 #X obj 622 506 f;
 #X obj 622 454 t b f;
 #X obj 622 477 spigot;
 #X obj 670 461 r \$0-msg-spigot;
-#X floatatom 654 680 5 0 0 0 - - -;
+#X floatatom 654 680 5 0 0 0 - - - 0;
 #X obj 654 659 f;
 #X obj 654 607 t b f;
 #X obj 654 630 spigot;
 #X obj 702 614 r \$0-msg-spigot;
-#X floatatom 784 516 5 0 0 0 - - -;
+#X floatatom 784 516 5 0 0 0 - - - 0;
 #X obj 784 495 f;
 #X obj 784 443 t b f;
 #X obj 784 466 spigot;
 #X obj 832 450 r \$0-msg-spigot;
-#X floatatom 816 707 5 0 0 0 - - -;
+#X floatatom 816 707 5 0 0 0 - - - 0;
 #X obj 816 686 f;
 #X obj 816 634 t b f;
 #X obj 816 657 spigot;
 #X obj 864 641 r \$0-msg-spigot;
 #X obj 43 14 r percussion;
-#X obj 223 62 route OP1(CARRIER) DECAY1 P-DECAY ENVMOD FEEDBACK OP2(MOD)
-DECAY2 INDEX OP3(MOD) DECAY3 INDEX3 FLAM FLAM-PROB ACC-PROB;
-#X floatatom 824 386 5 0 0 0 - - -;
+#X obj 223 62 route OP1(CARRIER) DECAY1 P-DECAY ENVMOD FEEDBACK OP2(MOD) DECAY2 INDEX OP3(MOD) DECAY3 INDEX3 FLAM FLAM-PROB ACC-PROB;
+#X floatatom 824 386 5 0 0 0 - - - 0;
 #X obj 824 365 f;
 #X obj 824 313 t b f;
 #X obj 824 336 spigot;
 #X obj 872 320 r \$0-msg-spigot;
-#X floatatom 967 569 5 0 0 0 - - -;
+#X floatatom 967 569 5 0 0 0 - - - 0;
 #X obj 967 548 f;
 #X obj 967 496 t b f;
 #X obj 967 519 spigot;
@@ -2156,47 +2124,28 @@ DECAY2 INDEX OP3(MOD) DECAY3 INDEX3 FLAM FLAM-PROB ACC-PROB;
 #X obj 1016 561 state_saving_module percussion \$0 \$1;
 #X obj 1056 521 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/bng_dispatch percussion \$0 \$1 250
-50 acc-prob-gui-s acc-prob-gui-r empty #000000 #DE4C91 #000000;
-#X obj 10 120 state_saving_module/hradio_dispatch percussion \$0 \$1
-0 7 write-s write-r STORE #FFFFFF #DE4C91 #000000;
-#X obj 10 180 state_saving_module/hradio_dispatch percussion \$0 \$1
-0 7 load-s load-r LOAD #FFFFFF #91D6B2 #000000;
-#X obj 10 240 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 flam-s flam-r FLAM #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 flam-prob-s flam-prob-r FLAM-PROB #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 acc-prob-s acc-prob-r ACC-PROB #FFFFFF #000000 #000000;
-#X obj 10 420 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 decay1-s decay1-r DECAY1 #FFFFFF #000000 #000000;
-#X obj 10 480 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 feedback-s feedback-r FEEDBACK #9999DE #000000 #000000;
-#X obj 10 540 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 envmod-s envmod-r ENVMOD #9999DE #000000 #000000;
-#X obj 10 600 state_saving_module/tgl_dispatch percussion \$0 \$1 0
-1 t1-s t1-r FREE #FFFFFF #000000 #000000;
-#X obj 10 660 state_saving_module/tgl_dispatch percussion \$0 \$1 0
-1 t2-s t2-r FREE #FFFFFF #000000 #000000;
-#X obj 10 720 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 index3-s index3-r INDEX #9999DE #000000 #000000;
-#X obj 10 780 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 op3-s op3-r OP3(MOD) #FFFFFF #000000 #000000;
-#X obj 10 840 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 decay3-s decay3-r DECAY3 #FFFFFF #000000 #000000;
-#X obj 10 900 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 decay4-s decay4-r P-DECAY #FFFFFF #000000 #000000;
-#X obj 10 960 state_saving_module/hsl_dispatch percussion \$0 \$1 0
-127 op2-s op2-r OP2(MOD) #FFFFFF #000000 #000000;
-#X obj 10 1020 state_saving_module/hsl_dispatch percussion \$0 \$1
-0 127 op1-s op1-r OP1(CARRIER) #FFFFFF #000000 #000000;
-#X obj 10 1080 state_saving_module/hsl_dispatch percussion \$0 \$1
-0 127 decay2-s decay2-r DECAY2 #FFFFFF #000000 #000000;
-#X obj 10 1140 state_saving_module/hsl_dispatch percussion \$0 \$1
-0 127 index2-s index2-r INDEX #9999DE #000000 #000000;
-#X obj 10 60 state_saving_module/bng_dispatch percussion \$0 \$1 250
-50 flam-prob-gui-s flam-prob-gui-r empty #000000 #DE4C91 #000000;
+#X obj 10 0 state_saving_module/bng_dispatch percussion \$0 \$1 250 50 acc-prob-gui-s acc-prob-gui-r empty #000000 #DE4C91 #000000;
+#X obj 10 120 state_saving_module/hradio_dispatch percussion \$0 \$1 0 7 write-s write-r STORE #FFFFFF #DE4C91 #000000;
+#X obj 10 180 state_saving_module/hradio_dispatch percussion \$0 \$1 0 7 load-s load-r LOAD #FFFFFF #91D6B2 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 flam-s flam-r FLAM #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 flam-prob-s flam-prob-r FLAM-PROB #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 acc-prob-s acc-prob-r ACC-PROB #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 decay1-s decay1-r DECAY1 #FFFFFF #000000 #000000;
+#X obj 10 480 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 feedback-s feedback-r FEEDBACK #9999DE #000000 #000000;
+#X obj 10 540 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 envmod-s envmod-r ENVMOD #9999DE #000000 #000000;
+#X obj 10 600 state_saving_module/tgl_dispatch percussion \$0 \$1 0 1 t1-s t1-r FREE #FFFFFF #000000 #000000;
+#X obj 10 660 state_saving_module/tgl_dispatch percussion \$0 \$1 0 1 t2-s t2-r FREE #FFFFFF #000000 #000000;
+#X obj 10 720 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 index3-s index3-r INDEX #9999DE #000000 #000000;
+#X obj 10 780 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 op3-s op3-r OP3(MOD) #FFFFFF #000000 #000000;
+#X obj 10 840 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 decay3-s decay3-r DECAY3 #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 decay4-s decay4-r P-DECAY #FFFFFF #000000 #000000;
+#X obj 10 960 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 op2-s op2-r OP2(MOD) #FFFFFF #000000 #000000;
+#X obj 10 1020 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 op1-s op1-r OP1(CARRIER) #FFFFFF #000000 #000000;
+#X obj 10 1080 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 decay2-s decay2-r DECAY2 #FFFFFF #000000 #000000;
+#X obj 10 1140 state_saving_module/hsl_dispatch percussion \$0 \$1 0 127 index2-s index2-r INDEX #9999DE #000000 #000000;
+#X obj 10 60 state_saving_module/bng_dispatch percussion \$0 \$1 250 50 flam-prob-gui-s flam-prob-gui-r empty #000000 #DE4C91 #000000;
 #X restore 1016 591 pd \$0-gui_listeners;
+#X obj 1141 590 namecanvas \$0-this;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 0 0;

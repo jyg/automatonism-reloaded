@@ -1,14 +1,12 @@
 #N canvas 222 142 1248 703 10;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-mega-seq 16 float 3;
-#A 0 0.748031 0.023622 0.015748 0.834646 0.685039 0.251969 0.362205
-0.795276 0.503937 0.976378 0.299213 0.716535 0.401575 0.330709 0.0787402
-0.669291;
+#A 0 0.165354 0.787402 0.503937 0.362205 0.448819 0.574803 0.795276 0.19685 0.88189 0.133858 0.874016 0.354331 0.669291 0.503937 0.15748 0.897638;
 #X coords 0 1 16 0 240 75 1 0 0;
 #X restore 108 147 graph;
 #N canvas 543 23 897 716 counter 0;
 #X obj 24 201 f;
-#X floatatom 24 380 5 0 0 0 - - -;
+#X floatatom 24 380 5 0 0 0 - - - 0;
 #X obj 51 274 s \$0-ms-counter1;
 #X obj 24 249 t f f;
 #X msg 24 138 bang;
@@ -42,8 +40,7 @@
 #X msg 574 230 set C;
 #X obj 52 460 sel 0 1 2 3 4 5 6 7 8 9 10 11 12;
 #X obj 5 358 sel 12 13 14 15 16 17 18 19 20 21 22 23 24;
-#X obj 194 72 sel -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12
-;
+#X obj 194 72 sel -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 3 0 4 0;
@@ -150,8 +147,7 @@
 #X msg 983 107 set diminished-HW;
 #X msg 983 70 set diminished-WH;
 #X msg 983 31 set harm-minor;
-#X obj 447 99 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
-;
+#X obj 447 99 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19;
 #X obj 439 74 * 19;
 #X connect 1 0 25 0;
 #X connect 2 0 24 0;
@@ -253,8 +249,7 @@
 #X obj 1010 421 f;
 #X msg 1019 454 set \$1-harm-minor;
 #X obj 813 38 t f f f f f f f f f f f f;
-#X obj 128 3 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
-;
+#X obj 128 3 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19;
 #X obj 81 58 * 19;
 #X connect 1 0 54 0;
 #X connect 2 0 53 0;
@@ -372,7 +367,7 @@
 #X text 339 651 UN-QUANTIZED OUT;
 #X text 79 627 QUANTIZED PITCH OUT;
 #X obj 285 604 / 28;
-#X floatatom 92 594 5 0 0 0 - - -;
+#X floatatom 92 594 5 0 0 0 - - - 0;
 #X obj 571 645 outlet~ tonal-centre-refernce;
 #X obj 580 407 loadbang;
 #X msg 580 428 0;
@@ -414,8 +409,7 @@
 #X msg 574 230 set C;
 #X obj 52 460 sel 0 1 2 3 4 5 6 7 8 9 10 11 12;
 #X obj 5 358 sel 12 13 14 15 16 17 18 19 20 21 22 23 24;
-#X obj 194 72 sel -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12
-;
+#X obj 194 72 sel -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12;
 #X obj 468 622 s \$0-ms-xpose-gui3-r;
 #X obj 86 38 r \$0-ms-xpose-centre-s;
 #X obj 137 209 s \$0-ms-xpose-centre-gui-r;
@@ -536,48 +530,28 @@
 #X connect 42 0 38 0;
 #X connect 42 1 38 1;
 #X restore 517 172 pd counter;
-#X obj 123 222 tgl 15 1 \$0-ms-p1-t1-s \$0-ms-p1-t1-r empty 0 -20 0
-10 -262144 -1 -1 0 1;
-#X obj 108 222 tgl 15 1 \$0-ms-p1-t0-s \$0-ms-p1-t0-r RANDOM-STEP 0
-25 0 10 -262144 -1 -1 0 1;
-#X obj 153 222 tgl 15 1 \$0-ms-p1-t3-s \$0-ms-p1-t3-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 138 222 tgl 15 1 \$0-ms-p1-t2-s \$0-ms-p1-t2-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 183 222 tgl 15 1 \$0-ms-p1-t5-s \$0-ms-p1-t5-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 168 222 tgl 15 1 \$0-ms-p1-t4-s \$0-ms-p1-t4-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 213 222 tgl 15 1 \$0-ms-p1-t7-s \$0-ms-p1-t7-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 198 222 tgl 15 1 \$0-ms-p1-t6-s \$0-ms-p1-t6-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 243 222 tgl 15 1 \$0-ms-p1-t9-s \$0-ms-p1-t9-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 228 222 tgl 15 1 \$0-ms-p1-t8-s \$0-ms-p1-t8-r empty 17 7 0
-10 -262144 -1 -1 0 1;
-#X obj 273 222 tgl 15 1 \$0-ms-p1-t11-s \$0-ms-p1-t11-r empty 17 7
-0 10 -262144 -1 -1 0 1;
-#X obj 258 222 tgl 15 1 \$0-ms-p1-t10-s \$0-ms-p1-t10-r empty 17 7
-0 10 -262144 -1 -1 0 1;
-#X obj 303 222 tgl 15 1 \$0-ms-p1-t13-s \$0-ms-p1-t13-r empty 17 7
-0 10 -262144 -1 -1 0 1;
-#X obj 288 222 tgl 15 1 \$0-ms-p1-t12-s \$0-ms-p1-t12-r empty 17 7
-0 10 -262144 -1 -1 0 1;
-#X obj 333 222 tgl 15 1 \$0-ms-p1-t15-s \$0-ms-p1-t15-r empty 20 8
-0 10 -262144 -1 -1 0 1;
-#X obj 318 222 tgl 15 1 \$0-ms-p1-t14-s \$0-ms-p1-t14-r empty 17 7
-0 10 -262144 -1 -1 0 1;
-#X obj 288 286 bng 15 250 50 0 \$0-ms-right-bang1-s \$0-ms-right-bang1-r
-RESET-TOGGLES 20 8 0 10 -262144 -226533 -1;
-#X obj 288 267 bng 15 250 50 0 \$0-ms-rdm-bang-s \$0-ms-rdm-bang-r
-RDM-PATTERN 20 8 0 10 -262144 -226533 -1;
-#X floatatom 108 281 5 0 0 1 XPOSE #0-ms-xpose-p1-gui-r -;
-#X symbolatom 288 250 20 0 0 0 - #0-ms-scale-p1-gui-r -;
-#X obj 111 252 hsl 128 15 0 127 0 1 \$0-ms-scale-p1-s \$0-ms-scale-p1-r
-SCALE 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 111 267 hsl 128 15 0 127 0 1 \$0-ms-xpose-p1-s \$0-ms-xpose-p1-r
-XPOSE 133 7 0 10 -150893 -1 -1 0 1;
+#X obj 123 222 tgl 15 1 \$0-ms-p1-t1-s \$0-ms-p1-t1-r empty 0 -20 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 222 tgl 15 1 \$0-ms-p1-t0-s \$0-ms-p1-t0-r RANDOM-STEP 0 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 153 222 tgl 15 1 \$0-ms-p1-t3-s \$0-ms-p1-t3-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 138 222 tgl 15 1 \$0-ms-p1-t2-s \$0-ms-p1-t2-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 183 222 tgl 15 1 \$0-ms-p1-t5-s \$0-ms-p1-t5-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 168 222 tgl 15 1 \$0-ms-p1-t4-s \$0-ms-p1-t4-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 213 222 tgl 15 1 \$0-ms-p1-t7-s \$0-ms-p1-t7-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 198 222 tgl 15 1 \$0-ms-p1-t6-s \$0-ms-p1-t6-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 243 222 tgl 15 1 \$0-ms-p1-t9-s \$0-ms-p1-t9-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 228 222 tgl 15 1 \$0-ms-p1-t8-s \$0-ms-p1-t8-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 273 222 tgl 15 1 \$0-ms-p1-t11-s \$0-ms-p1-t11-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 258 222 tgl 15 1 \$0-ms-p1-t10-s \$0-ms-p1-t10-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 303 222 tgl 15 1 \$0-ms-p1-t13-s \$0-ms-p1-t13-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 288 222 tgl 15 1 \$0-ms-p1-t12-s \$0-ms-p1-t12-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 333 222 tgl 15 1 \$0-ms-p1-t15-s \$0-ms-p1-t15-r empty 20 8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 318 222 tgl 15 1 \$0-ms-p1-t14-s \$0-ms-p1-t14-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 288 286 bng 15 250 50 0 \$0-ms-right-bang1-s \$0-ms-right-bang1-r RESET-TOGGLES 20 8 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 288 267 bng 15 250 50 0 \$0-ms-rdm-bang-s \$0-ms-rdm-bang-r RDM-PATTERN 20 8 0 10 #fcfcfc #dc4c90 #000000;
+#X floatatom 108 281 5 0 0 1 XPOSE \$0-ms-xpose-p1-gui-r - 0;
+#X symbolatom 288 250 20 0 0 0 - \$0-ms-scale-p1-gui-r - 0;
+#X obj 111 252 hsl 128 15 0 127 0 1 \$0-ms-scale-p1-s \$0-ms-scale-p1-r SCALE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 111 267 hsl 128 15 0 127 0 1 \$0-ms-xpose-p1-s \$0-ms-xpose-p1-r XPOSE 133 7 0 10 #90d4b0 #000000 #000000 0 1;
 #N canvas 0 23 1440 774 scales-tables 0;
 #X obj 11 17 loadbang;
 #X obj 10 156 loadbang;
@@ -608,40 +582,21 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X obj 864 35 table \$0-pelog;
 #X obj 823 267 table \$0-slendro;
 #X obj 817 395 table \$0-whole;
-#X msg 11 81 \; \$1-ionian 0 0 2 4 5 7 9 11 12 14 16 17 19 21 23 24
-26 28 29 31 33 35 36 38 40 41 43 45 47 48;
-#X msg 10 201 \; \$1-aeolian 0 0 2 3 5 7 8 10 12 14 15 17 19 20 22
-24 26 27 29 31 32 34 36 38 39 41 43 44 46 48;
-#X msg 16 312 \; \$1-dorian 0 0 2 3 5 7 9 10 12 14 15 17 19 21 22 24
-26 27 29 31 33 34 36 38 39 41 43 45 46 48;
-#X msg 17 432 \; \$1-phrygian 0 0 1 3 5 7 8 10 12 13 15 17 19 20 22
-24 25 27 29 31 32 34 36 37 39 41 43 44 46 48;
-#X msg 18 549 \; \$1-lydian 0 0 2 4 6 7 9 11 12 14 16 18 19 21 23 24
-26 28 30 31 33 35 36 38 40 42 43 45 47 48;
-#X msg 19 643 \; \$1-lyd-minor 0 0 2 3 6 7 9 11 12 14 15 18 19 21 23
-24 26 27 30 31 33 35 36 38 39 42 43 45 47 48;
-#X msg 427 50 \; \$1-chromatic 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
-15 16 17 18 19 20 21 22 23 24 25 26 27 28;
-#X msg 428 151 \; \$1-ancient 0 0 0.5 1 5 7 7.5 8 12 12.5 13 17 19
-19.5 20 24 24.5 25 29 31 31.5 32 36 36.5 37 41 43 43.5 44 48;
-#X msg 430 248 \; \$1-tetra 0 0 1 1.75 2 3 3.75 4 5 12 13 13.75 14
-15 15.75 16 17 24 25 25.75 26 27 27.75 28 29 36 37 37.75 38 39;
-#X msg 431 350 \; \$1-indian 0 0 0.9 1.14 1.8 2.04 2.94 3.18 3.84 4.08
-4.9 5.22 5.88 6.12 7.02 7.92 8.16 8.82 9.06 9.96 10.2 10.86 11.1 12
-12.9 13.14 13.8 14.04 14.94 15.18;
-#X msg 430 468 \; \$1-siga 0 0 1.5 3.5 5.5 7 8.5 10.5 12 13.5 15.5
-17.5 19 20.5 22.5 24 25.5 27.5 29.5 31 32.5 34.5 36 37.5 39.5 41.5
-43 44.5 46.5 48.5;
-#X msg 433 601 \; \$1-harm-major 0 0 2 4 5 7 8 11 12 14 16 17 19 20
-23 24 26 28 29 31 32 35 36 38 40 41 43 44 47 48;
-#X msg 822 73 \; \$1-pelog 0 0 1.5 2.5 3.5 7 8 10.5 12 13.5 14.5 15.5
-19 20 22.5 24 25.5 26.5 27.5 31 32 34.5 36 37.5 38.5 39.5 42.5 43.5
-45 46.5;
-#X msg 823 218 \; \$1-slendro 0 0 2.5 5 7 9.5 12 14.5 17 19 21.5 24
-26.5 29 31 33.5 36 38.5 41 43 45.5 47 49.5 52 54 56.5 59 61.5 64 66.5
-;
-#X msg 818 346 \; \$1-whole 0 0 2 4 6 8 10 12 14 16 18 20 22 24 26
-28 30 32 34 36 38 40 42 44 46 48 50 52 54 56;
+#X msg 11 81 \; \$1-ionian 0 0 2 4 5 7 9 11 12 14 16 17 19 21 23 24 26 28 29 31 33 35 36 38 40 41 43 45 47 48;
+#X msg 10 201 \; \$1-aeolian 0 0 2 3 5 7 8 10 12 14 15 17 19 20 22 24 26 27 29 31 32 34 36 38 39 41 43 44 46 48;
+#X msg 16 312 \; \$1-dorian 0 0 2 3 5 7 9 10 12 14 15 17 19 21 22 24 26 27 29 31 33 34 36 38 39 41 43 45 46 48;
+#X msg 17 432 \; \$1-phrygian 0 0 1 3 5 7 8 10 12 13 15 17 19 20 22 24 25 27 29 31 32 34 36 37 39 41 43 44 46 48;
+#X msg 18 549 \; \$1-lydian 0 0 2 4 6 7 9 11 12 14 16 18 19 21 23 24 26 28 30 31 33 35 36 38 40 42 43 45 47 48;
+#X msg 19 643 \; \$1-lyd-minor 0 0 2 3 6 7 9 11 12 14 15 18 19 21 23 24 26 27 30 31 33 35 36 38 39 42 43 45 47 48;
+#X msg 427 50 \; \$1-chromatic 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28;
+#X msg 428 151 \; \$1-ancient 0 0 0.5 1 5 7 7.5 8 12 12.5 13 17 19 19.5 20 24 24.5 25 29 31 31.5 32 36 36.5 37 41 43 43.5 44 48;
+#X msg 430 248 \; \$1-tetra 0 0 1 1.75 2 3 3.75 4 5 12 13 13.75 14 15 15.75 16 17 24 25 25.75 26 27 27.75 28 29 36 37 37.75 38 39;
+#X msg 431 350 \; \$1-indian 0 0 0.9 1.14 1.8 2.04 2.94 3.18 3.84 4.08 4.9 5.22 5.88 6.12 7.02 7.92 8.16 8.82 9.06 9.96 10.2 10.86 11.1 12 12.9 13.14 13.8 14.04 14.94 15.18;
+#X msg 430 468 \; \$1-siga 0 0 1.5 3.5 5.5 7 8.5 10.5 12 13.5 15.5 17.5 19 20.5 22.5 24 25.5 27.5 29.5 31 32.5 34.5 36 37.5 39.5 41.5 43 44.5 46.5 48.5;
+#X msg 433 601 \; \$1-harm-major 0 0 2 4 5 7 8 11 12 14 16 17 19 20 23 24 26 28 29 31 32 35 36 38 40 41 43 44 47 48;
+#X msg 822 73 \; \$1-pelog 0 0 1.5 2.5 3.5 7 8 10.5 12 13.5 14.5 15.5 19 20 22.5 24 25.5 26.5 27.5 31 32 34.5 36 37.5 38.5 39.5 42.5 43.5 45 46.5;
+#X msg 823 218 \; \$1-slendro 0 0 2.5 5 7 9.5 12 14.5 17 19 21.5 24 26.5 29 31 33.5 36 38.5 41 43 45.5 47 49.5 52 54 56.5 59 61.5 64 66.5;
+#X msg 818 346 \; \$1-whole 0 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56;
 #X obj 11 39 f \$0;
 #X obj 10 178 f \$0;
 #X obj 15 291 f \$0;
@@ -661,33 +616,27 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X obj 832 426 loadbang;
 #X obj 832 448 f \$0;
 #X obj 831 528 table \$0-melodic-minor;
-#X msg 832 479 \; \$1-melodic-minor 0 0 2 3 5 7 9 11 12 14 15 17 19
-21 23 24 26 27 29 31 33 35 36 38 39 41 43 45 47 48;
+#X msg 832 479 \; \$1-melodic-minor 0 0 2 3 5 7 9 11 12 14 15 17 19 21 23 24 26 27 29 31 33 35 36 38 39 41 43 45 47 48;
 #X obj 835 558 loadbang;
 #X obj 835 580 f \$0;
 #X obj 834 660 table \$0-lydian-dominant;
-#X msg 835 611 \; \$1-lydian-dominant 0 0 2 4 6 7 9 10 12 14 16 18
-19 21 22 24 26 28 30 31 33 34 36 38 40 42 43 45 46 48;
+#X msg 835 611 \; \$1-lydian-dominant 0 0 2 4 6 7 9 10 12 14 16 18 19 21 22 24 26 28 30 31 33 34 36 38 40 42 43 45 46 48;
 #X obj 1199 7 loadbang;
 #X obj 1199 29 f \$0;
 #X obj 1198 109 table \$0-bebop;
-#X msg 1199 60 \; \$1-bebop 0 0 2 4 5 7 8 9 11 12 14 16 17 19 20 21
-23 24 26 28 29 31 32 33 34 36 38 40 41 43 44 45 47 48;
+#X msg 1199 60 \; \$1-bebop 0 0 2 4 5 7 8 9 11 12 14 16 17 19 20 21 23 24 26 28 29 31 32 33 34 36 38 40 41 43 44 45 47 48;
 #X obj 1213 141 loadbang;
 #X obj 1213 163 f \$0;
 #X obj 1212 243 table \$0-diminished-HW;
-#X msg 1213 193 \; \$1-diminished-HW 0 0 1 3 4 6 7 9 10 12 13 15 16
-18 19 21 22 24 25 27 28 30 31 33 34 36 37 39 40 42 43 45 46 48;
+#X msg 1213 193 \; \$1-diminished-HW 0 0 1 3 4 6 7 9 10 12 13 15 16 18 19 21 22 24 25 27 28 30 31 33 34 36 37 39 40 42 43 45 46 48;
 #X obj 1214 288 loadbang;
 #X obj 1214 310 f \$0;
 #X obj 1213 390 table \$0-diminished-WH;
-#X msg 1214 341 \; \$1-diminished-WH 0 0 2 3 5 6 8 9 11 12 14 15 17
-18 20 21 23 24 26 27 29 30 32 33 35 36 38 39 41 42 44 45 47 48;
+#X msg 1214 341 \; \$1-diminished-WH 0 0 2 3 5 6 8 9 11 12 14 15 17 18 20 21 23 24 26 27 29 30 32 33 35 36 38 39 41 42 44 45 47 48;
 #X obj 1226 429 loadbang;
 #X obj 1226 451 f \$0;
 #X obj 1226 548 table \$0-harm-minor;
-#X msg 1226 496 \; \$1-harm-minor 0 0 2 3 5 7 8 11 12 14 15 17 19 20
-23 24 25 28 29 31 32 35 36 38 39 41 43 44 47 48;
+#X msg 1226 496 \; \$1-harm-minor 0 0 2 3 5 7 8 11 12 14 15 17 19 20 23 24 25 28 29 31 32 35 36 38 39 41 43 44 47 48;
 #X connect 0 0 44 0;
 #X connect 1 0 45 0;
 #X connect 2 0 46 0;
@@ -1091,25 +1040,16 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X connect 10 0 11 0;
 #X connect 11 0 9 0;
 #X restore 107 495 pd randomize-pattern1;
-#X obj 108 132 hradio 15 1 0 16 s_0-ms-counter-gu \$0-ms-counter1 empty
-0 -8 0 10 -262144 -226533 -1 15;
-#X obj 107 410 cnv 5 5 5 empty empty Q-OUT 0 0 0 8 -262144 -66577 0
-;
-#X obj 104 109 cnv 5 5 5 empty empty CLK 0 0 0 8 -262144 -226533 0
-;
-#X obj 361 144 cnv 5 5 5 empty empty MEGA 0 0 0 24 -262144 -66577 0
-;
-#X obj 197 109 cnv 5 5 5 empty empty RANDOMIZE 0 0 0 8 -262144 -226533
-0;
-#X obj 311 109 cnv 5 5 5 empty empty LOAD(1-16) 0 0 0 8 -262144 -226533
-0;
-#X obj 358 162 cnv 5 5 5 empty empty SEQUENCER 0 0 0 12 -262144 -66577
-0;
-#X obj 418 411 cnv 5 5 5 empty empty CENTRE 0 0 0 8 -262144 -1 0;
-#X obj 421 109 cnv 5 5 5 empty empty RESET 0 0 0 8 -262144 -226533
-0;
-#X obj 424 115 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
+#X obj 108 132 hradio 15 1 0 16 s_0-ms-counter-gu \$0-ms-counter1 empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
+#X obj 107 410 cnv 5 5 5 empty empty Q-OUT 0 0 0 8 #fcfcfc #404040 0;
+#X obj 104 109 cnv 5 5 5 empty empty CLK 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 361 144 cnv 5 5 5 empty empty MEGA 0 0 0 24 #fcfcfc #404040 0;
+#X obj 197 109 cnv 5 5 5 empty empty RANDOMIZE 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 311 109 cnv 5 5 5 empty empty LOAD(1-16) 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 358 162 cnv 5 5 5 empty empty SEQUENCER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 418 411 cnv 5 5 5 empty empty CENTRE 0 0 0 8 #fcfcfc #000000 0;
+#X obj 421 109 cnv 5 5 5 empty empty RESET 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 424 115 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 681 191 inlet~;
 #X obj 872 104 inlet~;
 #X obj 1021 100 inlet~;
@@ -1200,8 +1140,7 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X obj 411 24 r SAVE-S;
 #X obj 411 107 s \$0-ms-write-r;
 #X obj -69 457 r \$0-ms-xpose-centre-s;
-#X msg -378 522 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16 \$17 \$18 \$19;
+#X msg -378 522 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16 \$17 \$18 \$19;
 #X obj -377 481 pack f f f f f f f f f f f f f f f f f f f;
 #N canvas 0 50 604 576 avoid-load-textfile-clicks 0;
 #X obj 159 25 loadbang;
@@ -1210,8 +1149,7 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X obj 159 116 line;
 #X obj 236 64 delay 110;
 #X msg 236 88 0 100;
-#X obj 162 140 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 162 140 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 159 160 / 127;
 #X obj 159 182 * 4;
 #X obj 159 204 i;
@@ -1306,10 +1244,8 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X connect 49 4 50 0;
 #X connect 50 0 47 0;
 #X restore 109 657 pd savetest;
-#X obj 108 353 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-7
-245 7 0 10 -262144 -1 -1 6;
-#X obj 108 313 hradio 15 1 0 16 \$0-ms-write-s \$0-ms-write-r WRITE-4
-245 7 0 10 -261234 -258113 -1 3;
+#X obj 108 353 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-1 245 7 0 10 #fcfcfc #000000 #000000 0;
+#X obj 108 313 hradio 15 1 0 16 \$0-ms-write-s \$0-ms-write-r WRITE-4 245 7 0 10 #fcc4c4 #fc0400 #000000 0;
 #X obj 108 518 r \$0-ms-write-s;
 #X obj 255 498 r \$0-ms-load-s;
 #X obj 109 605 r \$0-ms-write-s;
@@ -1317,59 +1253,51 @@ XPOSE 133 7 0 10 -150893 -1 -1 0 1;
 #X obj 681 223 threshold~ 1 0 1 0;
 #X obj 681 317 s \$0-ms-rdm-bang-r;
 #X obj 681 245 t b b;
-#X obj 210 115 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
+#X obj 210 115 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 872 126 threshold~ 1 0 1 0;
 #X obj 872 148 t b b;
 #X obj 872 170 f;
 #X obj 905 168 + 1;
 #X obj 870 289 s \$0-ms-load-r;
-#X obj 322 115 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
+#X obj 322 115 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 1021 184 s \$0-ms-reset-s;
 #X obj 372 604 s \$0-instance-num;
 #X obj 372 556 makefilename %d;
-#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
+#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 372 581 label \$1;
 #X obj 372 526 f \$1;
 #X obj 372 497 loadbang;
 #X obj 517 122 threshold~ 0.9 0 0.9 0;
-#X symbolatom 179 282 10 0 0 0 - #0-ms-xpose-gui2-r -;
-#X obj 108 333 hradio 15 1 1 16 \$0-ms-load-s \$0-ms-load-r LOAD-1
-245 7 0 10 -204786 -13381 -1 0;
+#X symbolatom 179 282 10 0 0 0 - \$0-ms-xpose-gui2-r - 0;
+#X obj 108 333 hradio 15 1 1 16 \$0-ms-load-s \$0-ms-load-r LOAD-1 245 7 0 10 #c4fcc4 #0c4410 #000000 0;
 #X obj 870 267 % 16;
 #X obj 974 229 r \$0-ms-maxstep-s;
 #X obj 974 250 + 1;
 #X obj 709 438 r \$0-ms-maxstep-s;
-#X floatatom 709 459 5 0 0 0 - - -;
+#X floatatom 709 459 5 0 0 0 - - - 0;
 #X obj 709 540 s \$0-ms-maxstep-r;
 #X obj 709 485 + 1;
-#X floatatom 828 460 5 0 0 0 - - -;
+#X floatatom 828 460 5 0 0 0 - - - 0;
 #X obj 828 486 + 1;
 #X obj 828 439 r \$0-ms-write-s;
 #X obj 828 541 s \$0-ms-write-r;
 #X msg 828 520 label WRITE-\$1;
 #X msg 709 519 label MAX-\$1;
-#X floatatom 935 460 5 0 0 0 - - -;
+#X floatatom 935 460 5 0 0 0 - - - 0;
 #X obj 935 486 + 1;
 #X obj 935 439 r \$0-ms-load-s;
 #X obj 935 541 s \$0-ms-load-r;
 #X msg 935 520 label LOAD-\$1;
-#X obj 252 411 cnv 5 5 5 empty empty OUT2 0 0 0 8 -262144 -1 0;
+#X obj 252 411 cnv 5 5 5 empty empty OUT2 0 0 0 8 #fcfcfc #000000 0;
 #X obj 640 390 outlet~ centre;
 #X obj 591 455 outlet~ out2;
 #X obj 484 398 outlet~ q-out;
-#X floatatom 313 388 5 0 0 1 XPOSE #0-ms-xpose-centre-gui-r -;
-#X obj 316 374 hsl 128 15 0 127 0 1 \$0-ms-xpose-centre-s \$0-ms-xpose-centre-r
-XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
-#X symbolatom 384 389 10 0 0 0 - #0-ms-xpose-gui3-r -;
-#X obj 108 306 cnv 5 250 5 empty empty empty 20 12 0 14 -233017 -66577
-0;
-#X obj 106 368 cnv 10 250 5 empty empty empty 20 12 0 14 -233017 -66577
-0;
-#N canvas 977 62 593 735 xtra-state-saving-multiple-instances-for-maxstep
-0;
+#X floatatom 313 388 5 0 0 1 XPOSE \$0-ms-xpose-centre-gui-r - 0;
+#X obj 316 374 hsl 128 15 0 127 0 1 \$0-ms-xpose-centre-s \$0-ms-xpose-centre-r XPOSE(CENTRE) -80 7 0 10 #90d4b0 #000000 #000000 0 1;
+#X symbolatom 384 389 10 0 0 0 - \$0-ms-xpose-gui3-r - 0;
+#X obj 108 306 cnv 5 250 5 empty empty empty 20 12 0 14 #e0e0e0 #404040 0;
+#X obj 106 368 cnv 10 250 5 empty empty empty 20 12 0 14 #e0e0e0 #404040 0;
+#N canvas 977 62 593 735 xtra-state-saving-multiple-instances-for-maxstep 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
 #X msg 556 463 rewind;
@@ -1384,8 +1312,7 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -1423,60 +1350,34 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X connect 20 0 4 0;
 #X connect 22 0 6 1;
 #X connect 23 0 20 0;
-#X restore 652 614 pd xtra-state-saving-multiple-instances-for-maxstep
-;
+#X restore 652 614 pd xtra-state-saving-multiple-instances-for-maxstep;
 #X obj 10 50 state_saving_module mega-sequencer \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 1 58 958 1018 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
-0 127 ms-xpose-centre-s ms-xpose-centre-r XPOSE(CENTRE) #91D6B2 #000000
-#000000;
-#X obj 10 240 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
-0 127 ms-xpose-p1-s ms-xpose-p1-r XPOSE #91D6B2 #000000 #000000;
-#X obj 10 300 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1
-0 127 ms-scale-p1-s ms-scale-p1-r SCALE #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/bng_dispatch mega-sequencer \$0 \$1
-250 50 ms-rdm-bang-s ms-rdm-bang-r RDM-PATTERN #FFFFFF #DE4C91 #000000
-;
-#X obj 10 420 state_saving_module/bng_dispatch mega-sequencer \$0 \$1
-250 50 ms-right-bang1-s ms-right-bang1-r RESET-TOGGLES #FFFFFF #DE4C91
-#000000;
-#X obj 10 480 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t14-s ms-p1-t14-r empty #FFFFFF #000000 #000000;
-#X obj 10 540 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t15-s ms-p1-t15-r empty #FFFFFF #000000 #000000;
-#X obj 10 600 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t12-s ms-p1-t12-r empty #FFFFFF #000000 #000000;
-#X obj 10 660 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t13-s ms-p1-t13-r empty #FFFFFF #000000 #000000;
-#X obj 10 720 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t10-s ms-p1-t10-r empty #FFFFFF #000000 #000000;
-#X obj 10 780 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t11-s ms-p1-t11-r empty #FFFFFF #000000 #000000;
-#X obj 10 840 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t8-s ms-p1-t8-r empty #FFFFFF #000000 #000000;
-#X obj 10 900 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t9-s ms-p1-t9-r empty #FFFFFF #000000 #000000;
-#X obj 10 960 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1
-0 1 ms-p1-t6-s ms-p1-t6-r empty #FFFFFF #000000 #000000;
-#X obj 10 1020 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t7-s ms-p1-t7-r empty #FFFFFF #000000 #000000;
-#X obj 10 1080 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t4-s ms-p1-t4-r empty #FFFFFF #000000 #000000;
-#X obj 10 1140 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t5-s ms-p1-t5-r empty #FFFFFF #000000 #000000;
-#X obj 10 1200 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t2-s ms-p1-t2-r empty #FFFFFF #000000 #000000;
-#X obj 10 1260 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t3-s ms-p1-t3-r empty #FFFFFF #000000 #000000;
-#X obj 10 1320 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t0-s ms-p1-t0-r RANDOM-STEP #FFFFFF #000000 #000000;
-#X obj 10 1380 state_saving_module/tgl_dispatch mega-sequencer \$0
-\$1 0 1 ms-p1-t1-s ms-p1-t1-r empty #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/hradio_dispatch MEGA-SEQUENCER \$0
-\$1 0 16 ms-maxstep-s ms-maxstep-r MAX- #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1 0 127 ms-xpose-centre-s ms-xpose-centre-r XPOSE(CENTRE) #91D6B2 #000000 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1 0 127 ms-xpose-p1-s ms-xpose-p1-r XPOSE #91D6B2 #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch mega-sequencer \$0 \$1 0 127 ms-scale-p1-s ms-scale-p1-r SCALE #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/bng_dispatch mega-sequencer \$0 \$1 250 50 ms-rdm-bang-s ms-rdm-bang-r RDM-PATTERN #FFFFFF #DE4C91 #000000;
+#X obj 10 420 state_saving_module/bng_dispatch mega-sequencer \$0 \$1 250 50 ms-right-bang1-s ms-right-bang1-r RESET-TOGGLES #FFFFFF #DE4C91 #000000;
+#X obj 10 480 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t14-s ms-p1-t14-r empty #FFFFFF #000000 #000000;
+#X obj 10 540 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t15-s ms-p1-t15-r empty #FFFFFF #000000 #000000;
+#X obj 10 600 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t12-s ms-p1-t12-r empty #FFFFFF #000000 #000000;
+#X obj 10 660 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t13-s ms-p1-t13-r empty #FFFFFF #000000 #000000;
+#X obj 10 720 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t10-s ms-p1-t10-r empty #FFFFFF #000000 #000000;
+#X obj 10 780 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t11-s ms-p1-t11-r empty #FFFFFF #000000 #000000;
+#X obj 10 840 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t8-s ms-p1-t8-r empty #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t9-s ms-p1-t9-r empty #FFFFFF #000000 #000000;
+#X obj 10 960 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t6-s ms-p1-t6-r empty #FFFFFF #000000 #000000;
+#X obj 10 1020 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t7-s ms-p1-t7-r empty #FFFFFF #000000 #000000;
+#X obj 10 1080 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t4-s ms-p1-t4-r empty #FFFFFF #000000 #000000;
+#X obj 10 1140 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t5-s ms-p1-t5-r empty #FFFFFF #000000 #000000;
+#X obj 10 1200 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t2-s ms-p1-t2-r empty #FFFFFF #000000 #000000;
+#X obj 10 1260 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t3-s ms-p1-t3-r empty #FFFFFF #000000 #000000;
+#X obj 10 1320 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t0-s ms-p1-t0-r RANDOM-STEP #FFFFFF #000000 #000000;
+#X obj 10 1380 state_saving_module/tgl_dispatch mega-sequencer \$0 \$1 0 1 ms-p1-t1-s ms-p1-t1-r empty #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hradio_dispatch MEGA-SEQUENCER \$0 \$1 0 16 ms-maxstep-s ms-maxstep-r MAX- #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#N canvas 762 83 1088 712 statesave-patterns-1-16 1;
+#N canvas 762 83 1088 712 statesave-patterns-1-16 0;
 #X obj 684 324 pack f f;
 #X obj 406 234 delay 10;
 #X text 446 112 WRITE;
@@ -1485,15 +1386,12 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X obj 406 307 pack f f;
 #X obj 39 368 array get \$0-mega-seq;
 #X msg 39 343 bang;
-#X msg 39 390 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16;
+#X msg 39 390 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
 #X obj 406 561 state_saving_module/textfile \$0;
 #X msg 484 296 clear;
-#X msg 406 389 write statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt
-;
+#X msg 406 389 write statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt;
 #X obj 746 597 state_saving_module/textfile \$0;
-#X msg 726 446 read statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt
-;
+#X msg 726 446 read statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt;
 #X obj 726 469 t b b a;
 #X msg 744 509 rewind;
 #X obj 747 629 array set \$0-mega-seq;
@@ -1504,16 +1402,14 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X obj 159 116 line;
 #X obj 236 64 delay 110;
 #X msg 236 88 0 100;
-#X obj 162 140 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 162 140 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 159 160 / 127;
 #X obj 159 182 * 4;
 #X obj 159 204 i;
 #X obj 415 370 pack f f;
 #X obj 415 295 t b f;
 #X obj 477 643 state_saving_module/textfile \$0;
-#X msg 457 492 read statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt
-;
+#X msg 457 492 read statesave/mega-patterns/mega-sequencer-\$1-pattern\$2.txt;
 #X obj 457 515 t b b a;
 #X msg 475 555 rewind;
 #X obj 415 339 f \$1;
@@ -1572,6 +1468,7 @@ XPOSE(CENTRE) -80 7 0 10 -150893 -1 -1 0 1;
 #X connect 21 2 23 0;
 #X connect 23 0 22 0;
 #X restore 108 546 pd statesave-patterns-1-16;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 1 0 94 0;
 #X connect 1 1 93 0;
 #X connect 1 2 92 0;

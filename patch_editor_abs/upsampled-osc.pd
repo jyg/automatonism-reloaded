@@ -2,37 +2,29 @@
 #X obj 93 296 t f f;
 #X obj 93 384 line~;
 #X obj 93 478 mtof~;
-#X floatatom 236 118 5 0 0 0 - - -;
+#X floatatom 236 118 5 0 0 0 - - - 0;
 #X obj 350 621 outlet~;
 #X obj 93 450 +~;
 #X obj 217 433 *~ 127;
 #X obj 465 463 *~;
 #X obj 480 416 pack 0 50;
 #X obj 480 438 line~;
-#X obj 107 177 hsl 128 15 0 127 0 1 \$0-upsamp-fm-att-s \$0-upsamp-fm-att-r
-FM 133 7 0 10 -158136 -1 -1 0 1;
-#X obj 107 132 hsl 128 15 0 127 0 1 \$0-upsamp-pitch-s \$0-upsamp-pitch-r
-PITCH 133 7 0 10 -262144 -1 -1 6200 1;
-#X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
-;
-#X obj 192 109 cnv 5 5 5 empty empty PWM 0 0 0 8 -262144 -120682 0
-;
+#X obj 107 177 hsl 128 15 0 127 0 1 \$0-upsamp-fm-att-s \$0-upsamp-fm-att-r FM 133 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 107 132 hsl 128 15 0 127 0 1 \$0-upsamp-pitch-s \$0-upsamp-pitch-r PITCH 133 7 0 10 #fcfcfc #000000 #000000 6200 1;
+#X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
+#X obj 192 109 cnv 5 5 5 empty empty PWM 0 0 0 8 #fcfcfc #7474a4 0;
 #X text 462 227 FM IN;
 #X obj 465 485 *~ 2000;
 #X obj 93 502 +~;
 #X text 214 230 PITCH CV IN;
-#X obj 104 124 cnv 5 5 5 empty empty UPSAMPLED-OSC 0 0 0 12 -262144
--66577 0;
+#X obj 104 124 cnv 5 5 5 empty empty UPSAMPLED-OSC 0 0 0 12 #fcfcfc #404040 0;
 #X obj 93 354 pack 0 50;
-#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r PULSE 0 0 0 10 -262144
--66577 0;
-#X obj 107 147 hsl 128 15 0 127 0 1 \$0-upsamp-pwidth-s \$0-upsamp-pwidth-r
-P-WIDTH 133 7 0 10 -262144 -1 -1 7600 1;
-#X obj 107 162 hsl 128 15 0 127 0 1 \$0-upsamp-pwm-att-s \$0-upsamp-pwm-att-r
-PWM 133 7 0 10 -158136 -1 -1 0 1;
+#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r PULSE 0 0 0 10 #fcfcfc #404040 0;
+#X obj 107 147 hsl 128 15 0 127 0 1 \$0-upsamp-pwidth-s \$0-upsamp-pwidth-r P-WIDTH 133 7 0 10 #fcfcfc #000000 #000000 7600 1;
+#X obj 107 162 hsl 128 15 0 127 0 1 \$0-upsamp-pwm-att-s \$0-upsamp-pwm-att-r PWM 133 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 480 372 * 0.00787402;
 #X obj 480 394 * 2;
-#X obj 105 204 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
+#X obj 105 204 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #404040 0;
 #X obj 679 35 sel 0 1 2 3;
 #N canvas 0 22 897 458 sinewave 0;
 #X obj 193 69 inlet~;
@@ -82,15 +74,13 @@ PWM 133 7 0 10 -158136 -1 -1 0 1;
 #X restore 93 604 pd sinewave;
 #X msg 679 522 1 0 0 0;
 #X obj 679 498 t b b;
-#X obj 177 192 hradio 15 1 1 4 \$0-upsamp-wform-s \$0-upsamp-wform-r
-empty 65 7 0 10 -262144 -1 -1 3;
-#X obj 203 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 177 192 hradio 15 1 1 4 \$0-upsamp-wform-s \$0-upsamp-wform-r empty 65 7 0 10 #fcfcfc #000000 #000000 3;
+#X obj 203 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 938 588 s \$0-waveform-gui-r;
 #X obj 938 541 makefilename %s;
 #X msg 938 565 label \$1;
 #X msg 938 515 symbol SINE;
-#X obj 285 109 cnv 5 5 5 empty empty FM 0 0 0 8 -262144 -120682 0;
+#X obj 285 109 cnv 5 5 5 empty empty FM 0 0 0 8 #fcfcfc #7474a4 0;
 #X obj 694 329 t b b;
 #X msg 694 351 0 1 0 0;
 #X obj 679 544 unpack f f f f;
@@ -327,8 +317,7 @@ empty 65 7 0 10 -262144 -1 -1 3;
 #X obj 165 153 f \$1;
 #X obj 165 189 t f f f;
 #X obj 138 62 t b b;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj -16 234 r SAVE-S;
 #X obj 43 400 pack f f f f f;
 #X obj 184 474 unpack f f f f f;
@@ -676,19 +665,13 @@ empty 65 7 0 10 -262144 -1 -1 3;
 #X obj 10 50 state_saving_module upsampled-osc \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hradio_dispatch upsampled-osc \$0 \$1
-0 3 upsamp-wform-s upsamp-wform-r empty #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1
-0 127 upsamp-pwm-att-s upsamp-pwm-att-r PWM #9999DE #000000 #000000
-;
-#X obj 10 120 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1
-0 127 upsamp-pwidth-s upsamp-pwidth-r P-WIDTH #FFFFFF #000000 #000000
-;
-#X obj 10 180 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1
-0 127 upsamp-pitch-s upsamp-pitch-r PITCH #FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1
-0 127 upsamp-fm-att-s upsamp-fm-att-r FM #9999DE #000000 #000000;
+#X obj 10 0 state_saving_module/hradio_dispatch upsampled-osc \$0 \$1 0 3 upsamp-wform-s upsamp-wform-r empty #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1 0 127 upsamp-pwm-att-s upsamp-pwm-att-r PWM #9999DE #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1 0 127 upsamp-pwidth-s upsamp-pwidth-r P-WIDTH #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1 0 127 upsamp-pitch-s upsamp-pitch-r PITCH #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch upsampled-osc \$0 \$1 0 127 upsamp-fm-att-s upsamp-fm-att-r FM #9999DE #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 81 0;
 #X connect 0 1 3 0;
 #X connect 1 0 5 0;

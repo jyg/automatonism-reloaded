@@ -1,4 +1,6 @@
 TODO
+
+
 * Vérifier audio_recorder / multitrack_recorder : dossier local pour les enregistrements
 
 * Vérifier que le système de préset marche pour les sequenceurs (chord, ratchet, gate, mage-seq, etc...) et aussi le mode multipatch  local-scope 

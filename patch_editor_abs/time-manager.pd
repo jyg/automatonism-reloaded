@@ -1,14 +1,12 @@
 #N canvas 134 22 1138 752 10;
-#X obj 144 162 vsl 20 128 0 127 0 1 \$0-tm-slider3-s \$0-tm-slider3-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 104 293 hradio 20 1 0 8 \$0-tm-step-gui-s \$0-tm-step-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 1;
+#X obj 144 162 vsl 20 128 0 127 0 1 \$0-tm-slider3-s \$0-tm-slider3-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 104 293 hradio 20 1 0 8 \$0-tm-step-gui-s \$0-tm-step-gui-r empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #N canvas 30 22 537 477 sliders-gui 0;
 #X obj 38 66 / 127;
 #X obj 38 88 * 119;
 #X obj 38 109 + 1;
 #X obj 38 131 i;
-#X floatatom 38 152 5 0 0 0 - - -;
+#X floatatom 38 152 5 0 0 0 - - - 0;
 #X obj 38 44 r \$0-tm-slider1-s;
 #X obj 38 172 makefilename %d;
 #X msg 38 195 label \$1;
@@ -17,7 +15,7 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 159 89 * 119;
 #X obj 159 110 + 1;
 #X obj 159 132 i;
-#X floatatom 159 153 5 0 0 0 - - -;
+#X floatatom 159 153 5 0 0 0 - - - 0;
 #X obj 159 173 makefilename %d;
 #X msg 159 196 label \$1;
 #X obj 159 45 r \$0-tm-slider2-s;
@@ -26,7 +24,7 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 271 89 * 119;
 #X obj 271 110 + 1;
 #X obj 271 132 i;
-#X floatatom 271 153 5 0 0 0 - - -;
+#X floatatom 271 153 5 0 0 0 - - - 0;
 #X obj 271 173 makefilename %d;
 #X msg 271 196 label \$1;
 #X obj 271 45 r \$0-tm-slider3-s;
@@ -35,7 +33,7 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 385 88 * 119;
 #X obj 385 109 + 1;
 #X obj 385 131 i;
-#X floatatom 385 152 5 0 0 0 - - -;
+#X floatatom 385 152 5 0 0 0 - - - 0;
 #X obj 385 172 makefilename %d;
 #X msg 385 195 label \$1;
 #X obj 385 44 r \$0-tm-slider4-s;
@@ -44,28 +42,28 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 36 291 * 119;
 #X obj 36 312 + 1;
 #X obj 36 334 i;
-#X floatatom 36 355 5 0 0 0 - - -;
+#X floatatom 36 355 5 0 0 0 - - - 0;
 #X obj 36 375 makefilename %d;
 #X msg 36 398 label \$1;
 #X obj 157 270 / 127;
 #X obj 157 292 * 119;
 #X obj 157 313 + 1;
 #X obj 157 335 i;
-#X floatatom 157 356 5 0 0 0 - - -;
+#X floatatom 157 356 5 0 0 0 - - - 0;
 #X obj 157 376 makefilename %d;
 #X msg 157 399 label \$1;
 #X obj 269 270 / 127;
 #X obj 269 292 * 119;
 #X obj 269 313 + 1;
 #X obj 269 335 i;
-#X floatatom 269 356 5 0 0 0 - - -;
+#X floatatom 269 356 5 0 0 0 - - - 0;
 #X obj 269 376 makefilename %d;
 #X msg 269 399 label \$1;
 #X obj 383 269 / 127;
 #X obj 383 291 * 119;
 #X obj 383 312 + 1;
 #X obj 383 334 i;
-#X floatatom 383 355 5 0 0 0 - - -;
+#X floatatom 383 355 5 0 0 0 - - - 0;
 #X obj 383 375 makefilename %d;
 #X msg 383 398 label \$1;
 #X obj 36 247 r \$0-tm-slider5-s;
@@ -141,82 +139,64 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X connect 68 0 50 0;
 #X connect 70 0 57 0;
 #X restore 345 101 pd sliders-gui;
-#X obj 104 162 vsl 20 128 0 127 0 1 \$0-tm-slider1-s \$0-tm-slider1-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 124 162 vsl 20 128 0 127 0 1 \$0-tm-slider2-s \$0-tm-slider2-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 204 162 vsl 20 128 0 127 0 1 \$0-tm-slider6-s \$0-tm-slider6-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 164 162 vsl 20 128 0 127 0 1 \$0-tm-slider4-s \$0-tm-slider4-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 184 162 vsl 20 128 0 127 0 1 \$0-tm-slider5-s \$0-tm-slider5-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 244 162 vsl 20 128 0 127 0 1 \$0-tm-slider8-s \$0-tm-slider8-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 224 162 vsl 20 128 0 127 0 1 \$0-tm-slider7-s \$0-tm-slider7-r
-1 3 -9 0 10 -262144 -1 -1 0 1;
-#X obj 527 0 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
-#X obj 291 305 bng 30 250 50 0 empty empty empty 5 40 0 10 -1 -226533
--1;
+#X obj 104 162 vsl 20 128 0 127 0 1 \$0-tm-slider1-s \$0-tm-slider1-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 124 162 vsl 20 128 0 127 0 1 \$0-tm-slider2-s \$0-tm-slider2-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 204 162 vsl 20 128 0 127 0 1 \$0-tm-slider6-s \$0-tm-slider6-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 164 162 vsl 20 128 0 127 0 1 \$0-tm-slider4-s \$0-tm-slider4-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 184 162 vsl 20 128 0 127 0 1 \$0-tm-slider5-s \$0-tm-slider5-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 244 162 vsl 20 128 0 127 0 1 \$0-tm-slider8-s \$0-tm-slider8-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 224 162 vsl 20 128 0 127 0 1 \$0-tm-slider7-s \$0-tm-slider7-r 1 3 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 527 0 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 291 305 bng 30 250 50 0 empty empty empty 5 40 0 10 #000000 #dc4c90 #000000;
 #X obj 527 122 f;
 #X obj 555 122 + 1;
-#X floatatom 527 165 5 0 0 0 - - -;
+#X floatatom 527 165 5 0 0 0 - - - 0;
 #X obj 527 185 sel;
 #X obj 763 249 f;
 #X obj 792 249 + 1;
-#X floatatom 763 271 5 0 0 0 - - -;
-#X floatatom 763 312 5 0 0 0 - - -;
+#X floatatom 763 271 5 0 0 0 - - - 0;
+#X floatatom 763 312 5 0 0 0 - - - 0;
 #X obj 527 18 t f b b;
 #X msg 566 53 0;
-#X obj 527 207 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 527 207 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X msg 554 259 0;
 #X obj 554 298 s \$0-tm-reset;
 #X obj 606 105 r \$0-tm-reset;
 #X obj 566 75 s \$0-tm-reset;
 #X obj 535 738 f;
-#X obj 525 688 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 525 688 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 527 232 t b b;
 #X obj 550 628 f;
-#X floatatom 550 651 5 0 0 0 - - -;
-#X obj 550 583 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 550 651 5 0 0 0 - - - 0;
+#X obj 550 583 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 535 783 s \$0-tm-select;
 #X obj 550 673 s \$0-tm-select;
-#X floatatom 535 760 5 0 0 0 - - -;
+#X floatatom 535 760 5 0 0 0 - - - 0;
 #X obj 702 168 r \$0-tm-select;
 #X msg 778 197 0;
 #X obj 566 519 f;
-#X floatatom 566 541 5 0 0 0 - - -;
-#X obj 566 479 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 566 541 5 0 0 0 - - - 0;
+#X obj 566 479 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 566 563 s \$0-tm-select;
 #X obj 582 413 f;
-#X floatatom 582 435 5 0 0 0 - - -;
-#X obj 582 373 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 582 435 5 0 0 0 - - - 0;
+#X obj 582 373 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 582 457 s \$0-tm-select;
 #X obj 780 758 f;
-#X obj 780 714 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 780 714 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 795 648 f;
-#X floatatom 795 671 5 0 0 0 - - -;
-#X obj 795 603 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 795 671 5 0 0 0 - - - 0;
+#X obj 795 603 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 780 803 s \$0-tm-select;
 #X obj 795 693 s \$0-tm-select;
-#X floatatom 780 780 5 0 0 0 - - -;
+#X floatatom 780 780 5 0 0 0 - - - 0;
 #X obj 811 539 f;
-#X floatatom 811 561 5 0 0 0 - - -;
-#X obj 811 499 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 811 561 5 0 0 0 - - - 0;
+#X obj 811 499 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 811 583 s \$0-tm-select;
 #X obj 827 433 f;
-#X floatatom 827 455 5 0 0 0 - - -;
-#X obj 827 393 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 827 455 5 0 0 0 - - - 0;
+#X obj 827 393 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 827 477 s \$0-tm-select;
 #X obj 887 368 s \$0-tm-step-gui-r;
 #X obj 822 15 sel 1;
@@ -235,49 +215,48 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 842 412 r \$0-tm-time8;
 #X obj 887 348 + 0;
 #X obj 527 144 t f f;
-#X floatatom 244 332 3 0 0 0 - #0-tm-counter8-gui-r #0-tm-counter8-gui-s
-;
+#X floatatom 244 332 3 0 0 0 - \$0-tm-counter8-gui-r \$0-tm-counter8-gui-s 0;
 #N canvas 0 22 608 422 sliders-to-counter 0;
 #X obj 56 73 r \$0-tm-slider1-s;
 #X obj 56 95 / 127;
 #X obj 56 117 * 119;
 #X obj 56 141 i;
-#X floatatom 56 163 5 0 0 0 - - -;
+#X floatatom 56 163 5 0 0 0 - - - 0;
 #X obj 56 182 s \$0-tm-time1;
 #X obj 179 96 / 127;
 #X obj 179 118 * 119;
 #X obj 179 142 i;
-#X floatatom 179 164 5 0 0 0 - - -;
+#X floatatom 179 164 5 0 0 0 - - - 0;
 #X obj 179 74 r \$0-tm-slider2-s;
 #X obj 179 183 s \$0-tm-time2;
 #X obj 300 97 / 127;
 #X obj 300 119 * 119;
 #X obj 300 143 i;
-#X floatatom 300 165 5 0 0 0 - - -;
+#X floatatom 300 165 5 0 0 0 - - - 0;
 #X obj 300 75 r \$0-tm-slider3-s;
 #X obj 300 184 s \$0-tm-time3;
 #X obj 419 97 / 127;
 #X obj 419 119 * 119;
 #X obj 419 143 i;
-#X floatatom 419 165 5 0 0 0 - - -;
+#X floatatom 419 165 5 0 0 0 - - - 0;
 #X obj 419 75 r \$0-tm-slider4-s;
 #X obj 419 184 s \$0-tm-time4;
 #X obj 55 258 / 127;
 #X obj 55 280 * 119;
 #X obj 55 303 i;
-#X floatatom 55 325 5 0 0 0 - - -;
+#X floatatom 55 325 5 0 0 0 - - - 0;
 #X obj 178 259 / 127;
 #X obj 178 281 * 119;
 #X obj 178 304 i;
-#X floatatom 178 326 5 0 0 0 - - -;
+#X floatatom 178 326 5 0 0 0 - - - 0;
 #X obj 299 260 / 127;
 #X obj 299 282 * 119;
 #X obj 299 305 i;
-#X floatatom 299 327 5 0 0 0 - - -;
+#X floatatom 299 327 5 0 0 0 - - - 0;
 #X obj 418 260 / 127;
 #X obj 418 282 * 119;
 #X obj 418 305 i;
-#X floatatom 418 327 5 0 0 0 - - -;
+#X floatatom 418 327 5 0 0 0 - - - 0;
 #X obj 55 236 r \$0-tm-slider5-s;
 #X obj 55 344 s \$0-tm-time5;
 #X obj 178 237 r \$0-tm-slider6-s;
@@ -333,66 +312,66 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #N canvas 0 22 968 380 counter-gui-boxes 0;
 #X obj 12 161 s \$0-tm-counter1-gui-r;
 #X obj 12 69 r \$0-tm-counter;
-#X floatatom 12 91 5 0 0 0 - - -;
+#X floatatom 12 91 5 0 0 0 - - - 0;
 #X obj 12 112 spigot;
 #X obj 112 30 r \$0-tm-counter2;
-#X floatatom 112 76 5 0 0 0 - - -;
+#X floatatom 112 76 5 0 0 0 - - - 0;
 #X obj 112 54 == 0;
 #X obj 160 144 moses 0;
 #X obj 112 95 t f f;
 #X obj 242 68 r \$0-tm-counter;
-#X floatatom 242 90 5 0 0 0 - - -;
+#X floatatom 242 90 5 0 0 0 - - - 0;
 #X obj 242 111 spigot;
 #X obj 342 29 r \$0-tm-counter2;
-#X floatatom 342 75 5 0 0 0 - - -;
+#X floatatom 342 75 5 0 0 0 - - - 0;
 #X obj 390 143 moses 0;
 #X obj 342 94 t f f;
 #X obj 242 160 s \$0-tm-counter2-gui-r;
 #X obj 342 53 == 1;
 #X obj 467 67 r \$0-tm-counter;
-#X floatatom 467 89 5 0 0 0 - - -;
+#X floatatom 467 89 5 0 0 0 - - - 0;
 #X obj 467 110 spigot;
 #X obj 567 28 r \$0-tm-counter2;
-#X floatatom 567 74 5 0 0 0 - - -;
+#X floatatom 567 74 5 0 0 0 - - - 0;
 #X obj 615 142 moses 0;
 #X obj 567 93 t f f;
 #X obj 467 159 s \$0-tm-counter3-gui-r;
 #X obj 567 52 == 2;
 #X obj 721 71 r \$0-tm-counter;
-#X floatatom 721 93 5 0 0 0 - - -;
+#X floatatom 721 93 5 0 0 0 - - - 0;
 #X obj 721 114 spigot;
 #X obj 821 32 r \$0-tm-counter2;
-#X floatatom 821 78 5 0 0 0 - - -;
+#X floatatom 821 78 5 0 0 0 - - - 0;
 #X obj 869 146 moses 0;
 #X obj 821 97 t f f;
 #X obj 821 56 == 3;
 #X obj 721 163 s \$0-tm-counter4-gui-r;
 #X obj 12 230 r \$0-tm-counter;
-#X floatatom 12 252 5 0 0 0 - - -;
+#X floatatom 12 252 5 0 0 0 - - - 0;
 #X obj 12 273 spigot;
 #X obj 112 191 r \$0-tm-counter2;
-#X floatatom 112 237 5 0 0 0 - - -;
+#X floatatom 112 237 5 0 0 0 - - - 0;
 #X obj 160 305 moses 0;
 #X obj 112 256 t f f;
 #X obj 242 229 r \$0-tm-counter;
-#X floatatom 242 251 5 0 0 0 - - -;
+#X floatatom 242 251 5 0 0 0 - - - 0;
 #X obj 242 272 spigot;
 #X obj 342 190 r \$0-tm-counter2;
-#X floatatom 342 236 5 0 0 0 - - -;
+#X floatatom 342 236 5 0 0 0 - - - 0;
 #X obj 390 304 moses 0;
 #X obj 342 255 t f f;
 #X obj 467 228 r \$0-tm-counter;
-#X floatatom 467 250 5 0 0 0 - - -;
+#X floatatom 467 250 5 0 0 0 - - - 0;
 #X obj 467 271 spigot;
 #X obj 567 189 r \$0-tm-counter2;
-#X floatatom 567 235 5 0 0 0 - - -;
+#X floatatom 567 235 5 0 0 0 - - - 0;
 #X obj 615 303 moses 0;
 #X obj 567 254 t f f;
 #X obj 721 232 r \$0-tm-counter;
-#X floatatom 721 254 5 0 0 0 - - -;
+#X floatatom 721 254 5 0 0 0 - - - 0;
 #X obj 721 275 spigot;
 #X obj 821 193 r \$0-tm-counter2;
-#X floatatom 821 239 5 0 0 0 - - -;
+#X floatatom 821 239 5 0 0 0 - - - 0;
 #X obj 869 307 moses 0;
 #X obj 821 258 t f f;
 #X obj 112 215 == 4;
@@ -492,25 +471,16 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X connect 78 0 69 0;
 #X connect 79 0 71 0;
 #X restore 345 145 pd counter-gui-boxes;
-#X floatatom 104 332 3 0 0 0 - #0-tm-counter1-gui-r #0-tm-counter1-gui-s
-;
-#X floatatom 124 332 3 0 0 0 - #0-tm-counter2-gui-r #0-tm-counter2-gui-s
-;
-#X floatatom 144 332 3 0 0 0 - #0-tm-counter3-gui-r #0-tm-counter3-gui-s
-;
-#X floatatom 164 332 3 0 0 0 - #0-tm-counter4-gui-r #0-tm-counter4-gui-s
-;
-#X floatatom 184 332 3 0 0 0 - #0-tm-counter5-gui-r #0-tm-counter5-gui-s
-;
-#X floatatom 204 332 3 0 0 0 - #0-tm-counter6-gui-r #0-tm-counter6-gui-s
-;
-#X floatatom 224 332 3 0 0 0 - #0-tm-counter7-gui-r #0-tm-counter7-gui-s
-;
-#X obj 104 139 cnv 5 5 5 empty empty TIME-MANAGER 0 0 0 12 -262144
--66577 0;
-#X obj 192 139 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 128 356 cnv 5 5 5 empty empty 2 0 0 0 8 -262144 -226533 0;
+#X floatatom 104 332 3 0 0 0 - \$0-tm-counter1-gui-r \$0-tm-counter1-gui-s 0;
+#X floatatom 124 332 3 0 0 0 - \$0-tm-counter2-gui-r \$0-tm-counter2-gui-s 0;
+#X floatatom 144 332 3 0 0 0 - \$0-tm-counter3-gui-r \$0-tm-counter3-gui-s 0;
+#X floatatom 164 332 3 0 0 0 - \$0-tm-counter4-gui-r \$0-tm-counter4-gui-s 0;
+#X floatatom 184 332 3 0 0 0 - \$0-tm-counter5-gui-r \$0-tm-counter5-gui-s 0;
+#X floatatom 204 332 3 0 0 0 - \$0-tm-counter6-gui-r \$0-tm-counter6-gui-s 0;
+#X floatatom 224 332 3 0 0 0 - \$0-tm-counter7-gui-r \$0-tm-counter7-gui-s 0;
+#X obj 104 139 cnv 5 5 5 empty empty TIME-MANAGER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 192 139 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 128 356 cnv 5 5 5 empty empty 2 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 984 892 outlet~ OMNI;
 #X obj 16 899 outlet~ S1;
 #X obj 85 899 outlet~ S2;
@@ -520,23 +490,15 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 378 898 outlet~ S6;
 #X obj 463 899 outlet~ S7;
 #X obj 545 899 outlet~ S8;
-#X obj 104 314 bng 20 250 50 0 \$0-tm-b1-s \$0-tm-b1-r empty 17 7 0
-10 -1 -226533 -1;
+#X obj 104 314 bng 20 250 50 0 \$0-tm-b1-s \$0-tm-b1-r empty 17 7 0 10 #000000 #dc4c90 #000000;
 #X obj 420 598 s \$0-tm-b1-r;
-#X obj 124 314 bng 20 250 50 0 \$0-tm-b2-s \$0-tm-b2-r empty 17 7 0
-10 -1 -226533 -1;
-#X obj 144 314 bng 20 250 50 0 \$0-tm-b3-s \$0-tm-b3-r empty 17 7 0
-10 -1 -226533 -1;
-#X obj 164 314 bng 20 250 50 0 \$0-tm-b4-s \$0-tm-b4-r empty 17 7 0
-10 -1 -226533 -1;
-#X obj 184 314 bng 20 250 50 0 \$0-tm-b5-s \$0-tm-b5-r empty 17 7 0
-10 -1 -226533 -1;
-#X obj 204 314 bng 20 250 50 0 \$0-tm-b6-s \$0-tm-b6-r empty 17 7 0
-10 -1 -226533 -1;
-#X obj 224 314 bng 20 250 50 0 \$0-tm-b7-s \$0-tm-b7-r empty 17 7 0
-10 -1 -226533 -1;
-#X obj 244 314 bng 20 250 50 0 \$0-tm-b8-s \$0-tm-b8-r empty 17 7 0
-10 -1 -226533 -1;
+#X obj 124 314 bng 20 250 50 0 \$0-tm-b2-s \$0-tm-b2-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 144 314 bng 20 250 50 0 \$0-tm-b3-s \$0-tm-b3-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 164 314 bng 20 250 50 0 \$0-tm-b4-s \$0-tm-b4-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 184 314 bng 20 250 50 0 \$0-tm-b5-s \$0-tm-b5-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 204 314 bng 20 250 50 0 \$0-tm-b6-s \$0-tm-b6-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 224 314 bng 20 250 50 0 \$0-tm-b7-s \$0-tm-b7-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 244 314 bng 20 250 50 0 \$0-tm-b8-s \$0-tm-b8-r empty 17 7 0 10 #000000 #dc4c90 #000000;
 #X obj 421 494 s \$0-tm-b2-r;
 #X obj 426 388 s \$0-tm-b3-r;
 #X obj 895 729 s \$0-tm-b4-r;
@@ -554,20 +516,17 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 545 822 r \$0-tm-b8-s;
 #X obj 999 672 r \$0-tm-counter2;
 #X obj 999 694 t b;
-#X obj 272 110 cnv 5 5 5 empty empty START/STOP 0 0 0 8 -262144 -226533
-0;
-#X obj 103 356 cnv 5 5 5 empty empty 1 0 0 0 8 -262144 -226533 0;
-#X obj 156 356 cnv 5 5 5 empty empty 3 0 0 0 8 -262144 -226533 0;
+#X obj 272 110 cnv 5 5 5 empty empty START/STOP 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 103 356 cnv 5 5 5 empty empty 1 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 156 356 cnv 5 5 5 empty empty 3 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 527 100 metro 1000;
-#X obj 267 261 tgl 30 1 \$0-tm-loop-s \$0-tm-loop-r LOOP 0 -9 0 10
--262144 -1 -1 0 1;
-#X obj 210 356 cnv 5 5 5 empty empty 5 0 0 0 8 -262144 -226533 0;
-#X obj 183 356 cnv 5 5 5 empty empty 4 0 0 0 8 -262144 -226533 0;
-#X obj 290 356 cnv 5 5 5 empty empty 8 0 0 0 8 -262144 -226533 0;
-#X obj 238 356 cnv 5 5 5 empty empty 6 0 0 0 8 -262144 -226533 0;
-#X obj 264 356 cnv 5 5 5 empty empty 7 0 0 0 8 -262144 -226533 0;
-#X obj 307 356 cnv 5 5 5 empty empty ALL 0 0 0 8 -262144 -226533 0
-;
+#X obj 267 261 tgl 30 1 \$0-tm-loop-s \$0-tm-loop-r LOOP 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 210 356 cnv 5 5 5 empty empty 5 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 183 356 cnv 5 5 5 empty empty 4 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 290 356 cnv 5 5 5 empty empty 8 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 238 356 cnv 5 5 5 empty empty 6 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 264 356 cnv 5 5 5 empty empty 7 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 307 356 cnv 5 5 5 empty empty ALL 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 527 -31 r \$0-tm-on/off-s;
 #X obj 778 139 loadbang;
 #N canvas 0 22 744 413 sync 0;
@@ -780,8 +739,7 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X connect 9 0 10 0;
 #X connect 11 0 1 0;
 #X restore 545 848 pd sync;
-#X obj 267 210 bng 30 250 50 1 \$0-RESET!-s \$0-RESET!-r RESET 0 -9
-0 10 -262144 -226533 -1;
+#X obj 267 210 bng 30 250 50 1 \$0-RESET!-s \$0-RESET!-r RESET 0 -9 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 708 36 r \$0-RESET!-s;
 #X msg 708 58 0;
 #X obj 836 168 r \$0-RESET!-s;
@@ -795,13 +753,11 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 228 451 t b b;
 #X obj 337 468 delay 5;
 #X obj 337 490 s \$0-RESET!-r;
-#X obj 105 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 -262144 -226533 0
-;
+#X obj 105 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 977 3 inlet~;
 #X obj 977 25 threshold~ 0.9 0 0.9 0;
 #X obj 977 47 t b;
-#X obj 105 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 -262144 -226533 0
-;
+#X obj 105 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 977 69 s \$0-tm-on/off-r;
 #N canvas 267 22 926 752 state-saving-multiple-instances 0;
 #X obj 461 15 loadbang;
@@ -819,8 +775,7 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X text 523 224 INSTANCE NUMBER;
 #X obj 488 139 f \$1;
 #X obj 488 175 t f f f;
-#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 48 274 r SAVE-S;
 #X obj 116 51 r \$0-tm-slider1-s;
 #X obj 124 74 r \$0-tm-slider2-s;
@@ -1257,22 +1212,22 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X connect 28 0 21 0;
 #X connect 30 0 23 0;
 #X restore 98 527 pd parameter-nudging-system;
-#X floatatom 702 190 5 0 0 0 - - -;
+#X floatatom 702 190 5 0 0 0 - - - 0;
 #X obj 104 376 r \$0-tm-on/off-s;
 #X obj 227 403 spigot;
 #X obj 337 363 loadbang;
 #X msg 337 385 0;
 #X obj -7 285 r \$0-tm-slider1-s;
-#X floatatom -7 307 5 0 0 0 - - -;
+#X floatatom -7 307 5 0 0 0 - - - 0;
 #X obj -7 326 i;
-#X floatatom -7 348 5 0 0 0 - - -;
+#X floatatom -7 348 5 0 0 0 - - - 0;
 #X obj -7 389 * 1000;
 #X obj -7 367 + 6;
-#X floatatom -7 411 5 0 0 0 - - -;
+#X floatatom -7 411 5 0 0 0 - - - 0;
 #X obj 37 414 t b f;
 #X obj 41 485 f;
 #X obj 37 436 del 1;
-#X floatatom 41 507 5 0 0 0 - - -;
+#X floatatom 41 507 5 0 0 0 - - - 0;
 #X obj 115 406 sel 0;
 #X msg 114 432 0;
 #X obj 997 723 spigot;
@@ -1313,16 +1268,14 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X connect 9 0 10 0;
 #X connect 11 0 1 0;
 #X restore 996 789 pd sync;
-#X obj 105 115 bng 15 50 50 0 empty empty empty 17 7 0 10 -1 -226533
--1;
+#X obj 105 115 bng 15 50 50 0 empty empty empty 17 7 0 10 #000000 #dc4c90 #000000;
 #X obj 128 6 threshold~ 0.9 0 0.9 0;
 #X obj 1084 155 r \$0-RESET!-s;
 #X msg 1084 177 1;
 #X obj 985 213 t f b;
 #X obj 1076 240 delay 500;
 #X msg 1076 262 0;
-#X obj 267 160 tgl 30 1 \$0-tm-on/off-s \$0-tm-on/off-r START/STOP
--5 -9 0 10 -262144 -1 -1 0 1;
+#X obj 267 160 tgl 30 1 \$0-tm-on/off-s \$0-tm-on/off-r START/STOP -5 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 305 619 1;
 #X obj 305 597 delay 10;
 #X obj 305 641 spigot;
@@ -1336,47 +1289,28 @@ empty 0 -8 0 10 -262144 -226533 -1 1;
 #X obj 74 1035 state_saving_module time-manager \$0 \$1;
 #X obj 114 995 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/tgl_dispatch time-manager \$0 \$1 0
-1 tm-on/off-s tm-on/off-r START/STOP #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 RESET!-s RESET!-r RESET #FFFFFF #DE4C91 #000000;
-#X obj 10 120 state_saving_module/tgl_dispatch time-manager \$0 \$1
-0 1 tm-loop-s tm-loop-r LOOP #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b8-s tm-b8-r empty #000000 #DE4C91 #000000;
-#X obj 10 240 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b7-s tm-b7-r empty #000000 #DE4C91 #000000;
-#X obj 10 300 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b6-s tm-b6-r empty #000000 #DE4C91 #000000;
-#X obj 10 360 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b5-s tm-b5-r empty #000000 #DE4C91 #000000;
-#X obj 10 420 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b4-s tm-b4-r empty #000000 #DE4C91 #000000;
-#X obj 10 480 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b3-s tm-b3-r empty #000000 #DE4C91 #000000;
-#X obj 10 540 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b2-s tm-b2-r empty #000000 #DE4C91 #000000;
-#X obj 10 600 state_saving_module/bng_dispatch time-manager \$0 \$1
-250 50 tm-b1-s tm-b1-r empty #000000 #DE4C91 #000000;
-#X obj 10 660 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider7-s tm-slider7-r symbol #FFFFFF #000000 #000000;
-#X obj 10 720 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider8-s tm-slider8-r symbol #FFFFFF #000000 #000000;
-#X obj 10 780 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider5-s tm-slider5-r symbol #FFFFFF #000000 #000000;
-#X obj 10 840 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider4-s tm-slider4-r symbol #FFFFFF #000000 #000000;
-#X obj 10 900 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider6-s tm-slider6-r symbol #FFFFFF #000000 #000000;
-#X obj 10 960 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider2-s tm-slider2-r symbol #FFFFFF #000000 #000000;
-#X obj 10 1020 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider1-s tm-slider1-r symbol #FFFFFF #000000 #000000;
-#X obj 10 1080 state_saving_module/hradio_dispatch time-manager \$0
-\$1 0 7 tm-step-gui-s tm-step-gui-r empty #FFFFFF #DE4C91 #000000;
-#X obj 10 1140 state_saving_module/vsl_dispatch time-manager \$0 \$1
-0 127 tm-slider3-s tm-slider3-r symbol #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/tgl_dispatch time-manager \$0 \$1 0 1 tm-on/off-s tm-on/off-r START/STOP #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 RESET!-s RESET!-r RESET #FFFFFF #DE4C91 #000000;
+#X obj 10 120 state_saving_module/tgl_dispatch time-manager \$0 \$1 0 1 tm-loop-s tm-loop-r LOOP #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b8-s tm-b8-r empty #000000 #DE4C91 #000000;
+#X obj 10 240 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b7-s tm-b7-r empty #000000 #DE4C91 #000000;
+#X obj 10 300 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b6-s tm-b6-r empty #000000 #DE4C91 #000000;
+#X obj 10 360 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b5-s tm-b5-r empty #000000 #DE4C91 #000000;
+#X obj 10 420 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b4-s tm-b4-r empty #000000 #DE4C91 #000000;
+#X obj 10 480 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b3-s tm-b3-r empty #000000 #DE4C91 #000000;
+#X obj 10 540 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b2-s tm-b2-r empty #000000 #DE4C91 #000000;
+#X obj 10 600 state_saving_module/bng_dispatch time-manager \$0 \$1 250 50 tm-b1-s tm-b1-r empty #000000 #DE4C91 #000000;
+#X obj 10 660 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider7-s tm-slider7-r symbol #FFFFFF #000000 #000000;
+#X obj 10 720 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider8-s tm-slider8-r symbol #FFFFFF #000000 #000000;
+#X obj 10 780 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider5-s tm-slider5-r symbol #FFFFFF #000000 #000000;
+#X obj 10 840 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider4-s tm-slider4-r symbol #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider6-s tm-slider6-r symbol #FFFFFF #000000 #000000;
+#X obj 10 960 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider2-s tm-slider2-r symbol #FFFFFF #000000 #000000;
+#X obj 10 1020 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider1-s tm-slider1-r symbol #FFFFFF #000000 #000000;
+#X obj 10 1080 state_saving_module/hradio_dispatch time-manager \$0 \$1 0 7 tm-step-gui-s tm-step-gui-r empty #FFFFFF #DE4C91 #000000;
+#X obj 10 1140 state_saving_module/vsl_dispatch time-manager \$0 \$1 0 127 tm-slider3-s tm-slider3-r symbol #FFFFFF #000000 #000000;
 #X restore 74 1065 pd \$0-gui_listeners;
+#X obj 202 1069 namecanvas \$0-this;
 #X connect 10 0 20 0;
 #X connect 10 0 63 0;
 #X connect 12 0 13 0;

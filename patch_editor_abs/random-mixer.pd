@@ -6,34 +6,21 @@
 #X obj 376 103 pack 0 50;
 #X obj 376 125 line~;
 #X obj 361 218 *~;
-#X obj 243 117 bng 15 250 50 0 \$0-random-solo! \$0-random-solo!-r
-RANDOM-SOLO 17 7 0 10 -262144 -226533 -1;
-#X obj 243 134 bng 15 250 50 0 \$0-random-mute! \$0-random-mute!-r
-RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
-#X obj 108 248 tgl 33 1 \$0-solo1-s \$0-solo1-r empty 17 7 0 10 -150893
--1 -1 0 1;
+#X obj 243 117 bng 15 250 50 0 \$0-random-solo! \$0-random-solo!-r RANDOM-SOLO 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 243 134 bng 15 250 50 0 \$0-random-mute! \$0-random-mute!-r RANDOM-MUTE 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 108 248 tgl 33 1 \$0-solo1-s \$0-solo1-r empty 17 7 0 10 #90d4b0 #000000 #000000 0 1;
 #X obj 398 157 r \$0-solo1-s;
 #X obj 398 201 line~;
-#X obj 108 165 vsl 15 80 0 127 0 1 \$0-channel1-s \$0-channel1-r CH1
--1 -9 0 10 -262144 -1 -1 0 1;
-#X obj 125 165 vu 15 80 \$0-ch1-meter-r empty -1 -8 0 10 -66577 -1
-0 0;
-#X obj 141 248 tgl 33 1 \$0-solo2-s \$0-solo2-r empty 17 7 0 10 -150893
--1 -1 0 1;
-#X obj 141 165 vsl 15 80 0 127 0 1 \$0-channel2-s \$0-channel2-r CH2
--1 -9 0 10 -262144 -1 -1 0 1;
-#X obj 158 165 vu 15 80 \$0-ch2-meter-r empty -1 -8 0 10 -66577 -1
-0 0;
-#X obj 174 248 tgl 33 1 \$0-solo3-s \$0-solo3-r empty 17 7 0 10 -150893
--1 -1 0 1;
-#X obj 174 165 vsl 15 80 0 127 0 1 \$0-channel3-s \$0-channel3-r CH3
--1 -9 0 10 -262144 -1 -1 0 1;
-#X obj 191 165 vu 15 80 \$0-ch3-meter-r empty -1 -8 0 10 -66577 -1
-0 0;
-#X obj 207 248 tgl 33 1 \$0-solo4-s \$0-solo4-r empty 17 7 0 10 -150893
--1 -1 0 1;
-#X obj 224 165 vu 15 80 \$0-ch4-meter-r empty -1 -8 0 10 -66577 -1
-0 0;
+#X obj 108 165 vsl 15 80 0 127 0 1 \$0-channel1-s \$0-channel1-r CH1 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 125 165 vu 15 80 \$0-ch1-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 141 248 tgl 33 1 \$0-solo2-s \$0-solo2-r empty 17 7 0 10 #90d4b0 #000000 #000000 0 1;
+#X obj 141 165 vsl 15 80 0 127 0 1 \$0-channel2-s \$0-channel2-r CH2 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 158 165 vu 15 80 \$0-ch2-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 174 248 tgl 33 1 \$0-solo3-s \$0-solo3-r empty 17 7 0 10 #90d4b0 #000000 #000000 0 1;
+#X obj 174 165 vsl 15 80 0 127 0 1 \$0-channel3-s \$0-channel3-r CH3 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 191 165 vu 15 80 \$0-ch3-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
+#X obj 207 248 tgl 33 1 \$0-solo4-s \$0-solo4-r empty 17 7 0 10 #90d4b0 #000000 #000000 0 1;
+#X obj 224 165 vu 15 80 \$0-ch4-meter-r empty -1 -8 0 10 #404040 #000000 0 0;
 #N canvas 0 22 450 300 random-solo 0;
 #X obj 59 17 r \$0-random-solo!;
 #X obj 59 39 random 4;
@@ -46,7 +33,7 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 76 190 == 1;
 #X obj 93 144 == 2;
 #X obj 110 99 == 3;
-#X floatatom 136 56 5 0 0 0 - - -;
+#X floatatom 136 56 5 0 0 0 - - - 0;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 0 11 0;
@@ -123,12 +110,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 1012 52 r \$0-channel4-s;
 #X obj 1034 150 r \$0-solo4-s;
 #X obj 1095 282 s \$0-ch4-meter-r;
-#X obj 207 165 vsl 15 80 0 127 0 1 \$0-channel4-s \$0-channel4-r CH4
--1 -9 0 10 -262144 -1 -1 0 1;
-#X obj 240 165 vsl 33 80 0 127 0 1 \$0-fx1-s \$0-fx1-r FXSEND -1 -9
-0 10 -158136 -1 -1 0 1;
-#X obj 240 248 bng 33 250 50 1 \$0-fx-bang! \$0-fx-bang!-r REVERB 38
-16 0 10 -262144 -226533 -1;
+#X obj 207 165 vsl 15 80 0 127 0 1 \$0-channel4-s \$0-channel4-r CH4 -1 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 240 165 vsl 33 80 0 127 0 1 \$0-fx1-s \$0-fx1-r FXSEND -1 -9 0 10 #9898dc #000000 #000000 0 1;
+#X obj 240 248 bng 33 250 50 1 \$0-fx-bang! \$0-fx-bang!-r REVERB 38 16 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 361 326 r \$0-fx-bang!;
 #X obj 361 348 f;
 #X obj 387 348 + 1;
@@ -138,24 +122,20 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X msg 361 519 label REVERB;
 #X msg 376 498 label DELAY;
 #X msg 392 474 label OVERDRIVE;
-#X obj 107 141 cnv 5 5 5 empty empty RANDOM-MIXER 0 0 0 12 -262144
--66577 0;
-#X obj 104 109 cnv 5 5 5 empty empty CH1 0 0 0 8 -262144 -66577 0;
-#X obj 197 141 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 130 109 cnv 5 5 5 empty empty CH2 0 0 0 8 -262144 -66577 0;
-#X obj 161 109 cnv 5 5 5 empty empty CH3 0 0 0 8 -262144 -66577 0;
-#X obj 313 109 cnv 5 5 5 empty empty MUTE 0 0 0 8 -262144 -226533 0
-;
-#X obj 260 109 cnv 5 5 5 empty empty FX 0 0 0 8 -262144 -226533 0;
-#X obj 287 109 cnv 5 5 5 empty empty SOLO 0 0 0 8 -262144 -226533 0
-;
+#X obj 107 141 cnv 5 5 5 empty empty RANDOM-MIXER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 104 109 cnv 5 5 5 empty empty CH1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 197 141 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 130 109 cnv 5 5 5 empty empty CH2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 161 109 cnv 5 5 5 empty empty CH3 0 0 0 8 #fcfcfc #404040 0;
+#X obj 313 109 cnv 5 5 5 empty empty MUTE 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 260 109 cnv 5 5 5 empty empty FX 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 287 109 cnv 5 5 5 empty empty SOLO 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 1382 30 inlet~ RDM-SOLO;
 #X obj 1118 33 inlet~ FX-SEND;
 #X obj 1213 33 inlet~ FX-CHANGE;
 #X obj 1482 29 inlet~ RDM-MUTE;
-#X obj 194 109 cnv 5 5 5 empty empty CH4 0 0 0 8 -262144 -66577 0;
-#X obj 229 109 cnv 5 5 5 empty empty FX 0 0 0 8 -262144 -66577 0;
+#X obj 194 109 cnv 5 5 5 empty empty CH4 0 0 0 8 #fcfcfc #404040 0;
+#X obj 229 109 cnv 5 5 5 empty empty FX 0 0 0 8 #fcfcfc #404040 0;
 #X obj 1382 52 threshold~ 0.9 0 0.9 0;
 #X obj 1382 74 t b;
 #X obj 1382 96 s \$0-random-solo!-r;
@@ -167,12 +147,11 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 751 371 outlet~ CH2;
 #X obj 845 371 outlet~ CH3;
 #X obj 935 371 outlet~ CH4;
-#X obj 105 292 cnv 5 5 5 empty empty LEFT 0 0 0 8 -262144 -66577 0
-;
-#X obj 230 292 cnv 5 5 5 empty empty CH2 0 0 0 8 -262144 -66577 0;
-#X obj 188 292 cnv 5 5 5 empty empty CH1 0 0 0 8 -262144 -66577 0;
-#X obj 316 292 cnv 5 5 5 empty empty CH4 0 0 0 8 -262144 -66577 0;
-#X obj 278 292 cnv 5 5 5 empty empty CH3 0 0 0 8 -262144 -66577 0;
+#X obj 105 292 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #404040 0;
+#X obj 230 292 cnv 5 5 5 empty empty CH2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 188 292 cnv 5 5 5 empty empty CH1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 316 292 cnv 5 5 5 empty empty CH4 0 0 0 8 #fcfcfc #404040 0;
+#X obj 278 292 cnv 5 5 5 empty empty CH3 0 0 0 8 #fcfcfc #404040 0;
 #X obj 398 179 pack 0 10;
 #X obj 608 174 pack 0 10;
 #X obj 828 172 pack 0 10;
@@ -356,8 +335,7 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X restore 496 443 pd fx-sends;
 #X obj 532 643 outlet~ LEFT;
 #X obj 648 644 outlet~ RIGHT;
-#X obj 139 292 cnv 5 5 5 empty empty RIGHT 0 0 0 8 -262144 -66577 0
-;
+#X obj 139 292 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #404040 0;
 #X obj 578 578 *~;
 #X msg 408 449 label BITCRUSH;
 #X obj 1213 61 threshold~ 0.9 0 0.9 0;
@@ -365,15 +343,14 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 1213 105 random 4;
 #X obj 1213 127 s \$0-random-fx;
 #X obj 421 346 r \$0-random-fx;
-#X obj 919 475 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 919 475 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 916 495 / 127;
 #X obj 916 517 t f f;
-#X floatatom 916 539 5 0 0 0 - - -;
+#X floatatom 916 539 5 0 0 0 - - - 0;
 #X obj 1053 434 * -1;
-#X floatatom 1053 456 5 0 0 0 - - -;
+#X floatatom 1053 456 5 0 0 0 - - - 0;
 #X obj 1053 475 + 1;
-#X floatatom 1053 497 5 0 0 0 - - -;
+#X floatatom 1053 497 5 0 0 0 - - - 0;
 #X obj 1118 55 *~ -1;
 #X obj 521 508 +~;
 #X obj 521 530 clip~ 0 1;
@@ -397,12 +374,10 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 384 144 f \$1;
 #X obj 384 180 t f f f;
 #X obj 357 53 t b b;
-#X obj 43 122 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 43 122 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 43 82 r SAVE-S;
 #X obj 441 36 r \$0-reload!;
-#X text 524 36 RETURN TO PREVIOUS VALUE AFTER USING MORPH-SEQ module
-;
+#X text 524 36 RETURN TO PREVIOUS VALUE AFTER USING MORPH-SEQ module;
 #X obj 70 426 pack f f f f f f f f f;
 #X msg 70 464 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9;
 #X obj 340 273 r \$0-fx1-s;
@@ -522,9 +497,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -558,9 +533,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -596,9 +571,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -633,9 +608,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -669,9 +644,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -707,9 +682,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -743,9 +718,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -779,9 +754,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -815,9 +790,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -953,10 +928,9 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X connect 2 0 1 0;
 #X restore 100 337 pd parameter-nudging-system;
 #N canvas 440 40 957 786 external-messages 0;
-#X floatatom 21 698 5 0 0 0 - - -;
+#X floatatom 21 698 5 0 0 0 - - - 0;
 #X obj 20 320 spigot;
-#X obj 53 280 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 53 280 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 89 264 ==;
 #X obj 104 240 f \$1;
 #X obj 104 216 loadbang;
@@ -967,39 +941,38 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 21 625 t b f;
 #X obj 21 648 spigot;
 #X obj 20 54 unpack s f f;
-#X symbolatom 20 86 10 0 0 0 - - -;
+#X symbolatom 20 86 10 0 0 0 - - - 0;
 #X obj 53 300 t f f;
 #X obj 80 324 s \$0-msg-spigot;
 #X obj 69 632 r \$0-msg-spigot;
-#X floatatom 58 586 5 0 0 0 - - -;
+#X floatatom 58 586 5 0 0 0 - - - 0;
 #X obj 58 565 f;
 #X obj 58 513 t b f;
 #X obj 58 536 spigot;
 #X obj 106 520 r \$0-msg-spigot;
-#X floatatom 215 716 5 0 0 0 - - -;
+#X floatatom 215 716 5 0 0 0 - - - 0;
 #X obj 215 695 f;
 #X obj 215 643 t b f;
 #X obj 215 666 spigot;
 #X obj 263 650 r \$0-msg-spigot;
-#X floatatom 230 586 5 0 0 0 - - -;
+#X floatatom 230 586 5 0 0 0 - - - 0;
 #X obj 230 565 f;
 #X obj 230 513 t b f;
 #X obj 230 536 spigot;
 #X obj 278 520 r \$0-msg-spigot;
-#X floatatom 385 707 5 0 0 0 - - -;
+#X floatatom 385 707 5 0 0 0 - - - 0;
 #X obj 385 686 f;
 #X obj 385 634 t b f;
 #X obj 385 657 spigot;
 #X obj 433 641 r \$0-msg-spigot;
 #X obj 20 6 r random-mixer;
-#X obj 20 372 route CH1 CH2 CH3 CH4 FXSEND RANDOM-SOLO RANDOM-MUTE
-;
-#X floatatom 398 571 5 0 0 0 - - -;
+#X obj 20 372 route CH1 CH2 CH3 CH4 FXSEND RANDOM-SOLO RANDOM-MUTE;
+#X floatatom 398 571 5 0 0 0 - - - 0;
 #X obj 398 550 f;
 #X obj 398 498 t b f;
 #X obj 398 521 spigot;
 #X obj 446 505 r \$0-msg-spigot;
-#X floatatom 493 444 5 0 0 0 - - -;
+#X floatatom 493 444 5 0 0 0 - - - 0;
 #X obj 493 423 f;
 #X obj 493 371 t b f;
 #X obj 493 394 spigot;
@@ -1079,33 +1052,20 @@ RANDOM-MUTE 17 7 0 10 -262144 -226533 -1;
 #X obj 81 589 state_saving_module random-mixer \$0 \$1;
 #X obj 121 549 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/bng_dispatch random-mixer \$0 \$1 250
-50 fx-bang! fx-bang!-r REVERB #FFFFFF #DE4C91 #000000;
-#X obj 10 60 state_saving_module/vsl_dispatch random-mixer \$0 \$1
-0 127 fx1-s fx1-r FXSEND #9999DE #000000 #000000;
-#X obj 10 120 state_saving_module/vsl_dispatch random-mixer \$0 \$1
-0 127 channel4-s channel4-r CH4 #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/tgl_dispatch random-mixer \$0 \$1
-0 1 solo4-s solo4-r empty #91D6B2 #000000 #000000;
-#X obj 10 240 state_saving_module/vsl_dispatch random-mixer \$0 \$1
-0 127 channel3-s channel3-r CH3 #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/tgl_dispatch random-mixer \$0 \$1
-0 1 solo3-s solo3-r empty #91D6B2 #000000 #000000;
-#X obj 10 360 state_saving_module/vsl_dispatch random-mixer \$0 \$1
-0 127 channel2-s channel2-r CH2 #FFFFFF #000000 #000000;
-#X obj 10 420 state_saving_module/tgl_dispatch random-mixer \$0 \$1
-0 1 solo2-s solo2-r empty #91D6B2 #000000 #000000;
-#X obj 10 480 state_saving_module/vsl_dispatch random-mixer \$0 \$1
-0 127 channel1-s channel1-r CH1 #FFFFFF #000000 #000000;
-#X obj 10 540 state_saving_module/tgl_dispatch random-mixer \$0 \$1
-0 1 solo1-s solo1-r empty #91D6B2 #000000 #000000;
-#X obj 10 600 state_saving_module/bng_dispatch random-mixer \$0 \$1
-250 50 random-mute! random-mute!-r RANDOM-MUTE #FFFFFF #DE4C91 #000000
-;
-#X obj 10 660 state_saving_module/bng_dispatch random-mixer \$0 \$1
-250 50 random-solo! random-solo!-r RANDOM-SOLO #FFFFFF #DE4C91 #000000
-;
+#X obj 10 0 state_saving_module/bng_dispatch random-mixer \$0 \$1 250 50 fx-bang! fx-bang!-r REVERB #FFFFFF #DE4C91 #000000;
+#X obj 10 60 state_saving_module/vsl_dispatch random-mixer \$0 \$1 0 127 fx1-s fx1-r FXSEND #9999DE #000000 #000000;
+#X obj 10 120 state_saving_module/vsl_dispatch random-mixer \$0 \$1 0 127 channel4-s channel4-r CH4 #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/tgl_dispatch random-mixer \$0 \$1 0 1 solo4-s solo4-r empty #91D6B2 #000000 #000000;
+#X obj 10 240 state_saving_module/vsl_dispatch random-mixer \$0 \$1 0 127 channel3-s channel3-r CH3 #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/tgl_dispatch random-mixer \$0 \$1 0 1 solo3-s solo3-r empty #91D6B2 #000000 #000000;
+#X obj 10 360 state_saving_module/vsl_dispatch random-mixer \$0 \$1 0 127 channel2-s channel2-r CH2 #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/tgl_dispatch random-mixer \$0 \$1 0 1 solo2-s solo2-r empty #91D6B2 #000000 #000000;
+#X obj 10 480 state_saving_module/vsl_dispatch random-mixer \$0 \$1 0 127 channel1-s channel1-r CH1 #FFFFFF #000000 #000000;
+#X obj 10 540 state_saving_module/tgl_dispatch random-mixer \$0 \$1 0 1 solo1-s solo1-r empty #91D6B2 #000000 #000000;
+#X obj 10 600 state_saving_module/bng_dispatch random-mixer \$0 \$1 250 50 random-mute! random-mute!-r RANDOM-MUTE #FFFFFF #DE4C91 #000000;
+#X obj 10 660 state_saving_module/bng_dispatch random-mixer \$0 \$1 250 50 random-solo! random-solo!-r RANDOM-SOLO #FFFFFF #DE4C91 #000000;
 #X restore 81 619 pd \$0-gui_listeners;
+#X obj 217 614 namecanvas \$0-this;
 #X connect 0 0 1 0;
 #X connect 1 0 6 0;
 #X connect 1 0 24 0;

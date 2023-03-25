@@ -72,10 +72,8 @@
 #X connect 26 0 5 0;
 #X connect 27 0 26 1;
 #X restore 438 130 pd comb_filter1;
-#X obj 109 129 hsl 128 15 0 127 0 1 \$0-combfilter-delay-s \$0-combfilter-delay-r
-DELAY 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 109 144 hsl 128 15 0 127 0 1 \$0-combfilter-feedback-s \$0-combfilter-feedback-r
-FEEDBACK 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 129 hsl 128 15 0 127 0 1 \$0-combfilter-delay-s \$0-combfilter-delay-r DELAY 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 109 144 hsl 128 15 0 127 0 1 \$0-combfilter-feedback-s \$0-combfilter-feedback-r FEEDBACK 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #N canvas 0 22 793 555 comb_filter2 0;
 #X obj 195 112 inlet~;
 #X obj 365 79 inlet;
@@ -154,8 +152,7 @@ FEEDBACK 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 438 16 inlet~;
 #X obj 438 368 lop~;
 #X obj 438 390 lop~;
-#X obj 109 159 hsl 128 15 0 127 0 1 \$0-combfilter-lowpass-s \$0-combfilter-lowpass-r
-LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 159 hsl 128 15 0 127 0 1 \$0-combfilter-lowpass-s \$0-combfilter-lowpass-r LOWPASS 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 606 173 / 127;
 #X obj 606 195 * 4950;
 #X obj 606 217 + 50;
@@ -166,8 +163,7 @@ LOWPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 495 233 t f f;
 #X obj 81 486 *~;
 #X obj 438 482 *~;
-#X obj 109 204 hsl 128 15 0 127 0 1 \$0-combfilter-dry/wet-s \$0-combfilter-dry/wet-r
-DRY/WET 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 204 hsl 128 15 0 127 0 1 \$0-combfilter-dry/wet-s \$0-combfilter-dry/wet-r DRY/WET 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 44 279 t f f;
 #X msg 44 301 127 \$1;
 #X obj 44 323 -;
@@ -182,22 +178,18 @@ DRY/WET 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 439 534 min~ 1;
 #X obj 439 556 max~ -1;
 #X obj 439 614 outlet~;
-#X obj 109 189 hsl 128 15 1.27 127 1 1 \$0-combfilter-drive-s \$0-combfilter-drive-r
-DRIVE 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 189 hsl 128 15 1.27 127 1 1 \$0-combfilter-drive-s \$0-combfilter-drive-r DRIVE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 245 305 / 127;
 #X obj 245 371 pack 0 50;
 #X obj 245 393 line~;
 #X obj 438 310 *~;
 #X obj 245 349 + 0.25;
 #X obj 245 327 * 4.75;
-#X obj 273 108 cnv 5 5 5 empty empty DELAY 0 0 0 8 -262144 -66577 0
-;
-#X obj 105 122 cnv 5 5 5 empty empty COMBFILTER 0 0 0 12 -262144 -66577
-0;
+#X obj 273 108 cnv 5 5 5 empty empty DELAY 0 0 0 8 #fcfcfc #404040 0;
+#X obj 105 122 cnv 5 5 5 empty empty COMBFILTER 0 0 0 12 #fcfcfc #404040 0;
 #X obj 438 210 *~ 0.5;
 #X obj 581 93 t f f;
-#X obj 109 174 hsl 128 15 1.27 127 1 1 \$0-combfilter-highpass-s \$0-combfilter-highpass-r
-HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 109 174 hsl 128 15 1.27 127 1 1 \$0-combfilter-highpass-s \$0-combfilter-highpass-r HIGHPASS 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 438 412 hip~;
 #X obj 438 434 hip~;
 #X obj 719 192 / 127;
@@ -207,7 +199,7 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 719 280 line;
 #X obj 719 302 t f f;
 #X obj 774 75 inlet~;
-#X obj 104 108 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -66577 0;
+#X obj 104 108 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #404040 0;
 #N canvas 315 35 593 735 state-saving-multiple-instances 0;
 #X obj 137 29 loadbang;
 #X obj 184 452 state_saving_module/textfile \$0;
@@ -236,8 +228,7 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 205 603 s \$0-combfilter-feedback-r;
 #X obj 226 579 s \$0-combfilter-lowpass-r;
 #X obj 247 555 s \$0-combfilter-highpass-r;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 289 505 s \$0-combfilter-dry/wet-r;
 #X obj 268 529 s \$0-combfilter-drive-r;
 #X obj -16 234 r SAVE-S;
@@ -291,11 +282,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 439 578 *~ 1;
 #X obj 803 309 s \$0-instance-num;
 #X obj 803 261 makefilename %d;
-#X obj 186 122 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 186 122 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 803 286 label \$1;
-#N canvas 318 22 1126 739 state-saving-via-preset-manager-module 0
-;
+#N canvas 318 22 1126 739 state-saving-via-preset-manager-module 0;
 #X obj 340 227 state_saving_module/textfile \$0;
 #X msg 719 210 rewind;
 #X msg 676 210 bang;
@@ -351,9 +340,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -387,9 +376,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -423,9 +412,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -459,9 +448,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -495,9 +484,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -531,9 +520,9 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -882,18 +871,16 @@ HIGHPASS 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 22 0 0 0;
 #X connect 23 0 1 0;
 #X restore 803 195 pd parameter-nudging-system;
-#X obj 224 114 tgl 15 1 \$0-combfilter-comb/dly-s \$0-combfilter-comb/dly-r
-DELAY 17 7 0 10 -262144 -1 -1 0 1;
+#X obj 224 114 tgl 15 1 \$0-combfilter-comb/dly-s \$0-combfilter-comb/dly-r DELAY 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 733 479 r \$0-combfilter-comb/dly-s;
 #X obj 733 501 sel 0 1;
 #X obj 733 580 s \$0-combfilter-comb/dly-r;
 #X msg 763 536 label COMB;
 #X msg 733 558 label DELAY;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 31 705 5 0 0 0 - - -;
+#X floatatom 31 705 5 0 0 0 - - - 0;
 #X obj 30 327 spigot;
-#X obj 63 287 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 63 287 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 99 271 ==;
 #X obj 114 247 f \$1;
 #X obj 114 223 loadbang;
@@ -904,33 +891,33 @@ DELAY 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 31 632 t b f;
 #X obj 31 655 spigot;
 #X obj 30 61 unpack s f f;
-#X symbolatom 30 93 10 0 0 0 - - -;
+#X symbolatom 30 93 10 0 0 0 - - - 0;
 #X obj 63 307 t f f;
 #X obj 90 331 s \$0-msg-spigot;
 #X obj 79 639 r \$0-msg-spigot;
-#X floatatom 68 593 5 0 0 0 - - -;
+#X floatatom 68 593 5 0 0 0 - - - 0;
 #X obj 68 572 f;
 #X obj 68 520 t b f;
 #X obj 68 543 spigot;
 #X obj 116 527 r \$0-msg-spigot;
-#X floatatom 232 638 5 0 0 0 - - -;
+#X floatatom 232 638 5 0 0 0 - - - 0;
 #X obj 232 617 f;
 #X obj 232 565 t b f;
 #X obj 232 588 spigot;
 #X obj 280 572 r \$0-msg-spigot;
-#X floatatom 269 526 5 0 0 0 - - -;
+#X floatatom 269 526 5 0 0 0 - - - 0;
 #X obj 269 505 f;
 #X obj 269 453 t b f;
 #X obj 269 476 spigot;
 #X obj 317 460 r \$0-msg-spigot;
-#X floatatom 453 536 5 0 0 0 - - -;
+#X floatatom 453 536 5 0 0 0 - - - 0;
 #X obj 453 515 f;
 #X obj 453 463 t b f;
 #X obj 453 486 spigot;
 #X obj 501 470 r \$0-msg-spigot;
 #X obj 30 13 r combfilter;
 #X obj 30 379 route DELAY FEEDBACK LOWPASS HIGHPASS DRIVE DRY/WET;
-#X floatatom 554 674 5 0 0 0 - - -;
+#X floatatom 554 674 5 0 0 0 - - - 0;
 #X obj 554 653 f;
 #X obj 554 601 t b f;
 #X obj 554 624 spigot;
@@ -1002,33 +989,20 @@ DELAY 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module combfilter \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/tgl_dispatch combfilter \$0 \$1 0 1
-combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000
-;
-#X obj 10 60 state_saving_module/hsl_dispatch combfilter \$0 \$1 1.27
-127 combfilter-highpass-s combfilter-highpass-r HIGHPASS #FFFFFF #000000
-#000000;
-#X obj 10 120 state_saving_module/hsl_dispatch combfilter \$0 \$1 1.27
-127 combfilter-drive-s combfilter-drive-r DRIVE #FFFFFF #000000 #000000
-;
-#X obj 10 180 state_saving_module/hsl_dispatch combfilter \$0 \$1 0
-127 combfilter-dry/wet-s combfilter-dry/wet-r DRY/WET #FFFFFF #000000
-#000000;
-#X obj 10 240 state_saving_module/hsl_dispatch combfilter \$0 \$1 0
-127 combfilter-lowpass-s combfilter-lowpass-r LOWPASS #FFFFFF #000000
-#000000;
-#X obj 10 300 state_saving_module/hsl_dispatch combfilter \$0 \$1 0
-127 combfilter-feedback-s combfilter-feedback-r FEEDBACK #FFFFFF #000000
-#000000;
-#X obj 10 360 state_saving_module/hsl_dispatch combfilter \$0 \$1 0
-127 combfilter-delay-s combfilter-delay-r DELAY #FFFFFF #000000 #000000
-;
+#X obj 10 0 state_saving_module/tgl_dispatch combfilter \$0 \$1 0 1 combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch combfilter \$0 \$1 1.27 127 combfilter-highpass-s combfilter-highpass-r HIGHPASS #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch combfilter \$0 \$1 1.27 127 combfilter-drive-s combfilter-drive-r DRIVE #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-dry/wet-s combfilter-dry/wet-r DRY/WET #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-lowpass-s combfilter-lowpass-r LOWPASS #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-feedback-s combfilter-feedback-r FEEDBACK #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-delay-s combfilter-delay-r DELAY #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 48 255 r \$0-combfilter-dry/wet-s;
 #X obj 243 278 r \$0-combfilter-drive-s;
 #X obj 717 131 r \$0-combfilter-highpass-s;
 #X obj 605 153 r \$0-combfilter-lowpass-s;
 #X obj 582 69 r \$0-combfilter-feedback-s;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 5 0;
 #X connect 1 0 46 0;
 #X connect 4 0 46 0;

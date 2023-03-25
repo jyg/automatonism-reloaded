@@ -1,27 +1,22 @@
 #N canvas 0 23 1102 752 10;
-#X obj 108 146 hsl 128 15 0 127 0 1 \$0-polysaw-pitch-s \$0-polysaw-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 108 146 hsl 128 15 0 127 0 1 \$0-polysaw-pitch-s \$0-polysaw-pitch-r PITCH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 320 467 pack f f f;
 #X obj 320 303 f;
-#X floatatom 320 325 5 0 0 0 - - -;
+#X floatatom 320 325 5 0 0 0 - - - 0;
 #X msg 365 174 100;
 #X obj 320 370 unpack f f;
-#X floatatom 320 392 5 0 0 0 - - -;
-#X floatatom 377 394 5 0 0 0 - - -;
+#X floatatom 320 392 5 0 0 0 - - - 0;
+#X floatatom 377 394 5 0 0 0 - - - 0;
 #X obj 320 443 poly 4 1;
 #X obj 320 492 route 1 2 3 4;
-#X obj 108 161 hsl 128 15 0 127 0 1 \$0-polysaw-saw->pulse-s \$0-polysaw-saw->pulse-r
-SAW->PULSE 135 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 196 hsl 128 15 1.27 127 1 1 \$0-polysaw-attack-s \$0-polysaw-attack-r
-ATTACK 135 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 211 hsl 128 15 0 127 0 1 \$0-polysaw-hold-s \$0-polysaw-hold-r
-HOLD 135 7 0 10 -262144 -1 -1 12700 1;
-#X obj 108 225 hsl 128 15 0 127 0 1 \$0-polysaw-release-s \$0-polysaw-release-r
-RELEASE 135 7 0 10 -262144 -1 -1 12700 1;
+#X obj 108 161 hsl 128 15 0 127 0 1 \$0-polysaw-saw->pulse-s \$0-polysaw-saw->pulse-r SAW->PULSE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 196 hsl 128 15 1.27 127 1 1 \$0-polysaw-attack-s \$0-polysaw-attack-r ATTACK 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 211 hsl 128 15 0 127 0 1 \$0-polysaw-hold-s \$0-polysaw-hold-r HOLD 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 225 hsl 128 15 0 127 0 1 \$0-polysaw-release-s \$0-polysaw-release-r RELEASE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 320 346 pack f f;
 #X obj 335 203 r \$0-polysaw-pitch-s;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
-#X floatatom 206 131 5 0 0 0 - #0-polysaw-pitch-s -;
+#X floatatom 206 131 5 0 0 0 - \$0-polysaw-pitch-s - 0;
 #X obj 471 15 inlet~ PITCH CV;
 #X obj 320 47 inlet~ TRIG;
 #X obj 320 121 t b b b;
@@ -31,12 +26,11 @@ RELEASE 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 335 247 clip 0 127;
 #X obj 471 208 t b f;
 #X obj 320 632 *~ 0.25;
-#X floatatom 416 294 5 0 0 0 - - -;
+#X floatatom 416 294 5 0 0 0 - - - 0;
 #X obj 677 585 catch~ \$0-polysaw-eg;
 #X obj 677 649 outlet~ EG OUT;
 #X obj 677 607 *~ 0.25;
-#X obj 108 176 hsl 128 15 0 127 0 1 \$0-polysaw-dtune-s \$0-polysaw-dtune-r
-DTUNE 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 108 176 hsl 128 15 0 127 0 1 \$0-polysaw-dtune-s \$0-polysaw-dtune-r DTUNE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #N canvas 224 22 962 575 voice2-ahr 0;
 #X obj 43 6 inlet;
 #X obj 43 28 unpack f f;
@@ -163,19 +157,13 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 44 89 t f f;
 #X text 102 40 SAW WAVE;
 #X msg 43 193 \; \$1-saw normalize 1;
-#X msg 71 116 \; \$1-saw sinesum 512 1 0.5 0.33 0.25 0.2 0.16 0.14
-0.125 0.111111 0.1 0.090909 0.083333 0.076923 0.0714285 0.066666 0.0625
-0.058823 0.055555 0.052631 0.05 0.047619 0.045454 0.043478 0.041666
-;
+#X msg 71 116 \; \$1-saw sinesum 512 1 0.5 0.33 0.25 0.2 0.16 0.14 0.125 0.111111 0.1 0.090909 0.083333 0.076923 0.0714285 0.066666 0.0625 0.058823 0.055555 0.052631 0.05 0.047619 0.045454 0.043478 0.041666;
 #X obj 42 263 loadbang;
 #X obj 43 379 t f f;
 #X obj 42 285 f \$0;
 #X msg 43 466 \; \$1-square normalize 1;
-#X obj 95 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X msg 111 395 \; \$1-square sinesum 512 1 0 0.33 0 0.2 0 0.142857
-0 0.111111 0 0.090909 0 0.076923 0 0.066666 0 0.058823 0 0.0526315
-0 0.047619 0 0.04347 0 0.04 0;
+#X obj 95 345 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X msg 111 395 \; \$1-square sinesum 512 1 0 0.33 0 0.2 0 0.142857 0 0.111111 0 0.090909 0 0.076923 0 0.066666 0 0.058823 0 0.0526315 0 0.047619 0 0.04347 0 0.04 0;
 #X obj 41 233 table \$0-saw 515;
 #X obj 41 506 table \$0-square 515;
 #X connect 0 0 1 0;
@@ -299,16 +287,11 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 50 0 14 0;
 #X restore 320 522 pd voice1-ahr;
 #X obj 215 629 *~ 0.5;
-#X obj 103 108 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
-;
-#X obj 106 137 cnv 5 5 5 empty empty POLYSYNTH 0 0 0 12 -262144 -66577
-0;
-#X obj 175 137 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
-#X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
-#X obj 281 109 cnv 5 5 5 empty empty S->P 0 0 0 8 -262144 -66577 0
-;
+#X obj 103 108 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 106 137 cnv 5 5 5 empty empty POLYSYNTH 0 0 0 12 #fcfcfc #404040 0;
+#X obj 175 137 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 281 109 cnv 5 5 5 empty empty S->P 0 0 0 8 #fcfcfc #404040 0;
 #N canvas 315 35 593 735 state-saving-multiple-instances 0;
 #X obj 137 29 loadbang;
 #X obj 184 452 state_saving_module/textfile \$0;
@@ -325,8 +308,7 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 165 153 f \$1;
 #X obj 165 189 t f f f;
 #X obj 138 62 t b b;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj -16 234 r SAVE-S;
 #X msg 43 438 set \$1 \$2 \$3 \$4 \$5 \$6;
 #X obj 184 474 unpack f f f f f f;
@@ -441,9 +423,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -476,9 +458,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -512,9 +494,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -548,9 +530,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -584,9 +566,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -620,9 +602,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -968,9 +950,9 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 22 0 1 0;
 #X connect 23 0 15 0;
 #X restore 52 306 pd parameter-nudging-system;
-#X obj 286 257 cnv 5 5 5 empty empty ENV 0 0 0 8 -262144 -1 0;
-#X obj 105 257 cnv 5 5 5 empty empty LEFT 0 0 0 8 -262144 -1 0;
-#X obj 188 257 cnv 5 5 5 empty empty RIGHT 0 0 0 8 -262144 -1 0;
+#X obj 286 257 cnv 5 5 5 empty empty ENV 0 0 0 8 #fcfcfc #000000 0;
+#X obj 105 257 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #000000 0;
+#X obj 188 257 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #000000 0;
 #X obj 548 410 inlet~ SAW-PULSE;
 #N canvas 224 22 962 575 voice3-ahr 0;
 #X obj 43 6 inlet;
@@ -1212,18 +1194,16 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 54 0 3 0;
 #X connect 55 0 13 0;
 #X restore 376 601 pd voice4-ahr;
-#X obj 190 108 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
-;
+#X obj 190 108 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
 #X obj 321 707 outlet~ LEFT;
 #X obj 488 703 outlet~ RIGHT;
 #X obj 320 674 *~ 0.33;
 #X obj 488 677 *~ 0.33;
 #X obj 488 640 *~ 0.5;
 #N canvas 460 23 967 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -1234,33 +1214,33 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
-#X floatatom 223 594 5 0 0 0 - - -;
+#X floatatom 223 594 5 0 0 0 - - - 0;
 #X obj 223 573 f;
 #X obj 223 521 t b f;
 #X obj 223 544 spigot;
 #X obj 271 528 r \$0-msg-spigot;
-#X floatatom 387 639 5 0 0 0 - - -;
+#X floatatom 387 639 5 0 0 0 - - - 0;
 #X obj 387 618 f;
 #X obj 387 566 t b f;
 #X obj 387 589 spigot;
 #X obj 435 573 r \$0-msg-spigot;
-#X floatatom 424 527 5 0 0 0 - - -;
+#X floatatom 424 527 5 0 0 0 - - - 0;
 #X obj 424 506 f;
 #X obj 424 454 t b f;
 #X obj 424 477 spigot;
 #X obj 472 461 r \$0-msg-spigot;
-#X floatatom 608 537 5 0 0 0 - - -;
+#X floatatom 608 537 5 0 0 0 - - - 0;
 #X obj 608 516 f;
 #X obj 608 464 t b f;
 #X obj 608 487 spigot;
 #X obj 656 471 r \$0-msg-spigot;
 #X obj 185 14 r polysynth;
 #X obj 185 380 route PITCH SAW->PULSE DTUNE ATTACK HOLD RELEASE;
-#X floatatom 781 524 5 0 0 0 - - -;
+#X floatatom 781 524 5 0 0 0 - - - 0;
 #X obj 781 503 f;
 #X obj 781 451 t b f;
 #X obj 781 474 spigot;
@@ -1332,22 +1312,14 @@ DTUNE 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module polysynth \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127
-polysaw-dtune-s polysaw-dtune-r DTUNE #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127
-polysaw-release-s polysaw-release-r RELEASE #FFFFFF #000000 #000000
-;
-#X obj 10 120 state_saving_module/hsl_dispatch polysynth \$0 \$1 0
-127 polysaw-hold-s polysaw-hold-r HOLD #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/hsl_dispatch polysynth \$0 \$1 1.27
-127 polysaw-attack-s polysaw-attack-r ATTACK #FFFFFF #000000 #000000
-;
-#X obj 10 240 state_saving_module/hsl_dispatch polysynth \$0 \$1 0
-127 polysaw-saw->pulse-s polysaw-saw->pulse-r SAW->PULSE #FFFFFF #000000
-#000000;
-#X obj 10 300 state_saving_module/hsl_dispatch polysynth \$0 \$1 0
-127 polysaw-pitch-s polysaw-pitch-r PITCH #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-dtune-s polysaw-dtune-r DTUNE #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-release-s polysaw-release-r RELEASE #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-hold-s polysaw-hold-r HOLD #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch polysynth \$0 \$1 1.27 127 polysaw-attack-s polysaw-attack-r ATTACK #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-saw->pulse-s polysaw-saw->pulse-r SAW->PULSE #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-pitch-s polysaw-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;
 #X connect 3 0 14 0;

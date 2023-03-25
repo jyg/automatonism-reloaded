@@ -1,28 +1,23 @@
 #N canvas 441 22 865 550 10;
-#X obj 274 117 cnv 15 15 15 empty \$0-midi2-gui-r empty 20 12 0 14
--33289 -262144 0;
-#X floatatom 104 120 5 0 0 2 - - -;
-#X obj 104 111 cnv 5 5 5 empty empty NOTE 0 0 0 8 -262144 -66577 0
-;
-#X obj 272 110 cnv 5 5 5 empty empty GATE 0 0 0 8 -262144 -226533 0
-;
+#X obj 274 117 cnv 15 15 15 empty \$0-midi2-gui-r empty 20 12 0 14 #202020 #fcfcfc 0;
+#X floatatom 104 120 5 0 0 2 - - - 0;
+#X obj 104 111 cnv 5 5 5 empty empty NOTE 0 0 0 8 #fcfcfc #404040 0;
+#X obj 272 110 cnv 5 5 5 empty empty GATE 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 622 121 env~;
 #X obj 622 143 > 0;
 #X obj 622 166 change;
 #X msg 649 248 color \$1;
 #X obj 498 36 inlet~ GATE;
 #X obj 408 37 inlet~ PITCH;
-#X obj 159 127 cnv 5 5 5 empty empty MIDI-OUT 0 0 0 12 -262144 -66577
-0;
+#X obj 159 127 cnv 5 5 5 empty empty MIDI-OUT 0 0 0 12 #fcfcfc #404040 0;
 #X obj 409 191 snapshot~;
 #X obj 409 212 * 127;
 #X obj 409 256 clip 0 127;
 #X obj 649 270 s \$0-midi2-gui-r;
 #X obj 416 347 +;
-#X obj 107 156 hsl 128 15 0 127 0 0 \$0-midi-out-offset-s \$0-midi-out-offset-r
-PITCH-OFFSET -2 -8 0 10 -150893 -1 -1 0 1;
+#X obj 107 156 hsl 128 15 0 127 0 0 \$0-midi-out-offset-s \$0-midi-out-offset-r PITCH-OFFSET -2 -8 0 10 #90d4b0 #000000 #000000 0 1;
 #X obj 434 324 - 64;
-#X floatatom 205 142 5 0 0 0 - - -;
+#X floatatom 205 142 5 0 0 0 - - - 0;
 #X obj 409 234 abs;
 #X obj 468 412 f;
 #X obj 487 454 * 100;
@@ -38,14 +33,13 @@ PITCH-OFFSET -2 -8 0 10 -150893 -1 -1 0 1;
 #X obj 622 188 t b f;
 #X obj 498 79 threshold~ 0.9 0 0.9 0;
 #X obj 649 227 + 12;
-#X obj 107 171 hsl 128 15 0 127 0 0 \$0-midiout-channel-s \$0-midiout-channel-r
-CHANNEL 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 107 171 hsl 128 15 0 127 0 0 \$0-midiout-channel-s \$0-midiout-channel-r CHANNEL 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 159 264 r \$0-midiout-channel-s;
 #X obj 159 286 / 127;
 #X obj 159 308 * 15;
 #X obj 159 330 + 1;
 #X obj 159 352 i;
-#X floatatom 104 186 5 0 0 0 - - -;
+#X floatatom 104 186 5 0 0 0 - - - 0;
 #X obj 468 484 noteout;
 #N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
@@ -63,8 +57,7 @@ CHANNEL 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 120 399 pack f f;
 #X msg 120 438 set \$1 \$2;
@@ -107,8 +100,7 @@ CHANNEL 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 629 448 s \$0-instance-num;
 #X obj 629 400 makefilename %d;
 #X msg 629 425 label \$1;
-#N canvas 225 22 1117 745 state-saving-via-preset-manager-module 0
-;
+#N canvas 225 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 state_saving_module/textfile \$0;
 #X msg 734 332 rewind;
 #X msg 691 332 bang;
@@ -121,7 +113,7 @@ CHANNEL 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 244 399 pack f f;
 #X msg 244 438 set \$1 \$2;
 #X obj 477 371 unpack f f;
-#X floatatom 325 391 5 0 0 0 - - -;
+#X floatatom 325 391 5 0 0 0 - - - 0;
 #X obj 244 264 delay 5;
 #X obj 190 484 delay 10;
 #X msg 190 314 bang;
@@ -215,7 +207,7 @@ CHANNEL 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 157 193 r NUDGE-RANGE;
 #X obj 247 308 inlet;
 #X obj 232 397 outlet;
-#X floatatom 316 396 5 0 0 0 - - -;
+#X floatatom 316 396 5 0 0 0 - - - 0;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 14 0;
@@ -284,23 +276,18 @@ CHANNEL 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 4 0 1 0;
 #X connect 6 0 0 0;
 #X restore 629 352 pd parameter-nudging-system;
-#X obj 223 127 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 223 127 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 707 210 0;
 #X obj 707 182 loadbang;
-#X text 11 17 (The MIDI-OUT module has been updated and improved for
-Automatonism v2.0 by Laurent Houdard.);
+#X text 11 17 (The MIDI-OUT module has been updated and improved for Automatonism v2.0 by Laurent Houdard.);
 #X obj 688 67 state_saving_module midi-out \$0 \$1;
 #X obj 728 27 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch midi-out \$0 \$1 0 127
-midiout-channel-s midiout-channel-r CHANNEL #FFFFFF #000000 #000000
-;
-#X obj 10 60 state_saving_module/hsl_dispatch midi-out \$0 \$1 0 127
-midi-out-offset-s midi-out-offset-r PITCH-OFFSET #91D6B2 #000000 #000000
-;
+#X obj 10 0 state_saving_module/hsl_dispatch midi-out \$0 \$1 0 127 midiout-channel-s midiout-channel-r CHANNEL #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch midi-out \$0 \$1 0 127 midi-out-offset-s midi-out-offset-r PITCH-OFFSET #91D6B2 #000000 #000000;
 #X restore 688 97 pd \$0-gui_listeners;
 #X obj 439 299 r \$0-midi-out-offset-s;
+#X obj 819 99 namecanvas \$0-this;
 #X connect 4 0 5 0;
 #X connect 5 0 6 0;
 #X connect 6 0 31 0;

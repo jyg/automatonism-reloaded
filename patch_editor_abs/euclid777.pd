@@ -8,24 +8,19 @@
 #X obj 25 147 mod \$1;
 #X obj 25 51 threshold~ 0.9 0 0.9 0;
 #X obj 25 27 inlet~;
-#X obj 203 522 bng 10 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#X obj 203 522 bng 10 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 26 394 vline~;
 #X obj 26 420 outlet~;
 #X msg 26 369 1 0 \, 0 1 1;
-#X obj 205 459 hsl 128 15 1 32 0 1 \$0-length \$0-length-rcv empty
--2 -8 0 10 #fcfcfc #000000 #000000 12600 1;
+#X obj 205 459 hsl 128 15 1 32 0 1 \$0-length \$0-length-rcv empty -2 -8 0 10 #fcfcfc #000000 #000000 12600 1;
 #X obj 317 212 int;
 #X floatatom 394 463 3 0 0 0 - - - 0;
-#X obj 205 489 hsl 128 15 1 32 0 1 \$0-numhits \$0-numhits-rcv empty
--2 -8 0 10 #fcfcfc #000000 #000000 4200 1;
+#X obj 205 489 hsl 128 15 1 32 0 1 \$0-numhits \$0-numhits-rcv empty -2 -8 0 10 #fcfcfc #000000 #000000 4200 1;
 #X obj 520 258 int;
 #X floatatom 393 490 3 0 0 0 - - - 0;
 #X text 334 456 Length;
-#X obj 205 474 hsl 128 15 0 1 0 0 \$0-lenCV \$0-lenCV-rcv empty -2
--8 0 10 #9898dc #000000 #000000 0 1;
-#X obj 205 504 hsl 128 15 0 1 0 0 \$0-numCV \$0-numCV-rcv empty -2
--8 0 10 #9898dc #000000 #000000 0 1;
+#X obj 205 474 hsl 128 15 0 1 0 0 \$0-lenCV \$0-lenCV-rcv empty -2 -8 0 10 #9898dc #000000 #000000 0 1;
+#X obj 205 504 hsl 128 15 0 1 0 0 \$0-numCV \$0-numCV-rcv empty -2 -8 0 10 #9898dc #000000 #000000 0 1;
 #X obj 317 47 inlet~;
 #X obj 520 52 inlet~;
 #X obj 795 75 threshold~ 0.9 0 0.9 0;
@@ -57,22 +52,16 @@
 #X text 13 39 Patch by Nick Marcoux;
 #X text 13 95 https://nickmarcoux.bandcamp.com/;
 #X text 13 135 Euclidean algorithm used was found here:;
-#X text 13 155 https://forum.pdpatchrepo.info/topic/5968/euclidean-rhythm-abstraction
-;
-#X text 13 59 Youtube user pd_777: youtube.com/channel/UCYtaa7Qj4C4990yloa0_0jg
-;
+#X text 13 155 https://forum.pdpatchrepo.info/topic/5968/euclidean-rhythm-abstraction;
+#X text 13 59 Youtube user pd_777: youtube.com/channel/UCYtaa7Qj4C4990yloa0_0jg;
 #X restore 19 567 pd credits;
 #X obj 513 520 state_saving_module euclid777 \$0 \$1;
 #X obj 553 480 savestate;
 #N canvas 0 0 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch euclid777 \$0 \$1 0 1
-numCV numCV-rcv empty #9898dc #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch euclid777 \$0 \$1 0 1
-lenCV lenCV-rcv empty #9898dc #000000 #000000;
-#X obj 10 120 state_saving_module/hsl_dispatch euclid777 \$0 \$1 1
-32 numhits numhits-rcv empty #fcfcfc #000000 #000000;
-#X obj 10 180 state_saving_module/hsl_dispatch euclid777 \$0 \$1 1
-32 length length-rcv empty #fcfcfc #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch euclid777 \$0 \$1 0 1 numCV numCV-rcv empty #9898dc #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch euclid777 \$0 \$1 0 1 lenCV lenCV-rcv empty #9898dc #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch euclid777 \$0 \$1 1 32 numhits numhits-rcv empty #fcfcfc #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch euclid777 \$0 \$1 1 32 length length-rcv empty #fcfcfc #000000 #000000;
 #X restore 513 550 pd \$0-gui_listeners;
 #N canvas 960 0 958 1016 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
@@ -90,8 +79,7 @@ lenCV lenCV-rcv empty #9898dc #000000 #000000;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 257 617 s \$0-length-rcv;
 #X obj 282 588 s \$0-lenCV-rcv;
@@ -569,8 +557,7 @@ lenCV lenCV-rcv empty #9898dc #000000 #000000;
 #X restore 711 254 pd parameter-nudging-system;
 #N canvas 0 0 1920 1021 external-messages 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -604,8 +591,7 @@ lenCV lenCV-rcv empty #9898dc #000000 #000000;
 #X connect 11 3 15 0;
 #X restore 714 226 pd external-messages;
 #X text 335 487 Num-Hits;
-#X obj 281 449 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc
-#404040 0;
+#X obj 281 449 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 43 80 r \$0-reset;
 #X obj 795 133 s \$0-reset;
 #X text 203 440 euclid777;
@@ -666,6 +652,7 @@ lenCV lenCV-rcv empty #9898dc #000000 #000000;
 #X connect 11 1 7 1;
 #X restore 519 80 pd unsig~;
 #X text 198 427 Clk;
+#X obj 656 549 namecanvas \$0-this;
 #X connect 0 0 9 0;
 #X connect 0 0 12 0;
 #X connect 4 0 5 0;

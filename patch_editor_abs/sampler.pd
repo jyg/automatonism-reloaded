@@ -1,14 +1,10 @@
 #N canvas 0 57 1920 1023 10;
-#X obj 108 149 hsl 128 15 0 127 0 1 \$0-sample-player-file-s \$0-sample-player-file-r
-FILE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 108 179 hsl 128 15 0 127 0 1 \$0-sample-player-pitch-cv-att-s
-\$0-sample-player-pitch-cv-att-r P.CV 133 7 0 10 #9898dc #000000 #000000
-0 1;
+#X obj 108 149 hsl 128 15 0 127 0 1 \$0-sample-player-file-s \$0-sample-player-file-r FILE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 179 hsl 128 15 0 127 0 1 \$0-sample-player-pitch-cv-att-s \$0-sample-player-pitch-cv-att-r P.CV 133 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 590 342 phasor~;
 #X obj 590 394 *~;
 #X obj 605 365 r \$0-samplesize;
-#X obj 223 194 tgl 15 1 \$0-sample-player-loop-s \$0-sample-player-loop-r
-LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 223 194 tgl 15 1 \$0-sample-player-loop-s \$0-sample-player-loop-r LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 590 176 r \$0-frequencyHz;
 #X obj 590 264 sig~;
 #X obj 590 288 +~;
@@ -31,8 +27,7 @@ LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 200 15 r~ \$0-sampler-file-cv;
 #X obj 200 61 snapshot~;
 #X obj 200 105 t b f;
-#X obj 347 126 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
+#X obj 347 126 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 347 168 spigot;
 #X obj 347 31 env~;
 #X obj 347 53 > 0;
@@ -95,8 +90,7 @@ LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X connect 35 0 36 0;
 #X connect 36 0 34 0;
 #X restore 358 36 pd select-sample;
-#X obj 105 115 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90
-#000000;
+#X obj 105 115 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 629 222 r \$0-sample-player-loop-s;
 #X obj 629 293 line~;
 #X obj 132 744 *~;
@@ -110,17 +104,12 @@ LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 857 218 r \$0-sample-player-loop-s;
 #X obj 857 240 sel 1;
 #X msg 857 262 0;
-#X obj 106 141 cnv 5 5 5 empty empty SAMPLER 0 0 0 12 #fcfcfc #404040
-0;
-#X obj 147 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040
-0;
-#X obj 104 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0
-;
-#X obj 252 108 cnv 5 5 5 empty empty LOOP 0 0 0 8 #fcfcfc #dc4c90 0
-;
-#X obj 163 141 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc
-#404040 0;
-#N canvas 0 57 1920 1023 load-samples 1;
+#X obj 106 141 cnv 5 5 5 empty empty SAMPLER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 147 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
+#X obj 104 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 252 108 cnv 5 5 5 empty empty LOOP 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 163 141 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#N canvas 0 57 1920 1023 load-samples 0;
 #X obj 26 7 loadbang;
 #X obj 19 376 soundfiler;
 #X obj 19 486 44100;
@@ -205,23 +194,15 @@ LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 25 47 pdcontrol;
 #X msg 27 26 dir 2;
 #X obj 21 232 pack s \$0;
-#X msg 20 353 read -resize \$1/samples/sample1.wav \$2-sample1 \$2-sample1R
-, f 61;
+#X msg 20 353 read -resize \$1/samples/sample1.wav \$2-sample1 \$2-sample1R, f 61;
 #X obj 199 386 r \$0-dir;
-#X msg 199 413 read -resize \$1/samples/sample2.wav \$2-sample2 \$2-sample2R
-, f 61;
-#X msg 614 326 read -resize \$1/samples/sample3.wav \$2-sample3 \$2-sample3R
-, f 61;
-#X msg 787 433 read -resize \$1/samples/sample4.wav \$2-sample4 \$2-sample4R
-, f 61;
-#X msg 40 666 read -resize \$1/samples/sample5.wav \$2-sample5 \$2-sample5R
-, f 61;
-#X msg 218 762 read -resize \$1/samples/sample6.wav \$2-sample6 \$2-sample6R
-, f 61;
-#X msg 633 675 read -resize \$1/samples/sample7.wav \$2-sample7 \$2-sample7R
-, f 61;
-#X msg 806 782 read -resize \$1/samples/sample8.wav \$2-sample8 \$2-sample8R
-, f 61;
+#X msg 199 413 read -resize \$1/samples/sample2.wav \$2-sample2 \$2-sample2R, f 61;
+#X msg 614 326 read -resize \$1/samples/sample3.wav \$2-sample3 \$2-sample3R, f 61;
+#X msg 787 433 read -resize \$1/samples/sample4.wav \$2-sample4 \$2-sample4R, f 61;
+#X msg 40 666 read -resize \$1/samples/sample5.wav \$2-sample5 \$2-sample5R, f 61;
+#X msg 218 762 read -resize \$1/samples/sample6.wav \$2-sample6 \$2-sample6R, f 61;
+#X msg 633 675 read -resize \$1/samples/sample7.wav \$2-sample7 \$2-sample7R, f 61;
+#X msg 806 782 read -resize \$1/samples/sample8.wav \$2-sample8 \$2-sample8R, f 61;
 #X obj 95 441 list append;
 #X obj 20 327 t l l;
 #X obj 19 432 t b f f b;
@@ -262,8 +243,7 @@ LOOP 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 53 199 symbol \$1/..;
 #X obj 231 173 t s s;
 #X obj 269 263 print Automatonism/sampler-\$1;
-#X msg 271 228 no local samples folder found in \$2. Using Automatonism
-default samples folder instead (\$1/../samples);
+#X msg 271 228 no local samples folder found in \$2. Using Automatonism default samples folder instead (\$1/../samples);
 #X connect 0 0 82 0;
 #X connect 1 0 80 0;
 #X connect 2 0 3 0;
@@ -369,8 +349,7 @@ default samples folder instead (\$1/../samples);
 #X obj 838 47 s~ \$0-sampler-file-cv;
 #X obj 981 29 threshold~ 0.9 0 0.9 0;
 #X obj 981 51 s \$0-sample-player-loop-r;
-#X obj 207 109 cnv 5 5 5 empty empty FILE 0 0 0 8 #fcfcfc #404040 0
-;
+#X obj 207 109 cnv 5 5 5 empty empty FILE 0 0 0 8 #fcfcfc #404040 0;
 #X symbolatom 176 135 10 0 0 0 - \$0-sampler-symbol-gui-r - 0;
 #N canvas 100 22 593 735 state-saving-multiple-instances 0;
 #X obj 164 26 loadbang;
@@ -388,8 +367,7 @@ default samples folder instead (\$1/../samples);
 #X obj 191 200 t f f f;
 #X obj 191 164 f \$1;
 #X obj 164 59 t b b;
-#X obj 27 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 27 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 27 234 r SAVE-S;
 #X msg 101 650 write statesave/\$1-sampler-ss.txt;
 #X msg 210 454 read statesave/\$1-sampler-ss.txt;
@@ -1427,8 +1405,7 @@ default samples folder instead (\$1/../samples);
 #X floatatom 137 459 5 0 0 0 - - - 0;
 #X obj 138 24 inlet;
 #X obj 137 478 outlet;
-#X obj 243 40 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc
-#000000 #000000 0 1;
+#X obj 243 40 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X floatatom 222 82 5 0 0 0 - - - 0;
 #X obj 137 263 - 1;
 #X obj 137 241 * 4;
@@ -1469,8 +1446,7 @@ default samples folder instead (\$1/../samples);
 #X obj 451 340 *~;
 #X obj 147 401 +;
 #X obj 451 362 snapshot~;
-#X obj 534 325 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
+#X obj 534 325 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 451 384 t b f;
 #X obj 451 244 r~ \$0-PITCH-CV;
 #X obj 534 345 metro 20;
@@ -1481,8 +1457,7 @@ default samples folder instead (\$1/../samples);
 #X obj 320 438 == 0;
 #X obj 320 460 sel 1;
 #X msg 320 482 0;
-#X obj 176 120 bng 15 250 50 0 \$0-sampler-original-s \$0-sampler-original-r
-ORIGINAL 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 176 120 bng 15 250 50 0 \$0-sampler-original-s \$0-sampler-original-r ORIGINAL 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 356 110 r \$0-sampler-original-s;
 #X msg 356 132 63.5;
 #X obj 356 154 s \$0-sample-player-pitch-r;
@@ -1497,10 +1472,8 @@ ORIGINAL 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 909 745 outlet~ RIGHT;
 #X obj 793 620 r \$0-select-tableR;
 #X obj 984 551 r \$0-select-tableR;
-#X obj 174 218 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #404040
-0;
-#X obj 103 217 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #404040 0
-;
+#X obj 174 218 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #404040 0;
+#X obj 103 217 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #404040 0;
 #X obj 589 708 *~;
 #X obj 408 612 *~;
 #X obj 423 585 vline~;
@@ -1522,8 +1495,7 @@ ORIGINAL 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 451 266 *~ 8;
 #X obj 1052 342 snapshot~;
 #X floatatom 1052 364 5 0 0 0 - - - 0;
-#X obj 1053 294 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
+#X obj 1053 294 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 1053 314 metro 20;
 #X obj 1052 383 < 0.1;
 #X floatatom 1052 405 5 0 0 0 - - - 0;
@@ -1532,10 +1504,8 @@ ORIGINAL 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 1052 490 vline~;
 #X obj 1052 512 outlet~ EOS;
 #X obj 1052 424 change;
-#X obj 258 218 cnv 5 5 5 empty empty SOS 0 0 0 8 #fcfcfc #dc4c90 0
-;
-#X obj 108 164 hsl 128 15 0 127 0 1 \$0-sample-player-pitch-s \$0-sample-player-pitch-r
-PITCH 133 7 0 10 #90d4b0 #000000 #000000 6350 1;
+#X obj 258 218 cnv 5 5 5 empty empty SOS 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 108 164 hsl 128 15 0 127 0 1 \$0-sample-player-pitch-s \$0-sample-player-pitch-r PITCH 133 7 0 10 #90d4b0 #000000 #000000 0 1;
 #X obj 757 -1 r \$0-sample-player-pitch-cv-att-s;
 #X obj 757 21 / 127;
 #X obj 757 43 pack 0 50;
@@ -1547,8 +1517,7 @@ PITCH 133 7 0 10 #90d4b0 #000000 #000000 6350 1;
 #N canvas 632 73 749 752 external-messages 0;
 #X floatatom 43 604 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -1654,29 +1623,18 @@ PITCH 133 7 0 10 #90d4b0 #000000 #000000 6350 1;
 #X connect 47 4 34 0;
 #X connect 47 5 40 0;
 #X restore 357 180 pd external-messages;
-#X obj 38 71 bng 15 250 50 0 \$0-sampler-triggui-s \$0-sampler-triggui-r
-empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 38 71 bng 15 250 50 0 \$0-sampler-triggui-s \$0-sampler-triggui-r empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 269 799 state_saving_module sampler \$0 \$1;
 #X obj 309 759 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/bng_dispatch sampler \$0 \$1 250 50
-sampler-triggui-s sampler-triggui-r empty #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch sampler \$0 \$1 0 127
-sample-player-pitch-s sample-player-pitch-r PITCH #91D6B2 #000000 #000000
-;
-#X obj 10 120 state_saving_module/bng_dispatch sampler \$0 \$1 250
-50 sampler-original-s sampler-original-r ORIGINAL #FFFFFF #000000 #000000
-;
-#X obj 10 180 state_saving_module/tgl_dispatch sampler \$0 \$1 0 1
-sample-player-loop-s sample-player-loop-r LOOP #FFFFFF #000000 #000000
-;
-#X obj 10 240 state_saving_module/hsl_dispatch sampler \$0 \$1 0 127
-sample-player-pitch-cv-att-s sample-player-pitch-cv-att-r P.CV #9999DE
-#000000 #000000;
-#X obj 10 300 state_saving_module/hsl_dispatch sampler \$0 \$1 0 127
-sample-player-file-s sample-player-file-r FILE #FFFFFF #000000 #000000
-;
+#X obj 10 0 state_saving_module/bng_dispatch sampler \$0 \$1 250 50 sampler-triggui-s sampler-triggui-r empty #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch sampler \$0 \$1 0 127 sample-player-pitch-s sample-player-pitch-r PITCH #91D6B2 #000000 #000000;
+#X obj 10 120 state_saving_module/bng_dispatch sampler \$0 \$1 250 50 sampler-original-s sampler-original-r ORIGINAL #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/tgl_dispatch sampler \$0 \$1 0 1 sample-player-loop-s sample-player-loop-r LOOP #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch sampler \$0 \$1 0 127 sample-player-pitch-cv-att-s sample-player-pitch-cv-att-r P.CV #9999DE #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch sampler \$0 \$1 0 127 sample-player-file-s sample-player-file-r FILE #FFFFFF #000000 #000000;
 #X restore 269 829 pd \$0-gui_listeners;
+#X obj 387 828 namecanvas \$0-this;
 #X connect 2 0 3 0;
 #X connect 2 0 106 0;
 #X connect 2 0 137 0;

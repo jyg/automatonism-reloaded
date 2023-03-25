@@ -1,28 +1,24 @@
 #N canvas 0 22 1280 709 10;
 #X obj 823 61 t b b;
-#X obj 105 137 tgl 15 0 rec/stop-s rec/stop-r REC/STOP 17 7 0 10 -150893
--1 -1 0 1;
+#X obj 105 137 tgl 15 0 rec/stop-s rec/stop-r REC/STOP 17 7 0 10 #90d4b0 #000000 #000000 0 1;
 #X obj 850 84 f;
 #X obj 878 85 + 1;
 #X obj 850 106 + 1;
-#X floatatom 178 137 5 0 0 1 TAKE - -;
+#X floatatom 178 137 5 0 0 1 TAKE - - 0;
 #X msg 804 207 stop;
 #X obj 804 38 sel 0 1;
 #X obj 823 153 delay 100;
 #X msg 823 175 start;
-#X obj 104 125 cnv 5 5 5 empty empty MULTITRACK-RECORDER 0 0 0 12 -262144
--66577 0;
-#X obj 148 109 cnv 5 5 5 empty empty CH2 0 0 0 8 -262144 -66577 0;
-#X obj 448 109 cnv 5 5 5 empty empty CH8 0 0 0 8 -262144 -66577 0;
+#X obj 104 125 cnv 5 5 5 empty empty MULTITRACK-RECORDER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 148 109 cnv 5 5 5 empty empty CH2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 448 109 cnv 5 5 5 empty empty CH8 0 0 0 8 #fcfcfc #404040 0;
 #X obj 850 128 t f f;
-#X obj 108 230 hsl 128 15 0 127 0 1 \$0-rec-level-s \$0-rec-level-r
-LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
+#X obj 108 230 hsl 128 15 0 127 0 1 \$0-rec-level-s \$0-rec-level-r LEVEL 133 7 0 10 #9898dc #000000 #000000 12700 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-ch2 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
 #X restore 150 192 graph;
-#X obj 242 137 bng 15 250 50 0 rec-reset-s rec-reset-r RST 17 7 0 10
--262144 -1 -1;
+#X obj 242 137 bng 15 250 50 0 rec-reset-s rec-reset-r RST 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 931 16 r \$0-rec-takenumber-s;
 #X obj 916 51 f;
 #X obj 916 -28 loadbang;
@@ -37,22 +33,18 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X array \$0-ch1 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
 #X restore 105 192 graph;
-#X obj 617 144 hsl 128 15 0 127 0 1 empty empty empty -2 -8 0 10 -262144
--1 -1 100 1;
+#X obj 617 144 hsl 128 15 0 127 0 1 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 100 1;
 #X obj 614 192 t f f;
 #X obj 641 218 s \$0-rec-takenumber-s;
 #X msg 92 636 menusave;
 #X obj 92 658 s pd-audio-recorder.pd;
 #X obj 92 613 r SAVE-S;
 #X msg 955 67 0;
-#X obj 254 599 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 254 599 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 619 metro 10000;
 #X obj 254 575 loadbang;
-#X obj 259 116 bng 15 250 50 0 empty empty empty 17 7 0 10 -1 -226533
--1;
-#X obj 259 10 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#X obj 259 116 bng 15 250 50 0 empty empty empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 259 10 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 259 30 metro 500;
 #X obj 259 73 spigot;
 #X obj 259 -15 loadbang;
@@ -63,10 +55,8 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X obj 95 493 s~ \$0-ch1;
 #X obj 182 508 s~ \$0-ch2;
 #X obj 877 301 s \$0-takenumber;
-#X obj 150 157 tgl 15 1 \$0-multi-ch2-s \$0-multi-ch2-r CH2 17 7 0
-10 -262144 -226533 -1 1 1;
-#X obj 105 157 tgl 15 1 \$0-multi-ch1-s \$0-multi-ch1-r CH1 17 7 0
-10 -262144 -226533 -1 1 1;
+#X obj 150 157 tgl 15 1 \$0-multi-ch2-s \$0-multi-ch2-r CH2 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
+#X obj 105 157 tgl 15 1 \$0-multi-ch1-s \$0-multi-ch1-r CH1 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-ch4 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
@@ -75,10 +65,8 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X array \$0-ch3 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
 #X restore 195 192 graph;
-#X obj 242 157 tgl 15 1 \$0-multi-ch4-s \$0-multi-ch4-r CH4 17 7 0
-10 -262144 -226533 -1 1 1;
-#X obj 195 157 tgl 15 1 \$0-multi-ch3-s \$0-multi-ch3-r CH3 17 7 0
-10 -262144 -226533 -1 1 1;
+#X obj 242 157 tgl 15 1 \$0-multi-ch4-s \$0-multi-ch4-r CH4 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
+#X obj 195 157 tgl 15 1 \$0-multi-ch3-s \$0-multi-ch3-r CH3 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
 #N canvas 0 22 814 649 oscilloscopes-ch1-ch8 0;
 #X obj 87 177 loadbang;
 #X obj 87 225 metro 200;
@@ -158,10 +146,8 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X array \$0-ch5 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
 #X restore 285 192 graph;
-#X obj 330 157 tgl 15 1 \$0-multi-ch6-s \$0-multi-ch6-r CH6 17 7 0
-10 -262144 -226533 -1 1 1;
-#X obj 285 157 tgl 15 1 \$0-multi-ch5-s \$0-multi-ch5-r CH5 17 7 0
-10 -262144 -226533 -1 1 1;
+#X obj 330 157 tgl 15 1 \$0-multi-ch6-s \$0-multi-ch6-r CH6 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
+#X obj 285 157 tgl 15 1 \$0-multi-ch5-s \$0-multi-ch5-r CH5 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array \$0-ch8 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
@@ -170,10 +156,8 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X array \$0-ch7 512 float 0;
 #X coords 0 1 511 -1 40 30 1 0 0;
 #X restore 375 192 graph;
-#X obj 422 157 tgl 15 1 \$0-multi-ch8-s \$0-multi-ch8-r CH8 17 7 0
-10 -262144 -226533 -1 1 1;
-#X obj 375 157 tgl 15 1 \$0-multi-ch7-s \$0-multi-ch7-r CH7 17 7 0
-10 -262144 -226533 -1 1 1;
+#X obj 422 157 tgl 15 1 \$0-multi-ch8-s \$0-multi-ch8-r CH8 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
+#X obj 375 157 tgl 15 1 \$0-multi-ch7-s \$0-multi-ch7-r CH7 17 7 0 10 #fcfcfc #dc4c90 #000000 1 1;
 #N canvas 0 22 1250 693 record-stems 0;
 #X obj 135 201 writesf~;
 #X obj 136 18 r~ \$0-ch1;
@@ -271,22 +255,14 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X obj 828 656 f \$1;
 #X obj 801 633 t f b;
 #X obj 801 678 pack f f;
-#X msg 151 168 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH1_take\$1.wav
-;
-#X msg 151 356 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH3_take\$1.wav
-;
-#X msg 593 165 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH2_take\$1.wav
-;
-#X msg 629 368 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH4_take\$1.wav
-;
-#X msg 169 561 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH5_take\$1.wav
-;
-#X msg 740 580 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH6_take\$1.wav
-;
-#X msg 174 745 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH7_take\$1.wav
-;
-#X msg 715 756 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH8_take\$1.wav
-;
+#X msg 151 168 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH1_take\$1.wav;
+#X msg 151 356 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH3_take\$1.wav;
+#X msg 593 165 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH2_take\$1.wav;
+#X msg 629 368 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH4_take\$1.wav;
+#X msg 169 561 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH5_take\$1.wav;
+#X msg 740 580 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH6_take\$1.wav;
+#X msg 174 745 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH7_take\$1.wav;
+#X msg 715 756 open -bytes 3 ../recorded_wavs/multitrack/multitracker\$2_CH8_take\$1.wav;
 #X connect 1 0 0 0;
 #X connect 2 0 66 0;
 #X connect 3 0 5 0;
@@ -422,12 +398,12 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X obj 851 369 inlet~ CH8;
 #X obj 764 516 s~ \$0-ch7;
 #X obj 851 531 s~ \$0-ch8;
-#X obj 103 109 cnv 5 5 5 empty empty CH1 0 0 0 8 -262144 -66577 0;
-#X obj 251 109 cnv 5 5 5 empty empty CH4 0 0 0 8 -262144 -66577 0;
-#X obj 199 109 cnv 5 5 5 empty empty CH3 0 0 0 8 -262144 -66577 0;
-#X obj 301 109 cnv 5 5 5 empty empty CH5 0 0 0 8 -262144 -66577 0;
-#X obj 402 109 cnv 5 5 5 empty empty CH7 0 0 0 8 -262144 -66577 0;
-#X obj 352 109 cnv 5 5 5 empty empty CH6 0 0 0 8 -262144 -66577 0;
+#X obj 103 109 cnv 5 5 5 empty empty CH1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 251 109 cnv 5 5 5 empty empty CH4 0 0 0 8 #fcfcfc #404040 0;
+#X obj 199 109 cnv 5 5 5 empty empty CH3 0 0 0 8 #fcfcfc #404040 0;
+#X obj 301 109 cnv 5 5 5 empty empty CH5 0 0 0 8 #fcfcfc #404040 0;
+#X obj 402 109 cnv 5 5 5 empty empty CH7 0 0 0 8 #fcfcfc #404040 0;
+#X obj 352 109 cnv 5 5 5 empty empty CH6 0 0 0 8 #fcfcfc #404040 0;
 #X obj 95 383 *~ 1;
 #X obj 182 369 *~ 1;
 #X obj 314 379 *~ 1;
@@ -439,8 +415,7 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X obj 804 9 r rec/stop-s;
 #X obj 291 50 r rec/stop-s;
 #X obj 955 45 r rec-reset-s;
-#X obj 244 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 244 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 481 195 s \$0-instance-num;
 #X obj 481 147 makefilename %d;
 #X msg 481 172 label \$1;
@@ -449,26 +424,17 @@ LEVEL 133 7 0 10 -158136 -1 -1 12700 1;
 #X obj 10 50 state_saving_module multitrack-recorder \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/tgl_dispatch multitrack-recorder \$0
-\$1 0 1 multi-ch7-s multi-ch7-r CH7 #FFFFFF #DE4C91 #000000;
-#X obj 10 60 state_saving_module/tgl_dispatch multitrack-recorder \$0
-\$1 0 1 multi-ch8-s multi-ch8-r CH8 #FFFFFF #DE4C91 #000000;
-#X obj 10 120 state_saving_module/tgl_dispatch multitrack-recorder
-\$0 \$1 0 1 multi-ch5-s multi-ch5-r CH5 #FFFFFF #DE4C91 #000000;
-#X obj 10 180 state_saving_module/tgl_dispatch multitrack-recorder
-\$0 \$1 0 1 multi-ch6-s multi-ch6-r CH6 #FFFFFF #DE4C91 #000000;
-#X obj 10 240 state_saving_module/tgl_dispatch multitrack-recorder
-\$0 \$1 0 1 multi-ch3-s multi-ch3-r CH3 #FFFFFF #DE4C91 #000000;
-#X obj 10 300 state_saving_module/tgl_dispatch multitrack-recorder
-\$0 \$1 0 1 multi-ch4-s multi-ch4-r CH4 #FFFFFF #DE4C91 #000000;
-#X obj 10 360 state_saving_module/tgl_dispatch multitrack-recorder
-\$0 \$1 0 1 multi-ch1-s multi-ch1-r CH1 #FFFFFF #DE4C91 #000000;
-#X obj 10 420 state_saving_module/tgl_dispatch multitrack-recorder
-\$0 \$1 0 1 multi-ch2-s multi-ch2-r CH2 #FFFFFF #DE4C91 #000000;
-#X obj 10 480 state_saving_module/hsl_dispatch multitrack-recorder
-\$0 \$1 0 127 rec-level-s rec-level-r LEVEL #9999DE #000000 #000000
-;
+#X obj 10 0 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch7-s multi-ch7-r CH7 #FFFFFF #DE4C91 #000000;
+#X obj 10 60 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch8-s multi-ch8-r CH8 #FFFFFF #DE4C91 #000000;
+#X obj 10 120 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch5-s multi-ch5-r CH5 #FFFFFF #DE4C91 #000000;
+#X obj 10 180 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch6-s multi-ch6-r CH6 #FFFFFF #DE4C91 #000000;
+#X obj 10 240 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch3-s multi-ch3-r CH3 #FFFFFF #DE4C91 #000000;
+#X obj 10 300 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch4-s multi-ch4-r CH4 #FFFFFF #DE4C91 #000000;
+#X obj 10 360 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch1-s multi-ch1-r CH1 #FFFFFF #DE4C91 #000000;
+#X obj 10 420 state_saving_module/tgl_dispatch multitrack-recorder \$0 \$1 0 1 multi-ch2-s multi-ch2-r CH2 #FFFFFF #DE4C91 #000000;
+#X obj 10 480 state_saving_module/hsl_dispatch multitrack-recorder \$0 \$1 0 127 rec-level-s rec-level-r LEVEL #9999DE #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 8 0;
 #X connect 0 1 2 0;
 #X connect 2 0 3 0;

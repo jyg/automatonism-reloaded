@@ -1,8 +1,6 @@
 #N canvas 0 23 835 546 10;
-#X obj 107 124 hsl 128 15 0 127 0 1 \$0-probability-prob-s \$0-probability-prob-r
-PROB 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 136 110 cnv 5 5 5 empty empty PROBABILITY 0 0 0 12 -262144 -66577
-0;
+#X obj 107 124 hsl 128 15 0 127 0 1 \$0-probability-prob-s \$0-probability-prob-r PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 136 110 cnv 5 5 5 empty empty PROBABILITY 0 0 0 12 #fcfcfc #404040 0;
 #N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
@@ -19,8 +17,7 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -56,8 +53,8 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 21 0 1 0;
 #X connect 22 0 6 1;
 #X restore 54 401 pd state-saving-multiple-instances;
-#X obj 251 109 cnv 5 5 5 empty empty CV 0 0 0 8 -262144 -1 0;
-#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -226533 0;
+#X obj 251 109 cnv 5 5 5 empty empty CV 0 0 0 8 #fcfcfc #000000 0;
+#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 411 102 inlet~;
 #X obj 411 150 random 127;
 #X obj 412 251 moses;
@@ -67,14 +64,10 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 327 353 t b b;
 #X msg 327 376 1 0 \, 0 1 1;
 #X obj 327 398 vline~;
-#X obj 242 146 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
-#X obj 106 146 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
-#X obj 106 168 cnv 5 5 5 empty empty OUT1 0 0 0 8 -262144 -226533 0
-;
-#X obj 242 168 cnv 5 5 5 empty empty OUT2 0 0 0 8 -262144 -226533 0
-;
+#X obj 242 146 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 106 146 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 106 168 cnv 5 5 5 empty empty OUT1 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 242 168 cnv 5 5 5 empty empty OUT2 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 412 395 outlet~;
 #X obj 327 420 outlet~;
 #X obj 614 129 inlet~;
@@ -85,8 +78,7 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 614 182 * 127;
 #X obj 54 471 s \$0-instance-num;
 #X obj 54 424 makefilename %d;
-#X obj 223 110 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 223 110 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 54 448 label \$1;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 state_saving_module/textfile \$0;
@@ -129,9 +121,9 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -237,10 +229,9 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X restore 56 351 pd parameter-nudging-system;
 #X obj 411 128 threshold~ 0.9 0 0.9 0;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -251,7 +242,7 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
@@ -285,10 +276,9 @@ PROB 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module probability \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch probability \$0 \$1 0
-127 probability-prob-s probability-prob-r PROB #FFFFFF #000000 #000000
-;
+#X obj 10 0 state_saving_module/hsl_dispatch probability \$0 \$1 0 127 probability-prob-s probability-prob-r PROB #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 2 0 27 0;
 #X connect 5 0 32 0;
 #X connect 6 0 7 0;

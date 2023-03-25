@@ -1,8 +1,6 @@
 #N canvas 0 23 783 603 10;
-#X obj 108 120 hsl 128 15 0 127 0 1 \$0-random-gates-intensity-s \$0-random-gates-intensity-r
-INTENSITY 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 134 hsl 128 15 0 127 0 1 \$0-random-gates-prob-s \$0-random-gates-prob-r
-PROB. 133 7 0 10 -262144 -1 -1 0 1;
+#X obj 108 120 hsl 128 15 0 127 0 1 \$0-random-gates-intensity-s \$0-random-gates-intensity-r INTENSITY 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 134 hsl 128 15 0 127 0 1 \$0-random-gates-prob-s \$0-random-gates-prob-r PROB. 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 459 324 + 50;
 #X obj 459 302 random 950;
 #X obj 440 126 metro 500;
@@ -10,8 +8,7 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 459 346 t f;
 #X obj 440 516 vline~;
 #X obj 440 551 outlet~;
-#X obj 105 154 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
+#X obj 105 154 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 512 227 random 950;
 #X obj 512 249 + 50;
 #X obj 440 148 t b b b;
@@ -25,12 +22,9 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 440 430 moses;
 #X obj 440 386 t b;
 #X obj 440 459 t b b;
-#X obj 154 111 cnv 5 5 5 empty empty GATES 0 0 0 12 -262144 -66577
-0;
-#X obj 105 176 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -226533 0
-;
-#X obj 106 111 cnv 5 5 5 empty empty RANDOM 0 0 0 12 -262144 -66577
-0;
+#X obj 154 111 cnv 5 5 5 empty empty GATES 0 0 0 12 #fcfcfc #404040 0;
+#X obj 105 176 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 106 111 cnv 5 5 5 empty empty RANDOM 0 0 0 12 #fcfcfc #404040 0;
 #N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
@@ -47,8 +41,7 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 120 399 pack f f;
 #X msg 120 438 set \$1 \$2;
@@ -90,13 +83,11 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X restore 99 414 pd state-saving-multiple-instances;
 #X obj 99 486 s \$0-instance-num;
 #X obj 99 438 makefilename %d;
-#X obj 195 111 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 195 111 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 99 463 label \$1;
 #X msg 440 494 1 0 \, 0 1 1;
 #X msg 440 101 1;
-#N canvas 227 22 1117 745 state-saving-via-preset-manager-module 0
-;
+#N canvas 227 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 state_saving_module/textfile \$0;
 #X msg 755 332 rewind;
 #X msg 712 332 bang;
@@ -109,7 +100,7 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 244 399 pack f f;
 #X msg 244 438 set \$1 \$2;
 #X obj 477 371 unpack f f;
-#X floatatom 325 391 5 0 0 0 - - -;
+#X floatatom 325 391 5 0 0 0 - - - 0;
 #X obj 244 264 delay 5;
 #X obj 190 484 delay 10;
 #X msg 190 314 bang;
@@ -142,9 +133,9 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -178,9 +169,9 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -336,10 +327,9 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X connect 7 0 0 0;
 #X restore 99 368 pd parameter-nudging-system;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -350,11 +340,11 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
-#X floatatom 223 594 5 0 0 0 - - -;
+#X floatatom 223 594 5 0 0 0 - - - 0;
 #X obj 223 573 f;
 #X obj 223 521 t b f;
 #X obj 223 544 spigot;
@@ -396,15 +386,12 @@ PROB. 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module random-gates \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch random-gates \$0 \$1 0
-127 random-gates-prob-s random-gates-prob-r PROB. #FFFFFF #000000 #000000
-;
-#X obj 10 60 state_saving_module/hsl_dispatch random-gates \$0 \$1
-0 127 random-gates-intensity-s random-gates-intensity-r INTENSITY #FFFFFF
-#000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch random-gates \$0 \$1 0 127 random-gates-prob-s random-gates-prob-r PROB. #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch random-gates \$0 \$1 0 127 random-gates-intensity-s random-gates-intensity-r INTENSITY #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 500 374 r \$0-random-gates-prob-s;
 #X obj 106 196 r \$0-random-gates-intensity-s;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 2 0 6 0;
 #X connect 3 0 2 0;
 #X connect 4 0 12 0;

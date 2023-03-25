@@ -1,0 +1,10 @@
+#N canvas 343 468 671 382 12;
+#X declare -path automatonism/patch_editor_abs;
+#X text 189 1 AUTOMATONISM - RELOADED!;
+#X obj 20 93 declare -path automatonism/patch_editor_abs;
+#X obj 22 131 automatonism \$0;
+#A saved esc-active 1;
+#X obj 27 327 namecanvas \$0-this;
+#X text 33 34 This is the new automatonism vanilla template patch. You can duplicate it every time you need to create a new machine.;
+#X text 170 326 <- for vanilla only;
+#X text 297 145 <- in vanilla mode \, automatonism must be instantiated with \$0 as first argument, f 41;

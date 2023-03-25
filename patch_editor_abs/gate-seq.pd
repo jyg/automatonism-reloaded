@@ -1,38 +1,21 @@
 #N canvas 0 23 983 550 10;
-#X obj 150 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l4-s \$0-gate-seq-l4-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 105 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l1-s \$0-gate-seq-l1-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 120 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l2-s \$0-gate-seq-l2-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 135 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l3-s \$0-gate-seq-l3-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 210 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l8-s \$0-gate-seq-l8-r
-empty 17 10 0 10 -262144 -1 -1 0 1;
-#X obj 165 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l5-s \$0-gate-seq-l5-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 180 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l6-s \$0-gate-seq-l6-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 195 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l7-s \$0-gate-seq-l7-r
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 105 132 hradio 15 1 0 8 s empty empty 0 -8 0 10 -262144 -226533
--1 5;
-#X obj 120 280 tgl 15 1 \$0-gate-seq-t2-s \$0-gate-seq-t2-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 105 280 tgl 15 1 \$0-gate-seq-t1-s \$0-gate-seq-t1-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 150 280 tgl 15 1 \$0-gate-seq-t4-s \$0-gate-seq-t4-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 135 280 tgl 15 1 \$0-gate-seq-t3-s \$0-gate-seq-t3-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 180 280 tgl 15 1 \$0-gate-seq-t6-s \$0-gate-seq-t6-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 165 280 tgl 15 1 \$0-gate-seq-t5-s \$0-gate-seq-t5-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 210 280 tgl 15 1 \$0-gate-seq-t8-s \$0-gate-seq-t8-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 195 280 tgl 15 1 \$0-gate-seq-t7-s \$0-gate-seq-t7-r empty 17
-7 0 10 -262144 -1 -1 0 1;
+#X obj 150 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l4-s \$0-gate-seq-l4-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l1-s \$0-gate-seq-l1-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 120 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l2-s \$0-gate-seq-l2-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 135 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l3-s \$0-gate-seq-l3-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 210 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l8-s \$0-gate-seq-l8-r empty 17 10 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 165 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l5-s \$0-gate-seq-l5-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 180 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l6-s \$0-gate-seq-l6-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 195 149 vsl 15 128 0 127 0 1 \$0-gate-seq-l7-s \$0-gate-seq-l7-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 132 hradio 15 1 0 8 s empty empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
+#X obj 120 280 tgl 15 1 \$0-gate-seq-t2-s \$0-gate-seq-t2-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 280 tgl 15 1 \$0-gate-seq-t1-s \$0-gate-seq-t1-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 150 280 tgl 15 1 \$0-gate-seq-t4-s \$0-gate-seq-t4-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 135 280 tgl 15 1 \$0-gate-seq-t3-s \$0-gate-seq-t3-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 180 280 tgl 15 1 \$0-gate-seq-t6-s \$0-gate-seq-t6-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 165 280 tgl 15 1 \$0-gate-seq-t5-s \$0-gate-seq-t5-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 210 280 tgl 15 1 \$0-gate-seq-t8-s \$0-gate-seq-t8-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 195 280 tgl 15 1 \$0-gate-seq-t7-s \$0-gate-seq-t7-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 265 220 f;
 #X obj 291 220 + 1;
 #X obj 265 242 % 8;
@@ -42,7 +25,7 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X obj 265 183 t b b;
 #X obj 387 222 timer;
 #X obj 387 200 t b b;
-#X floatatom 387 244 5 0 0 0 - - -;
+#X floatatom 387 244 5 0 0 0 - - - 0;
 #X obj 387 263 * 0.75;
 #X obj 387 285 s \$0-clock-length-s;
 #N canvas 0 22 1097 629 gatesequencer8 0;
@@ -235,13 +218,10 @@ empty 0 -9 0 10 -262144 -1 -1 0 1;
 #X restore 265 316 pd gatesequencer8;
 #X msg 265 157 bang;
 #X obj 266 71 threshold~ 0.9 0 0.9 0;
-#X obj 105 124 cnv 5 5 5 empty empty GATE-SEQ 0 0 0 12 -262144 -66577
-0;
-#X obj 170 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 210 115 bng 15 250 50 0 \$0-gate-seq-randomize! \$0-gate-seq-randomize!-r
-RDM! -1 -7 0 8 -262144 -226533 -226533;
-#X obj 202 303 cnv 5 5 5 empty empty UNI-P 0 0 0 8 -262144 -1 0;
+#X obj 105 124 cnv 5 5 5 empty empty GATE-SEQ 0 0 0 12 #fcfcfc #404040 0;
+#X obj 170 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 210 115 bng 15 250 50 0 \$0-gate-seq-randomize! \$0-gate-seq-randomize!-r RDM! -1 -7 0 8 #fcfcfc #dc4c90 #dc4c90;
+#X obj 202 303 cnv 5 5 5 empty empty UNI-P 0 0 0 8 #fcfcfc #000000 0;
 #N canvas 415 22 436 413 randomize 0;
 #X obj 34 20 r \$0-gate-seq-randomize!;
 #X obj 82 277 f \$0;
@@ -333,16 +313,14 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 364 362 vline~;
 #X obj 265 411 outlet~ BI-POLAR;
 #X obj 364 384 outlet~ UNI-POLAR;
-#X obj 106 303 cnv 5 5 5 empty empty BI-P 0 0 0 8 -262144 -1 0;
+#X obj 106 303 cnv 5 5 5 empty empty BI-P 0 0 0 8 #fcfcfc #000000 0;
 #X obj 598 181 loadbang;
 #X msg 598 203 0;
 #X obj 450 49 inlet~;
 #X obj 450 71 threshold~ 0.9 0 0.9 0;
 #X msg 450 93 bang;
-#X obj 105 109 cnv 5 5 5 empty empty CLOCK 0 0 0 8 -262144 -226533
-0;
-#X obj 152 109 cnv 5 5 5 empty empty RESET 0 0 0 8 -262144 -226533
-0;
+#X obj 105 109 cnv 5 5 5 empty empty CLOCK 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 152 109 cnv 5 5 5 empty empty RESET 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 550 236 env~;
 #X obj 550 258 > 0;
 #X obj 550 280 change;
@@ -427,11 +405,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 233 125 f \$1;
 #X obj 233 161 t f f f;
 #X obj 206 34 t b b;
-#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 52 206 r SAVE-S;
-#X msg 111 410 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16;
+#X msg 111 410 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
 #X obj 111 372 pack f f f f f f f f f f f f f f f f;
 #X obj 489 179 unpack f f f f f f f f f f f f f f f f;
 #X obj 4 15 r \$0-gate-seq-l1-s;
@@ -553,8 +529,7 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 165 462 f \$1;
 #X obj 721 30 r preset-manager-scan;
 #X obj 135 418 r preset-manager-store-slot;
-#X msg 106 368 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16;
+#X msg 106 368 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
 #X obj 733 253 unpack f f f f f f f f f f f f f f f f;
 #X msg 119 528 write statesave/\$1-\$2-gate-seq-ss.txt;
 #X msg 733 206 read statesave/\$1-\$2-gate-seq-ss.txt;
@@ -603,9 +578,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -638,9 +613,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -674,9 +649,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r attenuators-s;
 #X obj 176 288 outlet;
@@ -710,9 +685,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -746,9 +721,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -782,9 +757,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -818,9 +793,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -854,9 +829,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -890,9 +865,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -926,9 +901,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -962,9 +937,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -1463,10 +1438,9 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X connect 55 0 6 0;
 #X restore 43 329 pd parameter-nudging-system;
 #N canvas 423 56 1017 798 external-messages 0;
-#X floatatom 11 518 5 0 0 0 - - -;
+#X floatatom 11 518 5 0 0 0 - - - 0;
 #X obj 190 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -1477,41 +1451,41 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 11 445 t b f;
 #X obj 11 468 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 59 452 r \$0-msg-spigot;
-#X floatatom 56 692 5 0 0 0 - - -;
+#X floatatom 56 692 5 0 0 0 - - - 0;
 #X obj 56 671 f;
 #X obj 56 619 t b f;
 #X obj 56 642 spigot;
 #X obj 104 626 r \$0-msg-spigot;
-#X floatatom 201 523 5 0 0 0 - - -;
+#X floatatom 201 523 5 0 0 0 - - - 0;
 #X obj 201 502 f;
 #X obj 201 450 t b f;
 #X obj 201 473 spigot;
 #X obj 249 457 r \$0-msg-spigot;
-#X floatatom 296 700 5 0 0 0 - - -;
+#X floatatom 296 700 5 0 0 0 - - - 0;
 #X obj 296 679 f;
 #X obj 296 627 t b f;
 #X obj 296 650 spigot;
 #X obj 344 634 r \$0-msg-spigot;
-#X floatatom 363 559 5 0 0 0 - - -;
+#X floatatom 363 559 5 0 0 0 - - - 0;
 #X obj 363 538 f;
 #X obj 363 486 t b f;
 #X obj 363 509 spigot;
 #X obj 411 493 r \$0-msg-spigot;
-#X floatatom 486 688 5 0 0 0 - - -;
+#X floatatom 486 688 5 0 0 0 - - - 0;
 #X obj 486 667 f;
 #X obj 486 615 t b f;
 #X obj 486 638 spigot;
 #X obj 534 622 r \$0-msg-spigot;
-#X floatatom 531 560 5 0 0 0 - - -;
+#X floatatom 531 560 5 0 0 0 - - - 0;
 #X obj 531 539 f;
 #X obj 531 487 t b f;
 #X obj 531 510 spigot;
 #X obj 579 494 r \$0-msg-spigot;
-#X floatatom 667 693 5 0 0 0 - - -;
+#X floatatom 667 693 5 0 0 0 - - - 0;
 #X obj 667 672 f;
 #X obj 667 620 t b f;
 #X obj 667 643 spigot;
@@ -1526,7 +1500,7 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 667 713 s \$0-gate-seq-l8-r;
 #X obj 185 14 r gate-seq;
 #X obj 185 362 route ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT RDM!;
-#X floatatom 611 448 5 0 0 0 - - -;
+#X floatatom 611 448 5 0 0 0 - - - 0;
 #X obj 611 427 f;
 #X obj 611 375 t b f;
 #X obj 611 398 spigot;
@@ -1614,42 +1588,25 @@ RDM! -1 -7 0 8 -262144 -226533 -226533;
 #X obj 10 50 state_saving_module gate-seq \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/bng_dispatch gate-seq \$0 \$1 250 50
-gate-seq-randomize! gate-seq-randomize!-r RDM! #FFFFFF #DE4C91 #DE4C91
-;
-#X obj 10 60 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t7-s gate-seq-t7-r empty #FFFFFF #000000 #000000;
-#X obj 10 120 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t8-s gate-seq-t8-r empty #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t5-s gate-seq-t5-r empty #FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t6-s gate-seq-t6-r empty #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t3-s gate-seq-t3-r empty #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t4-s gate-seq-t4-r empty #FFFFFF #000000 #000000;
-#X obj 10 420 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t1-s gate-seq-t1-r empty #FFFFFF #000000 #000000;
-#X obj 10 480 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1
-gate-seq-t2-s gate-seq-t2-r empty #FFFFFF #000000 #000000;
-#X obj 10 540 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l7-s gate-seq-l7-r empty #FFFFFF #000000 #000000;
-#X obj 10 600 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l6-s gate-seq-l6-r empty #FFFFFF #000000 #000000;
-#X obj 10 660 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l5-s gate-seq-l5-r empty #FFFFFF #000000 #000000;
-#X obj 10 720 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l8-s gate-seq-l8-r empty #FFFFFF #000000 #000000;
-#X obj 10 780 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l3-s gate-seq-l3-r empty #FFFFFF #000000 #000000;
-#X obj 10 840 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l2-s gate-seq-l2-r empty #FFFFFF #000000 #000000;
-#X obj 10 900 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l1-s gate-seq-l1-r empty #FFFFFF #000000 #000000;
-#X obj 10 960 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127
-gate-seq-l4-s gate-seq-l4-r empty #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/bng_dispatch gate-seq \$0 \$1 250 50 gate-seq-randomize! gate-seq-randomize!-r RDM! #FFFFFF #DE4C91 #DE4C91;
+#X obj 10 60 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t7-s gate-seq-t7-r empty #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t8-s gate-seq-t8-r empty #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t5-s gate-seq-t5-r empty #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t6-s gate-seq-t6-r empty #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t3-s gate-seq-t3-r empty #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t4-s gate-seq-t4-r empty #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t1-s gate-seq-t1-r empty #FFFFFF #000000 #000000;
+#X obj 10 480 state_saving_module/tgl_dispatch gate-seq \$0 \$1 0 1 gate-seq-t2-s gate-seq-t2-r empty #FFFFFF #000000 #000000;
+#X obj 10 540 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l7-s gate-seq-l7-r empty #FFFFFF #000000 #000000;
+#X obj 10 600 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l6-s gate-seq-l6-r empty #FFFFFF #000000 #000000;
+#X obj 10 660 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l5-s gate-seq-l5-r empty #FFFFFF #000000 #000000;
+#X obj 10 720 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l8-s gate-seq-l8-r empty #FFFFFF #000000 #000000;
+#X obj 10 780 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l3-s gate-seq-l3-r empty #FFFFFF #000000 #000000;
+#X obj 10 840 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l2-s gate-seq-l2-r empty #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l1-s gate-seq-l1-r empty #FFFFFF #000000 #000000;
+#X obj 10 960 state_saving_module/vsl_dispatch gate-seq \$0 \$1 0 127 gate-seq-l4-s gate-seq-l4-r empty #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 17 0 18 0;
 #X connect 17 0 19 0;
 #X connect 18 0 17 1;

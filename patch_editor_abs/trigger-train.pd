@@ -11,24 +11,19 @@
 #X obj 387 460 outlet~;
 #X obj 388 98 inlet~;
 #X obj 388 120 threshold~ 0.9 0 0.9 0;
-#X obj 107 134 hsl 128 15 0 127 0 1 \$0-trigger-train-delay-s \$0-trigger-train-delay-r
-DELAY 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 107 134 hsl 128 15 0 127 0 1 \$0-trigger-train-delay-s \$0-trigger-train-delay-r DELAY 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 573 62 r \$0-trigger-train-delay-s;
 #X obj 573 84 * 0.00787402;
 #X obj 573 106 * 190;
 #X obj 573 128 + 10;
 #X obj 573 208 i;
 #X obj 573 231 t f f f f;
-#X floatatom 104 149 5 0 0 0 - - -;
-#X obj 105 116 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
+#X floatatom 104 149 5 0 0 0 - - - 0;
+#X obj 105 116 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 388 142 t b b;
-#X obj 125 124 cnv 5 5 5 empty empty TRIGGER-TRAIN 0 0 0 12 -262144
--66577 0;
-#X obj 220 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 105 167 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
+#X obj 125 124 cnv 5 5 5 empty empty TRIGGER-TRAIN 0 0 0 12 #fcfcfc #404040 0;
+#X obj 220 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 105 167 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 573 150 +;
 #X obj 725 91 inlet~;
 #X obj 726 113 snapshot~;
@@ -54,8 +49,7 @@ DELAY 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -135,9 +129,9 @@ DELAY 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -241,15 +235,13 @@ DELAY 135 7 0 10 -262144 -1 -1 0 1;
 #X connect 1 0 3 0;
 #X connect 3 0 0 0;
 #X restore 62 267 pd parameter-nudging-system;
-#X obj 650 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 262 109 cnv 5 5 5 empty empty CV 0 0 0 8 -262144 -1 0;
-#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -1 0;
+#X obj 650 127 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 262 109 cnv 5 5 5 empty empty CV 0 0 0 8 #fcfcfc #000000 0;
+#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #000000 0;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -260,7 +252,7 @@ DELAY 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
@@ -293,10 +285,9 @@ DELAY 135 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module trigger-train \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch trigger-train \$0 \$1
-0 127 trigger-train-delay-s trigger-train-delay-r DELAY #FFFFFF #000000
-#000000;
+#X obj 10 0 state_saving_module/hsl_dispatch trigger-train \$0 \$1 0 127 trigger-train-delay-s trigger-train-delay-r DELAY #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 1 0;
 #X connect 0 0 24 0;
 #X connect 1 0 2 0;

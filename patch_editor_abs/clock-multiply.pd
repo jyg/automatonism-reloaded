@@ -1,22 +1,19 @@
 #N canvas 0 23 1028 570 10;
 #X obj 335 31 inlet~;
 #X obj 335 273 timer;
-#X obj 272 317 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 272 317 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 272 412 metro;
 #X obj 335 295 t f f f f;
 #X msg 272 519 1 0 \, 0 1 1;
 #X obj 272 541 vline~;
 #X obj 280 571 outlet~;
 #X obj 272 492 t b b;
-#X obj 105 169 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
-#X obj 108 135 hsl 128 15 0 127 0 1 \$0-clock-multiply-multiply-s \$0-clock-multiply-multiply-r
-MPLY 133 7 0 10 -262144 -1 -1 6800 1;
+#X obj 105 169 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 108 135 hsl 128 15 0 127 0 1 \$0-clock-multiply-multiply-s \$0-clock-multiply-multiply-r MPLY 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 405 147 / 127;
 #X obj 415 285 i;
 #X obj 335 324 /;
-#X floatatom 206 121 5 0 0 0 - - -;
+#X floatatom 206 121 5 0 0 0 - - - 0;
 #X obj 621 342 delay 1000;
 #X msg 621 370 0;
 #X msg 594 319 1;
@@ -26,16 +23,14 @@ MPLY 133 7 0 10 -262144 -1 -1 6800 1;
 #X obj 465 159 snapshot~;
 #X obj 465 181 t b f;
 #X obj 415 208 +;
-#X obj 104 150 hradio 15 1 0 9 \$0-clock-multiply-x-s \$0-clock-multiply-x-r
-empty 0 -8 0 10 -262144 -226533 -1 4;
+#X obj 104 150 hradio 15 1 0 9 \$0-clock-multiply-x-s \$0-clock-multiply-x-r empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 415 307 t f f f;
 #X obj 415 259 + 1;
 #X obj 454 329 - 1;
 #X obj 415 237 * 8;
-#X obj 132 112 cnv 5 5 5 empty empty CLOCK-MULTIPLY 0 0 0 12 -262144
--66577 0;
-#X obj 262 109 cnv 5 5 5 empty empty CV 0 0 0 8 -262144 -1 0;
-#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -226533 0;
+#X obj 132 112 cnv 5 5 5 empty empty CLOCK-MULTIPLY 0 0 0 12 #fcfcfc #404040 0;
+#X obj 262 109 cnv 5 5 5 empty empty CV 0 0 0 8 #fcfcfc #000000 0;
+#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #dc4c90 0;
 #N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
@@ -52,8 +47,7 @@ empty 0 -8 0 10 -262144 -226533 -1 4;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 132 650 write statesave/\$1-clock-multiply-ss.txt;
 #X msg 261 455 read statesave/\$1-clock-multiply-ss.txt;
@@ -87,10 +81,9 @@ empty 0 -8 0 10 -262144 -226533 -1 4;
 #X restore 16 312 pd state-saving-multiple-instances;
 #X obj 16 387 s \$0-instance-num;
 #X obj 16 339 makefilename %d;
-#X obj 233 112 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 233 112 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 16 364 label \$1;
-#X obj 103 193 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -66577 0;
+#X obj 103 193 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #404040 0;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 state_saving_module/textfile \$0;
 #X msg 755 332 rewind;
@@ -132,9 +125,9 @@ empty 0 -8 0 10 -262144 -226533 -1 4;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -243,10 +236,9 @@ empty 0 -8 0 10 -262144 -226533 -1 4;
 #X restore 19 264 pd parameter-nudging-system;
 #X obj 335 51 threshold~ 0.9 0 0.9 0;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -257,7 +249,7 @@ empty 0 -8 0 10 -262144 -226533 -1 4;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
@@ -290,11 +282,10 @@ empty 0 -8 0 10 -262144 -226533 -1 4;
 #X obj 10 50 state_saving_module clock-multiply \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 60 state_saving_module/hsl_dispatch clock-multiply \$0 \$1
-0 127 clock-multiply-multiply-s clock-multiply-multiply-r MPLY #FFFFFF
-#000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch clock-multiply \$0 \$1 0 127 clock-multiply-multiply-s clock-multiply-multiply-r MPLY #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 400 124 r \$0-clock-multiply-multiply-s;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 43 0;
 #X connect 1 0 4 0;
 #X connect 2 0 3 0;

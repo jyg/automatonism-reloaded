@@ -1,9 +1,7 @@
 #N canvas 0 23 1450 610 10;
 #X obj 385 507 vline~;
-#X obj 108 133 hsl 128 15 0 127 0 0 \$0-swing_rate-snd \$0-swing_rate-rcv
-RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 160 122 cnv 5 5 5 empty empty SWING 0 0 0 12 #fcfcfc #404040
-0;
+#X obj 108 133 hsl 128 15 0 127 0 0 \$0-swing_rate-snd \$0-swing_rate-rcv RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 160 122 cnv 5 5 5 empty empty SWING 0 0 0 12 #fcfcfc #404040 0;
 #X obj 394 542 outlet~;
 #X obj 380 194 inlet~;
 #X obj 634 227 inlet~;
@@ -20,8 +18,7 @@ RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 261 480 state_saving_module/textfile \$0;
 #X obj 119 690 state_saving_module/textfile \$0;
@@ -60,14 +57,11 @@ RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X restore 654 501 pd state-saving-multiple-instances;
 #X obj 654 571 s \$0-instance-num;
 #X obj 654 523 makefilename %d;
-#X obj 200 122 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc
-#404040 0;
+#X obj 200 122 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 654 548 label \$1;
-#X obj 103 167 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0
-;
+#X obj 103 167 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0;
 #X msg 385 485 1 0 \, 0 1 1;
-#N canvas 801 76 1117 745 state-saving-via-preset-manager-module 0
-;
+#N canvas 801 76 1117 745 state-saving-via-preset-manager-module 0;
 #X msg 755 332 rewind;
 #X msg 712 332 bang;
 #X obj 712 293 t b b;
@@ -219,8 +213,7 @@ RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #N canvas 632 73 749 752 external-messages 0;
 #X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -263,8 +256,7 @@ RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X restore 650 423 pd external-messages;
 #X obj 379 219 threshold~ 0.9 0 0.9 0;
 #X text 379 170 CLK INPUT;
-#X obj 171 107 cnv 5 5 5 empty empty RATE 0 0 0 8 #fcfcfc #404040 0
-;
+#X obj 171 107 cnv 5 5 5 empty empty RATE 0 0 0 8 #fcfcfc #404040 0;
 #X obj 379 267 timer;
 #X obj 379 243 t b b;
 #X obj 351 431 delay;
@@ -280,8 +272,7 @@ RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X floatatom 222 151 5 0 0 0 - - - 0;
 #X floatatom 436 268 5 0 0 0 - - - 0;
 #X obj 441 451 t b;
-#X obj 103 107 cnv 5 5 5 empty empty CLOCK-IN 0 0 0 8 #fcfcfc #dc4c90
-0;
+#X obj 103 107 cnv 5 5 5 empty empty CLOCK-IN 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 526 252 / 254;
 #X obj 634 290 snapshot~;
 #X obj 660 269 bang~;
@@ -297,16 +288,15 @@ RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 10 50 state_saving_module swing \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 0 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch swing \$0 \$1 0 127 swing_rate-snd
-swing_rate-rcv RATE #fcfcfc #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch swing \$0 \$1 0 127 swing_rate-snd swing_rate-rcv RATE #fcfcfc #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 235 65 loadbang;
-#X obj 243 107 cnv 5 5 5 empty empty RESET 0 0 0 8 #fcfcfc #dc4c90
-0;
+#X obj 243 107 cnv 5 5 5 empty empty RESET 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 784 267 threshold~ 0.9 0 0.9 0;
 #X obj 783 199 inlet~ fwd;
 #X obj 847 222 route bang;
 #X obj 375 336 f;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 3 0;
 #X connect 4 0 16 0;
 #X connect 5 0 36 0;

@@ -1,16 +1,11 @@
 #N canvas 0 23 743 490 10;
-#X obj 128 144 hsl 128 15 0 127 0 1 \$0-trigger-delay-delay-s \$0-trigger-delay-delay-r
-DELAY 133 7 0 10 -262144 -1 -1 0 1;
-#X obj 103 168 cnv 5 5 5 empty empty OUT 0 0 0 8 -262144 -226533 0
-;
-#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 -262144 -226533 0;
-#X obj 122 124 cnv 5 5 5 empty empty TRIGGER-DELAY 0 0 0 12 -262144
--66577 0;
-#X obj 103 144 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
-#X obj 103 118 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
-#X floatatom 225 130 5 0 0 0 - - -;
+#X obj 128 144 hsl 128 15 0 127 0 1 \$0-trigger-delay-delay-s \$0-trigger-delay-delay-r DELAY 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 103 168 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 122 124 cnv 5 5 5 empty empty TRIGGER-DELAY 0 0 0 12 #fcfcfc #404040 0;
+#X obj 103 144 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X obj 103 118 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
+#X floatatom 225 130 5 0 0 0 - - - 0;
 #X obj 407 153 inlet~;
 #X obj 407 197 t b b;
 #X obj 407 219 delay;
@@ -36,8 +31,7 @@ DELAY 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -75,8 +69,7 @@ DELAY 133 7 0 10 -262144 -1 -1 0 1;
 #X restore 34 391 pd state-saving-multiple-instances;
 #X obj 34 462 s \$0-instance-num;
 #X obj 34 414 makefilename %d;
-#X obj 217 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 217 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 34 439 label \$1;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 state_saving_module/textfile \$0;
@@ -119,9 +112,9 @@ DELAY 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 398 102 r parameters-s;
 #X obj 176 288 outlet;
@@ -229,10 +222,9 @@ DELAY 133 7 0 10 -262144 -1 -1 0 1;
 #X restore 33 345 pd parameter-nudging-system;
 #X obj 407 175 threshold~ 0.9 0 0.9 0;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -243,7 +235,7 @@ DELAY 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
@@ -276,11 +268,10 @@ DELAY 133 7 0 10 -262144 -1 -1 0 1;
 #X obj 10 50 state_saving_module trigger-delay \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch trigger-delay \$0 \$1
-0 127 trigger-delay-delay-s trigger-delay-delay-r DELAY #FFFFFF #000000
-#000000;
+#X obj 10 0 state_saving_module/hsl_dispatch trigger-delay \$0 \$1 0 127 trigger-delay-delay-s trigger-delay-delay-r DELAY #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 126 179 r \$0-trigger-delay-delay-s;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 7 0 25 0;
 #X connect 8 0 9 0;
 #X connect 8 1 5 0;

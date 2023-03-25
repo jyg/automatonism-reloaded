@@ -1,50 +1,32 @@
 #N canvas 0 22 1207 741 10;
-#X obj 134 136 tgl 15 1 \$0-tmatrix-t1-s \$0-tmatrix-t1-r 1 -12 7 0
-10 -262144 -1 -1 0 1;
-#X obj 149 136 tgl 15 1 \$0-tmatrix-t2-s \$0-tmatrix-t2-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 164 136 tgl 15 1 \$0-tmatrix-t3-s \$0-tmatrix-t3-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 179 136 tgl 15 1 \$0-tmatrix-t4-s \$0-tmatrix-t4-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 134 151 tgl 15 1 \$0-tmatrix-t5-s \$0-tmatrix-t5-r 2 -12 7 0
-10 -262144 -1 -1 0 1;
-#X obj 149 151 tgl 15 1 \$0-tmatrix-t6-s \$0-tmatrix-t6-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 164 151 tgl 15 1 \$0-tmatrix-t7-s \$0-tmatrix-t7-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 179 151 tgl 15 1 \$0-tmatrix-t8-s \$0-tmatrix-t8-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 134 166 tgl 15 1 \$0-tmatrix-t9-s \$0-tmatrix-t9-r 3 -12 7 0
-10 -262144 -1 -1 0 1;
-#X obj 149 166 tgl 15 1 \$0-tmatrix-t10-s \$0-tmatrix-t10-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 164 166 tgl 15 1 \$0-tmatrix-t11-s \$0-tmatrix-t11-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 179 166 tgl 15 1 \$0-tmatrix-t12-s \$0-tmatrix-t12-r empty 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 134 181 tgl 15 1 \$0-tmatrix-t13-s \$0-tmatrix-t13-r A 4 25
-0 10 -262144 -1 -1 0 1;
-#X obj 149 181 tgl 15 1 \$0-tmatrix-t14-s \$0-tmatrix-t14-r B 4 25
-0 10 -262144 -1 -1 0 1;
-#X obj 164 181 tgl 15 1 \$0-tmatrix-t15-s \$0-tmatrix-t15-r C 4 25
-0 10 -262144 -1 -1 0 1;
-#X obj 179 181 tgl 15 1 \$0-tmatrix-t16-s \$0-tmatrix-t16-r D 4 25
-0 10 -262144 -1 -1 0 1;
+#X obj 134 136 tgl 15 1 \$0-tmatrix-t1-s \$0-tmatrix-t1-r 1 -12 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 149 136 tgl 15 1 \$0-tmatrix-t2-s \$0-tmatrix-t2-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 164 136 tgl 15 1 \$0-tmatrix-t3-s \$0-tmatrix-t3-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 179 136 tgl 15 1 \$0-tmatrix-t4-s \$0-tmatrix-t4-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 134 151 tgl 15 1 \$0-tmatrix-t5-s \$0-tmatrix-t5-r 2 -12 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 149 151 tgl 15 1 \$0-tmatrix-t6-s \$0-tmatrix-t6-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 164 151 tgl 15 1 \$0-tmatrix-t7-s \$0-tmatrix-t7-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 179 151 tgl 15 1 \$0-tmatrix-t8-s \$0-tmatrix-t8-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 134 166 tgl 15 1 \$0-tmatrix-t9-s \$0-tmatrix-t9-r 3 -12 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 149 166 tgl 15 1 \$0-tmatrix-t10-s \$0-tmatrix-t10-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 164 166 tgl 15 1 \$0-tmatrix-t11-s \$0-tmatrix-t11-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 179 166 tgl 15 1 \$0-tmatrix-t12-s \$0-tmatrix-t12-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 134 181 tgl 15 1 \$0-tmatrix-t13-s \$0-tmatrix-t13-r A 4 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 149 181 tgl 15 1 \$0-tmatrix-t14-s \$0-tmatrix-t14-r B 4 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 164 181 tgl 15 1 \$0-tmatrix-t15-s \$0-tmatrix-t15-r C 4 25 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 179 181 tgl 15 1 \$0-tmatrix-t16-s \$0-tmatrix-t16-r D 4 25 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 102 259 inlet~;
-#X obj 122 189 cnv 5 5 5 empty empty 4 0 0 0 10 -262144 -66577 0;
-#X obj 216 109 cnv 5 5 5 empty empty 4 0 0 0 8 -262144 -66577 0;
-#X obj 108 126 cnv 5 5 5 empty empty TOGGLE-MATRIX 0 0 0 12 -262144
--66577 0;
-#X obj 207 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
-#X obj 140 109 cnv 5 5 5 empty empty 2 0 0 0 8 -262144 -66577 0;
-#X obj 179 109 cnv 5 5 5 empty empty 3 0 0 0 8 -262144 -66577 0;
-#X obj 105 109 cnv 5 5 5 empty empty 1 0 0 0 8 -262144 -66577 0;
-#X obj 216 218 cnv 5 5 5 empty empty D 0 0 0 8 -262144 -66577 0;
-#X obj 140 218 cnv 5 5 5 empty empty B 0 0 0 8 -262144 -66577 0;
-#X obj 179 218 cnv 5 5 5 empty empty C 0 0 0 8 -262144 -66577 0;
-#X obj 104 218 cnv 5 5 5 empty empty A 0 0 0 8 -262144 -66577 0;
+#X obj 122 189 cnv 5 5 5 empty empty 4 0 0 0 10 #fcfcfc #404040 0;
+#X obj 216 109 cnv 5 5 5 empty empty 4 0 0 0 8 #fcfcfc #404040 0;
+#X obj 108 126 cnv 5 5 5 empty empty TOGGLE-MATRIX 0 0 0 12 #fcfcfc #404040 0;
+#X obj 207 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 140 109 cnv 5 5 5 empty empty 2 0 0 0 8 #fcfcfc #404040 0;
+#X obj 179 109 cnv 5 5 5 empty empty 3 0 0 0 8 #fcfcfc #404040 0;
+#X obj 105 109 cnv 5 5 5 empty empty 1 0 0 0 8 #fcfcfc #404040 0;
+#X obj 216 218 cnv 5 5 5 empty empty D 0 0 0 8 #fcfcfc #404040 0;
+#X obj 140 218 cnv 5 5 5 empty empty B 0 0 0 8 #fcfcfc #404040 0;
+#X obj 179 218 cnv 5 5 5 empty empty C 0 0 0 8 #fcfcfc #404040 0;
+#X obj 104 218 cnv 5 5 5 empty empty A 0 0 0 8 #fcfcfc #404040 0;
 #X obj 280 660 outlet~;
 #X obj 406 662 outlet~;
 #X obj 506 662 outlet~;
@@ -156,11 +138,9 @@
 #X obj 233 125 f \$1;
 #X obj 233 161 t f f f;
 #X obj 206 34 t b b;
-#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 52 206 r SAVE-S;
-#X msg 111 410 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16;
+#X msg 111 410 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
 #X obj 111 372 pack f f f f f f f f f f f f f f f f;
 #X obj 489 179 unpack f f f f f f f f f f f f f f f f;
 #X obj 4 15 r \$0-tmatrix-t1-s;
@@ -284,8 +264,7 @@
 #X obj 135 418 r preset-manager-store-slot;
 #X msg 80 670 stop;
 #X obj 80 603 r STOP-MORPH!;
-#X msg 106 368 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16;
+#X msg 106 368 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16;
 #X obj 733 253 unpack f f f f f f f f f f f f f f f f;
 #X obj 170 12 r \$0-tmatrix-t1-s;
 #X obj 178 35 r \$0-tmatrix-t2-s;
@@ -473,39 +452,24 @@
 #X obj 10 50 state_saving_module toggle-matrix \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t16-s tmatrix-t16-r D #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t15-s tmatrix-t15-r C #FFFFFF #000000 #000000;
-#X obj 10 120 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t14-s tmatrix-t14-r B #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t13-s tmatrix-t13-r A #FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t12-s tmatrix-t12-r empty #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t11-s tmatrix-t11-r empty #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t10-s tmatrix-t10-r empty #FFFFFF #000000 #000000;
-#X obj 10 420 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t9-s tmatrix-t9-r empty #FFFFFF #000000 #000000;
-#X obj 10 480 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t8-s tmatrix-t8-r empty #FFFFFF #000000 #000000;
-#X obj 10 540 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t7-s tmatrix-t7-r empty #FFFFFF #000000 #000000;
-#X obj 10 600 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t6-s tmatrix-t6-r empty #FFFFFF #000000 #000000;
-#X obj 10 660 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t5-s tmatrix-t5-r empty #FFFFFF #000000 #000000;
-#X obj 10 720 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t4-s tmatrix-t4-r empty #FFFFFF #000000 #000000;
-#X obj 10 780 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t3-s tmatrix-t3-r empty #FFFFFF #000000 #000000;
-#X obj 10 840 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t2-s tmatrix-t2-r empty #FFFFFF #000000 #000000;
-#X obj 10 900 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1
-0 1 tmatrix-t1-s tmatrix-t1-r symbol #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t16-s tmatrix-t16-r D #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t15-s tmatrix-t15-r C #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t14-s tmatrix-t14-r B #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t13-s tmatrix-t13-r A #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t12-s tmatrix-t12-r empty #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t11-s tmatrix-t11-r empty #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t10-s tmatrix-t10-r empty #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t9-s tmatrix-t9-r empty #FFFFFF #000000 #000000;
+#X obj 10 480 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t8-s tmatrix-t8-r empty #FFFFFF #000000 #000000;
+#X obj 10 540 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t7-s tmatrix-t7-r empty #FFFFFF #000000 #000000;
+#X obj 10 600 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t6-s tmatrix-t6-r empty #FFFFFF #000000 #000000;
+#X obj 10 660 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t5-s tmatrix-t5-r empty #FFFFFF #000000 #000000;
+#X obj 10 720 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t4-s tmatrix-t4-r empty #FFFFFF #000000 #000000;
+#X obj 10 780 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t3-s tmatrix-t3-r empty #FFFFFF #000000 #000000;
+#X obj 10 840 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t2-s tmatrix-t2-r empty #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/tgl_dispatch toggle-matrix \$0 \$1 0 1 tmatrix-t1-s tmatrix-t1-r symbol #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 16 0 32 0;
 #X connect 16 0 36 0;
 #X connect 16 0 40 0;

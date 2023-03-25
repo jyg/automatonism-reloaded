@@ -1,26 +1,21 @@
 #N canvas 0 23 1102 752 10;
-#X obj 108 131 hsl 128 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 108 131 hsl 128 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r PITCH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 320 467 pack f f f;
 #X obj 320 328 f;
-#X floatatom 320 350 5 0 0 0 - - -;
+#X floatatom 320 350 5 0 0 0 - - - 0;
 #X msg 365 184 100;
 #X obj 320 393 unpack f f;
-#X floatatom 320 415 5 0 0 0 - - -;
-#X floatatom 377 417 5 0 0 0 - - -;
+#X floatatom 320 415 5 0 0 0 - - - 0;
+#X floatatom 377 417 5 0 0 0 - - - 0;
 #X obj 320 443 poly 4 1;
 #X obj 320 492 route 1 2 3 4;
-#X obj 108 161 hsl 128 15 0 127 0 1 \$0-polyfm-ratio-s \$0-polyfm-ratio-r
-RATIO 135 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 211 hsl 128 15 1.27 127 1 1 \$0-polyfm-attack-s \$0-polyfm-attack-r
-ATTACK 135 7 0 10 -262144 -1 -1 400 1;
-#X obj 108 226 hsl 128 15 0 127 0 1 \$0-polyfm-hold-s \$0-polyfm-hold-r
-HOLD 135 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 240 hsl 128 15 0 127 0 1 \$0-polyfm-release-s \$0-polyfm-release-r
-RELEASE 135 7 0 10 -262144 -1 -1 12600 1;
+#X obj 108 161 hsl 128 15 0 127 0 1 \$0-polyfm-ratio-s \$0-polyfm-ratio-r RATIO 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 211 hsl 128 15 1.27 127 1 1 \$0-polyfm-attack-s \$0-polyfm-attack-r ATTACK 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 226 hsl 128 15 0 127 0 1 \$0-polyfm-hold-s \$0-polyfm-hold-r HOLD 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 240 hsl 128 15 0 127 0 1 \$0-polyfm-release-s \$0-polyfm-release-r RELEASE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 320 371 pack f f;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
-#X floatatom 206 116 5 0 0 0 - #0-polyfm-pitch-s -;
+#X floatatom 206 116 5 0 0 0 - \$0-polyfm-pitch-s - 0;
 #X obj 471 15 inlet~ PITCH CV;
 #X obj 320 61 inlet~ TRIG;
 #X obj 320 152 t b b b;
@@ -30,11 +25,10 @@ RELEASE 135 7 0 10 -262144 -1 -1 12600 1;
 #X obj 335 247 clip 0 127;
 #X obj 471 208 t b f;
 #X obj 320 632 *~ 0.25;
-#X floatatom 416 294 5 0 0 0 - - -;
+#X floatatom 416 294 5 0 0 0 - - - 0;
 #X obj 678 697 outlet~ EG OUT;
 #X obj 678 655 *~ 0.25;
-#X obj 108 146 hsl 128 15 0 127 0 1 \$0-polyfm-index-s \$0-polyfm-index-r
-INDEX 135 7 0 10 -262144 -1 -1 1200 1;
+#X obj 108 146 hsl 128 15 0 127 0 1 \$0-polyfm-index-s \$0-polyfm-index-r INDEX 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #N canvas 224 22 962 575 voice1-ahr 0;
 #X obj 43 6 inlet;
 #X obj 43 28 unpack f f;
@@ -201,14 +195,10 @@ INDEX 135 7 0 10 -262144 -1 -1 1200 1;
 #X connect 52 0 38 1;
 #X connect 53 0 51 1;
 #X restore 320 518 pd voice1-ahr;
-#X obj 103 108 cnv 5 5 5 empty empty TRIG 0 0 0 8 -262144 -226533 0
-;
-#X obj 105 265 cnv 5 5 5 empty empty modulator-EG 0 0 0 12 -262144
--66577 0;
-#X obj 178 121 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
-#X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
--1;
+#X obj 103 108 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 105 265 cnv 5 5 5 empty empty modulator-EG 0 0 0 12 #fcfcfc #404040 0;
+#X obj 178 121 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #N canvas 315 35 593 735 state-saving-multiple-instances 0;
 #X obj 137 29 loadbang;
 #X obj 294 447 state_saving_module/textfile \$0;
@@ -225,8 +215,7 @@ INDEX 135 7 0 10 -262144 -1 -1 1200 1;
 #X obj 165 83 f \$1;
 #X obj 165 119 t f f f;
 #X obj 138 62 t b b;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj -16 234 r SAVE-S;
 #X msg 43 438 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9;
 #X msg 55 651 write statesave/\$1-polyfm-ss.txt;
@@ -479,7 +468,7 @@ INDEX 135 7 0 10 -262144 -1 -1 1200 1;
 #X obj 157 193 r NUDGE-RANGE;
 #X obj 247 308 inlet;
 #X obj 232 397 outlet;
-#X floatatom 316 396 5 0 0 0 - - -;
+#X floatatom 316 396 5 0 0 0 - - - 0;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 14 0;
@@ -835,24 +824,18 @@ INDEX 135 7 0 10 -262144 -1 -1 1200 1;
 #X connect 32 0 13 0;
 #X connect 34 0 16 0;
 #X restore 52 438 pd parameter-nudging-system;
-#X obj 270 330 cnv 5 5 5 empty empty ENV 0 0 0 8 -262144 -1 0;
-#X obj 104 330 cnv 5 5 5 empty empty LEFT 0 0 0 8 -262144 -1 0;
-#X obj 184 330 cnv 5 5 5 empty empty RIGHT 0 0 0 8 -262144 -1 0;
-#X obj 261 108 cnv 5 5 5 empty empty INDEX 0 0 0 8 -262144 -66577 0
-;
+#X obj 270 330 cnv 5 5 5 empty empty ENV 0 0 0 8 #fcfcfc #000000 0;
+#X obj 104 330 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #000000 0;
+#X obj 184 330 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #000000 0;
+#X obj 261 108 cnv 5 5 5 empty empty INDEX 0 0 0 8 #fcfcfc #404040 0;
 #X obj 320 707 outlet~ LEFT;
 #X obj 678 633 catch~ \$0-polyfm-eg;
 #X obj 335 203 r \$0-polyfm-pitch-s;
-#X obj 108 274 hsl 128 15 1.27 127 1 1 \$0-polyfm-attack2-s \$0-polyfm-attack2-r
-ATTACK 135 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 289 hsl 128 15 0 127 0 1 \$0-polyfm-hold2-s \$0-polyfm-hold2-r
-HOLD 135 7 0 10 -262144 -1 -1 0 1;
-#X obj 108 303 hsl 128 15 0 127 0 1 \$0-polyfm-release2-s \$0-polyfm-release2-r
-RELEASE 135 7 0 10 -262144 -1 -1 3400 1;
-#X obj 128 121 cnv 5 5 5 empty empty polyFM 0 0 0 12 -262144 -66577
-0;
-#X obj 105 202 cnv 5 5 5 empty empty carrier-EG 0 0 0 12 -262144 -66577
-0;
+#X obj 108 274 hsl 128 15 1.27 127 1 1 \$0-polyfm-attack2-s \$0-polyfm-attack2-r ATTACK 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 289 hsl 128 15 0 127 0 1 \$0-polyfm-hold2-s \$0-polyfm-hold2-r HOLD 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 303 hsl 128 15 0 127 0 1 \$0-polyfm-release2-s \$0-polyfm-release2-r RELEASE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 128 121 cnv 5 5 5 empty empty polyFM 0 0 0 12 #fcfcfc #404040 0;
+#X obj 105 202 cnv 5 5 5 empty empty carrier-EG 0 0 0 12 #fcfcfc #404040 0;
 #X obj 651 18 inlet~ INDEX CV;
 #X obj 651 40 s~ \$0-polyfm-index-cv;
 #N canvas 224 22 962 575 voice2-ahr 0;
@@ -1358,19 +1341,17 @@ RELEASE 135 7 0 10 -262144 -1 -1 3400 1;
 #X obj 431 675 *~ 0.33;
 #X obj 258 630 *~ 0.5;
 #X obj 482 610 *~ 0.5;
-#X floatatom 105 176 5 0 0 0 - #0-polyfm-ratio-gui-r -;
+#X floatatom 105 176 5 0 0 0 - \$0-polyfm-ratio-gui-r - 0;
 #X obj 530 290 r \$0-polyfm-ratio-s;
 #X obj 530 312 / 127;
 #X obj 530 334 * 7;
 #X obj 530 356 + 1;
 #X obj 530 400 s \$0-polyfm-ratio-gui-r;
-#X obj 185 108 cnv 5 5 5 empty empty PITCH 0 0 0 8 -262144 -66577 0
-;
+#X obj 185 108 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
 #N canvas 457 23 983 799 external-messages 0;
-#X floatatom 27 553 5 0 0 0 - - -;
+#X floatatom 27 553 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -1381,49 +1362,48 @@ RELEASE 135 7 0 10 -262144 -1 -1 3400 1;
 #X obj 27 480 t b f;
 #X obj 27 503 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 75 487 r \$0-msg-spigot;
-#X floatatom 97 680 5 0 0 0 - - -;
+#X floatatom 97 680 5 0 0 0 - - - 0;
 #X obj 97 659 f;
 #X obj 97 607 t b f;
 #X obj 97 630 spigot;
 #X obj 145 614 r \$0-msg-spigot;
-#X floatatom 205 556 5 0 0 0 - - -;
+#X floatatom 205 556 5 0 0 0 - - - 0;
 #X obj 205 535 f;
 #X obj 205 483 t b f;
 #X obj 205 506 spigot;
 #X obj 253 490 r \$0-msg-spigot;
-#X floatatom 292 712 5 0 0 0 - - -;
+#X floatatom 292 712 5 0 0 0 - - - 0;
 #X obj 292 691 f;
 #X obj 292 639 t b f;
 #X obj 292 662 spigot;
 #X obj 340 646 r \$0-msg-spigot;
-#X floatatom 360 591 5 0 0 0 - - -;
+#X floatatom 360 591 5 0 0 0 - - - 0;
 #X obj 360 570 f;
 #X obj 360 518 t b f;
 #X obj 360 541 spigot;
 #X obj 408 525 r \$0-msg-spigot;
 #X obj 185 14 r polyfm;
-#X obj 185 380 route PITCH INDEX RATIO ATTACK HOLD RELEASE ATTACK2
-HOLD2 RELEASE2;
-#X floatatom 522 604 5 0 0 0 - - -;
+#X obj 185 380 route PITCH INDEX RATIO ATTACK HOLD RELEASE ATTACK2 HOLD2 RELEASE2;
+#X floatatom 522 604 5 0 0 0 - - - 0;
 #X obj 522 583 f;
 #X obj 522 531 t b f;
 #X obj 522 554 spigot;
 #X obj 570 538 r \$0-msg-spigot;
-#X floatatom 559 726 5 0 0 0 - - -;
+#X floatatom 559 726 5 0 0 0 - - - 0;
 #X obj 559 705 f;
 #X obj 559 653 t b f;
 #X obj 559 676 spigot;
 #X obj 607 660 r \$0-msg-spigot;
-#X floatatom 741 669 5 0 0 0 - - -;
+#X floatatom 741 669 5 0 0 0 - - - 0;
 #X obj 741 648 f;
 #X obj 741 596 t b f;
 #X obj 741 619 spigot;
 #X obj 789 603 r \$0-msg-spigot;
-#X floatatom 755 530 5 0 0 0 - - -;
+#X floatatom 755 530 5 0 0 0 - - - 0;
 #X obj 755 509 f;
 #X obj 755 457 t b f;
 #X obj 755 480 spigot;
@@ -1519,29 +1499,18 @@ HOLD2 RELEASE2;
 #X obj 10 50 state_saving_module polyfm \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-release2-s
-polyfm-release2-r RELEASE #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
-polyfm-hold2-s polyfm-hold2-r HOLD #FFFFFF #000000 #000000;
-#X obj 10 120 state_saving_module/hsl_dispatch polyfm \$0 \$1 1.27
-127 polyfm-attack2-s polyfm-attack2-r ATTACK #FFFFFF #000000 #000000
-;
-#X obj 10 180 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
-polyfm-index-s polyfm-index-r INDEX #FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
-polyfm-release-s polyfm-release-r RELEASE #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
-polyfm-hold-s polyfm-hold-r HOLD #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/hsl_dispatch polyfm \$0 \$1 1.27
-127 polyfm-attack-s polyfm-attack-r ATTACK #FFFFFF #000000 #000000
-;
-#X obj 10 420 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
-polyfm-ratio-s polyfm-ratio-r RATIO #FFFFFF #000000 #000000;
-#X obj 10 480 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127
-polyfm-pitch-s polyfm-pitch-r PITCH #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-release2-s polyfm-release2-r RELEASE #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-hold2-s polyfm-hold2-r HOLD #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/hsl_dispatch polyfm \$0 \$1 1.27 127 polyfm-attack2-s polyfm-attack2-r ATTACK #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-index-s polyfm-index-r INDEX #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-release-s polyfm-release-r RELEASE #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-hold-s polyfm-hold-r HOLD #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/hsl_dispatch polyfm \$0 \$1 1.27 127 polyfm-attack-s polyfm-attack-r ATTACK #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-ratio-s polyfm-ratio-r RATIO #FFFFFF #000000 #000000;
+#X obj 10 480 state_saving_module/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-pitch-s polyfm-pitch-r PITCH #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
-#X obj 700 189 hsl 125 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 0 1;
+#X obj 700 189 hsl 125 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r PITCH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;
 #X connect 3 0 14 0;

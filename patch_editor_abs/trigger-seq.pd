@@ -1,49 +1,29 @@
 #N canvas 0 22 1280 663 10;
-#X obj 103 127 cnv 5 5 5 empty empty TRIGGER 0 0 0 12 -262144 -66577
-0;
-#X obj 185 127 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
--66577 0;
-#X obj 158 127 cnv 5 5 5 empty empty SEQ 0 0 0 12 -262144 -66577 0
-;
-#X obj 103 154 tgl 15 1 \$0-trigger-seq-s1-s \$0-trigger-seq-s1-r GATE-ON/OFF
-0 25 0 10 -191407 -1 -1 0 1;
-#X obj 118 154 tgl 15 1 \$0-trigger-seq-s2-s \$0-trigger-seq-s2-r empty
-17 7 0 10 -262144 -1 -1 0 1;
-#X obj 133 154 tgl 15 1 \$0-trigger-seq-s3-s \$0-trigger-seq-s3-r empty
-17 7 0 10 -262144 -1 -1 0 1;
-#X obj 148 154 tgl 15 1 \$0-trigger-seq-s4-s \$0-trigger-seq-s4-r empty
-17 7 0 10 -262144 -1 -1 0 1;
-#X obj 163 154 tgl 15 1 \$0-trigger-seq-s5-s \$0-trigger-seq-s5-r empty
-4 25 0 10 -191407 -1 -1 0 1;
-#X obj 178 154 tgl 15 1 \$0-trigger-seq-s6-s \$0-trigger-seq-s6-r empty
-17 7 0 10 -262144 -1 -1 0 1;
-#X obj 193 154 tgl 15 1 \$0-trigger-seq-s7-s \$0-trigger-seq-s7-r empty
-17 7 0 10 -262144 -1 -1 0 1;
-#X obj 208 154 tgl 15 1 \$0-trigger-seq-s8-s \$0-trigger-seq-s8-r empty
-17 7 0 10 -262144 -1 -1 0 1;
-#X obj 223 154 tgl 15 1 \$0-trigger-seq-s9-s \$0-trigger-seq-s9-r empty
-4 25 0 10 -191407 -1 -1 0 1;
-#X obj 238 154 tgl 15 1 \$0-trigger-seq-s10-s \$0-trigger-seq-s10-r
-empty 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 253 154 tgl 15 1 \$0-trigger-seq-s11-s \$0-trigger-seq-s11-r
-empty 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 268 154 tgl 15 1 \$0-trigger-seq-s12-s \$0-trigger-seq-s12-r
-empty 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 283 154 tgl 15 1 \$0-trigger-seq-s13-s \$0-trigger-seq-s13-r
-empty 4 25 0 10 -191407 -1 -1 0 1;
-#X obj 298 154 tgl 15 1 \$0-trigger-seq-s14-s \$0-trigger-seq-s14-r
-empty 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 313 154 tgl 15 1 \$0-trigger-seq-s15-s \$0-trigger-seq-s15-r
-empty 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 328 154 tgl 15 1 \$0-trigger-seq-s16-s \$0-trigger-seq-s16-r
-empty 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 103 139 hradio 15 1 0 16 \$0-trigger-seq-gui-s \$0-trigger-seq-gui-r
-empty 0 -8 0 10 -262144 -226533 -1 6;
+#X obj 103 127 cnv 5 5 5 empty empty TRIGGER 0 0 0 12 #fcfcfc #404040 0;
+#X obj 185 127 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 158 127 cnv 5 5 5 empty empty SEQ 0 0 0 12 #fcfcfc #404040 0;
+#X obj 103 154 tgl 15 1 \$0-trigger-seq-s1-s \$0-trigger-seq-s1-r GATE-ON/OFF 0 25 0 10 #b8b8b8 #000000 #000000 0 1;
+#X obj 118 154 tgl 15 1 \$0-trigger-seq-s2-s \$0-trigger-seq-s2-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 133 154 tgl 15 1 \$0-trigger-seq-s3-s \$0-trigger-seq-s3-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 148 154 tgl 15 1 \$0-trigger-seq-s4-s \$0-trigger-seq-s4-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 163 154 tgl 15 1 \$0-trigger-seq-s5-s \$0-trigger-seq-s5-r empty 4 25 0 10 #b8b8b8 #000000 #000000 0 1;
+#X obj 178 154 tgl 15 1 \$0-trigger-seq-s6-s \$0-trigger-seq-s6-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 193 154 tgl 15 1 \$0-trigger-seq-s7-s \$0-trigger-seq-s7-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 208 154 tgl 15 1 \$0-trigger-seq-s8-s \$0-trigger-seq-s8-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 223 154 tgl 15 1 \$0-trigger-seq-s9-s \$0-trigger-seq-s9-r empty 4 25 0 10 #b8b8b8 #000000 #000000 0 1;
+#X obj 238 154 tgl 15 1 \$0-trigger-seq-s10-s \$0-trigger-seq-s10-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 253 154 tgl 15 1 \$0-trigger-seq-s11-s \$0-trigger-seq-s11-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 268 154 tgl 15 1 \$0-trigger-seq-s12-s \$0-trigger-seq-s12-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 283 154 tgl 15 1 \$0-trigger-seq-s13-s \$0-trigger-seq-s13-r empty 4 25 0 10 #b8b8b8 #000000 #000000 0 1;
+#X obj 298 154 tgl 15 1 \$0-trigger-seq-s14-s \$0-trigger-seq-s14-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 313 154 tgl 15 1 \$0-trigger-seq-s15-s \$0-trigger-seq-s15-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 328 154 tgl 15 1 \$0-trigger-seq-s16-s \$0-trigger-seq-s16-r empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 103 139 hradio 15 1 0 16 \$0-trigger-seq-gui-s \$0-trigger-seq-gui-r empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 448 93 inlet~;
 #X obj 448 137 f;
 #X obj 479 138 + 1;
 #X obj 448 159 % 16;
-#X floatatom 448 181 5 0 0 0 - - -;
+#X floatatom 448 181 5 0 0 0 - - - 0;
 #X obj 448 200 t f f;
 #X obj 475 228 s \$0-trigger-seq-gui-r;
 #X obj 448 251 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
@@ -85,17 +65,13 @@ empty 0 -8 0 10 -262144 -226533 -1 6;
 #X obj 893 434 r \$0-trigger-seq-s16-s;
 #X obj 584 142 f;
 #X obj 584 61 r \$0-trigger-seq-sos!;
-#X obj 998 573 hradio 15 1 1 16 \$0-trigger-seq-num-of-steps-s \$0-trigger-seq-num-of-steps-r
-NUMBER-OF-STEPS 0 -8 0 10 -262144 -1 -1 0;
+#X obj 998 573 hradio 15 1 1 16 \$0-trigger-seq-num-of-steps-s \$0-trigger-seq-num-of-steps-r NUMBER-OF-STEPS 0 -8 0 10 #fcfcfc #000000 #000000 0;
 #X obj 599 95 r \$0-trigger-seq-num-of-steps-s;
 #X obj 599 117 + 1;
-#X obj 103 186 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
+#X obj 103 186 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 96 501 t b;
-#X obj 282 185 hradio 15 1 1 4 \$0-trigger-seq-load-s \$0-trigger-seq-load-r
-LOAD 0 -8 0 10 -204786 -13381 -1 0;
-#X obj 208 186 hradio 15 1 0 4 \$0-trigger-seq-store-s \$0-trigger-seq-store-r
-STORE 0 -8 0 10 -261234 -258113 -1 0;
+#X obj 282 185 hradio 15 1 1 4 \$0-trigger-seq-load-s \$0-trigger-seq-load-r LOAD 0 -8 0 10 #c4fcc4 #0c4410 #000000 0;
+#X obj 208 186 hradio 15 1 0 4 \$0-trigger-seq-store-s \$0-trigger-seq-store-r STORE 0 -8 0 10 #fcc4c4 #fc0400 #000000 0;
 #N canvas 395 91 1008 752 store/load 0;
 #X obj 290 212 pack f f;
 #X obj 292 453 state_saving_module/textfile \$0;
@@ -173,8 +149,7 @@ STORE 0 -8 0 10 -261234 -258113 -1 0;
 #X msg 19 329 write statesave/\$1-trigger-seq-\$2-ss.txt;
 #X msg 291 297 read statesave/\$1-trigger-seq-\$2-ss.txt;
 #X obj -377 481 pack f f f f f f f f f f f f f f f f f f;
-#X msg -378 522 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
-\$13 \$14 \$15 \$16 \$17 \$18;
+#X msg -378 522 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16 \$17 \$18;
 #X obj -91 400 r \$0-trigger-seq-load-s;
 #X obj 308 67 delay 100;
 #N canvas 0 50 959 889 avoid-load-textfile-clicks 0;
@@ -184,8 +159,7 @@ STORE 0 -8 0 10 -261234 -258113 -1 0;
 #X obj 159 226 line;
 #X obj 236 174 delay 110;
 #X msg 236 198 0 100;
-#X obj 162 250 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 162 250 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 159 270 / 127;
 #X obj 159 292 * 4;
 #X obj 159 314 i;
@@ -198,8 +172,7 @@ STORE 0 -8 0 10 -261234 -258113 -1 0;
 #X obj 147 403 t b b;
 #X msg 148 610 read statesave/\$1-trigger-seq-\$2-ss.txt;
 #X obj 165 380 delay 100;
-#X text 124 83 load presets in RAM \, avoid physical HD after startup
-;
+#X text 124 83 load presets in RAM \, avoid physical HD after startup;
 #X obj 147 497 f \$1;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -283,24 +256,19 @@ STORE 0 -8 0 10 -261234 -258113 -1 0;
 #X restore 102 77 pd store/load;
 #X obj 102 25 r \$0-trigger-seq-store-s;
 #X obj 177 49 r \$0-trigger-seq-load-s;
-#X obj 103 111 cnv 5 5 5 empty empty CLOCK-IN 0 0 0 8 -262144 -226533
-0;
-#X obj 203 108 cnv 5 5 5 empty empty LOAD(1-4) 0 0 0 8 -262144 -226533
-0;
-#X obj 323 108 cnv 5 5 5 empty empty RESET 0 0 0 8 -262144 -226533
-0;
+#X obj 103 111 cnv 5 5 5 empty empty CLOCK-IN 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 203 108 cnv 5 5 5 empty empty LOAD(1-4) 0 0 0 8 #fcfcfc #dc4c90 0;
+#X obj 323 108 cnv 5 5 5 empty empty RESET 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 910 65 inlet~;
 #X obj 1120 69 inlet~;
 #X obj 1120 91 threshold~ 0.99 0 1 0;
 #X obj 1122 113 t b b;
 #X msg 1120 141 0;
-#X obj 323 113 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
+#X obj 323 113 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 911 159 t b b;
 #X text 903 45 LOAD(1-4) seq. scan;
 #X text 1115 38 RESET INPUT;
-#X obj 216 114 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144
--226533 -1;
+#X obj 216 114 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 910 201 f;
 #X obj 944 201 + 1;
 #X obj 910 230 mod 4;
@@ -312,7 +280,7 @@ STORE 0 -8 0 10 -261234 -258113 -1 0;
 #X obj 154 273 loadbang;
 #X obj 840 439 t b b;
 #X obj 1157 110 loadbang;
-#X floatatom 957 247 5 0 0 0 - - -;
+#X floatatom 957 247 5 0 0 0 - - - 0;
 #X obj 910 100 threshold~ 1 0 1 0;
 #X obj 1079 342 r \$0-trigger-seq-load-s;
 #X obj 1064 374 f;
@@ -325,58 +293,25 @@ STORE 0 -8 0 10 -261234 -258113 -1 0;
 #X obj 56 640 state_saving_module trigger-seq \$0 \$1;
 #X obj 96 600 savestate;
 #N canvas 0 57 1920 1023 \$0-gui_listeners 0;
-#X obj 10 120 state_saving_module/hradio_dispatch trigger-seq \$0 \$1
-0 15 trigger-seq-num-of-steps-s trigger-seq-num-of-steps-r NUMBER-OF-STEPS
-#FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s16-s trigger-seq-s16-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 300 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s15-s trigger-seq-s15-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 360 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s14-s trigger-seq-s14-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 420 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s13-s trigger-seq-s13-r empty #BABABA #000000 #000000
-;
-#X obj 10 480 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s12-s trigger-seq-s12-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 540 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s11-s trigger-seq-s11-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 600 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s10-s trigger-seq-s10-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 660 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s9-s trigger-seq-s9-r empty #BABABA #000000 #000000
-;
-#X obj 10 720 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s8-s trigger-seq-s8-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 780 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s7-s trigger-seq-s7-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 840 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s6-s trigger-seq-s6-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 900 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s5-s trigger-seq-s5-r empty #BABABA #000000 #000000
-;
-#X obj 10 960 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s4-s trigger-seq-s4-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 1020 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s3-s trigger-seq-s3-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 1080 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s2-s trigger-seq-s2-r empty #FFFFFF #000000 #000000
-;
-#X obj 10 1140 state_saving_module/tgl_dispatch trigger-seq \$0 \$1
-0 1 trigger-seq-s1-s trigger-seq-s1-r GATE-ON/OFF #BABABA #000000 #000000
-;
+#X obj 10 120 state_saving_module/hradio_dispatch trigger-seq \$0 \$1 0 15 trigger-seq-num-of-steps-s trigger-seq-num-of-steps-r NUMBER-OF-STEPS #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s16-s trigger-seq-s16-r empty #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s15-s trigger-seq-s15-r empty #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s14-s trigger-seq-s14-r empty #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s13-s trigger-seq-s13-r empty #BABABA #000000 #000000;
+#X obj 10 480 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s12-s trigger-seq-s12-r empty #FFFFFF #000000 #000000;
+#X obj 10 540 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s11-s trigger-seq-s11-r empty #FFFFFF #000000 #000000;
+#X obj 10 600 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s10-s trigger-seq-s10-r empty #FFFFFF #000000 #000000;
+#X obj 10 660 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s9-s trigger-seq-s9-r empty #BABABA #000000 #000000;
+#X obj 10 720 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s8-s trigger-seq-s8-r empty #FFFFFF #000000 #000000;
+#X obj 10 780 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s7-s trigger-seq-s7-r empty #FFFFFF #000000 #000000;
+#X obj 10 840 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s6-s trigger-seq-s6-r empty #FFFFFF #000000 #000000;
+#X obj 10 900 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s5-s trigger-seq-s5-r empty #BABABA #000000 #000000;
+#X obj 10 960 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s4-s trigger-seq-s4-r empty #FFFFFF #000000 #000000;
+#X obj 10 1020 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s3-s trigger-seq-s3-r empty #FFFFFF #000000 #000000;
+#X obj 10 1080 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s2-s trigger-seq-s2-r empty #FFFFFF #000000 #000000;
+#X obj 10 1140 state_saving_module/tgl_dispatch trigger-seq \$0 \$1 0 1 trigger-seq-s1-s trigger-seq-s1-r GATE-ON/OFF #BABABA #000000 #000000;
 #X restore 56 670 pd \$0-gui_listeners;
+#X obj 185 669 namecanvas \$0-this;
 #X connect 20 0 108 0;
 #X connect 21 0 22 0;
 #X connect 21 0 23 0;

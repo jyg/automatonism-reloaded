@@ -1,12 +1,8 @@
 #N canvas 0 23 1050 738 10;
-#X obj 117 143 vsl 15 96 0 127 0 1 \$0-sinebank-1-s \$0-sinebank-1-r
-1 5 -9 0 10 -262144 -1 -1 0 1;
-#X obj 132 143 vsl 15 96 0 127 0 1 \$0-sinebank-2-s \$0-sinebank-2-r
-2 5 -9 0 10 -262144 -1 -1 0 1;
-#X obj 147 143 vsl 15 96 0 127 0 1 \$0-sinebank-3-s \$0-sinebank-3-r
-3 5 -9 0 10 -262144 -1 -1 0 1;
-#X obj 162 143 vsl 15 96 0 127 0 1 \$0-sinebank-4-s \$0-sinebank-4-r
-4 5 -9 0 10 -262144 -1 -1 0 1;
+#X obj 117 143 vsl 15 96 0 127 0 1 \$0-sinebank-1-s \$0-sinebank-1-r 1 5 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 132 143 vsl 15 96 0 127 0 1 \$0-sinebank-2-s \$0-sinebank-2-r 2 5 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 147 143 vsl 15 96 0 127 0 1 \$0-sinebank-3-s \$0-sinebank-3-r 3 5 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 162 143 vsl 15 96 0 127 0 1 \$0-sinebank-4-s \$0-sinebank-4-r 4 5 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 286 703 outlet~;
 #N canvas 396 231 135 469 sine1 0;
 #N canvas 592 252 450 300 sine 0;
@@ -51,14 +47,10 @@
 #X obj 641 53 inlet~;
 #X obj 641 75 *~ 127;
 #X obj 641 97 s~ \$0-sinebank-cv4;
-#X obj 117 242 tgl 15 1 \$0-sinebank-lfo1-s \$0-sinebank-lfo1-r empty
-17 7 1 10 -262144 -1 -1 0 1;
-#X obj 132 242 tgl 15 1 \$0-sinebank-lfo2-s \$0-sinebank-lfo2-r empty
-17 7 1 10 -262144 -1 -1 0 1;
-#X obj 147 242 tgl 15 1 \$0-sinebank-lfo3-s \$0-sinebank-lfo3-r empty
-17 7 1 10 -262144 -1 -1 0 1;
-#X obj 162 242 tgl 15 1 \$0-sinebank-lfo4-s \$0-sinebank-lfo4-r LFO
-17 7 0 10 -262144 -1 -1 0 1;
+#X obj 117 242 tgl 15 1 \$0-sinebank-lfo1-s \$0-sinebank-lfo1-r empty 17 7 1 10 #fcfcfc #000000 #000000 0 1;
+#X obj 132 242 tgl 15 1 \$0-sinebank-lfo2-s \$0-sinebank-lfo2-r empty 17 7 1 10 #fcfcfc #000000 #000000 0 1;
+#X obj 147 242 tgl 15 1 \$0-sinebank-lfo3-s \$0-sinebank-lfo3-r empty 17 7 1 10 #fcfcfc #000000 #000000 0 1;
+#X obj 162 242 tgl 15 1 \$0-sinebank-lfo4-s \$0-sinebank-lfo4-r LFO 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 343 130 r \$0-sinebank-lfo1-s;
 #X obj 227 285 -;
 #X obj 343 162 sel 0 1;
@@ -107,24 +99,15 @@
 #X connect 2 0 0 0;
 #X restore 291 523 pd sine2;
 #X obj 286 644 *~ 0.25;
-#X obj 103 104 cnv 5 10 10 empty empty CV1 0 5 0 8 -262144 -66577 0
-;
-#X obj 129 104 cnv 5 10 10 empty empty CV2 0 5 0 8 -262144 -66577 0
-;
-#X obj 158 104 cnv 5 10 10 empty empty CV3 0 5 0 8 -262144 -66577 0
-;
-#X obj 183 104 cnv 5 10 10 empty empty CV4 0 5 0 8 -262144 -66577 0
-;
-#X obj 104 263 cnv 5 10 10 empty empty S1 0 5 0 8 -262144 -66577 0
-;
-#X obj 123 263 cnv 5 10 10 empty empty S2 0 5 0 8 -262144 -66577 0
-;
-#X obj 146 263 cnv 5 10 10 empty empty S3 0 5 0 8 -262144 -66577 0
-;
-#X obj 169 263 cnv 5 10 10 empty empty S4 0 5 0 8 -262144 -66577 0
-;
-#X obj 183 263 cnv 5 10 10 empty empty SUM 0 5 0 8 -262144 -66577 0
-;
+#X obj 103 104 cnv 5 10 10 empty empty CV1 0 5 0 8 #fcfcfc #404040 0;
+#X obj 129 104 cnv 5 10 10 empty empty CV2 0 5 0 8 #fcfcfc #404040 0;
+#X obj 158 104 cnv 5 10 10 empty empty CV3 0 5 0 8 #fcfcfc #404040 0;
+#X obj 183 104 cnv 5 10 10 empty empty CV4 0 5 0 8 #fcfcfc #404040 0;
+#X obj 104 263 cnv 5 10 10 empty empty S1 0 5 0 8 #fcfcfc #404040 0;
+#X obj 123 263 cnv 5 10 10 empty empty S2 0 5 0 8 #fcfcfc #404040 0;
+#X obj 146 263 cnv 5 10 10 empty empty S3 0 5 0 8 #fcfcfc #404040 0;
+#X obj 169 263 cnv 5 10 10 empty empty S4 0 5 0 8 #fcfcfc #404040 0;
+#X obj 183 263 cnv 5 10 10 empty empty SUM 0 5 0 8 #fcfcfc #404040 0;
 #N canvas 396 231 650 469 sine4 0;
 #N canvas 592 252 450 300 sine 0;
 #X obj 81 16 inlet;
@@ -171,10 +154,8 @@
 #X connect 0 0 1 0;
 #X connect 2 0 0 0;
 #X restore 352 522 pd sine3;
-#X obj 113 122 cnv 5 5 5 empty empty SINEBANK 0 0 0 12 -262144 -66577
-0;
-#X obj 177 122 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
--66577 0;
+#X obj 113 122 cnv 5 5 5 empty empty SINEBANK 0 0 0 12 #fcfcfc #404040 0;
+#X obj 177 122 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #N canvas 315 35 895 724 state-saving-multiple-instances 0;
 #X obj 205 1 loadbang;
 #X obj 317 424 state_saving_module/textfile \$0;
@@ -191,8 +172,7 @@
 #X obj 233 125 f \$1;
 #X obj 233 161 t f f f;
 #X obj 206 34 t b b;
-#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 52 350 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 52 206 r SAVE-S;
 #X msg 111 410 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8;
 #X obj 111 372 pack f f f f f f f f;
@@ -317,9 +297,9 @@
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -353,9 +333,9 @@
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -389,9 +369,9 @@
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -425,9 +405,9 @@
 #X obj 398 137 t f f;
 #X obj 455 154 == 0;
 #X obj 221 176 f;
-#X floatatom 455 222 5 0 0 0 - - -;
+#X floatatom 455 222 5 0 0 0 - - - 0;
 #X obj 398 159 t b f;
-#X floatatom 425 192 5 0 0 0 - - -;
+#X floatatom 425 192 5 0 0 0 - - - 0;
 #X obj 209 139 t f f;
 #X obj 176 283 outlet;
 #X connect 0 0 1 0;
@@ -705,10 +685,9 @@
 #X connect 27 0 0 0;
 #X restore 30 338 pd parameter-nudging-system;
 #N canvas 632 73 749 752 external-messages 0;
-#X floatatom 186 706 5 0 0 0 - - -;
+#X floatatom 186 706 5 0 0 0 - - - 0;
 #X obj 185 328 spigot;
-#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 218 288 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 254 272 ==;
 #X obj 269 248 f \$1;
 #X obj 269 224 loadbang;
@@ -719,21 +698,21 @@
 #X obj 186 633 t b f;
 #X obj 186 656 spigot;
 #X obj 185 62 unpack s f f;
-#X symbolatom 185 94 10 0 0 0 - - -;
+#X symbolatom 185 94 10 0 0 0 - - - 0;
 #X obj 218 308 t f f;
 #X obj 245 332 s \$0-msg-spigot;
 #X obj 234 640 r \$0-msg-spigot;
-#X floatatom 223 594 5 0 0 0 - - -;
+#X floatatom 223 594 5 0 0 0 - - - 0;
 #X obj 223 573 f;
 #X obj 223 521 t b f;
 #X obj 223 544 spigot;
 #X obj 271 528 r \$0-msg-spigot;
-#X floatatom 387 639 5 0 0 0 - - -;
+#X floatatom 387 639 5 0 0 0 - - - 0;
 #X obj 387 618 f;
 #X obj 387 566 t b f;
 #X obj 387 589 spigot;
 #X obj 435 573 r \$0-msg-spigot;
-#X floatatom 424 527 5 0 0 0 - - -;
+#X floatatom 424 527 5 0 0 0 - - - 0;
 #X obj 424 506 f;
 #X obj 424 454 t b f;
 #X obj 424 477 spigot;
@@ -791,23 +770,16 @@
 #X obj 10 50 state_saving_module sinebank \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1 sinebank-lfo4-s
-sinebank-lfo4-r LFO #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1
-sinebank-lfo3-s sinebank-lfo3-r empty #FFFFFF #000000 #000000;
-#X obj 10 120 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1
-sinebank-lfo2-s sinebank-lfo2-r empty #FFFFFF #000000 #000000;
-#X obj 10 180 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1
-sinebank-lfo1-s sinebank-lfo1-r empty #FFFFFF #000000 #000000;
-#X obj 10 240 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127
-sinebank-4-s sinebank-4-r symbol #FFFFFF #000000 #000000;
-#X obj 10 300 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127
-sinebank-3-s sinebank-3-r symbol #FFFFFF #000000 #000000;
-#X obj 10 360 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127
-sinebank-2-s sinebank-2-r symbol #FFFFFF #000000 #000000;
-#X obj 10 420 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127
-sinebank-1-s sinebank-1-r symbol #FFFFFF #000000 #000000;
+#X obj 10 0 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1 sinebank-lfo4-s sinebank-lfo4-r LFO #FFFFFF #000000 #000000;
+#X obj 10 60 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1 sinebank-lfo3-s sinebank-lfo3-r empty #FFFFFF #000000 #000000;
+#X obj 10 120 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1 sinebank-lfo2-s sinebank-lfo2-r empty #FFFFFF #000000 #000000;
+#X obj 10 180 state_saving_module/tgl_dispatch sinebank \$0 \$1 0 1 sinebank-lfo1-s sinebank-lfo1-r empty #FFFFFF #000000 #000000;
+#X obj 10 240 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127 sinebank-4-s sinebank-4-r symbol #FFFFFF #000000 #000000;
+#X obj 10 300 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127 sinebank-3-s sinebank-3-r symbol #FFFFFF #000000 #000000;
+#X obj 10 360 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127 sinebank-2-s sinebank-2-r symbol #FFFFFF #000000 #000000;
+#X obj 10 420 state_saving_module/vsl_dispatch sinebank \$0 \$1 0 127 sinebank-1-s sinebank-1-r symbol #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 5 0 12 0;
 #X connect 5 0 55 0;
 #X connect 6 0 31 0;

@@ -1,20 +1,16 @@
 #N canvas 76 127 1127 650 10;
 #X obj 261 98 inlet~;
 #X obj 881 94 inlet~;
-#X obj 107 143 hradio 15 1 1 4 \$0-1to4-select-s \$0-1to4-select-r
-empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
+#X obj 107 143 hradio 15 1 1 4 \$0-1to4-select-s \$0-1to4-select-r empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 105 111 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #404040 0;
-#X obj 229 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0
-;
+#X obj 229 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 196 168 cnv 5 5 5 empty empty 3 0 0 0 8 #fcfcfc #404040 0;
 #X obj 111 136 cnv 5 5 5 empty empty 1 0 0 0 8 #fcfcfc #404040 0;
 #X obj 127 136 cnv 5 5 5 empty empty 2 0 0 0 8 #fcfcfc #404040 0;
 #X obj 141 136 cnv 5 5 5 empty empty 3 0 0 0 8 #fcfcfc #404040 0;
 #X obj 156 136 cnv 5 5 5 empty empty 4 0 0 0 8 #fcfcfc #404040 0;
-#X obj 125 120 cnv 5 5 5 empty empty 1to4-SWITCH 0 0 0 12 #fcfcfc #404040
-0;
-#X obj 210 120 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc
-#404040 0;
+#X obj 125 120 cnv 5 5 5 empty empty 1to4-SWITCH 0 0 0 12 #fcfcfc #404040 0;
+#X obj 210 120 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 261 362 *~;
 #X obj 291 345 line~;
 #X obj 261 390 outlet~;
@@ -22,8 +18,7 @@ empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 881 160 f;
 #X obj 908 160 + 1;
 #X obj 881 226 mod 4;
-#X obj 231 116 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#dc4c90 #000000;
+#X obj 231 116 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #N canvas 0 0 958 1016 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 state_saving_module/textfile \$0;
@@ -40,8 +35,7 @@ empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 135 307 r \$0-1to4-select-s;
 #X msg 262 455 read statesave/\$1-1to4-switch-ss.txt;
@@ -115,8 +109,7 @@ empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 572 144 sel 2;
 #X obj 699 143 sel 3;
 #X obj 880 116 threshold~ 0.9 0 0.9 0;
-#X obj 191 143 hradio 15 1 1 3 \$0-1to4-steps-s \$0-1to4-steps-r STEPS
-0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
+#X obj 191 143 hradio 15 1 1 3 \$0-1to4-steps-s \$0-1to4-steps-r STEPS 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 195 165 cnv 5 5 5 empty empty 2 0 0 0 8 #fcfcfc #404040 0;
 #X obj 212 165 cnv 5 5 5 empty empty 3 0 0 0 8 #fcfcfc #404040 0;
 #X obj 227 165 cnv 5 5 5 empty empty 4 0 0 0 8 #fcfcfc #404040 0;
@@ -125,11 +118,9 @@ empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 881 181 + 1;
 #X obj 10 50 state_saving_module 1to4-switch \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hradio_dispatch 1to4-switch \$0 \$1
-0 2 1to4-steps-s 1to4-steps-r STEPS #FFFFFF #DE4C91 #000000;
-#X obj 10 60 state_saving_module/hradio_dispatch 1to4-switch \$0 \$1
-0 3 1to4-select-s 1to4-select-r empty #FFFFFF #DE4C91 #000000;
+#N canvas 2 682 450 300 \$0-gui_listeners 0;
+#X obj 10 0 state_saving_module/hradio_dispatch 1to4-switch \$0 \$1 0 2 1to4-steps-s 1to4-steps-r STEPS #FFFFFF #DE4C91 #000000;
+#X obj 10 60 state_saving_module/hradio_dispatch 1to4-switch \$0 \$1 0 3 1to4-select-s 1to4-select-r empty #FFFFFF #DE4C91 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #N canvas 0 0 1920 1021 state-saving-via-preset-manager-module 0;
 #X msg 719 210 rewind;
@@ -203,6 +194,7 @@ empty 0 -8 0 10 #fcfcfc #dc4c90 #000000 0;
 #X connect 32 1 25 0;
 #X restore 37 479 pd state-saving-via-preset-manager-module;
 #X text 319 479 <- new in automatonism reloaded;
+#X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 12 0;
 #X connect 0 0 30 0;
 #X connect 0 0 37 0;
