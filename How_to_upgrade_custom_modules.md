@@ -2,7 +2,7 @@
 If you wrote your own Automatonism modules, according to automatonism-3.1 patterns, this section is for you.
 You need iemguts lib to follow those steps.
 
-** IMPORTANT NOTE : ** This howto is a bit outdated : relace all instances of '**state_saving_module**' by '**reloaded**' , even in pictures !
+**IMPORTANT NOTE :** This howto is a bit outdated : relace all instances of '**state_saving_module**' by '**reloaded**' , even in pictures !
 
 ### step 1 : create midi learn listeners
 * Copy your module in pd/externals/automatonism/patch_editor_abs
