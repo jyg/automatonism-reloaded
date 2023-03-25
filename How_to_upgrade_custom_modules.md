@@ -8,7 +8,7 @@ You need iemguts lib to follow those steps.
 (here, we suppose that your module is called "my_module.pd" but you can change this with your real filename).
 * Open it with pd >0.50
 * Beware that all guis must have send and receive symbols and should not be wired to other objects of the patch (use [receive] objects instead).
-* Inside of your module, create a new object : [state_saving_module/upgrade]
+* Inside of your module, create a new object : [reloaded/upgrade]
 
 ![image](https://user-images.githubusercontent.com/1431894/119808872-d5940280-bee4-11eb-8e6e-1c3f6a910870.png)
 
@@ -28,7 +28,7 @@ This will automatically add some midi_listeners abstractions for every gui of th
 
 ![image](https://user-images.githubusercontent.com/1431894/119809281-3f141100-bee5-11eb-8e74-7ac6e0b36bbf.png)
 
-* inside those subpatches, replace every [textfile] instance by [state_saving_module/textfile $0]
+* inside those subpatches, replace every [textfile] instance by [reloaded/textfile $0]
 
 ![image](https://user-images.githubusercontent.com/1431894/119809677-a8941f80-bee5-11eb-9eab-74197f290275.png)
 
