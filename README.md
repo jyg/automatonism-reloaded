@@ -1,18 +1,21 @@
 # Automatonism [Reloaded]
+![image](https://user-images.githubusercontent.com/1431894/227710524-edfb046d-e393-48c3-a578-8040f372e282.png)
 
 <p align="left"> <img src="https://raw.githubusercontent.com/jyg/automatonism/master/automatonism_51.png" alt="automatonism_51" ></p>
 
-Fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
+This is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
+Unlike original project, **Automatonism [Reloaded]** intensively uses internal abstractions inside modules, in order to add new features.
 ## New features :
 
+* **New !** Plugdata support
 * Midi-mapping and Midi-learn features
 * Camomile VST plugin and DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 * Automatonism made as an abstaction lib : init a new project just by typing [automatonism] in a blank patch. 
-* The new preset and state saving system is based on new savestate object, where preset and state data are stored inside the main patch.
+* The new preset and state saving system is based on (not-so-) new 'savestate' object, where preset and state data are stored inside the main patch.
 * The legacy file-based preset and state saving system is deprecated, but old savestate structure is automatically imported in new project.
 * Ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
-* Several patches can run simultaneously and independently ("local mode" in Preset-Manager)
+* Several projects can run simultaneously and independently ("local mode" in Preset-Manager)
 
 ## Installation :
 * Download Automatonism.Reloaded.zip here https://github.com/jyg/automatonism-reloaded/releases
@@ -24,6 +27,8 @@ Fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 ## Software Requirements
 * pd >= 0.51
 * external lib iemguts needed for enhanced editing features, but not mandatory.
+or
+* plugdata > 0.7.1
 
 ## Changes
 2021/04/16	-added camomile plugin compatibility
