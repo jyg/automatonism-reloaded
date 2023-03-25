@@ -52,7 +52,7 @@ Fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 * assuming you already installed Automatonism(reloaded) in ~/documents/pd/externals/automatonism folder, just type a new box in your patch : 
 
 ![image](https://user-images.githubusercontent.com/1431894/119804376-92d02b80-bee0-11eb-8bc0-db737b4dd6df.png)
-* this creates the new [declare -paths] and automatonism menu objects
+* this creates the new [declare -paths] and automatonism menu objects, provided that you installed iemgus external lib
 
 (before)
 
@@ -104,6 +104,7 @@ This will enable patch-level state-saving support with new savestate object.
 
 ### step 3 : integrate your module into automatonism_menu
 Let's update the automatonism "modules" menu entries.  
+(Here we assume that your module's name is "my_module").
 * First, open an automatonism patch, and search for extra-modules subpatch (using pd find menu).
 * Inside the [pd extra-modules] subpatch, add an object [module_create $0 $1 my_module] , save and close the window
 
