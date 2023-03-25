@@ -8,7 +8,7 @@ This is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-
 Unlike original project, **Automatonism [Reloaded]** intensively uses internal abstractions inside modules, in order to add new features.
 ## New features :
 
-* **New !** Plugdata support
+* **New !** Plugdata support (for standalone or as DAW plugin)
 * Midi-mapping and Midi-learn features
 * Camomile VST plugin and DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 * Automatonism made as an abstaction lib : init a new project just by typing [automatonism] in a blank patch. 
