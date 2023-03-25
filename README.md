@@ -47,3 +47,11 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * Clean all that stuff
 * Deeply check camomile integration
 * Write tutorial for new features (import old patch ; create new modules ; use as camomile plugin
+
+## How_to_import_old_patches
+
+https://github.com/jyg/automatonism-reloaded/blob/master/How_to_import_old_patches.md
+
+## How_to_upgrade_custom_modules
+
+https://github.com/jyg/automatonism-reloaded/blob/master/How_to_upgrade_custom_modules.md
