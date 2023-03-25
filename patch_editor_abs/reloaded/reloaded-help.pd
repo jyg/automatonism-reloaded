@@ -3,7 +3,7 @@
 #X text 165 340 parent patch state saving instead of textfile and directory
 structure;
 #X text 166 396 midi learn feature;
-#X obj 87 119 state_saving_module state_saving_module-help \$0 \$1
+#X obj 87 119 reloaded reloaded-help \$0 \$1
 ;
 #X obj 127 79 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;

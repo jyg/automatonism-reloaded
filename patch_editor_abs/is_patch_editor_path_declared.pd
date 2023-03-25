@@ -2,5 +2,6 @@
 #X obj 176 173 inlet;
 #X obj 183 276 outlet;
 #X msg 182 218 1;
-#X connect 0 0 2 0 empty;
-#X connect 2 0 1 0 empty;
+#X text 17 41 this is a dummy patch invoqued by automatonism abstraction to know if patch_editor_abs path has been declared;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;

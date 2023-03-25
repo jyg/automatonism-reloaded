@@ -178,8 +178,8 @@
 #X obj 215 61 t b b;
 #X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
-#X obj 261 480 state_saving_module/textfile \$0;
-#X obj 119 690 state_saving_module/textfile \$0;
+#X obj 261 480 reloaded/textfile \$0;
+#X obj 119 690 reloaded/textfile \$0;
 #X obj 165 337 r \$0-cycle-s;
 #X obj 135 317 r \$0-beat-mult-s;
 #X msg 132 650 write statesave/\$1-playhead-ss.txt;
@@ -226,11 +226,11 @@
 #X obj 599 388 makefilename %d;
 #X obj 162 121 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 599 413 label \$1;
-#X obj 10 50 state_saving_module playhead \$0 \$1;
+#X obj 10 50 reloaded playhead \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hradio_dispatch playhead \$0 \$1 0 5 beat-mult-radio-s beat-mult-radio-r beat-multiply #FFE2C2 #FFAE44 #000000;
-#X obj 10 60 state_saving_module/hradio_dispatch playhead \$0 \$1 0 5 mes-s mes-r synchro(bar) #FFE2C2 #FFAE44 #000000;
+#X obj 10 0 reloaded/hradio_dispatch playhead \$0 \$1 0 5 beat-mult-radio-s beat-mult-radio-r beat-multiply #FFE2C2 #FFAE44 #000000;
+#X obj 10 60 reloaded/hradio_dispatch playhead \$0 \$1 0 5 mes-s mes-r synchro(bar) #FFE2C2 #FFAE44 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 105 144 tgl 15 0 \$0-int_clock empty clock 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 224 368 s \$0-bpm-s;

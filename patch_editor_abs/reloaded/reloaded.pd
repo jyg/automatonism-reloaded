@@ -1,5 +1,5 @@
 #N canvas 436 51 1218 1026 16;
-#X declare -path state_saving_module;
+#X declare -path reloaded;
 #X obj 20 11 inlet;
 #X obj 372 19 inlet;
 #X obj 417 976 outlet;
@@ -20,7 +20,7 @@
 #X obj 415 776 s;
 #X obj 380 635 t b s;
 #X msg 451 732 symbol \$2-dispatch_\$1;
-#X obj 828 81 declare -path state_saving_module;
+#X obj 828 81 declare -path reloaded;
 #N canvas 0 0 450 300 check-module-ID 1;
 #X obj 105 44 inlet;
 #X obj 96 139 f \$3;

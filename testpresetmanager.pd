@@ -8,11 +8,11 @@
 #X obj 270 10 declare -path automatonism/patch_editor_abs;
 #X obj 270 40 namecanvas \$0-this;
 #X obj 12 11 automatonism_menu \$0;
-#X text 28 278 OK state_saving_module/upgrade génère un sous-patch où sont créés les listeners (hsl_dispatch), f 97;
+#X text 28 278 OK reloaded/upgrade génère un sous-patch où sont créés les listeners (hsl_dispatch), f 97;
 #X text 30 322 OK dossier STATE_SAVING_MODULE pour stocker tous les listeners, f 69;
 #X text 29 301 OK empecher automatonism de se creer une deuxieme fois;
 #X text 29 342 OK touche esc seulement pour patch courant (needs iemguts);
-#X text 174 202 -> transformer tous les textfaile en state_saving_module/textfile \$0, f 71;
+#X text 174 202 -> transformer tous les textfaile en reloaded/textfile \$0, f 71;
 #X obj 863 175 mega-sequencer 1;
 #X text 874 113 Mega sequencer a son propre systeme de presets inde[endant de preset manager;
 #X obj 877 557 ratchet-seq 1;

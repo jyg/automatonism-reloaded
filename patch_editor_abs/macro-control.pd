@@ -10,7 +10,7 @@
 #X connect 0 0 3 0;
 #X connect 3 0 1 0;
 #X restore 301 20 pd instance-number;
-#X obj 480 81 state_saving_module macro-control \$0 \$1;
+#X obj 480 81 reloaded macro-control \$0 \$1;
 #X obj 520 41 savestate;
 #X obj 1166 236 r \$0-macro1-value-s;
 #X obj 1332 239 r \$0-macro2-value-s;
@@ -291,10 +291,10 @@
 #X connect 17 0 0 0;
 #X restore 757 41 pd labels(numbers);
 #N canvas 0 57 1920 1023 \$0-gui_listeners 0;
-#X obj 38 47 state_saving_module/macro_dispatch macro-control \$0 \$1 0 127 macro4-value-s macro4-value-r macro:\\\$1:4 #EEEECC #000000 #000000;
-#X obj 38 102 state_saving_module/macro_dispatch macro-control \$0 \$1 0 127 macro3-value-s macro3-value-r macro:\\\$1:3 #EEEECC #000000 #000000;
-#X obj 43 159 state_saving_module/macro_dispatch macro-control \$0 \$1 0 127 macro2-value-s macro2-value-r macro:\\\$1:2 #EEEECC #000000 #000000;
-#X obj 38 214 state_saving_module/macro_dispatch macro-control \$0 \$1 0 127 macro1-value-s macro1-value-r macro:\\\$1:1 #EEEECC #000000 #000000;
+#X obj 38 47 reloaded/macro_dispatch macro-control \$0 \$1 0 127 macro4-value-s macro4-value-r macro:\\\$1:4 #EEEECC #000000 #000000;
+#X obj 38 102 reloaded/macro_dispatch macro-control \$0 \$1 0 127 macro3-value-s macro3-value-r macro:\\\$1:3 #EEEECC #000000 #000000;
+#X obj 43 159 reloaded/macro_dispatch macro-control \$0 \$1 0 127 macro2-value-s macro2-value-r macro:\\\$1:2 #EEEECC #000000 #000000;
+#X obj 38 214 reloaded/macro_dispatch macro-control \$0 \$1 0 127 macro1-value-s macro1-value-r macro:\\\$1:1 #EEEECC #000000 #000000;
 #X restore 480 111 pd \$0-gui_listeners;
 #X obj 101 118 cnv 15 168 170 empty \$0-plugin_name-r camomile 15 14 0 26 #fcfcc4 #e0c4fc 0;
 #X obj 111 122 cnv 5 5 5 empty empty MACRO-CONTROL 0 0 0 12 #fcfcfc #404040 0;

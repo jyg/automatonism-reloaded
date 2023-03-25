@@ -234,10 +234,10 @@
 #X obj 276 704 +;
 #N canvas 0 57 1920 1023 state-saving-multiple-instances 0;
 #X obj 205 1 loadbang;
-#X obj 317 424 state_saving_module/textfile \$0;
+#X obj 317 424 reloaded/textfile \$0;
 #X msg 587 297 rewind;
 #X msg 544 297 bang;
-#X obj 110 663 state_saving_module/textfile \$0;
+#X obj 110 663 reloaded/textfile \$0;
 #X obj 544 258 t b b;
 #X obj 111 329 f;
 #X obj 124 552 f;
@@ -310,7 +310,7 @@
 #X connect 35 5 31 0;
 #X connect 35 6 36 0;
 #X restore 1330 579 pd state-saving-multiple-instances;
-#X obj 1336 699 state_saving_module preset-manager \$0 \$1;
+#X obj 1336 699 reloaded preset-manager \$0 \$1;
 #X obj 1376 659 savestate;
 #X obj 769 377 v \$0-store-location-s;
 #X obj 795 427 s \$0-store-location-s;

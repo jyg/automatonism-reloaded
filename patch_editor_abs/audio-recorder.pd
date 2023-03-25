@@ -62,11 +62,11 @@
 #X obj 540 450 pack f f;
 #X msg 539 545 open -bytes 3 ../recorded_wavs/mix_take\$1.wav;
 #X obj 579 1 delay 250;
-#X obj 857 370 state_saving_module audio-recorder \$0 \$1;
+#X obj 857 370 reloaded audio-recorder \$0 \$1;
 #X obj 897 330 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/bng_dispatch audio-recorder \$0 \$1 250 50 rec-reset-s rec-reset-r RST #FFFFFF #000000 #000000;
-#X obj 10 60 state_saving_module/hsl_dispatch audio-recorder \$0 \$1 0 127 rec-level-s rec-level-r LEVEL #9999DE #000000 #000000;
+#X obj 10 0 reloaded/bng_dispatch audio-recorder \$0 \$1 250 50 rec-reset-s rec-reset-r RST #FFFFFF #000000 #000000;
+#X obj 10 60 reloaded/hsl_dispatch audio-recorder \$0 \$1 0 127 rec-level-s rec-level-r LEVEL #9999DE #000000 #000000;
 #X restore 857 400 pd \$0-gui_listeners;
 #X obj 994 402 namecanvas \$0-this;
 #X connect 0 0 8 0;

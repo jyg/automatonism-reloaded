@@ -85,12 +85,12 @@
 #X connect 28 1 19 0;
 #X connect 28 2 24 0;
 #X restore 102 306 pd external-messages;
-#X obj 10 50 state_saving_module manual-triggers \$0 \$1;
+#X obj 10 50 reloaded manual-triggers \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/bng_dispatch manual-triggers \$0 \$1 250 50 manual-trig2!-s manual-trig2!-r empty #FFFFFF #DE4C91 #000000;
-#X obj 10 60 state_saving_module/bng_dispatch manual-triggers \$0 \$1 250 50 manual-trig1!-s manual-trig1!-r empty #FFFFFF #DE4C91 #000000;
-#X obj 10 120 state_saving_module/bng_dispatch manual-triggers \$0 \$1 250 50 manual-trig3!-s manual-trig3!-r empty #FFFFFF #DE4C91 #000000;
+#X obj 10 0 reloaded/bng_dispatch manual-triggers \$0 \$1 250 50 manual-trig2!-s manual-trig2!-r empty #FFFFFF #DE4C91 #000000;
+#X obj 10 60 reloaded/bng_dispatch manual-triggers \$0 \$1 250 50 manual-trig1!-s manual-trig1!-r empty #FFFFFF #DE4C91 #000000;
+#X obj 10 120 reloaded/bng_dispatch manual-triggers \$0 \$1 250 50 manual-trig3!-s manual-trig3!-r empty #FFFFFF #DE4C91 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 9 0;

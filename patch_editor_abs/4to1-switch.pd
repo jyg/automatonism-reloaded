@@ -41,10 +41,10 @@
 #X obj 231 116 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
-#X obj 261 480 state_saving_module/textfile \$0;
+#X obj 261 480 reloaded/textfile \$0;
 #X msg 556 463 rewind;
 #X msg 513 463 bang;
-#X obj 119 690 state_saving_module/textfile \$0;
+#X obj 119 690 reloaded/textfile \$0;
 #X obj 513 424 t b b;
 #X obj 120 356 f;
 #X obj 133 579 f;
@@ -111,11 +111,11 @@
 #X obj 1025 146 + 2;
 #X floatatom 1025 168 5 0 0 0 - - - 0;
 #X obj 881 181 + 1;
-#X obj 10 50 state_saving_module 4to1-switch \$0 \$1;
+#X obj 10 50 reloaded 4to1-switch \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/hradio_dispatch 4to1-switch \$0 \$1 0 2 4to1-steps-s 4to1-steps-r STEPS #FFFFFF #DE4C91 #000000;
-#X obj 10 60 state_saving_module/hradio_dispatch 4to1-switch \$0 \$1 0 3 4to1-select-s 4to1-select-r empty #FFFFFF #DE4C91 #000000;
+#X obj 10 0 reloaded/hradio_dispatch 4to1-switch \$0 \$1 0 2 4to1-steps-s 4to1-steps-r STEPS #FFFFFF #DE4C91 #000000;
+#X obj 10 60 reloaded/hradio_dispatch 4to1-switch \$0 \$1 0 3 4to1-select-s 4to1-select-r empty #FFFFFF #DE4C91 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #N canvas 0 0 1920 1021 state-saving-via-preset-manager-module 0;
 #X msg 719 210 rewind;
@@ -140,8 +140,8 @@
 #X obj 165 462 f \$1;
 #X obj 328 26 r preset-manager-scan;
 #X obj 135 418 r preset-manager-store-slot;
-#X obj 340 227 state_saving_module/textfile \$0;
-#X obj 106 568 state_saving_module/textfile \$0;
+#X obj 340 227 reloaded/textfile \$0;
+#X obj 106 568 reloaded/textfile \$0;
 #X obj 107 301 pack f f;
 #X msg 106 368 set \$1 \$2;
 #X obj 340 249 unpack f f;

@@ -3,10 +3,10 @@
 #X obj 139 200 pack 0 50;
 #X obj 139 222 line~;
 #X obj 139 244 outlet~;
-#X obj 10 50 state_saving_module manual-toggle \$0 \$1;
+#X obj 10 50 reloaded manual-toggle \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 state_saving_module/tgl_dispatch manual-toggle \$0 \$1 0 1 manualtoggle manualtoggle-rcv empty #FFFFFF #000000 #000000;
+#X obj 10 0 reloaded/tgl_dispatch manual-toggle \$0 \$1 0 1 manualtoggle manualtoggle-rcv empty #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 258 171 r \$0-manualtoggle;
 #X obj 104 109 cnv 5 5 5 empty empty MANUAL-TOGGLE 0 0 0 12 #fcfcfc #404040 0;

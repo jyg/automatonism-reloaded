@@ -1,6 +1,6 @@
 #N canvas 0 32 1920 994 12;
 #X declare -lib iemguts;
-#X declare -path patch_editor_abs/state_saving_module;
+#X declare -path patch_editor_abs/reloaded;
 #N canvas 0 0 450 300 DSP 0;
 #X obj 41 62 inlet;
 #X msg 41 85 dsp \$1;
@@ -330,7 +330,7 @@
 #X obj 336 529 list append;
 #X obj 339 501 t b s;
 #X obj 334 597 s;
-#X text 427 494 forward camomile plug messages to [state_saving_module] instances;
+#X text 427 494 forward camomile plug messages to [reloaded] instances;
 #X obj 89 576 s SAVE-S;
 #X obj 56 543 t b b;
 #X obj 371 284 t b;
@@ -399,7 +399,7 @@
 #X obj 1489 159 cnv 15 180 15 empty empty OSCILLATORS: 10 8 0 12 #9898dc #fcfcfc 0;
 #X obj 1490 198 cnv 15 180 15 empty empty SOUND-PROCESSORS: 10 8 0 12 #9898dc #fcfcfc 0;
 #X obj 1489 217 cnv 15 180 15 empty empty UTILITY&LOGIC: 10 8 0 12 #9898dc #fcfcfc 0;
-#X obj 1039 51 declare -path patch_editor_abs/state_saving_module;
+#X obj 1039 51 declare -path patch_editor_abs/reloaded;
 #X obj 248 344 canvas.setname \$0-target_patch 1;
 #X obj 248 372 r \$0-target_patch;
 #X text 552 419 vanilla;
@@ -827,8 +827,8 @@
 #N canvas 236 274 442 200 \$0-state-saving 0;
 #X obj 17 12 cnv 15 400 60 empty empty STATE_SAVING 20 12 0 14 #dc4c90 #fcfcfc 0;
 #N canvas 2 586 450 300 deprecated 0;
-#X text 20 22 The state saving system works by writing parameter values to state_saving_module/textfile \$0s in the folder "statesave" inside the "patch_editor_abs" folder. When you load a module form the module list it is automatically being given a unique creation argument which creates a state_saving_module/textfile \$0 unique for that instance of the module. To save your patch \, simply save as you normally would from the FILE menu and the press ENTER on your keyboard or click the SAVE button in the upper left corner of the main window.;
-#X text 20 196 IMPORTANT!!! To start a new project \, the entire folder structure needs to be copied since the abstractions and state_saving_module/textfile \$0s are unique to every project. Click the RESET button in the upper left corner to reset the counter that gives unique creation arguments for the modules.;
+#X text 20 22 The state saving system works by writing parameter values to reloaded/textfile \$0s in the folder "statesave" inside the "patch_editor_abs" folder. When you load a module form the module list it is automatically being given a unique creation argument which creates a reloaded/textfile \$0 unique for that instance of the module. To save your patch \, simply save as you normally would from the FILE menu and the press ENTER on your keyboard or click the SAVE button in the upper left corner of the main window.;
+#X text 20 196 IMPORTANT!!! To start a new project \, the entire folder structure needs to be copied since the abstractions and reloaded/textfile \$0s are unique to every project. Click the RESET button in the upper left corner to reset the counter that gives unique creation arguments for the modules.;
 #X restore 31 143 pd deprecated;
 #X restore 35 504 pd \$0-state-saving;
 #X obj 34 526 r \$0-open-state-saving!;
