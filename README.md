@@ -25,12 +25,17 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * start patching.
 
 ## Software Requirements
-* pd >= 0.51
-* external lib iemguts needed for enhanced editing features, but not mandatory.
-or
-* plugdata > 0.7.1
+* **pd** >= 0.51
+* external lib **iemguts** needed for enhanced editing features, but not mandatory.
+
+**or**
+
+* **plugdata** > 0.7.1
 
 ## Changes
+
+2023/03/25	-revwriting for plugdata support
+
 2021/04/16	-added camomile plugin compatibility
 
 2021/04/01	-added megalon extra-sampler module for Automatonism
