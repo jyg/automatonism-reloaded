@@ -1,0 +1,9 @@
+#N canvas 2 682 450 300 12;
+#X text 61 16 dummy patch;
+#X text 60 38 for puredata not complaining if else not available;
+#X obj 140 128 loadbang;
+#X msg 146 164 1;
+#X obj 145 190 s ELSE_NOT_LOADED;
+#X text 64 66 signals that else lib is not installed;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
