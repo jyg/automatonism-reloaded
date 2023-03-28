@@ -1,8 +1,8 @@
 #N canvas 0 23 1450 610 10;
-#X obj 222 145 tgl 15 1 \$0-clock-on/off-s \$0-clock-on/off-r ON/OFF 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 222 145 tgl 15 1 \$0-clock-on/off-s \$0-clock-on/off-r ON/OFF 17 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 409 211 metro 100;
 #X obj 408 285 vline~;
-#X obj 108 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r RATE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r RATE 133 7 0 10 #ffffff #000000 #000000 7763 1;
 #X floatatom 105 141 5 0 0 0 - - - 0;
 #X msg 110 213 127 \$1;
 #X obj 110 235 -;
@@ -78,7 +78,7 @@
 #X restore 594 355 pd state-saving-multiple-instances;
 #X obj 594 425 s \$0-instance-num;
 #X obj 594 377 makefilename %d;
-#X obj 200 115 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 200 115 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X msg 594 402 label \$1;
 #X obj 103 167 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 574 105 threshold~ 0.99 0 0.99 0;
@@ -266,7 +266,7 @@
 #X restore 590 277 pd external-messages;
 #X obj 10 50 reloaded clock \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#N canvas 2 745 450 300 \$0-gui_listeners 1;
 #X obj 10 0 reloaded/hsl_dispatch clock \$0 \$1 0 127 clock-clk-rate-s clock-clk-rate-r RATE #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/tgl_dispatch clock \$0 \$1 0 1 clock-on/off-s clock-on/off-r ON/OFF #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
