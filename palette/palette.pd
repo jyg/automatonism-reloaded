@@ -1,0 +1,2 @@
+#N canvas 455 87 450 300 12;
+#X obj 60 73 basic-osc;
