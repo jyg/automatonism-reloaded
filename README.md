@@ -5,6 +5,8 @@
 
 This is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
+The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping. 
+
 Unlike original project, **Automatonism [Reloaded]** intensively uses internal abstractions inside modules, in order to add new features.
 ## New features :
 
