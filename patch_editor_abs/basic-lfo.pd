@@ -4,7 +4,7 @@
 #X floatatom 204 114 5 0 0 1 Hz - - 0;
 #X obj 77 450 +~;
 #X obj 217 433 *~ 127;
-#X obj 106 128 hsl 128 15 0 127 0 1 \$0-basic-lfo-freq-s \$0-basic-lfo-freq-r FREQ 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 106 128 hsl 128 15 0 127 0 1 \$0-basic-lfo-freq-s \$0-basic-lfo-freq-r FREQ 135 7 0 10 #fcfcfc #000000 #000000 4800 1;
 #X obj 269 109 cnv 5 5 5 empty empty SYNC 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 77 502 +~;
 #X obj 103 121 cnv 5 5 5 empty empty BASIC-LFO 0 0 0 12 #fcfcfc #404040 0;
@@ -45,7 +45,7 @@
 #X connect 12 0 13 0;
 #X connect 13 0 15 0;
 #X restore 77 531 pd sinewave;
-#X obj 174 121 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 174 121 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #N canvas 0 22 732 465 triangle 0;
 #X obj 428 75 r \$0-basic-lfo-sync!;
 #X obj 340 53 inlet~;
@@ -154,7 +154,7 @@
 #X connect 13 0 7 0;
 #X connect 14 0 13 0;
 #X restore 350 519 pd pulse;
-#N canvas 315 35 593 735 state-saving-multiple-instances 0;
+#N canvas 315 35 593 735 state-saving-multiple-instances 1;
 #X obj 137 29 loadbang;
 #X obj 184 452 reloaded/textfile \$0;
 #X msg 466 435 rewind;
@@ -411,7 +411,7 @@
 #X connect 38 0 32 0;
 #X connect 39 0 34 0;
 #X restore 316 100 pd state-saving-via-preset-manager-module;
-#X obj 106 158 hsl 128 15 0 127 0 1 \$0-basic-lfo-depth-s \$0-basic-lfo-depth-r DEPTH 135 7 0 10 #8480d4 #000000 #000000 0 1;
+#X obj 106 158 hsl 128 15 0 127 0 1 \$0-basic-lfo-depth-s \$0-basic-lfo-depth-r DEPTH 135 7 0 10 #8480d4 #000000 #000000 2100 1;
 #X obj 104 109 cnv 5 5 5 empty empty FREQ 0 0 0 8 #fcfcfc #404040 0;
 #X obj 77 374 t f f;
 #X obj 77 270 r \$0-basic-lfo-freq-s;

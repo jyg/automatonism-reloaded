@@ -1,0 +1,6 @@
+#N canvas 129 384 450 300 12;
+#X obj 109 29 inlet;
+#X obj 217 32 inlet;
+#X obj 108 123 outlet;
+#X obj 206 125 outlet;
+#X text 170 82 dummy object for plugdata;
