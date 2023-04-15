@@ -1,6 +1,7 @@
 Those are the files inside pd-automatonism.vst3 structure, for documentation purposes.
+You have to download camomile binaries here : https://github.com/pierreguillot/Camomile/releases
 
-Camomile plugins have the following structure :
+Camomile plugins have the following structure (folders are in square brackets) :
 
 ## Linux : 
 ![image](https://user-images.githubusercontent.com/1431894/143006750-827202c9-6b51-4340-8fb2-58cd418905af.png)
