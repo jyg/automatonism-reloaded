@@ -1,0 +1,16 @@
+#N struct 1535-rectangle float x float y float width float height;
+#N canvas 551 565 450 300 12;
+#X declare -path automatonism/palette;
+#X scalar 1535-rectangle 44 349 100 20 \;;
+#X scalar 1535-rectangle 13 362 100 20 \;;
+#X scalar 1535-rectangle 13 362 100 20 \;;
+#X obj 20 13 declare -path automatonism/palette;
+#X obj 108 46 palette;
+#X obj 46 154 basic-osc;
+#X obj 42 195 bwl-osc 1;
+#A saved preset statesave/1-bwl-osc-ss.txt 111 78 68 0 3;
+#A saved dispatch bwl-osc-fm-att-s 0;
+#A saved dispatch bwl-osc-pitch-s 111;
+#A saved dispatch bwl-osc-pwidth-s 78;
+#A saved dispatch bwl-osc-cv-att-s 68;
+#A saved dispatch bwl-osc-wform-s 3;

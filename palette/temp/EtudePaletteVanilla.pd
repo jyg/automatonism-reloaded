@@ -1,8 +1,10 @@
-#N canvas 193 86 1013 696 12;
+#N struct 1495-rectangle float x float y float width float height;
+#N canvas 374 92 1013 696 12;
 #X declare -path automatonism/patch_editor_abs;
+#X scalar 1495-rectangle 891 411 100 20 \;;
+#X scalar 1495-rectangle 891 411 100 20 \;;
+#X scalar 1495-rectangle 891 411 100 20 \;;
 #X obj 195 52 namecanvas \$0-this;
 #X obj 10 10 declare -path automatonism/patch_editor_abs;
 #X obj 337 43 automatonism;
-#A saved esc-active 1;
-#X obj 302 326 bwl-osc 1;
-#A saved preset statesave/1-bwl-osc-ss.txt 111 78 68 0 3;
+#A saved esc-active 2;

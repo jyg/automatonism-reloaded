@@ -1,0 +1,7 @@
+#N struct 1535-rectangle float x float y float width float height;
+#N canvas 966 169 641 434 12;
+#X declare -path automatonism/patch_editor_abs;
+#X obj 10 10 declare -path automatonism/patch_editor_abs;
+#X obj 21 46 automatonism;
+#A saved esc-active 1;
+#X obj 423 122 my_palette;

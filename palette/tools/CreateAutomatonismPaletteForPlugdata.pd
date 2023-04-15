@@ -4,4 +4,8 @@
 #X text -5812 -5709 comment;
 #X text -5812 -5709 comment;
 #X text -5812 -5709 comment;
-#X text 78 83 copy text from popup and \, on the left panel \, click ¨ New palette from clipboard¨;
+#X text 51 79 copy text from popup and \, on the left panel \, click ¨ New palette from clipboard¨;
+#X text 14 20 IF YOU ARE USING PLUGDATA;
+#X text 54 55 you can create a new palette;
+#X text 18 177 IF YOU ARE USING PUREDATA VANILLA;
+#X text 50 212 you should install iemguts externals lib in order to have a palette;
