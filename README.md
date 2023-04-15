@@ -11,6 +11,7 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 ## New features :
 
 * New ! **Plugdata compatible** (for standalone or as DAW plugin)
+* New ! Customizable palettes for quickly adding modules into your project 
 * **Midi-mapping and Midi-learn features**
 * Camomile VST plugin and DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 * Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. 
