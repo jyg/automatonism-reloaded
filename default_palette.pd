@@ -1,0 +1,12 @@
+#N canvas 551 565 485 328 12;
+#X declare -path automatonism/palette;
+#X obj 20 17 declare -path automatonism/palette;
+#X obj 267 17 palette;
+#X obj 26 168 maestro4;
+#X obj 22 100 bwl-osc;
+#X obj 27 204 basic-lfo;
+#N canvas 860 279 507 229 About_this_palette/How_to_create_another_palette 0;
+#X text 9 40 This is the default palette for Automatonism. You can customize it with new objects., f 63;
+#X text 12 82 You can create a new palette from this template \, by saving this patch with another name \, in another folder.;
+#X text 15 133 All you have to do is to instantiate your new palette in your main Automatonism patch;
+#X restore 19 43 pd About_this_palette/How_to_create_another_palette;
