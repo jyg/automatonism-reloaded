@@ -1,0 +1,3 @@
+#N canvas 1214 87 450 300 12;
+#X text 8 33 [reloaded/textfile] abstraction overwrites [textfile] object for Automatonism and reads/writes from a [text define] structure instead or reading from filesystem.;
+#X text 9 98 This mecanism enables state saving inside the patch \, which is one of the new important features of Automatonism [reloaded].;

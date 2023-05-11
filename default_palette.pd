@@ -1,4 +1,4 @@
-#N canvas 551 565 485 328 12;
+#N canvas 868 403 485 328 12;
 #X declare -path automatonism/palette;
 #X obj 20 17 declare -path automatonism/palette;
 #X obj 267 17 palette;
@@ -10,3 +10,4 @@
 #X text 12 82 You can create a new palette from this template \, by saving this patch with another name \, in another folder.;
 #X text 15 133 All you have to do is to instantiate your new palette in your main Automatonism patch;
 #X restore 19 43 pd About_this_palette/How_to_create_another_palette;
+#X text 158 96 <- paste here the current modules you use;
