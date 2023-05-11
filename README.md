@@ -1,7 +1,7 @@
 # Automatonism [Reloaded]
 ![image](https://user-images.githubusercontent.com/1431894/227710524-edfb046d-e393-48c3-a578-8040f372e282.png)
 
-<p align="left"> <img src="https://raw.githubusercontent.com/jyg/automatonism/master/automatonism_51.png" alt="automatonism_51" ></p>
+![image](https://github.com/jyg/automatonism-reloaded/assets/1431894/dbda805b-cfa4-4a82-afad-e6f6d56dfc26)
 
 This is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
