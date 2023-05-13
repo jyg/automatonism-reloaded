@@ -38,7 +38,7 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 
 ## Changes
 
-2023/03/25	-rewrote for plugdata support
+2023/03/25	-rewrite for plugdata support
 
 2021/04/16	-added camomile plugin compatibility
 
