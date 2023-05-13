@@ -21,7 +21,7 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * **Several projects can run simultaneously and independently** ("local mode" in Preset-Manager)
 
 ## Installation :
-* Automaonism should be now accessible via Deken menu in puredata (Help -> Find Extrenals)
+* Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Extrenals)
 * You can also download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip
 * For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases
 * Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
