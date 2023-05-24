@@ -21,12 +21,12 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * **Several projects can run simultaneously and independently** ("local mode" in Preset-Manager)
 
 ## Installation :
-* Download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip
+* Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals)
+* You can also download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip. Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
 * For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases
-* Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
 * If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism_menu object and add declare paths.
-* Alternatively, you can open an included template-patche and save it anywhere with a new name.
-* start patching.
+* Alternatively, you can open an included template-patch and save it anywhere with a new name.
+* Start patching.
 
 ## Software Requirements
 * **pd** >= 0.51
@@ -38,7 +38,7 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 
 ## Changes
 
-2023/03/25	-revwriting for plugdata support
+2023/03/25	-rewrite for plugdata support
 
 2021/04/16	-added camomile plugin compatibility
 
