@@ -1,0 +1,8 @@
+#N canvas 827 239 527 327 12;
+#X declare -path automatonism/palette;
+#X obj 65 83 declare -path automatonism/palette;
+#X obj 104 233 pic 0 bwl-osc.png empty empty 0 0;
+#X msg 96 178 open else/red.gif;
+#X msg 119 141 open bwl-osc.png;
+#X connect 2 0 1 0 empty;
+#X connect 3 0 1 0 empty;

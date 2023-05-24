@@ -2,8 +2,8 @@
 #X obj 108 133 hsl 128 15 0 127 0 1 \$0-karplus2-pitch-s \$0-karplus2-pitch-r PITCH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 132 393 noise~;
 #X obj 182 668 *~;
-#X obj 108 148 hsl 128 15 0 127 0 1 \$0-karplus2-contour-s \$0-karplus2-contour-r CONTOUR 135 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 108 178 hsl 128 15 0 127 0 1 \$0-karplus2-resonate-s \$0-karplus2-resonate-r RESONATE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 148 hsl 128 15 0 127 0 1 \$0-karplus2-contour-s \$0-karplus2-contour-r CONTOUR 135 7 0 10 #fcfcfc #000000 #000000 3400 1;
+#X obj 108 178 hsl 128 15 0 127 0 1 \$0-karplus2-resonate-s \$0-karplus2-resonate-r RESONATE 135 7 0 10 #fcfcfc #000000 #000000 10100 1;
 #X obj 453 758 *~ 0.99;
 #X obj 71 580 vd~ \$0-kps;
 #X obj 105 116 bng 15 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
@@ -12,13 +12,13 @@
 #X obj 474 636 + 200;
 #X floatatom 206 119 5 0 0 0 - - - 0;
 #X obj 420 597 *~;
-#X obj 108 163 hsl 128 15 0 127 0 1 \$0-karplus2-damp-slider-s \$0-karplus2-damp-slider-r DAMP 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 163 hsl 128 15 0 127 0 1 \$0-karplus2-damp-slider-s \$0-karplus2-damp-slider-r DAMP 135 7 0 10 #fcfcfc #000000 #000000 8700 1;
 #X obj 435 476 pack 0 50;
 #X obj 435 498 line~;
 #X obj 435 408 / 127;
 #X obj 435 430 * 0.1999;
 #X obj 435 452 + 0.8;
-#X obj -175 126 threshold~ 0.9 0 0.9 0;
+#X obj -175 86 threshold~ 0.9 0 0.9 0;
 #X obj 71 276 r \$0-karplus2-pitch-s;
 #X obj 474 568 r \$0-karplus2-damp-s;
 #X obj -176 323 s \$0-karplus-excite-bang1!;
@@ -94,7 +94,7 @@
 #X obj 290 365 / 127;
 #X obj 290 387 * 4800;
 #X obj 290 409 + 200;
-#X obj 108 193 hsl 128 15 0 127 0 1 \$0-karplus2-color-s \$0-karplus2-color-r COLOR 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 193 hsl 128 15 0 127 0 1 \$0-karplus2-color-s \$0-karplus2-color-r COLOR 135 7 0 10 #fcfcfc #000000 #000000 1500 1;
 #X obj 290 341 r \$0-karplus2-color-s;
 #X obj 435 304 samphold~;
 #X obj 262 275 t b b;
@@ -268,7 +268,7 @@
 #X obj -70 413 loadbang;
 #X obj -70 435 metro 20;
 #X obj -175 474 clip 0 127;
-#X obj -175 104 inlet~ 1-TRIG;
+#X obj -175 64 inlet~ 1-TRIG;
 #X obj 485 76 *~ 127;
 #X obj 485 98 s~ \$0-kps-contour-cv;
 #X obj -160 391 r~ \$0-kps-contour-cv;
@@ -276,7 +276,7 @@
 #X obj 124 125 cnv 5 5 5 empty empty KARPLUS 0 0 0 12 #fcfcfc #404040 0;
 #X obj 284 109 cnv 5 5 5 empty empty CLR 0 0 0 8 #fcfcfc #000000 0;
 #X obj 273 218 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #000000 0;
-#X obj 178 125 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 178 125 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 127 109 cnv 5 5 5 empty empty EXT.EX 0 0 0 8 #fcfcfc #000000 0;
 #X obj 290 453 line~;
 #X obj 290 502 +~;
@@ -1149,6 +1149,7 @@
 #X connect 6 0 12 0;
 #X connect 6 0 132 0;
 #X connect 6 0 133 0;
+#X connect 7 0 31 0;
 #X connect 8 0 9 0;
 #X connect 9 0 10 0;
 #X connect 10 0 77 0;
@@ -1158,7 +1159,6 @@
 #X connect 16 0 17 0;
 #X connect 17 0 18 0;
 #X connect 18 0 14 0;
-#X connect 19 0 31 0;
 #X connect 19 0 7 0;
 #X connect 20 0 29 0;
 #X connect 21 0 8 0;

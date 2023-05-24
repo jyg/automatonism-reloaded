@@ -1,4 +1,4 @@
-#N canvas 378 21 1218 1026 16;
+#N canvas 378 21 1538 1026 16;
 #X declare -path reloaded;
 #X obj 90 11 inlet;
 #X obj 442 19 inlet;

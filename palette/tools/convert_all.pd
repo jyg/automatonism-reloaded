@@ -68,7 +68,7 @@
 #X msg 1589 123 file:///home/jyg/Desktop/Documents/Pd/externals/automatonism/palette/template.txt;
 #X msg 1455 123 set \$1;
 #X msg 1523 344 set \$1;
-#X msg 1523 369 The\ "xfade\ module\ is\ a\ simple\ crossfader.;
+#X msg 1523 369 The "xfade module is a simple crossfader.;
 #N canvas 239 242 584 606 split_first_dot 0;
 #X obj 122 36 inlet;
 #X obj 122 61 list fromsymbol;
@@ -126,7 +126,7 @@
 #X connect 23 2 10 1;
 #X restore 1400 205 pd split_first_dot;
 #X obj 1430 76 iemlib/mergefilename space;
-#X msg 1455 148 The\ "xfade\ module\ is\ a\ simple\ crossfader.\ Two\ signal\ input\ can\ be\ crossfaded\ with\ a\ slider\ manually\ or\ with\ cv.;
+#X msg 1455 148 The "xfade module is a simple crossfader. Two signal input can be crossfaded with a slider manually or with cv.;
 #X msg 1177 294 line 0;
 #X obj 1301 241 list prepend;
 #X obj 1301 322 list append;

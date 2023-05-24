@@ -1,0 +1,18 @@
+#N canvas 1070 192 743 559 12;
+#X obj 26 130 hradio 44 1 0 5 \$0-click empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X obj 91 428 onMouseOver basic-osc \$0;
+#X obj 174 398 savestate;
+#X obj 99 231 inlet The "BASIC-OSC" module is a simple oscillator providing sine \, triangle \, saw and pulsewave with adjustable pulsewidth.;
+#X obj 26 130 cnv 44 220 44 1136-get_pos \$0-pos-rcv basic-osc 50 22 0 12 #ffffff #404040 0;
+#X obj 26 130 else/pic 0 automatonism/palette/thumbnails/basic-osc.png empty empty 0 0;
+#X msg 199 45 outline 0;
+#X obj 191 13 loadbang;
+#X msg 79 479 simple oscillator providing sine/triangle/saw/pulsewave with adjustable pulsewidth.;
+#X connect 1 0 8 0;
+#X connect 1 1 2 0;
+#X connect 2 0 1 1;
+#X connect 2 1 1 2;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 1 0;
+#X coords 0 -1 1 1 220 44 2 26 130;

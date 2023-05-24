@@ -1,0 +1,4 @@
+#N canvas 129 384 450 300 12;
+#N canvas 1214 87 450 300 gop 0;
+#X coords 0 -1 1 1 85 60 1 100 100;
+#X restore 76 213 pd gop;
