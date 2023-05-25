@@ -3,10 +3,6 @@
 
 ![image](https://github.com/jyg/automatonism-reloaded/assets/1431894/dbda805b-cfa4-4a82-afad-e6f6d56dfc26)
 
-https://github.com/jyg/automatonism-reloaded/assets/1431894/99c1650b-d64c-499c-844c-26a7b418a925
-
-
-
 This is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping. 
@@ -16,6 +12,8 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 
 * New ! **Plugdata compatible** (for standalone or as DAW plugin)
 * New ! **Customizable palettes** for quickly adding modules into your project (works for vanilla + iemguts and for plugdata)
+
+ see here : [palette/README.md](https://github.com/jyg/automatonism-reloaded/blob/901be3145e770c332564cd1bd7edf17d084b3fa4/palette/README.md)
 * **Midi-mapping and Midi-learn features**
 * Camomile VST plugin and DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 * Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. 
