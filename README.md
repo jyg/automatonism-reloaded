@@ -13,7 +13,7 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * New ! **Plugdata compatible** (for standalone or as DAW plugin)
 * New ! **Customizable palettes** for quickly adding modules into your project (works for vanilla + iemguts and for plugdata)
 
- see here : [palette/README.md](https://github.com/jyg/automatonism-reloaded/tree/master/palette#readme)
+ see here : [palette/README.md](https://github.com/jyg/automatonism-reloaded/tree/master/palette/README.md)
 * **Midi-mapping and Midi-learn features**
 * Camomile VST plugin and DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 * Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. 
