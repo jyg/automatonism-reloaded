@@ -49,7 +49,7 @@
 #X text 282 236 INSTANCE NUMBER;
 #X obj 247 151 f \$1;
 #X obj 247 187 t f f f;
-#X obj 63 377 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 63 377 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 63 273 r SAVE-S;
 #X obj 140 308 r \$0-mixer-channel1-s;
 #X obj 148 332 r \$0-mixer-channel2-s;

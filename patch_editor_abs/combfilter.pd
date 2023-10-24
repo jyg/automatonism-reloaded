@@ -228,7 +228,7 @@
 #X obj 205 603 s \$0-combfilter-feedback-r;
 #X obj 226 579 s \$0-combfilter-lowpass-r;
 #X obj 247 555 s \$0-combfilter-highpass-r;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj -16 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 289 505 s \$0-combfilter-dry/wet-r;
 #X obj 268 529 s \$0-combfilter-drive-r;
 #X obj -16 234 r SAVE-S;

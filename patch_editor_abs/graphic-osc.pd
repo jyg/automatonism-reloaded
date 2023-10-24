@@ -30,13 +30,15 @@
 #X msg 582 445 read statesave/graph-osc-shapes/graph-osc-\$1-shape\$2.txt;
 #X obj 39 368 array get \$0-graphic-osc;
 #X obj 582 577 s \$0-graphic-osc;
+#X obj 268 74 r \$0-save-s;
+#X obj 406 146 f;
 #X connect 0 0 11 0;
 #X connect 1 0 2 0;
 #X connect 2 0 19 0;
 #X connect 3 0 8 0;
 #X connect 4 0 1 0;
 #X connect 4 1 2 1;
-#X connect 6 0 15 0;
+#X connect 6 0 23 0;
 #X connect 7 0 4 0;
 #X connect 8 0 9 0;
 #X connect 9 0 18 0;
@@ -53,6 +55,8 @@
 #X connect 18 0 13 0;
 #X connect 19 0 21 0;
 #X connect 20 0 16 0;
+#X connect 22 0 23 0;
+#X connect 23 0 15 0;
 #X restore 102 361 pd write&load;
 #X obj 177 338 r \$0-graph-load-s;
 #X obj 102 318 r \$0-graph-write-s;

@@ -1,5 +1,0 @@
-#N canvas 885 578 1122 700 12;
-#X declare -path automatonism/patch_editor_abs;
-#X obj 37 43 automatonism;
-#A saved esc-active 1;
-#X obj 10 10 declare -path automatonism/patch_editor_abs;

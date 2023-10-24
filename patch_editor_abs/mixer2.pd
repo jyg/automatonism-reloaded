@@ -32,7 +32,7 @@
 #X text 282 236 INSTANCE NUMBER;
 #X obj 247 151 f \$1;
 #X obj 247 187 t f f f;
-#X obj 63 377 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 63 377 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 63 273 r SAVE-S;
 #X msg 137 650 write statesave/\$1-mixer2-ss.txt;
 #X msg 266 455 read statesave/\$1-mixer2-ss.txt;

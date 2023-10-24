@@ -2,7 +2,7 @@
 #X obj 204 109 cnv 5 5 5 empty empty LENGTH 0 0 0 8 #fcfcfc #7474a4 0;
 #X obj 124 126 cnv 5 5 5 empty empty EXTRA-SAMPLER 0 0 0 12 #fcfcfc #404040 0;
 #X obj 105 328 cnv 5 5 5 empty empty OUT_L 0 0 0 8 #fcfcfc #404040 0;
-#X obj 221 126 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
+#X obj 221 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 252 109 cnv 5 5 5 empty empty START 0 0 0 8 #fcfcfc #7474a4 0;
 #X obj 46 354 cnv 15 400 600 empty empty load_file 20 12 0 14 #e0e0e0 #404040 0;
 #X obj 457 354 cnv 15 655 955 empty empty sampler 20 12 0 14 #fce0c4 #404040 0;
@@ -205,7 +205,7 @@
 #X obj 259 534 s \$0-file-size;
 #X obj 688 1046 r \$0-file-size;
 #X obj 736 1196 outlet~;
-#N canvas 0 101 1106 875 state-saving-multiple-instances 0;
+#N canvas 0 101 1106 875 state-saving-multiple-instances 1;
 #X obj 683 25 loadbang;
 #X msg 979 352 rewind;
 #X msg 933 352 bang;
@@ -215,7 +215,7 @@
 #X obj 761 223 outlet;
 #X text 811 224 INSTANCE NUMBER;
 #X obj 715 159 f \$1;
-#X obj 129 65 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 129 65 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 129 41 r SAVE-S;
 #X msg 380 518 write statesave/\$1-sampler-ss.txt;
 #X msg 739 254 read statesave/\$1-sampler-ss.txt;

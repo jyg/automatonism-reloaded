@@ -177,7 +177,7 @@
 #X obj 191 200 t f f f;
 #X obj 191 164 f \$1;
 #X obj 164 59 t b b;
-#X obj 27 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 27 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 27 234 r SAVE-S;
 #X msg 88 436 set \$1 \$2 \$3 \$4;
 #X obj 88 398 pack f f f f;

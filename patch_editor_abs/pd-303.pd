@@ -1584,7 +1584,7 @@
 #X obj 165 95 f \$1;
 #X obj 165 131 t f f f;
 #X obj 138 62 t b b;
-#X obj -16 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj -16 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj -16 234 r SAVE-S;
 #X msg 55 651 write statesave/\$1-pd-303-ss.txt;
 #X msg 250 426 read statesave/\$1-pd-303-ss.txt;

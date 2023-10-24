@@ -1,5 +1,5 @@
 #N canvas 522 218 916 666 10;
-#X obj 108 133 hsl 128 15 0 127 0 1 \$0-3xfade-slider-s \$0-3xfade-slider-r XFADE 135 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 108 133 hsl 128 15 0 127 0 1 \$0-3xfade-slider-s \$0-3xfade-slider-r XFADE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 109 530 *~;
 #X obj 109 584 outlet~;
 #X obj 109 465 inlet~ A;
@@ -8,8 +8,8 @@
 #X obj 346 530 *~;
 #X obj 346 465 inlet~ C;
 #X obj 105 123 cnv 5 5 5 empty empty 3WAY-XFADE 0 0 0 12 #fcfcfc #404040 0;
-#X obj 185 123 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
-#X obj 151 155 hradio 15 1 0 3 \$0-3xfade-gui-s \$0-3xfade-gui-r empty 0 -8 0 10 #ffffff #ff0400 #000000 0;
+#X obj 185 123 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 151 155 hradio 15 1 0 3 \$0-3xfade-gui-s \$0-3xfade-gui-r empty 0 -8 0 10 #fcfcfc #fc0400 #000000 0;
 #X obj 375 49 / 127;
 #X obj 375 71 * 4;
 #X obj 509 14 inlet~ CV;
@@ -39,7 +39,7 @@
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 66 331 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -249,7 +249,8 @@
 #X restore 377 351 pd external-messages;
 #X obj 10 50 reloaded 3way-xfade \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 2 693 450 300 \$0-gui_listeners 0;
+#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#X obj 10 0 reloaded/hradio_dispatch 3way-xfade \$0 \$1 0 2 3xfade-gui-s 3xfade-gui-r empty #FFFFFF #FF0400 #000000;
 #X obj 10 60 reloaded/hsl_dispatch 3way-xfade \$0 \$1 0 127 3xfade-slider-s 3xfade-slider-r XFADE #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;

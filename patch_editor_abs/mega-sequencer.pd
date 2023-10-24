@@ -1055,7 +1055,7 @@
 #X obj 1021 100 inlet~;
 #X obj 1021 122 threshold~ 1 0 1 0;
 #X obj 1021 144 t b b;
-#N canvas 302 65 1008 752 savetest 0;
+#N canvas 302 65 1008 752 savetest 1;
 #X obj 290 212 pack f f;
 #X obj 292 453 reloaded/textfile \$0;
 #X msg 475 436 rewind;
@@ -1312,7 +1312,7 @@
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 66 331 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -1440,9 +1440,11 @@
 #X obj 684 249 t b f b;
 #X obj 542 251 s ACTIVE_DOLLARZERO;
 #X msg 544 225 0;
+#X obj 406 146 f;
+#X obj 283 136 r \$0-save-s;
 #X connect 0 0 13 0;
 #X connect 1 0 18 0;
-#X connect 3 0 20 0;
+#X connect 3 0 24 0;
 #X connect 4 0 21 0;
 #X connect 5 0 11 0;
 #X connect 6 0 8 0;
@@ -1467,6 +1469,8 @@
 #X connect 21 1 0 1;
 #X connect 21 2 23 0;
 #X connect 23 0 22 0;
+#X connect 24 0 20 0;
+#X connect 25 0 24 0;
 #X restore 108 546 pd statesave-patterns-1-16;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 1 0 94 0;

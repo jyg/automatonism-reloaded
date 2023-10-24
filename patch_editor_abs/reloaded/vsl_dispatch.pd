@@ -41,9 +41,8 @@
 #X obj 1183 95 r \$0-receive_from_listener;
 #X text 633 538 TODO : comment créer plusieurs listeners ?;
 #X obj 1016 54 f \$0;
-#X floatatom 1016 79 5 0 0 0 - - -;
-#X obj 1019 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 1016 79 5 0 0 0 - - - 0;
+#X obj 1019 30 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #N canvas 0 50 450 300 MIDI_LEARN_mode_colors 0;
 #X obj 77 56 select 0 1;
 #X obj 78 25 r MIDI_LEARN;
@@ -279,6 +278,8 @@
 #X obj 387 382 list prepend \$2-\$7;
 #X obj 390 411 list trim;
 #X obj 393 439 s print;
+#X obj 281 332 r \$2-\$6;
+#X obj 281 357 s \$2-save-s?;
 #X connect 0 0 20 0;
 #X connect 2 0 4 1;
 #X connect 3 1 6 0;
@@ -302,3 +303,4 @@
 #X connect 24 0 25 0;
 #X connect 25 0 26 0;
 #X connect 26 0 27 0;
+#X connect 28 0 29 0;

@@ -1,6 +1,0 @@
-#N canvas 365 502 450 300 12;
-#X text 109 49 dummy patch;
-#X text 118 99 for puredata not complaining if else not available;
-#X obj 79 155 outlet;
-#X obj 139 155 outlet;
-#X obj 229 155 outlet;

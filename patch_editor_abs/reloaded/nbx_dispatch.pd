@@ -42,9 +42,8 @@
 #X obj 1183 95 r \$0-receive_from_listener;
 #X text 633 548 TODO : comment créer plusieurs listeners ?;
 #X obj 1016 54 f \$0;
-#X floatatom 1016 79 5 0 0 0 - - -;
-#X obj 1019 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X floatatom 1016 79 5 0 0 0 - - - 0;
+#X obj 1019 30 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 393 637 list append;
 #X obj 396 598 symbol \$8;
 #X obj 406 568 spigot;
@@ -206,6 +205,8 @@
 #X connect 21 0 22 0;
 #X connect 22 0 14 0;
 #X restore 232 118 pd MAP_TO_mode_colors;
+#X obj 281 332 r \$2-\$6;
+#X obj 281 357 s \$2-save-s?;
 #X connect 0 0 69 0;
 #X connect 1 0 0 1;
 #X connect 2 0 5 2;
@@ -274,6 +275,7 @@
 #X connect 70 1 13 0;
 #X connect 71 0 36 0;
 #X connect 71 1 14 0;
+#X connect 74 0 75 0;
 #X restore 442 53 pd midi_mapping;
 #X msg 47 388 set \$1;
 #X obj 600 204 r \$0-map_from;

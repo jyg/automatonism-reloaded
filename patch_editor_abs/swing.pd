@@ -18,7 +18,7 @@
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 66 331 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 261 480 reloaded/textfile \$0;
 #X obj 119 690 reloaded/textfile \$0;
@@ -163,7 +163,7 @@
 #X connect 29 0 22 0;
 #X connect 30 0 23 0;
 #X restore 654 479 pd state-saving-via-preset-manager-module;
-#N canvas 297 27 748 331 parameter-nudging-system 1;
+#N canvas 297 27 748 331 parameter-nudging-system 0;
 #X obj 23 67 clip 0 127;
 #X obj 23 22 r \$0-swing_rate-snd;
 #X obj 23 95 s \$0-swing_rate-rcv;

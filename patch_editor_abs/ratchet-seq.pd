@@ -2669,7 +2669,7 @@
 #X obj 888 105 s \$0-ratchet-random-s!;
 #X obj 888 61 t b b;
 #X obj 935 78 s \$0-ratchet-rdm!-gui-r;
-#N canvas 120 22 1008 752 store/load 0;
+#N canvas 120 22 1008 752 store/load 1;
 #X obj 290 212 pack f f;
 #X obj 292 453 reloaded/textfile \$0;
 #X msg 475 436 rewind;
@@ -2845,11 +2845,13 @@
 #X obj 290 90 t b b b;
 #X obj 149 173 s ACTIVE_DOLLARZERO;
 #X msg 151 147 0;
+#X obj -64 49 r \$0-save-s;
+#X obj 19 86 f;
 #X connect 0 0 21 0;
 #X connect 1 0 16 0;
 #X connect 2 0 1 0;
 #X connect 3 0 57 0;
-#X connect 5 0 58 0;
+#X connect 5 0 63 0;
 #X connect 6 0 20 0;
 #X connect 7 0 15 0;
 #X connect 9 0 8 0;
@@ -2909,6 +2911,8 @@
 #X connect 59 1 56 0;
 #X connect 59 2 61 0;
 #X connect 61 0 60 0;
+#X connect 62 0 63 0;
+#X connect 63 0 58 0;
 #X restore 108 560 pd store/load;
 #X obj 108 508 r \$0-ratchet-store-s;
 #X obj 183 532 r \$0-ratchet-load-s;

@@ -194,7 +194,7 @@
 #X text 442 167 INSTANCE NUMBER;
 #X obj 407 82 f \$1;
 #X obj 407 118 t f f f;
-#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 48 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 48 274 r SAVE-S;
 #X msg 110 430 set \$1 \$2 \$3 \$4 \$5 \$6 \$7;
 #X obj 110 400 pack f f f f f f f;

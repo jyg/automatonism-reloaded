@@ -194,7 +194,7 @@
 #X msg 101 682 write statesave/\$1-millerverb-ss.txt;
 #X msg 210 454 read statesave/\$1-millerverb-ss.txt;
 #X obj 164 59 t b b;
-#X obj 27 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 27 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 244 624 s \$0-millerverb-lowpass-r;
 #X obj 27 234 r SAVE-S;
 #X msg 88 436 set \$1 \$2 \$3 \$4;

@@ -36,7 +36,7 @@
 #X obj 175 109 cnv 5 5 5 empty empty CRUSH 0 0 0 8 #fcfcfc #404040 0;
 #X text 534 221 DRY CV IN;
 #X obj 64 129 cnv 5 5 5 empty empty BITCRUSH 0 0 0 12 #fcfcfc #404040 0;
-#N canvas 21 22 593 735 state-saving-multiple-instances 1;
+#N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
 #X obj 261 480 reloaded/textfile \$0;
 #X msg 518 463 rewind;
@@ -52,7 +52,7 @@
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 66 331 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 120 399 pack f f;
 #X msg 120 438 set \$1 \$2;
@@ -244,7 +244,7 @@
 #X connect 35 0 33 0;
 #X restore 604 24 pd state-saving-via-preset-manager-module;
 #X obj 107 151 hsl 128 15 0 127 0 1 \$0-bitcrush-crush-s \$0-bitcrush-crush-r CRUSH 133 7 0 10 #fcfcfc #000000 #000000 0 1;
-#N canvas 297 27 518 295 parameter-nudging-system 1;
+#N canvas 297 27 518 295 parameter-nudging-system 0;
 #X obj 23 67 clip 0 127;
 #X obj 295 72 clip 0 127;
 #X obj 23 22 r \$0-bitcrush-dry-s;

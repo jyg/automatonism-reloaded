@@ -2,7 +2,7 @@
 #X obj 222 145 tgl 15 1 \$0-clock-on/off-s \$0-clock-on/off-r ON/OFF 17 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 329 291 metro 100;
 #X obj 328 365 vline~;
-#X obj 108 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r RATE 133 7 0 10 #ffffff #000000 #000000 6554 1;
+#X obj 108 126 hsl 128 15 0 127 0 1 \$0-clock-clk-rate-s \$0-clock-clk-rate-r RATE 133 7 0 10 #ffffff #000000 #000000 0 1;
 #X floatatom 105 141 5 0 0 0 - - - 0;
 #X obj 140 119 cnv 5 5 5 empty empty CLOCK 0 0 0 12 #fcfcfc #404040 0;
 #X obj 328 431 outlet~;
@@ -12,7 +12,7 @@
 #X text 319 24 CLK-RATE CV INPUT;
 #X obj 163 107 cnv 5 5 5 empty empty ON/OFF 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 105 109 cnv 5 5 5 empty empty CLK-RATE 0 0 0 8 #fcfcfc #404040 0;
-#N canvas 21 22 593 735 state-saving-multiple-instances 0;
+#N canvas 21 22 593 735 state-saving-multiple-instances 1;
 #X obj 215 28 loadbang;
 #X msg 518 463 rewind;
 #X msg 475 463 bang;
@@ -26,7 +26,7 @@
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 66 331 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X obj 120 399 pack f f;
 #X msg 120 438 set \$1 \$2;
@@ -70,7 +70,7 @@
 #X restore 594 355 pd state-saving-multiple-instances;
 #X obj 594 425 s \$0-instance-num;
 #X obj 594 377 makefilename %d;
-#X obj 184 119 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
+#X obj 184 119 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 594 402 label \$1;
 #X obj 103 167 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 494 81 threshold~ 0.99 0 0.99 0;

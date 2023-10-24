@@ -374,7 +374,7 @@
 #X obj 384 144 f \$1;
 #X obj 384 180 t f f f;
 #X obj 357 53 t b b;
-#X obj 43 122 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 43 122 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 43 82 r SAVE-S;
 #X obj 441 36 r \$0-reload!;
 #X text 524 36 RETURN TO PREVIOUS VALUE AFTER USING MORPH-SEQ module;
