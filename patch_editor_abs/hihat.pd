@@ -12,7 +12,7 @@
 #X obj 685 140 *~ 2;
 #X obj 685 116 expr~ $v1 < 0.5;
 #X obj 440 156 +~;
-#X obj 108 183 hsl 128 15 0 127 0 1 \$0-perc-hp-s \$0-perc-hp-r FILTER 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 183 hsl 128 15 0 127 0 1 \$0-perc-hp-s \$0-perc-hp-r FILTER 135 7 0 10 #ffffff #000000 #000000 9800 1;
 #X obj 547 216 mtof;
 #X obj 547 238 pack 0 50;
 #X obj 547 260 line~;
@@ -21,7 +21,7 @@
 #X obj 934 193 *~;
 #X obj 934 222 *~;
 #X obj 934 116 r \$0-trig!;
-#X obj 108 138 hsl 128 15 0 127 0 1 \$0-perc-filter-s \$0-perc-filter-r STRIKE 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 138 hsl 128 15 0 127 0 1 \$0-perc-filter-s \$0-perc-filter-r STRIKE 135 7 0 10 #ffffff #000000 #000000 8200 1;
 #X obj 934 244 s~ \$0-EG1;
 #X obj 613 243 r~ \$0-EG1;
 #X obj 613 265 *~ 2000;
@@ -66,7 +66,7 @@
 #X msg 100 309 1 219 \, 0 3700 220;
 #X msg 934 141 1 1 \, 0 200 1;
 #X obj 615 534 hip~;
-#X obj 108 168 hsl 128 15 0 127 0 1 \$0-perc-decay2-cv-att-s \$0-perc-decay2-cv-att-r DECAY-CV 135 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 108 168 hsl 128 15 0 127 0 1 \$0-perc-decay2-cv-att-s \$0-perc-decay2-cv-att-r DECAY-CV 135 7 0 10 #9999de #000000 #000000 0 1;
 #X obj 702 473 mtof;
 #X obj 702 495 pack 0 50;
 #X obj 702 517 line;
@@ -74,10 +74,10 @@
 #X obj 695 241 *~ 10000;
 #X obj 105 124 cnv 5 5 5 empty empty HIHAT 0 0 0 12 #fcfcfc #404040 0;
 #X obj 296 109 cnv 5 5 5 empty empty RDM 0 0 0 8 #fcfcfc #dc4c90 0;
-#X obj 149 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
-#X obj 108 212 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r FLAM-PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 108 197 hsl 128 15 0 127 0 1 \$0-flam-s \$0-flam-r FLAM 133 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 297 210 bng 15 250 50 0 \$0-flam-prob-gui-s \$0-flam-prob-gui-r empty 17 7 0 10 #000000 #dc4c90 #000000;
+#X obj 149 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
+#X obj 108 212 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r FLAM-PROB 133 7 0 10 #ffffff #000000 #000000 5100 1;
+#X obj 108 197 hsl 128 15 0 127 0 1 \$0-flam-s \$0-flam-r FLAM 133 7 0 10 #ffffff #000000 #000000 1800 1;
+#X obj 297 210 bng 15 250 50 0 \$0-flam-prob-gui-s \$0-flam-prob-gui-r empty 17 7 0 10 #000000 #de4c91 #000000;
 #N canvas 0 22 864 595 flam-code 0;
 #X obj 406 349 t b b b;
 #X obj 406 425 delay;
@@ -131,8 +131,8 @@
 #X connect 22 0 18 1;
 #X connect 23 0 16 0;
 #X restore 216 68 pd flam-code;
-#X obj 118 242 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD-1 125 7 0 10 #fcfcfc #90d4b0 #000000 0;
-#X obj 118 227 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE-1 125 7 0 10 #fcfcfc #dc4c90 #000000 0;
+#X obj 118 242 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD-1 125 7 0 10 #ffffff #91d6b2 #000000 0;
+#X obj 118 227 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE-1 125 7 0 10 #ffffff #de4c91 #000000 0;
 #X obj 440 123 phasor~ 1046;
 #X obj 685 64 phasor~ 2489;
 #X obj 376 10 loadbang;
@@ -172,7 +172,7 @@
 #X obj 835 214 sel 1;
 #X msg 835 236 0;
 #X obj 836 313 t b f;
-#X obj 108 153 hsl 128 15 0 127 0 1 \$0-perc-decay2-s \$0-perc-decay2-r DECAY 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 108 153 hsl 128 15 0 127 0 1 \$0-perc-decay2-s \$0-perc-decay2-r DECAY 135 7 0 10 #ffffff #000000 #000000 100 1;
 #X obj 839 50 *~;
 #X obj 938 5 r \$0-perc-decay2-cv-att-s;
 #X obj 938 27 / 127;
@@ -194,7 +194,7 @@
 #X text 442 167 INSTANCE NUMBER;
 #X obj 407 82 f \$1;
 #X obj 407 118 t f f f;
-#X obj 48 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 48 274 r SAVE-S;
 #X msg 110 430 set \$1 \$2 \$3 \$4 \$5 \$6 \$7;
 #X obj 110 400 pack f f f f f f f;
@@ -849,7 +849,7 @@
 #X restore 86 596 pd external-messages;
 #X obj 816 598 reloaded hihat \$0 \$1;
 #X obj 856 558 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#N canvas 1261 87 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hsl_dispatch hihat \$0 \$1 0 127 perc-decay2-s perc-decay2-r DECAY #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/hradio_dispatch hihat \$0 \$1 0 7 write-s write-r STORE-1 #FFFFFF #DE4C91 #000000;
 #X obj 10 120 reloaded/hradio_dispatch hihat \$0 \$1 0 7 load-s load-r LOAD-1 #FFFFFF #91D6B2 #000000;
@@ -858,7 +858,6 @@
 #X obj 10 360 reloaded/hsl_dispatch hihat \$0 \$1 0 127 perc-decay2-cv-att-s perc-decay2-cv-att-r DECAY-CV #9999DE #000000 #000000;
 #X obj 10 420 reloaded/hsl_dispatch hihat \$0 \$1 0 127 perc-filter-s perc-filter-r STRIKE #FFFFFF #000000 #000000;
 #X obj 10 480 reloaded/hsl_dispatch hihat \$0 \$1 0 127 perc-hp-s perc-hp-r FILTER #FFFFFF #000000 #000000;
-#X obj 10 180 reloaded/bng_dispatch hihat \$0 \$1 250 50 flam-prob-gui-s flam-prob-gui-r empty #000000 #DE4C91 #000000;
 #X restore 816 628 pd \$0-gui_listeners;
 #X obj 939 626 namecanvas \$0-this;
 #X connect 1 0 2 0;
