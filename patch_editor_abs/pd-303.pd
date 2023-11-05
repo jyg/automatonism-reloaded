@@ -2417,7 +2417,7 @@
 #X obj 10 2460 reloaded/hsl_dispatch pd-303 \$0 \$1 0 127 acid-res-s acid-res-r RES #FFFFFF #000000 #000000;
 #X obj 10 2520 reloaded/hsl_dispatch pd-303 \$0 \$1 0 127 acid-envmod-s acid-envmod-r ENVMOD #9999DE #FFFFFF #000000;
 #X obj 10 2580 reloaded/hsl_dispatch pd-303 \$0 \$1 0 127 acid-xpose-s acid-xpose-r TRANSPOSE #91D6B2 #000000 #000000;
-#X obj 10 2640 reloaded/hsl_dispatch pd-303 \$0 \$1 1.27 127 acid-cutoff-s acid-cutoff-r CUTOFF #FFFFFF #000000 #000000;
+#X obj 10 2640 reloaded/hsl_dispatch pd-303 \$0 \$1 1.27 127 acid-cutoff-s acid-cutoff-r CUTOFF #FFFFFF #000000 #000000 log;
 #X restore 578 465 pd \$0-gui_listeners;
 #X obj 699 463 namecanvas \$0-this;
 #X connect 18 0 115 0;

@@ -401,10 +401,10 @@
 #X restore 44 223 pd external-messages;
 #X obj 10 50 reloaded bob-filter \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 0 50 450 300 \$0-gui_listeners 0;
+#N canvas 0 50 450 300 \$0-gui_listeners 1;
 #X obj 10 0 reloaded/hsl_dispatch bob-filter \$0 \$1 0 127 bob-res-s bob-res-r RES #FFFFFF #000000 #000000;
-#X obj 10 60 reloaded/hsl_dispatch bob-filter \$0 \$1 1.27 127 bob-cutoff-s bob-cutoff-r CUTOFF #FFFFFF #000000 #000000;
 #X obj 10 120 reloaded/hsl_dispatch bob-filter \$0 \$1 0 127 bob-fm--/+-s bob-fm--/+-r FM-/+ #91D6B2 #000000 #000000;
+#X obj 10 60 reloaded/hsl_dispatch bob-filter \$0 \$1 1.27 127 bob-cutoff-s bob-cutoff-r CUTOFF #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 4 0;

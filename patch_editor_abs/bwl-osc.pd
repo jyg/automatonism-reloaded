@@ -10,7 +10,7 @@
 #X obj 480 416 pack 0 50;
 #X obj 480 438 line~;
 #X obj 107 177 hsl 128 15 0 127 0 1 \$0-bwl-osc-fm-att-s \$0-bwl-osc-fm-att-r FM 133 7 0 10 #9999de #000000 #000000 0 1;
-#X obj 107 132 hsl 128 15 0 127 0 1 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 2417 1;
+#X obj 107 132 hsl 128 15 0 127 0 1 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 6800 1;
 #X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
 #X obj 181 109 cnv 5 5 5 empty empty WSHAPE 0 0 0 8 #fcfcfc #7474a4 0;
 #X text 462 227 FM IN;

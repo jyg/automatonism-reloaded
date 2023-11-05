@@ -453,10 +453,10 @@
 #X obj 10 50 reloaded bp-filter \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
-#X obj 10 0 reloaded/hsl_dispatch bp-filter \$0 \$1 1.27 127 bandpass-drive-s bandpass-drive-r DRIVE #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/hsl_dispatch bp-filter \$0 \$1 0 127 bandpass-fm-/+-s bandpass-fm-/+-r FM-/+ #91D6B2 #000000 #000000;
-#X obj 10 120 reloaded/hsl_dispatch bp-filter \$0 \$1 1.27 127 bandpass-res-s bandpass-res-r RES. #FFFFFF #000000 #000000;
-#X obj 10 180 reloaded/hsl_dispatch bp-filter \$0 \$1 1.27 127 bandpass-cutoff-s bandpass-cutoff-r CUTOFF #FFFFFF #000000 #000000;
+#X obj 10 0 reloaded/hsl_dispatch bp-filter \$0 \$1 1.27 127 bandpass-drive-s bandpass-drive-r DRIVE #FFFFFF #000000 #000000 log, f 90;
+#X obj 10 120 reloaded/hsl_dispatch bp-filter \$0 \$1 1.27 127 bandpass-res-s bandpass-res-r RES. #FFFFFF #000000 #000000 log;
+#X obj 10 180 reloaded/hsl_dispatch bp-filter \$0 \$1 1.27 127 bandpass-cutoff-s bandpass-cutoff-r CUTOFF #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 540 140 r \$0-bandpass-cutoff-s;
 #X obj 782 115 r \$0-bandpass-fm-/+-s;

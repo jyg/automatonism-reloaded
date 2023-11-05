@@ -17,7 +17,7 @@
 #X obj 216 443 pack 0 50;
 #X obj 216 465 line~;
 #X obj 106 520 delwrite~ \$0-cloud1 8000;
-#X obj 110 268 hsl 128 15 0 127 0 1 \$0-gran-fx-fback-s \$0-gran-fx-fback-r FEEDBACK 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 110 208 hsl 128 15 0 127 0 1 \$0-gran-fx-fback-s \$0-gran-fx-fback-r FEEDBACK 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 107 163 hsl 128 15 0 127 0 1 \$0-gran-fx-reverb-s \$0-gran-fx-reverb-r REVERB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #N canvas 0 22 872 596 reader-1&2 0;
 #X obj 297 122 / 44.1;
@@ -2023,4 +2023,4 @@
 #X connect 123 0 124 0;
 #X connect 124 0 123 0;
 #X connect 124 1 123 1;
-#X coords 0 -1 1 1 185 100 2 100 100;
+#X coords 0 -1 1 1 189 131 2 100 100;

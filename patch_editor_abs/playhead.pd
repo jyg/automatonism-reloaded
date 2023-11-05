@@ -373,8 +373,6 @@
 #X restore 460 173 pd camomile/plugdata_detect;
 #X obj 516 361 loadbang;
 #X msg 516 390 1;
-#X obj 758 262 r \$0-bpm-r;
-#X obj 758 285 print;
 #X connect 1 0 28 0;
 #X connect 2 0 33 0;
 #X connect 2 0 51 0;
@@ -447,5 +445,4 @@
 #X connect 96 0 24 0;
 #X connect 98 0 99 0;
 #X connect 99 0 84 0;
-#X connect 100 0 101 0;
 #X coords 0 -1 1 1 200 95 2 100 100;

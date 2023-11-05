@@ -325,7 +325,7 @@
 #X obj 50 10 savestate;
 #N canvas 497 163 450 300 \$0-gui_listeners 0;
 #X obj 10 60 reloaded/vsl_dispatch decay \$0 \$1 0 127 decay-cv-att-s decay-cv-att-r CV #9999DE #000000 #000000;
-#X obj 10 120 reloaded/vsl_dispatch decay \$0 \$1 1.27 127 decay-decay-s decay-decay-r D #FFFFFF #000000 #000000;
+#X obj 10 120 reloaded/vsl_dispatch decay \$0 \$1 1.27 127 decay-decay-s decay-decay-r D #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 517 109 r \$0-decay-cv-att-s;
 #X obj 330 220 r \$0-decay-decay-s;

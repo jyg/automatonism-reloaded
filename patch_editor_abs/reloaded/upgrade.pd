@@ -6,42 +6,7 @@
 #X obj 470 168 list length;
 #X obj 470 193 - 3;
 #X obj 394 232 list split;
-#N canvas 0 0 450 300 \$0-sandbox 1;
-#X obj 10 50 reloaded euklid \$0 \$1;
-#X obj 50 10 savestate;
-#N canvas 0 0 450 300 \$0-gui_listeners 0;
-#X obj 10 0 reloaded/hsl_dispatch euklid \$0 \$1 0 127 sndart
-rcvart ACC.ROT. #fcfcfc #000000 #000000;
-#X obj 10 60 reloaded/tgl_dispatch euklid \$0 \$1 0 1 sndtgl
-rcvtgl ON symbol symbol symbol;
-#X obj 10 120 reloaded/hradio_dispatch euklid \$0 \$1 0
-7 sndspd rcvspd SPEED symbol symbol symbol;
-#X obj 10 180 reloaded/nbx_dispatch euklid \$0 \$1 0 3 sndartnmb
-rcvartnmb empty symbol symbol symbol;
-#X obj 10 240 reloaded/nbx_dispatch euklid \$0 \$1 0 3 sndaccnmb
-rcvaccnmb empty symbol symbol symbol;
-#X obj 10 300 reloaded/hsl_dispatch euklid \$0 \$1 0 127
-sndacc rcvacc ACCENTS #fcfcfc #000000 #000000;
-#X obj 10 360 reloaded/nbx_dispatch euklid \$0 \$1 0 11
-sndrtenmb rcvrtenmb empty symbol symbol symbol;
-#X obj 10 420 reloaded/hsl_dispatch euklid \$0 \$1 0 127
-sndrte rcvrte ROTATE #fcfcfc #000000 #000000;
-#X obj 10 480 reloaded/nbx_dispatch euklid \$0 \$1 0 11
-sndbtsnmb rcvbtsnmb empty symbol symbol symbol;
-#X obj 10 540 reloaded/hsl_dispatch euklid \$0 \$1 0 127
-sndbts rcvbts BEATS #fcfcfc #000000 #000000;
-#X obj 10 600 reloaded/nbx_dispatch euklid \$0 \$1 1 32
-sndstpnmb rcvstpnmb empty symbol symbol symbol;
-#X obj 10 660 reloaded/hsl_dispatch euklid \$0 \$1 0 127
-sndstp rcvstp STEPS #fcfcfc #000000 #000000;
-#X obj 10 720 reloaded/hsl_dispatch euklid \$0 \$1 0 127
-numCV numCV-rcv CV-BEATS #9898dc #000000 #000000;
-#X obj 10 780 reloaded/hsl_dispatch euklid \$0 \$1 0 127
-lenCV lenCV-rcv CV-STEPS #9898dc #000000 #000000;
-#X restore 10 80 pd \$0-gui_listeners;
-#X connect 0 0 1 0;
-#X connect 1 0 0 0;
-#X connect 1 1 0 1;
+#N canvas 0 0 450 300 \$0-sandbox 0;
 #X restore 722 32 pd \$0-sandbox;
 #X obj 497 719 s pd-\$0-sandbox;
 #X obj 384 269 list tosymbol;
@@ -86,23 +51,12 @@ lenCV lenCV-rcv CV-STEPS #9898dc #000000 #000000;
 #X obj 313 801 list append \\\$1;
 #X obj 557 709 r \$0-name;
 #X obj 431 261 + 60;
-#X text 485 61 nbx 179 114 5 14 -1e+37 1e+37 0 0 empty empty empty
-0 -8 0 10 -262144 -1 -1 0 256 \;, f 87;
-#X text 475 103 bng 236 56 15 250 50 0 empty empty empty 17 7 0 10
--262144 -1 -1 \;, f 74;
-#X text 678 252 #X obj 263 120 hsl 128 15 0 127 0 0 empty empty empty
--2 -8 0 10 -262144 -1 -1 0 1 \; #X obj 128 117 vsl 15 128 0 127 0 0
-empty empty empty 0 -9 0 10 -262144 -1 -1 0 1 \; #X obj 262 167 tgl
-15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1 \; #X obj 336 156
-bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj
-386 122 vradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1 -1 0
-\; #X obj 194 271 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
--1 -1 0 \; #X obj 279 214 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty
-0 -8 0 10 -262144 -1 -1 0 256 \;, f 86;
+#X text 485 61 nbx 179 114 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10 -262144 -1 -1 0 256 \;, f 87;
+#X text 475 103 bng 236 56 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \;, f 74;
+#X text 678 252 #X obj 263 120 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144 -1 -1 0 1 \; #X obj 128 117 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144 -1 -1 0 1 \; #X obj 262 167 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1 \; #X obj 336 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj 386 122 vradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1 -1 0 \; #X obj 194 271 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1 -1 0 \; #X obj 279 214 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10 -262144 -1 -1 0 256 \;, f 86;
 #X obj 142 511 list prepend reloaded/tgl_dispatch;
 #X obj 150 547 list prepend reloaded/bng_dispatch;
-#X text 666 432 bwl-osc 1 hradio 261 286 15 1 1 4 \\\$0-bwl-osc-wform-s
-\\\$0-bwl-osc-wform-r empty 65 7 0 10 -262144 -1 -1 1, f 131;
+#X text 666 432 bwl-osc 1 hradio 261 286 15 1 1 4 \\\$0-bwl-osc-wform-s \\\$0-bwl-osc-wform-r empty 65 7 0 10 -262144 -1 -1 1, f 131;
 #X obj 161 590 list prepend reloaded/nbx_dispatch;
 #X obj 64 288 route hsl vsl hradio vradio tgl bng nbx;
 #X obj 134 737 t b b;
@@ -150,8 +104,7 @@ bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj
 #X connect 34 1 35 0;
 #X connect 35 0 14 0;
 #X restore 250 503 pd create_widgets_dispatchers;
-#X obj 192 43 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 192 43 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 589 257 s \$0-name;
 #N canvas 0 0 868 778 create_widgets_list 0;
 #X obj 200 208 text define \$0-widgets;
@@ -166,12 +119,8 @@ bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1 -1 \; #X obj
 #X obj 144 134 t b b;
 #X msg 204 169 clear;
 #X obj 330 594 abstraction_gui_parser \$0-widgets;
-#X text 335 152 [text define \$0-widgets] contient la liste de tous
-les widgets de l'abstraction parente;
-#X text 295 655 [abstraction_gui_parser \$1 \$2 \$3 \$4-widgets] scanne
-le fichier source de l'abstraction \, fait l'inventaire des widgets
-qui y sont contenus \, puis les recopie dans [text \$0-widgets], f
-77;
+#X text 335 152 [text define \$0-widgets] contient la liste de tous les widgets de l'abstraction parente;
+#X text 295 655 [abstraction_gui_parser \$1 \$2 \$3 \$4-widgets] scanne le fichier source de l'abstraction \, fait l'inventaire des widgets qui y sont contenus \, puis les recopie dans [text \$0-widgets], f 77;
 #X connect 1 0 4 0;
 #X connect 2 0 9 0;
 #X connect 4 0 5 0;
@@ -185,9 +134,7 @@ qui y sont contenus \, puis les recopie dans [text \$0-widgets], f
 #X restore 256 432 pd create_widgets_list;
 #X obj 399 294 t b s s;
 #X obj 31 821 iemguts/canvasdelete 1;
-#X msg 408 333 clear \, obj 10 50 reloaded \$1 \\\$0 \\\$1
-\, obj 50 10 savestate \, connect 0 0 1 0 \, connect 1 0 0 0 \, connect
-1 1 0 1 \, obj 10 80 pd \\\$0-gui_listeners;
+#X msg 408 333 clear \, obj 10 50 reloaded \$1 \\\$0 \\\$1 \, obj 50 10 savestate \, connect 0 0 1 0 \, connect 1 0 0 0 \, connect 1 1 0 1 \, obj 10 80 pd \\\$0-gui_listeners;
 #X obj 827 119 declare -path ../;
 #X connect 0 1 1 0;
 #X connect 1 0 2 0;

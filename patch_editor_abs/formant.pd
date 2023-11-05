@@ -81,7 +81,7 @@
 #X connect 24 19 23 0;
 #X connect 25 0 13 0;
 #X restore 422 147 pd formant-frequencies;
-#X obj 105 161 hsl 128 15 0 127 0 1 \$0-formant-q-s \$0-formant-q-r Q 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 151 hsl 128 15 0 127 0 1 \$0-formant-q-s \$0-formant-q-r Q 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 109 309 t f f f;
 #X obj 105 136 hsl 128 15 0 127 0 1 \$0-formant-formants-s \$0-formant-formants-r VOWELS 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 52 487 vcf~ 207 5;

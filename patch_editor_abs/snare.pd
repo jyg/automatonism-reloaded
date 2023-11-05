@@ -949,12 +949,12 @@
 #X obj 10 240 reloaded/hsl_dispatch snare \$0 \$1 0 127 snare-flam-s snare-flam-r FLAM #FFFFFF #000000 #000000;
 #X obj 10 300 reloaded/hsl_dispatch snare \$0 \$1 0 127 snare-flam-prob-s snare-flam-prob-r FLAM-PROB #FFFFFF #000000 #000000;
 #X obj 10 360 reloaded/hsl_dispatch snare \$0 \$1 0 127 snare-color-s snare-color-r COLOR #FFFFFF #000000 #000000;
-#X obj 10 420 reloaded/hsl_dispatch snare \$0 \$1 1.27 127 snare-decay-s snare-decay-r DECAY #FFFFFF #000000 #000000;
 #X obj 10 480 reloaded/hsl_dispatch snare \$0 \$1 0 127 frequency-s frequency-r PITCH #FFFFFF #000000 #000000;
 #X obj 10 540 reloaded/hsl_dispatch snare \$0 \$1 0 127 snare-acc-prob-s snare-acc-prob-r ACC-PROB #FFFFFF #000000 #000000;
-#X obj 10 600 reloaded/hsl_dispatch snare \$0 \$1 1.27 127 envmod-s envmod-r ENVMOD #9999DE #000000 #000000;
-#X obj 10 660 reloaded/hsl_dispatch snare \$0 \$1 1.27 127 snare-noise-s snare-noise-r NOISE #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/bng_dispatch snare \$0 \$1 250 50 flam-prob-gui-s flam-prob-gui-r empty #000000 #DE4C91 #000000;
+#X obj 10 600 reloaded/hsl_dispatch snare \$0 \$1 1.27 127 envmod-s envmod-r ENVMOD #9999DE #000000 #000000 log;
+#X obj 10 660 reloaded/hsl_dispatch snare \$0 \$1 1.27 127 snare-noise-s snare-noise-r NOISE #FFFFFF #000000 #000000 log;
+#X obj 10 420 reloaded/hsl_dispatch snare \$0 \$1 1.27 127 snare-decay-s snare-decay-r DECAY #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 1 0;

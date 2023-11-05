@@ -1087,9 +1087,9 @@
 #X obj 10 0 reloaded/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-dtune-s polysaw-dtune-r DTUNE #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-release-s polysaw-release-r RELEASE #FFFFFF #000000 #000000;
 #X obj 10 120 reloaded/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-hold-s polysaw-hold-r HOLD #FFFFFF #000000 #000000;
-#X obj 10 180 reloaded/hsl_dispatch polysynth \$0 \$1 1.27 127 polysaw-attack-s polysaw-attack-r ATTACK #FFFFFF #000000 #000000;
 #X obj 10 240 reloaded/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-saw->pulse-s polysaw-saw->pulse-r SAW->PULSE #FFFFFF #000000 #000000;
 #X obj 10 300 reloaded/hsl_dispatch polysynth \$0 \$1 0 127 polysaw-pitch-s polysaw-pitch-r PITCH #FFFFFF #000000 #000000;
+#X obj 10 180 reloaded/hsl_dispatch polysynth \$0 \$1 1.27 127 polysaw-attack-s polysaw-attack-r ATTACK #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 1 0 9 0;

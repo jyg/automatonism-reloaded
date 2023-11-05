@@ -381,8 +381,8 @@
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hsl_dispatch lpg \$0 \$1 0 127 lpg-cv-att-s lpg-cv-att-r CV #9999DE #000000 #000000;
-#X obj 10 60 reloaded/hsl_dispatch lpg \$0 \$1 1.27 127 lpg-level-s lpg-level-r LEVEL #FFFFFF #000000 #000000;
 #X obj 10 120 reloaded/hsl_dispatch lpg \$0 \$1 0 127 lpg-ring/damp-s lpg-ring/damp-r RING/DAMP #FFFFFF #000000 #000000;
+#X obj 10 60 reloaded/hsl_dispatch lpg \$0 \$1 1.27 127 lpg-level-s lpg-level-r LEVEL #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 452 88 r \$0-lpg-level-s;
 #X obj 486 201 r \$0-lpg-ring/damp-s;

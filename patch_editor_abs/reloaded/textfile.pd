@@ -139,7 +139,7 @@
 #X obj 95 494 t a b;
 #X obj 523 651 t l l;
 #X text 817 647 plugdata receiver for saving extra data into daw session;
-#X obj 780 676 s \$1-to_databuffer;
+#X obj 978 698 s \$1-to_databuffer;
 #X connect 0 0 31 0;
 #X connect 0 1 3 0;
 #X connect 1 0 53 0;

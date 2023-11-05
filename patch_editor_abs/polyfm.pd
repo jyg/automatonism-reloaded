@@ -1193,13 +1193,13 @@
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-release2-s polyfm-release2-r RELEASE #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-hold2-s polyfm-hold2-r HOLD #FFFFFF #000000 #000000;
-#X obj 10 120 reloaded/hsl_dispatch polyfm \$0 \$1 1.27 127 polyfm-attack2-s polyfm-attack2-r ATTACK #FFFFFF #000000 #000000;
 #X obj 10 180 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-index-s polyfm-index-r INDEX #FFFFFF #000000 #000000;
 #X obj 10 240 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-release-s polyfm-release-r RELEASE #FFFFFF #000000 #000000;
 #X obj 10 300 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-hold-s polyfm-hold-r HOLD #FFFFFF #000000 #000000;
-#X obj 10 360 reloaded/hsl_dispatch polyfm \$0 \$1 1.27 127 polyfm-attack-s polyfm-attack-r ATTACK #FFFFFF #000000 #000000;
 #X obj 10 420 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-ratio-s polyfm-ratio-r RATIO #FFFFFF #000000 #000000;
 #X obj 10 480 reloaded/hsl_dispatch polyfm \$0 \$1 0 127 polyfm-pitch-s polyfm-pitch-r PITCH #FFFFFF #000000 #000000;
+#X obj 10 360 reloaded/hsl_dispatch polyfm \$0 \$1 1.27 127 polyfm-attack-s polyfm-attack-r ATTACK #FFFFFF #000000 #000000 log;
+#X obj 10 120 reloaded/hsl_dispatch polyfm \$0 \$1 1.27 127 polyfm-attack2-s polyfm-attack2-r ATTACK #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 700 189 hsl 125 15 0 127 0 1 \$0-polyfm-pitch-s \$0-polyfm-pitch-r PITCH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 135 77 namecanvas \$0-this;

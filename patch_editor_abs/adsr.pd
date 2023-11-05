@@ -404,9 +404,9 @@
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hsl_dispatch adsr \$0 \$1 0 127 adsr-curve-s adsr-curve-r CURVE #FFFFFF #000000 #000000;
 #X obj 10 60 reloaded/hsl_dispatch adsr \$0 \$1 0 127 adsr-sustain-s adsr-sustain-r SUSTAIN #FFFFFF #000000 #000000;
-#X obj 10 120 reloaded/hsl_dispatch adsr \$0 \$1 1.27 127 adsr-decay-s adsr-decay-r DECAY #FFFFFF #000000 #000000;
-#X obj 10 180 reloaded/hsl_dispatch adsr \$0 \$1 1.27 127 adsr-release-s adsr-release-r RELEASE #FFFFFF #000000 #000000;
-#X obj 10 240 reloaded/hsl_dispatch adsr \$0 \$1 1.27 127 adsr-attack-s adsr-attack-r ATTACK #FFFFFF #000000 #000000;
+#X obj 10 120 reloaded/hsl_dispatch adsr \$0 \$1 1.27 127 adsr-decay-s adsr-decay-r DECAY #FFFFFF #000000 #000000 log;
+#X obj 10 180 reloaded/hsl_dispatch adsr \$0 \$1 1.27 127 adsr-release-s adsr-release-r RELEASE #FFFFFF #000000 #000000 log;
+#X obj 10 240 reloaded/hsl_dispatch adsr \$0 \$1 1.27 127 adsr-attack-s adsr-attack-r ATTACK #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 32 0;

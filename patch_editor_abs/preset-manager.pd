@@ -1,5 +1,5 @@
 #N canvas 0 32 1920 1023 10;
-#X obj 350 149 bng 15 250 50 0 \$0-STORE-S! empty STORE 17 7 0 10 #fcc4c4 #fc0400 #000000;
+#X obj 350 134 bng 15 250 50 0 \$0-STORE-S! empty STORE 17 7 0 10 #fcc4c4 #fc0400 #000000;
 #X floatatom 313 136 5 1 16 0 - \$0-store-slot-r - 0;
 #X floatatom 313 168 5 0 0 0 - \$0-recall-slot-r - 0;
 #X obj 109 261 hsl 115 15 0 127 0 0 \$0-morph-slider-s \$0-morph-slider-r MORPH -2 -8 0 10 #fcfcfc #000000 #000000 0 1;

@@ -848,10 +848,10 @@
 #X obj 10 120 reloaded/hsl_dispatch slope \$0 \$1 0 127 slope-fall-cv-att-s slope-fall-cv-att-r FALL(CV) #9999DE #000000 #000000;
 #X obj 10 180 reloaded/hsl_dispatch slope \$0 \$1 0 127 slope-rise-cv-att-s slope-rise-cv-att-r RISE(CV) #9999DE #000000 #000000;
 #X obj 10 240 reloaded/hsl_dispatch slope \$0 \$1 0 127 slope-depth-s slope-depth-r DEPTH-/+ #91D6B2 #000000 #000000;
-#X obj 10 300 reloaded/hsl_dispatch slope \$0 \$1 1.27 127 slope-rise-s slope-rise-r RISE #FFFFFF #000000 #000000;
-#X obj 10 360 reloaded/hsl_dispatch slope \$0 \$1 1.27 127 slope-fall-s slope-fall-r FALL #FFFFFF #000000 #000000;
 #X obj 10 420 reloaded/vradio_dispatch slope \$0 \$1 0 2 slope-fast-med-slow-s slope-fast-med-slow-r empty #FFFFFF #000000 #000000;
 #X obj 10 480 reloaded/tgl_dispatch slope \$0 \$1 0 1 slope-cycle-s slope-cycle-r CYCLE #FFFFFF #000000 #000000;
+#X obj 10 360 reloaded/hsl_dispatch slope \$0 \$1 1.27 127 slope-fall-s slope-fall-r FALL #FFFFFF #000000 #000000 log;
+#X obj 10 300 reloaded/hsl_dispatch slope \$0 \$1 1.27 127 slope-rise-s slope-rise-r RISE #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
 #X connect 0 0 1 0;

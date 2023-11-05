@@ -1208,7 +1208,6 @@
 #X obj 96 647 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hradio_dispatch triad \$0 \$1 0 2 triad-selctor-s triad-selctor-r SAW #FFFFFF #000000 #000000;
-#X obj 10 60 reloaded/hsl_dispatch triad \$0 \$1 1.27 127 triad-release-s triad-release-r RELEASE #FFFFFF #000000 #000000;
 #X obj 10 120 reloaded/hsl_dispatch triad \$0 \$1 0 127 triad-dtune-s triad-dtune-r DTUNE #FFFFFF #000000 #000000;
 #X obj 10 180 reloaded/hsl_dispatch triad \$0 \$1 0 127 triad-xpose-s triad-xpose-r XPOSE #91D6B2 #000000 #000000;
 #X obj 10 240 reloaded/hsl_dispatch triad \$0 \$1 0 127 triad-interval2-s triad-interval2-r INT2 #FFFFFF #000000 #000000;
@@ -1216,6 +1215,7 @@
 #X obj 10 360 reloaded/hsl_dispatch triad \$0 \$1 0 127 triad-root-s triad-root-r ROOT #FFFFFF #000000 #000000;
 #X obj 10 420 reloaded/hsl_dispatch triad \$0 \$1 0 127 triad-scale-s triad-scale-r SCALE #FFFFFF #000000 #000000;
 #X obj 10 480 reloaded/hsl_dispatch triad \$0 \$1 0 127 triad-attack-s triad-attack-r ATTACK #FFFFFF #000000 #000000;
+#X obj 10 60 reloaded/hsl_dispatch triad \$0 \$1 1.27 127 triad-release-s triad-release-r RELEASE #FFFFFF #000000 #000000 log;
 #X restore 56 717 pd \$0-gui_listeners;
 #X obj 284 534 s \$0-triad-scale-names;
 #X obj 394 179 r \$0-triad-scale-names;

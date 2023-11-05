@@ -762,12 +762,12 @@
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/tgl_dispatch combfilter \$0 \$1 0 1 combfilter-comb/dly-s combfilter-comb/dly-r DELAY #FFFFFF #000000 #000000;
-#X obj 10 60 reloaded/hsl_dispatch combfilter \$0 \$1 1.27 127 combfilter-highpass-s combfilter-highpass-r HIGHPASS #FFFFFF #000000 #000000;
-#X obj 10 120 reloaded/hsl_dispatch combfilter \$0 \$1 1.27 127 combfilter-drive-s combfilter-drive-r DRIVE #FFFFFF #000000 #000000;
 #X obj 10 180 reloaded/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-dry/wet-s combfilter-dry/wet-r DRY/WET #FFFFFF #000000 #000000;
 #X obj 10 240 reloaded/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-lowpass-s combfilter-lowpass-r LOWPASS #FFFFFF #000000 #000000;
 #X obj 10 300 reloaded/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-feedback-s combfilter-feedback-r FEEDBACK #FFFFFF #000000 #000000;
 #X obj 10 360 reloaded/hsl_dispatch combfilter \$0 \$1 0 127 combfilter-delay-s combfilter-delay-r DELAY #FFFFFF #000000 #000000;
+#X obj 10 120 reloaded/hsl_dispatch combfilter \$0 \$1 1.27 127 combfilter-drive-s combfilter-drive-r DRIVE #FFFFFF #000000 #000000 log;
+#X obj 10 60 reloaded/hsl_dispatch combfilter \$0 \$1 1.27 127 combfilter-highpass-s combfilter-highpass-r HIGHPASS #FFFFFF #000000 #000000 log;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 48 255 r \$0-combfilter-dry/wet-s;
 #X obj 243 278 r \$0-combfilter-drive-s;
