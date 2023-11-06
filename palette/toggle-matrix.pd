@@ -1,6 +1,6 @@
 #N canvas 1070 192 743 559 12;
-#X msg 79 479 The\ "TOGGLE-MATRIX"\ module\ is\ a\ classic\ matrix\ mixer\ with\ toggle\ switches\ instead\ of\ potentiometers.;
-#X obj 99 231 inlet The\ "TOGGLE-MATRIX"\ module\ is\ a\ classic\ matrix\ mixer\ with\ toggle\ switches\ instead\ of\ potentiometers.;
+#X msg 79 479 The "TOGGLE-MATRIX" module is a classic matrix mixer with toggle switches instead of potentiometers.;
+#X obj 99 231 inlet The "TOGGLE-MATRIX" module is a classic matrix mixer with toggle switches instead of potentiometers.;
 #X obj 0 0 hradio 20 1 0 5 \$0-click empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
 #X obj 1 1 cnv 18 98 18 \$0-get_pos \$0-pos-rcv 2op-fm 5 12 0 12 #e0e0e0 #404040 0;
 #X obj 91 428 onMouseOver toggle-matrix \$0;
