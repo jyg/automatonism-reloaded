@@ -1456,7 +1456,7 @@
 #X connect 22 0 23 0;
 #X connect 22 1 19 0;
 #X connect 23 0 19 1;
-#X restore 312 435 pd string_replace..with/;
+#X restore 314 444 pd string_replace..with/;
 #X obj 71 133 r to_plugdatabuffer;
 #N canvas 0 0 533 465 string_replace/with.. 0;
 #X obj 51 36 inlet;
@@ -1560,8 +1560,8 @@
 #X connect 28 2 2 0;
 #X connect 29 0 4 0;
 #X connect 29 1 3 0;
-#X connect 35 0 27 0;
-#X connect 35 1 18 0;
+#X connect 35 0 18 0;
+#X connect 35 1 27 0;
 #X restore 1414 745 pd plugdata_plugin_support;
 #X obj 410 993 t f b;
 #X obj 436 1076 v IS_PLUGDATA;

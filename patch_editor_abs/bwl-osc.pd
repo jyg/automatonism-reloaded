@@ -1,4 +1,4 @@
-#N canvas 796 47 1693 1029 10;
+#N canvas 960 32 956 991 10;
 #X obj 93 297 t f f;
 #X obj 93 384 line~;
 #X obj 93 478 mtof~;
@@ -9,8 +9,8 @@
 #X obj 465 463 *~;
 #X obj 480 416 pack 0 50;
 #X obj 480 438 line~;
-#X obj 107 177 hsl 128 15 0 127 0 1 \$0-bwl-osc-fm-att-s \$0-bwl-osc-fm-att-r FM 133 7 0 10 #9999de #000000 #000000 0 1;
-#X obj 107 132 hsl 128 15 0 127 0 1 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 107 177 hsl 128 15 0 127 0 0 \$0-bwl-osc-fm-att-s \$0-bwl-osc-fm-att-r FM 133 7 0 10 #9999de #000000 #000000 0 1;
+#X obj 107 132 hsl 128 15 0 127 0 0 \$0-bwl-osc-pitch-s \$0-bwl-osc-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 105 109 cnv 5 5 5 empty empty PITCH 0 0 0 8 #fcfcfc #404040 0;
 #X obj 181 109 cnv 5 5 5 empty empty WSHAPE 0 0 0 8 #fcfcfc #7474a4 0;
 #X text 462 227 FM IN;
@@ -19,17 +19,17 @@
 #X text 214 248 PITCH CV IN;
 #X obj 104 124 cnv 5 5 5 empty empty BWL-OSC 0 0 0 12 #fcfcfc #404040 0;
 #X obj 93 361 pack 0 50;
-#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SINE 0 0 0 10 #fcfcfc #404040 0;
-#X obj 107 147 hsl 128 15 0 127 0 1 \$0-bwl-osc-pwidth-s \$0-bwl-osc-pwidth-r WSHAPE 133 7 0 10 #ffffff #000000 #000000 0 1;
-#X obj 107 162 hsl 128 15 0 127 0 1 \$0-bwl-osc-cv-att-s \$0-bwl-osc-cv-att-r CV 133 7 0 10 #9999de #000000 #000000 0 1;
+#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r PULSE 0 0 0 10 #fcfcfc #404040 0;
+#X obj 107 147 hsl 128 15 0 127 0 0 \$0-bwl-osc-pwidth-s \$0-bwl-osc-pwidth-r WSHAPE 133 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 107 162 hsl 128 15 0 127 0 0 \$0-bwl-osc-cv-att-s \$0-bwl-osc-cv-att-r CV 133 7 0 10 #9999de #000000 #000000 0 1;
 #X obj 480 372 * 0.00787402;
 #X obj 480 394 * 2;
 #X obj 105 206 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #404040 0;
 #X obj 679 35 sel 0 1 2 3;
 #X msg 679 522 1 0 0 0;
 #X obj 679 498 t b b;
-#X obj 177 192 hradio 15 1 1 4 \$0-bwl-osc-wform-s \$0-bwl-osc-wform-r empty 65 7 0 10 #ffffff #000000 #000000 0;
-#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 177 192 hradio 15 1 0 4 \$0-bwl-osc-wform-s \$0-bwl-osc-wform-r empty 65 7 0 10 #ffffff #000000 #000000 0;
+#X obj 175 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 965 696 s \$0-waveform-gui-r;
 #X obj 938 541 makefilename %s;
 #X msg 938 565 label \$1;
@@ -130,7 +130,7 @@
 #X restore 350 519 pd pulse;
 #X obj 465 246 inlet~ FM;
 #X obj 217 264 inlet~ PITCH;
-#N canvas 582 193 835 661 state-saving-multiple-instances 0;
+#N canvas 960 77 835 661 state-saving-multiple-instances 1;
 #X obj 137 29 loadbang;
 #X msg 466 435 rewind;
 #X msg 423 435 bang;
@@ -201,7 +201,7 @@
 #X obj 316 197 s \$0-instance-num;
 #X obj 316 149 makefilename %d;
 #X msg 316 174 label \$1;
-#N canvas 1160 12 1117 745 state-saving-via-preset-manager-module 0;
+#N canvas 960 32 956 991 state-saving-via-preset-manager-module 0;
 #X msg 719 210 rewind;
 #X msg 676 210 bang;
 #X obj 676 171 t b b;

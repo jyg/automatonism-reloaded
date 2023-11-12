@@ -12,7 +12,7 @@
 #X text 272 600 CHOOSE SLOT LOCATION AND STORE!;
 #X obj 494 895 s preset-manager-scan;
 #X obj 106 659 t f f;
-#X obj 108 196 hsl 115 15 0 127 0 1 \$0-scan-cv-att-s \$0-scan-cv-att-r RECALL-CV 120 7 0 10 #9898dc #000000 #000000 6900 1;
+#X obj 108 196 hsl 115 15 0 127 0 0 \$0-scan-cv-att-s \$0-scan-cv-att-r RECALL-CV 120 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 357 413 + 1;
 #X obj 357 435 i;
 #X obj 303 765 s preset-manager-store-slot;
@@ -31,7 +31,7 @@
 #X obj 376 118 bng 15 250 50 0 \$0-STEP-S! empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 103 111 cnv 5 5 5 empty empty RECALL(CV) 0 0 0 8 #fcfcfc #9898dc 0;
 #X obj 373 111 cnv 5 5 5 empty empty STEP! 0 0 0 8 #fcfcfc #dc4c90 0;
-#X obj 231 261 hradio 15 1 1 3 \$0-morph-scale-s \$0-morph-scale-r empty 0 -8 0 10 #fcfcfc #000000 #000000 0;
+#X obj 231 261 hradio 15 1 0 3 \$0-morph-scale-s \$0-morph-scale-r empty 0 -8 0 10 #fcfcfc #000000 #000000 0;
 #X text 230 247 10;
 #X text 245 247 30;
 #X text 260 247 60;
@@ -94,7 +94,7 @@
 #X obj 171 503 t b b b;
 #X obj 267 542 delay 1000;
 #N canvas 518 73 450 300 start-up-avoid-load-_textfile-cliks 0;
-#X obj 151 81 loadbang;
+#X obj 148 48 loadbang;
 #X obj 152 193 line;
 #X obj 151 103 t b b;
 #X msg 152 160 127 100;
@@ -102,7 +102,7 @@
 #X obj 178 128 delay 110;
 #X obj 67 73 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 152 215 s \$0-scan-avoid-clicks-r;
-#X connect 0 0 2 0;
+#X text 147 77 disabled \, as we don't use anymore HDD;
 #X connect 1 0 7 0;
 #X connect 2 0 3 0;
 #X connect 2 1 5 0;
