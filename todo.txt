@@ -1,5 +1,16 @@
 TODO
+Implémenter plugdata session saving pour les objets suivants
+	algomatrix
+	graphic-osc
+	megasequencer
+	multitrack-recorder
+	ratchet seq
+	
 
+
+
+
+* Etoffer les fichier d'aide avec des exemples sonores
 
 * Vérifier audio_recorder / multitrack_recorder : dossier local pour les enregistrements
 

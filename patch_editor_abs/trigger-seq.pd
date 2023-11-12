@@ -72,7 +72,7 @@
 #X obj 96 501 t b;
 #X obj 282 185 hradio 15 1 1 4 \$0-trigger-seq-load-s \$0-trigger-seq-load-r LOAD 0 -8 0 10 #c4fcc4 #0c4410 #000000 0;
 #X obj 208 186 hradio 15 1 0 4 \$0-trigger-seq-store-s \$0-trigger-seq-store-r STORE 0 -8 0 10 #fcc4c4 #fc0400 #000000 0;
-#N canvas 395 91 1008 752 store/load 0;
+#N canvas 395 91 1008 752 store/load 1;
 #X obj 290 212 pack f f;
 #X obj 292 453 reloaded/textfile \$0;
 #X msg 475 436 rewind;
@@ -152,8 +152,8 @@
 #X msg -378 522 set \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$16 \$17 \$18;
 #X obj -91 400 r \$0-trigger-seq-load-s;
 #X obj 308 67 delay 100;
-#N canvas 0 50 959 889 avoid-load-textfile-clicks 0;
-#X obj 159 135 loadbang;
+#N canvas 959 189 959 889 avoid-load-textfile-clicks 1;
+#X obj 154 101 loadbang;
 #X obj 159 157 t b b;
 #X msg 159 179 127 100;
 #X obj 159 226 line;
@@ -174,7 +174,7 @@
 #X obj 165 380 delay 100;
 #X text 124 83 load presets in RAM \, avoid physical HD after startup;
 #X obj 147 497 f \$1;
-#X connect 0 0 1 0;
+#X text 127 130 disabled \, since we don't use anymore HDD.;
 #X connect 1 0 2 0;
 #X connect 1 1 4 0;
 #X connect 2 0 3 0;

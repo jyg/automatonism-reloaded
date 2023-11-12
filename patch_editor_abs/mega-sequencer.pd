@@ -1055,7 +1055,7 @@
 #X obj 1021 100 inlet~;
 #X obj 1021 122 threshold~ 1 0 1 0;
 #X obj 1021 144 t b b;
-#N canvas 302 65 1008 752 savetest 1;
+#N canvas 302 65 1008 752 savetest 0;
 #X obj 290 212 pack f f;
 #X obj 292 453 reloaded/textfile \$0;
 #X msg 475 436 rewind;
@@ -1245,7 +1245,7 @@
 #X connect 50 0 47 0;
 #X restore 109 657 pd savetest;
 #X obj 108 353 hradio 15 1 1 16 \$0-ms-maxstep-s \$0-ms-maxstep-r MAX-1 245 7 0 10 #fcfcfc #000000 #000000 0;
-#X obj 108 313 hradio 15 1 0 16 \$0-ms-write-s \$0-ms-write-r WRITE-4 245 7 0 10 #fcc4c4 #fc0400 #000000 0;
+#X obj 108 313 hradio 15 1 0 16 \$0-ms-write-s \$0-ms-write-r WRITE-1 245 7 0 10 #fcc4c4 #fc0400 #000000 0;
 #X obj 108 518 r \$0-ms-write-s;
 #X obj 255 498 r \$0-ms-load-s;
 #X obj 109 605 r \$0-ms-write-s;
@@ -1263,7 +1263,7 @@
 #X obj 1021 184 s \$0-ms-reset-s;
 #X obj 372 604 s \$0-instance-num;
 #X obj 372 556 makefilename %d;
-#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 432 162 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X msg 372 581 label \$1;
 #X obj 372 526 f \$1;
 #X obj 372 497 loadbang;
@@ -1297,7 +1297,7 @@
 #X symbolatom 384 389 10 0 0 0 - \$0-ms-xpose-gui3-r - 0;
 #X obj 108 306 cnv 5 250 5 empty empty empty 20 12 0 14 #e0e0e0 #404040 0;
 #X obj 106 368 cnv 10 250 5 empty empty empty 20 12 0 14 #e0e0e0 #404040 0;
-#N canvas 977 62 593 735 xtra-state-saving-multiple-instances-for-maxstep 0;
+#N canvas 977 62 593 735 xtra-state-saving-multiple-instances-for-maxstep 1;
 #X obj 215 28 loadbang;
 #X obj 261 480 reloaded/textfile \$0;
 #X msg 556 463 rewind;
@@ -1352,7 +1352,7 @@
 #X connect 23 0 20 0;
 #X restore 652 614 pd xtra-state-saving-multiple-instances-for-maxstep;
 #X obj 10 50 reloaded mega-sequencer \$0 \$1;
-#X obj 50 10 savestate;
+#X obj 10 10 savestate;
 #N canvas 1 58 958 1018 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hsl_dispatch mega-sequencer \$0 \$1 0 127 ms-xpose-centre-s ms-xpose-centre-r XPOSE(CENTRE) #91D6B2 #000000 #000000;
 #X obj 10 240 reloaded/hsl_dispatch mega-sequencer \$0 \$1 0 127 ms-xpose-p1-s ms-xpose-p1-r XPOSE #91D6B2 #000000 #000000;
