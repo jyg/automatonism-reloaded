@@ -1525,11 +1525,9 @@
 #X text 47 297 tag message sent to daw databuffer;
 #X text 454 231 forward only tagged messages;
 #X msg 565 109;
-#X obj 152 551 print from_host.load-;
 #X text 449 176 <clé_unique> DATA <target> .....;
 #X obj 316 344 t l l;
 #X connect 0 0 1 0;
-#X connect 0 0 33 0;
 #X connect 2 0 1 1;
 #X connect 3 0 5 0;
 #X connect 4 0 20 0;
@@ -1550,7 +1548,7 @@
 #X connect 21 0 22 0;
 #X connect 22 0 24 0;
 #X connect 22 1 26 0;
-#X connect 23 0 35 0;
+#X connect 23 0 34 0;
 #X connect 24 0 23 1;
 #X connect 25 0 23 1;
 #X connect 26 0 25 0;
@@ -1560,8 +1558,8 @@
 #X connect 28 2 2 0;
 #X connect 29 0 4 0;
 #X connect 29 1 3 0;
-#X connect 35 0 18 0;
-#X connect 35 1 27 0;
+#X connect 34 0 18 0;
+#X connect 34 1 27 0;
 #X restore 1414 745 pd plugdata_plugin_support;
 #X obj 410 993 t f b;
 #X obj 436 1076 v IS_PLUGDATA;
