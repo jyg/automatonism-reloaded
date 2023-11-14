@@ -1,0 +1,14 @@
+#N canvas 575 616 450 300 12;
+#X obj 100 100 hradio 20 1 0 5 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0;
+#X obj 149 169 list append obj \$1;
+#X obj 162 133 t b b;
+#X obj 101 101 cnv 18 98 18 empty empty \$1 5 12 0 12 #e0e0e0 #404040 0;
+#X msg 254 93 1;
+#X obj 32 213 s PALETTE.target;
+#X obj 295 124 s PALETTE.dragging;
+#X connect 0 0 2 0;
+#X connect 1 0 5 0;
+#X connect 2 0 1 0;
+#X connect 2 1 4 0;
+#X connect 4 0 6 0;
+#X coords 0 -1 1 1 100 20 2 100 100;

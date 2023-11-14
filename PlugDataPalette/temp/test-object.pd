@@ -1,0 +1,8 @@
+#N canvas 1140 146 755 520 12;
+#X declare -path automatonism/patch_editor_abs;
+#X obj 424 140 automatonism;
+#A saved esc-active 1;
+#X obj 10 10 declare -path automatonism/patch_editor_abs;
+#X obj 39 119 basic-osc 3;
+#A saved preset statesave/3-basic-osc-ss.txt 15 15 0 0 0;
+#A saved preset statesave/0-basic-osc-ss.txt 0 0 0 0 0;
