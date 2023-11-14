@@ -1,8 +1,8 @@
 #N canvas 475 338 1269 675 10;
-#X obj 108 175 hsl 128 15 1.27 127 1 1 \$0-kick-envmod-s \$0-kick-envmod-r EG2 133 7 0 10 #ffffff #000000 #000000 0 1;
-#X obj 108 145 hsl 128 15 1.27 127 1 1 \$0-kick-hold-s \$0-kick-hold-r HOLD 133 7 0 10 #ffffff #000000 #000000 8007 1;
-#X obj 108 190 hsl 128 15 0 127 0 1 \$0-kick-sweep-s \$0-kick-sweep-r SWEEP 133 7 0 10 #ffffff #000000 #000000 0 1;
-#X obj 108 130 hsl 128 15 0 127 0 1 \$0-kick-pitch-s \$0-kick-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 108 175 hsl 128 15 1.27 127 1 1 \$0-kick-envmod-s \$0-kick-envmod-r EG2 133 7 0 10 #ffffff #000000 #000000 8900 1;
+#X obj 108 145 hsl 128 15 1.27 127 1 1 \$0-kick-hold-s \$0-kick-hold-r HOLD 133 7 0 10 #ffffff #000000 #000000 3100 1;
+#X obj 108 190 hsl 128 15 0 127 0 1 \$0-kick-sweep-s \$0-kick-sweep-r SWEEP 133 7 0 10 #ffffff #000000 #000000 9400 1;
+#X obj 108 130 hsl 128 15 0 127 0 1 \$0-kick-pitch-s \$0-kick-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 11400 1;
 #X obj 412 405 *~;
 #X obj 548 344 vline~;
 #X obj 548 366 *~;
@@ -66,7 +66,7 @@
 #X text 523 224 INSTANCE NUMBER;
 #X obj 488 139 f \$1;
 #X obj 488 175 t f f f;
-#X obj 48 378 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 48 378 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 48 274 r SAVE-S;
 #X obj 116 51 r \$0-kick-pitch-s;
 #X obj 358 706 s \$0-kick-pitch-r;
@@ -674,7 +674,7 @@
 #X obj 210 109 cnv 5 5 5 empty empty SWEEP 0 0 0 8 #fcfcfc #000000 0;
 #X obj 103 109 cnv 5 5 5 empty empty TRG 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 156 109 cnv 5 5 5 empty empty DCY 0 0 0 8 #fcfcfc #000000 0;
-#X obj 145 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 145 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 126 109 cnv 5 5 5 empty empty PTCH 0 0 0 8 #fcfcfc #000000 0;
 #X obj 241 109 cnv 5 5 5 empty empty WFRM 0 0 0 8 #fcfcfc #000000 0;
 #X floatatom 587 252 5 0 0 0 - - - 0;
@@ -745,7 +745,7 @@
 #X connect 9 0 3 1;
 #X connect 10 0 9 0;
 #X restore 412 360 pd anti-alias;
-#X obj 108 204 hsl 128 15 0 127 0 1 \$0-kick-wform-s \$0-kick-wform-r WFORM 135 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 108 204 hsl 128 15 0 127 0 1 \$0-kick-wform-s \$0-kick-wform-r WFORM 135 7 0 10 #ffffff #000000 #000000 10400 1;
 #X obj 410 165 * 2;
 #X obj 976 327 inlet~ WFORM;
 #X obj 976 349 s~ \$0-kick-wform-cv;
@@ -840,7 +840,7 @@
 #X floatatom 465 191 5 0 0 0 - - - 0;
 #X obj 518 176 * 5000;
 #X obj 108 264 hsl 128 15 0 127 0 1 \$0-acc-level-s \$0-acc-level-r ACCENT 133 7 0 10 #9999de #000000 #000000 0 1;
-#X obj 108 234 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r FLAM-PROB 133 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 108 234 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r FLAM-PROB 133 7 0 10 #ffffff #000000 #000000 5000 1;
 #X obj 108 219 hsl 128 15 0 127 0 1 \$0-flam-s \$0-flam-r FLAM 133 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 118 323 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD 125 7 0 10 #fcfcfc #90d4b0 #000000 0;
 #X obj 118 308 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE 125 7 0 10 #fcfcfc #dc4c90 #000000 0;
@@ -1104,7 +1104,7 @@
 #X obj 607 540 -;
 #X obj 607 562 pack 0 50;
 #X obj 607 584 line~;
-#X obj 108 160 hsl 128 15 1.27 127 1 1 \$0-kick-decay-s \$0-kick-decay-r DECAY 133 7 0 10 #ffffff #000000 #000000 0 1;
+#X obj 108 160 hsl 128 15 1.27 127 1 1 \$0-kick-decay-s \$0-kick-decay-r DECAY 133 7 0 10 #ffffff #000000 #000000 4200 1;
 #X msg 548 322 1 1 \, 0 \$1 \$2;
 #X obj 548 279 pack f f;
 #X obj 578 130 r \$0-kick-hold-s;

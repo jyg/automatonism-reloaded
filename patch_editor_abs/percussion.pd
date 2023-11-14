@@ -1,4 +1,4 @@
-#N canvas 0 23 1255 697 10;
+#N canvas 724 306 1255 697 10;
 #X obj 67 75 s \$0-trig!;
 #X obj 67 8 inlet~;
 #X obj 67 30 threshold~ 0.9 0 0.9 0;
@@ -67,7 +67,7 @@
 #X obj 1265 62 threshold~ 0.9 0 0.9 0;
 #X obj 1265 84 random 8;
 #X obj 1265 106 s \$0-load-r;
-#X obj 105 242 hsl 128 15 0 127 0 1 \$0-index2-s \$0-index2-r INDEX 135 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 105 242 hsl 128 15 0 127 0 1 \$0-index2-s \$0-index2-r INDEX 135 7 0 10 #9898dc #000000 #000000 6900 1;
 #X obj 455 178 r \$0-op1-s;
 #X obj 455 200 mtof;
 #X obj 455 222 pack 0 50;
@@ -76,10 +76,10 @@
 #X obj 455 297 phasor~;
 #X obj 455 319 +~;
 #X obj 455 341 cos~;
-#X obj 105 227 hsl 128 15 0 127 0 1 \$0-decay2-s \$0-decay2-r DECAY2 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 227 hsl 128 15 0 127 0 1 \$0-decay2-s \$0-decay2-r DECAY2 135 7 0 10 #fcfcfc #000000 #000000 3900 1;
 #X obj 455 363 *~;
 #X obj 515 346 r~ \$0-EG1;
-#X obj 105 132 hsl 128 15 0 127 0 1 \$0-op1-s \$0-op1-r OP1(CARRIER) 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 132 hsl 128 15 0 127 0 1 \$0-op1-s \$0-op1-r OP1(CARRIER) 135 7 0 10 #fcfcfc #000000 #000000 100 1;
 #X obj 684 298 +~;
 #X obj 684 329 phasor~;
 #X obj 684 351 +~;
@@ -87,10 +87,10 @@
 #X obj 684 395 *~;
 #X obj 744 378 r~ \$0-EG2;
 #X obj 105 212 hsl 128 15 0 127 0 1 \$0-op2-s \$0-op2-r OP2(MOD) 135 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 105 162 hsl 128 15 0 127 0 1 \$0-decay4-s \$0-decay4-r P-DECAY 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 162 hsl 128 15 0 127 0 1 \$0-decay4-s \$0-decay4-r P-DECAY 135 7 0 10 #fcfcfc #000000 #000000 1400 1;
 #X obj 699 22 r \$0-op2-s;
-#X obj 105 277 hsl 128 15 0 127 0 1 \$0-decay3-s \$0-decay3-r DECAY3 135 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 105 262 hsl 128 15 0 127 0 1 \$0-op3-s \$0-op3-r OP3(MOD) 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 277 hsl 128 15 0 127 0 1 \$0-decay3-s \$0-decay3-r DECAY3 135 7 0 10 #fcfcfc #000000 #000000 9200 1;
+#X obj 105 262 hsl 128 15 0 127 0 1 \$0-op3-s \$0-op3-r OP3(MOD) 135 7 0 10 #fcfcfc #000000 #000000 5100 1;
 #X obj 844 359 +~;
 #X obj 844 390 phasor~;
 #X obj 844 412 +~;
@@ -156,7 +156,7 @@
 #X obj 859 200 pack 0 50;
 #X obj 859 222 line~;
 #X obj 859 56 r \$0-op3-s;
-#X obj 105 292 hsl 128 15 0 127 0 1 \$0-index3-s \$0-index3-r INDEX 135 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 105 292 hsl 128 15 0 127 0 1 \$0-index3-s \$0-index3-r INDEX 135 7 0 10 #9898dc #000000 #000000 9800 1;
 #X obj 290 259 tgl 15 1 \$0-t2-s \$0-t2-r FREE 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 290 212 tgl 15 1 \$0-t1-s \$0-t1-r FREE 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 699 220 *~;
@@ -186,7 +186,7 @@
 #X obj 584 359 / 127;
 #X obj 584 381 pack 0 50;
 #X obj 584 403 line~;
-#X obj 105 177 hsl 128 15 0 127 0 1 \$0-envmod-s \$0-envmod-r ENVMOD 135 7 0 10 #9898dc #000000 #000000 0 1;
+#X obj 105 177 hsl 128 15 0 127 0 1 \$0-envmod-s \$0-envmod-r ENVMOD 135 7 0 10 #9898dc #000000 #000000 8100 1;
 #X obj 515 442 *~ 2000;
 #X obj 1080 320 *~;
 #X obj 1152 259 / 127;
@@ -273,7 +273,7 @@
 #X connect 13 0 2 0;
 #X connect 15 0 9 0;
 #X restore 355 95 pd EG4;
-#X obj 105 147 hsl 128 15 0 127 0 1 \$0-decay1-s \$0-decay1-r DECAY1 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 105 147 hsl 128 15 0 127 0 1 \$0-decay1-s \$0-decay1-r DECAY1 135 7 0 10 #fcfcfc #000000 #000000 2000 1;
 #X obj 515 383 r~ \$0-EG4;
 #X obj 470 45 *~ 127;
 #X obj 470 67 mtof~;
@@ -288,7 +288,7 @@
 #X obj 105 342 hsl 128 15 0 127 0 1 \$0-acc-prob-s \$0-acc-prob-r ACC-PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 105 327 hsl 128 15 0 127 0 1 \$0-flam-prob-s \$0-flam-prob-r FLAM-PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 105 312 hsl 128 15 0 127 0 1 \$0-flam-s \$0-flam-r FLAM 133 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 115 372 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD 125 7 0 10 #fcfcfc #90d4b0 #000000 0;
+#X obj 115 372 hradio 15 1 1 8 \$0-load-s \$0-load-r LOAD 125 7 0 10 #fcfcfc #90d4b0 #000000 4;
 #X obj 115 357 hradio 15 1 0 8 \$0-write-s \$0-write-r STORE 125 7 0 10 #fcfcfc #dc4c90 #000000 0;
 #X obj 294 325 bng 15 250 50 0 \$0-flam-prob-gui-s \$0-flam-prob-gui-r empty 17 7 0 10 #000000 #dc4c90 #000000;
 #X obj 294 340 bng 15 250 50 0 \$0-acc-prob-gui-s \$0-acc-prob-gui-r empty 17 7 0 10 #000000 #dc4c90 #000000;
@@ -354,7 +354,7 @@
 #X obj 456 489 *~ 0.5;
 #X floatatom 203 118 5 0 0 0 - \$0-op1-s - 0;
 #X obj 103 123 cnv 5 5 5 empty empty PERCUSSION 0 0 0 12 #fcfcfc #404040 0;
-#X obj 176 123 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 176 123 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
 #X obj 318 107 cnv 5 5 5 empty empty R-LOAD 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 103 109 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 156 108 cnv 5 5 5 empty empty OP1 0 0 0 8 #fcfcfc #000000 0;
