@@ -1,0 +1,3 @@
+Automatonism reloaded
+Version: 4.0
+Author:  Johan Eriksson (3.1) -  reloaded (4.0) by Jean-Yves Gratius
