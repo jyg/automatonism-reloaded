@@ -319,14 +319,15 @@
 #X text 236 702 (New & updated modules for Automatonism v2.0 have GREEN buttons), f 68;
 #X obj 569 497 bng 15 250 50 0 \$0-create-manual-toggle! empty <--MANUAL-TOGGLE 17 7 0 10 #90d4b0 #000000 #000000;
 #X obj 570 638 bng 15 250 50 0 \$0-create-macro-control! empty <--MACRO-CONTROL(Camomile/Plugdata) 17 7 0 10 #c4a0a0 #000000 #000000;
-#X obj 10 649 cnv 15 180 15 empty empty EXTRAS: 10 8 0 12 #9898dc #fcfcfc 0;
-#X obj 10 670 bng 15 250 50 0 \$0-create-extra-sampler! empty <--SAMPLER 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 10 669 cnv 15 180 15 empty empty EXTRAS: 10 8 0 12 #9898dc #fcfcfc 0;
+#X obj 10 690 bng 15 250 50 0 \$0-create-extra-sampler! empty <--SAMPLER 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 569 517 bng 15 250 50 0 \$0-create-playhead! empty <--PLAYHEAD(Camomile/Plugdata) 17 7 0 10 #c4a0a0 #000000 #000000;
 #X obj 196 554 bng 15 250 50 0 \$0-create-midi-polyin! empty <--MIDI-POLY.IN 17 7 0 10 #c4a0a0 #000000 #000000;
-#X obj 10 631 bng 15 250 50 0 \$0-create-euklid! empty <--EUKLID 17 7 0 10 #c4a0a0 #000000 #000000;
+#X obj 10 651 bng 15 250 50 0 \$0-create-euklid! empty <--EUKLID\ (Mike\ Moreno) 17 7 0 10 #c4a0a0 #000000 #000000;
 #X obj 669 111 bng 15 250 50 0 \$0-create-swing! empty <--SWING 17 7 0 10 #c4a0a0 #000000 #000000;
 #X text 236 744 (New & updated modules for Automatonism RELOADED have BROWN buttons), f 73;
 #X obj 10 171 bng 15 250 50 0 \$0-create-graphic-osc! empty <--GRAPHIC-OSC 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 10 631 bng 15 250 50 0 \$0-create-euclid777! empty <--EUCLID777 17 7 0 10 #c4a0a0 #000000 #000000;
 #X restore 364 775 pd \$0-modules;
 #N canvas 526 265 1119 718 open_modules 0;
 #X obj 31 8 inlet;
@@ -539,7 +540,6 @@
 #X obj 15 494 module_create \$0 \$1 manual-triggers;
 #X obj 15 514 module_create \$0 \$1 manual-toggle;
 #X obj 15 534 module_create \$0 \$1 playhead;
-#X obj 14 285 module_create \$0 \$1 euklid;
 #X obj 250 17 module_create \$0 \$1 swing;
 #X restore 37 119 pd utility/logic;
 #N canvas 0 142 248 332 sequencers 0;
@@ -548,6 +548,8 @@
 #X obj 14 67 module_create \$0 \$1 trigger-seq;
 #X obj 14 93 module_create \$0 \$1 gate-seq;
 #X obj 14 118 module_create \$0 \$1 ratchet-seq;
+#X obj 14 145 module_create \$0 \$1 euklid;
+#X obj 14 175 module_create \$0 \$1 euclid777;
 #X restore 37 141 pd sequencers;
 #N canvas 0 112 287 294 organelle-modules 0;
 #X obj 14 32 module_create \$0 \$1 organelle-knobs;
@@ -616,7 +618,7 @@
 #X msg 439 386 vis 1;
 #X obj 439 411 s pd-\$0-signal-flow;
 #X obj 439 364 r \$0-open-signal-flow!;
-#N canvas 416 23 852 668 \$0-signal-flow 1;
+#N canvas 416 23 852 668 \$0-signal-flow 0;
 #X obj 22 10 cnv 15 365 30 empty empty SIGNAL-FLOW 20 12 0 14 #dc4c90 #fcfcfc 0;
 #X obj 26 161 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #9898dc #fcfcfc #000000 0 1;
 #X obj 24 214 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 #90d4b0 #000000 #000000 0 1;
@@ -660,7 +662,7 @@
 #X text 133 117 Green sliders and inlets tells you that the parameter is bi-polar \, most oftenly working as an attenueverter for incoming CV.;
 #X text 135 181 And pink inlets means the input is expecting a trigger/gate signal or short impulse(square-wave) to function properly.;
 #X restore 438 452 pd \$0-color-code;
-#N canvas 292 594 377 372 \$0-manual 1;
+#N canvas 292 594 377 372 \$0-manual 0;
 #X obj 17 12 cnv 15 320 60 empty empty WELCOME-TO-THE-AUTOMATONISM-MANUAL! 20 12 0 14 #90d4b0 #fcfcfc 0;
 #X obj 22 82 hsl 115 30 0 127 0 0 \$0-open-signal-flow! empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 79 82 cnv 15 60 30 empty empty FLOW 6 12 0 14 #e0e0e0 #404040 0;
