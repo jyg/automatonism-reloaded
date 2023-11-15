@@ -120,6 +120,7 @@
 #X obj 820 250 reloaded/daw_storage macro-control-\$1.macro-names;
 #X obj 560 230 list append;
 #X obj 476 306 list;
+#X obj 755 254 print;
 #X connect 0 0 39 0;
 #X connect 0 1 42 0;
 #X connect 1 0 2 0;
@@ -136,6 +137,7 @@
 #X connect 11 0 16 0;
 #X connect 18 0 41 0;
 #X connect 18 0 42 1;
+#X connect 18 0 44 0;
 #X connect 19 0 20 0;
 #X connect 20 0 18 0;
 #X connect 21 0 20 0;
