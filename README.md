@@ -1,4 +1,4 @@
-# Automatonism [Reloaded]
+# Automatonism [Reloaded]  v 4.0-pre3
 ![image](https://user-images.githubusercontent.com/1431894/227710524-edfb046d-e393-48c3-a578-8040f372e282.png)
 
 ![image](https://github.com/jyg/automatonism-reloaded/assets/1431894/dbda805b-cfa4-4a82-afad-e6f6d56dfc26)
