@@ -266,7 +266,6 @@
 #X connect 19 0 1 0;
 #X connect 21 0 20 0;
 #X restore 18 493 pd save_mappings_in_plugdata_plugin;
-#X listbox 129 381 51 0 0 0 - - - 0;
 #X obj 642 13 r_ MIDI_LEARN;
 #X connect 0 0 71 0;
 #X connect 1 0 4 2;
@@ -324,7 +323,6 @@
 #X connect 58 0 54 0;
 #X connect 59 0 17 0;
 #X connect 60 0 50 0;
-#X connect 60 0 84 0;
 #X connect 64 0 0 0;
 #X connect 65 0 74 0;
 #X connect 66 0 67 0;
@@ -347,7 +345,7 @@
 #X connect 78 0 79 1;
 #X connect 79 0 36 0;
 #X connect 80 0 78 0;
-#X connect 85 0 76 0;
+#X connect 84 0 76 0;
 #X restore 442 53 pd midi_mapping;
 #X msg 47 388 set \$1;
 #X obj 600 204 r \$0-map_from;

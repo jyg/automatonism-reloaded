@@ -87,7 +87,6 @@
 #X obj 1036 91 t b b;
 #X obj 1035 26 r \$0-palette.dragging;
 #X obj 517 252 r \$0-palette.offset;
-#X listbox 1462 196 20 0 0 0 - - - 0;
 #X obj 1131 218 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 1283 90 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X msg 1288 318 traverse pd-\$1 \, bang;
@@ -123,15 +122,14 @@
 #X connect 19 1 2 1;
 #X connect 20 0 16 0;
 #X connect 20 1 21 0;
-#X connect 21 1 31 0;
+#X connect 21 1 30 0;
 #X connect 22 0 20 0;
 #X connect 23 0 11 0;
 #X connect 23 0 7 1;
-#X connect 26 0 31 0;
-#X connect 27 0 3 0;
-#X connect 30 0 19 0;
-#X connect 31 1 24 0;
-#X connect 31 1 27 0;
+#X connect 25 0 30 0;
+#X connect 26 0 3 0;
+#X connect 29 0 19 0;
+#X connect 30 1 26 0;
 #X restore 595 121 pd drop-animation-in-target-gran-parent;
 #N canvas 939 355 825 644 drop-and-create-object-in-target-gran-parent 0;
 #X obj 455 304 select 1;

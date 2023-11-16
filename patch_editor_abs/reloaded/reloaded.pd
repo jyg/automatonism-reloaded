@@ -103,7 +103,6 @@
 #X obj 67 252 list split 2;
 #X obj 71 295 unpack s s;
 #X obj 66 534 list append;
-#X listbox 313 552 65 0 0 0 - - - 0;
 #X obj 171 398 list append \$1-\$3;
 #X text 310 514 list statesave/1-bwl-osc-ss.txt bwl-osc-1 preset 61 78 68 0 3, f 64;
 #X text 349 292 list statesave/1-bwl-osc-ss.txt preset 61 78 68 0 3, f 65;
@@ -118,13 +117,12 @@
 #X connect 5 0 8 0;
 #X connect 8 0 9 0;
 #X connect 8 1 10 1;
-#X connect 9 0 15 0;
-#X connect 9 1 12 0;
-#X connect 10 0 11 0;
-#X connect 10 0 16 0;
-#X connect 12 0 15 1;
-#X connect 15 0 10 0;
-#X connect 17 0 8 0;
+#X connect 9 0 14 0;
+#X connect 9 1 11 0;
+#X connect 10 0 15 0;
+#X connect 11 0 14 1;
+#X connect 14 0 10 0;
+#X connect 16 0 8 0;
 #X restore 501 311 pd databuffer for plugdata in DAW;
 #X obj 268 520 list split 2;
 #X obj 262 551 t b l;
@@ -132,7 +130,7 @@
 #X msg 333 648 symbol \$1-mapping_\$3;
 #X obj 17 117 r from_host.load-\$1-\$3;
 #X obj 15 492 s \$2-load_from_databuffer;
-#N canvas 1162 259 756 723 store_from_host.load 0;
+#N canvas 1162 259 756 723 store_from_host.load 1;
 #X obj 87 61 r from_host.load-\$1-\$3;
 #X obj 92 171 list split 2;
 #X obj 108 226 text search \$2-savestate_data;
@@ -144,6 +142,10 @@
 #X obj 259 346 text delete \$2-savestate_data;
 #X obj 251 397 loadbang;
 #X msg 244 430 1e+09;
+#X obj 387 13 loadbang;
+#X msg 387 42 1;
+#X obj 391 71 v Does_module_\$1-\$3_exist?;
+#X text 445 43 Answer : -Yes !;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
@@ -156,6 +158,8 @@
 #X connect 7 1 8 0;
 #X connect 9 0 10 0;
 #X connect 10 0 6 1;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
 #X restore 30 76 pd store_from_host.load;
 #X obj 15 460 list;
 #X obj 17 178 route preset;
