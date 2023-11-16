@@ -27,19 +27,21 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals). Latest version : v4.0-pre3.
 * You can also download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip. Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
 * For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases. Statesaving into DAW is broken for now.
-* If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism_menu object and add declare paths.
+* If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism object and add declare paths.
 * Alternatively, you can open an included template-patch and save it anywhere with a new name.
 * Start patching.
 
 ## Software Requirements
-* **pd** >= 0.51
+* **pd** >= 0.54
 * external lib **iemguts** needed for enhanced editing features, but not mandatory.
 
 **or**
 
-* **plugdata** > 0.7.1
+* **plugdata** > 0.8.1 (currently nightly build)
 
 ## Changes
+
+2023/11/15	-improved Plugdata support, added patch statesaving inside DAW
 
 2023/03/25	-rewrite for plugdata support
 
