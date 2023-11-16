@@ -26,7 +26,7 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 ## Installation :
 * Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals). Latest version : v4.0-pre3.
 * You can also download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip. Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
-* For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases
+* For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases. Statesaving into DAW is broken for now.
 * If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism_menu object and add declare paths.
 * Alternatively, you can open an included template-patch and save it anywhere with a new name.
 * Start patching.
