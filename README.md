@@ -17,14 +17,14 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
   
 * **Midi-mapping and Midi-learn features**
 * DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
-* Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. 
+* Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. (requirements : Pd + iemguts, or Plugdata >0.8.1) 
 * **The new preset and state saving system is based on** (not-so-) new **'savestate' object**, where preset and state data are stored inside the main patch.
 * The legacy file-based preset and state saving system is deprecated, but old savestate structure is automatically imported in new project.
 * Ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * **Several projects can run simultaneously and independently** ("local mode" in Preset-Manager)
 
 ## Installation :
-* Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals)
+* Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals). Latest version : v4.0-pre3.
 * You can also download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip. Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
 * For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases
 * If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism_menu object and add declare paths.
