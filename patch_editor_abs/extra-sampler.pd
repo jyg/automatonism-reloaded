@@ -13,8 +13,8 @@
 #X obj 670 1073 *~;
 #X obj 670 930 *~;
 #X obj 669 987 +~;
-#X obj 107 208 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 8475 1;
-#X obj 107 223 hsl 128 15 0 127 0 1 \$0-sampler-length-s \$0-sampler-length-r LENGTH 133 7 0 10 #ffffff #000000 #000000 8300 1;
+#X obj 107 208 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 9525 1;
+#X obj 107 223 hsl 128 15 0 127 0 1 \$0-sampler-length-s \$0-sampler-length-r LENGTH 133 7 0 10 #ffffff #000000 #000000 12700 1;
 #X obj 107 238 hsl 128 15 0 127 0 0 \$0-sampler-start-s \$0-sampler-start-r START 133 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 670 731 phasor~;
 #X text 73 405 Get path to sample;
@@ -30,7 +30,7 @@
 #X obj 272 405 r \$0-open;
 #X obj 671 847 *~;
 #X text 530 699 Loop or one shot;
-#X obj 222 158 tgl 15 1 \$0-loop-on-off-s \$0-loop-on-off-r LOOP 18 7 0 10 #c6ffff #000000 #000000 1 1;
+#X obj 222 158 tgl 15 1 \$0-loop-on-off-s \$0-loop-on-off-r LOOP 18 7 0 10 #c6ffff #000000 #000000 0 1;
 #X obj 521 118 s \$0-bang;
 #N canvas 30 510 526 376 open 0;
 #X obj 242 56 openpanel;
@@ -180,6 +180,7 @@
 #X connect 51 0 9 0;
 #X restore 53 124 pd get-file-name;
 #X msg 53 146 label \$1;
+#X msg 139 151 label <no_file>;
 #X connect 0 0 6 0;
 #X connect 0 0 11 0;
 #X connect 0 0 13 0;
@@ -197,6 +198,7 @@
 #X connect 10 0 13 0;
 #X connect 13 0 14 0;
 #X connect 14 0 12 0;
+#X connect 15 0 12 0;
 #X restore 227 447 pd open file;
 #X text 466 1074 Scale to length of sample;
 #X obj 670 1015 wrap~;
@@ -680,8 +682,8 @@
 #X text 118 448 Open the sample;
 #X obj 175 328 cnv 5 5 5 empty empty OUT_R 0 0 0 8 #fcfcfc #404040 0;
 #X obj 107 268 hsl 128 15 0 127 0 1 \$0-sampler-length-att-s \$0-sampler-length-att-r LENGTH 133 7 0 10 #9999de #000000 #000000 0 1;
-#X obj 107 283 hsl 128 15 0 127 0 1 \$0-sampler-start-att-s \$0-sampler-start-att-r START 133 7 0 10 #9999de #000000 #000000 7600 1;
-#X obj 107 253 hsl 128 15 0 127 0 1 \$0-sampler-pitch-att-s \$0-sampler-pitch-att-r PITCH 133 7 0 10 #9999de #000000 #000000 200 1;
+#X obj 107 283 hsl 128 15 0 127 0 1 \$0-sampler-start-att-s \$0-sampler-start-att-r START 133 7 0 10 #9999de #000000 #000000 0 1;
+#X obj 107 253 hsl 128 15 0 127 0 1 \$0-sampler-pitch-att-s \$0-sampler-pitch-att-r PITCH 133 7 0 10 #9999de #000000 #000000 0 1;
 #X obj 670 594 *~;
 #X obj 679 76 inlet~ PITCH;
 #X obj 679 98 throw~ \$0-sampler-PITCH;
@@ -720,7 +722,7 @@
 #X connect 11 0 7 0;
 #X connect 12 0 1 0;
 #X restore 688 388 pd sample-length;
-#N canvas 186 336 428 589 sample-pitch 0;
+#N canvas 898 320 428 589 sample-pitch 0;
 #X obj 47 27 r \$0-sampler-pitch-s;
 #X obj 47 123 line~;
 #X obj 46 364 +~;
@@ -737,7 +739,9 @@
 #X obj 65 197 *~ 127;
 #X obj 82 287 pack 0 50;
 #X obj 47 101 pack 0 50;
+#X floatatom 62 63 5 0 0 0 - - - 0;
 #X connect 0 0 15 0;
+#X connect 0 0 16 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
 #X connect 2 0 9 0;
@@ -947,7 +951,7 @@
 #X obj 866 800 s \$0-end-trig-r;
 #X text 76 976 _megalon_ 2017 v1.3;
 #X text 343 272 <-- DEFAULT SAMPLE RATE;
-#X obj 104 147 cnv 5 5 5 empty \$0-sample-display-name breakbeat9.wav 0 0 0 12 #fcfcfc #404040 0;
+#X obj 104 147 cnv 5 5 5 empty \$0-sample-display-name <no_file> 0 0 0 12 #fcfcfc #404040 0;
 #X obj 10 50 reloaded extra-sampler \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 529 102 450 300 \$0-gui_listeners 0;
