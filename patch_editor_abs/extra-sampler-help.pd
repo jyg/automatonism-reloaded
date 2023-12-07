@@ -1,47 +1,28 @@
-#N canvas 0 50 702 880 10;
-#X obj 23 756 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
--262144 0;
-#X obj 20 154 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
--262144 0;
-#X obj 20 594 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
--262144 0;
-#X obj 20 18 cnv 15 400 30 empty empty EXTRA-SAMPLER 20 12 0 14 -150893
--262144 0;
+#N canvas 2 87 702 880 10;
+#X obj 23 756 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X obj 20 154 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X obj 20 594 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X obj 20 18 cnv 15 400 30 empty empty EXTRA-SAMPLER 20 12 0 14 #90d4b0 #fcfcfc 0;
 #X text 24 670 PITCH - input for controlling the pitch with CV;
 #X text 26 790 OUT_L - Left output channel;
-#X text 26 820 OUT_R - Right output channel. If a mono sample is used
-\, this will not output anything.;
-#X text 26 860 END_TRIG - Sends out a trigger signal when the sample
-reaches it's end. Works when loop is on or off. If the sampler is retrigged
-before the end of the sample is reached \, END_TRIG will not output
-a trigger.;
-#X text 24 322 PITCH - controls the pitch of the sampler from -2x speed
-(twice the speed \, but in reverse) \, to 2x speed.;
+#X text 26 820 OUT_R - Right output channel. If a mono sample is used \, this will not output anything.;
+#X text 26 860 END_TRIG - Sends out a trigger signal when the sample reaches it's end. Works when loop is on or off. If the sampler is retrigged before the end of the sample is reached \, END_TRIG will not output a trigger.;
+#X text 24 322 PITCH - controls the pitch of the sampler from -2x speed (twice the speed \, but in reverse) \, to 2x speed.;
 #X text 24 355 LENGTH - The length of the sample;
 #X text 24 381 START - The start position of the sample;
-#X text 24 416 PITCH (purple) - The amount that the PITCH CV input
-affects the sample's pitch.;
-#X text 24 456 LENGTH (purple) - The amount that the LENGTH CV input
-affects the sample's length.;
-#X text 24 496 START (purple) - The amount that the START CV input
-affects the sample's start position.;
+#X text 24 416 PITCH (purple) - The amount that the PITCH CV input affects the sample's pitch.;
+#X text 24 456 LENGTH (purple) - The amount that the LENGTH CV input affects the sample's length.;
+#X text 24 496 START (purple) - The amount that the START CV input affects the sample's start position.;
 #X text 24 700 LENGTH - input for controlling the length with CV;
-#X text 24 730 START - input for controlling the start position with
-CV;
-#X text 24 192 OPEN_FILE - open a sound file to load into the sampler.
-Mono or stereo WAV and AIFF are supported.;
-#X text 24 222 LOOP - When turned off \, the sample will only play
-once then wait to be triggered through the TRIG input before playing
-again. When turned on \, the sample will loop indefinitely.;
-#X text 24 272 PRESET BUTTONS - These buttons set the pitch to preset
-octaves. Negative values indicate the sample playing in reverse. These
-values are -2 -1.5 -1 -0.5 0 0.5 1 1.5 2;
-#X text 24 536 SAMPLE_RATE - The sample rate of the current sample.
-Default is 44100 (44.1 kHz). Change this to your desired sample rate.
-;
-#X text 24 640 TRIG - retrigger the sample. Starts at the start position.
-;
-#X obj 474 50 extra-sampler;
+#X text 24 730 START - input for controlling the start position with CV;
+#X text 24 192 OPEN_FILE - open a sound file to load into the sampler. Mono or stereo WAV and AIFF are supported.;
+#X text 24 222 LOOP - When turned off \, the sample will only play once then wait to be triggered through the TRIG input before playing again. When turned on \, the sample will loop indefinitely.;
+#X text 24 272 PRESET BUTTONS - These buttons set the pitch to preset octaves. Negative values indicate the sample playing in reverse. These values are -2 -1.5 -1 -0.5 0 0.5 1 1.5 2;
+#X text 24 536 SAMPLE_RATE - The sample rate of the current sample. Default is 44100 (44.1 kHz). Change this to your desired sample rate.;
+#X text 24 640 TRIG - retrigger the sample. Starts at the start position.;
+#X text 24 61 The "EXTRA-SAMPLER" module is a stereo sampler that will open any audio file that Pure Data supports (WAV and AIFF) \, and any sample rate is supported. It allows variable pitch \, length \, and start position. The path to the file is stored within the statesave \, so it should reload the sample when AUTOMATONISM starts up... Unless you move the sample file!;
+#X obj 480 128 extra-sampler;
+#A saved preset statesave/0-sampler-ss.txt 1.33858 127 0 2 0 76 1 44100 symbol;
 #A saved dispatch sampler-pitch-s 1.33858;
 #A saved dispatch sampler-length-s 127;
 #A saved dispatch sampler-start-s 0;
@@ -49,10 +30,3 @@ Default is 44100 (44.1 kHz). Change this to your desired sample rate.
 #A saved dispatch sampler-length-att-s 0;
 #A saved dispatch sampler-start-att-s 76;
 #A saved dispatch sampler-pitch-att-s 2;
-#A saved dispatch sample-rate-s 44100;
-#X text 24 61 The "EXTRA-SAMPLER" module is a stereo sampler that will
-open any audio file that Pure Data supports (WAV and AIFF) \, and any
-sample rate is supported. It allows variable pitch \, length \, and
-start position. The path to the file is stored within the statesave
-\, so it should reload the sample when AUTOMATONISM starts up... Unless
-you move the sample file!;
