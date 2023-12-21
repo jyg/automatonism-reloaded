@@ -5,7 +5,7 @@
 #X obj 464 203 route -1;
 #X obj 429 144 list append;
 #X obj 198 81 t b b;
-#N canvas 0 32 1920 994 midi_mapping 1;
+#N canvas 0 32 956 991 midi_mapping 0;
 #X obj 579 77 spigot;
 #X obj 646 128 v MIDI_CHANNEL;
 #X obj 617 154 v MIDI_MAP_NUM;
@@ -50,7 +50,7 @@
 #X msg 311 742 label \$1;
 #X obj 311 717 symbol \$8;
 #X msg 393 742 label \$1\$2;
-#N canvas 955 612 450 300 MIDI_LEARN_mode_colors 0;
+#N canvas 454 583 450 300 MIDI_LEARN_mode_colors 0;
 #X obj 77 56 select 0 1;
 #X obj 28 202 list append color \$9 \$10 \$11;
 #X obj 28 227 list trim;
@@ -349,8 +349,7 @@
 #X obj 524 325 list prepend mapping \$6-\$3 \$6;
 #X obj 514 243 list append \$4;
 #X obj 524 275 list append \$5;
-#X obj 524 300 list append \$12;
-#N canvas 0 32 1916 467 save_mappings_in_plugdata_plugin 0;
+#N canvas 280 32 1916 467 save_mappings_in_plugdata_plugin 0;
 #X obj 521 134 r \$0-midi_map_status;
 #X obj 447 164 list append;
 #X obj 618 224 r \$0-map_from;
@@ -397,6 +396,10 @@
 #X connect 20 0 21 0;
 #X connect 21 0 18 0;
 #X restore 440 470 pd save_mappings_in_plugdata_plugin;
+#X obj 524 300 list append lin;
+#X obj 818 198 loadbang;
+#X obj 818 248 select 0;
+#X obj 818 223 list append \$12;
 #X connect 0 0 16 0;
 #X connect 2 0 4 1;
 #X connect 3 1 23 0;
@@ -406,7 +409,7 @@
 #X connect 7 0 13 0;
 #X connect 8 0 23 1;
 #X connect 9 0 24 1;
-#X connect 10 0 25 1;
+#X connect 10 0 26 1;
 #X connect 11 0 5 0;
 #X connect 12 0 7 0;
 #X connect 12 0 14 0;
@@ -416,5 +419,8 @@
 #X connect 20 0 21 0;
 #X connect 22 0 15 0;
 #X connect 23 0 24 0;
-#X connect 24 0 25 0;
-#X connect 25 0 22 0;
+#X connect 24 0 26 0;
+#X connect 26 0 22 0;
+#X connect 27 0 29 0;
+#X connect 28 1 26 1;
+#X connect 29 0 28 0;
