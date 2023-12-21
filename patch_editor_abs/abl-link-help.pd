@@ -1,4 +1,4 @@
-#N canvas 0 22 694 499 10;
+#N canvas 139 285 694 499 10;
 #X obj 23 346 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 23 127 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 23 287 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
@@ -10,8 +10,15 @@
 #X text 25 324 none;
 #X text 23 386 CLK-OUT - output1 : clock output;
 #X obj 462 27 abl-link;
+#A saved preset statesave/0-abl-link-ss.txt 0 63 1 0 112;
+#A saved dispatch resolution-s 0;
+#A saved dispatch connect-s 1;
+#A saved dispatch mute-s 0;
+#A saved dispatch sync-s 112;
+#A saved dispatch tempo-s 63;
 #X text 22 220 RESOLUTION - output rate (quarter \, eighth \, etc...);
 #X text 21 261 SYNC - period (number of quarters) between two triggers on SYNC output, f 70;
 #X text 18 240 TEMPO - local or shared tempo;
 #X text 21 166 CONNECT - Enables / Disables synchronization with abl_link protocol, f 67;
 #X text 22 416 SYNC - output2 : periodic synchronization output;
+#X text 23 437 BPM-RATE - outputs a voltage related to BPM. For example \, 120 BPM = 0 V \, 240 BPM = + 0.0944882 V \, 60 BPM = - 0.0944882 V. (0.0944882 V / octave), f 65;
