@@ -1,0 +1,11 @@
+#N canvas 853 179 1145 642 12;
+#X text 109 49 dummy patch;
+#X text 33 92 for plugdata not complaining if iemguts not available;
+#X obj 126 130 inlet;
+#X obj 117 294 args 1;
+#X obj 117 319 outlet;
+#X obj 124 250 print AUTOMATONISM - Warning;
+#X msg 123 205 for vanilla compatibility of your patch you should add dollar+zero ($ 0) as argument when you create the [automatonism] object.;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 6 0 5 0;
