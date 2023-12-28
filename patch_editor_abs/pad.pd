@@ -1,0 +1,4 @@
+#N canvas 315 56 1095 852 10;
+#X text 251 151 dummy patch;
+#X obj 296 261 outlet;
+#X coords 0 852 1 851 100 100 0;
