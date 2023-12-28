@@ -206,7 +206,7 @@
 #X obj 145 589 == \$0;
 #X obj 103 627 spigot;
 #X obj 494 578 t b;
-#N canvas 83 78 759 789 \$0-modules 0;
+#N canvas 83 78 759 789 \$0-modules 1;
 #X obj 196 91 cnv 15 180 15 empty empty MODULATION: 10 8 0 12 #9898dc #fcfcfc 0;
 #X obj 196 112 bng 15 250 50 0 \$0-create-basic-lfo! empty <--BASIC-LFO 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 10 41 cnv 15 740 45 empty empty MODULES 350 12 0 14 #90d4b0 #fcfcfc 0;
@@ -1133,9 +1133,13 @@
 #X obj 85 163 route playing, f 15;
 #X msg 80 198 1;
 #X obj 80 227 v IS_PLUGDATA;
+#X obj 53 62 r _playhead;
+#X text 150 62 next plugdataversions;
+#X text 181 129 waiting for official release;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
+#X connect 4 0 1 0;
 #X restore 472 111 pd check_if_plugdata;
 #N canvas 512 229 979 798 check 0;
 #X msg 114 619 obj 10 10 declare -path automatonism/patch_editor_abs;

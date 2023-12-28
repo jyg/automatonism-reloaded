@@ -1,6 +1,6 @@
 #N canvas 678 114 1554 904 10;
 #X obj 304 769 outlet~;
-#X obj 130 275 r playhead;
+#X obj 237 238 r playhead;
 #X obj 96 398 unpack f f f;
 #X obj 87 515 int;
 #X obj 87 537 change;
@@ -242,7 +242,7 @@
 #X restore 594 355 pd state-saving-multiple-instances;
 #X obj 599 436 s \$0-instance-num;
 #X obj 599 388 makefilename %d;
-#X obj 162 121 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
+#X obj 162 121 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X msg 599 413 label \$1;
 #X obj 10 50 reloaded playhead \$0 \$1;
 #X obj 50 10 savestate;
@@ -407,6 +407,9 @@
 #X restore 460 173 pd camomile/plugdata_detect;
 #X obj 516 361 loadbang;
 #X msg 516 390 1;
+#X obj 237 209 r _playhead;
+#X text 309 212 new plugdata versions;
+#X text 310 237 old plugdata versions;
 #X connect 1 0 28 0;
 #X connect 2 0 33 0;
 #X connect 2 0 51 0;
@@ -479,4 +482,5 @@
 #X connect 96 0 24 0;
 #X connect 98 0 99 0;
 #X connect 99 0 84 0;
+#X connect 100 0 28 0;
 #X coords 0 -1 1 1 200 95 2 100 100;
