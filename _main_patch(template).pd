@@ -1,0 +1,13 @@
+#N canvas 293 416 671 382 12;
+#X declare -path automatonism/patch_editor_abs;
+#X text 189 1 AUTOMATONISM - RELOADED!;
+#X obj 27 257 declare -path automatonism/patch_editor_abs;
+#X obj 25 75 automatonism \$0;
+#A saved esc-active 1;
+#X obj 28 283 namecanvas \$0-this;
+#N canvas 680 288 540 159 what_does_vanilla_mean_? 0;
+#X text 13 13 Using pd "vanilla" means that you are using puredata without any externals. You can open automatonism patches in such a configuration \, but you have to add the object [namecanvas \$0-this] to your patch \, and to check that automatonism is instantiated with a \$0 argument this way : [automatonism \$0] ., f 67;
+#X restore 450 37 pd what_does_vanilla_mean_?;
+#X text 163 281 <- for vanilla compatibility;
+#X text 282 79 <- [automatonism \$0] instantiated with \$0 argument;
+#X text 19 29 This is the new automatonism "vanilla" template patch. You can duplicate it every time you need to create a new machine., f 61;
