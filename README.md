@@ -3,7 +3,7 @@
 
 ![image](https://github.com/jyg/automatonism-reloaded/assets/1431894/dbda805b-cfa4-4a82-afad-e6f6d56dfc26)
 
-**Automatonism [Reloaded]** v 4.x is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
+**Automatonism [Reloaded] v 4.x** is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
 
 The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping. 
 
