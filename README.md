@@ -1,4 +1,4 @@
-# Automatonism [Reloaded]  v 4.0-pre3
+# Automatonism [Reloaded]  v 4.0-pre4
 ![image](https://user-images.githubusercontent.com/1431894/227710524-edfb046d-e393-48c3-a578-8040f372e282.png)
 
 ![image](https://github.com/jyg/automatonism-reloaded/assets/1431894/dbda805b-cfa4-4a82-afad-e6f6d56dfc26)
@@ -12,9 +12,6 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 
 * New ! **Plugdata compatible** (for standalone or as DAW plugin)
 * improved state saving inside DAW (with plugdata latest nightly build)
-
-* experimental palette feature for pd vanilla + iemguts. See here : [palette/README.md](https://github.com/jyg/automatonism-reloaded/tree/master/palette/README.md)
-  
 * **Midi-mapping and Midi-learn features**
 * DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
 * Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. (requirements : Pd + iemguts, or Plugdata >0.8.1) 
@@ -22,13 +19,14 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 * The legacy file-based preset and state saving system is deprecated, but old savestate structure is automatically imported in new project.
 * Ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * **Several projects can run simultaneously and independently** ("local mode" in Preset-Manager)
-
+* experimental palette feature for pd vanilla + iemguts. See here : [palette/README.md](https://github.com/jyg/automatonism-reloaded/tree/master/palette/README.md)
+  
 ## Installation :
-* Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals). Latest version : v4.0-pre3.
+* Automatonism [Reloaded] should now be accessible via Deken menu in puredata (Help -> Find Externals). Latest version : v4.0-pre4.
 * You can also download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip. Unzip it into your puredata - externals folder. You may now have a folder named "automatonism"
 * For camomile plugin versions, see here : https://github.com/jyg/automatonism-reloaded/releases. **Statesaving into DAW is currently broken for camomile plugin version**.
 * If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism object and add declare paths.
-* Alternatively, you can open an included template-patch and save it anywhere with a new name.
+* Alternatively, you can open the included template-patch _main_patch(template).pd and save it anywhere with a new name.
 * Start patching.
 
 ## Software Requirements
