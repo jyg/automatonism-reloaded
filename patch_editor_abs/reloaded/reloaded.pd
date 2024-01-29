@@ -105,10 +105,10 @@
 #X obj 66 534 list append;
 #X obj 171 398 list append \$1-\$3;
 #X text 310 514 list statesave/1-bwl-osc-ss.txt bwl-osc-1 preset 61 78 68 0 3, f 64;
-#X text 349 292 list statesave/1-bwl-osc-ss.txt preset 61 78 68 0 3, f 65;
+#X text 462 289 list statesave/1-bwl-osc-ss.txt preset 61 78 68 0 3, f 65;
 #X obj 59 483 list prepend;
 #X obj 66 578 s to_plugdatabuffer;
-#X msg 331 217 list statesave/1-bwl-osc-ss.txt preset 61 78 68 0 3;
+#X msg 444 214 list statesave/1-bwl-osc-ss.txt preset 61 78 68 0 3;
 #X text 85 601 to [automatonism] module;
 #X text 100 216 from [reloaded/textfile] modules;
 #X connect 1 0 2 0;
@@ -130,7 +130,7 @@
 #X msg 333 648 symbol \$1-mapping_\$3;
 #X obj 17 117 r from_host.load-\$1-\$3;
 #X obj 15 492 s \$2-load_from_databuffer;
-#N canvas 1162 259 756 723 store_from_host.load 1;
+#N canvas 1162 259 756 723 store_from_host.load 0;
 #X obj 87 61 r from_host.load-\$1-\$3;
 #X obj 92 171 list split 2;
 #X obj 108 226 text search \$2-savestate_data;
