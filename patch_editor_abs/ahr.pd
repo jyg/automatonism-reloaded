@@ -1,7 +1,7 @@
 #N canvas 150 23 1051 749 10;
 #X obj 117 576 vline~;
-#X obj 153 147 vsl 15 96 1.27 127 1 1 \$0-ahr-release-s \$0-ahr-release-r R 4 -9 0 10 #ffffff #000000 #000000 0 1;
-#X obj 123 147 vsl 15 96 1.27 127 1 1 \$0-ahr-attack-s \$0-ahr-attack-r A 4 -9 0 10 #ffffff #000000 #000000 0 1;
+#X obj 153 147 vsl 15 96 1.27 127 1 1 \$0-ahr-release-s \$0-ahr-release-r R 4 -9 0 10 #ffffff #000000 #000000 8200 1;
+#X obj 123 147 vsl 15 96 1.27 127 1 1 \$0-ahr-attack-s \$0-ahr-attack-r A 4 -9 0 10 #ffffff #000000 #000000 144 1;
 #X obj 117 480 f;
 #X obj 53 313 / 127;
 #X obj 224 311 / 127;
@@ -36,7 +36,7 @@
 #X msg 357 152 9999;
 #X msg 117 554 1 \$1 \, 0 \$2 \$3;
 #X obj 117 531 pack f f f;
-#X obj 138 147 vsl 15 96 1.27 127 1 1 \$0-ahr-hold-s \$0-ahr-hold-r H 4 -9 0 10 #ffffff #000000 #000000 0 1;
+#X obj 138 147 vsl 15 96 1.27 127 1 1 \$0-ahr-hold-s \$0-ahr-hold-r H 4 -9 0 10 #ffffff #000000 #000000 5800 1;
 #X obj 411 378 / 127;
 #X obj 410 440 * 1999;
 #X obj 195 475 +;
@@ -162,7 +162,7 @@
 #X obj 71 616 *~;
 #X obj 560 541 s \$0-instance-num;
 #X obj 560 493 makefilename %d;
-#X obj 184 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 184 126 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X msg 560 518 label \$1;
 #X obj 12 40 threshold~ 0.99 0 1 0;
 #N canvas 81 22 1126 739 state-saving-via-preset-manager-module 0;
@@ -589,6 +589,7 @@
 #X obj 165 600 r \$0-ahr-curve-s;
 #X obj 319 538 r \$0-ahr-cycle-s;
 #X obj 808 164 namecanvas \$0-this;
+#X obj 205 241 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X connect 0 0 57 0;
 #X connect 0 0 88 0;
 #X connect 0 0 88 1;
@@ -601,6 +602,7 @@
 #X connect 9 0 64 0;
 #X connect 9 1 12 0;
 #X connect 10 0 14 0;
+#X connect 10 0 109 0;
 #X connect 11 0 42 0;
 #X connect 12 0 11 0;
 #X connect 12 1 11 1;
