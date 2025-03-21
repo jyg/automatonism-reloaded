@@ -1,4 +1,4 @@
-#N canvas 562 41 1538 1026 16;
+#N canvas 0 0 1284 681 16;
 #X declare -path reloaded;
 #X obj 260 11 inlet;
 #X obj 612 19 inlet;
@@ -17,7 +17,7 @@
 #X obj 655 776 s;
 #X obj 620 635 t b s;
 #X msg 691 732 symbol \$2-dispatch_\$1;
-#X obj 1068 81 declare -path reloaded;
+#X obj 972 69 declare -path reloaded;
 #N canvas 0 0 450 300 check-module-ID 0;
 #X obj 105 44 inlet;
 #X obj 96 139 f \$3;
@@ -167,6 +167,12 @@
 #X obj 47 406 spigot 1;
 #X obj 16 319 t a b;
 #X msg 125 361 0;
+#X obj 1238 48 loadbang;
+#X obj 1238 77 f \$3;
+#X obj 1236 109 t f b;
+#X obj 1235 174 moses;
+#X obj 1281 140 value \$1-ID;
+#X obj 1298 183 value \$1-ID;
 #X connect 0 0 36 0;
 #X connect 1 0 49 0;
 #X connect 4 0 5 0;
@@ -241,3 +247,9 @@
 #X connect 90 0 86 0;
 #X connect 90 1 91 0;
 #X connect 91 0 89 1;
+#X connect 92 0 93 0;
+#X connect 93 0 94 0;
+#X connect 94 0 95 0;
+#X connect 94 1 96 0;
+#X connect 95 1 97 0;
+#X connect 96 0 95 1;
