@@ -1,9 +1,8 @@
-#N canvas 699 488 1379 492 12;
+#N canvas 545 488 1379 492 12;
 #X text 94 45 demande;
 #X obj 503 114 r \$0-midi_map_status;
 #X obj 464 203 route -1;
 #X obj 437 164 list append;
-#X obj 524 325 list prepend mapping \$6;
 #N canvas -10 0 1618 874 midi_mapping 0;
 #X obj 579 77 spigot;
 #X obj 646 128 v MIDI_CHANNEL;
@@ -193,10 +192,11 @@
 #X connect 20 0 21 0;
 #X connect 21 0 18 0;
 #X restore 762 140 pd save_mappings_in_plugdata_plugin;
+#X obj 524 325 list prepend mapping \$6-\$3 \$6;
 #X connect 1 0 3 1;
-#X connect 2 1 4 0;
+#X connect 2 1 10 0;
 #X connect 3 0 2 0;
-#X connect 4 0 7 0;
-#X connect 6 0 8 0;
-#X connect 8 0 3 0;
-#X connect 9 0 8 1;
+#X connect 5 0 7 0;
+#X connect 7 0 3 0;
+#X connect 8 0 7 1;
+#X connect 10 0 6 0;
