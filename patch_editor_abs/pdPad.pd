@@ -1,5 +1,6 @@
-#N canvas 315 56 1095 852 10;
-#N canvas 359 353 1369 453 sometemplate 0;
+#N struct 2317-point float xPos float yPos float rgb;
+#N canvas 189 0 1095 681 10;
+#N canvas 0 204 1284 453 sometemplate 0;
 #X text 307 256 [drawnumber xPos 200 0 900 xPos=];
 #X text 307 286 [drawnumber yPos 200 20 900 xPos=];
 #X obj 30 69 route change click;
@@ -100,7 +101,7 @@
 #X connect 4 0 3 0;
 #X connect 6 0 2 0;
 #X restore 642 39 pd clear;
-#N canvas 1383 87 535 417 makePoint 0;
+#N canvas 749 87 535 417 makePoint 0;
 #X obj 59 238 unpack f f f;
 #X msg 59 216 50 50 111;
 #X obj 59 290 append \$0-point xPos yPos rgb;
@@ -137,6 +138,7 @@
 #X obj 169 293 cnv 11 68 17 empty empty template 2 9 0 14 #000000 #fcfcfc 0;
 #X obj 498 84 pad 100 100 255 255 255;
 #N canvas 163 137 827 680 \$0-gui 0;
+#X scalar 2317-point 36.0608 38.7677 111 \;;
 #X coords 0 0 100 100 99 99 2 0 0;
 #X restore 498 84 pd \$0-gui;
 #X obj 748 437 s \$0-setCoords;
@@ -153,7 +155,7 @@
 #X obj 670 395 t l l;
 #X obj 333 175 route set list;
 #X obj 415 392 pack f f;
-#N canvas 1012 161 450 300 credits 0;
+#N canvas 834 161 450 300 credits 0;
 #X text 173 102 created by Henri Augusto Bisognini;
 #X text 105 69 Guilla library of abstractions;
 #X text 147 87 https://github.com/HenriAugusto/Guilla;

@@ -2433,7 +2433,7 @@
 #X obj 355 114 bng 15 100 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
 #X obj 105 108 cnv 5 5 5 empty empty TRIG 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 132 124 cnv 5 5 5 empty empty RATCHET-SEQ 0 0 0 12 #fcfcfc #404040 0;
-#X obj 214 124 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
+#X obj 214 124 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
 #X obj 378 132 bng 15 250 50 0 \$0-ratchet-random-s! \$0-ratchet-random-r! RANDOM! 17 7 0 10 #fcfcfc #000000 #000000;
 #N canvas 1 97 708 480 randomize-all-multiplication-radios 0;
 #X obj 13 13 r \$0-ratchet-random-s!;
@@ -2669,7 +2669,7 @@
 #X obj 888 105 s \$0-ratchet-random-s!;
 #X obj 888 61 t b b;
 #X obj 935 78 s \$0-ratchet-rdm!-gui-r;
-#N canvas 120 22 1008 752 store/load 1;
+#N canvas 120 22 1008 752 store/load 0;
 #X obj 290 212 pack f f;
 #X msg 475 436 rewind;
 #X obj 19 174 delay 10;
@@ -2987,7 +2987,7 @@
 #X restore 106 43 pd external-messages;
 #X obj 896 528 reloaded ratchet-seq \$0 \$1;
 #X obj 936 488 savestate;
-#N canvas 0 57 1920 1023 \$0-gui_listeners 0;
+#N canvas 0 7 1920 1023 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/bng_dispatch ratchet-seq \$0 \$1 250 50 ratchet-random-s! ratchet-random-r! RANDOM! #FFFFFF #000000 #000000;
 #X obj 10 180 reloaded/tgl_dispatch ratchet-seq \$0 \$1 0 1 t15-s t15-r empty #FFFFFF #000000 #000000;
 #X obj 10 240 reloaded/tgl_dispatch ratchet-seq \$0 \$1 0 1 t16-s t16-r ON/OFF #FFFFFF #000000 #000000;
