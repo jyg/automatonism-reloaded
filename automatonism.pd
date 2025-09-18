@@ -56,7 +56,7 @@
 #X text 151 14 [RELOADED];
 #X obj 98 102 cnv 15 248 85 empty \$0-active-rcv empty 20 12 0 14 #ccffcc #ccffcc 0;
 #X obj 104 110 cnv 5 5 5 empty empty AUTOMATONISM 0 0 0 14 #fcfcfc #404040 0;
-#X obj 212 110 cnv 5 5 5 empty empty \\[RELOADED\\]v4.2 0 0 0 12 #fcfcfc #404040 0;
+#X obj 212 110 cnv 5 5 5 empty empty [RELOADED]v4.2 0 0 0 12 #fcfcfc #404040 0;
 #X floatatom 151 167 5 0 0 1 - \$0-CPU - 0;
 #X text 162 150 CPU;
 #X text 150 150 %;
@@ -252,7 +252,7 @@
 #X restore 359 687 pd dynamic_patching_stuff;
 #X text 480 6 dynamically add [declare -path] to parent canvas if not declared, f 22;
 #X obj 699 669 r \$0-open-modules!;
-#N canvas 0 7 1920 1023 manual_popups 0;
+#N canvas 0 7 1920 1023 manual_popups 1;
 #N canvas 236 274 489 175 \$0-state-saving 0;
 #X obj 17 12 cnv 15 400 60 empty empty STATE_SAVING 20 12 0 14 #dc4c90 #fcfcfc 0;
 #N canvas 2 586 450 276 deprecated 0;
@@ -278,7 +278,8 @@
 #X text 33 42 RIGHT+CLICK & CHOOSE 'HELP' ON ANY MODULE!;
 #X text 464 125 7 In Automatonism [RELOADED] \, to save parameter states on each module \, you have to save the pd file \, like you normally would do from the FILE menu or cmd+s.;
 #X text 19 127 1 When you press "esc" key \, you'll see a list of all current available modules. Click the button to the left of the module you want to load and it will appear in the parent window. The module list will then disappear. To call back the module list you can click the MENU button in AUTOMATONISM or simply upress "esc" on your keyboard.;
-#X restore 443 238 pd \$0-quick-guide;
+#X coords 0 0 1 1 749 63 1 16 17;
+#X restore 353 15 pd \$0-quick-guide;
 #X msg 443 283 vis 1;
 #X obj 443 307 s pd-\$0-quick-guide;
 #X msg 439 386 vis 1;
@@ -355,7 +356,8 @@
 #X obj 155 119 hsl 115 30 0 127 0 0 \$0-open-midi-mapping! empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 152 119 cnv 15 60 30 empty empty MIDI 18 12 0 14 #e0e0e0 #404040 0;
 #X obj 213 119 cnv 15 60 30 empty empty MAPPING -5 12 0 14 #e0e0e0 #404040 0;
-#X restore 438 566 pd \$0-manual;
+#X coords 0 0 1 1 321 62 1 16 11;
+#X restore 437 688 pd \$0-manual;
 #X obj 438 590 r \$0-open-manual!;
 #X msg 438 612 vis 1;
 #X obj 438 636 s pd-\$0-manual;
@@ -559,7 +561,7 @@
 #X connect 66 0 67 0;
 #X connect 69 0 70 0;
 #X connect 70 0 71 0;
-#X coords 0 -1 1 1 85 60 0;
+#X coords 0 -1 1 1 85 60 1 0 0;
 #X restore 352 795 pd manual_popups;
 #X text 47 15 AUTOMATONISM;
 #X obj 815 67 declare -path iemguts;
@@ -975,7 +977,6 @@
 #X obj 1058 286 s \$0-this;
 #X msg 1058 227 loadbang;
 #X msg 1164 204 0;
-#X obj 1764 810 print savestate;
 #N canvas 50 60 800 758 \$0-modules 0;
 #X obj 196 91 cnv 15 180 15 empty empty MODULATION: 10 8 0 12 #9898dc #fcfcfc 0;
 #X obj 196 112 bng 15 250 50 0 \$0-create-basic-lfo! empty <--BASIC-LFO 17 7 0 10 #fcfcfc #000000 #000000;
@@ -1113,7 +1114,6 @@
 #X coords 0 0 1 1 742 79 1 9 9;
 #X restore 80 1261 pd \$0-modules;
 #X obj 578 285 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
-#X obj 650 379 print loadbang;
 #X connect 5 0 8 0;
 #X connect 7 0 6 0;
 #X connect 7 0 155 0;
@@ -1184,7 +1184,6 @@
 #X connect 113 0 115 0;
 #X connect 115 0 112 0;
 #X connect 116 0 117 0;
-#X connect 116 0 159 0;
 #X connect 117 0 118 0;
 #X connect 118 0 115 1;
 #X connect 119 0 113 0;
@@ -1200,7 +1199,6 @@
 #X connect 133 0 43 0;
 #X connect 134 0 43 0;
 #X connect 135 0 136 0;
-#X connect 135 0 156 0;
 #X connect 135 1 148 0;
 #X connect 136 0 146 0;
 #X connect 138 0 77 0;
@@ -1218,5 +1216,5 @@
 #X connect 152 0 154 0;
 #X connect 154 0 153 0;
 #X connect 155 0 152 1;
-#X connect 158 0 116 0;
+#X connect 157 0 116 0;
 #X coords 0 -1 1 1 250 170 2 97 101;
