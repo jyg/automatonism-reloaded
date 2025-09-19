@@ -38,7 +38,7 @@
 #X obj 361 407 spigot 1;
 #X msg 424 374 0;
 #X text 264 322 (no match in #A savestate), f 13;
-#N canvas 0 0 624 658 check-scope 1;
+#N canvas 0 0 624 658 check-scope 0;
 #X obj 17 9 inlet;
 #X obj 16 301 outlet;
 #X obj 15 264 spigot 1;

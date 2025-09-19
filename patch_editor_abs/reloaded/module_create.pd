@@ -26,7 +26,7 @@
 #X obj 32 504 delay 200;
 #X msg 32 529 0;
 #X msg 83 341 obj \$3 \$4 \$1 \$2 \\\$0 \, editmode 1;
-#X obj 162 230 v \$2-\$3-ID;
+#X obj 162 230 v \$3-ID;
 #X connect 0 0 3 0;
 #X connect 0 0 20 0;
 #X connect 1 0 21 0;

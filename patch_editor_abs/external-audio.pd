@@ -7,12 +7,12 @@
 #X obj 647 434 sig~;
 #X obj 356 431 / 100;
 #X obj 356 409 env~;
-#X obj 112 121 hsl 128 15 0 127 0 1 \$0-env-follower2-input-s \$0-env-follower2-input-r INPUT 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 112 121 hsl 128 15 0 127 0 1 \$0-env-follower2-input-s \$0-env-follower2-input-r INPUT 135 7 0 10 #fcfcfc #000000 #000000 12700 1;
 #X obj 647 412 * 0.00787402;
 #X obj 488 530 outlet~ EXTRACT-GATE;
 #X obj 484 198 *~;
-#X obj 112 151 hsl 128 15 0 127 0 1 \$0-env-follower2-threshold-s \$0-env-follower2-threshold-r GATE-THRESH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 112 136 hsl 128 15 0 127 0 1 \$0-env-follower2-smooth-s \$0-env-follower2-smooth-r AMP-SMOOTH 135 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 112 151 hsl 128 15 0 127 0 1 \$0-env-follower2-threshold-s \$0-env-follower2-threshold-r GATE-THRESH 135 7 0 10 #fcfcfc #000000 #000000 1000 1;
+#X obj 112 136 hsl 128 15 0 127 0 1 \$0-env-follower2-smooth-s \$0-env-follower2-smooth-r AMP-SMOOTH 135 7 0 10 #fcfcfc #000000 #000000 10400 1;
 #X obj 549 71 * 0.00787402;
 #X obj 549 134 pack 0 50;
 #X obj 549 157 line~;
@@ -37,7 +37,7 @@
 #X obj 877 345 +~;
 #X obj 877 367 outlet~ FREQUENCY;
 #X obj 109 114 cnv 5 5 5 empty empty EXTERNAL-AUDIO 0 0 0 12 #fcfcfc #404040 0;
-#X obj 219 114 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 219 114 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 342 217 cnv 5 5 5 empty empty FREQ 0 0 0 8 #fcfcfc #000000 0;
 #X obj 288 217 cnv 5 5 5 empty empty GATE 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 161 217 cnv 5 5 5 empty empty CH2 0 0 0 8 #fcfcfc #000000 0;

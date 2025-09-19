@@ -791,9 +791,10 @@
 #X obj 464 55 r \$0-midi_map_from;
 #X obj 550 17 r \$0-midi_map_to;
 #X obj 131 105 t f f f f f b;
-#X obj 395 159 f \$0;
 #X obj 393 193 s ACTIVE_DOLLARZERO;
 #X obj 285 332 s MIDI_LEARN;
+#X obj 395 159 f \$1;
+#X obj 415 121 r \$0-dollarzero;
 #X connect 0 0 3 0;
 #X connect 1 0 5 1;
 #X connect 2 0 5 0;
@@ -807,7 +808,7 @@
 #X connect 10 0 11 0;
 #X connect 11 0 18 0;
 #X connect 12 0 18 0;
-#X connect 13 0 41 0;
+#X connect 13 0 40 0;
 #X connect 13 1 20 0;
 #X connect 14 0 6 0;
 #X connect 14 1 23 0;
@@ -844,8 +845,9 @@
 #X connect 38 2 19 1;
 #X connect 38 3 16 1;
 #X connect 38 4 19 0;
-#X connect 38 5 39 0;
-#X connect 39 0 40 0;
+#X connect 38 5 41 0;
+#X connect 41 0 39 0;
+#X connect 42 0 41 1;
 #X restore 803 389 pd modes(midi_learn/midi_map_from/midi_map_to;
 #N canvas 0 25 1217 770 midi_input_for_mapping 0;
 #X obj 87 100 r MIDI_LEARN;
