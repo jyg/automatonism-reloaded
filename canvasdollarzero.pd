@@ -1,0 +1,4 @@
+#N canvas 827 239 734 565 12;
+#X obj 244 152 inlet;
+#X obj 249 231 outlet;
+#X text 173 102 dummy patch for plugdata;
