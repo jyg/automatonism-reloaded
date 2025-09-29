@@ -8,6 +8,11 @@
 #X obj 222 120 canvas.zoom 2;
 #X text 97 12 replace receivecanvas 1 with else objects;
 #X obj 43 116 canvas.mouse 2 0 1;
+#X obj 481 230 canvas.active 2;
+#X obj 424 267 spigot;
+#X obj 407 86 keyname;
+#X msg 424 293 key \$1 \$2;
+#X obj 416 174 pack f s;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
 #X connect 4 0 1 0;
@@ -15,3 +20,9 @@
 #X connect 6 0 5 0;
 #X connect 8 1 2 0;
 #X connect 8 2 2 1;
+#X connect 9 0 10 1;
+#X connect 10 0 12 0;
+#X connect 11 0 13 0;
+#X connect 11 1 13 1;
+#X connect 12 0 1 0;
+#X connect 13 0 10 0;

@@ -489,12 +489,12 @@
 #X connect 18 0 10 0;
 #X restore 489 194 pd external-messages;
 #X obj 229 232 r \$0-quantizer-scale-s;
-#X obj 10 50 reloaded quantizer \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 0 50 450 300 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/hsl_dispatch quantizer \$0 \$1 0 127 quantizer-scale-s quantizer-scale-r SCALE #FFFFFF #000000 #000000;
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 135 77 namecanvas \$0-this;
+#X obj 10 50 reloaded _quantizer \$0 \$1;
 #X connect 1 0 6 0;
 #X connect 3 0 0 0;
 #X connect 4 0 1 0;
@@ -518,7 +518,7 @@
 #X connect 30 0 28 0;
 #X connect 32 0 15 0;
 #X connect 34 0 12 0;
-#X connect 35 0 36 0;
-#X connect 36 0 35 0;
-#X connect 36 1 35 1;
+#X connect 35 0 38 0;
+#X connect 35 1 38 1;
+#X connect 38 0 35 0;
 #X coords 0 -1 1 1 175 75 2 100 100;

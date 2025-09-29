@@ -1,5 +1,5 @@
 #N canvas 0 23 835 546 10;
-#X obj 107 124 hsl 128 15 0 127 0 1 \$0-probability-prob-s \$0-probability-prob-r PROB 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 107 124 hsl 128 15 0 127 0 1 \$0-probability-prob-s \$0-probability-prob-r PROB 133 7 0 10 #fcfcfc #000000 #000000 7100 1;
 #X obj 136 110 cnv 5 5 5 empty empty PROBABILITY 0 0 0 12 #fcfcfc #404040 0;
 #N canvas 21 22 593 735 state-saving-multiple-instances 0;
 #X obj 215 28 loadbang;
@@ -78,7 +78,7 @@
 #X obj 614 182 * 127;
 #X obj 54 471 s \$0-instance-num;
 #X obj 54 424 makefilename %d;
-#X obj 223 110 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 223 110 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X msg 54 448 label \$1;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 reloaded/textfile \$0;
