@@ -21,4 +21,4 @@
 #X text 18 240 TEMPO - local or shared tempo;
 #X text 21 166 CONNECT - Enables / Disables synchronization with abl_link protocol, f 67;
 #X text 22 416 SYNC - output2 : periodic synchronization output;
-#X text 23 437 BPM-RATE - outputs a voltage related to BPM. For example \, 120 BPM = 0 V \, 240 BPM = + 0.0944882 V \, 60 BPM = - 0.0944882 V. (0.0944882 V / octave), f 65;
+#X text 23 437 BPM-RATE - outputs a voltage related to BPM. For example \, 120 BPM = 0 V \, 240 BPM = + 0.0944882 V \, 60 BPM = - 0.0944882 V. (0.0944882 V / 'octave' ), f 65;
