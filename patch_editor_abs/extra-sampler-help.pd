@@ -1,9 +1,8 @@
-#N canvas 2 87 702 880 10;
+#N canvas 95 6 702 880 10;
 #X obj 23 756 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 20 154 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 20 594 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 20 18 cnv 15 400 30 empty empty EXTRA-SAMPLER 20 12 0 14 #90d4b0 #fcfcfc 0;
-#X text 24 670 PITCH - input for controlling the pitch with CV;
 #X text 26 790 OUT_L - Left output channel;
 #X text 26 820 OUT_R - Right output channel. If a mono sample is used \, this will not output anything.;
 #X text 26 860 END_TRIG - Sends out a trigger signal when the sample reaches it's end. Works when loop is on or off. If the sampler is retrigged before the end of the sample is reached \, END_TRIG will not output a trigger.;
@@ -30,3 +29,7 @@
 #A saved dispatch sampler-length-att-s 0;
 #A saved dispatch sampler-start-att-s 76;
 #A saved dispatch sampler-pitch-att-s 2;
+#X text 86 34 from https://github.com/megalon/pd-AUTOMATONISM-sampler;
+#X text 24 663 PITCH - input for controlling the pitch with CV;
+#X obj 76 679 cnv 16 300 16 empty empty empty 20 12 0 10 #ffe3c6 #404040 0;
+#X text 86 679 !! An attenuatuor has been inserted (/8);

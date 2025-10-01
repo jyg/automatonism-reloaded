@@ -1,42 +1,79 @@
-#N canvas 44 23 888 693 10;
-#X obj 460 17 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 -158136
--262144 0;
-#X obj 20 217 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 -158136
--262144 0;
-#X obj 23 455 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 -158136
--262144 0;
-#X obj 20 17 cnv 15 400 30 empty empty ALGOMATRIX: 20 12 0 14 -150893
--262144 0;
-#X text 22 426 LOAD - press any of the 8 slots to load stored combinations
-;
-#X text 22 391 STORE - press any of the 8 slots and the current parameter
-combinations are stored in that location;
-#X text 27 585 LOAD - trigger/gate input to sequentially step through
-the 8 stored patterns.;
+#N canvas 338 83 888 693 10;
+#X obj 460 17 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X obj 20 217 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X obj 23 455 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X obj 20 17 cnv 15 400 30 empty empty ALGOMATRIX: 20 12 0 14 #90d4b0 #fcfcfc 0;
+#X text 22 426 LOAD - press any of the 8 slots to load stored combinations;
+#X text 22 391 STORE - press any of the 8 slots and the current parameter combinations are stored in that location;
+#X text 27 585 LOAD - trigger/gate input to sequentially step through the 8 stored patterns.;
 #X text 463 51 LEFT - output;
 #X text 463 77 RIGHT - output;
-#X obj 463 106 algomatrix;
-#X text 24 55 The "ALGOMATRIX" module is an experimental enigmatic
-module. It is an 8-voice polyphonic syntesiszer with a 8x8 modulation
-matrix and a 32-step sequencer with 4 perspectives. The left side of
-the module is a 8x8 grid. This is the sequencer. The right part of
-the module reveals another 8x8 grid \, which is the modulation matrix.
-You add notes to the sequencer by clicking inside the grid. You can
-click several times in the same box and the different colors represents
-different octaves. You can store and recall 8 different parameter settings.
-The algomatrix is capable of a wide variety of sounds but is heavier
-on th CPU than most other Automatonism oscillators.;
-#X text 24 255 8x8 SEQUENCER MATRIX - click toggles to produce pitches
-;
-#X text 24 277 8x8 MODULATION MATRIX -change the sound in classic mod
-matrix style;
+#X text 24 55 The "ALGOMATRIX" module is an experimental enigmatic module. It is an 8-voice polyphonic syntesiszer with a 8x8 modulation matrix and a 32-step sequencer with 4 perspectives. The left side of the module is a 8x8 grid. This is the sequencer. The right part of the module reveals another 8x8 grid \, which is the modulation matrix. You add notes to the sequencer by clicking inside the grid. You can click several times in the same box and the different colors represents different octaves. You can store and recall 8 different parameter settings. The algomatrix is capable of a wide variety of sounds but is heavier on th CPU than most other Automatonism oscillators.;
+#X text 24 255 8x8 SEQUENCER MATRIX - click toggles to produce pitches;
+#X text 24 277 8x8 MODULATION MATRIX -change the sound in classic mod matrix style;
 #X text 25 313 TABULA-RASA! - click to clean the table;
 #X text 25 339 RDM! - click to randomly fill the sequencer table;
 #X text 25 365 RDM2! - click to randomly fill the mod-matrix;
 #X text 27 491 TRIG - trigger/gate input to clock the sequencer;
-#X text 27 513 RDM! - trigger/gate input to randomly fill the sequencer
-matrix;
-#X text 27 546 RDM2! - trigger/gate input to randomly fill the modulation
-matrix;
-#X text 28 626 RDM-LOAD - trigger/gate input to randomly select one
-out of the 8 stored patterns;
+#X text 27 513 RDM! - trigger/gate input to randomly fill the sequencer matrix;
+#X text 27 546 RDM2! - trigger/gate input to randomly fill the modulation matrix;
+#X text 28 626 RDM-LOAD - trigger/gate input to randomly select one out of the 8 stored patterns;
+#X obj 475 129 clock 1 \$0;
+#A saved preset statesave/0-clock-ss.txt 0 0;
+#A saved preset statesave/1-clock-ss.txt 118.922 1;
+#A saved dispatch clock-on/off-s 1;
+#A saved dispatch clock-clk-rate-s 118.922;
+#X obj 727 537 hsl 128 17 0.001 1 1 0 empty empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 0 1;
+#X obj 503 554 *~;
+#X obj 544 554 *~;
+#X obj 724 561 lop~ 1;
+#X obj 463 230 algomatrix 1 \$0;
+#A saved preset statesave/1-algomatrix-SEQ1-preset-0-ss.txt 1 2 3 0 -4 0 0 -4 0 1 3 4 0 -4 0 0 -4 0 1 1 2 0 -4 0;
+#A saved preset statesave/1-algomatrix-SEQ2-preset-0-ss.txt 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 3 4;
+#A saved preset statesave/1-algomatrix-SEQ3-preset-0-ss.txt 0 -4 0 0 -4 0 1 1 2 0 1 0 0 -4 0 1 2 3 0 -4 0 0 -4 0;
+#A saved preset statesave/1-algomatrix-SEQ4-preset-0-ss.txt 1 3 4 0 -4 0 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 0 1 0 -4 0;
+#A saved preset statesave/1-algomatrix-SEQ5-preset-0-ss.txt 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 0 1 0 -4 0 0 -4 0 1 0 1;
+#A saved preset statesave/1-algomatrix-SEQ6-preset-0-ss.txt 0 -4 0 0 -4 0 1 2 3 0 -4 0 0 -4 0 0 -4 0 0 -4 0 0 -4 0;
+#A saved preset statesave/1-algomatrix-SEQ7-preset-0-ss.txt 1 3 4 0 -4 0 0 -4 0 1 3 4 0 -4 0 0 -4 0 1 3 4 0 -4 0;
+#A saved preset statesave/1-algomatrix-SEQ8-preset-0-ss.txt 0 -4 0 1 1 2 0 -4 0 0 -4 0 1 3 4 0 -4 0 0 -4 0 1 1 2;
+#A saved preset statesave/1-algomatrix-MOD1-preset-0-ss.txt 0 -4 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD2-preset-0-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 1 3 4 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD3-preset-0-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 1 3 1 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD4-preset-0-ss.txt 0 3 0 0 3 0 0 3 0 1 3 2 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD5-preset-0-ss.txt 1 3 4 0 3 0 0 3 0 0 3 0 0 3 0 1 3 1 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD6-preset-0-ss.txt 1 3 3 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD7-preset-0-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 1 3 4 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrix-MOD8-preset-0-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixXposeScalePreset-0-ss.txt 0 0;
+#A saved preset statesave/1-algomatrix-xpose+scale-ss.txt 0 0;
+#A saved preset statesave/1-algomatrixSEQ8-ss.txt 0 -4 0 1 1 2 0 -4 0 0 -4 0 1 3 4 0 -4 0 0 -4 0 1 1 2;
+#A saved preset statesave/1-algomatrixMOD8-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixMOD7-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 1 3 4 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixMOD6-ss.txt 1 3 3 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixMOD5-ss.txt 1 3 4 0 3 0 0 3 0 0 3 0 0 3 0 1 3 1 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixMOD4-ss.txt 0 3 0 0 3 0 0 3 0 1 3 2 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixMOD3-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 1 3 1 0 3 0;
+#A saved preset statesave/1-algomatrixMOD2-ss.txt 0 3 0 0 3 0 0 3 0 0 3 0 1 3 4 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixMOD1-ss.txt 0 -4 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0;
+#A saved preset statesave/1-algomatrixSEQ7-ss.txt 1 3 4 0 -4 0 0 -4 0 1 3 4 0 -4 0 0 -4 0 1 3 4 0 -4 0;
+#A saved preset statesave/1-algomatrixSEQ1-ss.txt 1 2 3 0 -4 0 0 -4 0 1 3 4 0 -4 0 0 -4 0 1 1 2 0 -4 0;
+#A saved preset statesave/1-algomatrixSEQ2-ss.txt 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 3 4;
+#A saved preset statesave/1-algomatrixSEQ3-ss.txt 0 -4 0 0 -4 0 1 1 2 0 1 0 0 -4 0 1 2 3 0 -4 0 0 -4 0;
+#A saved preset statesave/1-algomatrixSEQ4-ss.txt 1 3 4 0 -4 0 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 0 1 0 -4 0;
+#A saved preset statesave/1-algomatrixSEQ5-ss.txt 0 -4 0 1 2 3 0 -4 0 0 -4 0 1 0 1 0 -4 0 0 -4 0 1 0 1;
+#A saved preset statesave/1-algomatrixSEQ6-ss.txt 0 -4 0 0 -4 0 1 2 3 0 -4 0 0 -4 0 0 -4 0 0 -4 0 0 -4 0;
+#A saved dispatch algo-xpose-s 65.5053;
+#A saved dispatch algo-scale-s 22.7263;
+#A saved dispatch load-s 0;
+#X obj 514 592 dac~;
+#X obj 603 604 r algomatrix-1-noteout;
+#X listbox 603 625 20 0 0 0 - - - 0;
+#X connect 19 0 24 0;
+#X connect 20 0 23 0;
+#X connect 21 0 25 0;
+#X connect 22 0 25 1;
+#X connect 23 0 22 1;
+#X connect 23 0 21 1;
+#X connect 24 0 21 0;
+#X connect 24 1 22 0;
+#X connect 26 0 27 0;
