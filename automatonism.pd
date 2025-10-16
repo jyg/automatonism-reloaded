@@ -101,7 +101,7 @@
 #X msg 855 826 set \$1;
 #X obj 745 723 loadbang;
 #X text 595 511 iemguts;
-#N canvas 1003 228 313 288 dynamic_patching_stuff 0;
+#N canvas 1003 228 313 240 dynamic_patching_stuff 0;
 #N canvas 0 7 1920 1023 oscillators 0;
 #X obj 24 9 module_create \$0 \$1 basic-osc;
 #X obj 24 42 module_create \$0 \$1 bwl-osc;
