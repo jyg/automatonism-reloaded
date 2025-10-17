@@ -4,15 +4,11 @@
 #X obj 21 306 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 20 17 cnv 15 400 30 empty empty MACRO-CONTROL: 20 12 0 14 #90d4b0 #fcfcfc 0;
 #X obj 465 39 macro-control 0;
-#A saved dispatch macro1-value-s 0;
-#A saved dispatch macro2-value-s 0;
-#A saved dispatch macro3-value-s 0;
-#A saved dispatch macro4-value-s 0;
 #A saved -macro-names param-3 param-2 param-1 param0;
 #A saved -macro-daw-enable;
 #X text 20 64 The "MACRO-CONTROL" module behaves as a virtual MIDI controler and thus can be mapped to any automatonism module. In turn \, it can be mapped and listen to any MIDI note and MIDI control signals delivered by MIDI interfaces connected to puredata.;
-#X text 26 346 VC1-VC4 : offset added to slider position;
-#X text 34 416 V1 - V4 : sum of input offset and slider position;
-#X text 26 248 When the patch is used with plugdata as plugin inside a DAW \, parameters are linked to macro numbers as soon as you click on corresponding checkboxes in the purple column., f 64;
 #X text 24 192 You can specify a custom name for each control slider. Type it in the text box., f 64;
 #X text 24 226 Click on the 'map' button to map parameters from other modules, f 64;
+#X text 26 346 no inputs;
+#X text 34 416 V1 - V4 : slider position converted to voltage (0-1);
+#X text 26 248 When the patch is used with plugdata as plugin inside a DAW \, parameters are linked to macro numbers as soon as you check the corresponding boxes in the purple column., f 64;
