@@ -387,7 +387,7 @@
 #X obj 380 511 outlet~;
 #X obj 110 135 cnv 5 5 5 empty empty AUDIOFREEZE 0 0 0 12 #fcfcfc #404040 0;
 #X obj 105 253 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #404040 0;
-#X obj 199 135 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
+#X obj 199 135 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 266 109 cnv 5 5 5 empty empty FREEZE 0 0 0 8 #fcfcfc #d0307c 0;
 #X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #404040 0;
 #X obj 113 194 hsl 128 15 0 127 0 0 \$0-freeze-modindex-s \$0-freeze-modindex-r MODINDEX 133 7 0 10 #8581d6 #000000 #000000 0 1;
@@ -1442,7 +1442,7 @@
 #X restore 710 507 pd fft-freeze-params;
 #X obj 474 612 s \$0-freeze;
 #X obj 474 589 t b;
-#X obj 215 236 cnv 5 5 5 empty \$0-mode-display-r FFT-2048 0 0 0 10 #fcfcfc #000000 0;
+#X obj 223 236 cnv 5 5 5 empty \$0-mode-display-r 8\ partials 0 0 0 10 #fcfcfc #000000 0;
 #X obj 683 712 s \$0-mode-display-r;
 #X obj 697 620 select 0 1 2 3;
 #X msg 834 689 label FFT-1024;
