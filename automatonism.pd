@@ -432,10 +432,11 @@
 #X obj 828 139 r \$0-reset!;
 #X obj 828 161 delay 500;
 #N canvas 293 233 501 213 \$0-reset-warning 0;
-#X obj 21 143 bng 15 250 50 0 \$0-reset! empty <--RESET! 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 25 160 bng 15 250 50 0 \$0-reset! empty <--RESET! 17 7 0 10 #fcfcfc #000000 #000000;
 #X text 18 49 WARNING!;
 #X text 19 68 Never press the RESET! button in the middle of working of a patch since it can cause the state saving mechanism to malfunction. Only use it when starting a new patch and you want the module counters to start over at zero. PRESS THE BUTTON BELOW TO RESET:;
-#X restore 827 37 pd \$0-reset-warning;
+#X coords 0 0 1 1 368 133 1 14 46;
+#X restore 29 111 pd \$0-reset-warning;
 #X obj 828 62 r \$0-open-reset-warning!;
 #X msg 828 84 vis 1;
 #X msg 831 311 vis 1;
