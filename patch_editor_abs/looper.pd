@@ -1,7 +1,7 @@
 #N canvas 0 7 1920 1023 10;
 #X obj 104 148 tgl 15 0 \$0-looper-record-s \$0-looper-record-r RECORD 17 7 0 10 #fcfcfc #dc4c90 #000000 0 1;
 #X obj 467 521 phasor~;
-#X obj 107 131 hsl 128 15 0 127 0 1 \$0-looper-speed-s \$0-looper-speed-r SPEED 133 7 0 10 #90d4b0 #000000 #000000 6774 1;
+#X obj 107 131 hsl 128 15 0 127 0 1 \$0-looper-speed-s \$0-looper-speed-r SPEED 133 7 0 10 #90d4b0 #000000 #000000 6500 1;
 #X floatatom 34 385 5 0 0 0 - - - 0;
 #X text 142 584 ORIGINAL SPEED;
 #X obj 467 402 pack 0 50;
@@ -17,7 +17,7 @@
 #X obj 105 123 cnv 5 5 5 empty empty LOOPER 0 0 0 12 #fcfcfc #404040 0;
 #X obj 135 109 cnv 5 5 5 empty empty IN-R 0 0 0 8 #fcfcfc #404040 0;
 #X obj 223 109 cnv 5 5 5 empty empty REC 0 0 0 8 #fcfcfc #dc4c90 0;
-#X obj 165 123 cnv 5 5 5 empty \$0-instance-num 3 0 0 0 12 #fcfcfc #404040 0;
+#X obj 165 123 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 108 711 r \$0-looper-original-s;
 #X obj 108 758 s \$0-looper-speed-r;
 #X obj 34 338 r \$0-looper-speed-s;
