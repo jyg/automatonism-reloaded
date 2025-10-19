@@ -678,13 +678,13 @@
 #X obj 85 163 route playing, f 15;
 #X msg 80 198 1;
 #X obj 80 227 v IS_PLUGDATA;
-#X obj 53 62 r _playhead;
 #X text 150 62 next plugdataversions;
 #X text 181 129 waiting for official release;
+#X obj 53 62 r __playhead;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
-#X connect 4 0 1 0;
+#X connect 6 0 1 0;
 #X restore 731 370 pd check_if_plugdata;
 #N canvas 465 103 979 798 check 0;
 #X obj 517 601 v is_patch_editor_path_declared;
