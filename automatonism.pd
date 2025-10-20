@@ -2,7 +2,6 @@
 #X declare -path patch_editor_abs/reloaded;
 #X declare -path iemguts;
 #X declare -lib iemguts;
-#X declare -path automatonism/patch_editor_abs;
 #X obj 102 188 bng 15 250 50 0 \$0-open-quick-guide! empty <--QUICK-GUIDE 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 102 203 bng 15 250 50 0 \$0-open-manual! empty <--MANUAL 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 102 240 bng 15 250 50 0 \$0-open-modules! empty <--MENU 17 7 0 10 #fcfcfc #000000 #000000;
@@ -1189,7 +1188,6 @@
 #X text 587 430 redirect \$0-target_patch receiver;
 #X text 596 533 or abstraction for plugdata;
 #X floatatom 752 227 5 0 0 0 - - - 0;
-#X obj 10 30 declare -path automatonism/patch_editor_abs;
 #X connect 5 0 6 0;
 #X connect 6 0 105 0;
 #X connect 9 0 14 0;
