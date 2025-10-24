@@ -19,7 +19,7 @@
 #X text 214 248 PITCH CV IN;
 #X obj 104 124 cnv 5 5 5 empty empty BWL-OSC 0 0 0 12 #fcfcfc #404040 0;
 #X obj 93 361 pack 0 50;
-#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r SINE 0 0 0 10 #fcfcfc #404040 0;
+#X obj 240 200 cnv 5 5 5 empty \$0-waveform-gui-r PULSE 0 0 0 10 #fcfcfc #404040 0;
 #X obj 107 147 hsl 128 15 0 127 0 0 \$0-bwl-osc-pwidth-s \$0-bwl-osc-pwidth-r WSHAPE 133 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 107 162 hsl 128 15 0 127 0 0 \$0-bwl-osc-cv-att-s \$0-bwl-osc-cv-att-r CV 133 7 0 10 #9999de #000000 #000000 0 1;
 #X obj 480 372 * 0.00787402;
