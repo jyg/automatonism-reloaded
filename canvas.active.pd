@@ -1,7 +1,9 @@
-#N canvas 365 502 450 252 12;
-#X text 109 49 dummy patch;
-#X text 118 99 for puredata not complaining if else not available;
-#X obj 79 155 outlet;
-#X obj 139 155 outlet;
-#X obj 229 155 outlet;
-#X obj 69 63 inlet;
+#N canvas 466 232 796 589 12;
+#X text 269 32 for puredata not complaining if else not available;
+#X obj 112 233 outlet;
+#X obj 83 79 receivecanvas 2;
+#X obj 83 103 route mouse;
+#X msg 83 127 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
