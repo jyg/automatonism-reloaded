@@ -12,3 +12,4 @@
 #X text 282 79 <- [automatonism \$0] instantiated with \$0 argument;
 #X text 19 29 This is the new automatonism "vanilla" template patch. You can duplicate it every time you need to create a new machine., f 61;
 #X text 356 171 RENAME (COPY) THIS PATCH AND START USING AUTOMATONISM, f 29;
+#X obj 333 171 bng 19 250 50 0 \$0-saveas empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
