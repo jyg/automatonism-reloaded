@@ -2,7 +2,7 @@
 #X obj 204 109 cnv 5 5 5 empty empty LENGTH 0 0 0 8 #fcfcfc #7474a4 0;
 #X obj 124 126 cnv 5 5 5 empty empty EXTRA-SAMPLER 0 0 0 12 #fcfcfc #404040 0;
 #X obj 105 328 cnv 5 5 5 empty empty OUT_L 0 0 0 8 #fcfcfc #404040 0;
-#X obj 221 126 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 221 126 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
 #X obj 252 109 cnv 5 5 5 empty empty START 0 0 0 8 #fcfcfc #7474a4 0;
 #X obj 46 354 cnv 15 400 600 empty empty load_file 20 12 0 14 #e0e0e0 #404040 0;
 #X obj 457 354 cnv 15 655 955 empty empty sampler 20 12 0 14 #fce0c4 #404040 0;
@@ -13,7 +13,7 @@
 #X obj 670 1073 *~;
 #X obj 670 930 *~;
 #X obj 669 987 +~;
-#X obj 107 208 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 6619 1;
+#X obj 107 208 hsl 128 15 -2 2 0 1 \$0-sampler-pitch-s \$0-sampler-pitch-r PITCH 133 7 0 10 #ffffff #000000 #000000 10600 1;
 #X obj 107 223 hsl 128 15 0 127 0 1 \$0-sampler-length-s \$0-sampler-length-r LENGTH 133 7 0 10 #ffffff #000000 #000000 12700 1;
 #X obj 107 238 hsl 128 15 0 127 0 0 \$0-sampler-start-s \$0-sampler-start-r START 133 7 0 10 #ffffff #000000 #000000 0 1;
 #X obj 670 731 phasor~;
@@ -742,15 +742,15 @@
 #X obj 109 351 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 82 287 pack 0 50;
 #X obj 47 101 pack 0 50;
-#X obj 65 197 *~ 16;
 #X obj 105 168 cnv 16 300 16 empty empty empty 20 12 0 10 #ffe3c6 #404040 0;
-#X text 106 168 !! An attenuatuor has been inserted (/8);
-#X text 116 189 [*~ 16] instead of [*~ 128];
+#X obj 65 197 *~ 15;
+#X text 106 168 !! An attenuatuor has been inserted;
+#X text 116 189 [*~ 15] instead of [*~ 128];
 #X connect 0 0 14 0;
 #X connect 1 0 2 0;
 #X connect 2 0 9 0;
 #X connect 2 0 4 0;
-#X connect 3 0 15 0;
+#X connect 3 0 16 0;
 #X connect 5 0 2 1;
 #X connect 6 0 5 1;
 #X connect 7 0 8 0;
@@ -760,7 +760,7 @@
 #X connect 12 0 10 0;
 #X connect 13 0 6 0;
 #X connect 14 0 1 0;
-#X connect 15 0 5 0;
+#X connect 16 0 5 0;
 #X restore 689 568 pd sample-pitch;
 #X obj 635 408 sig~ 1;
 #X obj 671 435 /~;
@@ -956,7 +956,7 @@
 #X obj 866 800 s \$0-end-trig-r;
 #X text 76 976 _megalon_ 2017 v1.3;
 #X text 343 272 <-- DEFAULT SAMPLE RATE;
-#X obj 104 147 cnv 5 5 5 empty \$0-sample-display-name IR-Dual-CC3600-2.wav 0 0 0 12 #fcfcfc #404040 0;
+#X obj 104 147 cnv 5 5 5 empty \$0-sample-display-name symbol 0 0 0 12 #fcfcfc #404040 0;
 #X obj 10 50 reloaded extra-sampler \$0 \$1;
 #X obj 50 10 savestate;
 #N canvas 529 102 450 300 \$0-gui_listeners 0;
