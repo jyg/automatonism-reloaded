@@ -9,7 +9,7 @@
 #X obj 142 52 r \$1-reset!;
 #X obj 64 17 r \$1-create-\$3!;
 #X obj 85 194 symbol \$3;
-#X obj 131 414 s SAVE-S;
+#X obj 122 417 s SAVE-S;
 #X obj 201 258 r \$1-coords;
 #X obj 201 283 unpack f f;
 #X obj 83 312 pack s f 200 200;
@@ -54,7 +54,6 @@
 #X connect 20 0 22 0;
 #X connect 22 0 23 0;
 #X connect 22 1 6 0;
-#X connect 22 3 10 0;
 #X connect 23 0 24 0;
 #X connect 25 0 21 0;
 #X connect 26 0 28 0;

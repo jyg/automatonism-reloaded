@@ -354,7 +354,7 @@
 #X obj 818 248 select 0;
 #X obj 818 223 list append \$12;
 #X obj 245 275 t b f;
-#N canvas 0 50 450 300 AUTOMATONISM_UNDO 1;
+#N canvas 128 128 450 276 AUTOMATONISM_UNDO 0;
 #X obj 121 77 inlet;
 #X text 252 66 undo mechanism;
 #X obj 322 338 list append;
