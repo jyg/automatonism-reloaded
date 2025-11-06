@@ -1,4 +1,4 @@
-#N canvas 0 57 1920 1023 10;
+#N canvas 0 7 1920 1023 10;
 #X obj 108 149 hsl 128 15 0 127 0 1 \$0-sample-player-file-s \$0-sample-player-file-r FILE 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 108 179 hsl 128 15 0 127 0 1 \$0-sample-player-pitch-cv-att-s \$0-sample-player-pitch-cv-att-r P.CV 133 7 0 10 #9898dc #000000 #000000 0 1;
 #X obj 590 342 phasor~;
@@ -1388,9 +1388,9 @@
 #X obj 909 705 *~;
 #X obj 986 625 tabread4~;
 #X obj 986 590 r \$0-select-crown;
-#X obj 793 699 tabread4~;
+#X obj 744 512 tabread4~;
 #X obj 909 745 outlet~ RIGHT;
-#X obj 793 620 r \$0-select-tableR;
+#X obj 710 477 r \$0-select-tableR;
 #X obj 984 551 r \$0-select-tableR;
 #X obj 174 218 cnv 5 5 5 empty empty RIGHT 0 0 0 8 #fcfcfc #404040 0;
 #X obj 103 217 cnv 5 5 5 empty empty LEFT 0 0 0 8 #fcfcfc #404040 0;
@@ -1402,16 +1402,16 @@
 #X obj 132 494 delay 1;
 #X msg 423 558 0 1 \, 0.5 10 1;
 #X text 435 542 ANTI POP EG;
-#X obj 811 523 r \$0-sample-player-loop-s;
-#X obj 811 594 line~;
-#X obj 811 545 == 0;
-#X obj 793 721 *~;
+#X obj 844 468 r \$0-sample-player-loop-s;
+#X obj 844 539 line~;
+#X obj 844 490 == 0;
+#X obj 821 669 *~;
 #X obj 408 634 *~;
 #X obj 528 477 r \$0-sample-player-loop-s;
 #X obj 528 548 line~;
 #X obj 528 499 == 0;
 #X obj 528 525 pack 0 10;
-#X obj 811 571 pack 0 10;
+#X obj 844 516 pack 0 10;
 #X obj 451 266 *~ 8;
 #X obj 1052 342 snapshot~;
 #X floatatom 1052 364 5 0 0 0 - - - 0;
@@ -1559,6 +1559,7 @@
 #X obj 1090 111 receive pd-dsp-started;
 #X obj 1090 137 t b;
 #X obj 1090 190 s \$0-samplerate;
+#X obj 793 634 *~;
 #X connect 2 0 3 0;
 #X connect 2 0 106 0;
 #X connect 2 0 137 0;
@@ -1660,12 +1661,13 @@
 #X connect 109 0 113 0;
 #X connect 110 0 109 1;
 #X connect 111 0 110 0;
-#X connect 112 0 129 0;
+#X connect 112 0 168 0;
 #X connect 114 0 112 0;
 #X connect 115 0 108 0;
 #X connect 118 0 105 0;
 #X connect 119 0 130 0;
 #X connect 120 0 119 1;
+#X connect 120 0 168 1;
 #X connect 121 0 14 0;
 #X connect 121 1 123 0;
 #X connect 121 2 124 0;
@@ -1710,4 +1712,5 @@
 #X connect 164 0 167 0;
 #X connect 165 0 166 0;
 #X connect 166 0 164 0;
+#X connect 168 0 129 0;
 #X coords 0 -1 1 1 175 125 2 100 100;
