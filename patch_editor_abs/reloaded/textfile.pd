@@ -172,6 +172,8 @@
 #X obj 361 239 t l b l b, f 22;
 #X obj 424 337 t b b f b, f 34;
 #X msg 786 536 1;
+#X obj 101 747 print init;
+#X text 191 688 OBSOLETE;
 #X connect 0 0 62 0;
 #X connect 0 1 3 0;
 #X connect 1 0 39 0;
@@ -217,7 +219,6 @@
 #X connect 48 0 50 0;
 #X connect 48 1 11 0;
 #X connect 48 2 13 1;
-#X connect 49 0 2 0;
 #X connect 50 0 49 1;
 #X connect 51 0 47 0;
 #X connect 52 1 53 0;
