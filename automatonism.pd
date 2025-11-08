@@ -1189,7 +1189,7 @@
 #X text 587 430 redirect \$0-target_patch receiver;
 #X text 596 533 or abstraction for plugdata;
 #X floatatom 752 227 5 0 0 0 - - - 0;
-#X obj 247 244 tgl 14 0 \$0-enable_undo-s \$0-enable_undo-r UNDO\ (back) -20 -8 0 9 #e4e4e4 #4d4d4d #d9000e 0 1;
+#X obj 462 742 tgl 14 0 \$0-enable_undo-s \$0-enable_undo-r UNDO\ (back) -20 -8 0 9 #e4e4e4 #4d4d4d #d9000e 0 1;
 #N canvas 0 50 450 300 ENABLE_UNDO 0;
 #X obj 57 385 text define \$0-undo;
 #X obj 143 300 text insert \$0-undo 1e+30;
