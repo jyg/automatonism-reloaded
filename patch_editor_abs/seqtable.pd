@@ -12,13 +12,13 @@
 #X obj 852 70 t b b;
 #X obj 892 76 loadbang;
 #X obj 105 115 bng 12 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #dc4c90 #000000;
-#X obj 197 128 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 197 128 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
 #X obj 852 48 threshold~ 0.99 0 1 0;
 #X obj 443 35 threshold~ 0.9 0 0.9 0;
 #X obj 135 77 namecanvas \$0-this;
 #N canvas 1368 87 450 250 (subpatch) 0;
-#X array \$0-seqtable 3 float 2;
-#X coords 0 1 3 0 220 74 1 0 0;
+#X array \$0-seqtable 32 float 2;
+#X coords 0 1 32 0 220 74 1 0 0;
 #X restore 102 156 graph;
 #X obj 486 186 r \$0-array_size-s;
 #X obj 163 110 cnv 5 5 5 empty empty OFFSET 0 0 0 8 #fcfcfc #000000 0;
@@ -33,7 +33,7 @@
 #X obj -32 143 cnv 5 5 5 empty empty S1 0 0 0 8 #fcfcfc #dc4c90 0;
 #N canvas 0 0 450 300 \$0-expr 0;
 #X obj 10 10 r \$0-expr-r;
-#X obj 10 40 expr 0.5*cos(2*pi*$f1)+0.5;
+#X obj 10 40 expr $f1;
 #X obj 10 90 s \$0-expr-s;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -247,7 +247,7 @@
 #X obj 835 706 outlet~;
 #X floatatom 283 139 5 0 0 0 INDEX \$0-index_gui-r \$0-index_gui-s 0;
 #X obj 412 250 mod 8;
-#X obj 105 230 hsl 214 15 0 1 0 0 \$0-index_slider_gui-s \$0-index_slider_gui-r INDEX 40 9 0 10 #feffc6 #000000 #000000 0 0;
+#X obj 105 230 hsl 214 15 0 1 0 0 \$0-index_slider_gui-s \$0-index_slider_gui-r empty 40 9 0 10 #feffc6 #000000 #000000 0 0;
 #N canvas 0 32 1920 994 arpeggiator 0;
 #X obj 603 648 outlet;
 #X obj 643 108 notein;
@@ -490,7 +490,7 @@
 #X obj 607 412 t b f;
 #X obj 462 391 delay 20;
 #X obj 387 425 metro 200;
-#X obj 104 314 vradio 12 1 0 3 \$0-mode-s \$0-mode-r SET\ PATTERN\ WITH\ MIDI\ NOTE\ @\ INDEX 0 -12 0 10 #fcfcfc #000000 #000000 0;
+#X obj 104 314 vradio 12 1 0 3 \$0-mode-s \$0-mode-r PATTERN\ EDIT\ MODE\ :\ MOUSE\ ONLY 0 -12 0 10 #fcfcfc #000000 #000000 0;
 #X obj 419 638 s \$0-index-s;
 #X obj 230 425 cnv 5 5 5 empty empty CLOCK-OUT 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 838 546 vline~;
@@ -557,12 +557,12 @@
 #X obj 200 140 nbx 4 16 1 2048 0 0 \$0-array_size-s \$0-array_size-r SIZE -26 7 0 10 #fcfcfc #000000 #000000 0 256;
 #X obj 10 50 reloaded seqtable \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 848 547 450 300 \$0-gui_listeners 0;
+#N canvas 848 547 450 300 \$0-gui_listeners 1;
 #X obj 10 0 reloaded/nbx_dispatch seqtable \$0 \$1 1 2048 array_size-s array_size-r SIZE #fcfcfc #000000 #000000;
-#X obj 10 180 reloaded/hsl_dispatch seqtable \$0 \$1 0 1 index_slider_gui-s index_slider_gui-r empty #feffc6 #000000 #000000 lin;
 #X obj 10 240 reloaded/vradio_dispatch seqtable \$0 \$1 0 2 order-s order-r empty #fcfcfc #000000 #000000;
 #X obj 10 300 reloaded/vradio_dispatch seqtable \$0 \$1 0 2 oct_gui-s oct_gui-r empty #fcfcfc #000000 #000000;
 #X obj 10 60 reloaded/vradio_dispatch seqtable \$0 \$1 0 3 mode-s mode-r PATTERN #fcfcfc #000000 #000000;
+#X obj 10 180 reloaded/hsl_dispatch seqtable \$0 \$1 0 1 index_slider_gui-s index_slider_gui-r INDEX #feffc6 #000000 #000000 lin;
 #X restore 10 80 pd \$0-gui_listeners;
 #N canvas 449 61 1136 929 state-saving-multiple-instances 0;
 #X obj 137 29 loadbang;
@@ -668,7 +668,7 @@
 #X msg 1190 518 label \$1;
 #X obj 347 439 tgl 12 0 \$0-mute-s \$0-mute-r MUTE -24 7 0 8 #ffffff #000000 #000000 0 1;
 #X obj 102 256 hradio 15 1 0 10 \$0-st-write-s \$0-st-write-r WRITE-1 156 7 0 10 #fcc4c4 #fc0400 #000000 0;
-#X obj 102 276 hradio 15 1 0 10 \$0-st-load-s \$0-st-load-r LOAD-4/4 156 7 0 10 #c4fcc4 #0c4410 #000000 0;
+#X obj 102 276 hradio 15 1 0 10 \$0-st-load-s \$0-st-load-r LOAD-1/1 156 7 0 10 #c4fcc4 #0c4410 #000000 0;
 #N canvas 762 83 1088 712 statesave-patterns-1-16 0;
 #X obj 684 324 pack f f;
 #X obj 406 234 delay 10;
