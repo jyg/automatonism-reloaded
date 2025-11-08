@@ -20,6 +20,11 @@
 #X msg 792 598 clear;
 #X obj 703 705 s pd-\$0-midi_listener;
 #N canvas 15 715 1375 300 \$0-midi_listener 0;
+#X obj 10 10 r 1398-MACRO-1;
+#X obj 10 90 route 1;
+#X obj 10 130 s 1527-receive_from_listener;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
 #X restore 1182 62 pd \$0-midi_listener;
 #X obj 1184 325 / 127;
 #X obj 1172 714 -;
@@ -43,7 +48,7 @@
 #X obj 453 614 list split 1;
 #X obj 340 617 select 0 1;
 #X msg 311 742 label \$1;
-#X obj 311 717 symbol \$8;
+#X obj 300 665 symbol \$8;
 #X msg 393 742 label \$1\$2;
 #N canvas 454 583 450 276 MIDI_LEARN_mode_colors 0;
 #X obj 77 56 select 0 1;
@@ -226,6 +231,8 @@
 #X obj 284 291 select 0;
 #X obj 170 296 unpack f f;
 #X obj 650 49 r MIDI_LEARN;
+#X obj 237 697 select empty;
+#X msg 244 737 label;
 #X connect 0 0 67 0;
 #X connect 1 0 4 2;
 #X connect 2 0 4 1;
@@ -259,7 +266,7 @@
 #X connect 34 0 36 0;
 #X connect 34 1 32 0;
 #X connect 35 0 59 0;
-#X connect 36 0 35 0;
+#X connect 36 0 101 0;
 #X connect 37 0 59 0;
 #X connect 42 0 21 1;
 #X connect 42 0 18 1;
@@ -330,6 +337,9 @@
 #X connect 99 1 52 0;
 #X connect 100 0 0 1;
 #X connect 100 0 34 0;
+#X connect 101 0 102 0;
+#X connect 101 1 35 0;
+#X connect 102 0 59 0;
 #X restore 517 35 pd midi_mapping;
 #X msg 47 388 set \$1;
 #X obj 600 204 r \$0-map_from;

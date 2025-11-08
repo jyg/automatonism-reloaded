@@ -211,6 +211,8 @@
 #X obj 1309 444 r \$0-map_to;
 #X obj 1371 397 r \$0-map_from;
 #X obj 650 49 r MIDI_LEARN;
+#X obj 205 652 select empty;
+#X msg 221 705 label;
 #X connect 0 0 62 0;
 #X connect 1 0 4 2;
 #X connect 2 0 4 1;
@@ -237,7 +239,7 @@
 #X connect 31 0 33 0;
 #X connect 31 1 28 0;
 #X connect 32 0 55 0;
-#X connect 33 0 32 0;
+#X connect 33 0 83 0;
 #X connect 34 0 55 0;
 #X connect 39 0 42 0;
 #X connect 40 0 44 0;
@@ -288,6 +290,9 @@
 #X connect 80 0 79 1;
 #X connect 81 0 78 1;
 #X connect 82 0 0 1;
+#X connect 83 0 84 0;
+#X connect 83 1 32 0;
+#X connect 84 0 55 0;
 #X restore 442 53 pd midi_mapping;
 #X msg 47 388 set \$1;
 #X obj 600 204 r \$0-map_from;
