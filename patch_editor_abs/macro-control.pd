@@ -371,7 +371,7 @@
 #X restore 480 111 pd \$0-gui_listeners;
 #X obj 101 118 cnv 15 168 170 empty \$0-plugin_name-r plugdata 15 14 0 26 #fcfcc4 #e0c4fc 0;
 #X obj 111 122 cnv 5 5 5 empty empty MACRO-CONTROL 0 0 0 12 #fcfcfc #404040 0;
-#X obj 218 122 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
+#X obj 218 122 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X obj 105 161 hsl 128 15 0 127 0 0 \$0-macro1-value-gui-s \$0-macro1-value-gui-r macro:1:1 1 8 0 10 #eeeecc #000000 #000000 0 1;
 #X symbolatom 102 144 19 0 0 0 - \$0-macro1-name-r \$0-macro1-name-s 0;
 #X obj 104 305 cnv 5 5 5 empty empty V1 0 0 0 8 #fcfcfc #404040 0;
@@ -388,10 +388,10 @@
 #X obj 219 219 tgl 16 0 \$0-midi_map3-s \$0-midi_map3-r map 1 6 0 8 #fcac44 #fcac44 #000000 0 1;
 #X symbolatom 102 255 19 0 0 0 - \$0-macro4-name-r \$0-macro4-name-s 0;
 #X obj 219 256 tgl 16 0 \$0-midi_map4-s \$0-midi_map4-r map 1 6 0 8 #fcac44 #fcac44 #000000 0 1;
-#X obj 236 161 cnv 13 1 1 empty \$0-slotA-rcv 1' 1 8 0 14 #fcfcfc #404040 0;
-#X obj 236 197 cnv 13 1 1 empty \$0-slotB-rcv 2' 1 8 0 14 #fcfcfc #404040 0;
-#X obj 236 235 cnv 13 1 1 empty \$0-slotC-rcv 3' 1 8 0 14 #fcfcfc #404040 0;
-#X obj 236 271 cnv 13 1 1 empty \$0-slotD-rcv 4' 1 8 0 14 #fcfcfc #404040 0;
+#X obj 236 161 cnv 13 1 1 empty \$0-slotA-rcv -3' 1 8 0 14 #fcfcfc #404040 0;
+#X obj 236 197 cnv 13 1 1 empty \$0-slotB-rcv -2' 1 8 0 14 #fcfcfc #404040 0;
+#X obj 236 235 cnv 13 1 1 empty \$0-slotC-rcv -1' 1 8 0 14 #fcfcfc #404040 0;
+#X obj 236 271 cnv 13 1 1 empty \$0-slotD-rcv 0' 1 8 0 14 #fcfcfc #404040 0;
 #X obj 605 107 namecanvas \$0-this;
 #X obj 535 242 vradio 14 1 0 2 \$0-plugin_type-s \$0-plugin_type-r empty 0 -9 0 10 #feffc6 #000000 #000000 0;
 #X obj 271 770 select 0 1;
