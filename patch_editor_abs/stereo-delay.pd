@@ -1,11 +1,11 @@
 #N canvas 0 23 1127 694 10;
-#X obj 106 128 hsl 128 15 0 127 0 1 \$0-stereo-delay-rate-left-s \$0-stereo-delay-rate-left-r RATE-LEFT 133 7 0 10 #fcfcfc #000000 #000000 7015 1;
-#X obj 106 158 hsl 128 15 0 127 0 1 \$0-stereo-delay-feedback-s \$0-stereo-delay-feedback-r FEEDBACK 133 7 0 10 #fcfcfc #000000 #000000 5384 1;
+#X obj 106 128 hsl 128 15 0 127 0 1 \$0-stereo-delay-rate-left-s \$0-stereo-delay-rate-left-r RATE-LEFT 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 106 158 hsl 128 15 0 127 0 1 \$0-stereo-delay-feedback-s \$0-stereo-delay-feedback-r FEEDBACK 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 438 16 inlet~;
 #X obj 438 506 *~ -1;
 #X obj 81 486 *~;
 #X obj 438 479 *~;
-#X obj 106 203 hsl 128 15 0 127 0 1 \$0-stereo-delay-dry/wet-s \$0-stereo-delay-dry/wet-r DRY/WET 133 7 0 10 #fcfcfc #000000 #000000 12700 1;
+#X obj 106 203 hsl 128 15 0 127 0 1 \$0-stereo-delay-dry/wet-s \$0-stereo-delay-dry/wet-r DRY/WET 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 96 276 t f f;
 #X msg 96 298 127 \$1;
 #X obj 96 320 -;
@@ -203,7 +203,7 @@
 #X connect 36 0 26 0;
 #X connect 37 0 26 0;
 #X restore 439 334 pd delay1;
-#X obj 106 143 hsl 128 15 0 127 0 1 \$0-stereo-delay-rate-right-s \$0-stereo-delay-rate-right-r RATE-RIGHT 133 7 0 10 #fcfcfc #000000 #000000 7015 1;
+#X obj 106 143 hsl 128 15 0 127 0 1 \$0-stereo-delay-rate-right-s \$0-stereo-delay-rate-right-r RATE-RIGHT 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 562 504 *~ -1;
 #X obj 562 482 *~;
 #X obj 563 532 min~ 1;
@@ -217,7 +217,7 @@
 #X obj 476 112 r \$0-stereo-delay-feedback-s;
 #X obj 562 363 lop~;
 #X obj 562 385 lop~;
-#X obj 106 173 hsl 128 15 0 127 0 1 \$0-stereo-delay-lowpass-s \$0-stereo-delay-lowpass-r LOWPASS 133 7 0 10 #fcfcfc #000000 #000000 2363 1;
+#X obj 106 173 hsl 128 15 0 127 0 1 \$0-stereo-delay-lowpass-s \$0-stereo-delay-lowpass-r LOWPASS 133 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 803 288 / 127;
 #X obj 803 337 * 4950;
 #X obj 803 359 + 50;
@@ -369,7 +369,7 @@
 #X obj 613 278 inlet~;
 #X obj 839 207 s \$0-instance-num;
 #X obj 839 159 makefilename %d;
-#X obj 192 121 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 #fcfcfc #404040 0;
+#X obj 192 121 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
 #X msg 839 184 label \$1;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 340 227 reloaded/textfile \$0;
@@ -791,10 +791,10 @@
 #X restore 10 80 pd \$0-gui_listeners;
 #X obj 99 251 r \$0-stereo-delay-dry/wet-s;
 #X obj 135 77 namecanvas \$0-this;
-#X obj 146 188 hradio 15 1 0 2 \$0-tap_mode-s \$0-tap_mode-r SYNC:6/2 -38 8 0 14 #ffaaff #ffaaff #000000 0;
+#X obj 146 188 hradio 15 1 0 2 \$0-tap_mode-s \$0-tap_mode-r SYNC:1/1 -38 8 0 14 #ffaaff #ffaaff #aaaaaa 0;
 #X obj 283 108 cnv 5 5 5 empty empty TAP 0 0 0 8 #fcfcfc #9c00ff 0;
 #X obj 1036 31 inlet~ TAP;
-#N canvas 472 182 1108 764 tap-mode 1;
+#N canvas 472 182 1108 764 tap-mode 0;
 #X text 447 220 3/4;
 #X text 451 200 2/3;
 #X text 450 182 1/2;
@@ -939,7 +939,7 @@
 #X obj 283 113 bng 14 50 50 0 empty \$0-tap-bng-r empty 0 -8 0 10 #e3c6ff #9c00ff #000000;
 #X obj 532 140 r \$0-pingpong_mode;
 #X obj 639 307 r \$0-pingpong_mode;
-#X obj 221 188 tgl 15 0 \$0-fb-post-lop-s \$0-fb-post-lop-r FB-POST-EQ 16 8 0 10 #555555 #555555 #000000 0 1;
+#X obj 221 188 tgl 15 0 \$0-fb-post-lop-s \$0-fb-post-lop-r FB-PRE-EQ 16 8 0 10 #999999 #999999 #000000 0 1;
 #N canvas 160 160 723 563 FB-pre/post-EQ-gui 0;
 #X obj 76 26 r \$0-fb-post-lop-s;
 #X obj 56 79 select 0 1;

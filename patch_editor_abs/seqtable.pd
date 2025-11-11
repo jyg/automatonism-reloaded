@@ -1,4 +1,4 @@
-#N canvas -18 128 1851 994 10;
+#N canvas 0 36 1851 994 10;
 #X obj 443 13 inlet~;
 #X text 441 -6 CLOCK IN;
 #X obj 442 187 f;
@@ -15,6 +15,8 @@
 #X obj 135 77 namecanvas \$0-this;
 #N canvas 1368 87 450 250 (subpatch) 0;
 #X array \$0-seqtable 16 float 2;
+#A color 0;
+#A width 2;
 #X coords 0 1 16 0 220 74 1 0 0;
 #X restore 102 156 graph;
 #X obj 566 196 r \$0-array_size-s;
@@ -243,7 +245,7 @@
 #X obj 1193 255 r \$0-array_size-s;
 #X obj 835 706 outlet~;
 #X floatatom 283 139 5 0 0 0 INDEX \$0-index_gui-r \$0-index_gui-s 0;
-#X obj 105 231 hsl 214 15 0 1 0 0 \$0-index_slider_gui-s \$0-index_slider_gui-r empty 40 9 0 10 #feffc6 #000000 #000000 0 0;
+#X obj 105 231 hsl 214 15 0 1 0 0 \$0-index_slider_gui-s \$0-index_slider_gui-r INDEX 40 9 0 10 #feffc6 #000000 #000000 0 0;
 #N canvas 0 32 1920 994 arpeggiator 0;
 #X obj 603 648 outlet;
 #X obj 643 108 notein;
@@ -486,7 +488,7 @@
 #X obj 607 412 t b f;
 #X obj 462 391 delay 20;
 #X obj 387 425 metro 200;
-#X obj 104 314 vradio 12 1 0 3 \$0-mode-s \$0-mode-r SET\ PATTERN\ WITH\ f(x) 0 -12 0 10 #fcfcfc #fcfcfc #000000 0;
+#X obj 104 314 vradio 12 1 0 3 \$0-mode-s \$0-mode-r ARPEGGIATOR\ MODE 0 -12 0 10 #fcfcfc #000000 #000000 0;
 #X obj 419 638 s \$0-index-s;
 #X obj 230 425 cnv 5 5 5 empty empty CLOCK-OUT 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 838 546 vline~;
@@ -553,11 +555,10 @@
 #X obj 200 139 nbx 4 16 1 2048 0 0 \$0-array_size-s \$0-array_size-r SIZE -26 7 0 10 #fcfcfc #000000 #000000 0 256;
 #X obj 10 50 reloaded seqtable \$0 \$1;
 #X obj 50 10 savestate;
-#N canvas 848 547 450 300 \$0-gui_listeners 0;
+#N canvas 848 547 450 276 \$0-gui_listeners 0;
 #X obj 10 0 reloaded/nbx_dispatch seqtable \$0 \$1 1 2048 array_size-s array_size-r SIZE #fcfcfc #000000 #000000;
 #X obj 10 240 reloaded/vradio_dispatch seqtable \$0 \$1 0 2 order-s order-r empty #fcfcfc #000000 #000000;
 #X obj 10 300 reloaded/vradio_dispatch seqtable \$0 \$1 0 2 oct_gui-s oct_gui-r empty #fcfcfc #000000 #000000;
-#X obj 10 60 reloaded/vradio_dispatch seqtable \$0 \$1 0 3 mode-s mode-r PATTERN #fcfcfc #000000 #000000;
 #X obj 10 180 reloaded/hsl_dispatch seqtable \$0 \$1 0 1 index_slider_gui-s index_slider_gui-r INDEX #feffc6 #000000 #000000 lin;
 #X restore 10 80 pd \$0-gui_listeners;
 #N canvas 449 61 1136 929 state-saving-multiple-instances 0;
@@ -764,7 +765,7 @@
 #X obj 429 65 t b b;
 #X obj 852 26 inlet~ fwd;
 #X obj 968 79 route bang;
-#X obj 104 366 vradio 12 1 0 1 \$0-f(x)_mode-s \$0-f(x)_mode-r empty 0 -9 0 10 #fcfcfc #000000 #000000 0;
+#X obj 104 366 vradio 12 1 0 1 \$0-f(x)_mode-s \$0-f(x)_mode-r empty 0 -9 0 10 #fcfcfc #fcfcfc #000000 0;
 #X obj 220 111 cnv 5 5 5 empty empty LOAD(1..n) 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 238 116 bng 12 50 50 0 empty empty empty 17 7 0 10 #fcfcfc #fc0400 #000000;
 #X obj 719 21 inlet~ fwd;
