@@ -1,5 +1,5 @@
 #N canvas 0 23 743 490 10;
-#X obj 128 144 hsl 128 15 0 127 0 1 \$0-trigger-delay-delay-s \$0-trigger-delay-delay-r DELAY 133 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 128 144 hsl 128 15 0 127 0 1 \$0-trigger-delay-delay-s \$0-trigger-delay-delay-r DELAY 133 7 0 10 #fcfcfc #000000 #000000 2559 1;
 #X obj 103 168 cnv 5 5 5 empty empty OUT 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 105 109 cnv 5 5 5 empty empty IN 0 0 0 8 #fcfcfc #dc4c90 0;
 #X obj 122 124 cnv 5 5 5 empty empty TRIGGER-DELAY 0 0 0 12 #fcfcfc #404040 0;
@@ -15,7 +15,7 @@
 #X obj 127 281 t f f;
 #X obj 407 285 vline~;
 #X obj 407 307 outlet~;
-#N canvas 21 22 593 735 state-saving-multiple-instances 0;
+#N canvas 21 22 593 735 state-saving-multiple-instances 1;
 #X obj 215 28 loadbang;
 #X msg 556 463 rewind;
 #X msg 513 463 bang;
@@ -30,7 +30,7 @@
 #X obj 242 92 f \$1;
 #X obj 242 128 t f f f;
 #X obj 215 61 t b b;
-#X obj 66 331 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 66 331 bng 15 250 50 0 empty \$0-save-s empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X obj 66 235 r SAVE-S;
 #X msg 120 438 set \$1;
 #X obj 120 399 pack f;
@@ -69,7 +69,7 @@
 #X restore 34 391 pd state-saving-multiple-instances;
 #X obj 34 462 s \$0-instance-num;
 #X obj 34 414 makefilename %d;
-#X obj 217 124 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 #fcfcfc #404040 0;
+#X obj 217 124 cnv 5 5 5 empty \$0-instance-num 2 0 0 0 12 #fcfcfc #404040 0;
 #X msg 34 439 label \$1;
 #N canvas 81 22 1117 745 state-saving-via-preset-manager-module 0;
 #X obj 477 349 reloaded/textfile \$0;
