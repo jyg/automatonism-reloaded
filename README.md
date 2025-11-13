@@ -55,6 +55,8 @@ https://github.com/user-attachments/assets/6ae4750e-c7a6-42be-8f6c-24e50f5b9f2b
 
 Instead of mapping a parameter to a real midi controller, you can map it to a slider of a [macro-control] module. This way, you can connect it to a parameter curve in the DAW and record automations in a track. 
 
+See https://plugdata.org/docs/book/DAWIntegration.html for other infos about DAW integration of plugdata.
+
 ## Changes
 2025/05/04	-updated doc (this file)
 
