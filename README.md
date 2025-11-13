@@ -1,8 +1,11 @@
 # Automatonism [Reloaded]  v 4.2.4
 ![image](https://user-images.githubusercontent.com/1431894/227710524-edfb046d-e393-48c3-a578-8040f372e282.png)
 
-**Automatonism [Reloaded] v 4.x** is a fork based on Automatonism V3.1 from Johan Eriksson's wonderful project : https://www.automatonism.com/the-software.
-The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping, or as a plugin inside a DAW (with plugdata)
+**Automatonism [Reloaded] v 4.x** is a fork based on Automatonism V3.1 from Johan Eriksson's wonderful project : 
+
+https://www.automatonism.com/the-software.
+
+The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping, or as a plugin inside a DAW (with plugdata).
 ## New features :
 
 * **Plugdata compatible** (for standalone or as DAW plugin)
@@ -45,7 +48,7 @@ https://github.com/user-attachments/assets/9070dab4-3ed0-4b2e-ac11-0ea293900d1c
 
 https://github.com/user-attachments/assets/79cb93f1-f540-49b9-ba61-427bb3f21344
 
-(How to enable midi mapping with midi learn function, how to change mapping range, and how to cancel a midi-mapping)
+(How to enable midi mapping with midi learn function, how to change mapping range with From / To buttons, and how to cancel a midi-mapping)
 
 ## DAW integration - automation of parameters with 'macro-control' module (plugdata)
 
