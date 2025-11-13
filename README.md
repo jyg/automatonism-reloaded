@@ -58,7 +58,13 @@ Instead of mapping a parameter to a real midi controller, you can map it to a sl
 
 See https://plugdata.org/docs/book/DAWIntegration.html for other infos about DAW integration of plugdata.
 
+## License
+
+As a fork of Automatonism, this project inherits the **GPL-3.0 license** https://www.gnu.org/licenses/gpl-3.0.txt
+
 ## Changes
+
+
 2025/05/04	-updated doc (this file)
 
 2023/11/15	-improved Plugdata support, added patch statesaving inside DAW
