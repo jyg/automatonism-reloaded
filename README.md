@@ -49,6 +49,11 @@ https://github.com/user-attachments/assets/79cb93f1-f540-49b9-ba61-427bb3f21344
 
 (How to enable midi mapping with midi learn function, how to change mapping range, and how to cancel a midi-mapping)
 
+## DAW integration - automation of parameters with 'macro-control' module (plugdata)
+
+https://github.com/user-attachments/assets/6ae4750e-c7a6-42be-8f6c-24e50f5b9f2b
+
+Instead of mapping a parameter to a real midi controller, you can map it to a slider of a [macro-control] module. This way, you can connect it to a parameter curve in the DAW and record automations in a track. 
 
 ## Changes
 2025/05/04	-updated doc (this file)
