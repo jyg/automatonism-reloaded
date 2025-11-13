@@ -1,4 +1,4 @@
-#N canvas 177 214 752 429 10;
+#N canvas 177 214 752 435 10;
 #X obj 24 290 cnv 15 400 30 empty empty OUTPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 21 228 cnv 15 400 30 empty empty INPUTS: 20 12 0 14 #9898dc #fcfcfc 0;
 #X obj 20 17 cnv 15 400 30 empty empty PLAYHEAD: 20 12 0 14 #90d4b0 #fcfcfc 0;
@@ -12,10 +12,10 @@
 #X text 21 53 The "PLAYHEAD" module retrieves playhead infos from hosting DAW \, when automatonism is used inside a Plugdata plugin.;
 #X text 25 264 none;
 #X text 27 324 CLK-OUT - plugin-host playhead clock (or internal clock if standalone), f 41;
-#X text 27 363 PLAYING - reports host / internal-clock status. 1 V = playing \, 0 V = stopped, f 47;
-#X obj 21 103 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc #fcfcfc 0;
-#X text 24 153 beat-multiply : clock sends a subdivision of a quarter, f 58;
-#X text 27 406 SYNCHRO - outputs trigger once playhead has restarted and reached postition 0 or beginning of measure (inside a plugin), f 47;
-#X text 24 175 synchro(bar) : every [nb of bars] \, a synchro signal is triggered, f 64;
-#X text 25 131 metrics : Time signature (can be changed in standalone mode), f 64;
-#X text 24 196 clock [internal] - start or stop internal clock., f 64;
+#X obj 21 86 cnv 15 400 30 empty empty CONTROLS: 20 12 0 14 #9898dc #fcfcfc 0;
+#X text 24 140 beat-multiply : clock sends a subdivision of a quarter, f 58;
+#X text 24 158 synchro(bar) : every [nb of bars] \, a synchro signal is triggered, f 64;
+#X text 24 120 metrics : Time signature (can be changed in standalone mode), f 64;
+#X text 24 179 clock [internal] - start or stop internal clock in standalone mode. In plugin mode \, playhead becomes slave of hosting DAW and this checkbox is grayed., f 64;
+#X text 27 358 PLAYING - reports playing status: 1 V = playing \, 0 V = stopped, f 33;
+#X text 27 389 SYNCHRO - outputs trigger when playhead has restarted and reached postition 0 or beginning of measure (inside a plugin), f 63;
