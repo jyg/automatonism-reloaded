@@ -64,6 +64,18 @@ As a fork of Automatonism, this project inherits the **GPL-3.0 license** https:/
 
 ## Changes
 
+[Lot of changes - I have to make the history of them]
+-Extended features for legacy modules : 
+	-stereo-delay : synchro tap
+	-looper : sampling on the fly (without use of hdd/ssd)
+	-sampler / multisampler : multiple sampling rates supported, local path storage for files
+	-clock-divider-odd/even : reset inlet
+-New modules
+	-seq-table : multifunction sequencer
+	-macro-control / xy-macro-control (inspiré par les macroboutons ableutoniens)
+	-playhead : generating a clock synchronized with the host
+	-abl_link : Interface for the abl_link~ external in standalone mode
+	.....
 
 2025/05/04	-updated doc (this file)
 
