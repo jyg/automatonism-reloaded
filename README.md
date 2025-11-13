@@ -45,6 +45,11 @@ https://github.com/user-attachments/assets/9070dab4-3ed0-4b2e-ac11-0ea293900d1c
   
 ## Midi Learn
 
+https://github.com/user-attachments/assets/79cb93f1-f540-49b9-ba61-427bb3f21344
+
+(How to enable midi mapping with midi learn function, how to change mapping range, and how to cancel a midi-mapping)
+
+
 ## Changes
 2025/05/04	-updated doc (this file)
 
