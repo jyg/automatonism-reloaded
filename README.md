@@ -1,34 +1,39 @@
-# Automatonism [Reloaded]  v 4.1-pre1
+# Automatonism [Reloaded]  v 4.2.4
 ![image](https://user-images.githubusercontent.com/1431894/227710524-edfb046d-e393-48c3-a578-8040f372e282.png)
 
-![image](https://github.com/jyg/automatonism-reloaded/assets/1431894/dbda805b-cfa4-4a82-afad-e6f6d56dfc26)
+**Automatonism [Reloaded] v 4.x** is a fork based on Automatonism V3.1 from Johan Eriksson's wonderful project : 
 
-**Automatonism [Reloaded] v 4.x** is a fork based on Automatonism V3.1 from https://www.automatonism.com/the-software.
+https://www.automatonism.com/the-software.
 
-The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping. 
-
-Unlike original project, **Automatonism [Reloaded]** intensively uses internal abstractions inside modules, in order to add new features.
+The aim is to upgrade Automatonism and use it as a live instrument, with, for example, enhanced midi mapping, or as a plugin inside a DAW (with plugdata).
 ## New features :
 
 * **Plugdata compatible** (for standalone or as DAW plugin)
 * **Midi-mapping and Midi-learn features**
 * DAW integration with new objects [playhead] and [macro-control] to enable automation inside DAW
-* Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. (requirements : Pd + iemguts, or Plugdata >0.8.1) 
-* **The preset and state saving system is based on** (not-so-) new **'savestate' object**, where preset and state data are stored inside the main patch.
+* Automatonism made as an abstraction lib : init a new project just by typing [automatonism] in a blank patch. (see next section) 
+* The preset and state saving system is based on **'savestate' object**, where preset and state data are stored inside the main patch.
 * The legacy file-based preset and state saving system is deprecated, but old savestate structure should be automatically imported.
 * Ability to save different projects in the same folder with different filenames (no need to use main.pd as filename)
 * **Several projects can run simultaneously and independently** ("local mode" in Preset-Manager)
-* experimental palette feature for pd vanilla + iemguts. See here : [palette/README.md](https://github.com/jyg/automatonism-reloaded/tree/master/palette/README.md)
 * camomile plugin support is no longer supported, as  **Statesaving into DAW is broken for camomile plugin version** .
+* Unlike original project, **Automatonism [Reloaded]** intensively uses internal abstractions inside modules, in order to add new features.
   
-## Installation :
-* Automatonism [Reloaded] is accessible via Deken menu in puredata (Help -> Find Externals). Latest version : v4.0-pre4. **This is not the latest version**
-* To get the latest version, download Automatonism.Reloaded.zip here  https://github.com/jyg/automatonism-reloaded/archive/refs/heads/master.zip. Unzip it into your puredata - externals folder, and rename the folder as "automatonism"
+## Installation / Getting Started (puredata + iemguts) :
 
-## Getting started
+https://github.com/user-attachments/assets/44abf3ae-7677-484c-8b54-1686f1995bb4
+
+* Automatonism [Reloaded] is accessible via Deken menu in puredata (Tools -> Install Externals).
+You can also downloads installation files (.dek) from this github repository. Search in Releases section.
 * If you have iemguts lib installed with puredata, you can directly open a new patch, create an object box (ctrl/cmd+1) and type [automatonism]. This will create the automatonism object and add declare paths.
-* With plugdata, you must type [automatonism $0]  (with $0 argument)
 * Alternatively, or with pd vanilla, you can open the included _main_patch(template).pd and save it anywhere with a new name.
+* Start patching.
+  
+## Installation / Getting Started (plugdata) :
+
+https://github.com/user-attachments/assets/9070dab4-3ed0-4b2e-ac11-0ea293900d1c
+
+* With plugdata, type [automatonism] as new object in a blank patch. If you encounter crash, you must type [automatonism $0]  (with $0 argument) instead of [automatonism]
 * Start patching.
 
 ## Software Requirements
@@ -38,8 +43,40 @@ Unlike original project, **Automatonism [Reloaded]** intensively uses internal a
 **or**
 
 * **plugdata** > 0.9.2
+  
+## Midi Learn
+
+https://github.com/user-attachments/assets/79cb93f1-f540-49b9-ba61-427bb3f21344
+
+(How to enable midi mapping with midi learn function, how to change mapping range with From / To buttons, and how to cancel a midi-mapping)
+
+## DAW integration - automation of parameters with 'macro-control' module (plugdata)
+
+https://github.com/user-attachments/assets/6ae4750e-c7a6-42be-8f6c-24e50f5b9f2b
+
+Instead of mapping a parameter to a real midi controller, you can map it to a slider of a [macro-control] module. This way, you can connect it to a parameter curve in the DAW and record automations in a track. 
+
+See https://plugdata.org/docs/book/DAWIntegration.html for other infos about DAW integration of plugdata.
+
+## License
+
+As a fork of Automatonism, this project inherits the **GPL-3.0 license** https://www.gnu.org/licenses/gpl-3.0.txt
 
 ## Changes
+
+[Lot of changes - I have to make the history of them]
+* Extended features for legacy modules : 
+	* stereo-delay : synchro tap
+	* looper : sampling on the fly (without use of hdd/ssd)
+	* sampler / multisampler : multiple sampling rates supported, local path storage for files
+	* clock-divider-odd/even : reset inlet
+* New modules
+  	* seq-table : multifunction sequencer
+	* macro-control / xy-macro-control (inspiré par les macroboutons ableutoniens)
+	* playhead : generating a clock synchronized with the host
+	* abl_link : Interface for the abl_link~ external in standalone mode
+	.....
+
 2025/05/04	-updated doc (this file)
 
 2023/11/15	-improved Plugdata support, added patch statesaving inside DAW
