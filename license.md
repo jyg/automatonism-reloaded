@@ -8,7 +8,7 @@ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
 See the GNU General Public License for more details.
 
 **Automatonism \[RELOADED\]**, is a fork based on Johan Eriksson's Automatonism. 
-This fork was created in 2021 and has been maintained since by Jean-Yves Gratius https://https://github.com/jyg .
+This fork was created in 2021 and has been maintained since by Jean-Yves Gratius https://github.com/jyg .
 Automatonism \[RELOADED\] is free software: you can redistribute it and/or modify 
 it under the terms of the GNU General Public License as published by the Free Software Foundation,
 either version 3 of the License, or any later version. 
